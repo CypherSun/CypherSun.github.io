@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="什么是JS渗透测试？在JavaScript中也存在变量和函数，当存在可控变量及函数调用即可参数漏洞JS开发的Web应用和PHP，Java，NET等区别在于即没有源代码，也可以通过浏览器的查看源代码获取真实的点。获取URL，获取JS敏感信息，获取代码传参等，所以相当于JS开发的WEB应用属于白盒测试（默认有源码参考），一般会在JS中寻找更多的URL地址，在分析JS代码逻辑（加密算法，APIKey配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS架构&amp;框架识别&amp;泄漏提取&amp;API接口枚举&amp;FUZZ爬虫&amp;插件项目">
+<meta property="og:url" content="http://example.com/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B914/index.html">
+<meta property="og:site_name" content="Cypher Sun">
+<meta property="og:description" content="什么是JS渗透测试？在JavaScript中也存在变量和函数，当存在可控变量及函数调用即可参数漏洞JS开发的Web应用和PHP，Java，NET等区别在于即没有源代码，也可以通过浏览器的查看源代码获取真实的点。获取URL，获取JS敏感信息，获取代码传参等，所以相当于JS开发的WEB应用属于白盒测试（默认有源码参考），一般会在JS中寻找更多的URL地址，在分析JS代码逻辑（加密算法，APIKey配置">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-03-10T13:01:45.000Z">
+<meta property="article:modified_time" content="2024-03-11T21:06:48.597Z">
+<meta property="article:author" content="Cypher Sun">
+<meta name="twitter:card" content="summary">
+
+
+<title >JS架构&框架识别&泄漏提取&API接口枚举&FUZZ爬虫&插件项目</title>
+
+<!-- Favicon -->
+
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":null,"appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"failure.ico","showText":"欢迎回来~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":200},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-12 05:06:48"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+ 
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+    
+        <div class="trm-logo-text">
+            Cypher<span>Sun</span>
+        </div>
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    关于
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner video cover -->
+    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover">
+        <source src="//cdn.moji.com/websrc/video/autumn20190924.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        Your browser does not support HTML5 video.
+    </video>
+    <!-- banner video cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            JS架构&框架识别&泄漏提取&API接口枚举&FUZZ爬虫&插件项目
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        2024
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="trm-page-sidebar col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card"> 
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img alt="Avatar" class="trm-avatar" src="https://lh3.googleusercontent.com/a/ACg8ocIxbhzj-iM7n2aexQ6m3pDDtM1PauzEv7NXv93je5QwSg=s576-c-no">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        Cypher Sun
+    </h5>
+    
+        <div class="trm-label">
+            
+            <span class="trm-typed-text">
+                <!-- Words for theme.user.typedText -->
+            </span>
+        </div>
+    
+</div>
+<!-- card header end -->
+        <!-- sidebar social -->
+
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<div class="trm-social">
+    
+        <a href="https://github.com/CypherSun" title="Github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+        <a href="https://github.com" title="Wechat" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-weixin"></i>
+        </a>
+    
+</div>
+
+<!-- sidebar social end -->
+        <!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                地址:
+            </div>
+            <div class="trm-label trm-label-light">
+                银河系
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                年龄:
+            </div>
+            <div class="trm-label trm-label-light">
+                不清楚
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                实力:
+            </div>
+            <div class="trm-label trm-label-light">
+                上升期
+            </div>
+        </li>
+    
+</ul>
+<!-- info end -->
+
+        
+    <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+    <!-- action button -->
+    <div class="text-center">
+        <a href="mailto:84860748@qq.com" class="trm-btn">
+            联系我
+            <i class="iconfont far fa-envelope"></i>
+        </a>
+    </div>
+    <!-- action button end -->
+
+    </div>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="trm-page-content col-lg-8">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            03/10
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            21:01
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            Cypher Sun
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="什么是JS渗透测试？"><a href="#什么是JS渗透测试？" class="headerlink" title="什么是JS渗透测试？"></a>什么是JS渗透测试？</h2><p>在JavaScript中也存在变量和函数，当存在可控变量及函数调用即可参数漏洞<br>JS开发的Web应用和PHP，Java，NET等区别在于即没有源代码，也可以通过浏览器的查看源代码获取真实的点。获取URL，获取JS敏感信息，获取代码传参等，所以相当于JS开发的WEB应用属于白盒测试（默认有源码参考），一般会在JS中寻找更多的URL地址，在分析JS代码逻辑（加密算法，APIKey配置，验证逻辑等）进行后期安全测试。</p>
+<p>前提：Web应用可以采用前端或后端语言开发<br>后端语言：PHP Java Python .NET 浏览器端看不到真实的源代码<br>前端语言：JavaScript(JS)和JS框架 浏览器端能看到真实的源代码</p>
+<p>例子：<br>Zblog：核心功能采用PHP语言去写的，例如登录密码加密<br>Vue.js：核心功能采用框架语法JS写的，例如登录密码加密，验证码<br><br></p>
+<h2 id="JS安全问题"><a href="#JS安全问题" class="headerlink" title="JS安全问题"></a>JS安全问题</h2><p>源码泄漏<br>未授权访问&#x3D;JS里面分析更多的URL访问确定接口路径，从而进入未授权访问<br>敏感Key泄漏&#x3D;JS文件中可能配置了接口信息（云应用，短信，邮件，数据库等）<br>API接口安全&#x3D;（代码中加密提交，参数传递，更多的URL路径）</p>
+<p>如何从表现中的JS提取价值信息<br>如何从地址中，Fuzz工具来提取未知的JS文件<br>如何从JS开放框架WebPack进行测试<br><br></p>
+<h2 id="流行的JS框架有那些？"><a href="#流行的JS框架有那些？" class="headerlink" title="流行的JS框架有那些？"></a>流行的JS框架有那些？</h2><p>Vue.js, Node.js, jQuery, Angular等<br><br></p>
+<h2 id="如何判定JS开发应用？"><a href="#如何判定JS开发应用？" class="headerlink" title="如何判定JS开发应用？"></a>如何判定JS开发应用？</h2><p>插件Wappalyzer<br>源程序代码简短<br>引入多个JS文件<br>一般有&#x2F;static&#x2F;js&#x2F;app.js等顺序的JS文件<br>一般cookie中有connect.sid<br><br></p>
+<h2 id="如何获取更多的JS文件？"><a href="#如何获取更多的JS文件？" class="headerlink" title="如何获取更多的JS文件？"></a>如何获取更多的JS文件？</h2><p>手工-浏览器搜索<br>半自动-Burpsuite插件<br>工具化-各类提取&amp;Fuzz项目<br><br></p>
+<h2 id="前端架构-手工搜索分析"><a href="#前端架构-手工搜索分析" class="headerlink" title="前端架构-手工搜索分析"></a>前端架构-手工搜索分析</h2><p>打开检查，网站全局搜索分析<br>全局搜索，找连接地址和路径</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">src=</span><br><span class="line">path=</span><br><span class="line">method:<span class="string">&quot;get&quot;</span></span><br><span class="line">http.get(<span class="string">&quot;)</span></span><br><span class="line"><span class="string">method:&quot;</span>post<span class="string">&quot;</span></span><br><span class="line"><span class="string">http.post(&quot;</span>)</span><br><span class="line">.ajax</span><br><span class="line">http://service.httppost</span><br><span class="line">http://service.httpget</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="前端架构-半自动Burp分析"><a href="#前端架构-半自动Burp分析" class="headerlink" title="前端架构-半自动Burp分析"></a>前端架构-半自动Burp分析</h2><p>插件一：<a target="_blank" rel="noopener" href="https://github.com/ScriptKid-Beta/Unexpected_information">Unexpected_information</a><br>用来标记请求包中的一些敏感信息、JS接口和一些特殊字段，<br>防止我们疏忽了一些数据包，使用它可能会有意外的收获信息。</p>
+<p>插件二：<a target="_blank" rel="noopener" href="https://github.com/gh0stkey/HaE">HaE</a><br>基于BurpSuite插件JavaAPI开发的请求高亮标记与信息提取的辅助型插件。该插件可以通过自定义正则的方式匹配响应报文或请求报文，可以自行决定符合该自定义正则匹配的相应请求是否需要高亮标记、信息提取。<br><br></p>
+<h2 id="前端架构-自动化项目分析"><a href="#前端架构-自动化项目分析" class="headerlink" title="前端架构-自动化项目分析"></a>前端架构-自动化项目分析</h2><p>1.用的最多，功能最差的：<a target="_blank" rel="noopener" href="https://github.com/Threezh1/JSFinder">JSFinder</a>-从表现中JS中提取URL或者敏感数据<br>一款用作快速在网站的JS文件中提取URL，子域名的工具，然后挑选测试，进入，看看能不能未授权访问</p>
+<p>2.Jsfinder的升级版：<a target="_blank" rel="noopener" href="https://github.com/pingc0y/URLFinder">URLFinder</a>-从表现中JS中提取URL或者敏感数据<br>一款用于快速提取检测页面中JS与URL的工具。<br>功能类似于JSFinder，但JSFinder好久没更新了。</p>
+<p>3.<a target="_blank" rel="noopener" href="https://github.com/p1g3/JSINFO-SCAN">JSINFO-SCAN</a>-从表现中JS中提取URL或者敏感数据<br>递归爬取域名(netloc&#x2F;domain)，以及递归从JS中获取信息的工具</p>
+<p>4.很好用的浏览器插件：<a target="_blank" rel="noopener" href="https://github.com/momosecurity/FindSomething">FindSomething</a><br>从表现中JS中提取URL或者敏感数据<br>该工具是用于快速在网页的html源码或JS代码中提取一些有趣的信息的浏览器插件，<br>包括请求的资源、接口的URL，请求的IP和域名，泄漏的证件号、手机号、邮箱等信息。</p>
+<p>5.<a target="_blank" rel="noopener" href="https://github.com/ffuf/ffuf">Ffuf</a>-爆破找到更多的JS文件分析更多的信息<br>各种字典：<a target="_blank" rel="noopener" href="https://wordlists.assetnote.io/">https://wordlists.assetnote.io</a><br>功能强大的模糊化工具，用它来FUZZ模糊化js文件。</p>
+<p>6.<a target="_blank" rel="noopener" href="https://github.com/rtcatc/Packer-Fuzzer">Packer-Fuzzer</a>-针对JS框架开发打包器Webpack检测，在浏览器插件杂项里面有webpack就能使用这个工具了<br>一款针对Webpack等前端打包工具所构造的网站进行快速、高效安全检测的扫描工具，然后就能生成报告</p>
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B915/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">10</div>
+                    <div class="trm-cover-month">2024/03</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B9/">
+                    信息打点
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B915/" class="trm-anima-link">
+                    主机架构&amp;蜜罐识别&amp;WAF识别&amp;端口扫描&amp;协议识别&amp;服务安全
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/03/10</li>
+                <li>21:31</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B913/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">10</div>
+                    <div class="trm-cover-month">2024/03</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B9/">
+                    信息打点
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B913/" class="trm-anima-link">
+                    Web应用&amp;源码泄漏&amp;开源闭源&amp;指纹识别&amp;GIT&amp;SVN&amp;DS&amp;备份
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/03/10</li>
+                <li>20:51</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-scroll-animation">
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2024- 2024</span>
+            <span class="footer-separator"data-separator=" · "></span>
+            <span class="trm-accent-color">Cypher Sun</span>
+        </div>
+    
+
+    
+        <div class="trm-footer-item">
+            <span>
+                由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v7.1.1
+            </span>
+            <span class="footer-separator" data-separator=" | "></span>
+            <span> 
+                主题 - 
+                <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
+                v2.1.10
+            </span>
+        </div>
+      
+
+    
+        <div class="trm-footer-item blog-run-long"></div>
+     
+
+     
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
+    
+        <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
+            <i class="iconfont fas fa-arrows-alt-h"></i>
+        </div>
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+  <!-- Plugin -->
+
+
+
+
+    
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+        <script src="/js/plugins/typing.js?v=2.1.10"></script>
+    
+
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+
+
+<script id="async-script" src="/js/main.js?v=2.1.10"></script>
+
+<script src="https://unpkg.com/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>

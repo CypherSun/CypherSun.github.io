@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="端口判断服务   端口 服务 渗透用途    tcp 20,21 FTP 允许匿名的上传下载,爆破,嗅探,win提权,远程执行(proftpd 1.3.5),各类后门(proftpd,vsftp 2.3.4)   tcp 22 SSH 可根据已搜集到的信息尝试爆破,v1版本可中间人,ssh隧道及内网代理转发,文件传输等等   tcp 23 Telnet 爆破,嗅探,一般常用于路由,交换登陆,可尝试">
+<meta property="og:type" content="article">
+<meta property="og:title" content="主机架构&amp;蜜罐识别&amp;WAF识别&amp;端口扫描&amp;协议识别&amp;服务安全">
+<meta property="og:url" content="http://example.com/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B915/index.html">
+<meta property="og:site_name" content="Cypher Sun">
+<meta property="og:description" content="端口判断服务   端口 服务 渗透用途    tcp 20,21 FTP 允许匿名的上传下载,爆破,嗅探,win提权,远程执行(proftpd 1.3.5),各类后门(proftpd,vsftp 2.3.4)   tcp 22 SSH 可根据已搜集到的信息尝试爆破,v1版本可中间人,ssh隧道及内网代理转发,文件传输等等   tcp 23 Telnet 爆破,嗅探,一般常用于路由,交换登陆,可尝试">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-03-10T13:31:06.000Z">
+<meta property="article:modified_time" content="2024-03-11T21:08:58.589Z">
+<meta property="article:author" content="Cypher Sun">
+<meta name="twitter:card" content="summary">
+
+
+<title >主机架构&蜜罐识别&WAF识别&端口扫描&协议识别&服务安全</title>
+
+<!-- Favicon -->
+
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":null,"appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"failure.ico","showText":"欢迎回来~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":200},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-12 05:08:58"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+ 
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+    
+        <div class="trm-logo-text">
+            Cypher<span>Sun</span>
+        </div>
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    关于
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner video cover -->
+    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover">
+        <source src="//cdn.moji.com/websrc/video/autumn20190924.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        Your browser does not support HTML5 video.
+    </video>
+    <!-- banner video cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            主机架构&蜜罐识别&WAF识别&端口扫描&协议识别&服务安全
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        2024
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="trm-page-sidebar col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card"> 
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img alt="Avatar" class="trm-avatar" src="https://lh3.googleusercontent.com/a/ACg8ocIxbhzj-iM7n2aexQ6m3pDDtM1PauzEv7NXv93je5QwSg=s576-c-no">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        Cypher Sun
+    </h5>
+    
+        <div class="trm-label">
+            
+            <span class="trm-typed-text">
+                <!-- Words for theme.user.typedText -->
+            </span>
+        </div>
+    
+</div>
+<!-- card header end -->
+        <!-- sidebar social -->
+
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<div class="trm-social">
+    
+        <a href="https://github.com/CypherSun" title="Github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+        <a href="https://github.com" title="Wechat" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-weixin"></i>
+        </a>
+    
+</div>
+
+<!-- sidebar social end -->
+        <!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                地址:
+            </div>
+            <div class="trm-label trm-label-light">
+                银河系
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                年龄:
+            </div>
+            <div class="trm-label trm-label-light">
+                不清楚
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                实力:
+            </div>
+            <div class="trm-label trm-label-light">
+                上升期
+            </div>
+        </li>
+    
+</ul>
+<!-- info end -->
+
+        
+    <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+    <!-- action button -->
+    <div class="text-center">
+        <a href="mailto:84860748@qq.com" class="trm-btn">
+            联系我
+            <i class="iconfont far fa-envelope"></i>
+        </a>
+    </div>
+    <!-- action button end -->
+
+    </div>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="trm-page-content col-lg-8">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            03/10
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            21:31
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            Cypher Sun
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="端口判断服务"><a href="#端口判断服务" class="headerlink" title="端口判断服务"></a>端口判断服务</h2><table>
+<thead>
+<tr>
+<th>端口</th>
+<th>服务</th>
+<th>渗透用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tcp 20,21</td>
+<td>FTP</td>
+<td>允许匿名的上传下载,爆破,嗅探,win提权,远程执行(proftpd 1.3.5),各类后门(proftpd,vsftp 2.3.4)</td>
+</tr>
+<tr>
+<td>tcp 22</td>
+<td>SSH</td>
+<td>可根据已搜集到的信息尝试爆破,v1版本可中间人,ssh隧道及内网代理转发,文件传输等等</td>
+</tr>
+<tr>
+<td>tcp 23</td>
+<td>Telnet</td>
+<td>爆破,嗅探,一般常用于路由,交换登陆,可尝试弱口令</td>
+</tr>
+<tr>
+<td>tcp 25</td>
+<td>SMTP</td>
+<td>邮件伪造,vrfy&#x2F;expn查询邮件用户信息,可使用smtp-user-enum工具来自动跑</td>
+</tr>
+<tr>
+<td>tcp&#x2F;udp 53</td>
+<td>DNS</td>
+<td>允许区域传送,dns劫持,缓存投毒,欺骗以及各种基于dns隧道的远控</td>
+</tr>
+<tr>
+<td>tcp&#x2F;udp 69</td>
+<td>TFTP</td>
+<td>尝试下载目标及其的各类重要配置文件</td>
+</tr>
+<tr>
+<td>tcp 80-89,443,8440-8450,8080-8089</td>
+<td>各种常用的Web服务端口</td>
+<td>可尝试经典的topn,vpn,owa,webmail,目标oa,各类Java控制台,各类服务器Web管理面板,各类Web中间件漏洞利用,各类Web框架漏洞利用等等……</td>
+</tr>
+<tr>
+<td>tcp 110</td>
+<td>POP3</td>
+<td>可尝试爆破,嗅探</td>
+</tr>
+<tr>
+<td>tcp 111,2049</td>
+<td>NFS</td>
+<td>权限配置不当</td>
+</tr>
+<tr>
+<td>tcp 137,139,445</td>
+<td>Samba</td>
+<td>可尝试爆破以及smb自身的各种远程执行类漏洞利用,如,ms08-067,ms17-010,嗅探等……</td>
+</tr>
+<tr>
+<td>tcp 143</td>
+<td>IMAP</td>
+<td>可尝试爆破</td>
+</tr>
+<tr>
+<td>udp 161</td>
+<td>SNMP</td>
+<td>爆破默认团队字符串,搜集目标内网信息</td>
+</tr>
+<tr>
+<td>tcp 389</td>
+<td>LDAP</td>
+<td>ldap注入,允许匿名访问,弱口令</td>
+</tr>
+<tr>
+<td>tcp 512,513,514</td>
+<td>Linux rexec</td>
+<td>可爆破,rlogin登陆</td>
+</tr>
+<tr>
+<td>tcp 873</td>
+<td>Rsync</td>
+<td>匿名访问,文件上传</td>
+</tr>
+<tr>
+<td>tcp 1194</td>
+<td>OpenVPN</td>
+<td>想办法钓VPN账号,进内网</td>
+</tr>
+<tr>
+<td>tcp 1352</td>
+<td>Lotus</td>
+<td>弱口令,信息泄漏,爆破</td>
+</tr>
+<tr>
+<td>tcp 1433</td>
+<td>SQL Server</td>
+<td>注入,提权,sa弱口令,爆破</td>
+</tr>
+<tr>
+<td>tcp 1521</td>
+<td>Oracle</td>
+<td>tns爆破,注入,弹shell…</td>
+</tr>
+<tr>
+<td>tcp 1500</td>
+<td>ISPmanager</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 1723</td>
+<td>PPTP</td>
+<td>爆破,想办法钓VPN账号,进内网</td>
+</tr>
+<tr>
+<td>tcp 2082,2083</td>
+<td>cPanel</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 2181</td>
+<td>ZooKeeper</td>
+<td>未授权访问</td>
+</tr>
+<tr>
+<td>tcp 2601,2604</td>
+<td>Zebra</td>
+<td>默认密码zerbra</td>
+</tr>
+<tr>
+<td>tcp 3128</td>
+<td>Squid</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 3312,3311</td>
+<td>kangle</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 3306</td>
+<td>MySQL</td>
+<td>注入,提权,爆破</td>
+</tr>
+<tr>
+<td>tcp 3389</td>
+<td>Windows rdp</td>
+<td>shift后门,需要03以下的系统,爆破,ms12-020</td>
+</tr>
+<tr>
+<td>tcp 3690</td>
+<td>SVN</td>
+<td>svn泄露,未授权访问</td>
+</tr>
+<tr>
+<td>tcp 4848</td>
+<td>GlassFish</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 5000</td>
+<td>Sybase&#x2F;DB2</td>
+<td>爆破,注入</td>
+</tr>
+<tr>
+<td>tcp 5432</td>
+<td>PostgreSQL</td>
+<td>爆破,注入,弱口令</td>
+</tr>
+<tr>
+<td>tcp 5900,5901,5902</td>
+<td>VNC</td>
+<td>弱口令爆破</td>
+</tr>
+<tr>
+<td>tcp 5984</td>
+<td>CouchDB</td>
+<td>未授权导致的任意指令执行</td>
+</tr>
+<tr>
+<td>tcp 6379</td>
+<td>Redis</td>
+<td>可尝试未授权访问,弱口令爆破</td>
+</tr>
+<tr>
+<td>tcp 7001,7002</td>
+<td>WebLogic</td>
+<td>Java反序列化,弱口令</td>
+</tr>
+<tr>
+<td>tcp 7778</td>
+<td>Kloxo</td>
+<td>主机面板登录</td>
+</tr>
+<tr>
+<td>tcp 8000</td>
+<td>Ajenti</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 8009</td>
+<td>tomcat Ajp</td>
+<td>Tomcat-Ajp协议漏洞</td>
+</tr>
+<tr>
+<td>tcp 8443</td>
+<td>Plesk</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 8069</td>
+<td>Zabbix</td>
+<td>远程执行,SQL注入</td>
+</tr>
+<tr>
+<td>tcp 8080-8089</td>
+<td>Jenkins,JBoss</td>
+<td>反序列化,控制台弱口令</td>
+</tr>
+<tr>
+<td>tcp 9080-9081,9090</td>
+<td>WebSphere</td>
+<td>Java反序列化&#x2F;弱口令</td>
+</tr>
+<tr>
+<td>tcp 9200,9300</td>
+<td>ElasticSearch</td>
+<td>远程执行</td>
+</tr>
+<tr>
+<td>tcp 11211</td>
+<td>Memcached</td>
+<td>未授权访问</td>
+</tr>
+<tr>
+<td>tcp 27017,27018</td>
+<td>MongoDB</td>
+<td>爆破,未授权访问</td>
+</tr>
+<tr>
+<td>tcp 50070,50030</td>
+<td>Hadoop</td>
+<td>默认端口未授权访问</td>
+</tr>
+</tbody></table>
+<br>
+
+<p>开放的端口可以判断安装应用服务器，的是什么数据库等等，应对安全问题<br><br></p>
+<h2 id="Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术"><a href="#Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术" class="headerlink" title="Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术"></a>Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术</h2><p>可以用作Web，应用中间件，数据库类，其他服务协议探针</p>
+<ol>
+<li><p>端口扫描工具：<a target="_blank" rel="noopener" href="https://nmap.org/download.html">Nmap</a>，<a target="_blank" rel="noopener" href="https://github.com/robertdavidgraham/masscan">MASSCAN</a>，网络空间 (<a target="_blank" rel="noopener" href="https://quake.360.net/quake/#/index">360</a>，<a target="_blank" rel="noopener" href="https://fofa.info/">fofa</a>，<a target="_blank" rel="noopener" href="https://hunter.qianxin.com/">奇安信</a>等)<br>使用参考：<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/lzy575566/p/15513726.html">编译MASSCAN</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_53079406/article/details/125266331">MASSCAN核心使用</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_53079406/article/details/125263917">Nmap核心使用方法</a></p>
+</li>
+<li><p>端口开放状态：Close Open Filtered<br>close就是关闭了，别想了<br>open就是开了<br>filtered就是被过滤了，有可能开了，有可能关闭了，因为防火墙的原因</p>
+</li>
+<li><p>需要考虑情况：防火墙，内网环境<br>防火墙可能出现情况：防火墙阻止判断，端口明明开放，却无法通讯<br>内网环境可能出现情况：明明Web的80或者8080端口，数据库端口开的，网站也能正常打开，但是你对目标进行端口扫描，发现端口没有开放（排除防火墙问题），因为去扫，扫的是外网，没有用，需要扫其中的内网，没办法解决，只能说会出现这种状况</p>
+<br></li>
+</ol>
+<h2 id="WAF防火墙-看图-项目-指纹"><a href="#WAF防火墙-看图-项目-指纹" class="headerlink" title="WAF防火墙-看图&amp;项目&amp;指纹"></a>WAF防火墙-看图&amp;项目&amp;指纹</h2><p>工具链接: <a target="_blank" rel="noopener" href="https://github.com/EnableSecurity/wafw00f">WAFW00F</a>，<a target="_blank" rel="noopener" href="https://github.com/stamparm/identYwaf">identYwaf</a></p>
+<ol>
+<li><p>WAF解释：<br>Web应用防护系统（也称为：网站应用级入侵防御系统。英文：Web Application Firewall，简称：WAF）。利用国际上公认的一种说法：Web应用防火墙是通过执行一系列针对HTTP&#x2F;HTTPS的安全策略来专门为Web应用提供保护的一款产品。大部分的WAF都是绕过不了的，能绕过的都是鸡肋的。看见WAF可以直接跑路了，除非是宝塔，安全狗这些可以试试。</p>
+</li>
+<li><p>WAF分类：<br>云WAF：百度安全宝，阿里云盾，华为云，亚马逊云，长亭雷池等（根据产品等级，对象个数来收费，针对中大型企业，色色公司，技术最先进的，时刻升级，时刻保障）<br>硬件WAF：绿盟、安恒、深信服、知道创宇等公司商业产品（政府，军工单位相关，技术也比较强）<br>软件WAF：宝塔，安全狗、D盾等（小中型公司，没经济实力的个人公司）<br>代码级WAF：自己写的代码过滤规则，防止出现注入等，一般是在代码里面写死的</p>
+</li>
+<li><p>识别看图：<br>拦截页面，identYwaf项目内置</p>
+</li>
+<li><p>识别项目：<br>网络空间识别</p>
+<br></li>
+</ol>
+<h2 id="蜜罐平台-人工-网络空间-项目"><a href="#蜜罐平台-人工-网络空间-项目" class="headerlink" title="蜜罐平台-人工&amp;网络空间&amp;项目"></a>蜜罐平台-人工&amp;网络空间&amp;项目</h2><ol>
+<li><p>蜜罐解释：<br>蜜罐是一种安全威胁的检测技术，其本质在于引诱和欺骗攻击者，并且通过记录攻击者的攻击日志来产生价值。安全研究人员可以通过分析蜜罐的被攻击记录推测攻击者的意图和手段等信息。攻击方可以通过蜜罐识别技术来发现和规避蜜罐。因此，我们有必要站在红队攻击者的角度钻研蜜罐识别的方式方法。</p>
+</li>
+<li><p>蜜罐分类：<br>根据蜜罐与攻击者之间进行的交互的程度可以将蜜罐分为三类：低交互蜜罐.中交互蜜罐、高交互蜜罐。当然还可以根据蜜罐模拟的目标进行分类，比如：数据库蜜罐、工控蜜罐、物联网蜜罐、Web蜜罐等等。</p>
+</li>
+<li><p>识别原理，技术：<br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/jPz9hBmUypFyQlU27vglUg">https://mp.weixin.qq.com/s/jPz9hBmUypFyQlU27vglUg</a></p>
+</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://hfish.net/#/">hfish</a> 搭建蜜罐，这个搭建的大部分可以绕过网络空间的判断蜜罐</p>
+<p>蜜罐项目识别 <a target="_blank" rel="noopener" href="https://github.com/360quake/quake_rs">360quake</a>（很好，可以识别，但是需要360网络空间冲积分用key）<br>quake.exe init apikey值<br>quake.exe honeypot 目标<br>网络空间搜索IP，网站可以帮助判断</p>
+<p>蜜罐项目人工识别，设备指纹分析，判断蜜罐<br>识别的端口很多而有规律性，可能是蜜罐</p>
+<p>Web访问协议就下载，正常真实系统不会出现这种情况，蜜罐会记录攻击者的账号密码，但是账号密码会采用web功能jsonp传输给蜜罐（蜜罐是不用使用mysql这种数据库的），如果访问端口，就会下载这个文件，一看就是蜜罐了</p>
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B916/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">10</div>
+                    <div class="trm-cover-month">2024/03</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B9/">
+                    信息打点
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B916/" class="trm-anima-link">
+                    CDN绕过&amp;业务部署&amp;漏洞回链&amp;接口探针&amp;全网扫描&amp;反向邮件
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/03/10</li>
+                <li>22:02</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B914/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">10</div>
+                    <div class="trm-cover-month">2024/03</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B9/">
+                    信息打点
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B914/" class="trm-anima-link">
+                    JS架构&amp;框架识别&amp;泄漏提取&amp;API接口枚举&amp;FUZZ爬虫&amp;插件项目
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/03/10</li>
+                <li>21:01</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-scroll-animation">
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2024- 2024</span>
+            <span class="footer-separator"data-separator=" · "></span>
+            <span class="trm-accent-color">Cypher Sun</span>
+        </div>
+    
+
+    
+        <div class="trm-footer-item">
+            <span>
+                由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v7.1.1
+            </span>
+            <span class="footer-separator" data-separator=" | "></span>
+            <span> 
+                主题 - 
+                <a rel="noopener" href='https://github.com/MaLuns/hexo-theme-async' target='_blank'>Async</a>
+                v2.1.10
+            </span>
+        </div>
+      
+
+    
+        <div class="trm-footer-item blog-run-long"></div>
+     
+
+     
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
+    
+        <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
+            <i class="iconfont fas fa-arrows-alt-h"></i>
+        </div>
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+  <!-- Plugin -->
+
+
+
+
+    
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+        <script src="/js/plugins/typing.js?v=2.1.10"></script>
+    
+
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+
+
+<script id="async-script" src="/js/main.js?v=2.1.10"></script>
+
+<script src="https://unpkg.com/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>
