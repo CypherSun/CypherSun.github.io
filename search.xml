@@ -1776,11 +1776,10 @@ Windows服务器防火墙策略:
       </tags>
   </entry>
   <entry>
-    <title>工具7kbscan-WebPathBrute.1.6.2</title>
+    <title>7kbscan-WebPathBrute</title>
     <url>/2024/03/15/%E5%B7%A5%E5%85%B77kbscan-WebPathBrute/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/7kbstorm/7kbscan-WebPathBrute">7kbscan-WebPathBrute</a></p>
 <h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>7kbscan旨在快速扫描网站下的目录</p>
-<h2 id="使用流程"><a href="#使用流程" class="headerlink" title="使用流程"></a>使用流程</h2><p>双击exe使用即可</p>
 ]]></content>
       <categories>
         <category>工具</category>
@@ -1917,7 +1916,7 @@ Windows服务器防火墙策略:
       </tags>
   </entry>
   <entry>
-    <title>工具FireEyeGoldCrystal</title>
+    <title>FireEyeGoldCrystal</title>
     <url>/2024/03/12/%E5%B7%A5%E5%85%B7FireEyeGoldCrystal/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/NHPT/FireEyeGoldCrystal">FireEyeGoldCrystal</a></p>
 <h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>火眼金睛是一个GitHub监控和信息收集工具，支持监控和收集CVE、免杀、漏洞利用等内置关键字和自定义关键字。支持钉钉、Server酱和Telegram推送，过滤敏感词，查找包含关键字的所有仓库并输出到FEGC.xlsx文件。默认关键字列表有限，可通过文件指定关键字和敏感词，由于GitHub API速率限制，目前仅实现单线程。</p>
@@ -2033,7 +2032,7 @@ Windows服务器防火墙策略:
       </tags>
   </entry>
   <entry>
-    <title>工具sqlmap</title>
+    <title>sqlmap</title>
     <url>/2024/03/15/%E5%B7%A5%E5%85%B7sqlmap-master/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/sqlmapproject/sqlmap">Sqlmap</a></p>
 <h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>sqlmap 是一个开源渗透测试工具，可以自动执行检测和利用 SQL 注入缺陷以及接管数据库服务器的过程。 它配备了强大的检测引擎、最终渗透测试仪的许多利基功能以及广泛的开关，包括数据库指纹、从数据库获取数据、访问底层文件系统以及通过输出在操作系统上执行命令。 带外连接。</p>
@@ -2088,13 +2087,10 @@ Windows服务器防火墙策略:
       </tags>
   </entry>
   <entry>
-    <title>工具IIS_shortname_Scanner-master</title>
+    <title>IIS_shortname_Scanner-master</title>
     <url>/2024/03/15/%E5%B7%A5%E5%85%B7IIS-shortname-Scanner-master/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/lijiejie/IIS_shortname_Scanner">IIS_shortname_Scanner</a></p>
 <h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>IIS 短名称扫描器，在某些情况下，Windows 8.3短名称可能会在启用.net的IIS下被暴力枚举。此软件python版本比java版本好用。</p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li>python iis_shortname_Scan.py target</li>
-</ol>
 ]]></content>
   </entry>
   <entry>
