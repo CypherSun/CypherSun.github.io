@@ -15,6 +15,32 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo网站搭建和命令</title>
+    <url>/2024/03/11/Hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="Hexo搭建和命令参考"><a href="#Hexo搭建和命令参考" class="headerlink" title="Hexo搭建和命令参考"></a><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></h2><!-- 换新电脑参考上面网址 -->
+<!-- 每次备份Blog目录下的source，_config.yml，_config.flexblock.yml，_config.async.yml -->
+<!-- 重装的话在www目录下删除整个Blog文件夹，然后在www文件夹下cmd -->
+
+<ol>
+<li><p>WWW目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制备份的source，scaffolds，_config.yml，_config.flexblock.yml，_config.async.yml到Blog目录下<br>删除Blog目录下_config.landscape.yml和theme\flexblock目录下的_config.yml</p>
+</li>
+<li><p>Blog目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/miiiku/hexo-theme-flexblock.git ./themes/flexblock</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-hijiki</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>访问本地：<br>hexo g<br>hexo s<br>访问<a href="http://localhost:4000/">本地 4000端口</a></p>
+</li>
+<li><p>上传github：<br>hexo clean<br>hexo g<br>hexo d<br>访问<a href="https://bosaisun.github.io/">Github 网址</a></p>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>网站搭建</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown语法</title>
     <url>/2024/03/11/Markdown%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h2 id="Markdown-官方教程"><a href="#Markdown-官方教程" class="headerlink" title="Markdown 官方教程"></a><a href="https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88">Markdown 官方教程</a></h2><table>
@@ -95,30 +121,142 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo网站搭建和命令</title>
-    <url>/2024/03/11/Hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h2 id="Hexo搭建和命令参考"><a href="#Hexo搭建和命令参考" class="headerlink" title="Hexo搭建和命令参考"></a><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></h2><!-- 换新电脑参考上面网址 -->
-<!-- 每次备份Blog目录下的source，_config.yml，_config.flexblock.yml，_config.async.yml -->
-<!-- 重装的话在www目录下删除整个Blog文件夹，然后在www文件夹下cmd -->
+    <title>Web应用&amp;源码泄漏&amp;开源闭源&amp;指纹识别&amp;GIT&amp;SVN&amp;DS&amp;备份</title>
+    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B913/</url>
+    <content><![CDATA[<h2 id="后端-开源-指纹识别-源码下载"><a href="#后端-开源-指纹识别-源码下载" class="headerlink" title="后端-开源-指纹识别-源码下载"></a>后端-开源-指纹识别-源码下载</h2><table>
+<thead>
+<tr>
+<th>标签</th>
+<th>名称</th>
+<th>地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>优选指纹识别</td>
+<td>TideFinger潮汐</td>
+<td><a href="http://finger.tidesec.net/">http://finger.tidesec.net/</a></td>
+</tr>
+<tr>
+<td>优选指纹识别</td>
+<td>云悉指纹</td>
+<td><a href="https://www.yunsee.cn/">https://www.yunsee.cn/</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>在线cms指纹识别</td>
+<td><a href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>Wappalyzer</td>
+<td><a href="https://github.com/AliasIO/wappalyzer">https://github.com/AliasIO/wappalyzer</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>WhatWeb</td>
+<td><a href="https://github.com/urbanadventurer/WhatWeb">https://github.com/urbanadventurer/WhatWeb</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>数字观星Finger-P</td>
+<td><a href="https://fp.shuziguanxing.com/#/">https://fp.shuziguanxing.com/#/</a></td>
+</tr>
+</tbody></table>
+<br>
+通过指纹识别，CMS识别项目，下载到源码之后，通过访问网站目录验证确定是否符合该源码
+<br>
+<br>
 
-<ol>
-<li><p>WWW目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>复制备份的source，scaffolds，_config.yml，_config.flexblock.yml，_config.async.yml到Blog目录下<br>删除Blog目录下_config.landscape.yml和theme\flexblock目录下的_config.yml</p>
-</li>
-<li><p>Blog目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/miiiku/hexo-theme-flexblock.git ./themes/flexblock</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-hijiki</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>访问本地：<br>hexo g<br>hexo s<br>访问<a href="http://localhost:4000/">本地 4000端口</a></p>
-</li>
-<li><p>上传github：<br>hexo clean<br>hexo g<br>hexo d<br>访问<a href="https://bosaisun.github.io/">Github 网址</a></p>
-</li>
+
+<h2 id="后端-闭源-配置不当-源码泄漏"><a href="#后端-闭源-配置不当-源码泄漏" class="headerlink" title="后端-闭源-配置不当-源码泄漏"></a>后端-闭源-配置不当-源码泄漏</h2><p>备份：敏感目录文件扫描，管理员习惯备份源代码备份到网站目录，可以扫到并下载</p>
+<p>CVS：<br><a href="https://github.com/kost/dvcs-ripper">dvcs-ripper</a></p>
+<p>GIT：<br>如果发布了，没有删除.git文件，就能使用<a href="https://github.com/lijiejie/GitHack">Githack</a>恢复文件到敏感信息</p>
+<p>SVN：<br>和git原理是一致的，没有删除.Svn文件，就能使用<a href="https://github.com/callmefeifei/SvnHack">Svnhack</a>恢复文件获取到敏感信息</p>
+<p>DS_Store：<br>针对Mac电脑，目录结构进行存储，<a href="https://github.com/lijiejie/ds_store_exp">ds_store_exp</a>不能直接得到源码，得到的是目录架构</p>
+<p>Composer.json：<br>开发的自带文件，利用json文件查看调用的信息，针对php的</p>
+<p><a href="https://www.secpulse.com/archives/124398.html">常见的Web源码泄漏漏洞及其利用</a><br><br></p>
+<h2 id="源码泄漏原因："><a href="#源码泄漏原因：" class="headerlink" title="源码泄漏原因："></a>源码泄漏原因：</h2><ol>
+<li>源码本身的特性入口</li>
+<li>管理员不好的习惯入口</li>
+<li>管理员不好的配置入口</li>
+<li>管理员不好的意识入口</li>
+<li>管理员资源信息搜集入口<br></li>
 </ol>
+<h2 id="源码泄漏集合："><a href="#源码泄漏集合：" class="headerlink" title="源码泄漏集合："></a>源码泄漏集合：</h2><p>composer.json<br>git源码泄露<br>svn源码泄露<br>hg源码泄漏<br>网站备份压缩文件<br>WEB-INF&#x2F;web.xml 泄露<br>DS_Store文件泄露<br>SWP文件泄露<br>CVS泄露<br>Bzr泄露<br>GitHub源码泄漏<br><br></p>
+<h2 id="后端-方向-资源Github-源码泄漏"><a href="#后端-方向-资源Github-源码泄漏" class="headerlink" title="后端-方向-资源Github-源码泄漏"></a>后端-方向-资源Github-源码泄漏</h2><p>解决1：识别出大致信息却无下载资源<br>解决2：未识别出信息，使用码云，Github，OSCHINA资源，获取开发作者的源码<br>解决3：其他行业开发使用对口资源站获取，例如互站网</p>
+<p>涉及：<br><a href="https://gitee.com/">Gitee</a><br><a href="https://www.oschina.net/">OSCHINA</a><br><a href="https://github.com/">Github</a><br><br></p>
+<p>黑源码：<br><a href="https://www.huzhan.com/">互站网</a><br><a href="https://28xin.com/">藏宝库</a><br><a href="https://www.lengcat.com/">冷猫资源网</a><br><a href="https://www.xlymz.com/">小鹿源码站</a><br><a href="https://www.ymadx.com/">源码当先</a><br><br></p>
+<table>
+<thead>
+<tr>
+<th>Github 查询类型</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>仓库标题搜索含有关键字</td>
+<td><code>in:name test</code></td>
+</tr>
+<tr>
+<td>仓库描述搜索含有关键字</td>
+<td><code>in:description test</code></td>
+</tr>
+<tr>
+<td>Readme文件搜索含有关键字</td>
+<td><code>in:readme test</code></td>
+</tr>
+<tr>
+<td>stars数量大于3000的搜索关键字</td>
+<td><code>stars:&gt;3000 test</code></td>
+</tr>
+<tr>
+<td>stars数量在1000到3000的搜索关键字</td>
+<td><code>stars:1000..3000 test</code></td>
+</tr>
+<tr>
+<td>forks数量大于1000的搜索关键字</td>
+<td><code>forks:&gt;1000 test</code></td>
+</tr>
+<tr>
+<td>forks数量在1000到3000的搜索关键字</td>
+<td><code>forks:1000..3000 test</code></td>
+</tr>
+<tr>
+<td>仓库大小大于5000k的搜索关键字</td>
+<td><code>size:&gt;=5000 test</code></td>
+</tr>
+<tr>
+<td>发布时间大于2019-02-12的搜索关键字</td>
+<td><code>pushed:&gt;2019-02-12 test</code></td>
+</tr>
+<tr>
+<td>创建时间大于2019-02-12的搜索关键字</td>
+<td><code>created:&gt;2019-02-12 test</code></td>
+</tr>
+<tr>
+<td>用户名搜索</td>
+<td><code>user:test</code></td>
+</tr>
+<tr>
+<td>指定LICENSE搜索关键字</td>
+<td><code>license:apache-2.0 test</code></td>
+</tr>
+<tr>
+<td>在特定语言的代码中搜索关键字</td>
+<td><code>language:java test</code></td>
+</tr>
+<tr>
+<td>组合搜索</td>
+<td><code>user:test in:name test</code></td>
+</tr>
+</tbody></table>
+<br>
+
+<p>关键字配合谷歌搜索：<br>site:Github.com smtp<br>site:Github.com smtp @qq.com<br>site:Github.com smtp @126.com<br>site:Github.com smtp @163.com<br>site:Github.com smtp @sina.com.cn<br>site:Github.com smtp password<br>site:Github.com String password smtp</p>
 ]]></content>
-      <tags>
-        <tag>网站搭建</tag>
-      </tags>
+      <categories>
+        <category>信息打点</category>
+      </categories>
   </entry>
   <entry>
     <title>Web应用&amp;企业产权&amp;指纹识别&amp;域名资产&amp;网络空间&amp;威胁情报</title>
@@ -407,144 +545,6 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping  www.baidu.com，ping xxx.baidu.com，ping xxxx.baidu.com... <span class="comment">#来暴力破解</span></span><br></pre></td></tr></table></figure>
 <p>可以通过接口查询以前用过的子域名，OneForAll子域名收集，集合了其他的工具的总集，很强大，但是没总和网络空间和威胁情报<br>指纹识别：潮汐和云溪指纹识别比较好，看到网站是使用什么搭建的，CDN，操作系统，CMS等等，然后可以寻找搭建软件的漏洞来攻击<br><br></p>
 <h2 id="Web架构资产："><a href="#Web架构资产：" class="headerlink" title="Web架构资产："></a>Web架构资产：</h2><p>程序语言<br>框架源码<br>搭建平台<br>数据库类<br>操作系统</p>
-]]></content>
-      <categories>
-        <category>信息打点</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Web应用&amp;源码泄漏&amp;开源闭源&amp;指纹识别&amp;GIT&amp;SVN&amp;DS&amp;备份</title>
-    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B913/</url>
-    <content><![CDATA[<h2 id="后端-开源-指纹识别-源码下载"><a href="#后端-开源-指纹识别-源码下载" class="headerlink" title="后端-开源-指纹识别-源码下载"></a>后端-开源-指纹识别-源码下载</h2><table>
-<thead>
-<tr>
-<th>标签</th>
-<th>名称</th>
-<th>地址</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>优选指纹识别</td>
-<td>TideFinger潮汐</td>
-<td><a href="http://finger.tidesec.net/">http://finger.tidesec.net/</a></td>
-</tr>
-<tr>
-<td>优选指纹识别</td>
-<td>云悉指纹</td>
-<td><a href="https://www.yunsee.cn/">https://www.yunsee.cn/</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>在线cms指纹识别</td>
-<td><a href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>Wappalyzer</td>
-<td><a href="https://github.com/AliasIO/wappalyzer">https://github.com/AliasIO/wappalyzer</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>WhatWeb</td>
-<td><a href="https://github.com/urbanadventurer/WhatWeb">https://github.com/urbanadventurer/WhatWeb</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>数字观星Finger-P</td>
-<td><a href="https://fp.shuziguanxing.com/#/">https://fp.shuziguanxing.com/#/</a></td>
-</tr>
-</tbody></table>
-<br>
-通过指纹识别，CMS识别项目，下载到源码之后，通过访问网站目录验证确定是否符合该源码
-<br>
-<br>
-
-
-<h2 id="后端-闭源-配置不当-源码泄漏"><a href="#后端-闭源-配置不当-源码泄漏" class="headerlink" title="后端-闭源-配置不当-源码泄漏"></a>后端-闭源-配置不当-源码泄漏</h2><p>备份：敏感目录文件扫描，管理员习惯备份源代码备份到网站目录，可以扫到并下载</p>
-<p>CVS：<br><a href="https://github.com/kost/dvcs-ripper">dvcs-ripper</a></p>
-<p>GIT：<br>如果发布了，没有删除.git文件，就能使用<a href="https://github.com/lijiejie/GitHack">Githack</a>恢复文件到敏感信息</p>
-<p>SVN：<br>和git原理是一致的，没有删除.Svn文件，就能使用<a href="https://github.com/callmefeifei/SvnHack">Svnhack</a>恢复文件获取到敏感信息</p>
-<p>DS_Store：<br>针对Mac电脑，目录结构进行存储，<a href="https://github.com/lijiejie/ds_store_exp">ds_store_exp</a>不能直接得到源码，得到的是目录架构</p>
-<p>Composer.json：<br>开发的自带文件，利用json文件查看调用的信息，针对php的</p>
-<p><a href="https://www.secpulse.com/archives/124398.html">常见的Web源码泄漏漏洞及其利用</a><br><br></p>
-<h2 id="源码泄漏原因："><a href="#源码泄漏原因：" class="headerlink" title="源码泄漏原因："></a>源码泄漏原因：</h2><ol>
-<li>源码本身的特性入口</li>
-<li>管理员不好的习惯入口</li>
-<li>管理员不好的配置入口</li>
-<li>管理员不好的意识入口</li>
-<li>管理员资源信息搜集入口<br></li>
-</ol>
-<h2 id="源码泄漏集合："><a href="#源码泄漏集合：" class="headerlink" title="源码泄漏集合："></a>源码泄漏集合：</h2><p>composer.json<br>git源码泄露<br>svn源码泄露<br>hg源码泄漏<br>网站备份压缩文件<br>WEB-INF&#x2F;web.xml 泄露<br>DS_Store文件泄露<br>SWP文件泄露<br>CVS泄露<br>Bzr泄露<br>GitHub源码泄漏<br><br></p>
-<h2 id="后端-方向-资源Github-源码泄漏"><a href="#后端-方向-资源Github-源码泄漏" class="headerlink" title="后端-方向-资源Github-源码泄漏"></a>后端-方向-资源Github-源码泄漏</h2><p>解决1：识别出大致信息却无下载资源<br>解决2：未识别出信息，使用码云，Github，OSCHINA资源，获取开发作者的源码<br>解决3：其他行业开发使用对口资源站获取，例如互站网</p>
-<p>涉及：<br><a href="https://gitee.com/">Gitee</a><br><a href="https://www.oschina.net/">OSCHINA</a><br><a href="https://github.com/">Github</a><br><br></p>
-<p>黑源码：<br><a href="https://www.huzhan.com/">互站网</a><br><a href="https://28xin.com/">藏宝库</a><br><a href="https://www.lengcat.com/">冷猫资源网</a><br><a href="https://www.xlymz.com/">小鹿源码站</a><br><a href="https://www.ymadx.com/">源码当先</a><br><br></p>
-<table>
-<thead>
-<tr>
-<th>Github 查询类型</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>仓库标题搜索含有关键字</td>
-<td><code>in:name test</code></td>
-</tr>
-<tr>
-<td>仓库描述搜索含有关键字</td>
-<td><code>in:description test</code></td>
-</tr>
-<tr>
-<td>Readme文件搜索含有关键字</td>
-<td><code>in:readme test</code></td>
-</tr>
-<tr>
-<td>stars数量大于3000的搜索关键字</td>
-<td><code>stars:&gt;3000 test</code></td>
-</tr>
-<tr>
-<td>stars数量在1000到3000的搜索关键字</td>
-<td><code>stars:1000..3000 test</code></td>
-</tr>
-<tr>
-<td>forks数量大于1000的搜索关键字</td>
-<td><code>forks:&gt;1000 test</code></td>
-</tr>
-<tr>
-<td>forks数量在1000到3000的搜索关键字</td>
-<td><code>forks:1000..3000 test</code></td>
-</tr>
-<tr>
-<td>仓库大小大于5000k的搜索关键字</td>
-<td><code>size:&gt;=5000 test</code></td>
-</tr>
-<tr>
-<td>发布时间大于2019-02-12的搜索关键字</td>
-<td><code>pushed:&gt;2019-02-12 test</code></td>
-</tr>
-<tr>
-<td>创建时间大于2019-02-12的搜索关键字</td>
-<td><code>created:&gt;2019-02-12 test</code></td>
-</tr>
-<tr>
-<td>用户名搜索</td>
-<td><code>user:test</code></td>
-</tr>
-<tr>
-<td>指定LICENSE搜索关键字</td>
-<td><code>license:apache-2.0 test</code></td>
-</tr>
-<tr>
-<td>在特定语言的代码中搜索关键字</td>
-<td><code>language:java test</code></td>
-</tr>
-<tr>
-<td>组合搜索</td>
-<td><code>user:test in:name test</code></td>
-</tr>
-</tbody></table>
-<br>
-
-<p>关键字配合谷歌搜索：<br>site:Github.com smtp<br>site:Github.com smtp @qq.com<br>site:Github.com smtp @126.com<br>site:Github.com smtp @163.com<br>site:Github.com smtp @sina.com.cn<br>site:Github.com smtp password<br>site:Github.com String password smtp</p>
 ]]></content>
       <categories>
         <category>信息打点</category>
@@ -921,6 +921,59 @@
       </categories>
   </entry>
   <entry>
+    <title>CDN绕过&amp;业务部署&amp;漏洞回链&amp;接口探针&amp;全网扫描&amp;反向邮件</title>
+    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B916/</url>
+    <content><![CDATA[<h2 id="前置知识："><a href="#前置知识：" class="headerlink" title="前置知识："></a>前置知识：</h2><p>1.传统访问：用户访问域名 -&gt; 真实服务器IP -&gt; 访问目标主机<br>2.普通CDN：用户访问域名 -&gt; CDN节点 -&gt; 真实服务器IP -&gt; 访问目标主机<br>3.带WAF的CDN：用户访问域名 -&gt; CDN节点（WAF） -&gt; 真实服务器IP -&gt; 访问目标主机</p>
+<p>国内服务商：<br>阿里云  百度云  七牛云<br>又拍云 腾讯云  Ucloud<br>360  网宿科技 ChinaCache</p>
+<p>国外服务商：<br>CloudFlare StackPath Fastly<br>Akamai CloudFront Edgecast<br>CDNetworks Google Cloud CDN<br>CacheFly Keycdn Udomain CDN77</p>
+<p>CDN配置：</p>
+<ol>
+<li><p>加速域名-需要启用加速的域名<br>子域名获取真实IP，有一点可信度，但不是绝对性的，需要继续测试多个子域名<br><a href="http://www.baidu.com加速了/">www.baidu.com加速了</a><br>bbs.baidu.com没加速，获得真实IP<br>baidu.com没加速，获得真实IP</p>
+</li>
+<li><p>加速区域-需要启用加速的地区<br>国外访问获取真实IP（加速区域没有勾选全球）</p>
+</li>
+<li><p>加速类型-需要启用加速的资源<br>获得真实IP后找备案号，看看和真实IP对不对得上</p>
+</li>
+</ol>
+<p>针对腾讯和阿里云的服务器IP优先，需要自己判断</p>
+<p>常见方法：<br>子域名，邮件系统，国外访问，证书查询，APP抓包，网络空间<br>通过漏洞或泄露获取，扫全网，以量打量，第三方接口查询等</p>
+<p>Ping网站：<br><a href="https://boce.aliyun.com/detect/">aliyun国外请求</a><br><a href="https://github.com/boy-hack/w8fuckcdn">w8fuckcdn</a><br><a href="https://github.com/Pluto-123/Bypass_cdn">Bypass_cdn</a></p>
+<p><a href="https://mp.weixin.qq.com/s/zxEH-HMqKukmq7qXfrdnQQ">总和非常全的</a></p>
+<br>
+
+<h2 id="CDN服务-识别-绑定访问"><a href="#CDN服务-识别-绑定访问" class="headerlink" title="CDN服务-识别&amp;绑定访问"></a>CDN服务-识别&amp;绑定访问</h2><p><a href="http://www.17ce.com/">17ce Ping</a><br><a href="https://ping.chinaz.com/">chinaz 超级Ping</a></p>
+<p>各地ping（出现多个IP即启用CDN服务）<br>后置：绑定HOST访问解析（参考基础课CDN安全影响）</p>
+<p>CDN绕过-主动漏洞&amp;遗留文件<br>配置加速选项中只加速主域名，导致其他子域名未加速（解析IP可能同IP也可能C段）<br><a href="https://get-site-ip.com/">get-site-ip 查询IP接口</a><br><a href="https://fofa.info/extensions/source">fofa 查询IP接口</a>（针对国外CDN厂商）<br>使用网络空间&amp;第三方功能集合查询判断</p>
+<ol>
+<li>漏洞如：SSRF RCE等<br>利用漏洞，让对方真实服务器主动出网连接我，就可以得到真实IP</li>
+<li>遗留文件：配置性的文件，例如PHPINFO类似代码功能<br>通过访问类似PHPINFO类似代码，会获取本地IP造成地址泄漏例如”SERVER_ADDR”</li>
+</ol>
+<p>CDN绕过-邮件系统<br>判断条件：发信人是当前域名邮件用户名，邮件系统是作不了CDN的<br>让他主动给你发：<br>部署架设的邮件服务器如果向外部用户发送邮件的话，那么邮件头部的源码中会包含此邮件服务器的真实IP地址，有些就不行，没用自己的邮件系统发的就不行，例如有的用的126网易163网易的就不行，因为别人是注册了网易的邮件给你发的，探测的是网易的邮箱IP</p>
+<p>常见的邮件触发点有：</p>
+<ol>
+<li>RSS订阅</li>
+<li>邮箱注册、激活</li>
+<li>邮箱找回密码</li>
+<li>产品更新的邮件推送</li>
+<li>某业务执行后发送的邮件通知</li>
+<li>员工邮箱、邮件管理平台等入口的忘记密码</li>
+</ol>
+<p>或者你可以主动给未知邮箱发：（需要自己的邮件服务器不能第三方例如QQ，需要自己搭建邮件系统），有点骚，但是没别人给你发好用。</p>
+<p>通过发送邮件给个不存在的邮箱地址，因为该用户邮箱不存在，所以发送将失败，并且还会收到一个包含发送该电子邮件给你的服务器的真实IP通知。</p>
+<p>CDN绕过-全网扫描</p>
+<ol>
+<li>判断CDN加速厂商，先看国内的还是国外的</li>
+<li>利用厂商去IP库来筛地址网段</li>
+<li>然后配置，进行范围扫描<br>FUCK CDN工具的扫描流程：先从IP段去扫描符合开放端口，再从IP去访问看看关键字，将符合结果进行保存！</li>
+</ol>
+<p>加速厂商查询：<br><a href="https://tools.ipip.net/cdn.php">ipip 国外请求</a></p>
+<p>IP库工具项目：<br><a href="https://www.cz88.net/geo-public">纯真IP社区库</a><br><a href="https://github.com/Tai7sy/fuckcdn">FUCK CDN</a></p>
+]]></content>
+      <categories>
+        <category>信息打点</category>
+      </categories>
+  </entry>
+  <entry>
     <title>APP资产&amp;知识产权&amp;应用监控&amp;静态提取&amp;动态抓包&amp;动态调试</title>
     <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B918/</url>
     <content><![CDATA[<h2 id="名称获取App信息（爱企查-小蓝本-七麦-点点）"><a href="#名称获取App信息（爱企查-小蓝本-七麦-点点）" class="headerlink" title="名称获取App信息（爱企查&#x2F;小蓝本&#x2F;七麦&#x2F;点点）"></a>名称获取App信息（爱企查&#x2F;小蓝本&#x2F;七麦&#x2F;点点）</h2><ol>
@@ -1256,59 +1309,6 @@
       </categories>
   </entry>
   <entry>
-    <title>CDN绕过&amp;业务部署&amp;漏洞回链&amp;接口探针&amp;全网扫描&amp;反向邮件</title>
-    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B916/</url>
-    <content><![CDATA[<h2 id="前置知识："><a href="#前置知识：" class="headerlink" title="前置知识："></a>前置知识：</h2><p>1.传统访问：用户访问域名 -&gt; 真实服务器IP -&gt; 访问目标主机<br>2.普通CDN：用户访问域名 -&gt; CDN节点 -&gt; 真实服务器IP -&gt; 访问目标主机<br>3.带WAF的CDN：用户访问域名 -&gt; CDN节点（WAF） -&gt; 真实服务器IP -&gt; 访问目标主机</p>
-<p>国内服务商：<br>阿里云  百度云  七牛云<br>又拍云 腾讯云  Ucloud<br>360  网宿科技 ChinaCache</p>
-<p>国外服务商：<br>CloudFlare StackPath Fastly<br>Akamai CloudFront Edgecast<br>CDNetworks Google Cloud CDN<br>CacheFly Keycdn Udomain CDN77</p>
-<p>CDN配置：</p>
-<ol>
-<li><p>加速域名-需要启用加速的域名<br>子域名获取真实IP，有一点可信度，但不是绝对性的，需要继续测试多个子域名<br><a href="http://www.baidu.com加速了/">www.baidu.com加速了</a><br>bbs.baidu.com没加速，获得真实IP<br>baidu.com没加速，获得真实IP</p>
-</li>
-<li><p>加速区域-需要启用加速的地区<br>国外访问获取真实IP（加速区域没有勾选全球）</p>
-</li>
-<li><p>加速类型-需要启用加速的资源<br>获得真实IP后找备案号，看看和真实IP对不对得上</p>
-</li>
-</ol>
-<p>针对腾讯和阿里云的服务器IP优先，需要自己判断</p>
-<p>常见方法：<br>子域名，邮件系统，国外访问，证书查询，APP抓包，网络空间<br>通过漏洞或泄露获取，扫全网，以量打量，第三方接口查询等</p>
-<p>Ping网站：<br><a href="https://boce.aliyun.com/detect/">aliyun国外请求</a><br><a href="https://github.com/boy-hack/w8fuckcdn">w8fuckcdn</a><br><a href="https://github.com/Pluto-123/Bypass_cdn">Bypass_cdn</a></p>
-<p><a href="https://mp.weixin.qq.com/s/zxEH-HMqKukmq7qXfrdnQQ">总和非常全的</a></p>
-<br>
-
-<h2 id="CDN服务-识别-绑定访问"><a href="#CDN服务-识别-绑定访问" class="headerlink" title="CDN服务-识别&amp;绑定访问"></a>CDN服务-识别&amp;绑定访问</h2><p><a href="http://www.17ce.com/">17ce Ping</a><br><a href="https://ping.chinaz.com/">chinaz 超级Ping</a></p>
-<p>各地ping（出现多个IP即启用CDN服务）<br>后置：绑定HOST访问解析（参考基础课CDN安全影响）</p>
-<p>CDN绕过-主动漏洞&amp;遗留文件<br>配置加速选项中只加速主域名，导致其他子域名未加速（解析IP可能同IP也可能C段）<br><a href="https://get-site-ip.com/">get-site-ip 查询IP接口</a><br><a href="https://fofa.info/extensions/source">fofa 查询IP接口</a>（针对国外CDN厂商）<br>使用网络空间&amp;第三方功能集合查询判断</p>
-<ol>
-<li>漏洞如：SSRF RCE等<br>利用漏洞，让对方真实服务器主动出网连接我，就可以得到真实IP</li>
-<li>遗留文件：配置性的文件，例如PHPINFO类似代码功能<br>通过访问类似PHPINFO类似代码，会获取本地IP造成地址泄漏例如”SERVER_ADDR”</li>
-</ol>
-<p>CDN绕过-邮件系统<br>判断条件：发信人是当前域名邮件用户名，邮件系统是作不了CDN的<br>让他主动给你发：<br>部署架设的邮件服务器如果向外部用户发送邮件的话，那么邮件头部的源码中会包含此邮件服务器的真实IP地址，有些就不行，没用自己的邮件系统发的就不行，例如有的用的126网易163网易的就不行，因为别人是注册了网易的邮件给你发的，探测的是网易的邮箱IP</p>
-<p>常见的邮件触发点有：</p>
-<ol>
-<li>RSS订阅</li>
-<li>邮箱注册、激活</li>
-<li>邮箱找回密码</li>
-<li>产品更新的邮件推送</li>
-<li>某业务执行后发送的邮件通知</li>
-<li>员工邮箱、邮件管理平台等入口的忘记密码</li>
-</ol>
-<p>或者你可以主动给未知邮箱发：（需要自己的邮件服务器不能第三方例如QQ，需要自己搭建邮件系统），有点骚，但是没别人给你发好用。</p>
-<p>通过发送邮件给个不存在的邮箱地址，因为该用户邮箱不存在，所以发送将失败，并且还会收到一个包含发送该电子邮件给你的服务器的真实IP通知。</p>
-<p>CDN绕过-全网扫描</p>
-<ol>
-<li>判断CDN加速厂商，先看国内的还是国外的</li>
-<li>利用厂商去IP库来筛地址网段</li>
-<li>然后配置，进行范围扫描<br>FUCK CDN工具的扫描流程：先从IP段去扫描符合开放端口，再从IP去访问看看关键字，将符合结果进行保存！</li>
-</ol>
-<p>加速厂商查询：<br><a href="https://tools.ipip.net/cdn.php">ipip 国外请求</a></p>
-<p>IP库工具项目：<br><a href="https://www.cz88.net/geo-public">纯真IP社区库</a><br><a href="https://github.com/Tai7sy/fuckcdn">FUCK CDN</a></p>
-]]></content>
-      <categories>
-        <category>信息打点</category>
-      </categories>
-  </entry>
-  <entry>
     <title>HTTP数据包&amp;Postman构造&amp;请求方法&amp;请求头修改&amp;状态码判断</title>
     <url>/2024/03/10/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A810/</url>
     <content><![CDATA[<h2 id="数据-方法-头部-状态码"><a href="#数据-方法-头部-状态码" class="headerlink" title="数据-方法&amp;头部&amp;状态码"></a>数据-方法&amp;头部&amp;状态码</h2><p>get：向特定资源发出请求（请求指定页面信息，并返回实体主体）<br>post：向指定资源提交数据进行处理请求（提交表单、上传文件），又可能导致新的资源的建立或原有资源的修改<br>head：与服务器索与get请求一致的相应，响应体不会返回，获取包含在小消息头中的原信息（与get请求类似，返回的响应中没有具体内容，用于获取报头）<br>put：向指定资源位置上上传其最新内容（从客户端向服务器传送的数据取代指定文档的内容），与post的区别是put为幂等，post为非幂等<br>trace：回显服务器收到的请求，用于测试和诊断。trace是http8种请求方式之中最安全的<br>delete：请求服务器删除request-URL所标示的资源（请求服务器删除页面）<br>option：返回服务器针对特定资源所支持的HTML请求方法 或web服务器发送测试服务器功能（允许客户端查看服务器性能）<br>connect：HTTP&#x2F;1.1协议中能够将连接改为管道方式的代理服务器</p>
@@ -1417,38 +1417,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Web架构&amp;前后端分离站&amp;Docker容器站&amp;集成软件站&amp;建站分配</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A82/</url>
-    <content><![CDATA[<h2 id="Web常规化搭建："><a href="#Web常规化搭建：" class="headerlink" title="Web常规化搭建："></a>Web常规化搭建：</h2><p>原理：源码数据都在同服务器<br>影响：无，常规安全测试手法<br><br></p>
-<h2 id="站库分离："><a href="#站库分离：" class="headerlink" title="站库分离："></a>站库分离：</h2><p>原理：源码和数据库不在同服务器<br>存储：其他服务器上数据库&amp;云数据库产品<br>影响：数据库被单独存放，需要连接才可影响数据<br><br></p>
-<h2 id="前后端分离："><a href="#前后端分离：" class="headerlink" title="前后端分离："></a>前后端分离：</h2><p>原理：前端JS框架，API传输数据<br>影响：</p>
-<ol>
-<li>前端页面JS，HTML，Vue存在漏洞很少，采用API传输数据</li>
-<li>后端管理和目标网站大部分不在同一域名</li>
-<li>获得前端的权限有可能不影响后端<br>
-<br></li>
-</ol>
-<h2 id="集成软件（宝塔，phpStudy）："><a href="#集成软件（宝塔，phpStudy）：" class="headerlink" title="集成软件（宝塔，phpStudy）："></a>集成软件（宝塔，phpStudy）：</h2><p>原理：打包类集成化环境，权限配置或受控制，不同的搭建里面的权限设置都不一样<br>影响：攻击者权限对比区别，攻击不能执行</p>
-<p>宝塔：拿到权限后，文件锁定目录，无法看到上级目录，命令无法执行<br>phpStudy：拿到权限后，命令可以法执行<br>IIS：有的命令能执行，有的命令不能执行</p>
-<p>whoami查看权限，不同的东西搭建的网站安全性都不一样<br><br></p>
-<h2 id="Docker容器（Docker-Hub）："><a href="#Docker容器（Docker-Hub）：" class="headerlink" title="Docker容器（Docker Hub）："></a>Docker容器（Docker Hub）：</h2><p>原理：攻击者的安全目录和真实目录不一样，虚拟化技术独立磁盘空间，非真实物理环境<br>影响：所以攻击者是在虚拟空间磁盘，但是可以使用docker 逃逸到外面去</p>
-<p><a href="https://www.w3cschool.cn/docker/">Docker安装</a><br><a href="https://hub.docker.com/">Docker镜像</a><br><br></p>
-<h2 id="建站分配站："><a href="#建站分配站：" class="headerlink" title="建站分配站："></a>建站分配站：</h2><p>例如：凡科建站</p>
-<ol>
-<li>托管</li>
-<li>申请</li>
-</ol>
-<p>原理：利用别人大公司的域名模版建立，直接百度谷歌一搜就知道是不是分配站了<br>影响：实质安全测试非目标资产，而是测试大公司的网安系统，一般也没有人把重要文件放上去，源码不是自己的，域名不是自己的，服务器不是自己的</p>
-<br>
-
-<h2 id="静态Web："><a href="#静态Web：" class="headerlink" title="静态Web："></a>静态Web：</h2><p>例子：大学学的HTML设计的网站<br>原理：数据没有传输性（JS传输不算）<br>影响：无漏洞<br><br></p>
-<h2 id="伪静态："><a href="#伪静态：" class="headerlink" title="伪静态："></a>伪静态：</h2><p>动态转为静态技术，伪装的静态<br><br></p>
-]]></content>
-      <categories>
-        <category>基础入门</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Web架构&amp;OSS存储&amp;负载均衡&amp;CDN加速&amp;反向代理&amp;WAF防护</title>
     <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A83/</url>
     <content><![CDATA[<h2 id="WAF"><a href="#WAF" class="headerlink" title="WAF"></a>WAF</h2><p>原理：Web应用防火墙，旨在提供保护<br>影响：常规Web安全测试手段会受到拦截<br><br></p>
@@ -1485,6 +1453,62 @@
 <h2 id="正反向代理"><a href="#正反向代理" class="headerlink" title="正反向代理"></a>正反向代理</h2><p>正向代理你在客户端操作，客户端主动建立代理并访问目标（不代理不可达）在客户端操作，对服务端没影响<br>反向代理别人在服务端操作，服务端主动转发数据给可访问地址（不主动不可达）</p>
 <p>原理：通过反向代理转发真实服务达到访问目的<br>影响：访问目标只是一个代理，非真实应用服务器<br>注意：正向代理和反向代理都是解决访问不可达的问题，但由于反向代理中多出一个可以重定向解析的功能操作，导致反代理出的站点指向和真实应用毫无关系！<br><br></p>
 <h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><p>原理：分摊到多个服务器来支撑服务，共同完成工作任务，一台服务器崩了还有备份<br>影响：有多个服务器加载服务，测试过程中存在多个目标情况</p>
+]]></content>
+      <categories>
+        <category>基础入门</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Web架构&amp;前后端分离站&amp;Docker容器站&amp;集成软件站&amp;建站分配</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A82/</url>
+    <content><![CDATA[<h2 id="Web常规化搭建："><a href="#Web常规化搭建：" class="headerlink" title="Web常规化搭建："></a>Web常规化搭建：</h2><p>原理：源码数据都在同服务器<br>影响：无，常规安全测试手法<br><br></p>
+<h2 id="站库分离："><a href="#站库分离：" class="headerlink" title="站库分离："></a>站库分离：</h2><p>原理：源码和数据库不在同服务器<br>存储：其他服务器上数据库&amp;云数据库产品<br>影响：数据库被单独存放，需要连接才可影响数据<br><br></p>
+<h2 id="前后端分离："><a href="#前后端分离：" class="headerlink" title="前后端分离："></a>前后端分离：</h2><p>原理：前端JS框架，API传输数据<br>影响：</p>
+<ol>
+<li>前端页面JS，HTML，Vue存在漏洞很少，采用API传输数据</li>
+<li>后端管理和目标网站大部分不在同一域名</li>
+<li>获得前端的权限有可能不影响后端<br>
+<br></li>
+</ol>
+<h2 id="集成软件（宝塔，phpStudy）："><a href="#集成软件（宝塔，phpStudy）：" class="headerlink" title="集成软件（宝塔，phpStudy）："></a>集成软件（宝塔，phpStudy）：</h2><p>原理：打包类集成化环境，权限配置或受控制，不同的搭建里面的权限设置都不一样<br>影响：攻击者权限对比区别，攻击不能执行</p>
+<p>宝塔：拿到权限后，文件锁定目录，无法看到上级目录，命令无法执行<br>phpStudy：拿到权限后，命令可以法执行<br>IIS：有的命令能执行，有的命令不能执行</p>
+<p>whoami查看权限，不同的东西搭建的网站安全性都不一样<br><br></p>
+<h2 id="Docker容器（Docker-Hub）："><a href="#Docker容器（Docker-Hub）：" class="headerlink" title="Docker容器（Docker Hub）："></a>Docker容器（Docker Hub）：</h2><p>原理：攻击者的安全目录和真实目录不一样，虚拟化技术独立磁盘空间，非真实物理环境<br>影响：所以攻击者是在虚拟空间磁盘，但是可以使用docker 逃逸到外面去</p>
+<p><a href="https://www.w3cschool.cn/docker/">Docker安装</a><br><a href="https://hub.docker.com/">Docker镜像</a><br><br></p>
+<h2 id="建站分配站："><a href="#建站分配站：" class="headerlink" title="建站分配站："></a>建站分配站：</h2><p>例如：凡科建站</p>
+<ol>
+<li>托管</li>
+<li>申请</li>
+</ol>
+<p>原理：利用别人大公司的域名模版建立，直接百度谷歌一搜就知道是不是分配站了<br>影响：实质安全测试非目标资产，而是测试大公司的网安系统，一般也没有人把重要文件放上去，源码不是自己的，域名不是自己的，服务器不是自己的</p>
+<br>
+
+<h2 id="静态Web："><a href="#静态Web：" class="headerlink" title="静态Web："></a>静态Web：</h2><p>例子：大学学的HTML设计的网站<br>原理：数据没有传输性（JS传输不算）<br>影响：无漏洞<br><br></p>
+<h2 id="伪静态："><a href="#伪静态：" class="headerlink" title="伪静态："></a>伪静态：</h2><p>动态转为静态技术，伪装的静态<br><br></p>
+]]></content>
+      <categories>
+        <category>基础入门</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>APP架构&amp;小程序&amp;H5+Vue语言&amp;Web封装&amp;原生开发&amp;Flutter</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A84/</url>
+    <content><![CDATA[<h2 id="APP应用开发架构："><a href="#APP应用开发架构：" class="headerlink" title="APP应用开发架构："></a>APP应用开发架构：</h2><ol>
+<li><p>原生开发<br>安卓一般使用Java语言开发，当然现在也有Kotlin语言进行开发。如何开发就涉及到具体编程了。简单描述就是使用安卓提供的一系列控件来实现页面，复杂点的页面可以通过自定义控件来实现。</p>
+</li>
+<li><p>使用HTML5语言开发<br>使用HTML5开发的好处有很多，可多端复用，比如浏览器端，iOS端，当然HTML5开发的体验是没有原生好的。一般是这个页面需要分享出去的话，就用HTML5开发。</p>
+</li>
+<li><p>使用Flutter开发<br>Flutter是近年来谷歌推出的一款UI框架，使用dart语言进行开发，支持跨平台，体验可媲美原生。但是Flutter技术比较新，生态还不完善，开发起来效率相对偏低。</p>
+</li>
+<li><p>常规Web开发<br>Web App软件开发简单地说，就是开发一个网站，然后加入App的壳。Web App一般非常小，内容都是App内的网页展示，受制于网页技术本身，可实现功能少，而且每次打开，几乎所有的内容都需要重新加载，所以反应速度慢，内容加载过多就容易卡死，用户体验差，而且App内的交互设计等非常有效。但开发周期长端，需要的技术人员少，成本低。使用一门，变色龙等，把电脑Web转成手机App版本</p>
+<br>
+<br></li>
+</ol>
+<h2 id="APP-开发架构-原生态-IDEA"><a href="#APP-开发架构-原生态-IDEA" class="headerlink" title="APP-开发架构-原生态-IDEA"></a>APP-开发架构-原生态-IDEA</h2><p>开发难度是最难的，但是效果是最好的<br>安全影响：反编译 &amp; 抓包 &amp; 提取出资产信息测试，逆向的角度去分析逻辑设计安全。<br><br></p>
+<h2 id="APP-开发架构–Web封装-封装平台"><a href="#APP-开发架构–Web封装-封装平台" class="headerlink" title="APP-开发架构–Web封装-封装平台"></a>APP-开发架构–Web封装-封装平台</h2><p>安全影响：本身就是Web，进行抓包Web安全测试<br><br></p>
+<h2 id="APP-开发架构-HTML5-Vue-HBuilderX"><a href="#APP-开发架构-HTML5-Vue-HBuilderX" class="headerlink" title="APP-开发架构-HTML5&amp;Vue-HBuilderX"></a>APP-开发架构-HTML5&amp;Vue-HBuilderX</h2><p>安全影响：API &amp; JS框架安全问题 &amp; JS前端测试，前后端分离，JS渗透测试，接口安全，框架安全测试<br><br></p>
+<h2 id="WX小程序-开发架构-Web封装-平台"><a href="#WX小程序-开发架构-Web封装-平台" class="headerlink" title="WX小程序-开发架构-Web封装-平台"></a>WX小程序-开发架构-Web封装-平台</h2><p>安全影响：本身就是Web，进行Web抓包安全测试<br><br></p>
+<h2 id="WX小程序-开发架构-H5-Vue-HBuilderX"><a href="#WX小程序-开发架构-H5-Vue-HBuilderX" class="headerlink" title="WX小程序-开发架构-H5&amp;Vue-HBuilderX"></a>WX小程序-开发架构-H5&amp;Vue-HBuilderX</h2><p>安全影响：API &amp; JS框架安全问题 &amp; JS前端测试</p>
 ]]></content>
       <categories>
         <category>基础入门</category>
@@ -1549,30 +1573,6 @@ Windows服务器防火墙策略:
       </categories>
   </entry>
   <entry>
-    <title>APP架构&amp;小程序&amp;H5+Vue语言&amp;Web封装&amp;原生开发&amp;Flutter</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A84/</url>
-    <content><![CDATA[<h2 id="APP应用开发架构："><a href="#APP应用开发架构：" class="headerlink" title="APP应用开发架构："></a>APP应用开发架构：</h2><ol>
-<li><p>原生开发<br>安卓一般使用Java语言开发，当然现在也有Kotlin语言进行开发。如何开发就涉及到具体编程了。简单描述就是使用安卓提供的一系列控件来实现页面，复杂点的页面可以通过自定义控件来实现。</p>
-</li>
-<li><p>使用HTML5语言开发<br>使用HTML5开发的好处有很多，可多端复用，比如浏览器端，iOS端，当然HTML5开发的体验是没有原生好的。一般是这个页面需要分享出去的话，就用HTML5开发。</p>
-</li>
-<li><p>使用Flutter开发<br>Flutter是近年来谷歌推出的一款UI框架，使用dart语言进行开发，支持跨平台，体验可媲美原生。但是Flutter技术比较新，生态还不完善，开发起来效率相对偏低。</p>
-</li>
-<li><p>常规Web开发<br>Web App软件开发简单地说，就是开发一个网站，然后加入App的壳。Web App一般非常小，内容都是App内的网页展示，受制于网页技术本身，可实现功能少，而且每次打开，几乎所有的内容都需要重新加载，所以反应速度慢，内容加载过多就容易卡死，用户体验差，而且App内的交互设计等非常有效。但开发周期长端，需要的技术人员少，成本低。使用一门，变色龙等，把电脑Web转成手机App版本</p>
-<br>
-<br></li>
-</ol>
-<h2 id="APP-开发架构-原生态-IDEA"><a href="#APP-开发架构-原生态-IDEA" class="headerlink" title="APP-开发架构-原生态-IDEA"></a>APP-开发架构-原生态-IDEA</h2><p>开发难度是最难的，但是效果是最好的<br>安全影响：反编译 &amp; 抓包 &amp; 提取出资产信息测试，逆向的角度去分析逻辑设计安全。<br><br></p>
-<h2 id="APP-开发架构–Web封装-封装平台"><a href="#APP-开发架构–Web封装-封装平台" class="headerlink" title="APP-开发架构–Web封装-封装平台"></a>APP-开发架构–Web封装-封装平台</h2><p>安全影响：本身就是Web，进行抓包Web安全测试<br><br></p>
-<h2 id="APP-开发架构-HTML5-Vue-HBuilderX"><a href="#APP-开发架构-HTML5-Vue-HBuilderX" class="headerlink" title="APP-开发架构-HTML5&amp;Vue-HBuilderX"></a>APP-开发架构-HTML5&amp;Vue-HBuilderX</h2><p>安全影响：API &amp; JS框架安全问题 &amp; JS前端测试，前后端分离，JS渗透测试，接口安全，框架安全测试<br><br></p>
-<h2 id="WX小程序-开发架构-Web封装-平台"><a href="#WX小程序-开发架构-Web封装-平台" class="headerlink" title="WX小程序-开发架构-Web封装-平台"></a>WX小程序-开发架构-Web封装-平台</h2><p>安全影响：本身就是Web，进行Web抓包安全测试<br><br></p>
-<h2 id="WX小程序-开发架构-H5-Vue-HBuilderX"><a href="#WX小程序-开发架构-H5-Vue-HBuilderX" class="headerlink" title="WX小程序-开发架构-H5&amp;Vue-HBuilderX"></a>WX小程序-开发架构-H5&amp;Vue-HBuilderX</h2><p>安全影响：API &amp; JS框架安全问题 &amp; JS前端测试</p>
-]]></content>
-      <categories>
-        <category>基础入门</category>
-      </categories>
-  </entry>
-  <entry>
     <title>抓包技术&amp;HTTPS协议&amp;APP&amp;小程序&amp;PC应用&amp;WEB&amp;转发联动</title>
     <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A86/</url>
     <content><![CDATA[<h2 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h2><ol>
@@ -1624,28 +1624,6 @@ Windows服务器防火墙策略:
       <categories>
         <category>基础入门</category>
       </categories>
-  </entry>
-  <entry>
-    <title>ARL</title>
-    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ARL/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/TophantTechnology/ARL">ARL</a></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>ARL旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。</p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>阿里云，购买Ubuntu 18.04服务器</p>
-</li>
-<li><p>进入Ubuntu服务器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>参考<a href="https://tophanttechnology.github.io/ARL-doc/system_install/">官方文档</a>执行命令即可</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>综合架构</tag>
-      </tags>
   </entry>
   <entry>
     <title>算法分析&amp;传输加密&amp;数据格式&amp;密文存储&amp;代码混淆&amp;逆向保护</title>
@@ -1701,26 +1679,6 @@ Windows服务器防火墙策略:
       </categories>
   </entry>
   <entry>
-    <title>AsamF</title>
-    <url>/2024/03/12/%E5%B7%A5%E5%85%B7AsamF/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Kento-Sec/AsamF">AsamF</a></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>AsamF是一款集成多个网络资产测绘平台的一站式企业信息资产收集工具。</p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>根目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">AsamF_windows_amd64 -h</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>打开C:\Users.config\asamf的文件进行配置</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>网络空间</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>算法逆向&amp;散列对称非对称&amp;JS源码逆向&amp;AES&amp;DES&amp;RSA&amp;SHA</title>
     <url>/2024/03/10/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A89/</url>
     <content><![CDATA[<h2 id="安全测试流程："><a href="#安全测试流程：" class="headerlink" title="安全测试流程："></a>安全测试流程：</h2><p>有源码直接看源码，分析算法（后端必须要有源码才能彻底知道）<br>没有源码1. 猜识别 2. 看前端JS（加密逻辑是不是在前端）</p>
@@ -1768,6 +1726,48 @@ Windows服务器防火墙策略:
       <categories>
         <category>基础入门</category>
       </categories>
+  </entry>
+  <entry>
+    <title>ARL</title>
+    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ARL/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/TophantTechnology/ARL">ARL</a></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>ARL旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。</p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
+<li><p>阿里云，购买Ubuntu 18.04服务器</p>
+</li>
+<li><p>进入Ubuntu服务器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>参考<a href="https://tophanttechnology.github.io/ARL-doc/system_install/">官方文档</a>执行命令即可</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>综合架构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AsamF</title>
+    <url>/2024/03/12/%E5%B7%A5%E5%85%B7AsamF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Kento-Sec/AsamF">AsamF</a></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>AsamF是一款集成多个网络资产测绘平台的一站式企业信息资产收集工具。</p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
+<li><p>根目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">AsamF_windows_amd64 -h</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开C:\Users.config\asamf的文件进行配置</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>网络空间</tag>
+      </tags>
   </entry>
   <entry>
     <title>Burp Suite</title>
@@ -1832,6 +1832,28 @@ Windows服务器防火墙策略:
       </categories>
       <tags>
         <tag>抓包</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ENScan_GO</title>
+    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ENScan_GO/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>剑指HW&#x2F;SRC，解决在HW&#x2F;SRC场景下遇到的各种针对国内企业信息收集难题</p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
+<li><p>根目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">enscan-0.0.10-windows-amd64.exe -v</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开目录下生成的配置文件</p>
+</li>
+<li><p>登录各个网站，然后复制出cookie进行配置</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>企查信息</tag>
       </tags>
   </entry>
   <entry>
@@ -1971,25 +1993,16 @@ Windows服务器防火墙策略:
       </tags>
   </entry>
   <entry>
-    <title>ENScan_GO</title>
-    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ENScan_GO/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>剑指HW&#x2F;SRC，解决在HW&#x2F;SRC场景下遇到的各种针对国内企业信息收集难题</p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>根目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">enscan-0.0.10-windows-amd64.exe -v</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>打开目录下生成的配置文件</p>
-</li>
-<li><p>登录各个网站，然后复制出cookie进行配置</p>
-</li>
-</ol>
+    <title>红蓝队优秀工具项目集合</title>
+    <url>/2024/03/11/%E7%BA%A2%E8%93%9D%E9%98%9F%E4%BC%98%E7%A7%80%E5%B7%A5%E5%85%B7%E9%A1%B9%E7%9B%AE%E9%9B%86%E5%90%88/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/guchangan1/All-Defense-Tool">All-Defense-Tool</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>本项目集成了全网优秀的开源攻防武器项目，包含信息收集工具（自动化利用工具、资产发现工具、目录扫描工具、子域名收集工具、指纹识别工具、端口扫描工具、各种插件….etc…），漏洞利用工具（各大CMS、OA利用工具、中间件利用工具、反序列化利用工具、数据库利用工具等项目……..），内网渗透工具（隧道代理、密码提取、木马免杀、域渗透…..）、应急响应工具、甲方运维工具、等其他安全攻防资料整理，供攻防双方使用。</p>
 ]]></content>
       <categories>
-        <category>工具</category>
+        <category>项目</category>
       </categories>
       <tags>
-        <tag>企查信息</tag>
+        <tag>项目集合</tag>
       </tags>
   </entry>
   <entry>
@@ -2018,19 +2031,6 @@ Windows服务器防火墙策略:
       </categories>
       <tags>
         <tag>JS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>红蓝队优秀工具项目集合</title>
-    <url>/2024/03/11/%E7%BA%A2%E8%93%9D%E9%98%9F%E4%BC%98%E7%A7%80%E5%B7%A5%E5%85%B7%E9%A1%B9%E7%9B%AE%E9%9B%86%E5%90%88/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/guchangan1/All-Defense-Tool">All-Defense-Tool</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>本项目集成了全网优秀的开源攻防武器项目，包含信息收集工具（自动化利用工具、资产发现工具、目录扫描工具、子域名收集工具、指纹识别工具、端口扫描工具、各种插件….etc…），漏洞利用工具（各大CMS、OA利用工具、中间件利用工具、反序列化利用工具、数据库利用工具等项目……..），内网渗透工具（隧道代理、密码提取、木马免杀、域渗透…..）、应急响应工具、甲方运维工具、等其他安全攻防资料整理，供攻防双方使用。</p>
-]]></content>
-      <categories>
-        <category>项目</category>
-      </categories>
-      <tags>
-        <tag>项目集合</tag>
       </tags>
   </entry>
 </search>
