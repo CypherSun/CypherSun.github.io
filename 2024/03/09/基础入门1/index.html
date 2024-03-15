@@ -7,15 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="正确大小写命名：JavaPythonPHPWindosLinuxIISZBlogMySQLASPDZ通达OAWordPressKeyJSAPIHTML5VuephpStudyWAFCDNiOSKotlinAppIDEA 常规的Web应用搭建： 购买云服务器，购买域名（阿里云） 搭建中间件（IIS） 下载并上传Web程序源码（ZBlog） 添加网站并绑定域名目录   Web必备四大件作用系统（Win">
+<meta name="description" content="常规的Web应用搭建： 购买服务器，购买域名（阿里云） 搭建中间件（IIS） 下载并上传Web程序源码（ZBlog） 添加网站并绑定域名目录   Web必备四大件作用系统（Windos）中间件（IIS）数据库（MySQL）源码（开源ZBlog） 网站有哪些形式展示子域名模式搭建:（这是四套完全不同的程序，不同的域名就是四个目标）  cypher.com ZBlog ASP程序 cypher.sun">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Web应用&amp;架构搭建&amp;站库分离&amp;路由访问&amp;配置受限&amp;DNS解析">
 <meta property="og:url" content="http://example.com/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A81/index.html">
 <meta property="og:site_name" content="Cypher Sun">
-<meta property="og:description" content="正确大小写命名：JavaPythonPHPWindosLinuxIISZBlogMySQLASPDZ通达OAWordPressKeyJSAPIHTML5VuephpStudyWAFCDNiOSKotlinAppIDEA 常规的Web应用搭建： 购买云服务器，购买域名（阿里云） 搭建中间件（IIS） 下载并上传Web程序源码（ZBlog） 添加网站并绑定域名目录   Web必备四大件作用系统（Win">
+<meta property="og:description" content="常规的Web应用搭建： 购买服务器，购买域名（阿里云） 搭建中间件（IIS） 下载并上传Web程序源码（ZBlog） 添加网站并绑定域名目录   Web必备四大件作用系统（Windos）中间件（IIS）数据库（MySQL）源码（开源ZBlog） 网站有哪些形式展示子域名模式搭建:（这是四套完全不同的程序，不同的域名就是四个目标）  cypher.com ZBlog ASP程序 cypher.sun">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-09T07:46:03.000Z">
-<meta property="article:modified_time" content="2024-03-14T09:55:14.881Z">
+<meta property="article:modified_time" content="2024-03-15T14:18:41.006Z">
 <meta property="article:author" content="Cypher Sun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-14 17:55:14"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-15 22:18:41"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -377,39 +377,48 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="正确大小写命名："><a href="#正确大小写命名：" class="headerlink" title="正确大小写命名："></a>正确大小写命名：</h2><p>Java<br>Python<br>PHP<br>Windos<br>Linux<br>IIS<br>ZBlog<br>MySQL<br>ASP<br>DZ<br>通达OA<br>WordPress<br>Key<br>JS<br>API<br>HTML5<br>Vue<br>phpStudy<br>WAF<br>CDN<br>iOS<br>Kotlin<br>App<br>IDEA</p>
-<h2 id="常规的Web应用搭建："><a href="#常规的Web应用搭建：" class="headerlink" title="常规的Web应用搭建："></a>常规的Web应用搭建：</h2><ol>
-<li>购买云服务器，购买域名（阿里云）</li>
+    <h2 id="常规的Web应用搭建："><a href="#常规的Web应用搭建：" class="headerlink" title="常规的Web应用搭建："></a>常规的Web应用搭建：</h2><ol>
+<li>购买服务器，购买域名（阿里云）</li>
 <li>搭建中间件（IIS）</li>
 <li>下载并上传Web程序源码（ZBlog）</li>
 <li>添加网站并绑定域名目录<br>
 <br></li>
 </ol>
 <h2 id="Web必备四大件作用"><a href="#Web必备四大件作用" class="headerlink" title="Web必备四大件作用"></a>Web必备四大件作用</h2><p>系统（Windos）<br>中间件（IIS）<br>数据库（MySQL）<br>源码（开源ZBlog）<br><br></p>
-<h2 id="网站有哪些形式展示"><a href="#网站有哪些形式展示" class="headerlink" title="网站有哪些形式展示"></a>网站有哪些形式展示</h2><p>子域名模式搭建:（这是四套完全不同的程序，不同的域名就是四个目标）</p>
+<h2 id="网站有哪些形式展示"><a href="#网站有哪些形式展示" class="headerlink" title="网站有哪些形式展示"></a>网站有哪些形式展示</h2><p><strong>子域名模式搭建</strong>:（这是四套完全不同的程序，不同的域名就是四个目标）</p>
 <ol>
 <li>cypher.com ZBlog ASP程序</li>
-<li>cypher.cypher.com WordPress PHP程序</li>
+<li>cypher.sun.com WordPress PHP程序</li>
 <li>bbs.cypher.com 论讨 DZ程序</li>
 <li>oa.cypher.com OA 通达OA程序</li>
 </ol>
-<p>端口模式搭建:（这是两套完全不同的端口，就是两个目标）</p>
+<p><strong>端口模式搭建</strong>:（这是两套完全不同的端口，就是两个目标）</p>
 <ol>
 <li>cypher.com ZBlog ASP程序（80默认端口）</li>
 <li>cypher.com:8080 WordPress PHP程序</li>
 </ol>
-<p>目录模式搭建:（这是两套是在一个目录里，但是是两个目标）</p>
+<p><strong>目录模式搭建</strong>:（这是两套是在一个目录里，但是是两个目标）</p>
 <ol>
 <li>cypher.com ZBlog ASP程序</li>
 <li>cypher.com&#x2F;blog WordPress PHP程序</li>
 </ol>
 <p>或者集成软件 &amp; Docker容器 &amp; 分配站等<br><br></p>
-<h2 id="源码类型"><a href="#源码类型" class="headerlink" title="源码类型"></a>源码类型</h2><p>开源：网上免费的源码，源码也分可见和不可见的（ZBlog）<br>商业：花钱找人开发，大部分源码不可见，加密（ASP加密软件），语言特性决定（Java）<br>自写：大型公司都是自写（百度，阿里都有自己的源码）</p>
-<p>源码的结构组成：数据库目录，后台目录，文件目录<br><br></p>
-<h2 id="源码和URL访问对应关系"><a href="#源码和URL访问对应关系" class="headerlink" title="源码和URL访问对应关系"></a>源码和URL访问对应关系</h2><p>绝对路径：C:\Users\Username\Documents\file.txt（写全的就是绝对路径）<br>相对路径：.\file.txt（没写全的就是相对路径，使用了.\代替）<br>例如mvc源码，Java和Python：URL和文件目录对应不上，上传到目录下，但是访问不到，必须按照特定的路由规则去配置决定<br><br></p>
-<h2 id="文件访问解析"><a href="#文件访问解析" class="headerlink" title="文件访问解析"></a>文件访问解析</h2><p>可以通过中间件来更改目录的文件访问权限<br>后门上传之后，要分有没有执行权限，没有权限无法读取和运行<br>但一般网站里面的文件不可能都锁，一般锁图片目录运行就可以了，不然所有目录都锁了，网站直接运行不了<br><br></p>
-<h2 id="站库分离，云数据库存储RDS，云对象存储OSS"><a href="#站库分离，云数据库存储RDS，云对象存储OSS" class="headerlink" title="站库分离，云数据库存储RDS，云对象存储OSS"></a>站库分离，云数据库存储RDS，云对象存储OSS</h2><p>本地一致：数据库就放在同服务器地址下<br>站库分离：另一台服务器存放数据库，或者使用云数据库RDS应用，云数据库都不用服务器并且还可以设置安全组，只允许某些IP连接，还有外连特性，绑定特性，阿里云Key等等更多方式连接站库分离的数据库，有账号密码都连不上，禁止外连<br><br></p>
-<h2 id="中间件配置影响后续手法"><a href="#中间件配置影响后续手法" class="headerlink" title="中间件配置影响后续手法"></a>中间件配置影响后续手法</h2><p>身份验证：Windows身份验证，绕过不了，必须要账号和密码<br>目录权限：防止后门上传并运行的<br>解析规则：MIME类型设置里，以不同的文件后缀名，该下载的下载，该打开的打开，如果更改了就会改变<br><br></p>
+<h2 id="源码类型"><a href="#源码类型" class="headerlink" title="源码类型"></a>源码类型</h2><p><strong>开源</strong>：网上免费的源码，源码也分可见和不可见的（ZBlog）</p>
+<p><strong>商业</strong>：花钱找人开发，大部分源码不可见，加密（ASP加密软件），语言特性决定（Java）</p>
+<p><strong>自写</strong>：大型公司都是自写（百度，阿里都有自己的源码）</p>
+<p><strong>源码的结构组成</strong>：数据库目录，后台目录，文件目录<br><br></p>
+<h2 id="源码和URL访问对应关系"><a href="#源码和URL访问对应关系" class="headerlink" title="源码和URL访问对应关系"></a>源码和URL访问对应关系</h2><p><strong>绝对路径</strong>：C:\Users\Username\Documents\file.txt（写全的就是绝对路径）</p>
+<p><strong>相对路径</strong>：.\file.txt（没写全的就是相对路径，使用了.\代替）</p>
+<p>例如mvc源码，Java和Python：URL和文件目录对应不上，上传到目录下，但是访问不到，必须按照特定的路由规则去配置决定<br><br></p>
+<h2 id="文件访问解析"><a href="#文件访问解析" class="headerlink" title="文件访问解析"></a>文件访问解析</h2><p>可以通过中间件来更改目录的文件访问权限</p>
+<p>后门上传之后，要分有没有执行权限，没有权限无法读取和运行</p>
+<p>但一般网站里面的文件不可能都锁，一般锁图片目录运行就可以了，不然所有目录都锁了，网站直接运行不了<br><br></p>
+<h2 id="站库分离，云数据库存储RDS，云对象存储OSS"><a href="#站库分离，云数据库存储RDS，云对象存储OSS" class="headerlink" title="站库分离，云数据库存储RDS，云对象存储OSS"></a>站库分离，云数据库存储RDS，云对象存储OSS</h2><p><strong>本地一致</strong>：数据库就放在同服务器地址下</p>
+<p><strong>站库分离</strong>：另一台服务器存放数据库，或者使用云数据库RDS应用，云数据库都不用服务器并且还可以设置安全组，只允许某些IP连接，还有外连特性，绑定特性，阿里云Key等等更多方式连接站库分离的数据库，有账号密码都连不上，禁止外连<br><br></p>
+<h2 id="中间件配置影响后续手法"><a href="#中间件配置影响后续手法" class="headerlink" title="中间件配置影响后续手法"></a>中间件配置影响后续手法</h2><p><strong>身份验证</strong>：Windows身份验证，绕过不了，必须要账号和密码</p>
+<p><strong>目录权限</strong>：防止后门上传并运行的</p>
+<p><strong>解析规则</strong>：MIME类型设置里，以不同的文件后缀名，该下载的下载，该打开的打开，如果更改了就会改变<br><br></p>
+<h2 id="正确大小写命名："><a href="#正确大小写命名：" class="headerlink" title="正确大小写命名："></a>正确大小写命名：</h2><p>Java<br>Python<br>PHP<br>Windos<br>Linux<br>IIS<br>ZBlog<br>MySQL<br>ASP<br>DZ<br>通达OA<br>WordPress<br>Key<br>JS<br>API<br>HTML5<br>Vue<br>phpStudy<br>WAF<br>CDN<br>iOS<br>Kotlin<br>App<br>IDEA</p>
 
 </article>
     
