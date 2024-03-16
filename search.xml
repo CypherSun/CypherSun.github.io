@@ -1735,7 +1735,7 @@
   <entry>
     <title>Web架构&amp;前后端分离站&amp;Docker容器站&amp;集成软件站&amp;建站分配</title>
     <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A82/</url>
-    <content><![CDATA[<h2 id="常规化搭建："><a href="#常规化搭建：" class="headerlink" title="常规化搭建："></a>常规化搭建：</h2><p><strong>原理</strong>：源码数据都在同服务器</p>
+    <content><![CDATA[<h2 id="Web常规化搭建："><a href="#Web常规化搭建：" class="headerlink" title="Web常规化搭建："></a>Web常规化搭建：</h2><p><strong>原理</strong>：源码数据都在同服务器</p>
 <p><strong>影响</strong>：无，常规安全测试手法<br><br></p>
 <h2 id="站库分离："><a href="#站库分离：" class="headerlink" title="站库分离："></a>站库分离：</h2><p><strong>原理</strong>：源码和数据库不在同一服务器</p>
 <p><strong>存储</strong>：其他服务器上的数据库&amp;云数据库</p>
@@ -1748,20 +1748,21 @@
 <li>获得前端的权限有可能不影响后端<br>
 <br></li>
 </ol>
-<h2 id="集成软件（宝塔，phpStudy）："><a href="#集成软件（宝塔，phpStudy）：" class="headerlink" title="集成软件（宝塔，phpStudy）："></a>集成软件（宝塔，phpStudy）：</h2><p><strong>原理</strong>：打包类集成化环境，权限配置或受控制，不同的搭建里面的权限设置都不一样</p>
-<p><strong>影响</strong>：攻击者权限对比区别，攻击不能执行<br><br><br>宝塔：拿到权限后，文件锁定目录，无法看到上级目录，命令无法执行</p>
+<h2 id="集成软件（宝塔，phpStudy等）："><a href="#集成软件（宝塔，phpStudy等）：" class="headerlink" title="集成软件（宝塔，phpStudy等）："></a>集成软件（宝塔，phpStudy等）：</h2><p><strong>原理</strong>：打包类集成化环境，基础权限配置不同，不同的搭建里面的权限设置都不一样</p>
+<p><strong>影响</strong>：不同集成软件攻击者拿到的权限就不同<br><br></p>
+<p>例如：<br>宝塔：拿到权限后，文件锁定目录，无法看到上级目录，命令无法执行</p>
 <p>phpStudy：拿到权限后，命令可以法执行</p>
-<p>IIS：有的命令能执行，有的命令不能执行<br><br><br>whoami查看权限，不同的东西搭建的网站安全性都不一样<br><br></p>
-<h2 id="Docker容器（Docker-Hub）："><a href="#Docker容器（Docker-Hub）：" class="headerlink" title="Docker容器（Docker Hub）："></a>Docker容器（Docker Hub）：</h2><p><strong>原理</strong>：攻击者的安全目录和真实目录不一样，虚拟化技术独立磁盘空间，非真实物理环境</p>
-<p><strong>影响</strong>：所以攻击者是在虚拟空间磁盘，但是可以使用docker 逃逸到外面去<br><br></p>
-<p><a href="https://www.w3cschool.cn/docker/">Docker安装</a><br><a href="https://hub.docker.com/">Docker镜像</a><br><br></p>
+<p>IIS：有的命令能执行，有的命令不能执行</p>
+<p>不同的集成软件搭建的网站安全性不一样<br><br></p>
+<h2 id="Docker容器（Docker-Hub）："><a href="#Docker容器（Docker-Hub）：" class="headerlink" title="Docker容器（Docker Hub）："></a>Docker容器（Docker Hub）：</h2><p><strong>原理</strong>：攻击者的攻击的目录和真实目录不一样，Docker使用的是虚拟化技术独立磁盘空间，非真实物理环境</p>
+<p><strong>影响</strong>：攻击者是在虚拟空间磁盘里，可以使用docker逃逸到外面去<br><br></p>
 <h2 id="建站分配站："><a href="#建站分配站：" class="headerlink" title="建站分配站："></a>建站分配站：</h2><p>例如：凡科建站</p>
 <ol>
 <li>托管</li>
 <li>申请</li>
 </ol>
-<p><strong>原理</strong>：利用别人大公司的域名模版建立，直接百度谷歌一搜就知道是不是分配站了</p>
-<p><strong>影响</strong>：实质安全测试非目标资产，而是测试大公司的网安系统，一般也没有人把重要文件放上去，源码不是自己的，域名不是自己的，服务器不是自己的</p>
+<p><strong>原理</strong>：利用别人大公司的域名模版建立，百度谷歌搜索查看是不是分配站</p>
+<p><strong>影响</strong>：进行安全测试非目标的资产，而是测试大公司的安全系统，一般也没有人会把非常重要的文件放上去，因为源码不是自己的，域名不是自己的，服务器不是自己的</p>
 <br>
 
 <h2 id="静态Web："><a href="#静态Web：" class="headerlink" title="静态Web："></a>静态Web：</h2><p>例子：大学学的HTML设计的网站</p>
