@@ -7,20 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="名称获取App信息（爱企查&#x2F;小蓝本&#x2F;七麦&#x2F;点点） 爱企查&amp;小蓝本知识产权  七麦&amp;点点查名称   URL网站备案查App 查备案信息在搜 网站上有App下载 市场直接搜单位名称   App提取信息-静态分析 MobSF AppInfoScanner 两个在线平台  APP打开的时候无数据包，登录有数据包（反编译未找到目标资产，但抓包住到了）原因：那个登">
+<meta name="description" content="前置知识： 传统访问：用户访问域名 -&gt; 真实服务器IP -&gt; 访问目标主机 普通CDN：用户访问域名 -&gt; CDN节点 -&gt; 真实服务器IP -&gt; 访问目标主机 带WAF的CDN：用户访问域名 -&gt; CDN节点（WAF） -&gt; 真实服务器IP -&gt; 访问目标主机   国内服务商：阿里云  百度云  七牛云又拍云 腾讯云  Ucloud360  网宿">
 <meta property="og:type" content="article">
-<meta property="og:title" content="APP资产&amp;知识产权&amp;应用监控&amp;静态提取&amp;动态抓包&amp;动态调试">
-<meta property="og:url" content="http://example.com/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B918/index.html">
+<meta property="og:title" content="CDN绕过&amp;业务部署&amp;漏洞回链&amp;接口探针&amp;全网扫描&amp;反向邮件">
+<meta property="og:url" content="http://example.com/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B95/index.html">
 <meta property="og:site_name" content="Cypher Sun">
-<meta property="og:description" content="名称获取App信息（爱企查&#x2F;小蓝本&#x2F;七麦&#x2F;点点） 爱企查&amp;小蓝本知识产权  七麦&amp;点点查名称   URL网站备案查App 查备案信息在搜 网站上有App下载 市场直接搜单位名称   App提取信息-静态分析 MobSF AppInfoScanner 两个在线平台  APP打开的时候无数据包，登录有数据包（反编译未找到目标资产，但抓包住到了）原因：那个登">
+<meta property="og:description" content="前置知识： 传统访问：用户访问域名 -&gt; 真实服务器IP -&gt; 访问目标主机 普通CDN：用户访问域名 -&gt; CDN节点 -&gt; 真实服务器IP -&gt; 访问目标主机 带WAF的CDN：用户访问域名 -&gt; CDN节点（WAF） -&gt; 真实服务器IP -&gt; 访问目标主机   国内服务商：阿里云  百度云  七牛云又拍云 腾讯云  Ucloud360  网宿">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-03-10T14:13:59.000Z">
-<meta property="article:modified_time" content="2024-03-15T15:28:04.515Z">
+<meta property="article:published_time" content="2024-03-10T14:02:41.000Z">
+<meta property="article:modified_time" content="2024-03-15T15:19:35.097Z">
 <meta property="article:author" content="Cypher Sun">
 <meta name="twitter:card" content="summary">
 
 
-<title >APP资产&知识产权&应用监控&静态提取&动态抓包&动态调试</title>
+<title >CDN绕过&业务部署&漏洞回链&接口探针&全网扫描&反向邮件</title>
 
 <!-- Favicon -->
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-15 23:28:04"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-15 23:19:35"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -226,7 +226,7 @@
                             
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            APP资产&知识产权&应用监控&静态提取&动态抓包&动态调试
+                            CDN绕过&业务部署&漏洞回链&接口探针&全网扫描&反向邮件
                         </h1>
 
                         
@@ -365,7 +365,7 @@
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-clock trm-icon"></i><br>
-            22:13
+            22:02
         </div>
     </div>
     <div class="col-sm-4">
@@ -377,50 +377,64 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="名称获取App信息（爱企查-小蓝本-七麦-点点）"><a href="#名称获取App信息（爱企查-小蓝本-七麦-点点）" class="headerlink" title="名称获取App信息（爱企查&#x2F;小蓝本&#x2F;七麦&#x2F;点点）"></a>名称获取App信息（爱企查&#x2F;小蓝本&#x2F;七麦&#x2F;点点）</h2><ol>
-<li><a target="_blank" rel="noopener" href="https://aiqicha.baidu.com/">爱企查</a>&amp;<a target="_blank" rel="noopener" href="https://www.xiaolanben.com/">小蓝本</a>知识产权 </li>
-<li><a target="_blank" rel="noopener" href="https://www.qimai.cn/">七麦</a>&amp;<a target="_blank" rel="noopener" href="https://app.diandian.com/">点点</a>查名称<br>
+    <h2 id="前置知识："><a href="#前置知识：" class="headerlink" title="前置知识："></a>前置知识：</h2><ol>
+<li>传统访问：用户访问域名 -&gt; 真实服务器IP -&gt; 访问目标主机</li>
+<li>普通CDN：用户访问域名 -&gt; CDN节点 -&gt; 真实服务器IP -&gt; 访问目标主机</li>
+<li>带WAF的CDN：用户访问域名 -&gt; CDN节点（WAF） -&gt; 真实服务器IP -&gt; 访问目标主机<br>
 <br></li>
 </ol>
-<h2 id="URL网站备案查App"><a href="#URL网站备案查App" class="headerlink" title="URL网站备案查App"></a>URL网站备案查App</h2><ol>
-<li>查备案信息在搜</li>
-<li>网站上有App下载</li>
-<li>市场直接搜单位名称<br>
-<br></li>
-</ol>
-<h2 id="App提取信息-静态分析"><a href="#App提取信息-静态分析" class="headerlink" title="App提取信息-静态分析"></a>App提取信息-静态分析</h2><ol>
-<li><a target="_blank" rel="noopener" href="https://github.com/MobSF/Mobile-Security-Framework-MobSF">MobSF</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/kelvinBen/AppInfoScanner">AppInfoScanner</a></li>
-<li>两个在线平台<br></li>
-</ol>
-<p>APP打开的时候无数据包，登录有数据包（反编译未找到目标资产，但抓包住到了）<br>原因：那个登录界面是APP本地打包的资源，并没有对外发送数据</p>
-<p><a target="_blank" rel="noopener" href="https://mogua.co/">摸瓜</a><br><a target="_blank" rel="noopener" href="https://www.zhihuaspace.cn:8888/">南明离火</a><br><br></p>
-<p><strong>Windows - MobSF安装参考</strong>：<br>可以使用f8x工具一键搭建环境<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/B-hai/p/15696948.html">https://www.cnblogs.com/B-hai/p/15696948.html</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/ljh824144294/article/details/119181803">https://blog.csdn.net/ljh824144294/article/details/119181803</a><br><a target="_blank" rel="noopener" href="https://get-shell.com/1878.html">https://get-shell.com/1878.html</a> (有视频)<br><br></p>
-<p><strong>APP提取信息-动态抓包</strong><br>前期部分抓包技术<br><br></p>
-<p><strong>APP提取信息-动态调试</strong><br>MobSF+模拟器<br><br></p>
-<p><strong>通过获取App配置、数据包，去获取URL、API、OSSKey、JS等敏感信息</strong></p>
+<p><strong>国内服务商</strong>：<br>阿里云  百度云  七牛云<br>又拍云 腾讯云  Ucloud<br>360  网宿科技 ChinaCache<br><br></p>
+<p><strong>国外服务商</strong>：<br>CloudFlare StackPath Fastly<br>Akamai CloudFront Edgecast<br>CDNetworks Google Cloud CDN<br>CacheFly Keycdn Udomain CDN77<br><br></p>
+<p><strong>CDN配置</strong>：</p>
 <ol>
-<li>资产信息 - IP域名 网站 - 转到对应Web测试 接口测试 服务测试 </li>
-<li>泄露信息 - 配置Key 资源文件 - Key（OSSKey利用，邮件配置等）</li>
-<li>代码信息 - Java代码安全问题 - 逆向相关</li>
+<li><p>加速域名-需要启用加速的域名<br>子域名获取真实IP，有一点可信度，但不是绝对性的，需要继续测试多个子域名<br><a target="_blank" rel="noopener" href="http://www.baidu.com加速了/">www.baidu.com加速了</a><br>bbs.baidu.com没加速，获得真实IP<br>baidu.com没加速，获得真实IP</p>
+</li>
+<li><p>加速区域-需要启用加速的地区<br>国外访问获取真实IP（加速区域没有勾选全球）</p>
+</li>
+<li><p>加速类型-需要启用加速的资源<br>获得真实IP后找备案号，看看和真实IP对不对得上</p>
+</li>
 </ol>
-<p><strong>App中收集资产</strong></p>
+<p>针对腾讯和阿里云的服务器IP优先，需要自己判断<br><br></p>
+<p><strong>常见方法</strong>：<br>子域名，邮件系统，国外访问，证书查询，APP抓包，网络空间<br>通过漏洞或泄露获取，扫全网，以量打量，第三方接口查询等<br><br></p>
+<p><strong>Ping网站</strong>：<br><a target="_blank" rel="noopener" href="https://boce.aliyun.com/detect/">aliyun国外请求</a><br><a target="_blank" rel="noopener" href="https://github.com/boy-hack/w8fuckcdn">w8fuckcdn</a><br><a target="_blank" rel="noopener" href="https://github.com/Pluto-123/Bypass_cdn">Bypass_cdn</a></p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/zxEH-HMqKukmq7qXfrdnQQ">总和</a></p>
+<br>
+
+<h2 id="CDN服务-识别-绑定访问"><a href="#CDN服务-识别-绑定访问" class="headerlink" title="CDN服务-识别&amp;绑定访问"></a>CDN服务-识别&amp;绑定访问</h2><p><a target="_blank" rel="noopener" href="http://www.17ce.com/">17ce Ping</a><br><a target="_blank" rel="noopener" href="https://ping.chinaz.com/">chinaz 超级Ping</a><br><br></p>
+<p>各地ping（出现多个IP即启用CDN服务）<br>后置：绑定HOST访问解析（参考基础课CDN安全影响）</p>
+<p>CDN绕过-主动漏洞&amp;遗留文件</p>
+<p>配置加速选项中只加速主域名，导致其他子域名未加速（解析IP可能同IP也可能C段）<br><br></p>
+<p><a target="_blank" rel="noopener" href="https://get-site-ip.com/">get-site-ip 查询IP接口</a></p>
+<p><a target="_blank" rel="noopener" href="https://fofa.info/extensions/source">fofa 查询IP接口</a>（针对国外CDN厂商）<br><br></p>
+<p><strong>使用网络空间&amp;第三方功能集合查询判断</strong></p>
 <ol>
-<li>抓包-动态表现</li>
-<li>提取-静态表现&amp;动态调试</li>
-<li>搜索-静态表现<br>
+<li>漏洞如：SSRF RCE等<br>利用漏洞，让对方真实服务器主动出网连接我，就可以得到真实IP</li>
+<li>遗留文件：配置性的文件，例如PHPINFO类似代码功能<br>通过访问类似PHPINFO类似代码，会获取本地IP造成地址泄漏例如”SERVER_ADDR”<br>
 <br></li>
 </ol>
-<p><strong>抓包抓表现出来的数据</strong></p>
-<p>优点：没有误报</p>
-<p>缺点：需要操作，有些操作无法点到，所以无法做到完整<br><br></p>
-<p><strong>反编译从源码中提取数据</strong></p>
-<p>优点：数据较为完整</p>
-<p>缺点：有很多无用的资产信息<br><br></p>
-<p><strong>动态调试从表现中提取数据</strong></p>
-<p>优点：没有误报，解决不能抓包不能代理等情况</p>
-<p>优点；搞逆向的人能看到实时的app调用链等</p>
-<p>缺点：无法做到完整</p>
+<p><strong>CDN绕过-邮件系统</strong><br>判断条件：发信人是当前域名邮件用户名，邮件系统是作不了CDN的</p>
+<p>让他主动给你发：</p>
+<p>部署架设的邮件服务器如果向外部用户发送邮件的话，那么邮件头部的源码中会包含此邮件服务器的真实IP地址，有些就不行，没用自己的邮件系统发的就不行，例如有的用的126网易163网易的就不行，因为别人是注册了网易的邮件给你发的，探测的是网易的邮箱IP<br><br></p>
+<p><strong>常见的邮件触发点</strong>：</p>
+<ol>
+<li>RSS订阅</li>
+<li>邮箱注册、激活</li>
+<li>邮箱找回密码</li>
+<li>产品更新的邮件推送</li>
+<li>某业务执行后发送的邮件通知</li>
+<li>员工邮箱、邮件管理平台等入口的忘记密码</li>
+</ol>
+<p>或者你可以主动给未知邮箱发：（需要自己的邮件服务器不能第三方例如QQ，需要自己搭建邮件系统），有点骚，但是没别人给你发好用。</p>
+<p>通过发送邮件给个不存在的邮箱地址，因为该用户邮箱不存在，所以发送将失败，并且还会收到一个包含发送该电子邮件给你的服务器的真实IP通知。<br><br></p>
+<p><strong>CDN绕过-全网扫描</strong></p>
+<ol>
+<li>判断CDN加速厂商，先看国内的还是国外的</li>
+<li>利用厂商去IP库来筛地址网段</li>
+<li>然后配置，进行范围扫描</li>
+</ol>
+<p>FUCK CDN工具的扫描流程：先从IP段去扫描符合开放端口，再从IP去访问看看关键字，将符合结果进行保存！<br><br></p>
+<p><strong>加速厂商查询</strong>：<br><a target="_blank" rel="noopener" href="https://tools.ipip.net/cdn.php">ipip 国外请求</a><br><br></p>
+<p><strong>IP库工具项目</strong>：<br><a target="_blank" rel="noopener" href="https://www.cz88.net/geo-public">纯真IP社区库</a><br><a target="_blank" rel="noopener" href="https://github.com/Tai7sy/fuckcdn">FUCK CDN</a></p>
 
 </article>
     
@@ -438,42 +452,7 @@
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/11/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B919/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">11</div>
-                    <div class="trm-cover-month">2024/03</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B9/">
-                    信息打点
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/03/11/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B919/" class="trm-anima-link">
-                    小程序应用&amp;解包反编译&amp;动态调试&amp;抓包&amp;静态分析&amp;源码架构
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/03/11</li>
-                <li>01:35</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B917/" class="trm-cover-frame trm-anima-link">
+        <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B96/" class="trm-cover-frame trm-anima-link">
             
             
                 <div class="trm-cover-date">
@@ -490,7 +469,7 @@
                 </a>
             </div>
             <h5>
-                <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B917/" class="trm-anima-link">
+                <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B96/" class="trm-anima-link">
                     语言框架&amp;开发组件&amp;FastJson&amp;Shiro&amp;Log4j&amp;SpringBoot等
                 </a>
             </h5>
@@ -498,6 +477,41 @@
             <ul class="trm-card-data trm-label">
                 <li>24/03/10</li>
                 <li>22:10</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B94/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">10</div>
+                    <div class="trm-cover-month">2024/03</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B9/">
+                    信息打点
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B94/" class="trm-anima-link">
+                    主机架构&amp;蜜罐识别&amp;WAF识别&amp;端口扫描&amp;协议识别&amp;服务安全
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/03/10</li>
+                <li>21:31</li>
                 
                 
             </ul>
