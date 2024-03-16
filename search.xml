@@ -1477,15 +1477,15 @@
 <p><strong>源码的结构组成</strong>：数据库目录，后台目录，文件目录<br><br></p>
 <h2 id="源码和URL访问对应关系"><a href="#源码和URL访问对应关系" class="headerlink" title="源码和URL访问对应关系"></a>源码和URL访问对应关系</h2><p><strong>绝对路径</strong>：C:\Users\Username\Documents\file.txt（写全的就是绝对路径）</p>
 <p><strong>相对路径</strong>：.\file.txt（没写全的就是相对路径，使用了.\代替）</p>
-<p>例如mvc源码，Java和Python：URL和文件目录对应不上，上传到目录下，但是访问不到，必须按照特定的路由规则去配置决定<br><br></p>
+<p>例如mvc源码，Java和Python：URL和文件目录对应不上，上传到目录下，但是访问不到，必须按照特定的路由规则去配置访问<br><br></p>
 <h2 id="文件访问解析"><a href="#文件访问解析" class="headerlink" title="文件访问解析"></a>文件访问解析</h2><p>可以通过中间件来更改目录的文件访问权限</p>
 <p>后门上传之后，要分有没有执行权限，没有权限无法读取和运行</p>
-<p>但一般网站里面的文件不可能都锁，一般锁图片目录运行就可以了，不然所有目录都锁了，网站直接运行不了<br><br></p>
+<p>但一般网站里面的文件执行权限不可能都锁，一般锁图片目录运行就可以了，不然所有目录都锁了，网站直接运行不了<br><br></p>
 <h2 id="站库分离，云数据库存储RDS，云对象存储OSS"><a href="#站库分离，云数据库存储RDS，云对象存储OSS" class="headerlink" title="站库分离，云数据库存储RDS，云对象存储OSS"></a>站库分离，云数据库存储RDS，云对象存储OSS</h2><p><strong>本地一致</strong>：数据库就放在同服务器地址下</p>
-<p><strong>站库分离</strong>：另一台服务器存放数据库，或者使用云数据库RDS应用，云数据库都不用服务器并且还可以设置安全组，只允许某些IP连接，还有外连特性，绑定特性，阿里云Key等等更多方式连接站库分离的数据库，有账号密码都连不上，禁止外连<br><br></p>
+<p><strong>站库分离</strong>：另一台服务器存放数据库，或者使用云数据库RDS应用，云数据库不用服务器并且设置安全组，只允许某些IP连接，包括外连特性，绑定特性，阿里云Key等等更多方式连接站库分离的连接方式，甚至有账号密码都连不上，禁止外连<br><br></p>
 <h2 id="中间件配置影响后续手法"><a href="#中间件配置影响后续手法" class="headerlink" title="中间件配置影响后续手法"></a>中间件配置影响后续手法</h2><p><strong>身份验证</strong>：Windows身份验证，绕过不了，必须要账号和密码</p>
-<p><strong>目录权限</strong>：防止后门上传并运行的</p>
-<p><strong>解析规则</strong>：MIME类型设置里，以不同的文件后缀名，该下载的下载，该打开的打开，如果更改了就会改变<br><br></p>
+<p><strong>目录权限</strong>：防止后门上传并运行</p>
+<p><strong>解析规则</strong>：以不同的文件后缀名，该下载的下载，该打开的打开，如果更改了MIME类型设置就会改变原有情况<br><br></p>
 <h2 id="正确大小写命名："><a href="#正确大小写命名：" class="headerlink" title="正确大小写命名："></a>正确大小写命名：</h2><p>Java<br>Python<br>PHP<br>Windos<br>Linux<br>IIS<br>ZBlog<br>MySQL<br>ASP<br>DZ<br>通达OA<br>WordPress<br>Key<br>JS<br>API<br>HTML5<br>Vue<br>phpStudy<br>WAF<br>CDN<br>iOS<br>Kotlin<br>App<br>IDEA</p>
 ]]></content>
       <categories>
