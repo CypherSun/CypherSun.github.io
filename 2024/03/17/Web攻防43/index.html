@@ -7,16 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cypher Sun">
-<meta property="og:url" content="http://example.com/archives/2024/page/4/index.html">
+<meta name="description" content="PHP-MYSQL-数据请求类型SQL语句由于在黑盒中是无法预知写法的，SQL注入能发成功是需要拼接原SQL语句，大部分黑盒能做的就是分析后各种尝试去判断，所以有可能有注入但可能出现无法注入成功的情况。究其原因大部分都是原SQL语句的未知性导致的拼接失败！ 由于开发者对于数据类型和SQL语句写法（框架写法）导致SQL注入拼接失败，需要解决拼接才能成功  数字型(无符号干扰) 1select * f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP应用&amp;SQL注入&amp;符号拼接&amp;请求方法&amp;HTTP头&amp;JSON&amp;编码类">
+<meta property="og:url" content="http://example.com/2024/03/17/Web%E6%94%BB%E9%98%B243/index.html">
 <meta property="og:site_name" content="Cypher Sun">
+<meta property="og:description" content="PHP-MYSQL-数据请求类型SQL语句由于在黑盒中是无法预知写法的，SQL注入能发成功是需要拼接原SQL语句，大部分黑盒能做的就是分析后各种尝试去判断，所以有可能有注入但可能出现无法注入成功的情况。究其原因大部分都是原SQL语句的未知性导致的拼接失败！ 由于开发者对于数据类型和SQL语句写法（框架写法）导致SQL注入拼接失败，需要解决拼接才能成功  数字型(无符号干扰) 1select * f">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-03-16T20:06:56.000Z">
+<meta property="article:modified_time" content="2024-03-16T20:28:39.327Z">
 <meta property="article:author" content="Cypher Sun">
 <meta name="twitter:card" content="summary">
 
 
-<title >Cypher Sun</title>
+<title >PHP应用&SQL注入&符号拼接&请求方法&HTTP头&JSON&编码类</title>
 
 <!-- Favicon -->
 
@@ -53,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":false,"postUpdate":"2024-03-17 04:36:53"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-17 04:28:39"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -202,12 +206,9 @@
     <!-- banner -->
     <div class="trm-banner">
     
-    <!-- banner video cover -->
-    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover">
-        <source src="https://cdn.moji.com/websrc/video/summer20190515.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        Your browser does not support HTML5 video.
-    </video>
-    <!-- banner video cover end -->
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
     
 
     <!-- banner content -->
@@ -222,10 +223,10 @@
                     <!-- banner title -->
                     <div class="trm-banner-text ">
                         <div class="trm-label trm-mb-20">
-                            The article archive
+                            
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            江碧鸟逾白，<br>山青花欲燃。
+                            PHP应用&SQL注入&符号拼接&请求方法&HTTP头&JSON&编码类
                         </h1>
 
                         
@@ -235,7 +236,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        archives
+                                        2024
                                     </span>
                                 </li>
                             </ul>
@@ -354,207 +355,139 @@
             
             <div class="trm-page-content col-lg-8">
                 <div id="trm-content" class="trm-content">
-                    <div class="row">
-    <div class="col-lg-12">
-        <div class="trm-card">
-            <div style="padding: 0 20px;">
-                
-                    <ul class="row trm-list" style="margin-bottom: 0px;"><li class="col-lg-4 trm-list-item" style="margin: 6px 0;"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">（41）</span></li></ul>
-                
-            </div>
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            03/17
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            04:06
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            Cypher Sun
         </div>
     </div>
 </div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="PHP-MYSQL-数据请求类型"><a href="#PHP-MYSQL-数据请求类型" class="headerlink" title="PHP-MYSQL-数据请求类型"></a>PHP-MYSQL-数据请求类型</h2><p>SQL语句由于在黑盒中是无法预知写法的，SQL注入能发成功是需要拼接原SQL语句，大部分黑盒能做的就是分析后各种尝试去判断，所以有可能有注入但可能出现无法注入成功的情况。究其原因大部分都是原SQL语句的未知性导致的拼接失败！<br><br></p>
+<p>由于开发者对于数据类型和SQL语句写法（框架写法）导致SQL注入拼接失败，需要解决拼接才能成功</p>
+<ol>
+<li><p>数字型(无符号干扰)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * from news <span class="built_in">where</span> <span class="built_in">id</span>=<span class="variable">$id</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>字符型（有符号干扰）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * from news <span class="built_in">where</span> <span class="built_in">id</span>=<span class="string">&#x27;$id&#x27;</span>;</span><br><span class="line">注入语句：http://10.0.1.139:81/new.php?<span class="built_in">id</span>=1<span class="string">&#x27; union select 1,2,3,4,5,6--+</span></span><br><span class="line"><span class="string">拼接语句：select * from news where id=&#x27;</span>1<span class="string">&#x27; union select 1,2,3,4,5,6-- &#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>搜索型（有多符号干扰）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * from news <span class="built_in">where</span> <span class="built_in">id</span> like <span class="string">&#x27;%$id%&#x27;</span></span><br><span class="line">注入语句：http://10.0.1.139:81/new.php?<span class="built_in">id</span>=1%<span class="string">&#x27; union select 1,2,3,4,5,6--+</span></span><br><span class="line"><span class="string">拼接语句：select * from news where id like &#x27;</span>%1%<span class="string">&#x27; union select 1,2,3,4,5,6-- %&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>框架型（有各种符号干扰）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * from news <span class="built_in">where</span> <span class="built_in">id</span>=(<span class="string">&#x27;$id&#x27;</span>);</span><br><span class="line">注入语句：http://10.0.1.139:81/new.php?<span class="built_in">id</span>=1<span class="string">&#x27;) union select 1,2,3,4,5,6--+</span></span><br><span class="line"><span class="string">拼接语句：select * from news where id=(&#x27;</span>1<span class="string">&#x27;) union select 1,2,3,4,5,6-- &#x27;</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * from news <span class="built_in">where</span> (<span class="built_in">id</span>=<span class="string">&#x27;$id&#x27;</span>);</span><br><span class="line">注入语句：http://10.0.1.139:81/new.php?<span class="built_in">id</span>=1<span class="string">&#x27;) union select 1,2,3,4,5,6--+</span></span><br><span class="line"><span class="string">拼接语句：select * from news where id=(&#x27;</span>1<span class="string">&#x27;) union select 1,2,3,4,5,6-- &#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>闭合单引号和括号的时候，不一定非要用–+注释掉后面，有时候不起作用的话，使用#和and ‘1’&#x3D;’1也可以，看情况多试</p>
+</li>
+</ol>
+<br>
 
-<!-- history -->
+<h2 id="PHP-MYSQL-数据请求方法"><a href="#PHP-MYSQL-数据请求方法" class="headerlink" title="PHP-MYSQL-数据请求方法"></a>PHP-MYSQL-数据请求方法</h2><p><strong>全局变量方法</strong>：GET，POST，SERVER，FILES，HTTP头等<br><br></p>
+<p>get请求是在上面测试的：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">GET /new.php?<span class="built_in">id</span>=1%27%20union%20select%201,2,3,4,5,6--+ HTTP/1.1</span><br><span class="line">Host: 10.0.1.139:82</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</span><br><span class="line">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">DNT: 1</span><br><span class="line">Connection: close</span><br><span class="line">Upgrade-Insecure-Requests: 1</span><br></pre></td></tr></table></figure>
+<br>
 
-<div class="row">
+<p>post是在下面测试提交的</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">POST /sqli/post.php HTTP/1.1</span><br><span class="line">Host: 10.0.1.139:82</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</span><br><span class="line">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">Referer: http://10.0.1.139:82/sqli/post.php</span><br><span class="line">DNT: 1</span><br><span class="line">Connection: close</span><br><span class="line">Upgrade-Insecure-Requests: 1</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line">Content-Length: 28</span><br><span class="line"></span><br><span class="line">username=admin&amp;password=1654</span><br></pre></td></tr></table></figure>
+<br>
+
+<p><strong>注入点包括</strong>：</p>
+<p><strong>User-Agent</strong>：使得服务器能够识别客户使用的操作系统，游览器版本等.（很多数据量大的网站中会记录客户使用的操作系统或浏览器版本等存入数据库中）<br><br></p>
+<p><strong>Cookie</strong>：网站为了辨别用户身份、进行session跟踪而储存在用户本地终端上的数据X-Forwarded-For：简称XFF头，它代表客户端，也就是HTTP的请求端真实的IP,（通常一些网站的防注入功能会记录请求端真实IP地址并写入数据库or某文件[通过修改XXF头可以实现伪造IP]）.<br><br></p>
+<p><strong>Rerferer</strong>：浏览器向 WEB 服务器表明自己是从哪个页面链接过来的.<br><br></p>
+<p><strong>Host</strong>：客户端指定自己想访问的WEB服务器的域名&#x2F;IP 地址和端口号<br><br></p>
+<p><strong>X_FORWARDED_FOR</strong>：用户访问的IP其中之一方式</p>
+<br>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ua</span>=<span class="variable">$_SERVER</span>[<span class="string">&#x27;HTTP_USER_AGENT&#x27;</span>]; //数据包里UA头浏览器信息</span><br><span class="line"><span class="variable">$xff</span>=<span class="variable">$_SERVER</span>[<span class="string">&#x27;HTTP_X_FORWARDED_FOR&#x27;</span>]; // 数据包里面的X-Forwarded-<span class="keyword">for</span>:1.101.1.11</span><br><span class="line"><span class="variable">$host</span>=<span class="variable">$_SERVER</span>[<span class="string">&#x27;HTTP_HOST&#x27;</span>]; //数据包host地址</span><br><span class="line"><span class="variable">$re</span>=<span class="variable">$_SERVER</span>[<span class="string">&#x27;HTTP_REFERER&#x27;</span>]; //访问来源 Referer</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$ua</span>.<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$xff</span>.<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$host</span>.<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$re</span>.<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+
+<p><strong>功能点</strong>：</p>
+<ol>
+<li><p>用户登录时</p>
+</li>
+<li><p>登录判断IP时<br>是PHP特性中的$_SERVER[‘HTTP_X_FORWARDED_FOR’];接受IP的绕过（绕过）<br>实现：代码配置固定IP去判断-策略绕过<br>实现：数据库白名单IP去判断-select注入<br>实现：防注入记录IP去保存数据库-insert注入</p>
+</li>
+<li><p>文件上传将文件名写入数据库-insert注入</p>
+<br></li>
+</ol>
+<h2 id="PHP-MYSQL-数据请求格式"><a href="#PHP-MYSQL-数据请求格式" class="headerlink" title="PHP-MYSQL-数据请求格式"></a>PHP-MYSQL-数据请求格式</h2><ol>
+<li><p>数据采用统一格式传输，后端进行格式解析带入数据库（json）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;sadadsasd&#x27; union select 1,2,3,4#&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数据采用加密编码传输，后端进行解密解码带入数据库（base64）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3<span class="string">&#x27; union select 1,2,3,4,5,6 --+</span></span><br><span class="line"><span class="string">MycgdW5pb24gc2VsZWN0IDEsMiwzLDQsNSw2IC0tKw==</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
     <div class="col-lg-12">
         <!-- title -->
         <h5 class="trm-title-with-divider">
-            
-                2024 年的归档
-            
-            <span data-number="01"></span>
+            其他文章
+            <span data-number="02"></span>
         </h5>
     </div>
-    <div class="col-lg-12">
-        <!-- timeline -->
-        <div class="trm-timeline">
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/03/15/Web%E6%94%BB%E9%98%B242/" class="trm-cover-frame trm-anima-link">
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/10/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A810/" class="trm-anima-link">
-                                    HTTP数据包&amp;Postman构造&amp;请求方法&amp;请求头修改&amp;状态码判断
-                                </a>
-                            </h6>
-                        </div>
-                    
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">15</div>
+                    <div class="trm-cover-month">2024/03</div>
                 </div>
-            </div>
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/10/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A89/" class="trm-anima-link">
-                                    算法逆向&amp;散列对称非对称&amp;JS源码逆向&amp;AES&amp;DES&amp;RSA&amp;SHA
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/Web%E6%94%BB%E9%98%B2/">
+                    Web攻防
+                </a>
             </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/10/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A88/" class="trm-anima-link">
-                                    算法分析&amp;传输加密&amp;数据格式&amp;密文存储&amp;代码混淆&amp;逆向保护
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A87/" class="trm-anima-link">
-                                    抓包技术&amp;全局协议&amp;封包监听&amp;网卡模式&amp;APP&amp;小程序&amp;PC应用
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A86/" class="trm-anima-link">
-                                    抓包技术&amp;HTTPS协议&amp;APP&amp;小程序&amp;PC应用&amp;WEB&amp;转发联动
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/09/%E5%B7%A5%E5%85%B7Burp%20Suite/" class="trm-anima-link">
-                                    Burp Suite
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A85/" class="trm-anima-link">
-                                    反弹SHELL&amp;不回显带外&amp;正反向连接&amp;防火墙出入站&amp;文件下载
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A84/" class="trm-anima-link">
-                                    APP架构&amp;小程序&amp;H5+Vue语言&amp;Web封装&amp;原生开发&amp;Flutter
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A83/" class="trm-anima-link">
-                                    Web架构&amp;OSS存储&amp;负载均衡&amp;CDN加速&amp;反向代理&amp;WAF防护
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A82/" class="trm-anima-link">
-                                    Web架构&amp;前后端分离站&amp;Docker容器站&amp;集成软件站&amp;建站分配
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
+            <h5>
+                <a href="/2024/03/15/Web%E6%94%BB%E9%98%B242/" class="trm-anima-link">
+                    PHP应用&amp;MYSQL架构&amp;SQL注入&amp;跨库查询&amp;文件读写&amp;权限操作
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/03/15</li>
+                <li>22:00</li>
+                
+                
+            </ul>
         </div>
-        <!-- timeline end -->
     </div>
 </div>
+    
+</div>
 
-<!-- history end -->
-
-
-    <div class="trm-pagination">
-        <a class="page-number" href="/archives/2024/">1</a><a class="page-number" href="/archives/2024/page/2/">2</a><a class="page-number" href="/archives/2024/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/archives/2024/page/5/">5</a>
-    </div>
-
-
+    
 
 
 
@@ -607,6 +540,10 @@
             
 <div class="trm-fixed-container">
     
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
     
     
         <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
@@ -689,6 +626,10 @@
     
 
     <!-- 评论插件 -->
+    
+        
+
+        
     
 
 

