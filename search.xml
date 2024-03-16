@@ -1884,19 +1884,19 @@
 <p><strong>影响</strong>：隐藏真实源IP，导致对目标测试错误<br><br></p>
 <h2 id="OSS"><a href="#OSS" class="headerlink" title="OSS"></a>OSS</h2><p><strong>原理</strong>：为什么要使用第三方存储？云存储服务，旨在提高访问速度</p>
 <ol>
-<li>静态文件会占用大量带宽</li>
-<li>加载速度</li>
-<li>存储空间</li>
+<li>减轻服务器压力（访问静态文件会占用大量带宽）</li>
+<li>提高加载速度</li>
+<li>节省存储空间</li>
 </ol>
 <p><strong>影响</strong>：资源存储，后门上传上去无法访问，只是存储文件</p>
 <ol>
 <li>修复上传安全</li>
-<li>文件解析不一样</li>
-<li>但Accesskey隐患</li>
+<li>MIME类型文件解析不一样</li>
+<li>Accesskey泄露隐患</li>
 </ol>
 <br>
 
-
+<p>例如：Cloudreve搭配阿里云OSS</p>
 <p>Cloudreve:</p>
 <ol>
 <li>启动应用</li>
@@ -1911,10 +1911,7 @@
 <li>配置Access访问<br>
 <br></li>
 </ol>
-<p><a href="https://cloudreve.org/">Cloudreve 官网下载</a><br><a href="https://github.com/cloudreve/Cloudreve/releases/tag/3.7.1">Cloudreve Github下载</a></p>
-<br>
-
-<h2 id="正反向代理"><a href="#正反向代理" class="headerlink" title="正反向代理"></a>正反向代理</h2><p><strong>正向代理</strong>：你在客户端操作，客户端主动建立代理并访问目标（不代理不可达）在客户端操作，对服务端没影响</p>
+<h2 id="正反向代理"><a href="#正反向代理" class="headerlink" title="正反向代理"></a>正反向代理</h2><p><strong>正向代理</strong>：你在客户端操作，客户端主动建立代理并访问目标，对服务端没影响（不代理不可达）</p>
 <p><strong>反向代理</strong>：别人在服务端操作，服务端主动转发数据给可访问地址（不主动不可达）<br><br></p>
 <p><strong>原理</strong>：通过反向代理转发真实服务达到访问目的</p>
 <p><strong>影响</strong>：访问目标只是一个代理，非真实应用服务器</p>
