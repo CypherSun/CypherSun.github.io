@@ -7,15 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="传输数据-编码型&amp;加密型等为什么要了解，数据在传输的时候进行编码？ 对方服务器在接收的时候，进行解码再带入 如果不对自己的Payload代码进行同样编码的话，传入过去的数据别人不认识，测试无效 测试也要进行payload同样的加密或编码进行提交 安全测试漏洞时候，通常都会进行数据的修改增加提交测试 以数据的正确格式发送接受才行 Base64编码 ： 解码之前：https:&#x2F;&#x2F;indialm">
+<meta name="description" content="传输数据-编码型&amp;加密型等数据在传输前后都需要编码解码，对方服务器在接收数据时，会进行解码再带入 安全测试需要对payload代码进行同样的加密或编码再进行提交。如果不对自己的Payload代码进行同样编码的话，传过去的数据服务器解码后无法识别，测试无效。所以必须保证数据的正确编码格式发送，对方服务器才能正确解码接收。 Base64编码 ： 例子： 解码之前：https:&#x2F;&#x2F;indialm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法分析&amp;传输加密&amp;数据格式&amp;密文存储&amp;代码混淆&amp;逆向保护">
 <meta property="og:url" content="http://example.com/2024/03/10/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A88/index.html">
 <meta property="og:site_name" content="Cypher Sun">
-<meta property="og:description" content="传输数据-编码型&amp;加密型等为什么要了解，数据在传输的时候进行编码？ 对方服务器在接收的时候，进行解码再带入 如果不对自己的Payload代码进行同样编码的话，传入过去的数据别人不认识，测试无效 测试也要进行payload同样的加密或编码进行提交 安全测试漏洞时候，通常都会进行数据的修改增加提交测试 以数据的正确格式发送接受才行 Base64编码 ： 解码之前：https:&#x2F;&#x2F;indialm">
+<meta property="og:description" content="传输数据-编码型&amp;加密型等数据在传输前后都需要编码解码，对方服务器在接收数据时，会进行解码再带入 安全测试需要对payload代码进行同样的加密或编码再进行提交。如果不对自己的Payload代码进行同样编码的话，传过去的数据服务器解码后无法识别，测试无效。所以必须保证数据的正确编码格式发送，对方服务器才能正确解码接收。 Base64编码 ： 例子： 解码之前：https:&#x2F;&#x2F;indialm">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-09T20:43:13.000Z">
-<meta property="article:modified_time" content="2024-03-15T14:49:35.570Z">
+<meta property="article:modified_time" content="2024-03-17T15:28:08.910Z">
 <meta property="article:author" content="Cypher Sun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-15 22:49:35"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-17 23:28:08"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -377,43 +377,46 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="传输数据-编码型-加密型等"><a href="#传输数据-编码型-加密型等" class="headerlink" title="传输数据-编码型&amp;加密型等"></a>传输数据-编码型&amp;加密型等</h2><p>为什么要了解，数据在传输的时候进行编码？</p>
-<p>对方服务器在接收的时候，进行解码再带入</p>
-<p>如果不对自己的Payload代码进行同样编码的话，传入过去的数据别人不认识，测试无效</p>
-<p>测试也要进行payload同样的加密或编码进行提交</p>
-<p>安全测试漏洞时候，通常都会进行数据的修改增加提交测试</p>
-<p>以数据的正确格式发送接受才行<br><br></p>
+    <h2 id="传输数据-编码型-加密型等"><a href="#传输数据-编码型-加密型等" class="headerlink" title="传输数据-编码型&amp;加密型等"></a>传输数据-编码型&amp;加密型等</h2><p>数据在传输前后都需要编码解码，对方服务器在接收数据时，会进行解码再带入</p>
+<p>安全测试需要对payload代码进行同样的加密或编码再进行提交。如果不对自己的Payload代码进行同样编码的话，传过去的数据服务器解码后无法识别，测试无效。所以必须保证数据的正确编码格式发送，对方服务器才能正确解码接收。<br><br></p>
 <p><strong>Base64编码</strong> ：</p>
+<p>例子：</p>
 <p>解码之前：<a target="_blank" rel="noopener" href="https://indialms.in/wfp_login.php?r_id=MQ==">https://indialms.in/wfp_login.php?r_id=MQ==</a></p>
 <p>解码之后：<a target="_blank" rel="noopener" href="https://indialms.in/wfp_login.php?r_id=1">https://indialms.in/wfp_login.php?r_id=1</a><br><br></p>
-<p><strong>MD5加密</strong>：<br>登录的数据包：</p>
+<p><strong>MD5加密</strong>：</p>
+<p>例子：<br>搜狐视频加密：<a target="_blank" rel="noopener" href="https://tv.sohu.com/v/dXMvMzg1MjM2NzE5LzQyNzUyODUzOC5zaHRtbA==.html">https://tv.sohu.com/v/dXMvMzg1MjM2NzE5LzQyNzUyODUzOC5zaHRtbA==.html</a><br><br></p>
+<p>登录的数据包：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">username=admin&amp;password=123456</span><br><span class="line">username=admin&amp;password=e10adc3949ba59abbe56e057f20f883e</span><br></pre></td></tr></table></figure>
-<p>例子：<a target="_blank" rel="noopener" href="https://tv.sohu.com/v/dXMvMzg1MjM2NzE5LzQyNzUyODUzOC5zaHRtbA==.html">https://tv.sohu.com/v/dXMvMzg1MjM2NzE5LzQyNzUyODUzOC5zaHRtbA==.html</a><br>以上是搜狐视频加密<br><br></p>
-<p><strong>字典爆破</strong>：<br>可以对密码进行破解爆破</p>
-<p>帐号不用更改 替换username&#x3D;值即可</p>
-<p>密码需要进行密码算法 保证和password&#x3D;值同等加密才行</p>
-<p><strong>影响</strong>：进行漏洞探测的时候，为了不让你轻易发现漏洞<br><br></p>
-<h2 id="传输格式-常规-JSON-XML等"><a href="#传输格式-常规-JSON-XML等" class="headerlink" title="传输格式-常规&amp;JSON&amp;XML等"></a>传输格式-常规&amp;JSON&amp;XML等</h2><p>JSON XML常规格式，例如开发：数组，列表格式</p>
-<p><strong>影响</strong>：发送漏洞的时候需要按照对方格式上传，通过回显数据分析，需要分析解码回显的数据的情况，判断是否对的还是错的<br><br></p>
-<p>传输格式：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">btnPost=%E7%99%BB%E5%BD%95&amp;username=admin and &amp;password=e10adc3949ba59abbe56e057f20f883e&amp;savedate=1</span><br></pre></td></tr></table></figure>
+<br>
 
-<p>或者：</p>
+<p><strong>字典爆破</strong>：</p>
+<p>可以对密码进行破解爆破，替换password&#x3D;的值即可</p>
+<p>需要密码进行算法解密，需要保证password&#x3D;的值同等加密和数据库的比对上才行</p>
+<p><strong>影响</strong>：进行漏洞探测的时候，为了不让轻易发现漏洞<br><br></p>
+<h2 id="传输格式-常规-JSON-XML等"><a href="#传输格式-常规-JSON-XML等" class="headerlink" title="传输格式-常规&amp;JSON&amp;XML等"></a>传输格式-常规&amp;JSON&amp;XML等</h2><p>JSON XML常规格式</p>
+<p><strong>影响</strong>：发送漏洞的时候需要按照对方格式上传，通过回显数据进行分析，分析解码回显的数据情况，判断是对的还是错的<br><br></p>
+<p>传输常规格式例子：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">btnPost=%E7%99%BB%E5%BD%95&amp;username=admin and &amp;password=e10adc3949ba59abbe56e057f20f883e&amp;savedate=1</span><br></pre></td></tr></table></figure>
+<br>
+
+<p>JSON格式例子：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="string">&quot;btnPost&quot;</span>: <span class="string">&quot;%E7%99%BB%E5%BD%95&quot;</span>,</span><br><span class="line">	<span class="string">&quot;username&quot;</span>: <span class="string">&quot;admin&quot;</span>,</span><br><span class="line">	<span class="string">&quot;password&quot;</span>: <span class="string">&quot;e10adc3949ba59abbe56e057f20f883e and&quot;</span>,</span><br><span class="line">	<span class="string">&quot;savedate&quot;</span>: 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>以上是两种例子<br><br></p>
-<h2 id="密码存储-Web-系统-三方应用"><a href="#密码存储-Web-系统-三方应用" class="headerlink" title="密码存储-Web&amp;系统&amp;三方应用"></a>密码存储-Web&amp;系统&amp;三方应用</h2><p><strong>影响</strong>：安全后台渗透测试，解不了的直接跑路，看能解的，没有那几个东西谁也解不了</p>
+<br>
+
+
+<h2 id="密码存储-Web-系统-三方应用"><a href="#密码存储-Web-系统-三方应用" class="headerlink" title="密码存储-Web&amp;系统&amp;三方应用"></a>密码存储-Web&amp;系统&amp;三方应用</h2><p><strong>影响</strong>：安全后台渗透测试，没有关键因素包括密匙，偏移量，填充，模式等很难破解</p>
 <p>大部分的解密都是碰撞式解密，不是算法的逆向的还原解密</p>
-<p>保证了黑客知道了密文也解密不出来，需要你知道全部的密匙，偏移量，填充，模式才能解密出来，没有就不想<br><br></p>
-<p><strong>ZZZCMS &amp; Dz</strong><br>zzzcms admin &#x2F;123456 密文利用md5加密<br>md5(123456)&#x3D;密文<br><br></p>
-<p>dz3.2 admin &#x2F;123456<br>md5(md5(123456).salt)&#x3D;密文利用md5和salt加密<br><br></p>
-<p>dz3.5 admin &#x2F; 123456<br>aes des（密匙key 偏移量iv 填充 模式等）<br><br></p>
+<p>保证了黑客知道了密文也解密不出来，需要知道全部的密匙，偏移量，填充，模式才能解密出来，没有就无法解密<br><br></p>
+<p><strong>ZZZCMS &amp; Dz3.2 &amp; Dz3.5例子</strong><br>zzzcms<br>md5(123456)&#x3D;密文利用md5加密<br><br></p>
+<p>Dz3.2<br>md5(md5(123456).salt)&#x3D;密文利用两层md5和salt加密<br><br></p>
+<p>Dz3.5<br>aes des&#x3D;密文利用密匙key，偏移量iv，填充，模式加密<br><br></p>
 <p><strong>Winows &amp; Linux</strong><br>NTLM是window的加密格式<br><br></p>
 <p><strong>MSSQL&amp;MYSQL</strong><br>MYSQL5是MYSQL的加密格式<br><br></p>
-<h2 id="识别算法编码方法："><a href="#识别算法编码方法：" class="headerlink" title="识别算法编码方法："></a>识别算法编码方法：</h2><ol>
-<li>看密文位数</li>
-<li>看密文的特征（数字，字母，大小写，符号等）</li>
-<li>看当前密文存在的地方（Web，数据库，操作系统等应用）<br>
+<h2 id="识别算法编码方法"><a href="#识别算法编码方法" class="headerlink" title="识别算法编码方法"></a>识别算法编码方法</h2><ol>
+<li>密文位数</li>
+<li>密文的特征（数字，字母，大小写，符号等）</li>
+<li>当前密文存在的地方（Web，数据库，操作系统等应用）<br>
 <br></li>
 </ol>
 <p><strong>常见加密编码进制等算法解析</strong></p>
@@ -424,43 +427,57 @@
 <p>枚举，自定义逆向算法，可逆向<br><br></p>
 <p><strong>常见加密解码算法的特性</strong></p>
 <p>长度位数，字符规律，代码分析，搜索获取等<br><br></p>
-<h2 id="代码混淆-源代码加密-逆向保护"><a href="#代码混淆-源代码加密-逆向保护" class="headerlink" title="代码混淆-源代码加密&amp;逆向保护"></a>代码混淆-源代码加密&amp;逆向保护</h2><p><strong>影响</strong>：影响的是代码审计，无法被别人看到源码，防止被逆向破解（例如添加VIP，无限使用功能）</p>
+<h2 id="代码混淆-源代码加密-逆向保护"><a href="#代码混淆-源代码加密-逆向保护" class="headerlink" title="代码混淆-源代码加密&amp;逆向保护"></a>代码混淆-源代码加密&amp;逆向保护</h2><p><strong>影响</strong>：影响的是代码审计，无法被别人看到源码，防止被逆向破解（例如添加VIP等功能）<br><br></p>
+<p>例如：</p>
 <p>PHP &amp; JS混淆加密</p>
 <p>PHP加密，JSFuck加密</p>
 <p>EXE &amp; JAR代码保护<br><br></p>
-<h2 id="拓展资料："><a href="#拓展资料：" class="headerlink" title="拓展资料："></a>拓展资料：</h2><p><strong>传输数据编码</strong>：<br>Base64 URL HEX ASCII </p>
+<h2 id="拓展资料："><a href="#拓展资料：" class="headerlink" title="拓展资料："></a>拓展资料：</h2><p><strong>传输数据编码</strong>：</p>
+<p>Base64 URL HEX ASCII </p>
 <p>Base64值是由数字”0-9”和字母”a-f”所组成的字符串,大小写敏感,结尾通常有符号&#x3D;</p>
 <p>URL编码是由数字”0-9”和字母”a-f”所组成的字符串,大小写敏感,通常以%数字字母间隔</p>
 <p>HEX编码是计算机中数据的一种表示方法,将数据进行十六进制转换,它由0-9,A-F,组成</p>
 <p>ASCII编码是将128个字符进行进制数来表示,常见ASCII码表大小规则：0-9，A-Z，a-z</p>
-<p>-传输数据加密：同密码存储加密</p>
-<p>-传输数据格式：常规字符串 JSON XML等<br><br></p>
+<br>
+
 <p><strong>密码存储加密</strong>：</p>
 <p>MD5 SHA1 NTLM AES DES RC4</p>
 <p>MD5值是32或16位位由数字”0-9”和字母”a-f”所组成的字符串</p>
 <p>SHA1这种加密的密文特征跟MD5差不多，只不过位数是40</p>
 <p>NTLM这种加密是Windows的哈希密码，标准通讯安全协议</p>
-<p>AES,DES,RC4这些都是非对称性加密算法，引入密钥，密文特征与Base64类似<br><br></p>
-<p>代码混淆：</p>
-<p>JS前端代码加密：</p>
-<p>JS颜文字 Jother JSFuck</p>
-<p>颜文字特征：一堆颜文字构成的js代码，在F12中可直接解密执行</p>
-<p>Jother特征：只用! + ( ) [ ] { }这八个字符就能完成对任意字符串的编码。也可在F12中解密执行</p>
-<p>JSFuck特征：与Jother很像，只是少了{ }<br><br></p>
+<p>AES，DES，RC4这些都是非对称性加密算法，引入密钥，密文特征与Base64类似</p>
+<br>
+
+<p><strong>代码混淆</strong>：</p>
+<p>JS前端代码加密：JS颜文字 Jother JSFuck</p>
+<p>颜文字特征：一堆颜文字构成的JS代码，在F12中可直接解密执行</p>
+<p>Jother特征：只用! + ( ) [ ] { }这八个字符就能完成对任意字符串的编码。</p>
+<p>JSFuck特征：与Jother很像，只是少了{ }</p>
+<br>
+
 <p><strong>后端代码混淆</strong>：</p>
 <p>PHP .NET Java</p>
 <p>PHP：乱码，头部有信息</p>
 <p>.NET：DLL封装代码文件，加保护</p>
-<p>Java：JAR&amp;CLASS文件，，加保护</p>
-<p>举例：加密平台 Zend ILSpy IDEA</p>
-<p>应用场景：版权代码加密，开发特性，CTF比赛等<br><br></p>
+<p>Java：JAR&amp;CLASS文件，加保护</p>
+<br>
+
 <p><strong>特定应用-数据库密文加密</strong>：</p>
-<p>MySQL MSSQL Oracle Redis等<br><br></p>
+<p>MySQL MSSQL Oracle Redis等</p>
+<br>
+
 <p><strong>数据显示编码</strong>：</p>
-<p>UTF-8 GBK2312等<br><br></p>
-<h2 id="部分资源："><a href="#部分资源：" class="headerlink" title="部分资源："></a>部分资源：</h2><p><a target="_blank" rel="noopener" href="https://www.cmd5.com/">在线md5解密破解</a><br><a target="_blank" rel="noopener" href="http://www.jsfuck.com/">在线JSFuck解密</a><br><a target="_blank" rel="noopener" href="http://www.hiencode.com/">在线CTF编码</a><br><a target="_blank" rel="noopener" href="http://tool.chacuo.net/cryptaes">在线AES加密解密</a><br><a target="_blank" rel="noopener" href="https://utf-8.jp/public/aaencode.html">在线aaencode</a></p>
-<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzAwNDcxMjI2MA==&mid=2247484455&idx=1&sn=e1b4324ddcf7d6123be30d9a5613e17b&chksm=9b26f60cac517f1a920cf3b73b3212a645aeef78882c47957b9f3c2135cb7ce051c73fe77bb2&mpshare=1&scene=23&srcid=1111auAYWmr1N0NAs9Wp2hGz&sharer_sharetime=1605145141579&sharer_shareid=5051b3eddbbe2cb698aedf9452370026#rd">加密编码类型30余种的密文特征分析</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41638851/article/details/100526839">CTF中常见密码题解密网站总结</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_40837276/article/details/83080460">CTF密码学常见加密解密总结</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/guyoung/CaptfEncoder">CaptfEncoder下载</a></p>
+<p>UTF-8 GBK2312等</p>
+<br>
+
+<h2 id="部分资源："><a href="#部分资源：" class="headerlink" title="部分资源："></a>部分资源：</h2><p><a target="_blank" rel="noopener" href="https://www.cmd5.com/">在线md5解密破解</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.jsfuck.com/">在线JSFuck解密</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.hiencode.com/">在线CTF编码</a></p>
+<p><a target="_blank" rel="noopener" href="http://tool.chacuo.net/cryptaes">在线AES加密解密</a></p>
+<p><a target="_blank" rel="noopener" href="https://utf-8.jp/public/aaencode.html">在线aaencode</a></p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzAwNDcxMjI2MA==&mid=2247484455&idx=1&sn=e1b4324ddcf7d6123be30d9a5613e17b&chksm=9b26f60cac517f1a920cf3b73b3212a645aeef78882c47957b9f3c2135cb7ce051c73fe77bb2&mpshare=1&scene=23&srcid=1111auAYWmr1N0NAs9Wp2hGz&sharer_sharetime=1605145141579&sharer_shareid=5051b3eddbbe2cb698aedf9452370026#rd">加密编码类型30余种的密文特征分析</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41638851/article/details/100526839">CTF中常见密码题解密网站总结</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_40837276/article/details/83080460">CTF密码学常见加密解密总结</a></p>
 
 </article>
     
