@@ -1425,35 +1425,55 @@
 <li>带WAF的CDN：用户访问域名 -&gt; CDN节点（WAF） -&gt; 真实服务器IP -&gt; 访问目标主机<br>
 <br></li>
 </ol>
-<p><strong>国内服务商</strong>：<br>阿里云  百度云  七牛云<br>又拍云 腾讯云  Ucloud<br>360  网宿科技 ChinaCache<br><br></p>
-<p><strong>国外服务商</strong>：<br>CloudFlare StackPath Fastly<br>Akamai CloudFront Edgecast<br>CDNetworks Google Cloud CDN<br>CacheFly Keycdn Udomain CDN77<br><br></p>
+<p><strong>国内服务商</strong>：</p>
+<p>阿里云  百度云  七牛云 </p>
+<p>又拍云 腾讯云  Ucloud</p>
+<p>360  网宿科技 ChinaCache</p>
+<br>
+
+
+<p><strong>国外服务商</strong>：</p>
+<p>CloudFlare StackPath Fastly</p>
+<p>Akamai CloudFront Edgecast</p>
+<p>CDNetworks Google Cloud CDN</p>
+<p>CacheFly Keycdn Udomain CDN77</p>
+<br>
+
+
 <p><strong>CDN配置</strong>：</p>
 <ol>
 <li><p>加速域名-需要启用加速的域名<br>子域名获取真实IP，有一些可信度，但不是绝对性的，需要继续测试多个子域名<br><a href="http://www.baidu.com加速了/">www.baidu.com加速了</a><br>tieba.baidu.com没加速，获得真实IP<br>baidu.com没加速，获得真实IP</p>
 </li>
-<li><p>加速区域-需要启用加速的地区<br>国外访问获取真实IP（加速区域没有勾选全球）</p>
+<li><p>加速区域-需要启用加速的地区<br>国外访问获取真实IP（需要加速区域没有勾选全球）</p>
 </li>
-<li><p>加速类型-需要启用加速的资源<br>获得真实IP后找备案号，看看和真实IP对不对得上</p>
-</li>
+<li><p>加速类型-需要启用加速的资源<br>获得真实IP后查看备案号的地区，看看和真实IP对不对得上<br>针对腾讯和阿里云的服务器IP优先，需要自己判断</p>
+<br></li>
 </ol>
-<p>针对腾讯和阿里云的服务器IP优先，需要自己判断<br><br></p>
-<p><strong>常见方法</strong>：<br>子域名，邮件系统，国外访问，证书查询，APP抓包，网络空间<br>通过漏洞或泄露获取，扫全网，以量打量，第三方接口查询等<br><br></p>
-<p><strong>Ping网站</strong>：<br><a href="https://boce.aliyun.com/detect/">aliyun国外请求</a><br><a href="https://github.com/boy-hack/w8fuckcdn">w8fuckcdn</a><br><a href="https://github.com/Pluto-123/Bypass_cdn">Bypass_cdn</a></p>
-<p><a href="https://mp.weixin.qq.com/s/zxEH-HMqKukmq7qXfrdnQQ">总和</a></p>
-<br>
-
-<h2 id="CDN服务-识别-绑定访问"><a href="#CDN服务-识别-绑定访问" class="headerlink" title="CDN服务-识别&amp;绑定访问"></a>CDN服务-识别&amp;绑定访问</h2><p><a href="http://www.17ce.com/">17ce Ping</a><br><a href="https://ping.chinaz.com/">chinaz 超级Ping</a><br><br></p>
-<p>各地ping（出现多个IP即启用CDN服务）<br>后置：绑定HOST访问解析（参考基础课CDN安全影响）</p>
+<p><strong>常见方法</strong>：</p>
+<p>子域名，邮件系统，国外访问，证书查询，APP抓包，网络空间</p>
+<p>通过漏洞或泄露获取，扫全网，以量打量，第三方接口查询等<br><br></p>
+<p><strong>Ping网站</strong>：</p>
+<p><a href="https://boce.aliyun.com/detect/">aliyun国外请求</a></p>
+<p><a href="https://github.com/boy-hack/w8fuckcdn">w8fuckcdn</a></p>
+<p><a href="https://github.com/Pluto-123/Bypass_cdn">Bypass_cdn</a></p>
+<p><a href="https://mp.weixin.qq.com/s/zxEH-HMqKukmq7qXfrdnQQ">CDN绕过总结</a><br><br></p>
+<h2 id="CDN服务-识别-绑定访问"><a href="#CDN服务-识别-绑定访问" class="headerlink" title="CDN服务-识别&amp;绑定访问"></a>CDN服务-识别&amp;绑定访问</h2><p><a href="http://www.17ce.com/">17ce Ping</a></p>
+<p><a href="https://ping.chinaz.com/">Chinaz 超级Ping</a><br><br></p>
+<p>各地ping（出现多个IP即启用CDN服务）<br>后置：绑定HOST访问解析（参考CDN安全影响）</p>
 <p>CDN绕过-主动漏洞&amp;遗留文件</p>
 <p>配置加速选项中只加速主域名，导致其他子域名未加速（解析IP可能同IP也可能C段）<br><br></p>
 <p><a href="https://get-site-ip.com/">get-site-ip 查询IP接口</a></p>
 <p><a href="https://fofa.info/extensions/source">fofa 查询IP接口</a>（针对国外CDN厂商）<br><br></p>
 <p><strong>使用网络空间&amp;第三方功能集合查询判断</strong></p>
 <ol>
-<li>漏洞如：SSRF RCE等<br>利用漏洞，让对方真实服务器主动出网连接我，就可以得到真实IP</li>
-<li>遗留文件：配置性的文件，例如PHPINFO类似代码功能<br>通过访问类似PHPINFO类似代码，会获取本地IP造成地址泄漏例如”SERVER_ADDR”<br>
-<br></li>
+<li><p>漏洞如：SSRF RCE等<br>利用漏洞，让对方真实服务器主动出网连接，就可得到真实IP</p>
+</li>
+<li><p>遗留文件：配置性的文件，例如PHPINFO类似代码功能<br>通过访问类似PHPINFO类似代码，会获取本地IP造成地址泄漏例如”SERVER_ADDR”</p>
+</li>
 </ol>
+<br>
+
+
 <p><strong>CDN绕过-邮件系统</strong><br>判断条件：发信人是当前域名邮件用户名，邮件系统是作不了CDN的</p>
 <p>让他主动给你发：</p>
 <p>部署架设的邮件服务器如果向外部用户发送邮件的话，那么邮件头部的源码中会包含此邮件服务器的真实IP地址，有些就不行，没用自己的邮件系统发的就不行，例如有的用的126网易163网易的就不行，因为别人是注册了网易的邮件给你发的，探测的是网易的邮箱IP<br><br></p>
@@ -1466,7 +1486,7 @@
 <li>某业务执行后发送的邮件通知</li>
 <li>员工邮箱、邮件管理平台等入口的忘记密码</li>
 </ol>
-<p>或者你可以主动给未知邮箱发：（需要自己的邮件服务器不能第三方例如QQ，需要自己搭建邮件系统），有点骚，但是没别人给你发好用。</p>
+<p>或者你可以主动给未知邮箱发：需要自己搭建邮件服务器，不能第三方例如QQ，但是没别人给你发好用。</p>
 <p>通过发送邮件给个不存在的邮箱地址，因为该用户邮箱不存在，所以发送将失败，并且还会收到一个包含发送该电子邮件给你的服务器的真实IP通知。<br><br></p>
 <p><strong>CDN绕过-全网扫描</strong></p>
 <ol>
@@ -1474,9 +1494,12 @@
 <li>利用厂商去IP库来筛地址网段</li>
 <li>然后配置，进行范围扫描</li>
 </ol>
-<p>FUCK CDN工具的扫描流程：先从IP段去扫描符合开放端口，再从IP去访问看看关键字，将符合结果进行保存！<br><br></p>
-<p><strong>加速厂商查询</strong>：<br><a href="https://tools.ipip.net/cdn.php">ipip 国外请求</a><br><br></p>
-<p><strong>IP库工具项目</strong>：<br><a href="https://www.cz88.net/geo-public">纯真IP社区库</a><br><a href="https://github.com/Tai7sy/fuckcdn">FUCK CDN</a></p>
+<p>FUCK CDN工具的扫描流程：先从IP段去扫描符合开放端口，再从IP去访问看看关键字，将符合结果进行保存<br><br></p>
+<p><strong>加速厂商查询</strong>：<br><a href="https://tools.ipip.net/cdn.php">ipip 国外请求</a></p>
+<br>
+
+<p><strong>IP库工具项目</strong>：<br><a href="https://www.cz88.net/geo-public">纯真IP社区库</a></p>
+<p><a href="https://github.com/Tai7sy/fuckcdn">FUCK CDN</a></p>
 ]]></content>
       <categories>
         <category>信息打点</category>
@@ -1486,7 +1509,7 @@
     <title>语言框架&amp;开发组件&amp;FastJson&amp;Shiro&amp;Log4j&amp;SpringBoot等</title>
     <url>/2024/03/10/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B96/</url>
     <content><![CDATA[<h2 id="重点知识-框架-Web-前端-后端"><a href="#重点知识-框架-Web-前端-后端" class="headerlink" title="重点知识-框架&amp;Web&amp;前端&amp;后端"></a>重点知识-框架&amp;Web&amp;前端&amp;后端</h2><p><strong>框架</strong>：简单代码的一个整合库，如果使用框架就只需要学习使用如何调用框架即可</p>
-<p>例如：文件上传功能是需要很多代码来实现的，框架把这个代码进行封封装，调用就可以了</p>
+<p>例如：文件上传功能是需要很多代码来实现的，框架意思是把这个代码进行封封装，以后调用就可以了</p>
 <p><strong>影响</strong>：如果采用框架开发，代码的安全性是取决于框架的过滤机制</p>
 <p><strong>组件</strong>：第三方的功能模块（日志记录，数据监控，数据转换等）<br><br></p>
 <p><strong>Web架构</strong>：</p>
@@ -1496,10 +1519,10 @@
 <li>结合开发框架外加组件模型（以框架为核心，组件为辅实现功能）<br>第三方或团队的开发的封装代码框架，一般内置的过滤机制（框架和组件漏洞）<br>
 <br></li>
 </ol>
-<p><strong>前端</strong><br><strong>JS 框架</strong>：爬取更多的JS从里面筛选URL或敏感泄漏Key等，也是可以通过对JS代码逻辑进行代码审计</p>
+<p><strong>前端</strong><br><strong>JS 框架</strong>：爬取更多的JS从里面筛选URL或敏感泄漏Key等，也可以通过对JS代码逻辑进行代码审计</p>
 <p><strong>组件</strong>：Java居多，常见报过有安全漏洞组件（shiro solr log4j sprintboot等）</p>
 <p><strong>框架</strong>：PHP Java Python都有<br><br></p>
-<p><strong>后端</strong><br><strong>CMS识别</strong>：一般PHP开发居多源码程序（利用源码程序名去搜漏洞情况，源码去下载进行后期的代码审计）<br><br></p>
+<p><strong>后端</strong><br><strong>CMS识别</strong>：一般PHP开发居多（利用源码程序名去搜漏洞情况，或者下载源码去进行后期的代码审计）<br><br></p>
 <h2 id="指纹识别-本地工具-gotoScan（CMSEEK）"><a href="#指纹识别-本地工具-gotoScan（CMSEEK）" class="headerlink" title="指纹识别-本地工具-gotoScan（CMSEEK）"></a>指纹识别-本地工具-gotoScan（CMSEEK）</h2><ol>
 <li><a href="https://github.com/newbe3three/gotoscan">gotoscan</a>，本地工具适用于内网和外网环境</li>
 <li>网络空间：Fofa Quake Hunter</li>
@@ -1509,33 +1532,33 @@
 <h2 id="Python-开发框架-Django-Flask"><a href="#Python-开发框架-Django-Flask" class="headerlink" title="Python-开发框架-Django&amp;Flask"></a>Python-开发框架-Django&amp;Flask</h2><p><strong>Django</strong></p>
 <ol>
 <li>浏览器识别插件</li>
-<li>数据包里有： Set-Cookie:csrftoken&#x3D; （有的会隐藏，常规有的。不能通过唯一来判断）</li>
+<li>数据包里有： <code>Set-Cookie:csrftoken=</code> （有的会隐藏，常规有的。不能通过唯一来判断）</li>
 </ol>
 <p><strong>Flask</strong></p>
 <ol>
 <li>浏览器识别插件</li>
-<li>数据包里有：Etag:flask（有的会隐藏，常规有的。不能通过唯一来判断）<br>
+<li>数据包里有：<code>Etag:flask</code>（有的会隐藏，常规有的。不能通过唯一来判断）<br>
 <br></li>
 </ol>
 <h2 id="PHP-开发框架-ThinkPHP-Laravel-Yii"><a href="#PHP-开发框架-ThinkPHP-Laravel-Yii" class="headerlink" title="PHP-开发框架-ThinkPHP&amp;Laravel&amp;Yii"></a>PHP-开发框架-ThinkPHP&amp;Laravel&amp;Yii</h2><p><strong>ThinkPHP</strong>：</p>
 <ol>
 <li>浏览器识别插件</li>
-<li>数据包里有：X-Powered-By: ThinkPHP（有的会隐藏，常规有的。不能通过这唯一来判断）</li>
+<li>数据包里有：<code>X-Powered-By: ThinkPHP</code>（有的会隐藏，常规有的。不能通过这唯一来判断）</li>
 <li>CMS识别到源码体系TP开发</li>
 </ol>
 <p><strong>Laravel</strong>：</p>
 <ol>
 <li>浏览器识别插件</li>
-<li>数据包里有：Set-Cookie：Laravel_sesssion&#x3D;（有的会隐藏，常规有的。不能通过唯一来判断）</li>
+<li>数据包里有：<code>Set-Cookie：Laravel_sesssion=</code>（有的会隐藏，常规有的。不能通过唯一来判断）</li>
 </ol>
 <p><strong>Yii</strong>:</p>
 <ol>
 <li>浏览器识别插件</li>
-<li>数据包里有：Set-Cookie：Yii_sesssion&#x3D;（有的会隐藏，常规有的。不能通过唯一来判断）<br></li>
+<li>数据包里有：<code>Set-Cookie：Yii_sesssion=</code>（有的会隐藏，常规有的。不能通过唯一来判断）<br></li>
 </ol>
 <h2 id="Java-框架组件-Fastjson-Shiro-Solr-Spring"><a href="#Java-框架组件-Fastjson-Shiro-Solr-Spring" class="headerlink" title="Java-框架组件-Fastjson&amp;Shiro&amp;Solr&amp;Spring"></a>Java-框架组件-Fastjson&amp;Shiro&amp;Solr&amp;Spring</h2><p><a href="https://blog.csdn.net/agonie201218/article/details/125300729">52类110个主流Java组件和框架介绍</a><br><br></p>
 <p><strong>Fastjson&#x2F;Jackson</strong>:<br>在提交JSON数据包中修改测试：<br>Fastjson组件会把01解析成1<br>Jackson组件在解析01时会抛出异常<br><br></p>
-<p><strong>Shiro</strong>:<br>请求包的cookie中存在rememberMe字段<br>返回包中存在set-Cookie：remeberMe&#x3D;deleteMe<br>请求包中存在rememberMe&#x3D;x时，响应包中存在rememberMe&#x3D;deleteMe<br>有时候服务器不会主动返回remeberMe&#x3D;deleteMe，直接发包即可，将Cookie内容改为remember Me&#x3D;1，若相应包有rememberMe&#x3D;deleteMe，则基本可以确定网站apache shiro搭建的。<br><br></p>
+<p><strong>Shiro</strong>:<br>请求包的cookie中存在rememberMe字段<br>返回包中存在<code>set-Cookie：remeberMe=deleteMe</code><br>请求包中存在<code>rememberMe=x</code>时，响应包中存在<code>rememberMe=deleteMe</code><br>有时候服务器不会主动返回<code>remeberMe=deleteMe</code>，直接发包即可，将Cookie内容改为<code>remember Me=1</code>，若相应包有<code>rememberMe=deleteMe</code>，则基本可以确定网站apache shiro搭建的。<br><br></p>
 <p><strong>Struts2</strong>:<br>一般使用struts2框架的网页地址后缀带do或action，可以尝试进行利用<br><br></p>
 <p><strong>Springboot</strong>:<br>1.通过web应用程序网页标签的小绿叶图标<br>2.通过springboot框架默认报错页面<br><br></p>
 <p><strong>Solr</strong>：<br>一般开放8983端口,访问页面也可以探针到</p>
