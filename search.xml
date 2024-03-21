@@ -1639,12 +1639,11 @@
     <title>小程序应用&amp;解包反编译&amp;动态调试&amp;抓包&amp;静态分析&amp;源码架构</title>
     <url>/2024/03/11/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B98/</url>
     <content><![CDATA[<h2 id="小程序获取-各大平台-关键字搜索"><a href="#小程序获取-各大平台-关键字搜索" class="headerlink" title="小程序获取-各大平台&amp;关键字搜索"></a>小程序获取-各大平台&amp;关键字搜索</h2><p>微信<br>百度<br>支付宝<br>抖音头条<br><br></p>
-<h2 id="小程序体验-凡科建站-模版测试上线"><a href="#小程序体验-凡科建站-模版测试上线" class="headerlink" title="小程序体验-凡科建站&amp;模版测试上线"></a>小程序体验-凡科建站&amp;模版测试上线</h2><p><a href="https://qz.fkw.com/">测试小程序</a></p>
+<h2 id="小程序体验-凡科建站-模版测试上线"><a href="#小程序体验-凡科建站-模版测试上线" class="headerlink" title="小程序体验-凡科建站&amp;模版测试上线"></a>小程序体验-凡科建站&amp;模版测试上线</h2><p><a href="https://qz.fkw.com/">凡科建站测试小程序</a></p>
 <p><a href="https://blog.csdn.net/qq_52445443/article/details/122351865">微信开发工具参考</a></p>
 <ol>
-<li>主体结构<br>小程序包含一个描述整体程序的 app 和多个描述各自页面的 page。</li>
+<li>主体结构<br>小程序包含一个描述整体程序的 app 和多个描述各自页面的 page。<br>一个小程序主体部分（即App）由三个文件组成，必须放在项目的根目录：</li>
 </ol>
-<p>一个小程序主体部分(即app)由三个文件组成，必须放在项目的根目录，如下：</p>
 <table>
 <thead>
 <tr>
@@ -1723,16 +1722,12 @@
 <td>日志</td>
 </tr>
 <tr>
-<td>pages\utils</td>
-<td></td>
-</tr>
-<tr>
 <td>pages\util</td>
-<td>工具类 (可以建立一个叫<code>api</code>的工具类)</td>
+<td>工具类 (可以建立一个叫API的工具类)</td>
 </tr>
 <tr>
 <td>app.js</td>
-<td>入口js文件，类似于Java类中的main方法，全局js文件</td>
+<td>入口JS文件，类似于Java类中的main方法，全局JS文件</td>
 </tr>
 <tr>
 <td>app.json</td>
@@ -1772,12 +1767,12 @@
   <entry>
     <title>红蓝队自动化项目&amp;资产侦察&amp;武器库部署&amp;企查产权&amp;网络空间</title>
     <url>/2024/03/11/%E4%BF%A1%E6%81%AF%E6%89%93%E7%82%B99/</url>
-    <content><![CDATA[<h2 id="各类红蓝队优秀工具项目集合："><a href="#各类红蓝队优秀工具项目集合：" class="headerlink" title="各类红蓝队优秀工具项目集合："></a>各类红蓝队优秀工具项目集合：</h2><p><a href="https://github.com/guchangan1/All-Defense-Tool">All-Defense-Tool</a><br><br></p>
+    <content><![CDATA[<h2 id="各类红蓝队优秀工具项目集合："><a href="#各类红蓝队优秀工具项目集合：" class="headerlink" title="各类红蓝队优秀工具项目集合："></a>各类红蓝队优秀工具项目集合：</h2><p><a href="https://github.com/guchangan1/All-Defense-Tool">All-Defense-Tool</a></p>
 <p>本项目集成了全网优秀的开源攻防武器项目，包含信息收集工具（自动化利用工具、资产发现工具、目录扫描工具、子域名收集工具、指纹识别工具、端口扫描工具、各种插件…），漏洞利用工具（各大CMS利用工具、中间件利用工具等项目…），内网渗透工具（隧道代理、密码提取…）、应急响应工具、甲方运维工具、等其他安全攻防资料整理，供攻防双方使用。如果你有更好的建议，欢迎提出请求。<br><br></p>
-<h2 id="自动化-武器库部署-F8x"><a href="#自动化-武器库部署-F8x" class="headerlink" title="自动化-武器库部署-F8x"></a>自动化-武器库部署-F8x</h2><p>项目地址：<a href="https://github.com/ffffffff0x/f8x">F8x</a></p>
+<h2 id="自动化-武器库部署-F8x"><a href="#自动化-武器库部署-F8x" class="headerlink" title="自动化-武器库部署-F8x"></a>自动化-武器库部署-F8x</h2><p><a href="https://github.com/ffffffff0x/f8x">F8x</a></p>
 <ol>
 <li>介绍：<br>一款红&#x2F;蓝队环境自动化部署工具,支持多种场景,渗透,开发,代理环境,服务可选项等.</li>
-<li>配置：<br>通过 CF Workers 下载 [推荐]<br>wget : wget -O f8x <a href="https://f8x.io/">https://f8x.io/</a><br>curl : curl -o f8x <a href="https://f8x.io/">https://f8x.io/</a></li>
+<li>配置：<br>wget : wget -O f8x <a href="https://f8x.io/">https://f8x.io/</a><br>curl : curl -o f8x <a href="https://f8x.io/">https://f8x.io/</a></li>
 <li>使用：见项目文档<br>
 <br></li>
 </ol>
