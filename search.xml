@@ -1357,8 +1357,8 @@
 <p>quake.exe honeypot 目标</p>
 <p>网络空间搜索IP，网站可以帮助判断</p>
 <p>蜜罐项目人工识别，设备指纹分析，判断蜜罐</p>
-<p>扫描出的端口很多而有规律性，可能是蜜罐</p>
-<p>Web访问协议就下载，正常真实系统不会出现这种情况，蜜罐会记录攻击者的账号密码，但是账号密码会采用web功能jsonp传输给蜜罐（蜜罐是不用使用mysql这种数据库的），如果访问端口，就会下载这个文件，一看就是蜜罐了</p>
+<p>扫描出的端口很多并且有规律性，可能是蜜罐</p>
+<p>Web访问协议就下载，正常真实系统不会出现这种情况，蜜罐会记录攻击者的账号密码，但是账号密码会采用Web功能json传输给蜜罐（蜜罐是不用使用mysql这种数据库的），如果访问端口，就会下载这个文件，一看就是蜜罐了。</p>
 ]]></content>
       <categories>
         <category>信息打点</category>
@@ -1429,7 +1429,7 @@
 <p><strong>国外服务商</strong>：<br>CloudFlare StackPath Fastly<br>Akamai CloudFront Edgecast<br>CDNetworks Google Cloud CDN<br>CacheFly Keycdn Udomain CDN77<br><br></p>
 <p><strong>CDN配置</strong>：</p>
 <ol>
-<li><p>加速域名-需要启用加速的域名<br>子域名获取真实IP，有一点可信度，但不是绝对性的，需要继续测试多个子域名<br><a href="http://www.baidu.com加速了/">www.baidu.com加速了</a><br>bbs.baidu.com没加速，获得真实IP<br>baidu.com没加速，获得真实IP</p>
+<li><p>加速域名-需要启用加速的域名<br>子域名获取真实IP，有一些可信度，但不是绝对性的，需要继续测试多个子域名<br><a href="http://www.baidu.com加速了/">www.baidu.com加速了</a><br>tieba.baidu.com没加速，获得真实IP<br>baidu.com没加速，获得真实IP</p>
 </li>
 <li><p>加速区域-需要启用加速的地区<br>国外访问获取真实IP（加速区域没有勾选全球）</p>
 </li>
