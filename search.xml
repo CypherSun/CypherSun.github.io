@@ -3154,18 +3154,14 @@
   <entry>
     <title>靶场upload-labs-docker</title>
     <url>/2024/03/24/%E9%9D%B6%E5%9C%BAupload-labs-docker/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/TophantTechnology/ARL">ARL</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>ARL旨在快速侦察与目标关联的互联网资产，构建基础资产信息库。 协助甲方安全团队或者渗透测试人员有效侦察和检索资产，发现存在的薄弱点和攻击面。<br><br></p>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/sqlsec/upload-labs-docker">upload-labs-docker</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>文件上传漏洞靶场，默认 13 个关卡运行的端口为 30001-30013 这 13 个端口上<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
 <li><p>阿里云，购买Ubuntu 18.04服务器</p>
 </li>
 <li><p>进入Ubuntu服务器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>参考<a href="https://tophanttechnology.github.io/ARL-doc/system_install/">官方文档</a>执行命令即可</p>
-</li>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">wget -O f8x https://f8x.io/</span><br><span class="line">wget -O f8x https://f8x.io/ &amp;&amp; <span class="built_in">mv</span> --force f8x /usr/local/bin/f8x &amp;&amp; <span class="built_in">chmod</span> +x /usr/local/bin/f8x</span><br><span class="line">f8x -d</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/fuzzdb-project/fuzzdb.git --depth 1</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/sqlsec/upload-labs-docker.git</span><br><span class="line"><span class="built_in">cd</span> upload-labs-docker</span><br><span class="line">docker-compose up -d</span><br><span class="line">docker-compose config</span><br></pre></td></tr></table></figure></li>
 </ol>
-<p><a href="https://github.com/ffffffff0x/f8x">https://github.com/ffffffff0x/f8x</a><br><a href="https://github.com/fuzzdb-project/fuzzdb">https://github.com/fuzzdb-project/fuzzdb</a><br><a href="https://github.com/sqlsec/upload-labs-docker">https://github.com/sqlsec/upload-labs-docker</a><br>0、下载上述资源<br>1、docker安装<br>apt-get update<br>wget -O f8x <a href="https://f8x.io/">https://f8x.io/</a><br>wget -O f8x <a href="https://f8x.io/">https://f8x.io/</a> &amp;&amp; mv –force f8x &#x2F;usr&#x2F;local&#x2F;bin&#x2F;f8x &amp;&amp; chmod +x &#x2F;usr&#x2F;local&#x2F;bin&#x2F;f8x<br>f8x -d<br>git clone <a href="https://github.com/fuzzdb-project/fuzzdb.git">https://github.com/fuzzdb-project/fuzzdb.git</a> –depth 1<br>git clone <a href="https://github.com/sqlsec/upload-labs-docker.git">https://github.com/sqlsec/upload-labs-docker.git</a><br>2、进入项目文件夹<br>cd upload-labs-docker<br>3、一键部署运行<br>docker-compose up -d<br>docker-compose config</p>
 ]]></content>
       <categories>
         <category>靶场</category>
