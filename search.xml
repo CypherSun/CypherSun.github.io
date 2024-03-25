@@ -3067,14 +3067,9 @@
   <entry>
     <title>fuzzdb</title>
     <url>/2024/03/24/%E5%B7%A5%E5%85%B7fuzzdb/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Explorer1092/Github-Monitor">Github-Monitor</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>GITHUB MONITOR 是vipkid安全研发团队打造的用于监控Github代码仓库的系统。通过该系统可以及时发现企业内部代码泄露、从而降低由于代码泄露导致的一系列安全风险。用户仅需通过简单的任务配置，即可在分钟级发现代码泄露的情况。项目后端使用 django-rest-framework 开发，前端使用 react 和 antd-pro 开发。<br><br></p>
-<h2 id="搭建流程："><a href="#搭建流程：" class="headerlink" title="搭建流程："></a>搭建流程：</h2><ol>
-<li><p>阿里云购买Ubuntu 18.04服务器</p>
-</li>
-<li><p>连接服务器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install docker.io docker-compose -y</span><br><span class="line"><span class="built_in">cd</span> /root/</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/VKSRC/Github-Monitor.git</span><br><span class="line"><span class="built_in">cd</span> Github-Monitor</span><br><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure></li>
-</ol>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/fuzzdb-project/fuzzdb">Fuzzdb</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>FuzzDB 的创建是为了提高通过动态应用程序安全测试发现应用程序安全漏洞的可能性。它是第一个也是最全面的开放字典，包含故障注入模式、可预测资源位置和用于匹配服务器响应的正则表达式。<br><br></p>
+<h2 id="使用流程："><a href="#使用流程：" class="headerlink" title="使用流程："></a>使用流程：</h2><p>搭配BurpSuit使用即可</p>
 ]]></content>
       <categories>
         <category>工具</category>
