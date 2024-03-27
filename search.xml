@@ -472,12 +472,23 @@
   <entry>
     <title>文件上传&amp;存储安全&amp;OSS对象&amp;分站&amp;解析安全&amp;解码还原&amp;目录执行</title>
     <url>/2024/03/28/Web%E6%94%BB%E9%98%B29/</url>
-    <content><![CDATA[<h2 id="文件-解析方案-执行权限-解码还原"><a href="#文件-解析方案-执行权限-解码还原" class="headerlink" title="文件-解析方案-执行权限&amp;解码还原"></a>文件-解析方案-执行权限&amp;解码还原</h2><p>1、执行权限<br>文件上传后存储目录不给执行权限<br>2、解码还原<br>数据做存储，解析固定协议（与文件后缀名无关）<br>例如data:image&#x2F;jpeg;base64,iVBORw0KGgoAAAANSUhEUgAABF8AAAReCAAAAAAk7cAdAAAACXBIWXMAAAs2AAALNgG&#x2F;CNh6AAAAEXRFWHRUaXRsZQBQREYgQ3JlYXRvckFevCgAAAATdEVYdEF1dGhvcgBQREYgVG9vbHMgQUcbz3cwAAAALXpUWHREZXNjcmlwdGlvbgA<br>图片没有格式了，以前面来data:image&#x2F;jpeg;base64,来解析，上传什么东西都按照data:image&#x2F;jpeg;base64来解析。</p>
-<p>文件上传后利用编码传输解码还原</p>
-<p>上传图片-》图片数据-》一串base64数据</p>
-<p>显示图片-》base64数据解码-》数据解析</p>
-<p>只认数据<br><br></p>
-<h2 id="文件-存储方案-分站存储-OSS对象"><a href="#文件-存储方案-分站存储-OSS对象" class="headerlink" title="文件-存储方案-分站存储&amp;OSS对象"></a>文件-存储方案-分站存储&amp;OSS对象</h2><p>1、分站存储<br>upload.xiaodi8.com 上传<br>images.xiaodi8.com 存储<br>2、OSS对象<br>Access控制-OSS对象存储-Bucket对象</p>
+    <content><![CDATA[<h2 id="文件-解析方案-执行权限-解码还原"><a href="#文件-解析方案-执行权限-解码还原" class="headerlink" title="文件-解析方案-执行权限&amp;解码还原"></a>文件-解析方案-执行权限&amp;解码还原</h2><ol>
+<li><p>执行权限<br>文件上传后存储目录不给执行权限</p>
+</li>
+<li><p>解码还原<br>数据做存储，解析为固定协议（与文件后缀名无关）<br>例如：data:image&#x2F;jpeg;base64,iVBORw0KGgoAAAANSUhEUgAABF8AAAReCAAAAAAk7cAdAAAACXBIWXMAAAs2AAALNgG&#x2F;CNh6AAAAEXRFWHRUaXRsZQBQREYgQ3JlYXRvckFevCgAAAATdEVYdEF1dGhvcgBQREYgVG9vbHMgQUcbz3cwAAAALXpUWHREZXNjcmlwdGlvbgA</p>
+</li>
+</ol>
+<br>
+上传图片 -> 图片数据 -> 一串base64数据
+
+<p>显示图片 -&gt; base64数据解码 -&gt; 数据解析</p>
+<p>图片没有格式了，以前面来data:image&#x2F;jpeg;base64,来解析，上传任何文件都按照data:image&#x2F;jpeg;base64来解析<br>只认数据，文件上传后利用编码传输解码还原<br><br></p>
+<h2 id="文件-存储方案-分站存储-OSS对象"><a href="#文件-存储方案-分站存储-OSS对象" class="headerlink" title="文件-存储方案-分站存储&amp;OSS对象"></a>文件-存储方案-分站存储&amp;OSS对象</h2><ol>
+<li><p>分站存储<br>upload.xiaodi8.com 上传<br>images.xiaodi8.com 存储</p>
+</li>
+<li><p>OSS对象<br>Access控制-OSS对象存储-Bucket对象</p>
+</li>
+</ol>
 <p>以上方案除目录设置权限如能换目录解析绕过外，其他均无解</p>
 ]]></content>
       <categories>
