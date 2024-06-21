@@ -10,12 +10,12 @@
 <meta name="description" content="数据猜解-库表列数据&amp;字典例子：电子科技大学 Access数据库（dbs，dba和current-db命令并不适用于access，因为结构不同）  先检查是否存在SQL注入点 1python sqlmap.py -u &quot;http:&#x2F;&#x2F;192.168.126.133:89&#x2F;News.asp?classid&#x3D;1&quot;  枚举数据库中的所有表 1python sqlmap.py">
 <meta property="og:type" content="article">
 <meta property="og:title" content="注入工具&amp;SQLMAP&amp;Tamper编写&amp;指纹修改&amp;高权限操作&amp;目录架构">
-<meta property="og:url" content="http://example.com/2024/03/22/Web%E6%94%BB%E9%98%B26/index.html">
+<meta property="og:url" content="https://cyphersun.github.io/2024/03/22/Web%E6%94%BB%E9%98%B26/index.html">
 <meta property="og:site_name" content="Cypher Sun">
 <meta property="og:description" content="数据猜解-库表列数据&amp;字典例子：电子科技大学 Access数据库（dbs，dba和current-db命令并不适用于access，因为结构不同）  先检查是否存在SQL注入点 1python sqlmap.py -u &quot;http:&#x2F;&#x2F;192.168.126.133:89&#x2F;News.asp?classid&#x3D;1&quot;  枚举数据库中的所有表 1python sqlmap.py">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-21T21:21:00.000Z">
-<meta property="article:modified_time" content="2024-04-21T07:07:18.000Z">
+<meta property="article:modified_time" content="2024-06-21T08:02:34.659Z">
 <meta property="article:author" content="Cypher Sun">
 <meta name="twitter:card" content="summary">
 
@@ -56,8 +56,8 @@
 
 
 <!-- Variable -->
-<script>window.ASYNC_CONFIG = {"hostname":"example.com","author":"Cypher Sun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.2","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-04-21 15:07:18"};</script>
+<script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"Cypher Sun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.2","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-06-21 16:02:34"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.2" id="trm-switch-style">
@@ -269,7 +269,7 @@
         <!-- card header -->
 <div class="trm-mc-header">
     <div class="trm-avatar-frame trm-mb-20">
-        <img alt="Avatar" class="trm-avatar" src="https://lh3.googleusercontent.com/a/ACg8ocIxbhzj-iM7n2aexQ6m3pDDtM1PauzEv7NXv93je5QwSg=s576-c-no">
+        <img alt="Avatar" class="trm-avatar" src="https://avatars.githubusercontent.com/u/80212458?v=4">
     </div>
     <h5 class="trm-name trm-mb-15">
         Cypher Sun
@@ -599,7 +599,7 @@
 <br>  
 
 
-<p><strong>–proxy “<a href="http://xx:xx">http://xx:xx</a>“ #代理注入</strong></p>
+<p><strong>–proxy “<a target="_blank" rel="noopener" href="http://0.0.4.210/">http://1234</a>“ #代理注入</strong></p>
 <p>配合burp进行测试，可以围观到sqlmap是如何进行注入的，然后进行分析</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python sqlmap.py -u <span class="string">&quot;http://1.1.1.1/sqli/new.php?id=1&quot;</span> --level=3 -risk=2 -proxy <span class="string">&quot;http://127.0.0.1:8080/&quot;</span></span><br></pre></td></tr></table></figure>
 
