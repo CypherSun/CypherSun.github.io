@@ -15,7 +15,7 @@
 <meta property="og:description" content="传输数据-编码型&amp;加密型等数据在传输前后都需要编码解码，对方服务器在接收数据时，会进行解码再带入 安全测试需要对payload代码进行同样的加密或编码再进行提交。如果不对自己的Payload代码进行同样编码的话，传过去的数据服务器解码后无法识别，测试无效。所以必须保证数据的正确编码格式发送，对方服务器才能正确解码接收。 Base64编码 ： 例子： 解码之前：https:&#x2F;&#x2F;indialm">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-10T03:43:13.000Z">
-<meta property="article:modified_time" content="2024-03-17T21:28:10.000Z">
+<meta property="article:modified_time" content="2024-09-12T17:18:42.465Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-17 22:28:10"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-09-12 19:18:42"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -390,6 +390,9 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">username=admin&amp;password=123456</span><br><span class="line">username=admin&amp;password=e10adc3949ba59abbe56e057f20f883e</span><br></pre></td></tr></table></figure>
 <br>
 
+
+
+
 <p><strong>字典爆破</strong>：</p>
 <p>可以对密码进行破解爆破，替换password&#x3D;的值即可</p>
 <p>需要密码进行算法解密，需要保证password&#x3D;的值同等加密和数据库的比对上才行</p>
@@ -400,18 +403,21 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">btnPost=%E7%99%BB%E5%BD%95&amp;username=admin and &amp;password=e10adc3949ba59abbe56e057f20f883e&amp;savedate=1</span><br></pre></td></tr></table></figure>
 <br>
 
+
 <p>JSON格式例子：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="string">&quot;btnPost&quot;</span>: <span class="string">&quot;%E7%99%BB%E5%BD%95&quot;</span>,</span><br><span class="line">	<span class="string">&quot;username&quot;</span>: <span class="string">&quot;admin&quot;</span>,</span><br><span class="line">	<span class="string">&quot;password&quot;</span>: <span class="string">&quot;e10adc3949ba59abbe56e057f20f883e and&quot;</span>,</span><br><span class="line">	<span class="string">&quot;savedate&quot;</span>: 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <br>
 
 
+
+
 <h2 id="密码存储-Web-系统-三方应用"><a href="#密码存储-Web-系统-三方应用" class="headerlink" title="密码存储-Web&amp;系统&amp;三方应用"></a>密码存储-Web&amp;系统&amp;三方应用</h2><p><strong>影响</strong>：安全后台渗透测试，没有关键因素包括密匙，偏移量，填充，模式等很难破解</p>
-<p>大部分的解密都是碰撞式解密，不是算法的逆向的还原解密</p>
+<p>大部分的解密都是碰撞式解密，不是算法的逆向的还原解密，例如MD5<br>解密思路：<br>1<br>2<br>3<br>123<br>1234<br>12345<br>直到密文碰撞到了</p>
 <p>保证了黑客知道了密文也解密不出来，需要知道全部的密匙，偏移量，填充，模式才能解密出来，没有就无法解密<br><br></p>
 <p><strong>ZZZCMS &amp; Dz3.2 &amp; Dz3.5例子</strong><br>zzzcms<br>md5(123456)&#x3D;密文利用md5加密<br><br></p>
 <p>Dz3.2<br>md5(md5(123456).salt)&#x3D;密文利用两层md5和salt加密<br><br></p>
-<p>Dz3.5<br>aes des&#x3D;密文利用密匙key，偏移量iv，填充，模式加密<br><br></p>
+<p>Dz3.5<br>aes des&#x3D;密文利用密匙key，偏移量iv，填充，模式加密<br><a target="_blank" rel="noopener" href="http://tool.chacuo.net/cryptdes">http://tool.chacuo.net/cryptdes</a><br><br></p>
 <p><strong>Winows &amp; Linux</strong><br>NTLM是window的加密格式<br><br></p>
 <p><strong>MSSQL&amp;MYSQL</strong><br>MYSQL5是MYSQL的加密格式<br><br></p>
 <h2 id="识别算法编码方法"><a href="#识别算法编码方法" class="headerlink" title="识别算法编码方法"></a>识别算法编码方法</h2><ol>
@@ -479,6 +485,22 @@
 <p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzAwNDcxMjI2MA==&mid=2247484455&idx=1&sn=e1b4324ddcf7d6123be30d9a5613e17b&chksm=9b26f60cac517f1a920cf3b73b3212a645aeef78882c47957b9f3c2135cb7ce051c73fe77bb2&mpshare=1&scene=23&srcid=1111auAYWmr1N0NAs9Wp2hGz&sharer_sharetime=1605145141579&sharer_shareid=5051b3eddbbe2cb698aedf9452370026#rd">加密编码类型30余种的密文特征分析</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41638851/article/details/100526839">CTF中常见密码题解密网站总结</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_40837276/article/details/83080460">CTF密码学常见加密解密总结</a></p>
+<br>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Web对象：<br>传输数据：加密MD5和编码base64（漏洞探针）</p>
+<p>数据格式：json和xml（发送漏洞探针，回显数据分析）</p>
+<p>产品源代码：php和js加密（代码审计）</p>
+<p>产品密文存储：MD5，MD5+salt，AES,DES（安全后渗透测试）</p>
+<p>系统对象：<br>Windows(NTLM)，Linux（安全后渗透测试）</p>
+<p>第三方对象：<br>数据库MYSQL（安全后渗透测试）</p>
+<p>保护对象：<br>JAVA，.NET，安卓，iOS（代码保护，反逆向）</p>
+<p>识别：</p>
+<p>解密：</p>
+<p>黑盒白盒都要解密才好测试</p>
+<br>
+
+
+<h3 id="复现："><a href="#复现：" class="headerlink" title="复现："></a>复现：</h3><p>猕猴桃不能复制到VM虚拟机里面，共享文件夹压缩，U盘传递都不行</p>
 
 </article>
     

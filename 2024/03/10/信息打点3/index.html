@@ -15,7 +15,7 @@
 <meta property="og:description" content="什么是JS渗透测试？在JavaScript中也存在变量和函数，当存在可控变量及函数调用即可参数漏洞 JS开发的Web应用和PHP，Java，NET等区别在于即没有源代码，可以通过浏览器的查看源代码获取真实的点。获取URL，获取JS敏感信息，获取代码传参等，所以相当于JS开发的Web应用属于白盒测试（默认有源码参考），一般会在JS中寻找更多的URL地址，在分析JS代码逻辑（加密算法，APIKey配置">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-10T20:01:45.000Z">
-<meta property="article:modified_time" content="2024-03-21T13:34:54.000Z">
+<meta property="article:modified_time" content="2024-09-24T12:27:27.540Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-21 14:34:54"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-09-24 14:27:27"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -379,13 +379,10 @@
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
     <h2 id="什么是JS渗透测试？"><a href="#什么是JS渗透测试？" class="headerlink" title="什么是JS渗透测试？"></a>什么是JS渗透测试？</h2><p>在JavaScript中也存在变量和函数，当存在可控变量及函数调用即可参数漏洞</p>
-<p>JS开发的Web应用和PHP，Java，NET等区别在于即没有源代码，可以通过浏览器的查看源代码获取真实的点。获取URL，获取JS敏感信息，获取代码传参等，所以相当于JS开发的Web应用属于白盒测试（默认有源码参考），一般会在JS中寻找更多的URL地址，在分析JS代码逻辑（加密算法，APIKey配置，验证逻辑等）进行后期安全测试。<br><br></p>
+<p>JS开发的Web应用和PHP，Java，NET等区别在于即没有源代码，可以通过浏览器的查看源代码获取真实的点。获取URL，获取JS敏感信息，获取代码传参等，所以相当于JS开发的Web应用属于白盒测试（默认有源码参考），<strong>一般会在JS中寻找更多的URL地址</strong>，在分析JS代码逻辑（加密算法，APIKey配置，验证逻辑等）进行后期安全测试。<br><br></p>
 <p>前提：Web应用可以采用前端或后端语言开发</p>
-<p><strong>后端语言</strong>：PHP Java Python .NET，浏览器端看不到真实的源代码</p>
-<p><strong>前端语言</strong>：JavaScript(JS)和JS框架，浏览器端能看到真实的源代码<br><br></p>
-<p>例子：</p>
-<p>Zblog：核心功能采用PHP语言去写的，例如登录密码加密</p>
-<p>Vue.js：核心功能采用框架语法JS写的，例如登录密码加密，验证码<br><br></p>
+<p><strong>后端语言</strong>：PHP Java Python .NET，浏览器端看不到真实的源代码<br><strong>前端语言</strong>：JavaScript(JS)和JS框架，浏览器端能看到真实的源代码<br><br></p>
+<p>例子：<br>Zblog：核心功能采用PHP语言传输接收的，例如登录密码加密<br>Vue.js：核心功能采用框架语法JS传输接收的，例如登录密码加密，验证码<br><br></p>
 <h2 id="JS安全问题"><a href="#JS安全问题" class="headerlink" title="JS安全问题"></a>JS安全问题</h2><p><strong>未授权访问</strong>：JS里面分析更多的URL访问来确定接口路径，从而进入未授权访问</p>
 <p><strong>敏感Key泄漏</strong>：JS文件中可能配置了接口信息（云应用，短信，邮件，数据库等）</p>
 <p><strong>API接口安全</strong>：代码中加密提交，参数传递，更多的URL路径<br><br></p>
@@ -398,14 +395,11 @@
 <p>引入多个JS文件</p>
 <p>一般有&#x2F;static&#x2F;js&#x2F;app.js等顺序的JS文件</p>
 <p>一般cookie中有connect.sid<br><br></p>
-<h2 id="如何获取更多的JS文件？"><a href="#如何获取更多的JS文件？" class="headerlink" title="如何获取更多的JS文件？"></a>如何获取更多的JS文件？</h2><p><strong>手工</strong>-浏览器搜索</p>
-<p><strong>半自动</strong>-Burpsuite插件</p>
-<p><strong>工具化</strong>-各类提取&amp;Fuzz项目<br><br></p>
+<h2 id="如何获取更多的JS文件？"><a href="#如何获取更多的JS文件？" class="headerlink" title="如何获取更多的JS文件？"></a>如何获取更多的JS文件？</h2><p><strong>手工</strong>-浏览器搜索<br><strong>半自动</strong>-Burpsuite插件<br><strong>工具化</strong>-各类提取&amp;Fuzz项目<br><br></p>
 <h2 id="前端架构-手工搜索分析"><a href="#前端架构-手工搜索分析" class="headerlink" title="前端架构-手工搜索分析"></a>前端架构-手工搜索分析</h2><p>打开F12检查，网站代码全局搜索分析，找连接地址和路径</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">src=</span><br><span class="line">path=</span><br><span class="line">method:<span class="string">&quot;get&quot;</span></span><br><span class="line">http.get(<span class="string">&quot;)</span></span><br><span class="line"><span class="string">method:&quot;</span>post<span class="string">&quot;</span></span><br><span class="line"><span class="string">http.post(&quot;</span>)</span><br><span class="line">.ajax</span><br><span class="line">http://service.httppost</span><br><span class="line">http://service.httpget</span><br></pre></td></tr></table></figure>
 
-<br>
-
+<p>用来寻找未授权访问的路径<br><br></p>
 <h2 id="前端架构-半自动Burp分析"><a href="#前端架构-半自动Burp分析" class="headerlink" title="前端架构-半自动Burp分析"></a>前端架构-半自动Burp分析</h2><p><strong>插件一</strong>：<a target="_blank" rel="noopener" href="https://github.com/ScriptKid-Beta/Unexpected_information">Unexpected_information</a><br>用来标记请求包中的一些敏感信息、JS接口和一些特殊字段，防止我们疏忽了一些数据包，使用它可能会有意外的收获信息。<br><br></p>
 <p><strong>插件二</strong>：<a target="_blank" rel="noopener" href="https://github.com/gh0stkey/HaE">HaE</a><br>基于BurpSuite插件JavaAPI开发的请求高亮标记与信息提取的辅助型插件。该插件可以通过自定义正则的方式匹配响应报文或请求报文，可以自行决定符合该自定义正则匹配的相应请求是否需要高亮标记、信息提取。<br><br></p>
 <h2 id="前端架构-自动化项目分析"><a href="#前端架构-自动化项目分析" class="headerlink" title="前端架构-自动化项目分析"></a>前端架构-自动化项目分析</h2><ol>
@@ -422,6 +416,11 @@
 <li><p><a target="_blank" rel="noopener" href="https://github.com/rtcatc/Packer-Fuzzer">Packer-Fuzzer</a>-针对JS框架开发打包器Webpack检测，在浏览器插件杂项里面有webpack就能使用这个工具了，一款针对Webpack等前端打包工具所构造的网站进行快速、高效安全检测的扫描工具，然后就能生成报告。</p>
 </li>
 </ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>知识点：识别，分类，框架<br>JS前端架构<br>测试方法：人工（全局搜索关键字，筛选JS文件）<br>Burp：自带官方插件和第三方插件<br>工具项目：表现JS中提取信息，爆破更多JS，JS打包器WebPack测试</p>
+<br>
+
+
+<h3 id="复现："><a href="#复现：" class="headerlink" title="复现："></a>复现：</h3><p>githack目标IP失效，svghack目标网站失效，泛新目标网站失效，composer.json网站目标失败</p>
 
 </article>
     
