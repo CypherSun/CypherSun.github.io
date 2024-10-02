@@ -15,7 +15,7 @@
 <meta property="og:description" content="端口判断服务   端口 服务 渗透用途    tcp 20,21 FTP 允许匿名的上传下载,爆破,嗅探,win提权,远程执行(proftpd 1.3.5),各类后门(proftpd,vsftp 2.3.4)   tcp 22 SSH 可根据已搜集到的信息尝试爆破,v1版本可中间人,ssh隧道及内网代理转发,文件传输等等   tcp 23 Telnet 爆破,嗅探,一般常用于路由,交换登陆,可尝试">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-03-10T20:31:06.000Z">
-<meta property="article:modified_time" content="2024-03-21T13:45:20.000Z">
+<meta property="article:modified_time" content="2024-10-02T07:49:02.696Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-03-21 14:45:20"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-02 09:49:02"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -624,12 +624,12 @@
 </tbody></table>
 <br>
 
-<p>开放的端口可以判断安装应用服务器，是什么数据库等等，来应对不同的安全问题<br><br></p>
+<p>通过默认开放的端口，可以判断该网站安装什么应用服务器，什么数据库等等，来应对不同的安全问题<br><br></p>
 <h2 id="Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术"><a href="#Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术" class="headerlink" title="Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术"></a>Web服务器-请求返回包，应用服务器，其他服务协议-端口扫描技术</h2><p>可以用作Web，应用中间件，数据库类，其他服务协议探针</p>
 <ol>
-<li><p>端口扫描工具：<a target="_blank" rel="noopener" href="https://nmap.org/download.html">Nmap</a>，<a target="_blank" rel="noopener" href="https://github.com/robertdavidgraham/masscan">MASSCAN</a>，网络空间 (<a target="_blank" rel="noopener" href="https://quake.360.net/quake/#/index">360</a>，<a target="_blank" rel="noopener" href="https://fofa.info/">fofa</a>，<a target="_blank" rel="noopener" href="https://hunter.qianxin.com/">奇安信</a>等)<br>使用参考：<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/lzy575566/p/15513726.html">编译MASSCAN</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_53079406/article/details/125266331">MASSCAN核心使用</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_53079406/article/details/125263917">Nmap核心使用方法</a></p>
+<li><p>端口扫描工具：Nmap，MASSCAN，网络空间 (<a target="_blank" rel="noopener" href="https://quake.360.net/quake/#/index">360</a>，<a target="_blank" rel="noopener" href="https://fofa.info/">fofa</a>，<a target="_blank" rel="noopener" href="https://hunter.qianxin.com/">奇安信</a>等)</p>
 </li>
-<li><p>端口开放状态：Close Open Filtered<br>close就是关<br>open就是开<br>filtered就是被过滤了，有可能开了，有可能关闭了，因为防火墙的原因</p>
+<li><p>端口开放状态：Close Open Filtered<br>close就是关<br>open就是开<br>filtered就是被过滤了，有可能开了，有可能关闭了，因为防火墙的原因<br>并且需要看到该端口是否是http协议，是就能用该端口打开网页，不是的话就不行</p>
 </li>
 <li><p>需要考虑情况：防火墙，内网环境<br>防火墙可能出现情况：防火墙阻止判断，端口明明开放，却无法通讯<br>内网环境可能出现情况：明明Web的80或者8080端口，数据库端口开的，网站也能正常打开，但是对目标进行端口扫描，发现端口没有开放（排除防火墙问题），可能因为扫的是外网，需要扫其中的内网。这个没办法解决，只能说可能会出现这种状况。</p>
 <br></li>
@@ -638,7 +638,7 @@
 <ol>
 <li><p>WAF解释：<br>Web应用防护系统（也称为：网站应用级入侵防御系统。英文：Web Application Firewall，简称：WAF）。利用国际上公认的一种说法：Web应用防火墙是通过执行一系列针对HTTP&#x2F;HTTPS的安全策略来专门为Web应用提供保护的一款产品。大部分的WAF都是绕过不了的，能绕过的都是鸡肋的。</p>
 </li>
-<li><p>WAF分类：<br>云WAF：百度安全宝，阿里云盾，华为云，亚马逊云，长亭雷池等（根据产品等级，对象个数来收费，针对中大型企业，色色公司，技术最先进的，时刻升级，时刻保障）<br>硬件WAF：绿盟、安恒、深信服、知道创宇等公司商业产品（政府，军工单位相关，技术也比较强）<br>软件WAF：宝塔，安全狗、D盾等（小中型公司，没经济实力的个人公司）<br>代码级WAF：自己写的代码过滤规则，防止出现注入等，一般是在代码里面写死</p>
+<li><p>WAF分类：<br>云WAF：百度安全宝，阿里云盾，华为云，亚马逊云，长亭雷池等（根据产品等级，对象个数来收费，针对中大型企业，色色公司，技术最先进的，时刻升级，时刻保障）<br>硬件WAF：绿盟、安恒、深信服、知道创宇等公司商业产品（学校，政府，军工单位相关，技术也比较强）<br>软件WAF：宝塔，安全狗、D盾等（小中型公司，没经济实力的个人公司或黑色产业）<br>代码级WAF：自己写的代码过滤规则，防止出现注入等，一般是在代码里面写死<br>看见WAF，98%就可以直接跑路了</p>
 </li>
 <li><p>识别看图：<br>拦截页面，identYwaf项目内置</p>
 </li>
@@ -659,12 +659,16 @@
 
 <p><a target="_blank" rel="noopener" href="https://hfish.net/#/">Hfish</a> 搭建蜜罐，这个搭建的大部分可以绕过网络空间的判断蜜罐</p>
 <p>蜜罐项目识别 <a target="_blank" rel="noopener" href="https://github.com/360quake/quake_rs">360quake</a>（可以识别，但是需要360网络空间冲积分用key）</p>
-<p>quake.exe init apikey值</p>
-<p>quake.exe honeypot 目标</p>
-<p>网络空间搜索IP，网站可以帮助判断</p>
+<p>网络空间搜索IP，网站可以帮助判断是否为蜜罐</p>
 <p>蜜罐项目人工识别，设备指纹分析，判断蜜罐</p>
-<p>扫描出的端口很多并且有规律性，可能是蜜罐</p>
-<p>Web访问协议就下载，正常真实系统不会出现这种情况，蜜罐会记录攻击者的账号密码，但是账号密码会采用Web功能json传输给蜜罐（蜜罐是不用使用mysql这种数据库的），如果访问端口，就会下载这个文件，一看就是蜜罐了。</p>
+<p>扫描出的端口很多并且有规律性+1增长，可能是蜜罐</p>
+<p>搞一个ssh mysql应用蜜罐，搞一个可以爆破的地方，Web访问协议就下载，正常真实系统不会出现这种情况，蜜罐会记录攻击者的账号密码，但是账号密码会采用Web功能json传输给蜜罐（蜜罐是不用使用mysql这种数据库的），如果访问端口，就会下载这个文件，一看就是蜜罐了。</p>
+<p>三方面来确定，就基本确定是否为蜜罐了。<br><br></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>补上蜜罐返回值图片</p>
+<br>
+
+
+<h3 id="复现："><a href="#复现：" class="headerlink" title="复现："></a>复现：</h3><p>Hifish不知道为什么蜜罐打不开，quake要充钱</p>
 
 </article>
     
