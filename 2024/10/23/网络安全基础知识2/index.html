@@ -7,16 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CypherSun">
-<meta property="og:url" content="https://cyphersun.github.io/archives/2024/index.html">
+<meta name="description" content="安全原则 机密性，完整性和可用性（CIA） 与安全三角CIA相对立的概念：披露，更改和破坏&#x2F;拒绝（DAD） 安全模型的基本概念，Bell-LaPadula等模型 纵深防御，零信任和信任但验证等安全原则 ISO&#x2F;IEC 19249 漏洞，威胁和风险之间的区别   保密性, 完整性, 可用性 (CIA) 和其他保密性(Confidentiality)：确保只有预期的人员或接收者才能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安全原则">
+<meta property="og:url" content="https://cyphersun.github.io/2024/10/23/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%862/index.html">
 <meta property="og:site_name" content="CypherSun">
+<meta property="og:description" content="安全原则 机密性，完整性和可用性（CIA） 与安全三角CIA相对立的概念：披露，更改和破坏&#x2F;拒绝（DAD） 安全模型的基本概念，Bell-LaPadula等模型 纵深防御，零信任和信任但验证等安全原则 ISO&#x2F;IEC 19249 漏洞，威胁和风险之间的区别   保密性, 完整性, 可用性 (CIA) 和其他保密性(Confidentiality)：确保只有预期的人员或接收者才能">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-10-23T08:41:05.000Z">
+<meta property="article:modified_time" content="2024-10-23T13:39:20.581Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >CypherSun</title>
+<title >安全原则</title>
 
 <!-- Favicon -->
 
@@ -53,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":false,"postUpdate":"2024-10-23 23:01:29"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-23 15:39:20"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -203,12 +207,9 @@
     <!-- banner -->
     <div class="trm-banner">
     
-    <!-- banner video cover -->
-    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover">
-        <source src="https://cdn.moji.com/websrc/video/summer20190515.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        Your browser does not support HTML5 video.
-    </video>
-    <!-- banner video cover end -->
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
     
 
     <!-- banner content -->
@@ -223,10 +224,10 @@
                     <!-- banner title -->
                     <div class="trm-banner-text ">
                         <div class="trm-label trm-mb-20">
-                            The article archive
+                            NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            江碧鸟逾白，<br>山青花欲燃。
+                            安全原则
                         </h1>
 
                         
@@ -236,7 +237,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        archives
+                                        2024
                                     </span>
                                 </li>
                             </ul>
@@ -355,111 +356,139 @@
             
             <div class="trm-page-content col-lg-8">
                 <div id="trm-content" class="trm-content">
-                    <div class="row">
-    <div class="col-lg-12">
-        <div class="trm-card">
-            <div style="padding: 0 20px;">
-                
-                    <ul class="trm-tag-list"><li class="trm-tag-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">（4）</span></li></ul>
-                
-            </div>
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            10/23
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            10:41
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            CypherSun
         </div>
     </div>
 </div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="安全原则"><a href="#安全原则" class="headerlink" title="安全原则"></a>安全原则</h2><ol>
+<li>机密性，完整性和可用性（CIA）</li>
+<li>与安全三角CIA相对立的概念：披露，更改和破坏&#x2F;拒绝（DAD）</li>
+<li>安全模型的基本概念，Bell-LaPadula等模型</li>
+<li>纵深防御，零信任和信任但验证等安全原则</li>
+<li>ISO&#x2F;IEC 19249</li>
+<li>漏洞，威胁和风险之间的区别<br>
+<br></li>
+</ol>
+<h3 id="保密性-完整性-可用性-CIA-和其他"><a href="#保密性-完整性-可用性-CIA-和其他" class="headerlink" title="保密性, 完整性, 可用性 (CIA) 和其他"></a>保密性, 完整性, 可用性 (CIA) 和其他</h3><p><strong>保密性</strong>(Confidentiality)：确保只有预期的人员或接收者才能访问数据。<br><strong>完整性</strong>(Integrity)：旨在确保数据不能被更改；此外，如果发生任何更改，可以检测到。<br><strong>可用性</strong>(Availability)：旨在确保系统或服务在需要时可用。<br><br></p>
+<p><strong>真实性</strong>(Authenticity)：真实性意味着非欺诈或伪造。真实性是指确保文档，文件和数据来自所声称的来源。<br><strong>不可否认性</strong>(Nonrepudiation)：不可否认性意味着拒绝承认某事物的有效性。不可否认性确保原始来源不能否认特定文档，文件和数据的来源。<br><strong>实用性</strong>(Utility)：实用性关注的是信息的有用性。<br><strong>占有</strong>(Possession)：此安全要素要求保护信息免遭未经授权的窃取、复制或控制。</p>
+<p>极端保护机密性和完整性会限制可用性，而极端增加可用性会导致失去机密性和完整性。良好的安全原则实施需要在三者之间取得平衡。<br><br></p>
+<h3 id="披露-更改-破坏-拒绝-DAD"><a href="#披露-更改-破坏-拒绝-DAD" class="headerlink" title="披露, 更改, 破坏&#x2F;拒绝 (DAD)"></a>披露, 更改, 破坏&#x2F;拒绝 (DAD)</h3><p><strong>披露</strong>(Disclosure)：与保密性相反。披露机密数据将是对保密性的侵犯。<br><strong>更改</strong>(Alteration)：与完整性相反。<br><strong>破坏&#x2F;拒绝</strong>(Destruction&#x2F;Denial)：与可用性相反。<br><br></p>
+<h3 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h3><h4 id="Bell-LaPadula模型"><a href="#Bell-LaPadula模型" class="headerlink" title="Bell-LaPadula模型"></a>Bell-LaPadula模型</h4><p>Bell-LaPadula模型通过指定三条规则来实现<strong>保密性</strong>：</p>
+<p><strong>简单安全属性</strong>：此属性称为“不可读取”；它规定处于较低安全级别的主体无法读取处于较高安全级别的对象。此规则可防止访问授权级别以上的敏感信息。No read up<br><strong>星型安全属性</strong>：此属性称为“不可写入”；它规定较高安全级别的主体无法写入较低安全级别的对象。此规则可防止向较低安全级别的主体泄露敏感信息。No write down<br><strong>自主安全属性</strong>：此属性使用访问矩阵来允许读写操作。下表显示了一个示例访问矩阵，并与前两个属性结合使用。</p>
+<table>
+<thead>
+<tr>
+<th>主题</th>
+<th>对象 A</th>
+<th>对象 B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主题 1</td>
+<td>写</td>
+<td>禁止访问</td>
+</tr>
+<tr>
+<td>主题 2</td>
+<td>读&#x2F;写</td>
+<td>读</td>
+</tr>
+</tbody></table>
+<br>
 
-<!-- history -->
+<p>Bell-LaPadula模型也存在一些局限性。它不是为处理文件共享而设计的。<br><br></p>
+<h4 id="Biba模型："><a href="#Biba模型：" class="headerlink" title="Biba模型："></a>Biba模型：</h4><p>Biba 模型旨在通过指定两个主要规则来实现<strong>完整性</strong>：</p>
+<p><strong>简单完整性属性</strong>：此属性称为“不读取”；完整性较高的主体不应从完整性较低的对象读取。No read down<br><strong>星型完整性属性</strong>：此属性称为“禁止写入”；完整性较低的主体不应写入完整性较高的对象。No write up</p>
+<p>Biba 模型存在各种局限性。其中一个例子就是它不能处理内部威胁（内部威胁）。<br><br></p>
+<h4 id="Clark-Wilson模型："><a href="#Clark-Wilson模型：" class="headerlink" title="Clark-Wilson模型："></a>Clark-Wilson模型：</h4><p>克拉克-威尔逊模型还旨在通过使用以下概念来实现<strong>完整性</strong>：</p>
+<p><strong>受限数据项</strong>(CDI)：这指的是我们想要保留其完整性的数据类型。<br><strong>不受约束的数据项</strong>(UDI)：指超出CDI的所有数据类型，例如用户和系统输入。<br><strong>转换程序</strong>(TP)：这些程序是程序化操作，例如读取和写入，并且应该保持 CDI 的完整性。<br><strong>完整性验证程序</strong>(IVP)：这些程序检查并确保 CDI 的有效性。<br><br></p>
+<p>更多模型：<br>Brewer and Nash模型<br>Goguen-Meseguer模型<br>Sutherland模型<br>Graham-Denning模型<br>Harrison-Ruzzo-Ullman模型<br><br></p>
+<h3 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h3><p>纵深防御是指建立多层次的安全体系，因此也称为多级安全。<br><br></p>
+<h3 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h3><h4 id="五架构原则："><a href="#五架构原则：" class="headerlink" title="五架构原则："></a>五架构原则：</h4><p><strong>域分离</strong>：每组相关组件都被分组为单个实体；组件可以是应用程序、数据或其他资源。每个实体都有自己的域，并被分配一组通用的安全属性。</p>
+<p><strong>分层</strong>：当系统被构建为许多抽象级别或层次时，就可以在不同级别实施安全策略；</p>
+<p><strong>封装</strong>：在面向对象编程中，我们隐藏低级实现，并通过提供特定方法来防止直接操作对象中的数据。</p>
+<p><strong>冗余</strong>：此原则确保可用性和完整性。冗余相关的示例有很多。</p>
+<p><strong>虚拟化</strong>：虚拟化的概念是在多个操作系统之间共享一组硬件。虚拟化提供了沙盒功能，可以改善安全边界、安全引爆和对恶意程序的观察。<br><br></p>
+<h4 id="五设计原则："><a href="#五设计原则：" class="headerlink" title="五设计原则："></a>五设计原则：</h4><p><strong>最小权限</strong>：最小权限原则应为某人提供执行其任务所需的最少权限，仅此而已。</p>
+<p><strong>攻击面最小化</strong>：每个系统都有漏洞，攻击者可能会利用这些漏洞来破坏系统。一些漏洞是已知的，而另一些漏洞尚未被发现。这些漏洞代表着我们应该尽量减少的风险。禁用任何不需要的服务。</p>
+<p><strong>集中式参数验证</strong>：许多威胁都源于系统接收输入，尤其是来自用户的输入。无效输入可用于利用系统中的漏洞</p>
+<p><strong>集中式通用安全服务</strong>：作为一项安全原则，我们应致力于集中式所有安全服务。例如，我们将创建一个集中式服务器进行身份验证。当然，您可以采取适当的措施来确保可用性并防止产生单点故障。</p>
+<p><strong>准备错误和异常处理</strong>：每当我们构建系统时，都应该考虑到错误和异常确实会发生。<br><br></p>
+<h3 id="零信任与信任但需验证核实"><a href="#零信任与信任但需验证核实" class="headerlink" title="零信任与信任但需验证核实"></a>零信任与信任但需验证核实</h3><p><strong>信任但需验证核实</strong>：即使信任某个实体及其行为，也应始终进行核实。实体可能是用户或系统。核实通常需要设置适当的日志记录机制；核实表示查看日志以确保一切正常。实际上，核实所有内容是不可行的；只需考虑一下审查单个实体采取的所有操作（例如单个用户浏览的互联网页面）所需的工作量。这需要自动化安全机制，例如代理、入侵检测和入侵防御系统。</p>
+<p><strong>零信任</strong>：该原则将信任视为一种漏洞，因此它迎合了内部威胁。在将信任视为一种漏洞之后，零信任试图消除它。它间接地教导人们“永远不要信任，永远要验证”。换句话说，每个实体都被视为敌对实体，直到证明不是为止。零信任不会根据设备的位置或所有权授予其信任。这种方法与信任内部网络或企业拥有的设备的旧模式形成鲜明对比。在访问任何资源之前，都需要进行身份验证和授权。因此，如果发生任何违规行为，如果实施了零信任架构，损害将更加可控。</p>
+<p>微分段是零信任的实现之一。它指的是网络分段可以小到单个主机的设计。此外，分段之间的通信需要身份验证、访问控制列表检查和其他安全要求。<br><br></p>
+<h3 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h3><p>漏洞：漏洞意味着容易受到攻击或破坏。在信息安全中，漏洞是一种弱点。<br>威胁：威胁是与此弱点或脆弱性相关的潜在危险。<br>风险：风险与威胁行为者利用漏洞的可能性以及对业务造成的后续影响有关。</p>
 
-<div class="row">
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
     <div class="col-lg-12">
         <!-- title -->
         <h5 class="trm-title-with-divider">
-            
-                2024 年的归档
-            
-            <span data-number="01"></span>
+            其他文章
+            <span data-number="02"></span>
         </h5>
     </div>
-    <div class="col-lg-12">
-        <!-- timeline -->
-        <div class="trm-timeline">
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/10/23/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%861/" class="trm-cover-frame trm-anima-link">
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/10/23/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%862/" class="trm-anima-link">
-                                    安全原则
-                                </a>
-                            </h6>
-                        </div>
-                    
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">23</div>
+                    <div class="trm-cover-month">2024/10</div>
                 </div>
-            </div>
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/10/23/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%861/" class="trm-anima-link">
-                                    网络职业
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+                    网络安全基础知识
+                </a>
             </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/10/23/%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                                    网站模板
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/10/23/%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                                    工具模板
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
+            <h5>
+                <a href="/2024/10/23/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%861/" class="trm-anima-link">
+                    网络职业
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/10/23</li>
+                <li>09:54</li>
+                
+                
+            </ul>
         </div>
-        <!-- timeline end -->
     </div>
 </div>
+    
+</div>
 
-<!-- history end -->
-
-
-    <div class="trm-pagination">
-        <span class="page-number current">1</span>
-    </div>
-
-
+    
 
 
 
@@ -500,6 +529,10 @@
             
 <div class="trm-fixed-container">
     
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
     
     
         <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
@@ -582,6 +615,10 @@
     
 
     <!-- 评论插件 -->
+    
+        
+
+        
     
 
 		
