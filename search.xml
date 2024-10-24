@@ -21,43 +21,40 @@
       </categories>
   </entry>
   <entry>
-    <title>网站模板</title>
-    <url>/2024/10/24/%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+    <title>工具theHarvester</title>
+    <url>/2024/10/25/%E5%B7%A5%E5%85%B7theHarvester/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>theHarvester 是一款简单易用但功能强大的工具，旨在用于红队评估或渗透测试的侦察阶段。它执行开源情报 (OSINT) 收集，以帮助确定域的外部威胁状况。该工具使用多种公共资源收集名称、电子邮件、IP、子域和 URL，<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站Shodan</title>
+    <url>/2024/10/25/%E7%BD%91%E7%AB%99Shodan/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.shodan.io/dashboard">shodan</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 ]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
+      <tags>
+        <tag>侦查</tag>
+      </tags>
   </entry>
   <entry>
-    <title>网络职业</title>
-    <url>/2024/10/24/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%861/</url>
-    <content><![CDATA[<h2 id="安全分析师"><a href="#安全分析师" class="headerlink" title="安全分析师"></a>安全分析师</h2><p>安全分析师研究和评估公司网络，提供建议给工程师制定预防措施。该职位需要与各岗位合作，以了解安全要求和安全形势。</p>
-<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与各岗位合作，分析整个公司的网络安全<br>编写有关网络安全的持续报告，记录安全问题和应对措施<br>制定安全计划，结合对新的攻击工具和趋势的研究以及各团队的安全措施来维护数据的安全<br><br></p>
-<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p>渗透测试工程师的工作职责是测试公司内部系统和软件的安全性，通过系统化黑客攻击来发现缺陷和漏洞。渗透测试工程师利用这些漏洞来评估每种情况下的风险。然后，公司可以利用这些评估报告来修复漏洞，以防止现实世界的网络攻击。</p>
-<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络和应用程序进行测试<br>执行安全评估、审计和分析<br>评估并报告，推荐预防攻击的措施<br><br></p>
-<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>安全工程师使用来自安全工作人员提供的威胁和漏洞数据来开发和实施安全解决方案。安全工程师的工作范围包括规避各种攻击，包括 Web 应用程序攻击、网络威胁等。最终目标是采用安全措施，以减轻攻击和数据丢失的风险。</p>
-<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>测试和筛选安全措施<br>监控网络和报告，更新系统并减轻漏洞<br>确定并实施最佳安全系统<br><br></p>
-<!-- https://tryhackme.com/r/room/careersincyber -->
-<!-- 完全复现（删除例子）✔，检查（删除主语，语句通顺）✔ -->
-]]></content>
-      <categories>
-        <category>网络安全基础知识</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>工具awesome-osint</title>
-    <url>/2024/10/24/%E7%BD%91%E7%AB%99awesome-osint/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://github.com/jivoi/awesome-osint">awesome-osint</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>精选的令人惊叹的开源情报工具和资源列表。开源情报 (OSINT) 是从公开来源收集的情报。在情报界(IC) 中，“公开”一词指的是公开的、可公开获取的来源（而不是隐蔽或秘密来源）。此列表旨在帮助所有对网络威胁情报 (CTI)、威胁搜寻或 OSINT 感兴趣的人。从初学者到高级人士快乐地进行黑客攻击和狩猎🧙‍♂️<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>查看目录即可<br><br></p>
-]]></content>
+    <title>网站beenverified</title>
+    <url>/2024/10/25/%E7%BD%91%E7%AB%99beenverified/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://beenverified.com/">beenverified</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>只能用于指向其他帐户或可搜索的详细信息，例如过去的地址或电话号码<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
   </entry>
   <entry>
     <title>工具模板</title>
@@ -77,68 +74,108 @@
       </categories>
   </entry>
   <entry>
-    <title>安全原则</title>
-    <url>/2024/10/24/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%862/</url>
-    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在将某事物描述为安全之前，需要更好地考虑安全性的构成。当判断一个系统的安全性时，需要从安全三要素的角度来思考：机密性、完整性和可用性 (CIA)</p>
-<p><strong>保密性</strong>(Confidentiality)：确保只有预期的人员或接收者才能访问数据<br><strong>完整性</strong>(Integrity)：旨在确保数据不能被更改；此外，如果发生任何更改，可以检测到<br><strong>可用性</strong>(Availability)：旨在确保系统或服务在需要时可用</p>
-<p>极端保护机密性和完整性会限制可用性，而极端增加可用性会导致失去机密性和完整性。良好的安全原则实施需要在三者之间取得平衡。</p>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><strong>真实性</strong>：真实性意味着非欺诈或伪造。真实性是指确保文档，文件和数据来自所声称的来源<br><strong>不可否认性</strong>：不可否认性意味着拒绝承认某事物的有效性。不可否认性确保原始来源不能否认特定文档，文件和数据的来源</p>
-<p><strong>实用性</strong>：实用性关注的是信息的有用性<br><strong>占有</strong>：此安全要素要求保护信息免遭未经授权的窃取、复制或控制<br><br></p>
-<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>CIA三要素的对立面是DAD三要素：披露、改变、毁灭<br>系统安全性受到多种攻击方式的威胁。攻击方式包括泄露机密数据、篡改数据或破坏数据</p>
-<p><strong>披露</strong>(Disclosure)：与保密相反，披露机密数据将是对保密性的侵犯<br><strong>更改</strong>(Alteration)：与完整性相反<br><strong>破坏&#x2F;拒绝</strong>(Destruction&#x2F;Denial)：与可用性相反</p>
-<p>防止泄露、篡改和破坏&#x2F;否认相当于努力维护机密性、完整性和可用性。<br><br></p>
-<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>使用安全模型创建一个确保一项或多项安全功能的系统</p>
-<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型旨在通过指定三条规则来实现<strong>保密性</strong>：</p>
-<p><strong>简单安全属性</strong>：它规定处于较低安全级别的主体无法读取处于较高安全级别的对象。此规则可防止访问授权级别以上的敏感信息 no read up<br><strong>星型安全属性</strong>：它规定较高安全级别的主体无法写入较低安全级别的对象。此规则可防止向较低安全级别的主体泄露敏感信息 no write down<br><strong>自主安全属性</strong>：使用访问矩阵来允许读写操作，访问矩阵与前两个属性结合使用</p>
-<table>
-<thead>
-<tr>
-<th>主题</th>
-<th>对象A</th>
-<th>对象B</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>主题 1</td>
-<td>写</td>
-<td>禁止访问</td>
-</tr>
-<tr>
-<td>主题 2</td>
-<td>读&#x2F;写</td>
-<td>读</td>
-</tr>
-</tbody></table>
-<p>可以与具有较高安全级别权限的人员共享机密信息，也可以从具有较低安全级别权限的人员那里获取机密信息 write up, read down</p>
-<p>Bell-LaPadula 模型局限性为不是为处理文件共享而设计的</p>
-<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型旨在通过指定两个主要规则来实现<strong>完整性</strong>：</p>
-<p><strong>简单完整性属性</strong>：完整性较高的主体不应从完整性较低的对象读取 no read down<br><strong>星型完整性属性</strong>：完整性较低的主体不应写入完整性较高的对象 no write up</p>
-<p>这个模型与Bell-LaPadula 模型相反，一个关注保密性，一个关注完整性 read up, write down</p>
-<p>Biba 模型存在各种局限性。其中一个例子就是它不能处理内部威胁（内部威胁）。</p>
-<h3 id="Clark-Wilson模型"><a href="#Clark-Wilson模型" class="headerlink" title="Clark-Wilson模型"></a>Clark-Wilson模型</h3><p>Clark-Wilson模型还旨在通过使用以下概念来实现<strong>完整性</strong>：</p>
-<p><strong>受限数据项</strong>(CDI)：这指的是想要保留其完整性的数据类型<br><strong>不受约束的数据项</strong>(UDI)：指超出CDI的所有数据类型<br><strong>转换程序</strong>(TP)：这些程序是程序化操作，并且应该保持 CDI 的完整性<br><strong>完整性验证程序</strong>(IVP)：这些程序检查并确保 CDI 的有效性</p>
-<p>许多其他安全模型：<br>Brewer and Nash 模型<br>Goguen-Meseguer 模型<br>Sutherland 模型<br>Graham-Denning 模型<br>Harrison-Ruzzo-Ullman 模型<br><br></p>
-<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是指建立多层次的安全体系，因此也称为多级安全<br><br></p>
-<h2 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h2><p>国际标准化组织 (ISO) 和国际电工委员会 (IEC) 制定了 ISO&#x2F;IEC 19249。<br>ISO&#x2F;IEC 19249:2017 信息技术，安全技术，安全产品，系统和应用程序的架构和设计原则</p>
-<h3 id="ISO-IEC-19249-五项架构原则："><a href="#ISO-IEC-19249-五项架构原则：" class="headerlink" title="ISO&#x2F;IEC 19249 五项架构原则："></a>ISO&#x2F;IEC 19249 五项架构原则：</h3><p><strong>域分离</strong>：每组相关组件都被分组为单个实体；组件可以是应用程序、数据或其他资源。每个实体都有自己的域，并被分配一组通用的安全属性</p>
-<p><strong>分层</strong>：当系统被构建为许多抽象级别或层次时，就可以在不同级别实施安全策略，分层与纵深防御有关</p>
-<p><strong>封装</strong>：在面向对象编程中，隐藏低级实现，并通过提供特定方法来防止直接操作对象中的数据</p>
-<p><strong>冗余</strong>：此原则确保可用性和完整性</p>
-<p><strong>虚拟化</strong>：虚拟化的概念是在多个操作系统之间共享一组硬件。虚拟化提供了沙盒功能，可以改善安全边界、安全引爆和对恶意程序的观察</p>
-<h3 id="ISO-IEC-19249-五项设计原则："><a href="#ISO-IEC-19249-五项设计原则：" class="headerlink" title="ISO&#x2F;IEC 19249 五项设计原则："></a>ISO&#x2F;IEC 19249 五项设计原则：</h3><p><strong>最小权限</strong>：最小权限原则应为某人提供执行其任务所需的最少权限</p>
-<p><strong>攻击面最小化</strong>：每个系统都有漏洞，攻击者可能会利用这些漏洞来破坏系统。一些漏洞是已知的，而另一些漏洞尚未被发现，这些漏洞代表应该尽量减少的风险</p>
-<p><strong>集中式参数验证</strong>：许多威胁都源于系统接收输入，尤其是来自用户的输入。无效输入可用于利用系统中的漏洞，参数验证是确保系统状态正确的必要步骤。考虑到系统处理的参数数量，参数验证应集中在一个库或系统中</p>
-<p><strong>集中式通用安全服务</strong>：作为一项安全原则应致力于集中式所有安全服务，创建一个集中式服务器进行身份验证，采取适当的措施来确保可用性并防止产生单点故障</p>
-<p><strong>准备错误和异常处理</strong>：每当构建系统时，应考虑到错误和异常的发生<br><br></p>
-<h2 id="零信任与信任但需验证"><a href="#零信任与信任但需验证" class="headerlink" title="零信任与信任但需验证"></a>零信任与信任但需验证</h2><h3 id="信任但要核实："><a href="#信任但要核实：" class="headerlink" title="信任但要核实："></a>信任但要核实：</h3><p>即使信任某个实体及其行为，也应始终进行核实。实体可能是用户或系统。核实通常需要设置适当的日志记录机制；核实表示查看日志以确保一切正常。核实所有内容是不可行的。这需要自动化安全机制，例如代理、入侵检测和入侵防御系统。</p>
-<h3 id="零信任："><a href="#零信任：" class="headerlink" title="零信任："></a>零信任：</h3><p>该原则将信任视为一种漏洞之后，零信任试图消除它。“永远不要信任，永远要验证”。每个实体都被视为敌对实体，直到证明不是为止。零信任不会根据设备的位置或所有权授予其信任。在访问任何资源之前，都需要进行身份验证和授权。如果发生任何违规行为，如果实施了零信任架构，损害将更加可控。</p>
-<p>微分段是零信任的实现之一。它指的是网络分段可以小到单个主机的设计。此外，分段之间的通信需要身份验证、访问控制列表检查和其他安全要求。</p>
-<p>在不对业务产生负面影响的情况下，应用零信任的程度是有限的<br><br></p>
-<h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p>漏洞：漏洞意味着容易受到攻击或破坏。在信息安全中，漏洞是一种弱点<br>威胁：威胁是与此弱点或脆弱性相关的潜在危险<br>风险：风险涉及威胁攻击者利用漏洞的可能性，以及对业务造成的影响<br><br></p>
-<!-- https://tryhackme.com/r/room/securityprinciples -->
-<!-- 完全复现（删除例子）✔，检查（删除主语，语句通顺）✔ -->]]></content>
+    <title>工具awesome-osint</title>
+    <url>/2024/10/24/%E7%BD%91%E7%AB%99awesome-osint/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://github.com/jivoi/awesome-osint">awesome-osint</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>精选的令人惊叹的开源情报工具和资源列表。开源情报 (OSINT) 是从公开来源收集的情报。在情报界(IC) 中，“公开”一词指的是公开的、可公开获取的来源（而不是隐蔽或秘密来源）。此列表旨在帮助所有对网络威胁情报 (CTI)、威胁搜寻或 OSINT 感兴趣的人。从初学者到高级人士快乐地进行黑客攻击和狩猎🧙‍♂️<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>查看目录即可<br><br></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>网站hunter</title>
+    <url>/2024/10/25/%E7%BD%91%E7%AB%99hunter/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>这是一个电子邮件搜索工具，可让获取与域名相关的联系信息<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+
+
+
+]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站littlesis</title>
+    <url>/2024/10/25/%E7%BD%91%E7%AB%99littlesis/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://littlesis.org/">littlesis</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>姓名经常出现在与商业文件相关的文件中，企业主或有权势的人相关的姓名搜索<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站opencorporates</title>
+    <url>/2024/10/25/%E7%BD%91%E7%AB%99opencorporates/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://opencorporates.com/">opencorporates</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站peekyou</title>
+    <url>/2024/10/25/%E7%BD%91%E7%AB%99peekyou/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.peekyou.com/">peekyou</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>只能用于指向其他帐户或可搜索的详细信息，例如过去的地址或电话号码<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站pipl</title>
+    <url>/2024/10/25/%E7%BD%91%E7%AB%99pipl/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>只能用于指向其他帐户或可搜索的详细信息，例如过去的地址或电话号码<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>thatsthem</title>
+    <url>/2024/10/24/%E7%BD%91%E7%AB%99thatsthem/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://thatsthem.com/">thatsthem</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>电话号码通过电话簿、社交媒体帐户以及与某人合作过的企业泄露的数据与个人联系起来，可以将该号码与企业或个人进行匹配<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索即可<br><br></p>
+]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站truecaller</title>
+    <url>/2024/10/24/%E7%BD%91%E7%AB%99truecaller/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.truecaller.com/">truecaller</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>电话号码通过电话簿、社交媒体帐户以及与某人合作过的企业泄露的数据与个人联系起来，可以将该号码与企业或个人进行匹配<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索即可<br><br></p>
+]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站模板</title>
+    <url>/2024/10/24/%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
       <categories>
-        <category>网络安全基础知识</category>
+        <category>模板</category>
       </categories>
   </entry>
   <entry>
@@ -214,6 +251,103 @@
       <categories>
         <category>网络安全基础知识</category>
       </categories>
+  </entry>
+  <entry>
+    <title>网络职业</title>
+    <url>/2024/10/24/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%861/</url>
+    <content><![CDATA[<h2 id="安全分析师"><a href="#安全分析师" class="headerlink" title="安全分析师"></a>安全分析师</h2><p>安全分析师研究和评估公司网络，提供建议给工程师制定预防措施。该职位需要与各岗位合作，以了解安全要求和安全形势。</p>
+<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与各岗位合作，分析整个公司的网络安全<br>编写有关网络安全的持续报告，记录安全问题和应对措施<br>制定安全计划，结合对新的攻击工具和趋势的研究以及各团队的安全措施来维护数据的安全<br><br></p>
+<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p>渗透测试工程师的工作职责是测试公司内部系统和软件的安全性，通过系统化黑客攻击来发现缺陷和漏洞。渗透测试工程师利用这些漏洞来评估每种情况下的风险。然后，公司可以利用这些评估报告来修复漏洞，以防止现实世界的网络攻击。</p>
+<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络和应用程序进行测试<br>执行安全评估、审计和分析<br>评估并报告，推荐预防攻击的措施<br><br></p>
+<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>安全工程师使用来自安全工作人员提供的威胁和漏洞数据来开发和实施安全解决方案。安全工程师的工作范围包括规避各种攻击，包括 Web 应用程序攻击、网络威胁等。最终目标是采用安全措施，以减轻攻击和数据丢失的风险。</p>
+<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>测试和筛选安全措施<br>监控网络和报告，更新系统并减轻漏洞<br>确定并实施最佳安全系统<br><br></p>
+<!-- https://tryhackme.com/r/room/careersincyber -->
+<!-- 完全复现（删除例子）✔，检查（删除主语，语句通顺）✔ -->
+]]></content>
+      <categories>
+        <category>网络安全基础知识</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>安全原则</title>
+    <url>/2024/10/24/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%862/</url>
+    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在将某事物描述为安全之前，需要更好地考虑安全性的构成。当判断一个系统的安全性时，需要从安全三要素的角度来思考：机密性、完整性和可用性 (CIA)</p>
+<p><strong>保密性</strong>(Confidentiality)：确保只有预期的人员或接收者才能访问数据<br><strong>完整性</strong>(Integrity)：旨在确保数据不能被更改；此外，如果发生任何更改，可以检测到<br><strong>可用性</strong>(Availability)：旨在确保系统或服务在需要时可用</p>
+<p>极端保护机密性和完整性会限制可用性，而极端增加可用性会导致失去机密性和完整性。良好的安全原则实施需要在三者之间取得平衡。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><strong>真实性</strong>：真实性意味着非欺诈或伪造。真实性是指确保文档，文件和数据来自所声称的来源<br><strong>不可否认性</strong>：不可否认性意味着拒绝承认某事物的有效性。不可否认性确保原始来源不能否认特定文档，文件和数据的来源</p>
+<p><strong>实用性</strong>：实用性关注的是信息的有用性<br><strong>占有</strong>：此安全要素要求保护信息免遭未经授权的窃取、复制或控制<br><br></p>
+<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>CIA三要素的对立面是DAD三要素：披露、改变、毁灭<br>系统安全性受到多种攻击方式的威胁。攻击方式包括泄露机密数据、篡改数据或破坏数据</p>
+<p><strong>披露</strong>(Disclosure)：与保密相反，披露机密数据将是对保密性的侵犯<br><strong>更改</strong>(Alteration)：与完整性相反<br><strong>破坏&#x2F;拒绝</strong>(Destruction&#x2F;Denial)：与可用性相反</p>
+<p>防止泄露、篡改和破坏&#x2F;否认相当于努力维护机密性、完整性和可用性。<br><br></p>
+<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>使用安全模型创建一个确保一项或多项安全功能的系统</p>
+<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型旨在通过指定三条规则来实现<strong>保密性</strong>：</p>
+<p><strong>简单安全属性</strong>：它规定处于较低安全级别的主体无法读取处于较高安全级别的对象。此规则可防止访问授权级别以上的敏感信息 no read up<br><strong>星型安全属性</strong>：它规定较高安全级别的主体无法写入较低安全级别的对象。此规则可防止向较低安全级别的主体泄露敏感信息 no write down<br><strong>自主安全属性</strong>：使用访问矩阵来允许读写操作，访问矩阵与前两个属性结合使用</p>
+<table>
+<thead>
+<tr>
+<th>主题</th>
+<th>对象A</th>
+<th>对象B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主题 1</td>
+<td>写</td>
+<td>禁止访问</td>
+</tr>
+<tr>
+<td>主题 2</td>
+<td>读&#x2F;写</td>
+<td>读</td>
+</tr>
+</tbody></table>
+<p>可以与具有较高安全级别权限的人员共享机密信息，也可以从具有较低安全级别权限的人员那里获取机密信息 write up, read down</p>
+<p>Bell-LaPadula 模型局限性为不是为处理文件共享而设计的</p>
+<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型旨在通过指定两个主要规则来实现<strong>完整性</strong>：</p>
+<p><strong>简单完整性属性</strong>：完整性较高的主体不应从完整性较低的对象读取 no read down<br><strong>星型完整性属性</strong>：完整性较低的主体不应写入完整性较高的对象 no write up</p>
+<p>这个模型与Bell-LaPadula 模型相反，一个关注保密性，一个关注完整性 read up, write down</p>
+<p>Biba 模型存在各种局限性。其中一个例子就是它不能处理内部威胁（内部威胁）。</p>
+<h3 id="Clark-Wilson模型"><a href="#Clark-Wilson模型" class="headerlink" title="Clark-Wilson模型"></a>Clark-Wilson模型</h3><p>Clark-Wilson模型还旨在通过使用以下概念来实现<strong>完整性</strong>：</p>
+<p><strong>受限数据项</strong>(CDI)：这指的是想要保留其完整性的数据类型<br><strong>不受约束的数据项</strong>(UDI)：指超出CDI的所有数据类型<br><strong>转换程序</strong>(TP)：这些程序是程序化操作，并且应该保持 CDI 的完整性<br><strong>完整性验证程序</strong>(IVP)：这些程序检查并确保 CDI 的有效性</p>
+<p>许多其他安全模型：<br>Brewer and Nash 模型<br>Goguen-Meseguer 模型<br>Sutherland 模型<br>Graham-Denning 模型<br>Harrison-Ruzzo-Ullman 模型<br><br></p>
+<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是指建立多层次的安全体系，因此也称为多级安全<br><br></p>
+<h2 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h2><p>国际标准化组织 (ISO) 和国际电工委员会 (IEC) 制定了 ISO&#x2F;IEC 19249。<br>ISO&#x2F;IEC 19249:2017 信息技术，安全技术，安全产品，系统和应用程序的架构和设计原则</p>
+<h3 id="ISO-IEC-19249-五项架构原则："><a href="#ISO-IEC-19249-五项架构原则：" class="headerlink" title="ISO&#x2F;IEC 19249 五项架构原则："></a>ISO&#x2F;IEC 19249 五项架构原则：</h3><p><strong>域分离</strong>：每组相关组件都被分组为单个实体；组件可以是应用程序、数据或其他资源。每个实体都有自己的域，并被分配一组通用的安全属性</p>
+<p><strong>分层</strong>：当系统被构建为许多抽象级别或层次时，就可以在不同级别实施安全策略，分层与纵深防御有关</p>
+<p><strong>封装</strong>：在面向对象编程中，隐藏低级实现，并通过提供特定方法来防止直接操作对象中的数据</p>
+<p><strong>冗余</strong>：此原则确保可用性和完整性</p>
+<p><strong>虚拟化</strong>：虚拟化的概念是在多个操作系统之间共享一组硬件。虚拟化提供了沙盒功能，可以改善安全边界、安全引爆和对恶意程序的观察</p>
+<h3 id="ISO-IEC-19249-五项设计原则："><a href="#ISO-IEC-19249-五项设计原则：" class="headerlink" title="ISO&#x2F;IEC 19249 五项设计原则："></a>ISO&#x2F;IEC 19249 五项设计原则：</h3><p><strong>最小权限</strong>：最小权限原则应为某人提供执行其任务所需的最少权限</p>
+<p><strong>攻击面最小化</strong>：每个系统都有漏洞，攻击者可能会利用这些漏洞来破坏系统。一些漏洞是已知的，而另一些漏洞尚未被发现，这些漏洞代表应该尽量减少的风险</p>
+<p><strong>集中式参数验证</strong>：许多威胁都源于系统接收输入，尤其是来自用户的输入。无效输入可用于利用系统中的漏洞，参数验证是确保系统状态正确的必要步骤。考虑到系统处理的参数数量，参数验证应集中在一个库或系统中</p>
+<p><strong>集中式通用安全服务</strong>：作为一项安全原则应致力于集中式所有安全服务，创建一个集中式服务器进行身份验证，采取适当的措施来确保可用性并防止产生单点故障</p>
+<p><strong>准备错误和异常处理</strong>：每当构建系统时，应考虑到错误和异常的发生<br><br></p>
+<h2 id="零信任与信任但需验证"><a href="#零信任与信任但需验证" class="headerlink" title="零信任与信任但需验证"></a>零信任与信任但需验证</h2><h3 id="信任但要核实："><a href="#信任但要核实：" class="headerlink" title="信任但要核实："></a>信任但要核实：</h3><p>即使信任某个实体及其行为，也应始终进行核实。实体可能是用户或系统。核实通常需要设置适当的日志记录机制；核实表示查看日志以确保一切正常。核实所有内容是不可行的。这需要自动化安全机制，例如代理、入侵检测和入侵防御系统。</p>
+<h3 id="零信任："><a href="#零信任：" class="headerlink" title="零信任："></a>零信任：</h3><p>该原则将信任视为一种漏洞之后，零信任试图消除它。“永远不要信任，永远要验证”。每个实体都被视为敌对实体，直到证明不是为止。零信任不会根据设备的位置或所有权授予其信任。在访问任何资源之前，都需要进行身份验证和授权。如果发生任何违规行为，如果实施了零信任架构，损害将更加可控。</p>
+<p>微分段是零信任的实现之一。它指的是网络分段可以小到单个主机的设计。此外，分段之间的通信需要身份验证、访问控制列表检查和其他安全要求。</p>
+<p>在不对业务产生负面影响的情况下，应用零信任的程度是有限的<br><br></p>
+<h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p>漏洞：漏洞意味着容易受到攻击或破坏。在信息安全中，漏洞是一种弱点<br>威胁：威胁是与此弱点或脆弱性相关的潜在危险<br>风险：风险涉及威胁攻击者利用漏洞的可能性，以及对业务造成的影响<br><br></p>
+<!-- https://tryhackme.com/r/room/securityprinciples -->
+<!-- 完全复现（删除例子）✔，检查（删除主语，语句通顺）✔ -->]]></content>
+      <categories>
+        <category>网络安全基础知识</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网站OSINTFramework</title>
+    <url>/2024/10/24/%E7%BD%91%E7%AB%99osintframework/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">osintframework</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该网站列出了大量用于不同类型 OSINT 调查的数据源，OSINT框架提供了基于各种类别的OSINT工具集合<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>点击即可<br><br></p>
+]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站transunion</title>
+    <url>/2024/10/24/%E7%BD%91%E7%AB%99transunion/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>网络杀伤链</title>
