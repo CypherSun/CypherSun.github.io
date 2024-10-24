@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>网站模板</title>
+    <url>/2024/10/24/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>theHarvester</title>
+    <url>/2024/10/25/%E5%B7%A5%E5%85%B7theHarvester/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>theHarvester 是一款简单易用但功能强大的工具，旨在用于红队评估或渗透测试的侦察阶段。它执行开源情报 (OSINT) 收集，以帮助确定域的外部威胁状况。该工具使用多种公共资源收集名称、电子邮件、IP、子域和 URL，<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客模板</title>
     <url>/2024/10/24/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题"><a href="#副主题" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-1"><a href="#副主题-1" class="headerlink" title="副主题"></a>副主题</h3><br>
@@ -21,6 +52,27 @@
       </categories>
   </entry>
   <entry>
+    <title>工具awesome-osint</title>
+    <url>/2024/10/24/%E7%BD%91%E7%AB%99awesome-osint/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://github.com/jivoi/awesome-osint">awesome-osint</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>精选的令人惊叹的开源情报工具和资源列表。开源情报 (OSINT) 是从公开来源收集的情报。在情报界(IC) 中，“公开”一词指的是公开的、可公开获取的来源（而不是隐蔽或秘密来源）。此列表旨在帮助所有对网络威胁情报 (CTI)、威胁搜寻或 OSINT 感兴趣的人。从初学者到高级人士快乐地进行黑客攻击和狩猎🧙‍♂️<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>查看目录即可<br><br></p>
+]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站beenverified</title>
+    <url>/2024/10/25/%E7%BD%91%E7%AB%99beenverified/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://beenverified.com/">beenverified</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>只能用于指向其他帐户或可搜索的详细信息，例如过去的地址或电话号码<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>工具模板</title>
     <url>/2024/10/24/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
@@ -36,78 +88,6 @@
       <categories>
         <category>模板</category>
       </categories>
-  </entry>
-  <entry>
-    <title>网站模板</title>
-    <url>/2024/10/24/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网站Shodan</title>
-    <url>/2024/10/25/%E7%BD%91%E7%AB%99Shodan/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.shodan.io/dashboard">shodan</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-]]></content>
-      <tags>
-        <tag>侦查</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>工具awesome-osint</title>
-    <url>/2024/10/24/%E7%BD%91%E7%AB%99awesome-osint/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://github.com/jivoi/awesome-osint">awesome-osint</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>精选的令人惊叹的开源情报工具和资源列表。开源情报 (OSINT) 是从公开来源收集的情报。在情报界(IC) 中，“公开”一词指的是公开的、可公开获取的来源（而不是隐蔽或秘密来源）。此列表旨在帮助所有对网络威胁情报 (CTI)、威胁搜寻或 OSINT 感兴趣的人。从初学者到高级人士快乐地进行黑客攻击和狩猎🧙‍♂️<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>查看目录即可<br><br></p>
-]]></content>
-      <tags>
-        <tag>侦察</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网站littlesis</title>
-    <url>/2024/10/25/%E7%BD%91%E7%AB%99littlesis/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://littlesis.org/">littlesis</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>姓名经常出现在与商业文件相关的文件中，企业主或有权势的人相关的姓名搜索<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <tags>
-        <tag>侦察</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>工具theHarvester</title>
-    <url>/2024/10/25/%E5%B7%A5%E5%85%B7theHarvester/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>theHarvester 是一款简单易用但功能强大的工具，旨在用于红队评估或渗透测试的侦察阶段。它执行开源情报 (OSINT) 收集，以帮助确定域的外部威胁状况。该工具使用多种公共资源收集名称、电子邮件、IP、子域和 URL，<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <tags>
-        <tag>侦察</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网站beenverified</title>
-    <url>/2024/10/25/%E7%BD%91%E7%AB%99beenverified/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://beenverified.com/">beenverified</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>只能用于指向其他帐户或可搜索的详细信息，例如过去的地址或电话号码<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <tags>
-        <tag>侦察</tag>
-      </tags>
   </entry>
   <entry>
     <title>网站opencorporates</title>
@@ -136,11 +116,58 @@
       </tags>
   </entry>
   <entry>
+    <title>网站Shodan</title>
+    <url>/2024/10/25/%E7%BD%91%E7%AB%99Shodan/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.shodan.io/dashboard">shodan</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
+      <tags>
+        <tag>侦查</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站pipl</title>
+    <url>/2024/10/25/%E7%BD%91%E7%AB%99pipl/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://pipl.com/">pipl</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>只能用于指向其他帐户或可搜索的详细信息，例如过去的地址或电话号码<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网站peekyou</title>
     <url>/2024/10/25/%E7%BD%91%E7%AB%99peekyou/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.peekyou.com/">peekyou</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>只能用于指向其他帐户或可搜索的详细信息，例如过去的地址或电话号码<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站littlesis</title>
+    <url>/2024/10/25/%E7%BD%91%E7%AB%99littlesis/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://littlesis.org/">littlesis</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>姓名经常出现在与商业文件相关的文件中，企业主或有权势的人相关的姓名搜索<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>thatsthem</title>
+    <url>/2024/10/24/%E7%BD%91%E7%AB%99thatsthem/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://thatsthem.com/">thatsthem</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>电话号码通过电话簿、社交媒体帐户以及与某人合作过的企业泄露的数据与个人联系起来，可以将该号码与企业或个人进行匹配<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索即可<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
       <tags>
         <tag>侦察</tag>
       </tags>
@@ -157,41 +184,9 @@
       </tags>
   </entry>
   <entry>
-    <title>网站pipl</title>
-    <url>/2024/10/25/%E7%BD%91%E7%AB%99pipl/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://pipl.com/">pipl</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>只能用于指向其他帐户或可搜索的详细信息，例如过去的地址或电话号码<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <tags>
-        <tag>侦察</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>thatsthem</title>
-    <url>/2024/10/24/%E7%BD%91%E7%AB%99thatsthem/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://thatsthem.com/">thatsthem</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>电话号码通过电话簿、社交媒体帐户以及与某人合作过的企业泄露的数据与个人联系起来，可以将该号码与企业或个人进行匹配<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索即可<br><br></p>
-]]></content>
-      <tags>
-        <tag>侦察</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>网站transunion</title>
     <url>/2024/10/24/%E7%BD%91%E7%AB%99transunion/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.transunion.com/solution/trucontact/branded-communications/trusted-call-solutions/caller-identification">transunion</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>电话号码通过电话簿、社交媒体帐户以及与某人合作过的企业泄露的数据与个人联系起来，可以将该号码与企业或个人进行匹配<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索即可<br><br></p>
-]]></content>
-      <tags>
-        <tag>侦察</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网站truecaller</title>
-    <url>/2024/10/24/%E7%BD%91%E7%AB%99truecaller/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.truecaller.com/">truecaller</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>电话号码通过电话簿、社交媒体帐户以及与某人合作过的企业泄露的数据与个人联系起来，可以将该号码与企业或个人进行匹配<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索即可<br><br></p>
 ]]></content>
@@ -214,6 +209,20 @@
       <categories>
         <category>网络安全基础知识</category>
       </categories>
+  </entry>
+  <entry>
+    <title>truecaller</title>
+    <url>/2024/10/24/%E7%BD%91%E7%AB%99truecaller/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.truecaller.com/">truecaller</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>电话号码通过电话簿、社交媒体帐户以及与某人合作过的企业泄露的数据与个人联系起来，可以将该号码与企业或个人进行匹配<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索即可<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
   </entry>
   <entry>
     <title>安全原则</title>
@@ -276,6 +285,52 @@
 <h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p>漏洞：漏洞意味着容易受到攻击或破坏。在信息安全中，漏洞是一种弱点<br>威胁：威胁是与此弱点或脆弱性相关的潜在危险<br>风险：风险涉及威胁攻击者利用漏洞的可能性，以及对业务造成的影响<br><br></p>
 <!-- https://tryhackme.com/r/room/securityprinciples -->
 <!-- 完全复现（删除例子）✔，检查（删除主语，语句通顺）✔ -->]]></content>
+      <categories>
+        <category>网络安全基础知识</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网络杀伤链</title>
+    <url>/2024/10/24/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%864/</url>
+    <content><![CDATA[<h2 id="侦察-Reconnaissance"><a href="#侦察-Reconnaissance" class="headerlink" title="侦察(Reconnaissance)"></a>侦察(Reconnaissance)</h2><p><strong>侦察</strong>：是发现并收集有关系统和受害者的信息，侦察阶段是攻击者的规划阶段</p>
+<p>开源情报 (OSINT) 也属于侦察范畴。OSINT 是攻击者进行攻击的第一步，攻击公开资源中公司及其员工的所有可用信息来研究受害者，以确定攻击的最佳目标</p>
+<p><strong>电子邮件收集</strong>：从公共、付费或免费服务中获取电子邮件地址的过程，攻击者可以利用电子邮件地址收集进行网络钓鱼攻击，攻击者将拥有大量可用于侦察目的的工具</p>
+<p><strong>theHarvester</strong>：此工具能够使用多个公共数据源收集名称、子域、IP 和 URL<br><strong>Hunter.io</strong>：这是一个电子邮件搜索工具，可让获取与域名相关的联系信息<br><strong>OSINT框架</strong>：OSINT框架提供了基于各种类别的OSINT工具集合</p>
+<p>攻击者还会使用 LinkedIn、Facebook、Twitter 和 Instagram 等社交媒体网站来收集他想要攻击的特定受害者或公司的信息。在社交媒体上找到的信息可能对攻击者进行网络钓鱼攻击有帮助。</p>
+<br>
+
+
+
+
+
+
+<h2 id="Weaponization"><a href="#Weaponization" class="headerlink" title="Weaponization"></a>Weaponization</h2><h3 id="副主题"><a href="#副主题" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-1"><a href="#副主题-1" class="headerlink" title="副主题"></a>副主题</h3><br>
+
+
+
+<h2 id="Delivery"><a href="#Delivery" class="headerlink" title="Delivery"></a>Delivery</h2><h3 id="副主题-2"><a href="#副主题-2" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-3"><a href="#副主题-3" class="headerlink" title="副主题"></a>副主题</h3><br>
+
+
+<h2 id="Exploitation"><a href="#Exploitation" class="headerlink" title="Exploitation"></a>Exploitation</h2><h3 id="副主题-4"><a href="#副主题-4" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-5"><a href="#副主题-5" class="headerlink" title="副主题"></a>副主题</h3><br>
+
+
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><h3 id="副主题-6"><a href="#副主题-6" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-7"><a href="#副主题-7" class="headerlink" title="副主题"></a>副主题</h3><br>
+
+
+<h2 id="Command-Control"><a href="#Command-Control" class="headerlink" title="Command &amp; Control"></a>Command &amp; Control</h2><h3 id="副主题-8"><a href="#副主题-8" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-9"><a href="#副主题-9" class="headerlink" title="副主题"></a>副主题</h3><br>
+
+
+
+
+<h2 id="Actions-on-Objectives-Exfiltration"><a href="#Actions-on-Objectives-Exfiltration" class="headerlink" title="Actions on Objectives (Exfiltration)"></a>Actions on Objectives (Exfiltration)</h2><h3 id="副主题-10"><a href="#副主题-10" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-11"><a href="#副主题-11" class="headerlink" title="副主题"></a>副主题</h3><br>
+
+
+
+
+
+
+<!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
+<!-- 完全复现（删除例子）✔? ✖?，检查（删除主语，语句通顺）✔? ✖? -->]]></content>
       <categories>
         <category>网络安全基础知识</category>
       </categories>
@@ -350,52 +405,6 @@
 <p><strong>收到审计报告</strong>：审计完成后，审计员将提供一份详细说明审计结果的报告，报告可能包括控制措施描述、发现的任何缺陷或差距以及改进建议<br><br>  </p>
 <!-- https://tryhackme.com/r/room/cybergovernanceregulation -->
 <!-- 完全复现（删除例子）✔，检查（删除主语，语句通顺）✔ -->]]></content>
-      <categories>
-        <category>网络安全基础知识</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网络杀伤链</title>
-    <url>/2024/10/24/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%864/</url>
-    <content><![CDATA[<h2 id="侦察-Reconnaissance"><a href="#侦察-Reconnaissance" class="headerlink" title="侦察(Reconnaissance)"></a>侦察(Reconnaissance)</h2><p><strong>侦察</strong>：是发现并收集有关系统和受害者的信息，侦察阶段是攻击者的规划阶段</p>
-<p>开源情报 (OSINT) 也属于侦察范畴。OSINT 是攻击者进行攻击的第一步，攻击公开资源中公司及其员工的所有可用信息来研究受害者，以确定攻击的最佳目标</p>
-<p><strong>电子邮件收集</strong>：从公共、付费或免费服务中获取电子邮件地址的过程，攻击者可以利用电子邮件地址收集进行网络钓鱼攻击，攻击者将拥有大量可用于侦察目的的工具</p>
-<p><strong>theHarvester</strong>：此工具能够使用多个公共数据源收集名称、子域、IP 和 URL<br><strong>Hunter.io</strong>：这是一个电子邮件搜索工具，可让获取与域名相关的联系信息<br><strong>OSINT框架</strong>：OSINT框架提供了基于各种类别的OSINT工具集合</p>
-<p>攻击者还会使用 LinkedIn、Facebook、Twitter 和 Instagram 等社交媒体网站来收集他想要攻击的特定受害者或公司的信息。在社交媒体上找到的信息可能对攻击者进行网络钓鱼攻击有帮助。</p>
-<br>
-
-
-
-
-
-
-<h2 id="Weaponization"><a href="#Weaponization" class="headerlink" title="Weaponization"></a>Weaponization</h2><h3 id="副主题"><a href="#副主题" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-1"><a href="#副主题-1" class="headerlink" title="副主题"></a>副主题</h3><br>
-
-
-
-<h2 id="Delivery"><a href="#Delivery" class="headerlink" title="Delivery"></a>Delivery</h2><h3 id="副主题-2"><a href="#副主题-2" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-3"><a href="#副主题-3" class="headerlink" title="副主题"></a>副主题</h3><br>
-
-
-<h2 id="Exploitation"><a href="#Exploitation" class="headerlink" title="Exploitation"></a>Exploitation</h2><h3 id="副主题-4"><a href="#副主题-4" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-5"><a href="#副主题-5" class="headerlink" title="副主题"></a>副主题</h3><br>
-
-
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><h3 id="副主题-6"><a href="#副主题-6" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-7"><a href="#副主题-7" class="headerlink" title="副主题"></a>副主题</h3><br>
-
-
-<h2 id="Command-Control"><a href="#Command-Control" class="headerlink" title="Command &amp; Control"></a>Command &amp; Control</h2><h3 id="副主题-8"><a href="#副主题-8" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-9"><a href="#副主题-9" class="headerlink" title="副主题"></a>副主题</h3><br>
-
-
-
-
-<h2 id="Actions-on-Objectives-Exfiltration"><a href="#Actions-on-Objectives-Exfiltration" class="headerlink" title="Actions on Objectives (Exfiltration)"></a>Actions on Objectives (Exfiltration)</h2><h3 id="副主题-10"><a href="#副主题-10" class="headerlink" title="副主题"></a>副主题</h3><h3 id="副主题-11"><a href="#副主题-11" class="headerlink" title="副主题"></a>副主题</h3><br>
-
-
-
-
-
-
-<!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
-<!-- 完全复现（删除例子）✔? ✖?，检查（删除主语，语句通顺）✔? ✖? -->]]></content>
       <categories>
         <category>网络安全基础知识</category>
       </categories>
