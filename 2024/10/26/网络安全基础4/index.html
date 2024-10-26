@@ -7,16 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CypherSun">
-<meta property="og:url" content="https://cyphersun.github.io/categories/%E6%A8%A1%E6%9D%BF/index.html">
+<meta name="description" content="侦察（Reconnaissance）侦察：是指发现并收集目标系统和受害者信息的过程。对于攻击者而言，这个阶段是策划攻击的准备阶段。 开源情报（OSINT）是侦察的一部分。OSINT通常是攻击者执行后续攻击之前的第一步。攻击者会尽可能多地收集公司及其员工的公开信息，以确定最适合攻击的目标。从攻击者的角度来看，如果一开始还没有明确的攻击目标，他们首先会进行OSINT操作 电子邮件收集：是通过公开、付费">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络杀伤链">
+<meta property="og:url" content="https://cyphersun.github.io/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/index.html">
 <meta property="og:site_name" content="CypherSun">
+<meta property="og:description" content="侦察（Reconnaissance）侦察：是指发现并收集目标系统和受害者信息的过程。对于攻击者而言，这个阶段是策划攻击的准备阶段。 开源情报（OSINT）是侦察的一部分。OSINT通常是攻击者执行后续攻击之前的第一步。攻击者会尽可能多地收集公司及其员工的公开信息，以确定最适合攻击的目标。从攻击者的角度来看，如果一开始还没有明确的攻击目标，他们首先会进行OSINT操作 电子邮件收集：是通过公开、付费">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-10-26T13:32:38.000Z">
+<meta property="article:modified_time" content="2024-10-26T14:30:24.325Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >CypherSun</title>
+<title >网络杀伤链</title>
 
 <!-- Favicon -->
 
@@ -53,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":false,"postUpdate":"2024-10-26 16:30:30"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-26 16:30:24"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -203,12 +207,9 @@
     <!-- banner -->
     <div class="trm-banner">
     
-    <!-- banner video cover -->
-    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover">
-        <source src="https://cdn.moji.com/websrc/video/summer20190515.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        Your browser does not support HTML5 video.
-    </video>
-    <!-- banner video cover end -->
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
     
 
     <!-- banner content -->
@@ -223,10 +224,10 @@
                     <!-- banner title -->
                     <div class="trm-banner-text ">
                         <div class="trm-label trm-mb-20">
-                            The article archive
+                            NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            江碧鸟逾白，<br>山青花欲燃。
+                            网络杀伤链
                         </h1>
 
                         
@@ -236,7 +237,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        categories
+                                        2024
                                     </span>
                                 </li>
                             </ul>
@@ -355,95 +356,150 @@
             
             <div class="trm-page-content col-lg-8">
                 <div id="trm-content" class="trm-content">
-                    <div class="row">
-    <div class="col-lg-12">
-        <div class="trm-card">
-            <div style="padding: 0 20px;">
-                
-                    <ul class="trm-tag-list"><li class="trm-tag-list-item "><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a><span class="category-list-count">（1）</span></li><li class="trm-tag-list-item "><a class="category-list-link" href="/categories/%E6%A8%A1%E6%9D%BF/">模板</a><span class="category-list-count">（3）</span></li><li class="trm-tag-list-item "><a class="category-list-link" href="/categories/%E7%BD%91%E7%AB%99/">网站</a><span class="category-list-count">（2）</span></li><li class="trm-tag-list-item "><a class="category-list-link" href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/">网络安全基础</a><span class="category-list-count">（4）</span></li></ul>
-                
-            </div>
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            10/26
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            15:32
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            CypherSun
         </div>
     </div>
 </div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><p><strong>侦察</strong>：是指发现并收集目标系统和受害者信息的过程。对于攻击者而言，这个阶段是策划攻击的准备阶段。</p>
+<p>开源情报（OSINT）是侦察的一部分。OSINT通常是攻击者执行后续攻击之前的第一步。攻击者会尽可能多地收集公司及其员工的公开信息，以确定最适合攻击的目标。从攻击者的角度来看，如果一开始还没有明确的攻击目标，他们首先会进行OSINT操作</p>
+<p><strong>电子邮件收集</strong>：是通过公开、付费或免费服务获取电子邮件地址的过程。攻击者可以利用这些收集到的电子邮件发起网络钓鱼攻击。在侦察阶段，攻击者可以使用各种工具。</p>
+<p>此外，攻击者还能利用社交媒体，收集特定受害者或公司信息，社交媒体上的信息对于发动网络钓鱼攻击非常有用。<br><br></p>
+<h2 id="武器化（Weaponization）"><a href="#武器化（Weaponization）" class="headerlink" title="武器化（Weaponization）"></a>武器化（Weaponization）</h2><p><strong>恶意软件</strong>（Malware）：一种专门设计用来破坏、干扰或未经授权访问计算机的程序或软件</p>
+<p><strong>漏洞利用</strong>（Exploit）：一种程序或代码，用于利用应用程序或系统中的漏洞或缺陷</p>
+<p><strong>有效载荷</strong>（Payload）：攻击者在目标系统上运行的恶意代码</p>
+<p>在“武器化”阶段，攻击者可能会采取的策略：<br><strong>创建恶意文档</strong>：制作一个包含恶意宏或VBA（Visual Basic for Applications）脚本的受感染Microsoft Office文档</p>
+<p><strong>恶意载荷分发</strong>：攻击者可以创建恶意有效载荷或蠕虫病毒，将其植入USB驱动器，然后在公共场所进行分发</p>
+<p><strong>命令与控制（C2）</strong>：攻击者会采用命令与控制技术，在受害者的计算机上执行命令，或者进一步传递更多的有效载荷</p>
+<p><strong>后门植入</strong>：攻击者会选择一种后门方式，用以绕过安全机制访问目标计算机系统<br><br></p>
+<h2 id="投递（Delivery）"><a href="#投递（Delivery）" class="headerlink" title="投递（Delivery）"></a>投递（Delivery）</h2><p><strong>网络钓鱼邮件</strong>：在完成详细的侦察和目标锁定之后，恶意攻击者会设计一封带有恶意内容的邮件。这封邮件可能是针对单个特定人物的鱼叉式网络钓鱼攻击，也可能是针对公司内部多名员工的群攻击。邮件通常包含一个恶意的有效载荷或恶意软件</p>
+<p><strong>在公共场所散布恶意USB驱动器</strong>：攻击者可能会将带有公司标志的恶意USB驱动器故意丢在咖啡馆、停车场或街道上，或者采取更加复杂的手段</p>
+<p><strong>水坑攻击</strong>：水坑攻击是一种针对特定人群的精准攻击策略。攻击者通过入侵特定目标人群常访问的网站，将他们重定向至恶意网站。通常，攻击者会先寻找目标网站的已知漏洞进行利用。为了让攻击更加有效，攻击者会通过发送看似“无害”的邮件，引导受害者点击其中的恶意URL链接。当受害者访问该网站时，可能会不知不觉地下载到恶意软件或应用程序，这类攻击被称为“被动下载攻击”<br><br></p>
+<h2 id="利用（Exploitation）"><a href="#利用（Exploitation）" class="headerlink" title="利用（Exploitation）"></a>利用（Exploitation）</h2><p>在成功渗透系统后，恶意攻击者可能会通过利用软件、系统或服务器的漏洞，来提升权限或在网络中横向移动。横向移动是指恶意攻击者在获得初始访问权限后，进一步渗透网络，以获取更敏感的数据和信息的技术手段。</p>
+<p>在这个阶段，攻击者可能还会使用“零日漏洞利用”。零日漏洞利用或零日漏洞是指一种在公开场合尚未被发现的漏洞，这类漏洞暴露了软件或硬件中的潜在安全风险，可能在任何人察觉到问题之前就引发严重的安全危机。零日漏洞利用在最初阶段几乎不可能被检测到。</p>
+<p>以下是攻击者进行漏洞利用的几种典型方式：<br><strong>受害者触发漏洞</strong>：攻击者可能会诱导受害者打开恶意电子邮件附件或点击带有恶意链接的网页，从而触发漏洞利用</p>
+<p><strong>零日漏洞攻击</strong>：利用零日漏洞，这种漏洞在曝光之前几乎没有检测机会，使得攻击者能够进行隐秘而致命的攻击</p>
+<p><strong>利用软硬件及人为漏洞</strong>：攻击者会利用软件、硬件，甚至是人为的弱点进行攻击</p>
+<p><strong>针对服务器的漏洞利用</strong>：恶意行为者会瞄准服务器上的特定漏洞，进行专门设计的攻击<br><br></p>
+<h2 id="安装（Installation）"><a href="#安装（Installation）" class="headerlink" title="安装（Installation）"></a>安装（Installation）</h2><p>后门是一种可以帮助攻击者绕过安全措施并隐藏访问路径的工具。后门也被称为“接入点”。</p>
+<p>当攻击者成功获取系统的访问权限后，如果连接中断、初始访问权限被删除，或者系统被修补，攻击者就会失去对系统的控制。在这种情况下，攻击者会安装一个持久的后门，以便能够重新访问之前入侵的系统。</p>
+<p>持久性可以通过以下几种方式实现：<br><strong>安装Web Shell</strong>：在Web服务器上安装Web Shell是一种常见的方法。Web Shell是用ASP、PHP或JSP等Web开发语言编写的恶意脚本，攻击者可以利用这些脚本保持对受感染系统的控制。由于Web Shell结构简单，且其文件格式（如.php、.asp、.aspx、.jsp等）难以被检测到，因此常常被误认为是正常文件。</p>
+<p><strong>在受害者的设备上安装后门</strong>：攻击者可以通过这个后门远程操作受害者的设备，执行恶意代码。</p>
+<p><strong>创建或修改Windows服务</strong>：攻击者可以创建或修改Windows服务，以定期执行恶意脚本或负载，从而保持持久性。攻击者可能会使用工具来更改服务配置，甚至使用与操作系统或合法软件相关的已知服务名称来伪装恶意负载</p>
+<p><strong>在注册表或启动文件夹中添加“运行键”条目</strong>：这样可以确保每次用户登录时，恶意负载都会自动运行。每个用户都有自己的启动文件夹位置，此外还有一个系统范围的启动文件夹，无论哪个用户登录，都会检查该文件夹</p>
+<p>在这一阶段，攻击者还可能使用“Timestomping”技术，试图逃避取证分析，使恶意软件看起来像是合法程序的一部分。Timestomping技术允许攻击者修改文件的时间戳，包括修改、访问、创建和更改时间。<br><br></p>
+<h2 id="命令与控制（Command-Control）"><a href="#命令与控制（Command-Control）" class="headerlink" title="命令与控制（Command &amp; Control）"></a>命令与控制（Command &amp; Control）</h2><p>在成功获得持久性并在受害者的机器上执行恶意软件后，攻击者通过恶意软件建立了C2（命令与控制）信道，远程控制和操纵受害者。该术语也称为C&amp;C 或C2信标，是 C&amp;C 服务器与受感染主机上的恶意软件之间的一种恶意通信。受感染的主机将持续与C2服务器通信；这也是信标术语的来源。 </p>
+<p>一旦受害者的终端被攻陷，它就会与攻击者预先配置好的外部服务器进行通信，从而建立一个命令与控制信道。成功连接后，攻击者就可以全面掌控受害者的机器。现在恶意的IRC流量现在很容易被检测到。</p>
+<p>攻击者使用的最常见的C2信道有以下几种：<br><strong>HTTP（端口80）和HTTPS（端口443）协议</strong>：这种类型的信标将恶意流量与合法流量混合在一起，可以帮助攻击者逃避防火墙。  </p>
+<p><strong>DNS（域名服务器）</strong>：受感染的计算机不断向攻击者的DNS服务器发出DNS请求，这种类型的 C2 通信也称为DNS隧道</p>
+<p>攻击者或者其他被攻陷的主机也可能控制C2基础设施，从而进一步扩大攻击范围<br><br></p>
+<h2 id="目标达成（Actions-on-Objectives）"><a href="#目标达成（Actions-on-Objectives）" class="headerlink" title="目标达成（Actions on Objectives）"></a>目标达成（Actions on Objectives）</h2><p>在完成了攻击的六个阶段之后，即采取针对初始目标的实际行动，完全控制系统实现目标</p>
+<p>收集用户的凭据信息<br>提升权限<br>进行内部侦察<br>在公司的网络环境中进行横向移动<br>收集并外传敏感数据<br>删除备份和卷影副本。卷影副本是微软的一项技术，可以创建文件或卷的备份副本和快照<br>覆盖或破坏数据<br><br></p>
+<!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
+</article>
+    
+    
 
-<!-- history -->
-
-<div class="row">
+</div>
+<div class="trm-post-next-prev row">
     <div class="col-lg-12">
         <!-- title -->
         <h5 class="trm-title-with-divider">
-            
-                模板
-            
-            <span data-number="01"></span>
+            其他文章
+            <span data-number="02"></span>
         </h5>
     </div>
-    <div class="col-lg-12">
-        <!-- timeline -->
-        <div class="trm-timeline">
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/10/26/%E5%B7%A5%E5%85%B7theHarvester/" class="trm-cover-frame trm-anima-link">
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/10/26/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                                    博客模板
-                                </a>
-                            </h6>
-                        </div>
-                    
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">26</div>
+                    <div class="trm-cover-month">2024/10</div>
                 </div>
-            </div>
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/10/26/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                                    网站模板
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E5%B7%A5%E5%85%B7/">
+                    工具
+                </a>
             </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/10/26/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                                    工具模板
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
+            <h5>
+                <a href="/2024/10/26/%E5%B7%A5%E5%85%B7theHarvester/" class="trm-anima-link">
+                    theHarvester
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/10/26</li>
+                <li>15:41</li>
+                
+                
+            </ul>
         </div>
-        <!-- timeline end -->
     </div>
 </div>
-
-<!-- history end -->
-
-
-    <div class="trm-pagination">
-        <span class="page-number current">1</span>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">26</div>
+                    <div class="trm-cover-month">2024/10</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/">
+                    网络安全基础
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/" class="trm-anima-link">
+                    治理与监管
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/10/26</li>
+                <li>13:45</li>
+                
+                
+            </ul>
+        </div>
     </div>
+</div>
+    
+</div>
 
-
+    
 
 
 
@@ -484,6 +540,10 @@
             
 <div class="trm-fixed-container">
     
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
     
     
         <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
@@ -566,6 +626,10 @@
     
 
     <!-- 评论插件 -->
+    
+        
+
+        
     
 
 		

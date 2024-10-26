@@ -7,15 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="CIA在定义某个事物为安全之前，必须更深入地理解安全性的构成。当评估一个系统的安全性时，需要考虑“安全三要素”：保密性、完整性和可用性（CIA）。 保密性：确保只有授权的人员或目标接收者能够访问数据完整性：旨在保证数据不会被篡改。即使数据发生了变化，也能及时检测到可用性：意味着系统或服务能够在需要时正常运作 不同的事情对于安全三要素的侧重点有所不同。在极端情况下，过度保护保密性和完整性可能会牺牲系">
+<meta name="description" content="CIA在定义某个事物为安全之前，必须更深入地理解安全性的构成。当评估一个系统的安全性时，需要考虑“安全三要素”：机密性、完整性和可用性（CIA）。 机密性（Confidentiality）：确保只有授权的人员或目标接收者能够访问数据完整性（Integrity）：旨在保证数据不会被篡改。即使数据发生了变化，也能及时检测到可用性（Availability）：意味着系统或服务能够在需要时正常运作 不同的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="安全原则">
 <meta property="og:url" content="https://cyphersun.github.io/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="CIA在定义某个事物为安全之前，必须更深入地理解安全性的构成。当评估一个系统的安全性时，需要考虑“安全三要素”：保密性、完整性和可用性（CIA）。 保密性：确保只有授权的人员或目标接收者能够访问数据完整性：旨在保证数据不会被篡改。即使数据发生了变化，也能及时检测到可用性：意味着系统或服务能够在需要时正常运作 不同的事情对于安全三要素的侧重点有所不同。在极端情况下，过度保护保密性和完整性可能会牺牲系">
+<meta property="og:description" content="CIA在定义某个事物为安全之前，必须更深入地理解安全性的构成。当评估一个系统的安全性时，需要考虑“安全三要素”：机密性、完整性和可用性（CIA）。 机密性（Confidentiality）：确保只有授权的人员或目标接收者能够访问数据完整性（Integrity）：旨在保证数据不会被篡改。即使数据发生了变化，也能及时检测到可用性（Availability）：意味着系统或服务能够在需要时正常运作 不同的">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-10-26T10:48:04.000Z">
-<meta property="article:modified_time" content="2024-10-26T11:44:37.693Z">
+<meta property="article:modified_time" content="2024-10-26T14:30:23.555Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-26 13:44:37"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-26 16:30:23"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -378,19 +378,19 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在定义某个事物为安全之前，必须更深入地理解安全性的构成。当评估一个系统的安全性时，需要考虑“安全三要素”：保密性、完整性和可用性（CIA）。</p>
-<p><strong>保密性</strong>：确保只有授权的人员或目标接收者能够访问数据<br><strong>完整性</strong>：旨在保证数据不会被篡改。即使数据发生了变化，也能及时检测到<br><strong>可用性</strong>：意味着系统或服务能够在需要时正常运作</p>
-<p>不同的事情对于安全三要素的侧重点有所不同。在极端情况下，过度保护保密性和完整性可能会牺牲系统的可用性，而一味追求更高的可用性则可能导致保密性和完整性的缺失。有效的安全策略在于在这三者之间找到适当的平衡。</p>
-<h3 id="除了CIA"><a href="#除了CIA" class="headerlink" title="除了CIA"></a>除了CIA</h3><p><strong>真实性</strong>：真实性指数据或文件来源真实可信，确保内容确实来自指定的来源<br><strong>不可否认性</strong>：不可否认性保证信息的原始发布者不能否认自己是数据或文件的来源</p>
+    <h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在定义某个事物为安全之前，必须更深入地理解安全性的构成。当评估一个系统的安全性时，需要考虑“安全三要素”：机密性、完整性和可用性（CIA）。</p>
+<p><strong>机密性</strong>（Confidentiality）：确保只有授权的人员或目标接收者能够访问数据<br><strong>完整性</strong>（Integrity）：旨在保证数据不会被篡改。即使数据发生了变化，也能及时检测到<br><strong>可用性</strong>（Availability）：意味着系统或服务能够在需要时正常运作</p>
+<p>不同的事情对于安全三要素的侧重点有所不同。在极端情况下，过度保护机密性和完整性可能会牺牲系统的可用性，而一味追求更高的可用性则可能导致机密性和完整性的缺失。有效的安全策略在于在这三者之间找到适当的平衡。</p>
+<h3 id="除了CIA"><a href="#除了CIA" class="headerlink" title="除了CIA"></a>除了CIA</h3><p><strong>真实性</strong>（Authenticity）：真实性指数据或文件来源真实可信，确保内容确实来自指定的来源<br><strong>不可否认性</strong>（Nonrepudiation）：不可否认性保证信息的原始发布者不能否认自己是数据或文件的来源</p>
 <h3 id="Parker六元组"><a href="#Parker六元组" class="headerlink" title="Parker六元组"></a>Parker六元组</h3><p>1998年，Donn Parker提出了“Parker六元组”，即六个安全要素，包括：</p>
-<p>可用性<br>实用性<br>完整性<br>真实性<br>保密性<br>所有权</p>
-<p><strong>实用性</strong>：实用性强调信息的可用价值<br><strong>所有权</strong>：所有权要求保护信息，防止未经授权的获取、复制或控制<br><br></p>
+<p>可用性<br>实用性<br>完整性<br>真实性<br>机密性<br>所有权</p>
+<p><strong>实用性</strong>（Utility）：实用性强调信息的可用价值<br><strong>所有权</strong>（Possession）：所有权要求保护信息，防止未经授权的获取、复制或控制<br><br></p>
 <h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>系统的安全性可能会通过多种方式遭受攻击，包括机密数据的泄露、数据的篡改以及数据的破坏</p>
-<p><strong>泄露</strong>：是保密性的对立面，机密数据的泄露意味着对保密性的攻击<br><strong>篡改</strong>：是完整性的反面<br><strong>破坏&#x2F;拒绝</strong>：可用性的对立面</p>
-<p>与CIA三要素（保密性、完整性和可用性）相对的是DAD三要素（泄露、篡改和破坏）。</p>
-<p>防范泄露、篡改和破坏&#x2F;拒绝至关重要，这种防护实际上就是在努力维护数据的保密性、完整性和可用性<br><br></p>
-<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>安全三要素由保密性、完整性和可用性（CIA）构成，可以使用安全模型来创建一个能够保证一种或多种安全功能的系统</p>
-<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型旨在通过以下三个规则来确保<strong>保密性</strong>：</p>
+<p><strong>泄露</strong>（Disclosure）：是机密性的对立面，机密数据的泄露意味着对机密性的攻击<br><strong>篡改</strong>（Alteration）：是完整性的反面<br><strong>破坏&#x2F;拒绝</strong>（Destruction&#x2F;Denial）：可用性的对立面</p>
+<p>与CIA三要素（机密性、完整性和可用性）相对的是DAD三要素（泄露、篡改和破坏）。</p>
+<p>防范泄露、篡改和破坏&#x2F;拒绝至关重要，这种防护实际上就是在努力维护数据的机密性、完整性和可用性<br><br></p>
+<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>安全三要素由机密性、完整性和可用性（CIA）构成，可以使用安全模型来创建一个能够保证一种或多种安全功能的系统</p>
+<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型旨在通过以下三个规则来确保<strong>机密性</strong>：</p>
 <p><strong>简单安全属性</strong>（“不可向上读取”）：指低安全级别的主体不能读取高安全级别的对象，从而防止未经授权的信息访问<br><strong>星型安全属性</strong>（“不可向下写入”）：指高安全级别的主体不能向低安全级别的对象写入，从而避免敏感信息的泄露<br><strong>自主安全属性</strong>：通过访问矩阵控制读取和写入操作，与前两个规则相结合</p>
 <table>
 <thead>
@@ -415,7 +415,7 @@
 <p>Bell-LaPadula 模型有其局限性，它并不适合文件共享场景。</p>
 <h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型通过以下两条规则来确保<strong>完整性</strong>：</p>
 <p><strong>简单完整性属性</strong>（“不可向下读取”）：高完整性的主体不应从低完整性的对象中读取数据<br><strong>星型完整性属性</strong>（“不可向上写入”）：低完整性的主体不应向高完整性的对象写入数据</p>
-<p>这些规则总结为“向上读取，向下写入”，与 Bell-LaPadula 模型形成了对比，因为前者强调保密性，后者关注完整性</p>
+<p>这些规则总结为“向上读取，向下写入”，与 Bell-LaPadula 模型形成了对比，因为前者强调机密性，后者关注完整性</p>
 <p>Biba 模型也存在一些不足，它无法应对内部威胁</p>
 <h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型通过以下方法维护数据<strong>完整性</strong>：</p>
 <p><strong>受限数据项</strong>（CDI）：要保护完整性的数据类型<br><strong>非受限数据项</strong>（UDI）：所有不属于 CDI 的数据类型<br><strong>转换过程</strong>（TPs）：程序化操作用于确保 CDI 的完整性<br><strong>完整性验证过程</strong>（IVPs）：过程用于检查 CDI 的有效性</p>
@@ -438,7 +438,7 @@
 <p>尽管在零信任的应用有限制，过度实施可能会影响业务，但这并不意味着只要有可能，就不应该考虑实施零信任架构<br><br></p>
 <h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p>漏洞：表示系统容易受到攻击或损害。在信息安全领域，漏洞指的是系统中的弱点<br>威胁：威胁是指与该弱点或漏洞相关的潜在风险或危险<br>风险：风险是指威胁攻击者利用某个漏洞的可能性及其对业务产生的后果和影响<br><br></p>
 <!-- https://tryhackme.com/r/room/securityprinciples -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具等✔ -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
 </article>
     
     
@@ -452,6 +452,40 @@
             <span data-number="02"></span>
         </h5>
     </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">26</div>
+                    <div class="trm-cover-month">2024/10</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/">
+                    网络安全基础
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/" class="trm-anima-link">
+                    治理与监管
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/10/26</li>
+                <li>13:45</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
     
     
         <div class="col-lg-6">
