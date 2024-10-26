@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>工具模板</title>
-    <url>/2024/10/26/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
+    <title>网站模板</title>
+    <url>/2024/10/26/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
 
 
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
 
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+<!-- 成功使用✔? ✖? -->]]></content>
       <categories>
         <category>模板</category>
       </categories>
@@ -39,18 +36,21 @@
       </categories>
   </entry>
   <entry>
-    <title>网站模板</title>
-    <url>/2024/10/26/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+    <title>工具模板</title>
+    <url>/2024/10/26/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
 
-<!-- 成功使用✔? ✖? -->]]></content>
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
       <categories>
         <category>模板</category>
       </categories>
@@ -75,6 +75,22 @@
       </tags>
   </entry>
   <entry>
+    <title>hunter</title>
+    <url>/2024/10/26/%E7%BD%91%E7%AB%99hunter/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>这是一个电子邮件搜索工具，可以获取与域名相关的联系信息<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网络安全职业</title>
     <url>/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
     <content><![CDATA[<h2 id="安全分析工程师"><a href="#安全分析工程师" class="headerlink" title="安全分析工程师"></a>安全分析工程师</h2><p>安全分析工程师会深入评估公司的网络，发现可操作的数据，并为工程师提供建议，以制定预防措施。此岗位需要与多方利益相关者合作，以了解安全需求和整体安全环境</p>
@@ -90,72 +106,102 @@
       </categories>
   </entry>
   <entry>
-    <title>安全原则</title>
-    <url>/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/</url>
-    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在定义某个事物为安全之前，必须更深入地理解安全性的构成。当评估一个系统的安全性时，需要考虑“安全三要素”：机密性、完整性和可用性（CIA）。</p>
-<p><strong>机密性</strong>（Confidentiality）：确保只有授权的人员或目标接收者能够访问数据<br><strong>完整性</strong>（Integrity）：旨在保证数据不会被篡改。即使数据发生了变化，也能及时检测到<br><strong>可用性</strong>（Availability）：意味着系统或服务能够在需要时正常运作</p>
-<p>不同的事情对于安全三要素的侧重点有所不同。在极端情况下，过度保护机密性和完整性可能会牺牲系统的可用性，而一味追求更高的可用性则可能导致机密性和完整性的缺失。有效的安全策略在于在这三者之间找到适当的平衡。</p>
-<h3 id="除了CIA"><a href="#除了CIA" class="headerlink" title="除了CIA"></a>除了CIA</h3><p><strong>真实性</strong>（Authenticity）：真实性指数据或文件来源真实可信，确保内容确实来自指定的来源<br><strong>不可否认性</strong>（Nonrepudiation）：不可否认性保证信息的原始发布者不能否认自己是数据或文件的来源</p>
-<h3 id="Parker六元组"><a href="#Parker六元组" class="headerlink" title="Parker六元组"></a>Parker六元组</h3><p>1998年，Donn Parker提出了“Parker六元组”，即六个安全要素，包括：</p>
-<p>可用性<br>实用性<br>完整性<br>真实性<br>机密性<br>所有权</p>
-<p><strong>实用性</strong>（Utility）：实用性强调信息的可用价值<br><strong>所有权</strong>（Possession）：所有权要求保护信息，防止未经授权的获取、复制或控制<br><br></p>
-<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>系统的安全性可能会通过多种方式遭受攻击，包括机密数据的泄露、数据的篡改以及数据的破坏</p>
-<p><strong>泄露</strong>（Disclosure）：是机密性的对立面，机密数据的泄露意味着对机密性的攻击<br><strong>篡改</strong>（Alteration）：是完整性的反面<br><strong>破坏&#x2F;拒绝</strong>（Destruction&#x2F;Denial）：可用性的对立面</p>
-<p>与CIA三要素（机密性、完整性和可用性）相对的是DAD三要素（泄露、篡改和破坏）。</p>
-<p>防范泄露、篡改和破坏&#x2F;拒绝至关重要，这种防护实际上就是在努力维护数据的机密性、完整性和可用性<br><br></p>
-<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>安全三要素由机密性、完整性和可用性（CIA）构成，可以使用安全模型来创建一个能够保证一种或多种安全功能的系统</p>
-<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型旨在通过以下三个规则来确保<strong>机密性</strong>：</p>
-<p><strong>简单安全属性</strong>（“不可向上读取”）：指低安全级别的主体不能读取高安全级别的对象，从而防止未经授权的信息访问<br><strong>星型安全属性</strong>（“不可向下写入”）：指高安全级别的主体不能向低安全级别的对象写入，从而避免敏感信息的泄露<br><strong>自主安全属性</strong>：通过访问矩阵控制读取和写入操作，与前两个规则相结合</p>
-<table>
+    <title>Linux基础入门 第一部分</title>
+    <url>/2024/10/26/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1/</url>
+    <content><![CDATA[<h2 id="Linux-基础背景介绍"><a href="#Linux-基础背景介绍" class="headerlink" title="Linux 基础背景介绍"></a>Linux 基础背景介绍</h2><p>Linux 与 Windows 等操作系统相比，Linux 的上手难度要高得多。每种操作系统都有其优缺点</p>
+<h3 id="Linux-的种类"><a href="#Linux-的种类" class="headerlink" title="Linux 的种类"></a>Linux 的种类</h3><p>“Linux”这个名称实际上是基于 UNIX 的多种操作系统的总称。由于 Linux 是开源的，因此它的变体种类繁多，适用于不同的系统需求。</p>
+<p>类似于 Windows 有不同的版本（如 7、8 和 10），Linux 也有许多不同的版本&#x2F;发行版<br><br></p>
+<h2 id="Linux-基础命令"><a href="#Linux-基础命令" class="headerlink" title="Linux 基础命令"></a>Linux 基础命令</h2><table>
 <thead>
 <tr>
-<th>主题</th>
-<th>对象 A</th>
-<th>对象 B</th>
+<th>命令</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>主题 1</td>
-<td>写</td>
-<td>禁止访问</td>
+<td>echo</td>
+<td>输出文本或变量的值</td>
 </tr>
 <tr>
-<td>主题 2</td>
-<td>读&#x2F;写</td>
-<td>读</td>
+<td>whoami</td>
+<td>显示当前用户的用户名</td>
+</tr>
+<tr>
+<td>ls</td>
+<td>列出目录中的文件和文件夹</td>
+</tr>
+<tr>
+<td>cd</td>
+<td>更改当前目录</td>
+</tr>
+<tr>
+<td>cat</td>
+<td>显示文件内容</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>显示当前目录的路径</td>
+</tr>
+<tr>
+<td>find -name</td>
+<td>按名称搜索文件</td>
+</tr>
+<tr>
+<td>grep</td>
+<td>搜索文件中的文本</td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
 </tr>
 </tbody></table>
-<p>前两条规则可以概括为“向上写入，向下读取”：可以向安全级别更高的人共享信息（向上写入），也可以从低安全级别的人那里获取信息（向下读取）。</p>
-<p>Bell-LaPadula 模型有其局限性，它并不适合文件共享场景。</p>
-<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型通过以下两条规则来确保<strong>完整性</strong>：</p>
-<p><strong>简单完整性属性</strong>（“不可向下读取”）：高完整性的主体不应从低完整性的对象中读取数据<br><strong>星型完整性属性</strong>（“不可向上写入”）：低完整性的主体不应向高完整性的对象写入数据</p>
-<p>这些规则总结为“向上读取，向下写入”，与 Bell-LaPadula 模型形成了对比，因为前者强调机密性，后者关注完整性</p>
-<p>Biba 模型也存在一些不足，它无法应对内部威胁</p>
-<h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型通过以下方法维护数据<strong>完整性</strong>：</p>
-<p><strong>受限数据项</strong>（CDI）：要保护完整性的数据类型<br><strong>非受限数据项</strong>（UDI）：所有不属于 CDI 的数据类型<br><strong>转换过程</strong>（TPs）：程序化操作用于确保 CDI 的完整性<br><strong>完整性验证过程</strong>（IVPs）：过程用于检查 CDI 的有效性</p>
-<p>更多的安全模型：<br>Brewer 和 Nash 模型<br>Goguen-Meseguer 模型<br>Sutherland 模型<br>Graham-Denning 模型<br>Harrison-Ruzzo-Ullman 模型<br><br></p>
-<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是指构建一个多层次的安全系统，因此也称为多级安全<br><br></p>
-<h2 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h2><p>国际标准化组织（ISO）和国际电工委员会（IEC）共同制定了ISO&#x2F;IEC 19249。ISO&#x2F;IEC 19249:2017 介绍了信息技术 - 安全技术 - 安全产品、系统与应用的架构和设计原则目录</p>
-<h3 id="ISO-IEC-19249五大架构原则："><a href="#ISO-IEC-19249五大架构原则：" class="headerlink" title="ISO&#x2F;IEC 19249五大架构原则："></a>ISO&#x2F;IEC 19249五大架构原则：</h3><p><strong>域分离</strong>：将一组相关的组件视为单一实体进行管理，这些组件可以是应用程序、数据或其他资源。每个实体拥有自己的域，并分配特定的安全属性</p>
-<p><strong>分层</strong>：通过将系统分为多个层级，可以在不同层级实施安全策略，同时验证操作是否正常</p>
-<p><strong>封装</strong>：在面向对象编程中，封装通过特定方法隐藏底层实现，防止直接操纵数据</p>
-<p><strong>冗余</strong>：确保可用性和完整性的关键原则</p>
-<p><strong>虚拟化</strong>：虚拟化允许多个操作系统共享同一组硬件资源，提供更强的安全隔离和更灵活的资源管理</p>
-<h3 id="ISO-IEC-19249还提出了五个关键设计原则："><a href="#ISO-IEC-19249还提出了五个关键设计原则：" class="headerlink" title="ISO&#x2F;IEC 19249还提出了五个关键设计原则："></a>ISO&#x2F;IEC 19249还提出了五个关键设计原则：</h3><p><strong>最小权限</strong>：最小权限原则建议只赋予完成任务所需的最小权限</p>
-<p><strong>攻击面最小化</strong>：系统漏洞随时都可能被利用，应尽可能减少这些风险</p>
-<p><strong>集中参数验证</strong>：参数验证应集中在一个库或系统中进行验证</p>
-<p><strong>集中安全服务</strong>：安全服务应集中化管理并防止产生单点故障</p>
-<p><strong>准备错误和异常处理</strong>：应考虑到错误和异常的发生，同时避免因错误信息而泄露机密数据<br><br></p>
-<h2 id="零信任与信任但需验证"><a href="#零信任与信任但需验证" class="headerlink" title="零信任与信任但需验证"></a>零信任与信任但需验证</h2><p><strong>信任但要验证</strong>：即使信任某个实体及行为，仍然应进行必要的验证。这个实体可以是用户或系统。验证通常需要部署正确的日志记录，并通过检查日志来确保一切正常。然而，完全验证所有操作在现实中是不可能的；因此需要使用自动化的安全机制来帮助进行验证</p>
-<p><strong>零信任</strong>：核心在于将信任视作一种潜在的漏洞，它致力于应对内部威胁。零信任的原则是“永不信任，始终验证”。每个实体在被证实之前都被视为潜在威胁。零信任不会基于设备的位置或所有权来授予信任。零信任架构要求在访问任何资源前必须进行身份验证和授权。因此，如果在零信任架构下发生安全漏洞，其损失往往更易于控制</p>
-<p>微分段是零信任架构的具体实施方法之一。这种方法将网络分段的范围缩小到单个主机的规模。并且段之间的通信必须经过身份验证、访问控制列表的检查及其他安全措施</p>
-<p>尽管在零信任的应用有限制，过度实施可能会影响业务，但这并不意味着只要有可能，就不应该考虑实施零信任架构<br><br></p>
-<h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p>漏洞：表示系统容易受到攻击或损害。在信息安全领域，漏洞指的是系统中的弱点<br>威胁：威胁是指与该弱点或漏洞相关的潜在风险或危险<br>风险：风险是指威胁攻击者利用某个漏洞的可能性及其对业务产生的后果和影响<br><br></p>
-<!-- https://tryhackme.com/r/room/securityprinciples -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+<h2 id="Linux-基础操作符"><a href="#Linux-基础操作符" class="headerlink" title="Linux 基础操作符"></a>Linux 基础操作符</h2><table>
+<thead>
+<tr>
+<th>符号 &#x2F; 操作符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td>将命令放在后台执行，使终端可用于其他任务。</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>逻辑 AND 操作符，允许在前一命令成功时执行后续命令。</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>重定向符号，将命令输出重定向到指定文件（覆盖原文件）。</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>追加重定向符号，将命令输出追加到指定文件末尾（不覆盖内容）。</td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+</tr>
+</tbody></table>
+<!-- https://tryhackme.com/r/room/linuxfundamentalspart1 -->
+<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
       <categories>
-        <category>网络安全基础</category>
+        <category>基础技能</category>
       </categories>
+  </entry>
+  <entry>
+    <title>OSINT Framework</title>
+    <url>/2024/10/26/%E7%BD%91%E7%AB%99OSINTFramework/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>OSINT Framework提供了基于各种类别的OSINT工具集合<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>点击即可<br><br></p>
+<!-- 成功使用✔ -->]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
   </entry>
   <entry>
     <title>治理与监管</title>
@@ -260,33 +306,71 @@
       </categories>
   </entry>
   <entry>
-    <title>OSINT Framework</title>
-    <url>/2024/10/26/%E7%BD%91%E7%AB%99OSINTFramework/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>OSINT Framework提供了基于各种类别的OSINT工具集合<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>点击即可<br><br></p>
-<!-- 成功使用✔ -->]]></content>
+    <title>安全原则</title>
+    <url>/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/</url>
+    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在定义某个事物为安全之前，必须更深入地理解安全性的构成。当评估一个系统的安全性时，需要考虑“安全三要素”：机密性、完整性和可用性（CIA）。</p>
+<p><strong>机密性</strong>（Confidentiality）：确保只有授权的人员或目标接收者能够访问数据<br><strong>完整性</strong>（Integrity）：旨在保证数据不会被篡改。即使数据发生了变化，也能及时检测到<br><strong>可用性</strong>（Availability）：意味着系统或服务能够在需要时正常运作</p>
+<p>不同的事情对于安全三要素的侧重点有所不同。在极端情况下，过度保护机密性和完整性可能会牺牲系统的可用性，而一味追求更高的可用性则可能导致机密性和完整性的缺失。有效的安全策略在于在这三者之间找到适当的平衡。</p>
+<h3 id="除了CIA"><a href="#除了CIA" class="headerlink" title="除了CIA"></a>除了CIA</h3><p><strong>真实性</strong>（Authenticity）：真实性指数据或文件来源真实可信，确保内容确实来自指定的来源<br><strong>不可否认性</strong>（Nonrepudiation）：不可否认性保证信息的原始发布者不能否认自己是数据或文件的来源</p>
+<h3 id="Parker六元组"><a href="#Parker六元组" class="headerlink" title="Parker六元组"></a>Parker六元组</h3><p>1998年，Donn Parker提出了“Parker六元组”，即六个安全要素，包括：</p>
+<p>可用性<br>实用性<br>完整性<br>真实性<br>机密性<br>所有权</p>
+<p><strong>实用性</strong>（Utility）：实用性强调信息的可用价值<br><strong>所有权</strong>（Possession）：所有权要求保护信息，防止未经授权的获取、复制或控制<br><br></p>
+<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>系统的安全性可能会通过多种方式遭受攻击，包括机密数据的泄露、数据的篡改以及数据的破坏</p>
+<p><strong>泄露</strong>（Disclosure）：是机密性的对立面，机密数据的泄露意味着对机密性的攻击<br><strong>篡改</strong>（Alteration）：是完整性的反面<br><strong>破坏&#x2F;拒绝</strong>（Destruction&#x2F;Denial）：可用性的对立面</p>
+<p>与CIA三要素（机密性、完整性和可用性）相对的是DAD三要素（泄露、篡改和破坏）。</p>
+<p>防范泄露、篡改和破坏&#x2F;拒绝至关重要，这种防护实际上就是在努力维护数据的机密性、完整性和可用性<br><br></p>
+<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>安全三要素由机密性、完整性和可用性（CIA）构成，可以使用安全模型来创建一个能够保证一种或多种安全功能的系统</p>
+<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型旨在通过以下三个规则来确保<strong>机密性</strong>：</p>
+<p><strong>简单安全属性</strong>（“不可向上读取”）：指低安全级别的主体不能读取高安全级别的对象，从而防止未经授权的信息访问<br><strong>星型安全属性</strong>（“不可向下写入”）：指高安全级别的主体不能向低安全级别的对象写入，从而避免敏感信息的泄露<br><strong>自主安全属性</strong>：通过访问矩阵控制读取和写入操作，与前两个规则相结合</p>
+<table>
+<thead>
+<tr>
+<th>主题</th>
+<th>对象 A</th>
+<th>对象 B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主题 1</td>
+<td>写</td>
+<td>禁止访问</td>
+</tr>
+<tr>
+<td>主题 2</td>
+<td>读&#x2F;写</td>
+<td>读</td>
+</tr>
+</tbody></table>
+<p>前两条规则可以概括为“向上写入，向下读取”：可以向安全级别更高的人共享信息（向上写入），也可以从低安全级别的人那里获取信息（向下读取）。</p>
+<p>Bell-LaPadula 模型有其局限性，它并不适合文件共享场景。</p>
+<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型通过以下两条规则来确保<strong>完整性</strong>：</p>
+<p><strong>简单完整性属性</strong>（“不可向下读取”）：高完整性的主体不应从低完整性的对象中读取数据<br><strong>星型完整性属性</strong>（“不可向上写入”）：低完整性的主体不应向高完整性的对象写入数据</p>
+<p>这些规则总结为“向上读取，向下写入”，与 Bell-LaPadula 模型形成了对比，因为前者强调机密性，后者关注完整性</p>
+<p>Biba 模型也存在一些不足，它无法应对内部威胁</p>
+<h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型通过以下方法维护数据<strong>完整性</strong>：</p>
+<p><strong>受限数据项</strong>（CDI）：要保护完整性的数据类型<br><strong>非受限数据项</strong>（UDI）：所有不属于 CDI 的数据类型<br><strong>转换过程</strong>（TPs）：程序化操作用于确保 CDI 的完整性<br><strong>完整性验证过程</strong>（IVPs）：过程用于检查 CDI 的有效性</p>
+<p>更多的安全模型：<br>Brewer 和 Nash 模型<br>Goguen-Meseguer 模型<br>Sutherland 模型<br>Graham-Denning 模型<br>Harrison-Ruzzo-Ullman 模型<br><br></p>
+<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是指构建一个多层次的安全系统，因此也称为多级安全<br><br></p>
+<h2 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h2><p>国际标准化组织（ISO）和国际电工委员会（IEC）共同制定了ISO&#x2F;IEC 19249。ISO&#x2F;IEC 19249:2017 介绍了信息技术 - 安全技术 - 安全产品、系统与应用的架构和设计原则目录</p>
+<h3 id="ISO-IEC-19249五大架构原则："><a href="#ISO-IEC-19249五大架构原则：" class="headerlink" title="ISO&#x2F;IEC 19249五大架构原则："></a>ISO&#x2F;IEC 19249五大架构原则：</h3><p><strong>域分离</strong>：将一组相关的组件视为单一实体进行管理，这些组件可以是应用程序、数据或其他资源。每个实体拥有自己的域，并分配特定的安全属性</p>
+<p><strong>分层</strong>：通过将系统分为多个层级，可以在不同层级实施安全策略，同时验证操作是否正常</p>
+<p><strong>封装</strong>：在面向对象编程中，封装通过特定方法隐藏底层实现，防止直接操纵数据</p>
+<p><strong>冗余</strong>：确保可用性和完整性的关键原则</p>
+<p><strong>虚拟化</strong>：虚拟化允许多个操作系统共享同一组硬件资源，提供更强的安全隔离和更灵活的资源管理</p>
+<h3 id="ISO-IEC-19249还提出了五个关键设计原则："><a href="#ISO-IEC-19249还提出了五个关键设计原则：" class="headerlink" title="ISO&#x2F;IEC 19249还提出了五个关键设计原则："></a>ISO&#x2F;IEC 19249还提出了五个关键设计原则：</h3><p><strong>最小权限</strong>：最小权限原则建议只赋予完成任务所需的最小权限</p>
+<p><strong>攻击面最小化</strong>：系统漏洞随时都可能被利用，应尽可能减少这些风险</p>
+<p><strong>集中参数验证</strong>：参数验证应集中在一个库或系统中进行验证</p>
+<p><strong>集中安全服务</strong>：安全服务应集中化管理并防止产生单点故障</p>
+<p><strong>准备错误和异常处理</strong>：应考虑到错误和异常的发生，同时避免因错误信息而泄露机密数据<br><br></p>
+<h2 id="零信任与信任但需验证"><a href="#零信任与信任但需验证" class="headerlink" title="零信任与信任但需验证"></a>零信任与信任但需验证</h2><p><strong>信任但要验证</strong>：即使信任某个实体及行为，仍然应进行必要的验证。这个实体可以是用户或系统。验证通常需要部署正确的日志记录，并通过检查日志来确保一切正常。然而，完全验证所有操作在现实中是不可能的；因此需要使用自动化的安全机制来帮助进行验证</p>
+<p><strong>零信任</strong>：核心在于将信任视作一种潜在的漏洞，它致力于应对内部威胁。零信任的原则是“永不信任，始终验证”。每个实体在被证实之前都被视为潜在威胁。零信任不会基于设备的位置或所有权来授予信任。零信任架构要求在访问任何资源前必须进行身份验证和授权。因此，如果在零信任架构下发生安全漏洞，其损失往往更易于控制</p>
+<p>微分段是零信任架构的具体实施方法之一。这种方法将网络分段的范围缩小到单个主机的规模。并且段之间的通信必须经过身份验证、访问控制列表的检查及其他安全措施</p>
+<p>尽管在零信任的应用有限制，过度实施可能会影响业务，但这并不意味着只要有可能，就不应该考虑实施零信任架构<br><br></p>
+<h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p>漏洞：表示系统容易受到攻击或损害。在信息安全领域，漏洞指的是系统中的弱点<br>威胁：威胁是指与该弱点或漏洞相关的潜在风险或危险<br>风险：风险是指威胁攻击者利用某个漏洞的可能性及其对业务产生的后果和影响<br><br></p>
+<!-- https://tryhackme.com/r/room/securityprinciples -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
       <categories>
-        <category>网站</category>
+        <category>网络安全基础</category>
       </categories>
-      <tags>
-        <tag>侦察</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hunter</title>
-    <url>/2024/10/26/%E7%BD%91%E7%AB%99hunter/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>这是一个电子邮件搜索工具，可以获取与域名相关的联系信息<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>侦察</tag>
-      </tags>
   </entry>
 </search>
