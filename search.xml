@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>博客模板</title>
-    <url>/2024/10/26/%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
+    <url>/2024/10/26/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
 
 
@@ -20,7 +20,7 @@
   </entry>
   <entry>
     <title>工具模板</title>
-    <url>/2024/10/26/%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <url>/2024/10/26/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
 
 
@@ -38,7 +38,7 @@
   </entry>
   <entry>
     <title>网站模板</title>
-    <url>/2024/10/26/%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <url>/2024/10/26/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
 
 
@@ -48,6 +48,22 @@
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网络职业</title>
+    <url>/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%861/</url>
+    <content><![CDATA[<h2 id="安全分析师"><a href="#安全分析师" class="headerlink" title="安全分析师"></a>安全分析师</h2><p>安全分析师是构建整个组织的安全措施以保护公司免受攻击不可或缺的一部分。分析师探索和评估公司网络，以发现可操作的数据和建议，供工程师制定预防措施。该职位需要与各种利益相关者合作，以了解安全要求和安全形势。</p>
+<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与各利益相关者合作，分析整个公司的网络安全<br>编制有关网络安全的持续报告，记录安全问题和应对措施<br>制定安全计划，纳入对新攻击工具和趋势的研究以及各团队维护数据安全所需的措施。<br><br></p>
+<h2 id="渗透测试员"><a href="#渗透测试员" class="headerlink" title="渗透测试员"></a>渗透测试员</h2><p>您可能会看到渗透测试被称为渗透测试和道德黑客。渗透测试员的工作职责是测试公司内部系统和软件的安全性 - 这是通过尝试通过系统化黑客攻击发现缺陷和漏洞来实现的。渗透测试员利用这些漏洞来评估每种情况下的风险。然后，公司可以利用这些见解来纠正问题，以防止现实世界的网络攻击。</p>
+<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络和基于网络的应用程序进行测试<br>执行安全评估、审计和分析政策<br>评估并报告见解，推荐攻击预防行动<br><br></p>
+<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>安全工程师使用威胁和漏洞数据（通常来自安全工作人员）来开发和实施安全解决方案。安全工程师的工作范围包括规避各种攻击，包括 Web 应用程序攻击、网络威胁以及不断发展的趋势和策略。最终目标是保留和采用安全措施，以减轻攻击和数据丢失的风险。</p>
+<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>测试和筛选软件的安全措施<br>监控网络和报告以更新系统并减轻漏洞<br>确定并实施最佳安全所需的系统<br><br></p>
+<!-- https://tryhackme.com/r/room/careersincyber -->
+<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具等✔? ✖? -->
+]]></content>
+      <categories>
+        <category>网络安全基础知识</category>
       </categories>
   </entry>
 </search>
