@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客模板</title>
-    <url>/2024/10/26/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-
-
-
-<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-<!-- 网站 -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具等✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
     <title>工具模板</title>
     <url>/2024/10/26/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
@@ -47,21 +29,6 @@
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网络安全领域的职业</title>
-    <url>/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
-    <content><![CDATA[<h2 id="安全分析工程师"><a href="#安全分析工程师" class="headerlink" title="安全分析工程师"></a>安全分析工程师</h2><p>安全分析工程师会深入评估公司的网络，发现可操作的数据，并为工程师提供建议，以制定预防措施。此岗位需要与多方利益相关者合作，以了解安全需求和整体安全环境</p>
-<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与各方利益相关者合作，分析公司内部的网络安全状况<br>编写关于网络安全的持续报告，记录安全问题及应对措施<br>制定全面的安全计划，结合对最新攻击工具和趋势的研究，提出各团队维持数据安全的必要措施<br><br></p>
-<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p>渗透测试，也被称为“Pentesting”或“道德黑客”，渗透测试工程师职责是测试公司内部系统和软件的安全性。通过系统化的黑客手段发现系统中的缺陷和漏洞，并利用这些漏洞评估每种情况的风险。公司可以根据工程师提供的测试报告及时修复漏洞，防止现实中的网络攻击。</p>
-<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络及网络应用程序进行深入测试<br>进行全面的安全评估和审计，并对安全策略进行分析<br>评估并报告测试结果，提出预防攻击的具体建议<br><br></p>
-<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>安全工程师通过分析安全团队提供的威胁和漏洞数据，开发并实施安全解决方案。安全工程师的职责包括应对多种类型的攻击，如网页应用程序攻击、网络威胁，以及不断变化的攻击。目标是优化和采用安全措施，以最大程度降低攻击和数据损失的风险。</p>
-<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>对软件中的安全措施进行全面测试<br>监控网络活动并生成报告，以及时更新系统并排除潜在漏洞<br>确定并部署最佳安全防护系统<br><br></p>
-<!-- https://tryhackme.com/r/room/careersincyber -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具等✔ -->]]></content>
-      <categories>
-        <category>网络安全基础</category>
       </categories>
   </entry>
   <entry>
@@ -127,6 +94,39 @@
 <p>尽管在零信任的应用有限制，过度实施可能会影响业务，但这并不意味着只要有可能，就不应该考虑实施零信任架构<br><br></p>
 <h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p>漏洞：表示系统容易受到攻击或损害。在信息安全领域，漏洞指的是系统中的弱点<br>威胁：威胁是指与该弱点或漏洞相关的潜在风险或危险<br>风险：风险是指威胁攻击者利用某个漏洞的可能性及其对业务产生的后果和影响<br><br></p>
 <!-- https://tryhackme.com/r/room/securityprinciples -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具等✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>博客模板</title>
+    <url>/2024/10/26/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+
+
+
+<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+<!-- 网站 -->
+<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具等✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网络安全职业</title>
+    <url>/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
+    <content><![CDATA[<h2 id="安全分析工程师"><a href="#安全分析工程师" class="headerlink" title="安全分析工程师"></a>安全分析工程师</h2><p>安全分析工程师会深入评估公司的网络，发现可操作的数据，并为工程师提供建议，以制定预防措施。此岗位需要与多方利益相关者合作，以了解安全需求和整体安全环境</p>
+<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与各方利益相关者合作，分析公司内部的网络安全状况<br>编写关于网络安全的持续报告，记录安全问题及应对措施<br>制定全面的安全计划，结合对最新攻击工具和趋势的研究，提出各团队维持数据安全的必要措施<br><br></p>
+<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p>渗透测试，也被称为“Pentesting”或“道德黑客”，渗透测试工程师职责是测试公司内部系统和软件的安全性。通过系统化的黑客手段发现系统中的缺陷和漏洞，并利用这些漏洞评估每种情况的风险。公司可以根据工程师提供的测试报告及时修复漏洞，防止现实中的网络攻击。</p>
+<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络及网络应用程序进行深入测试<br>进行全面的安全评估和审计，并对安全策略进行分析<br>评估并报告测试结果，提出预防攻击的具体建议<br><br></p>
+<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>安全工程师通过分析安全团队提供的威胁和漏洞数据，开发并实施安全解决方案。安全工程师的职责包括应对多种类型的攻击，如网页应用程序攻击、网络威胁，以及不断变化的攻击。目标是优化和采用安全措施，以最大程度降低攻击和数据损失的风险。</p>
+<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>对软件中的安全措施进行全面测试<br>监控网络活动并生成报告，以及时更新系统并排除潜在漏洞<br>确定并部署最佳安全防护系统<br><br></p>
+<!-- https://tryhackme.com/r/room/careersincyber -->
 <!-- 删除例子✔，删除主语✔，母语化✔，添加工具等✔ -->]]></content>
       <categories>
         <category>网络安全基础</category>
