@@ -1,48 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>工具模板</title>
-    <url>/2024/10/26/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
-
-
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>博客模板</title>
-    <url>/2024/10/26/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-
-
-
-<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-<!-- 网站 -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Linux基础入门 第一部分</title>
-    <url>/2024/10/26/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1/</url>
+    <title>Linux基础知识 第一部分</title>
+    <url>/2024/10/26/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-1/</url>
     <content><![CDATA[<h2 id="Linux-基础背景介绍"><a href="#Linux-基础背景介绍" class="headerlink" title="Linux 基础背景介绍"></a>Linux 基础背景介绍</h2><p>Linux 与 Windows 等操作系统相比，Linux 的上手难度要高得多。每种操作系统都有其优缺点</p>
-<h3 id="Linux-的种类"><a href="#Linux-的种类" class="headerlink" title="Linux 的种类"></a>Linux 的种类</h3><p>“Linux”这个名称实际上是基于 UNIX 的多种操作系统的总称。由于 Linux 是开源的，因此它的变体种类繁多，适用于不同的系统需求。</p>
+<h3 id="Linux-的种类"><a href="#Linux-的种类" class="headerlink" title="Linux 的种类"></a>Linux 的种类</h3><p>Linux 这个名称实际上是基于 UNIX 的多种操作系统的总称。由于 Linux 是开源的，因此它的变体种类繁多，适用于不同的系统需求。</p>
 <p>类似于 Windows 有不同的版本（如 7、8 和 10），Linux 也有许多不同的版本&#x2F;发行版<br><br></p>
 <h2 id="Linux-基础命令"><a href="#Linux-基础命令" class="headerlink" title="Linux 基础命令"></a>Linux 基础命令</h2><table>
 <thead>
@@ -84,6 +46,7 @@
 <td>搜索文件中的文本</td>
 </tr>
 </tbody></table>
+<p>echo “Hello Friend!”<br>whoami<br>ls<br>cd ..<br>cat *.txt<br>pwd<br>find -name *.txt<br>grep “Hello” *.txt</p>
 <br>
 
 
@@ -94,29 +57,35 @@
 <tr>
 <th>符号 &#x2F; 操作符</th>
 <th>描述</th>
+<th>使用方法</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>&amp;</td>
 <td>将命令放在后台执行，使终端可用于其他任务。</td>
+<td></td>
 </tr>
 <tr>
 <td>&amp;&amp;</td>
-<td>逻辑 AND 操作符，允许在前一命令成功时执行后续命令。</td>
+<td>逻辑 AND 操作符，只允许在前一命令成功时执行后续命令。</td>
+<td></td>
 </tr>
 <tr>
 <td>&gt;</td>
 <td>重定向符号，将命令输出重定向到指定文件（覆盖原文件）。</td>
+<td></td>
 </tr>
 <tr>
 <td>&gt;&gt;</td>
-<td>追加重定向符号，将命令输出追加到指定文件末尾（不覆盖内容）。</td>
+<td>追加重定向符号，将命令输出追加到指定文件末尾（不覆盖内容）</td>
+<td></td>
 </tr>
 </tbody></table>
 <br>
+p
 
 
-
+<p>echo hey &amp;&amp; pwd<br>echo hey &gt; welcome<br>cho hello &gt;&gt; welcome</p>
 <!-- https://tryhackme.com/r/room/linuxfundamentalspart1 -->
 <!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
       <categories>
@@ -124,8 +93,96 @@
       </categories>
   </entry>
   <entry>
+    <title>网站模板</title>
+    <url>/2024/10/26/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Linux基础知识 第二部分</title>
+    <url>/2024/10/27/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-2/</url>
+    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><p>什么是SSH，它如何工作？<br>SSH（Secure Shell）是设备之间的一种加密通信协议。借助于加密技术，我们以人类可读的形式输入的任何数据都会在网络传输时被加密，并在抵达远程机器后解密，是连接和操作远程Linux系统命令行的常用方式。</p>
+<p>需知道以下几点：<br>SSH允许我们在另一台设备上远程执行命令。<br>在通过网络（如互联网）传输时，设备之间的所有数据都会加密处理。</p>
+<p>使用SSH登录Linux机器</p>
+<p>使用SSH的语法非常简单，只需要提供两项信息：<br>远程机器的IP地址<br>有效账户的正确登录凭证</p>
+<p>SSH的命令格式为：ssh加上用户名，接着是“@”符号和目标机器的IP地址。</p>
+<p>连接成功后，您在终端中执行的所有命令都将作用于远程机器，而不是本地机器。</p>
+<p>注意：在SSH登录界面输入密码时，屏幕上不会有任何显示反馈——不会看到任何文字或符号，但它确实在工作。输入密码后，直接按回车键即可登录。</p>
+<p>ls -a 列出隐藏文件<br>ls –help 列出可选命令，并提供简短的说明和使用方法的示例<br>ls -lh 和 ls -l是一样的，但是-lh的h是human readable，更方便人阅读<br>man ls 手册页</p>
+<p>| 命令        | 全称               | 描述                                  | 使用方法<br>|————-|——————–|—————————————|<br>| touch       | touch               | 创建一个新文件                      |<br>| mkdir       | make directory      | 创建一个新文件夹                       |<br>| cp          | copy                | 复制文件或目录                       |<br>| mv          | move                | 移动文件或重命名                      |<br>| rm          | remove              | 删除文件或目录                       |<br>| file        | file                | 确定文件类型                         |</p>
+<p>touch note 创建note文件<br>mkdir mydirectory 创建mydirectory文件夹</p>
+<p>rm note 删除文件<br>rm -R mydirectory 删除文件夹</p>
+<p>cp note note2<br>mv note2 note3 将note2重命名为note3</p>
+<p>file note</p>
+<p>su user2<br>su user2 和 su -l user2不一样，su user2不会切换当前环境，还是保持原来的环境。su -l user2会完整的切换到user2的环境</p>
+<h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+
+
+
+<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+<!-- 网站 -->
+<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
+      <categories>
+        <category>基础技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>theHarvester</title>
+    <url>/2024/10/26/%E5%B7%A5%E5%85%B7theHarvester/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>theHarvester 是一款简单易用但功能强大的工具，旨在用于红队评估或渗透测试的侦察阶段。它执行开源情报 (OSINT) 收集，以帮助确定域的外部威胁状况。该工具使用多种公共资源收集名称、电子邮件、IP、子域和 URL<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工具模板</title>
+    <url>/2024/10/26/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
+
+
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
     <title>OSINT Framework</title>
-    <url>/2024/10/26/%E7%BD%91%E7%AB%99OSINTFramework/</url>
+    <url>/2024/10/26/%E7%BD%91%E7%AB%99OSINT_Framework/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>OSINT Framework提供了基于各种类别的OSINT工具集合<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>点击即可<br><br></p>
@@ -136,6 +193,24 @@
       <tags>
         <tag>侦察</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>博客模板</title>
+    <url>/2024/10/26/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+
+
+
+<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+<!-- 网站 -->
+<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
   </entry>
   <entry>
     <title>hunter</title>
@@ -152,6 +227,21 @@
       <tags>
         <tag>侦察</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>网络安全职业</title>
+    <url>/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
+    <content><![CDATA[<h2 id="安全分析工程师"><a href="#安全分析工程师" class="headerlink" title="安全分析工程师"></a>安全分析工程师</h2><p>安全分析工程师会深入评估公司的网络，发现可操作的数据，并为工程师提供建议，以制定预防措施。此岗位需要与多方利益相关者合作，以了解安全需求和整体安全环境</p>
+<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与各方利益相关者合作，分析公司内部的网络安全状况<br>编写关于网络安全的持续报告，记录安全问题及应对措施<br>制定全面的安全计划，结合对最新攻击工具和趋势的研究，提出各团队维持数据安全的必要措施<br><br></p>
+<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p>渗透测试，也被称为“Pentesting”或“道德黑客”，渗透测试工程师职责是测试公司内部系统和软件的安全性。通过系统化的黑客手段发现系统中的缺陷和漏洞，并利用这些漏洞评估每种情况的风险。公司可以根据工程师提供的测试报告及时修复漏洞，防止现实中的网络攻击。</p>
+<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络及网络应用程序进行深入测试<br>进行全面的安全评估和审计，并对安全策略进行分析<br>评估并报告测试结果，提出预防攻击的具体建议<br><br></p>
+<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>安全工程师通过分析安全团队提供的威胁和漏洞数据，开发并实施安全解决方案。安全工程师的职责包括应对多种类型的攻击，如网页应用程序攻击、网络威胁，以及不断变化的攻击。目标是优化和采用安全措施，以最大程度降低攻击和数据损失的风险。</p>
+<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>对软件中的安全措施进行全面测试<br>监控网络活动并生成报告，以及时更新系统并排除潜在漏洞<br>确定并部署最佳安全防护系统<br><br></p>
+<!-- https://tryhackme.com/r/room/careersincyber -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
   </entry>
   <entry>
     <title>安全原则</title>
@@ -220,57 +310,6 @@
       <categories>
         <category>网络安全基础</category>
       </categories>
-  </entry>
-  <entry>
-    <title>网络安全职业</title>
-    <url>/2024/10/26/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
-    <content><![CDATA[<h2 id="安全分析工程师"><a href="#安全分析工程师" class="headerlink" title="安全分析工程师"></a>安全分析工程师</h2><p>安全分析工程师会深入评估公司的网络，发现可操作的数据，并为工程师提供建议，以制定预防措施。此岗位需要与多方利益相关者合作，以了解安全需求和整体安全环境</p>
-<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与各方利益相关者合作，分析公司内部的网络安全状况<br>编写关于网络安全的持续报告，记录安全问题及应对措施<br>制定全面的安全计划，结合对最新攻击工具和趋势的研究，提出各团队维持数据安全的必要措施<br><br></p>
-<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p>渗透测试，也被称为“Pentesting”或“道德黑客”，渗透测试工程师职责是测试公司内部系统和软件的安全性。通过系统化的黑客手段发现系统中的缺陷和漏洞，并利用这些漏洞评估每种情况的风险。公司可以根据工程师提供的测试报告及时修复漏洞，防止现实中的网络攻击。</p>
-<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络及网络应用程序进行深入测试<br>进行全面的安全评估和审计，并对安全策略进行分析<br>评估并报告测试结果，提出预防攻击的具体建议<br><br></p>
-<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>安全工程师通过分析安全团队提供的威胁和漏洞数据，开发并实施安全解决方案。安全工程师的职责包括应对多种类型的攻击，如网页应用程序攻击、网络威胁，以及不断变化的攻击。目标是优化和采用安全措施，以最大程度降低攻击和数据损失的风险。</p>
-<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>对软件中的安全措施进行全面测试<br>监控网络活动并生成报告，以及时更新系统并排除潜在漏洞<br>确定并部署最佳安全防护系统<br><br></p>
-<!-- https://tryhackme.com/r/room/careersincyber -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
-      <categories>
-        <category>网络安全基础</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网站模板</title>
-    <url>/2024/10/26/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>theHarvester</title>
-    <url>/2024/10/26/%E5%B7%A5%E5%85%B7theHarvester/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>theHarvester 是一款简单易用但功能强大的工具，旨在用于红队评估或渗透测试的侦察阶段。它执行开源情报 (OSINT) 收集，以帮助确定域的外部威胁状况。该工具使用多种公共资源收集名称、电子邮件、IP、子域和 URL<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>侦察</tag>
-      </tags>
   </entry>
   <entry>
     <title>网络杀伤链</title>
