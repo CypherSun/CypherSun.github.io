@@ -39,8 +39,412 @@
       </categories>
   </entry>
   <entry>
+    <title>网站模板</title>
+    <url>/2024/10/27/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Linux基础知识 第二部分</title>
+    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-3/</url>
+    <content><![CDATA[<h2 id="终端文本编辑器"><a href="#终端文本编辑器" class="headerlink" title="终端文本编辑器"></a>终端文本编辑器</h2><h3 id="Nano"><a href="#Nano" class="headerlink" title="Nano"></a>Nano</h3><p>nano 是一个易于使用的文本编辑器，输入 nano 和文件名来创建或编辑文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nano file1</span><br><span class="line"><span class="comment"># 打开或创建名为 file1 的文件进行编辑</span></span><br></pre></td></tr></table></figure>
+
+<p>使用 “向上” 和 “向下” 箭头键在各行之间导航，或者使用 “Enter” 键开始新行</p>
+<p>Nano 具备一些易于记忆的功能，涵盖了对文本编辑器的常用需求，包括：</p>
+<p>搜索文本<br>复制和粘贴<br>跳转到指定行号<br>查看当前所在的行号</p>
+<p>可以通过按 “Ctrl” 键（显示为 ^）和对应的字母来使用这些功能</p>
+<p>Ctrl + W：搜索文本<br>Ctrl + K：剪切行<br>Ctrl + U：粘贴行<br>Ctrl + _：跳转到指定行号<br>Ctrl + C：查看当前行号<br>Ctrl + X：退出 nano，在退出前会提示是否保存更改</p>
+<h3 id="VIM"><a href="#VIM" class="headerlink" title="VIM"></a>VIM</h3><p>VIM 文本编辑器，显著优势包括：</p>
+<p><strong>可定制性</strong>：可以根据自己的需求修改快捷键和配置<br><strong>语法高亮</strong>：VIM 支持语法高亮显示，对于编写或维护代码非常有帮助，是许多软件开发者的首选<br><strong>广泛兼容性</strong>：VIM 可以在几乎所有的终端上运行，而某些系统可能默认没有安装 nano<br><strong>丰富的学习资源</strong>：VIM 拥有大量的学习资料，包括速查表、教程和社区支持，方便新手逐步掌握<br><br></p>
+<h2 id="常用-实用工具"><a href="#常用-实用工具" class="headerlink" title="常用&#x2F;实用工具"></a>常用&#x2F;实用工具</h2><h3 id="文件下载（Wget）"><a href="#文件下载（Wget）" class="headerlink" title="文件下载（Wget）"></a>文件下载（Wget）</h3><p>使用 “wget” 命令通过 HTTP 协议从网页上下载文件，只需提供目标资源的完整 URL 地址。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://example/file.txt</span><br><span class="line"><span class="comment"># 从指定网址下载文件 file.txt</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="从主机传输文件-SCP（SSH）"><a href="#从主机传输文件-SCP（SSH）" class="headerlink" title="从主机传输文件 - SCP（SSH）"></a>从主机传输文件 - SCP（SSH）</h3><p>安全复制（SCP）是一种通过 SSH 协议在两台计算机之间传输文件的安全方法。不同于普通的 cp 命令，scp 提供了身份验证和加密。</p>
+<p>scp 使用“来源”和“目标”的模式，需要当前系统和远程系统的用户名和密码<br>scp 可以将文件或目录从当前系统复制到远程系统，或者从远程系统复制到当前系统。</p>
+<p>使用 “scp” 命令从本地系统复制文件到远程系统</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scp /path/file1.txt remoteuser@1.1.1.1:/path/file1.txt</span><br><span class="line"><span class="comment"># 将本地系统中的 /path/file1.txt 复制到远程系统上的 /path/file1.txt</span></span><br><span class="line"><span class="comment"># scp [本地文件路径] [远程用户]@[远程IP地址]:[远程目标路径]</span></span><br></pre></td></tr></table></figure>
+
+
+<p>使用 “scp” 命令从远程系统复制文件到本地系统</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scp remoteuser@1.1.1.1:/path/remote/file1.txt /path/local/file1.txt</span><br><span class="line"><span class="comment"># 将远程系统上的 /path/remote/file1.txt 复制到本地系统的 /path/local/file1.txt</span></span><br><span class="line"><span class="comment"># scp [远程用户]@[远程IP地址]:[远程文件路径] [本地目标路径]</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="从主机提供文件-WEB"><a href="#从主机提供文件-WEB" class="headerlink" title="从主机提供文件 - WEB"></a>从主机提供文件 - WEB</h3><p>Python 提供了一个轻量且易于使用的模块，称为 http.server，它可以将计算机快速变成一个简易的 Web 服务器，用于提供文件。其他计算机可以通过诸如 curl 和 wget 之类的命令来下载这些文件。</p>
+<p>使用 Python 3 的 http.server 模块会在当前目录下提供文件，并且可以通过一些可选参数来更改目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python3 -m http.server</span><br></pre></td></tr></table></figure>
+
+<p>Python 3 服务器默认在端口 8000 上运行，因此在使用 wget 命令下载文件时，需要指定该端口</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://1.1.1.1:8000/file1</span><br></pre></td></tr></table></figure>
+
+<p>需要打开一个新终端来使用 wget，而运行 Python3 Web 服务器的终端必须保持打开状态<br>因为 Python3 Web 服务器启动后会在该终端中持续运行，直到手动取消</p>
+<p>http.server 模块没有目录索引功能，因此你必须确切知道要下载的文件的名称和路径。</p>
+<p>虽然 http.server 足够简单易用，但它没有索引功能。还有一些功能更强大的轻量级 Web 服务器，比如 Updog<br><br></p>
+<h2 id="进程基础知识"><a href="#进程基础知识" class="headerlink" title="进程基础知识"></a>进程基础知识</h2><p>进程是计算机上运行的程序，由内核进行管理。每个进程都有一个唯一的进程标识符（PID），PID 会按照进程启动的顺序递增。</p>
+<h3 id="查看进程"><a href="#查看进程" class="headerlink" title="查看进程"></a>查看进程</h3><p>使用 “ps” 命令显示当前用户会话中运行的进程列表，以及一些附加信息<br>使用 “ps aux” 命令查看所有用户的进程以及不属于当前会话的进程</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ps</span><br><span class="line"><span class="comment"># 显示当前用户会话中的进程列表</span></span><br><span class="line"></span><br><span class="line">ps aux</span><br><span class="line"><span class="comment"># 显示所有用户的所有进程，包括系统进程和后台进程</span></span><br></pre></td></tr></table></figure>
+
+<p>使用 “top” 命令实时显示系统上运行的进程信息，而不是一次性的快照。这些统计数据会自动刷新，默认每 10 秒刷新一次。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">top</span><br></pre></td></tr></table></figure>
+
+<p>通过 “top” 命令可以更详细地了解系统的实时运行状态。</p>
+<h3 id="管理进程"><a href="#管理进程" class="headerlink" title="管理进程"></a>管理进程</h3><p>使用 “kill” 命令提供要终止进程的 PID，通过发送信号来终止进程</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">kill</span> 11111</span><br><span class="line"><span class="comment"># 终止 PID 为 11111 的进程</span></span><br></pre></td></tr></table></figure>
+
+
+<p>在终止进程时，可以使用不同的信号类型来指定终止方式：</p>
+<p>SIGTERM (15)：请求进程终止，但允许它在终止前执行清理任务。默认情况下，kill 命令会发送这个信号<br>SIGKILL (9)：直接强制终止进程，不允许其进行任何清理操作。适用于无法正常停止的进程<br>SIGSTOP (19)：停止或挂起进程，但不终止它。可以稍后使用 SIGCONT 恢复执行</p>
+<h3 id="进程是如何启动的？"><a href="#进程是如何启动的？" class="headerlink" title="进程是如何启动的？"></a>进程是如何启动的？</h3><p>操作系统（OS）利用命名空间将计算机的可用资源分配给各个进程。位于某一块中的进程能够使用该块中的一部分计算资源，这只是系统所有进程所能使用资源的一部分。</p>
+<p>命名空间的一个主要优点是安全性，它可以隔离进程——只有位于同一命名空间中的进程才能彼此可见。</p>
+<p>在系统启动时，ID 为 0 的进程是最早创建的进程，这个进程通常是系统的 init 进程。在 Linux 中，init 通常是 systemd，它负责启动和管理系统的所有其他进程，是所有用户进程的父进程。</p>
+<h3 id="进程-服务在系统启动时自动运行"><a href="#进程-服务在系统启动时自动运行" class="headerlink" title="进程&#x2F;服务在系统启动时自动运行"></a>进程&#x2F;服务在系统启动时自动运行</h3><p>有些应用程序可以在系统启动时自动运行，这些程序通常很重要，管理员会配置它们在系统启动时自动启动。</p>
+<p>使用 “systemctl” 命令与 systemd 守护进程交互来管理这些服务</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">systemctl Start apache</span><br><span class="line">systemctl [选项] [服务]</span><br></pre></td></tr></table></figure>
+
+
+<p>通过systemctl，可以执行四种操作：</p>
+<p>start（启动）<br>stop（停止）<br>enable（启用）<br>disable（禁用）</p>
+<h3 id="Linux中的后台与前台运行"><a href="#Linux中的后台与前台运行" class="headerlink" title="Linux中的后台与前台运行"></a>Linux中的后台与前台运行</h3><p>在 Linux 中，进程可以运行在前台或后台</p>
+<p>使用 “&amp;” 操作符执行命令并在后台运行<br>使用 “fg” 命令可以将挂起或在后台的进程恢复到前台<br>使用 “bg” 命令可以将挂起的进程继续在后台运行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://example.com/passwords.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/passwords.txt 文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">fg</span></span><br><span class="line"><span class="comment"># 将最近挂起或后台的进程恢复到前台</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">bg</span></span><br><span class="line"><span class="comment"># 将最近挂起的进程恢复在后台继续运行</span></span><br></pre></td></tr></table></figure>
+
+<p>使用 Ctrl + Z 会将前台进程挂起，但不会终止它</p>
+<br>
+
+
+
+
+
+<h2 id="系统维护：自动化"><a href="#系统维护：自动化" class="headerlink" title="系统维护：自动化"></a>系统维护：自动化</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+
+
+
+<h2 id="系统维护：软件包管理"><a href="#系统维护：软件包管理" class="headerlink" title="系统维护：软件包管理"></a>系统维护：软件包管理</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+
+
+
+<h2 id="系统维护：日志"><a href="#系统维护：日志" class="headerlink" title="系统维护：日志"></a>系统维护：日志</h2><h3 id="副主题1-2"><a href="#副主题1-2" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-2"><a href="#副主题2-2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+<!-- 网站 -->
+<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Linux基础知识 第二部分</title>
+    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-2/</url>
+    <content><![CDATA[<h2 id="使用-SSH-访问-Linux-机器"><a href="#使用-SSH-访问-Linux-机器" class="headerlink" title="使用 SSH 访问 Linux 机器"></a>使用 SSH 访问 Linux 机器</h2><h3 id="什么是-SSH-及其工作原理？"><a href="#什么是-SSH-及其工作原理？" class="headerlink" title="什么是 SSH 及其工作原理？"></a>什么是 SSH 及其工作原理？</h3><p>Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式。</p>
+<p>SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络（如互联网）时都会被加密。</p>
+<p>使用 SSH 的语法只需两个信息：<br>远程机器的 IP 地址<br>远程机器上有效账户的正确凭证</p>
+<p>使用的命令是 ssh，然后是账户用户名，接着是 @ 和机器的 IP 地址</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh 用户名@1.1.1.1</span><br></pre></td></tr></table></figure>
+
+<p>信任主机，输入账户的密码。连接成功后，任何执行的命令将会在远程机器上运行，而不是在本地机器上</p>
+<p>在 SSH 登录提示符中输入密码时，不会有任何可见的反馈。在输入密码时不会看到任何文本或符号，只需输入密码后按回车登录。</p>
+<p>输入exit断开连接<br><br></p>
+<h2 id="标志和开关简介"><a href="#标志和开关简介" class="headerlink" title="标志和开关简介"></a>标志和开关简介</h2><p>大多数命令都允许使用参数。这些参数通常由连字符和一个特定的关键字标识，这些关键字被称为标志（flags）或开关（switches）。在使用命令时，除非另有指定，否则它将执行默认行为。</p>
+<p>使用 “ls -a” 命令查看所有文件和文件夹，包括以 “.” 开头的隐藏文件和文件夹<br>使用 “ls –help” 命令列出 ls 命令可接受的所有选项，并提供简短的描述和使用示例</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br><span class="line"><span class="comment"># 列出当前目录中的所有文件和目录，包括隐藏文件（以 “.” 开头的文件）</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> --<span class="built_in">help</span></span><br><span class="line"><span class="comment"># 显示 ls 命令的帮助信息，包括所有可用选项及其说明</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="手册页"><a href="#手册页" class="headerlink" title="手册页"></a>手册页</h3><p>手册页（man page）包含了 Linux 命令和应用程序的详细文档，是关于系统命令和 Linux 上应用程序的信息，可以直接在机器上或者在线访问</p>
+<p>使用 “man” 命令来查看手册页，列出可以与 “ls” 一起使用的选项</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">man <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 查看 ls 命令的手册页，获取详细信息和选项说明</span></span><br></pre></td></tr></table></figure>
+
+<p>man搭配命令可以查看Linux 上几乎所有的命令，在使用上下箭头键滚动阅读手册页，按 q 退出<br><br></p>
+<h2 id="文件系统交互继续"><a href="#文件系统交互继续" class="headerlink" title="文件系统交互继续"></a>文件系统交互继续</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>touch</td>
+<td>创建一个新的空文件</td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>创建一个新的文件夹&#x2F;目录（make directory）</td>
+</tr>
+<tr>
+<td>cp</td>
+<td>复制文件或文件夹（copy）</td>
+</tr>
+<tr>
+<td>mv</td>
+<td>移动文件或文件夹或重命名（move）</td>
+</tr>
+<tr>
+<td>rm</td>
+<td>删除文件或文件夹（remove）</td>
+</tr>
+<tr>
+<td>file</td>
+<td>确定文件的类型</td>
+</tr>
+</tbody></table>
+<p>与使用 cat 命令类似，在以上所有这些命令中都可使用完整的文件路径</p>
+<h3 id="创建文件和文件夹（touch-mkdir）"><a href="#创建文件和文件夹（touch-mkdir）" class="headerlink" title="创建文件和文件夹（touch, mkdir）"></a>创建文件和文件夹（touch, mkdir）</h3><p>使用 “touch” 命令创建一个新的空文件<br>使用 “mkdir” 命令创建一个新的文件夹&#x2F;目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">touch</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
+
+<p>想要在该文件中添加内容，使用 echo 命令或 nano 等文本编辑器</p>
+<h3 id="删除文件和文件夹-rm"><a href="#删除文件和文件夹-rm" class="headerlink" title="删除文件和文件夹 (rm)"></a>删除文件和文件夹 (rm)</h3><p>使用 “rm” 命令删除一个文件<br>使用 “rm -R” 命令删除一个文件夹</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">rm</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -R folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="复制和移动文件和文件夹-cp-mv"><a href="#复制和移动文件和文件夹-cp-mv" class="headerlink" title="复制和移动文件和文件夹 (cp, mv)"></a>复制和移动文件和文件夹 (cp, mv)</h3><p>使用 “cp” 命令将现有文件的所有内容复制到新的文件中，第一个参数为已存在文件的名称，第二个参数为复制时新文件指定的名称。如果目标文件不存在，将自动创建新文件。<br>使用 “cp -r” 命令将现有文件夹及其所有内容复制到新的文件夹中，第一个参数为已存在文件夹的名称，第二个参数为复制时新文件夹指定的名称。如果目标文件夹不存在，将自动创建新文件夹。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 file2</span><br><span class="line"><span class="comment"># 将 file1 的内容复制到 file2，如果 file2 不存在，会自动创建</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> -r folder1 folder2</span><br><span class="line"><span class="comment"># 将 folder1 文件夹及其内容复制到 folder2，如果 folder2 不存在，会自动创建</span></span><br></pre></td></tr></table></figure>
+
+<p>使用 “mv” 命令将文件或文件夹移动到新文件夹，或者对第二个参数提供的文件或文件夹进行重命名，不会创建新文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mv</span> file1 file2</span><br><span class="line"><span class="comment"># 如果 file2 是一个新名称，会将 file1 重命名为 file2</span></span><br><span class="line"><span class="comment"># 如果 file2 是一个已存在的目录，会将 file1 移动到该目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mv</span> folder1 folder2</span><br><span class="line"><span class="comment"># 如果 folder2 是一个新名称，会将 folder1 重命名为 folder2</span></span><br><span class="line"><span class="comment"># 如果 folder2 是一个已存在的目录，会将 folder1 移动到该目录</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="确定文件类型"><a href="#确定文件类型" class="headerlink" title="确定文件类型"></a>确定文件类型</h3><p>使用 “file” 命令确定文件或文件夹的类型，会返回文件的类型描述</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">file file1</span><br><span class="line"><span class="comment"># 检查 file1 的类型，并显示其类型信息</span></span><br><span class="line"></span><br><span class="line">file folder1</span><br><span class="line"><span class="comment"># 检查 folder1 的类型，如果是文件夹，会显示为 &quot;directory&quot;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+<h2 id="权限基础知识"><a href="#权限基础知识" class="headerlink" title="权限基础知识"></a>权限基础知识</h2><p>使用 “ls -lh” 命令列出目录中所有文件的详细信息，包括文件权限、大小、所有者、修改时间等</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -lh</span><br><span class="line"><span class="comment"># 以详细格式列出当前目录中的所有文件信息，包括权限、大小和修改时间</span></span><br></pre></td></tr></table></figure>
+
+<p>对于确定一个文件或文件夹的某些特性，以及是否有访问权限。文件或文件夹可以有几种特性，这些特性决定了允许执行的操作，以及哪个用户或用户组有权限执行这些操作：<br>读取 (Read)<br>写入 (Write)<br>执行 (Execute)</p>
+<h3 id="用户和用户组之间的区别"><a href="#用户和用户组之间的区别" class="headerlink" title="用户和用户组之间的区别"></a>用户和用户组之间的区别</h3><p>Linux 的一个优点在于权限可以非常细化，尽管某个用户技术上是文件的所有者，但通过设置权限，一组用户可以对同一个文件拥有相同或不同的权限，而不会影响文件的所有者。</p>
+<p>需要以下切换用户账户：<br>目标用户的用户名<br>目标用户的密码</p>
+<p>使用 “su” 命令需要输入用户的密码来切换到指定的用户账户，默认情况下不会加载该用户的完整环境变量。<br>使用 “su -l” 命令需要输入用户的密码，它会完全切换到指定用户的实际登录环境，加载所有新用户的属性，比如环境变量等。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">su user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，不会加载该用户的完整环境变量</span></span><br><span class="line"></span><br><span class="line">su -l user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，加载该用户的完整环境变量和配置</span></span><br></pre></td></tr></table></figure>
+
+<p>如果没有指定用户，默认情况下会切换到 root 用户。<br><br></p>
+<h2 id="常见目录"><a href="#常见目录" class="headerlink" title="常见目录"></a>常见目录</h2><h3 id="etc"><a href="#etc" class="headerlink" title="&#x2F;etc"></a>&#x2F;etc</h3><p>&#x2F;etc 目录是系统中最重要的目录之一。&#x2F;etc 文件夹（“etc” 代表 etcetera）是存放操作系统使用的配置文件和系统文件的常见位置。</p>
+<p>在 &#x2F;etc 文件夹中，通常包含 passwd 和 shadow 文件。&#x2F;etc&#x2F;passwd 文件存储了用户账户的信息，而 &#x2F;etc&#x2F;shadow 文件存储了每个用户的密码的加密哈希。系统通常使用 SHA-512 或其他安全哈希算法来对密码进行加密</p>
+<h3 id="var"><a href="#var" class="headerlink" title="&#x2F;var"></a>&#x2F;var</h3><p>&#x2F;var 目录是 “variable data”（可变数据）的缩写，是 Linux 中的重要目录。这个目录用于存储由系统上运行的服务或应用程序频繁访问、修改或生成的数据</p>
+<h3 id="root"><a href="#root" class="headerlink" title="&#x2F;root"></a>&#x2F;root</h3><p>&#x2F;root 目录是root用户系统管理员的主目录，它与普通用户的主目录 &#x2F;home 不同。&#x2F;root 是专门为 root 用户保留的，因此被放置在根目录下，而不是 &#x2F;home 目录中</p>
+<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录是 Linux 系统中的一个特殊目录，用于存储临时文件。&#x2F;tmp 是 “temporary”（临时）的缩写，用于存放仅需临时访问的数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除</p>
+<p>对于渗透测试人员而言，&#x2F;tmp 目录的一个优势在于，默认情况下任何用户都有写入权限。这意味着在获得对系统的访问权限后，&#x2F;tmp 是一个存放枚举脚本和其他工具的理想位置。</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/linuxfundamentalspart2 -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>theHarvester</title>
+    <url>/2024/10/27/%E5%B7%A5%E5%85%B7theHarvester/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>OSINT_Framework</title>
+    <url>/2024/10/27/%E7%BD%91%E7%AB%99OSINT-Framework/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网络安全职业</title>
+    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
+    <content><![CDATA[<h2 id="安全分析师"><a href="#安全分析师" class="headerlink" title="安全分析师"></a>安全分析师</h2><p>负责维护组织数据的安全</p>
+<p>安全分析师在组织中通过构建安全措施来保护公司免受攻击。分析师会对公司网络进行探索和评估，找出可操作的数据和建议，以便工程师能够制定预防措施。此职位要求与各类利益相关者合作，以全面理解安全需求和整体的安全态势。</p>
+<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与不同的利益相关者合作，分析公司范围内的网络安全情况。<br>编写有关网络安全性的持续报告，记录安全问题及采取的应对措施。<br>制定安全计划，包括研究新的攻击工具和趋势，以及各团队为保持数据安全所需采取的措施。<br><br></p>
+<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p>负责测试技术产品中的安全漏洞</p>
+<p>渗透测试也常被称为“渗测（pentesting）”或“道德黑客（ethical hacking）”。渗透测试工程师的职责是测试公司内部系统和软件的安全性——通过系统化的黑客手段尝试发现缺陷和漏洞。渗透测试工程师会利用这些漏洞来评估每个实例中的风险。公司可以基于这些信息来修复问题，以防止现实中的网络攻击。</p>
+<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络和网络应用程序进行测试<br>执行安全评估、审计，并分析相关的安全策略<br>评估并报告测试结果，提出防范攻击的建议措施<br><br></p>
+<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>负责设计、监控和维护安全控制、网络和系统，以防止网络攻击</p>
+<p>安全工程师通过使用安全团队成员提供的威胁和漏洞数据，开发并实施安全解决方案。安全工程师负责防范多种类型的攻击，包括网页应用攻击、网络威胁以及不断变化的攻击趋势和策略。最终目标是采用并保持有效的安全措施，以降低攻击和数据丢失的风险。</p>
+<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>测试和筛选软件中的安全措施<br>监控网络并生成报告，以及时更新系统，降低漏洞风险<br>识别并部署必要的系统，以实现最佳的安全保护<br><br></p>
+<!-- https://tryhackme.com/r/room/careersincyber -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hunter</title>
+    <url>/2024/10/27/%E7%BD%91%E7%AB%99hunter/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>安全原则</title>
+    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/</url>
+    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在描述某样东西是安全的之前，需要更好地理解什么构成了安全。当想评估一个系统的安全性时，需要从安全三角的角度考虑：机密性（Confidentiality）、完整性（Integrity）和可用性（Availability），即CIA。</p>
+<p><strong>机密性</strong>：确保只有特定人员或接收者可以访问数据<br><strong>完整性</strong>：旨在确保数据不能被篡改；如果发生任何篡改，也能检测到<br><strong>可用性</strong>：确保系统或服务在需要时是可以使用的</p>
+<h3 id="除了CIA"><a href="#除了CIA" class="headerlink" title="除了CIA"></a>除了CIA</h3><p><strong>真实性</strong>：真实性意味着数据必须是真实的而不是伪造的。真实性旨在确保文档、文件或数据确实来自声明的来源</p>
+<p><strong>不可否认性</strong>：否认意味着拒绝承认某事的有效性。不可否认性旨在确保原始数据来源无法否认自己是该文档、文件或数据的源头</p>
+<h3 id="Parkerian六要素"><a href="#Parkerian六要素" class="headerlink" title="Parkerian六要素"></a>Parkerian六要素</h3><p>1998年，Donn Parker提出了Parkerian六要素，包含六个安全元素：</p>
+<p>可用性<br>实用性<br>完整性<br>真实性<br>机密性<br>所有权</p>
+<p><strong>实用性</strong>：实用性关注信息的可用性和有用性<br><strong>所有权</strong>：此安全元素强调保护信息免遭未经授权的获取、复制或控制<br><br></p>
+<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>一个系统的安全可以通过几种不同的手段受到攻击。这些手段可能包括机密数据的泄露、数据的篡改或数据的破坏</p>
+<p><strong>泄露</strong>：是机密性的反面，机密数据的泄露就是对机密性的攻击<br><strong>篡改</strong>：是完整性的反面<br><strong>破坏&#x2F;拒绝</strong>：是可用性的反面</p>
+<p>CIA三角的反面就是DAD三角：泄露（Disclosure）、篡改（Alteration）和破坏（Destruction）。</p>
+<p>防范泄露、篡改和破坏&#x2F;拒绝服务至关重要。这些防范措施实际上是在维护机密性、完整性和可用性。</p>
+<p>极度保护机密性和完整性可能会限制系统的可用性，而极度提高可用性可能会导致机密性和完整性的损失。好的安全策略需要在这三者之间找到适当的平衡。<br><br></p>
+<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>使用安全模型能创建一个能够确保一种或多种安全功能的系统</p>
+<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型旨在通过以下三条规则来实现<strong>机密性</strong>：</p>
+<p><strong>简单安全属性</strong>（No Read Up）：低安全级别的主体不能读取高安全级别的对象。这条规则防止了对超出授权级别的敏感信息的访问<br><strong>星型安全属性</strong>（No Write Down）：高安全级别的主体不能向低安全级别的对象写入数据。这条规则防止将敏感信息泄露给低安全级别的主体<br><strong>任意安全属性</strong>：此属性通过访问矩阵允许读和写操作</p>
+<table>
+<thead>
+<tr>
+<th>主体</th>
+<th>对象 A</th>
+<th>对象 B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主体 1</td>
+<td>写入</td>
+<td>无访问权限</td>
+</tr>
+<tr>
+<td>主体 2</td>
+<td>读&#x2F;写</td>
+<td>读取</td>
+</tr>
+</tbody></table>
+<p>前两个规则可以概括为 “向上写入，向下读取”。可以将机密信息分享给拥有更高安全许可的人（向上写入），并从拥有较低安全许可的人接收机密信息（向下读取）。</p>
+<p>Bell-LaPadula 模型局限性包括它不适用于文件共享场景</p>
+<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型旨在通过以下两条规则来实现数据<strong>完整性</strong>：</p>
+<p><strong>简单完整性属性</strong>（No Read Down）：高完整性的主体不应从低完整性的对象中读取数据<br><strong>星型完整性属性</strong>（No Write Up）：低完整性的主体不应向高完整性的对象写入数据</p>
+<p>这两条规则可以概括为“向上读取，向下写入”。这与 Bell-LaPadula 模型形成对比，因为 Bell-LaPadula 关注机密性，而 Biba 关注完整性。</p>
+<p>Biba 模型的局限性包括它无法应对内部威胁</p>
+<h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型同样旨在通过以下概念来维护数据<strong>完整性</strong>：</p>
+<p><strong>受约束数据项</strong>（CDI）：指需要保护完整性的数据类型。<br><strong>非受约束数据项</strong>（UDI）：指除 CDI 之外的所有数据类型，例如用户输入和系统输入。<br><strong>转换程序</strong>（TPs）：这些是已编程的操作（如读取和写入），应确保 CDI 的完整性。<br><strong>完整性验证程序</strong>（IVPs）：这些程序用于检查并验证 CDI 的有效性。</p>
+<p>其他安全模型：<br>Brewer-Nash 模型<br>Goguen-Meseguer 模型<br>Sutherland 模型<br>Graham-Denning 模型<br>Harrison-Ruzzo-Ullman 模型<br><br></p>
+<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是指构建一个多层次的安全系统，因此也称为多层安全（Multi-Level Security）。<br><br></p>
+<h2 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h2><p>国际标准化组织（ISO）和国际电工委员会（IEC）制定了ISO&#x2F;IEC 19249标准。ISO&#x2F;IEC 19249:2017《信息技术 - 安全技术 - 安全产品、系统和应用的架构和设计原则目录》，目的是帮助更好地理解国际组织在安全原则方面的指导。</p>
+<h3 id="ISO-IEC-19249列出了五项架构原则："><a href="#ISO-IEC-19249列出了五项架构原则：" class="headerlink" title="ISO&#x2F;IEC 19249列出了五项架构原则："></a>ISO&#x2F;IEC 19249列出了五项架构原则：</h3><p><strong>域分离</strong>：将一组相关的组件分组为单个实体，组件可以是应用程序、数据或其他资源。每个实体都会有自己的域，并分配一组共用的安全属性</p>
+<p><strong>分层</strong>：当系统被划分为多个抽象层次或层级时，可以在不同的层次上实施安全策略；此外，还能验证操作是否符合预期。分层原则与纵深防御有关</p>
+<p><strong>封装</strong>：在面向对象编程（OOP）中，通过特定方法隐藏底层实现，防止直接操控对象中的数据</p>
+<p><strong>冗余</strong>：确保系统的可用性和完整性是冗余的核心目的</p>
+<p><strong>虚拟化</strong>：虚拟化的核心理念是将一套硬件资源分配给多个操作系统。虚拟化提供了沙箱能力，加强了安全边界、隔离及对恶意程序的观察</p>
+<h3 id="ISO-IEC-19249还列出了五个设计原则："><a href="#ISO-IEC-19249还列出了五个设计原则：" class="headerlink" title="ISO&#x2F;IEC 19249还列出了五个设计原则："></a>ISO&#x2F;IEC 19249还列出了五个设计原则：</h3><p><strong>最小特权</strong>：可以简单称为“按需原则”或“知情原则”。最小特权原则只为完成任务提供最低限度的权限</p>
+<p><strong>攻击面最小化</strong>：每个系统都可能存在攻击者利用的漏洞。有些漏洞已被发现，有些尚未被发现。这些漏洞构成了需要减少的风险</p>
+<p><strong>集中化参数验证</strong>：无效输入可能被用来利用系统漏洞，因此，参数验证是保持系统状态正确的必要步骤。考虑到系统处理的参数数量，验证应集中在一个库或系统内</p>
+<p><strong>集中化的通用安全服务</strong>：作为安全原则，应尽量集中化所有安全服务。采取适当措施，确保服务可用性，并避免单点故障</p>
+<p><strong>错误和异常处理准备</strong>：在系统构建过程中，应考虑错误和异常的发生。该原则强调，系统应设计为在故障时能安全应对；此外，还应注意，不要让错误信息泄露机密信息<br><br></p>
+<h2 id="零信任-vs-信任但验证"><a href="#零信任-vs-信任但验证" class="headerlink" title="零信任 vs 信任但验证"></a>零信任 vs 信任但验证</h2><p>信任是一个复杂的问题，在没有信任的情况下无法运作。当将信任放在商业背景下，问题会变得更为复杂；然而，仍然需要一些指导性的安全原则。</p>
+<h3 id="信任但需验证"><a href="#信任但需验证" class="headerlink" title="信任但需验证"></a>信任但需验证</h3><p>这一原则提醒，即使信任某个实体及其行为，仍应进行验证。实体可以是用户或系统。验证通常需要设置有效的日志记录机制；验证意味着审查日志，以确保系统行为正常。然而，完全验证所有内容是不现实的。这就需要借助自动化安全机制</p>
+<h3 id="零信任"><a href="#零信任" class="headerlink" title="零信任"></a>零信任</h3><p>这一原则将信任视为一种潜在的风险，因此特别关注内部相关的威胁。考虑到信任是一种脆弱点，零信任原则试图消除这种风险。它传达的是“永不信任，始终验证”的理念。每个实体在被证明确实可信之前，都被视为潜在威胁。零信任不会因为设备的位置或所有权而赋予信任。这一理念与旧的安全模型形成了鲜明对比，旧模型会信任内部网络或企业拥有的设备。在访问任何资源之前，必须进行身份验证和授权。因此，如果发生安全漏洞，在零信任架构下，损害会更为有限。</p>
+<p>微分段是零信任的一种实现方式。它指的是一种网络设计，网络分段可以小到单个主机。此外，不同分段之间的通信需要进行身份验证、访问控制列表检查以及其他安全要求。</p>
+<p>零信任的应用有一定的限度，因为过度应用可能对企业产生负面影响；但这并不意味着在可行的情况下不应采用这种原则。<br><br></p>
+<h2 id="威胁-vs-风险"><a href="#威胁-vs-风险" class="headerlink" title="威胁 vs 风险"></a>威胁 vs 风险</h2><p><strong>漏洞</strong>：漏洞指的是容易受到攻击或损害的状态。在信息安全领域，漏洞代表系统中的弱点。<br><strong>威胁</strong>：威胁是与这些弱点或漏洞相关的潜在危险。<br><strong>风险</strong>：风险涉及威胁行为者利用漏洞的可能性，以及对业务造成的影响。<br><br></p>
+<!-- https://tryhackme.com/r/room/securityprinciples -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>治理与监管</title>
+    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/</url>
+    <content><![CDATA[<h2 id="为什么很重要？"><a href="#为什么很重要？" class="headerlink" title="为什么很重要？"></a>为什么很重要？</h2><p><strong>治理</strong>：管理和指导一个组织或系统，以实现其目标并确保遵守法律、法规和标准<br><strong>法规</strong>：由管理机构强制执行的规则或法律，旨在确保合规性并防止潜在风险<br><strong>合规性</strong>：指组织或系统遵守适用的法律、法规和标准的状态</p>
+<h3 id="信息安全治理"><a href="#信息安全治理" class="headerlink" title="信息安全治理"></a>信息安全治理</h3><p>信息安全治理是指组织建立的结构、政策、方法和指南，以保证其信息资产的隐私性、可靠性和可用性。它在风险管理、保护机密数据免受未经授权的入侵以及遵守相关法规方面起着关键作用。信息安全治理属于高层管理层的职责范围</p>
+<p>信息安全治理的流程：<br><strong>战略</strong>：制定和实施与组织整体业务目标相符的全面信息安全战略<br><strong>政策与程序</strong>：制定用于管理和保护信息资产的政策和程序<br><strong>风险管理</strong>：进行风险评估，识别可能威胁到组织信息资产的潜在风险，并采取措施缓解这些风险<br><strong>绩效衡量</strong>：建立指标和关键绩效指标（KPI）来评估信息安全治理计划的有效性<br><strong>合规性</strong>：确保遵循相关法规和行业最佳实践</p>
+<h3 id="信息安全法规"><a href="#信息安全法规" class="headerlink" title="信息安全法规"></a>信息安全法规</h3><p>在信息安全范式中，治理与法规密不可分，但有各自的含义。信息安全法规是指管理信息资产使用和保护的法律和监管框架。这些法规旨在防止未经授权的访问、窃取和误用敏感数据。遵守法规通常是强制性的，并由政府机构或其他监管机构实施。</p>
+<h3 id="关键利益"><a href="#关键利益" class="headerlink" title="关键利益"></a>关键利益</h3><p>实施治理和法规的主要好处：</p>
+<p><strong>更强的安全姿态</strong>：全面的安全治理计划和遵守相关法规，有助于组织降低安全漏洞风险，并保护敏感信息免受未经授权的访问、窃取和误用</p>
+<p><strong>增强利益相关者的信任</strong>：有效的安全治理和法规能够通过展示组织在网络安全方面的重视来提高利益相关者的信任。<br>法规合规性：遵循相关法规，能够帮助组织避免因不合规带来的法律和财务处罚及声誉损害</p>
+<p><strong>更好地与业务目标对齐</strong>：安全治理框架有助于组织将信息安全战略与整体业务目标保持一致，确保安全措施的成本效益并有助于组织成功</p>
+<p><strong>明智的决策</strong>：安全治理计划可以为决策者提供准确的信息，以便就信息安全风险做出明智决策，并确保安全措施在最需要的地方实施</p>
+<p><strong>竞争优势</strong>：有效的安全治理和对相关法规的遵守，可以通过展示组织保护敏感数据的承诺及增强利益相关者信任，从而获得竞争优势</p>
+<h3 id="相关法律和法规"><a href="#相关法律和法规" class="headerlink" title="相关法律和法规"></a>相关法律和法规</h3><p>一些特定的法律和法规在安全治理和监管生态系统提供了一个结构化的框架，以设定最低合规标准、促进问责制、建立信任，并鼓励创新方法来保护关键系统和数据。通过提供明确的规则，它们减少了模糊性，并为组织提供了一个通用语言，用于衡量其安全状态并确保合规性<br><br></p>
+<h2 id="信息安全框架"><a href="#信息安全框架" class="headerlink" title="信息安全框架"></a>信息安全框架</h2><p>信息安全框架提供了一份详细的文档，概述了组织的信息安全策略，并指导如何在组织内部实施、管理和执行安全措施</p>
+<p><strong>政策</strong>：概述了组织为实现特定目标而设定的目标、原则和指南<br><strong>标准</strong>：建立特定过程、产品或服务的具体要求或规范的文件<br><strong>指南</strong>：为实现特定目标或任务提供建议和最佳实践的文件<br><strong>程序</strong>：完成特定任务或过程的一系列明确步骤<br><strong>基线</strong>：组织或系统必须满足的最低安全标准或要求</p>
+<h3 id="制定治理文件"><a href="#制定治理文件" class="headerlink" title="制定治理文件"></a>制定治理文件</h3><p>制定政策、标准、指南等的通用步骤：</p>
+<p><strong>确定范围和目的</strong>：明确文件的覆盖范围及其目的</p>
+<p><strong>研究和审查</strong>：研究相关的法律、法规、行业标准和最佳实践，以确保文件的全面性和时效性。审查现有的政策、程序和其他文件，以避免重复或与现有指导不符</p>
+<p><strong>起草文件</strong>：制定大纲并开始撰写文件，遵循编写清晰、简洁的政策、程序、标准、指南和基线的最佳实践。确保文件具有针对性、可操作性，并与组织的目标和价值观保持一致</p>
+<p><strong>审查和批准</strong>：由利益相关者审阅文件，整合反馈，确保文件与组织的目标和价值观一致。获得适当利益相关者的最终批准</p>
+<p><strong>实施和沟通</strong>：将文件传达给所有相关员工和利益相关者，确保清楚各自的角色和责任。开发培训和意识计划，以确保文件被理解和遵循</p>
+<p><strong>审查和更新</strong>：定期审查和更新文件，以确保其保持相关性和有效性。监控合规情况，并根据反馈及威胁环境或监管环境的变化进行调整</p>
+<p>组织不需要总是制定新的标准、框架或基线；相反，它们通常会遵循和使用已经存在的、与其行业或领域相关的文件。选择使用哪个标准框架或基线检查表主要取决于地理区域的监管要求、项目范围、目标、可用资源等多种因素<br><br></p>
+<h2 id="治理、风险与合规（GRC）"><a href="#治理、风险与合规（GRC）" class="headerlink" title="治理、风险与合规（GRC）"></a>治理、风险与合规（GRC）</h2><p>GRC框架专注于在整体上引导组织的治理、企业风险管理和合规性。这是一种符合组织目标和方向的整体信息安全方法，有助于确保组织在遵守相关法规和行业标准的前提下进行运作</p>
+<p>GRC的组成部分<br><strong>治理组成部分</strong>：通过信息安全战略引导组织的方向，包括政策、标准、基线和框架等内容，还需建立监控方法以衡量绩效和评估结果</p>
+<p><strong>风险管理组成部分</strong>：识别、评估和优先处理风险，并实施控制和缓解策略以有效管理风险。这包括监控和报告风险，并不断评估和优化风险管理计划，确保其长期有效</p>
+<p><strong>合规组成部分</strong>：确保组织符合法律、法规和行业标准，并确保其活动符合内部政策和程序。这包括制定和实施合规计划，定期进行审计和评估，并向利益相关者报告合规情况</p>
+<h3 id="如何制定GRC程序-通用指南"><a href="#如何制定GRC程序-通用指南" class="headerlink" title="如何制定GRC程序 - 通用指南"></a>如何制定GRC程序 - 通用指南</h3><p>一个良好设计和实施的GRC程序为网络安全管理、法规合规及组织整体安全视角的提升提供了综合框架。它可以有效地整合治理、风险管理和合规活动，减轻网络事件的影响，并确保业务的弹性。</p>
+<p>开发和实施GRC框架涉及多个步骤：<br><strong>定义范围和目标</strong>：确定GRC程序的覆盖范围和具体目标<br><strong>进行风险评估</strong>：识别和评估组织的网络风险<br><strong>制定政策和程序</strong>：制定政策和程序，以指导组织内的网络安全实践<br><strong>建立治理流程</strong>：治理流程确保GRC程序得到有效的管理和控制<br><strong>实施控制措施</strong>：实施技术和非技术控制措施，以减轻识别到的风险<br><strong>监控和衡量绩效</strong>：建立流程，以监控和衡量GRC程序的有效性<br><strong>持续改进</strong>：根据绩效指标、变化的风险状况和利益相关者的反馈，不断审查和改进GRC程序<br><br></p>
+<h2 id="隐私与数据保护"><a href="#隐私与数据保护" class="headerlink" title="隐私与数据保护"></a>隐私与数据保护</h2><p>在金融、医疗保健、政府和工业等各个领域，隐私和数据保护法规涉及公民的个人身份信息（PII）。隐私法规的作用在于确保个人信息以负责任和符合伦理的方式处理和存储。这些法规还帮助建立信任、保护个人信息，并确保合规性。<br><br></p>
+<h2 id="NIST特别出版物"><a href="#NIST特别出版物" class="headerlink" title="NIST特别出版物"></a>NIST特别出版物</h2><p>NIST 800-53是美国国家标准与技术研究院（NIST）发布的名为《信息系统和组织的安全与隐私控制》的出版物。它提供了一系列安全控制的目录，用于保护信息系统的CIA。该出版物作为一个框架，帮助组织评估和提高其信息系统的安全性和隐私性，同时确保符合各种法律、法规和政策要求。NIST 800-53结合了多个来源的最佳实践，包括行业标准、指南和国际框架。</p>
+<h3 id="关键点"><a href="#关键点" class="headerlink" title="关键点"></a>关键点</h3><p>NIST 800-53提供了一个全面的安全和隐私控制集合，组织可以使用这些控制来保护其操作、资产、人员以及其他组织免受各种威胁和风险的侵害。这些威胁包括有意攻击、无意错误、自然灾害、基础设施故障、外国情报活动和隐私问题。NIST 800-53将安全控制分为20个类别，每个类别专门针对特定的安全问题。</p>
+<h3 id="基于NIST-800-53的信息安全程序的制定与实施"><a href="#基于NIST-800-53的信息安全程序的制定与实施" class="headerlink" title="基于NIST 800-53的信息安全程序的制定与实施"></a>基于NIST 800-53的信息安全程序的制定与实施</h3><p>在所有的控制类别中，“程序管理”是NIST 800-53框架中的一个关键控制点。程序管理控制要求建立、实施和监控整个组织范围的信息安全和隐私计划，以保护通过系统处理、存储或传输的信息。</p>
+<h3 id="合规最佳实践"><a href="#合规最佳实践" class="headerlink" title="合规最佳实践"></a>合规最佳实践</h3><p>企业应进行全面的调查，以识别和分类其数据资产、信息系统及相关威胁。这包括理解数据流、系统依赖关系和潜在的漏洞。NIST 800-53的控制类别应与识别出的资产和风险进行映射，以便更轻松地创建一个结构化的控制匹配方案，满足组织的特定需求。接下来，需要创建治理结构、分配职责，并明确实施和维护控制的具体流程，以有效管理实施过程。所有措施必须定期监控和评估以确保合规性。最后，组织应建立有效的监控系统，以识别和解决安全问题，进行定期评估和审计，并优化控制的实施。通过遵循这些最佳实践，组织可以成功地实施NIST 800-53，增强安全性，同时有效降低风险。</p>
+<h3 id="NIST-800-63B"><a href="#NIST-800-63B" class="headerlink" title="NIST 800-63B"></a>NIST 800-63B</h3><p>NIST特别出版物800-63B是一组由NIST创建的指南，旨在帮助组织建立有效的数字身份管理实践。它主要关注于验证和确认访问数字服务、系统和网络的个人身份。这些指南涵盖了不同级别的身份保证，从基本到高级，提供了有关使用身份验证因素以及安全管理和存储用户凭证的建议。<br><br></p>
+<h2 id="信息安全管理与合规"><a href="#信息安全管理与合规" class="headerlink" title="信息安全管理与合规"></a>信息安全管理与合规</h2><p>信息安全（IS）管理包括战略规划、执行和持续管理安全措施，以保护信息资产免受未经授权的访问、使用、披露、中断、篡改和破坏。它涉及风险评估与识别、安全控制和程序的开发、事件响应规划以及安全意识培训。相比之下，合规性指的是遵守与信息安全相关的法律、法规、合同和行业特定的标准</p>
+<h3 id="ISO-IEC-27001"><a href="#ISO-IEC-27001" class="headerlink" title="ISO&#x2F;IEC 27001"></a>ISO&#x2F;IEC 27001</h3><p>ISO 27001 是一个国际公认的标准，规定了计划、开发、运行和更新组织的信息安全管理体系（ISMS）的要求。它由国际标准化组织（ISO）和国际电工委员会（IEC）制定，具有以下核心组成部分：</p>
+<p><strong>范围</strong>：规定 ISMS 的边界，包括覆盖的资产和流程<br><strong>信息安全政策</strong>：定义组织信息安全方法的高层文件<br><strong>风险评估</strong>：涉及识别和评估对组织信息的机密性、完整性和可用性的风险<br><strong>风险处理</strong>：选择和实施控制措施，以将识别的风险降低到可接受的水平<br><strong>适用性声明</strong>（SoA）：该文件指定哪些标准中的控制措施是适用的，哪些是不适用的<br><strong>内部审计</strong>：定期对 ISMS 进行审计，以确保其有效运行<br><strong>管理评审</strong>：定期评估 ISMS 的运行表现</p>
+<p>基于 ISO 27001 标准构建的信息安全管理体系（ISMS）需要精心设计和执行。这包括对组织的安全程序进行详尽的评估，识别漏洞，并进行彻底的风险评估。在访问控制、事件响应等领域，需要制定明确的规则和流程，并确保它们符合 ISO 27001 的要求。领导层的支持和资源的合理分配对于 ISMS 的成功实施也至关重要。定期监控、衡量和持续改进对于保证 ISMS 的有效性及其与组织目标的持续一致性非常关键。</p>
+<h3 id="服务组织控制-2（SOC-2）"><a href="#服务组织控制-2（SOC-2）" class="headerlink" title="服务组织控制 2（SOC 2）"></a>服务组织控制 2（SOC 2）</h3><p>SOC 2 是由美国注册会计师协会（AICPA）开发的一种合规和审计框架。它基于CIA来评估公司数据安全的有效性。SOC 2 报告能够向客户、利益相关者和商业合作伙伴保证，公司已经实施了足够的控制措施来保护系统、数据和敏感信息</p>
+<p>SOC 2 框架对与客户数据进行交互或提供涉及处理、存储或传输敏感数据解决方案的服务提供商能帮助企业表明它们对严格隐私和安全标准的承诺。客户经常要求提供 SOC 2 报告，或者将其作为一种竞争优势来证明客户信息能够得到安全处理</p>
+<h3 id="重要准则"><a href="#重要准则" class="headerlink" title="重要准则"></a>重要准则</h3><p>SOC 2 是一种审计标准，用于评估服务组织在机密性、可用性、完整性和隐私方面控制措施的有效性<br>SOC 2 审计由独立的审计员进行，以验证安全控制措施是否满足相关标准<br>SOC 2 报告为客户、利益相关者和监管机构提供关于服务组织的安全和隐私措施的重要信息。它们可用于展示服务组织是否具备充分的控制措施，以保护其在处理客户信息时所使用的数据和系统<br>SOC 2 审计报告会评估云计算公司所采取的控制措施，并包含任何发现的缺陷或改进建议。报告可以与客户及其他利益相关者分享，以确保公司在数据和系统保护方面采取了适当的措施</p>
+<h3 id="SOC-2-提供的信息安全保护是什么？"><a href="#SOC-2-提供的信息安全保护是什么？" class="headerlink" title="SOC 2 提供的信息安全保护是什么？"></a>SOC 2 提供的信息安全保护是什么？</h3><p>SOC 2 审计的主要目标是确保第三方服务提供商能安全地存储和处理敏感信息。</p>
+<p>在规划和进行 SOC 2 审计，组织的管理团队可以采取步骤：<br><strong>确定审计范围</strong>：包括与客户数据的安全和隐私相关的特定系统、流程或位置</p>
+<p><strong>选择合适的审计员</strong>：挑选一位具备金融公司 SOC 2 审计经验的合格审计员。应考虑审计员的声誉、经验和可用性等因素</p>
+<p><strong>制定审计计划</strong>：与审计员合作制定审计计划，包括审计的时间表、范围和标准</p>
+<p><strong>准备审计</strong>：通过审查安全和隐私控制措施、政策和程序为审计做好准备。识别任何漏洞或不足，并制定改进计划</p>
+<p><strong>进行审计</strong>：审计员将检查控制措施，并进行测试以评估其有效性。审计可能包括与关键人员的访谈、文档审查和控制测试</p>
+<p><strong>获取审计报告</strong>：审计完成后，审计员会提供一份报告，详细说明审计结果。报告可能包括控制措施的描述、识别的缺陷或漏洞，以及改进建议<br><br></p>
+<!-- https://tryhackme.com/r/room/cybergovernanceregulation -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Linux基础知识 第一部分</title>
-    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1/</url>
+    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-1/</url>
     <content><![CDATA[<h2 id="Linux-背景知识简介"><a href="#Linux-背景知识简介" class="headerlink" title="Linux 背景知识简介"></a>Linux 背景知识简介</h2><p>与 Windows 等操作系统（OS）相比，Linux 和 Windows 各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 开源，有各种各样的 Linux 发行版适用于不同的用途。Windows 有不同的版本，Linux 也有不同的发行版。<br><br></p>
 <h2 id="运行第一个命令"><a href="#运行第一个命令" class="headerlink" title="运行第一个命令"></a>运行第一个命令</h2><table>
 <thead>
@@ -189,315 +593,6 @@
 ]]></content>
       <categories>
         <category>基本技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Linux基础知识 第二部分</title>
-    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD2/</url>
-    <content><![CDATA[<h2 id="使用-SSH-访问-Linux-机器"><a href="#使用-SSH-访问-Linux-机器" class="headerlink" title="使用 SSH 访问 Linux 机器"></a>使用 SSH 访问 Linux 机器</h2><h3 id="什么是-SSH-及其工作原理？"><a href="#什么是-SSH-及其工作原理？" class="headerlink" title="什么是 SSH 及其工作原理？"></a>什么是 SSH 及其工作原理？</h3><p>Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式。</p>
-<p>SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络（如互联网）时都会被加密。</p>
-<p>使用 SSH 的语法只需两个信息：<br>远程机器的 IP 地址<br>远程机器上有效账户的正确凭证</p>
-<p>使用的命令是 ssh，然后是账户用户名，接着是 @ 和机器的 IP 地址</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh 用户名@1.1.1.1</span><br></pre></td></tr></table></figure>
-
-<p>信任主机，输入账户的密码。连接成功后，任何执行的命令将会在远程机器上运行，而不是在本地机器上</p>
-<p>在 SSH 登录提示符中输入密码时，不会有任何可见的反馈。在输入密码时不会看到任何文本或符号，只需输入密码后按回车登录。<br><br></p>
-<h2 id="标志和开关简介"><a href="#标志和开关简介" class="headerlink" title="标志和开关简介"></a>标志和开关简介</h2><p>大多数命令都允许使用参数。这些参数通常由连字符和一个特定的关键字标识，这些关键字被称为标志（flags）或开关（switches）。在使用命令时，除非另有指定，否则它将执行默认行为。</p>
-<p>使用 “ls -a” 命令查看所有文件和文件夹，包括以 “.” 开头的隐藏文件和文件夹<br>使用 “ls –help” 命令列出 ls 命令可接受的所有选项，并提供简短的描述和使用示例</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br><span class="line"><span class="comment"># 列出当前目录中的所有文件和目录，包括隐藏文件（以 “.” 开头的文件）</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> --<span class="built_in">help</span></span><br><span class="line"><span class="comment"># 显示 ls 命令的帮助信息，包括所有可用选项及其说明</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="手册页"><a href="#手册页" class="headerlink" title="手册页"></a>手册页</h3><p>手册页（man page）包含了 Linux 命令和应用程序的详细文档，是关于系统命令和 Linux 上应用程序的信息，可以直接在机器上或者在线访问</p>
-<p>使用 “man” 命令来查看手册页，列出可以与 “ls” 一起使用的选项</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">man <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 查看 ls 命令的手册页，获取详细信息和选项说明</span></span><br></pre></td></tr></table></figure>
-
-<p>man搭配命令可以查看Linux 上几乎所有的命令，在使用上下箭头键滚动阅读手册页，按 q 退出<br><br></p>
-<h2 id="文件系统交互继续"><a href="#文件系统交互继续" class="headerlink" title="文件系统交互继续"></a>文件系统交互继续</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>touch</td>
-<td>创建一个新的空文件</td>
-</tr>
-<tr>
-<td>mkdir</td>
-<td>创建一个新的文件夹&#x2F;目录（make directory）</td>
-</tr>
-<tr>
-<td>cp</td>
-<td>复制文件或文件夹（copy）</td>
-</tr>
-<tr>
-<td>mv</td>
-<td>移动文件或文件夹或重命名（move）</td>
-</tr>
-<tr>
-<td>rm</td>
-<td>删除文件或文件夹（remove）</td>
-</tr>
-<tr>
-<td>file</td>
-<td>确定文件的类型</td>
-</tr>
-</tbody></table>
-<p>与使用 cat 命令类似，在以上所有这些命令中都可使用完整的文件路径</p>
-<h3 id="创建文件和文件夹（touch-mkdir）"><a href="#创建文件和文件夹（touch-mkdir）" class="headerlink" title="创建文件和文件夹（touch, mkdir）"></a>创建文件和文件夹（touch, mkdir）</h3><p>使用 “touch” 命令创建一个新的空文件<br>使用 “mkdir” 命令创建一个新的文件夹&#x2F;目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">touch</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
-
-<p>想要在该文件中添加内容，使用 echo 命令或 nano 等文本编辑器</p>
-<h3 id="删除文件和文件夹-rm"><a href="#删除文件和文件夹-rm" class="headerlink" title="删除文件和文件夹 (rm)"></a>删除文件和文件夹 (rm)</h3><p>使用 “rm” 命令删除一个文件<br>使用 “rm -R” 命令删除一个文件夹</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">rm</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -R folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="复制和移动文件和文件夹-cp-mv"><a href="#复制和移动文件和文件夹-cp-mv" class="headerlink" title="复制和移动文件和文件夹 (cp, mv)"></a>复制和移动文件和文件夹 (cp, mv)</h3><p>使用 “cp” 命令将现有文件的所有内容复制到新的文件中，第一个参数为已存在文件的名称，第二个参数为复制时新文件指定的名称。如果目标文件不存在，将自动创建新文件。<br>使用 “cp -r” 命令将现有文件夹及其所有内容复制到新的文件夹中，第一个参数为已存在文件夹的名称，第二个参数为复制时新文件夹指定的名称。如果目标文件夹不存在，将自动创建新文件夹。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 file2</span><br><span class="line"><span class="comment"># 将 file1 的内容复制到 file2，如果 file2 不存在，会自动创建</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> -r folder1 folder2</span><br><span class="line"><span class="comment"># 将 folder1 文件夹及其内容复制到 folder2，如果 folder2 不存在，会自动创建</span></span><br></pre></td></tr></table></figure>
-
-<p>使用 “mv” 命令将文件或文件夹移动到新文件夹，或者对第二个参数提供的文件或文件夹进行重命名，不会创建新文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mv</span> file1 file2</span><br><span class="line"><span class="comment"># 如果 file2 是一个新名称，会将 file1 重命名为 file2</span></span><br><span class="line"><span class="comment"># 如果 file2 是一个已存在的目录，会将 file1 移动到该目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mv</span> folder1 folder2</span><br><span class="line"><span class="comment"># 如果 folder2 是一个新名称，会将 folder1 重命名为 folder2</span></span><br><span class="line"><span class="comment"># 如果 folder2 是一个已存在的目录，会将 folder1 移动到该目录</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="确定文件类型"><a href="#确定文件类型" class="headerlink" title="确定文件类型"></a>确定文件类型</h3><p>使用 “file” 命令确定文件或文件夹的类型，会返回文件的类型描述</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">file file1</span><br><span class="line"><span class="comment"># 检查 file1 的类型，并显示其类型信息</span></span><br><span class="line"></span><br><span class="line">file folder1</span><br><span class="line"><span class="comment"># 检查 folder1 的类型，如果是文件夹，会显示为 &quot;directory&quot;</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-<h2 id="权限基础知识"><a href="#权限基础知识" class="headerlink" title="权限基础知识"></a>权限基础知识</h2><p>使用 “ls -lh” 命令列出目录中所有文件的详细信息，包括文件权限、大小、所有者、修改时间等</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -lh</span><br><span class="line"><span class="comment"># 以详细格式列出当前目录中的所有文件信息，包括权限、大小和修改时间</span></span><br></pre></td></tr></table></figure>
-
-<p>对于确定一个文件或文件夹的某些特性，以及是否有访问权限。文件或文件夹可以有几种特性，这些特性决定了允许执行的操作，以及哪个用户或用户组有权限执行这些操作：<br>读取 (Read)<br>写入 (Write)<br>执行 (Execute)</p>
-<h3 id="用户和用户组之间的区别"><a href="#用户和用户组之间的区别" class="headerlink" title="用户和用户组之间的区别"></a>用户和用户组之间的区别</h3><p>Linux 的一个优点在于权限可以非常细化，尽管某个用户技术上是文件的所有者，但通过设置权限，一组用户可以对同一个文件拥有相同或不同的权限，而不会影响文件的所有者。</p>
-<p>需要以下切换用户账户：<br>目标用户的用户名<br>目标用户的密码</p>
-<p>使用 “su” 命令需要输入用户的密码来切换到指定的用户账户，默认情况下不会加载该用户的完整环境变量。<br>使用 “su -l” 命令需要输入用户的密码，它会完全切换到指定用户的实际登录环境，加载所有新用户的属性，比如环境变量等。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">su user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，不会加载该用户的完整环境变量</span></span><br><span class="line"></span><br><span class="line">su -l user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，加载该用户的完整环境变量和配置</span></span><br></pre></td></tr></table></figure>
-
-<p>如果没有指定用户，默认情况下会切换到 root 用户。<br><br></p>
-<h2 id="常见目录"><a href="#常见目录" class="headerlink" title="常见目录"></a>常见目录</h2><h3 id="etc"><a href="#etc" class="headerlink" title="&#x2F;etc"></a>&#x2F;etc</h3><p>&#x2F;etc 目录是系统中最重要的目录之一。&#x2F;etc 文件夹（“etc” 代表 etcetera）是存放操作系统使用的配置文件和系统文件的常见位置。</p>
-<p>在 &#x2F;etc 文件夹中，通常包含 passwd 和 shadow 文件。&#x2F;etc&#x2F;passwd 文件存储了用户账户的信息，而 &#x2F;etc&#x2F;shadow 文件存储了每个用户的密码的加密哈希。系统通常使用 SHA-512 或其他安全哈希算法来对密码进行加密</p>
-<h3 id="var"><a href="#var" class="headerlink" title="&#x2F;var"></a>&#x2F;var</h3><p>&#x2F;var 目录是 “variable data”（可变数据）的缩写，是 Linux 中的重要目录。这个目录用于存储由系统上运行的服务或应用程序频繁访问、修改或生成的数据</p>
-<h3 id="root"><a href="#root" class="headerlink" title="&#x2F;root"></a>&#x2F;root</h3><p>&#x2F;root 目录是root用户系统管理员的主目录，它与普通用户的主目录 &#x2F;home 不同。&#x2F;root 是专门为 root 用户保留的，因此被放置在根目录下，而不是 &#x2F;home 目录中</p>
-<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录是 Linux 系统中的一个特殊目录，用于存储临时文件。&#x2F;tmp 是 “temporary”（临时）的缩写，用于存放仅需临时访问的数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除</p>
-<p>对于渗透测试人员而言，&#x2F;tmp 目录的一个优势在于，默认情况下任何用户都有写入权限。这意味着在获得对系统的访问权限后，&#x2F;tmp 是一个存放枚举脚本和其他工具的理想位置。</p>
-<br>
-
-
-<!-- https://tryhackme.com/r/room/linuxfundamentalspart2 -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
-      <categories>
-        <category>基本技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>theHarvester</title>
-    <url>/2024/10/27/%E5%B7%A5%E5%85%B7theHarvester/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网站模板</title>
-    <url>/2024/10/27/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>OSINT_Framework</title>
-    <url>/2024/10/27/%E7%BD%91%E7%AB%99OSINT-Framework/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>hunter</title>
-    <url>/2024/10/27/%E7%BD%91%E7%AB%99hunter/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网络安全职业</title>
-    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
-    <content><![CDATA[<h2 id="安全分析师"><a href="#安全分析师" class="headerlink" title="安全分析师"></a>安全分析师</h2><p>负责维护组织数据的安全</p>
-<p>安全分析师在组织中通过构建安全措施来保护公司免受攻击。分析师会对公司网络进行探索和评估，找出可操作的数据和建议，以便工程师能够制定预防措施。此职位要求与各类利益相关者合作，以全面理解安全需求和整体的安全态势。</p>
-<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与不同的利益相关者合作，分析公司范围内的网络安全情况。<br>编写有关网络安全性的持续报告，记录安全问题及采取的应对措施。<br>制定安全计划，包括研究新的攻击工具和趋势，以及各团队为保持数据安全所需采取的措施。<br><br></p>
-<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p>负责测试技术产品中的安全漏洞</p>
-<p>渗透测试也常被称为“渗测（pentesting）”或“道德黑客（ethical hacking）”。渗透测试工程师的职责是测试公司内部系统和软件的安全性——通过系统化的黑客手段尝试发现缺陷和漏洞。渗透测试工程师会利用这些漏洞来评估每个实例中的风险。公司可以基于这些信息来修复问题，以防止现实中的网络攻击。</p>
-<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络和网络应用程序进行测试<br>执行安全评估、审计，并分析相关的安全策略<br>评估并报告测试结果，提出防范攻击的建议措施<br><br></p>
-<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>负责设计、监控和维护安全控制、网络和系统，以防止网络攻击</p>
-<p>安全工程师通过使用安全团队成员提供的威胁和漏洞数据，开发并实施安全解决方案。安全工程师负责防范多种类型的攻击，包括网页应用攻击、网络威胁以及不断变化的攻击趋势和策略。最终目标是采用并保持有效的安全措施，以降低攻击和数据丢失的风险。</p>
-<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>测试和筛选软件中的安全措施<br>监控网络并生成报告，以及时更新系统，降低漏洞风险<br>识别并部署必要的系统，以实现最佳的安全保护<br><br></p>
-<!-- https://tryhackme.com/r/room/careersincyber -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
-      <categories>
-        <category>网络安全基础</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>安全原则</title>
-    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/</url>
-    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在描述某样东西是安全的之前，需要更好地理解什么构成了安全。当想评估一个系统的安全性时，需要从安全三角的角度考虑：机密性（Confidentiality）、完整性（Integrity）和可用性（Availability），即CIA。</p>
-<p><strong>机密性</strong>：确保只有特定人员或接收者可以访问数据<br><strong>完整性</strong>：旨在确保数据不能被篡改；如果发生任何篡改，也能检测到<br><strong>可用性</strong>：确保系统或服务在需要时是可以使用的</p>
-<h3 id="除了CIA"><a href="#除了CIA" class="headerlink" title="除了CIA"></a>除了CIA</h3><p><strong>真实性</strong>：真实性意味着数据必须是真实的而不是伪造的。真实性旨在确保文档、文件或数据确实来自声明的来源</p>
-<p><strong>不可否认性</strong>：否认意味着拒绝承认某事的有效性。不可否认性旨在确保原始数据来源无法否认自己是该文档、文件或数据的源头</p>
-<h3 id="Parkerian六要素"><a href="#Parkerian六要素" class="headerlink" title="Parkerian六要素"></a>Parkerian六要素</h3><p>1998年，Donn Parker提出了Parkerian六要素，包含六个安全元素：</p>
-<p>可用性<br>实用性<br>完整性<br>真实性<br>机密性<br>所有权</p>
-<p><strong>实用性</strong>：实用性关注信息的可用性和有用性<br><strong>所有权</strong>：此安全元素强调保护信息免遭未经授权的获取、复制或控制<br><br></p>
-<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>一个系统的安全可以通过几种不同的手段受到攻击。这些手段可能包括机密数据的泄露、数据的篡改或数据的破坏</p>
-<p><strong>泄露</strong>：是机密性的反面，机密数据的泄露就是对机密性的攻击<br><strong>篡改</strong>：是完整性的反面<br><strong>破坏&#x2F;拒绝</strong>：是可用性的反面</p>
-<p>CIA三角的反面就是DAD三角：泄露（Disclosure）、篡改（Alteration）和破坏（Destruction）。</p>
-<p>防范泄露、篡改和破坏&#x2F;拒绝服务至关重要。这些防范措施实际上是在维护机密性、完整性和可用性。</p>
-<p>极度保护机密性和完整性可能会限制系统的可用性，而极度提高可用性可能会导致机密性和完整性的损失。好的安全策略需要在这三者之间找到适当的平衡。<br><br></p>
-<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>使用安全模型能创建一个能够确保一种或多种安全功能的系统</p>
-<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型旨在通过以下三条规则来实现<strong>机密性</strong>：</p>
-<p><strong>简单安全属性</strong>（No Read Up）：低安全级别的主体不能读取高安全级别的对象。这条规则防止了对超出授权级别的敏感信息的访问<br><strong>星型安全属性</strong>（No Write Down）：高安全级别的主体不能向低安全级别的对象写入数据。这条规则防止将敏感信息泄露给低安全级别的主体<br><strong>任意安全属性</strong>：此属性通过访问矩阵允许读和写操作</p>
-<table>
-<thead>
-<tr>
-<th>主体</th>
-<th>对象 A</th>
-<th>对象 B</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>主体 1</td>
-<td>写入</td>
-<td>无访问权限</td>
-</tr>
-<tr>
-<td>主体 2</td>
-<td>读&#x2F;写</td>
-<td>读取</td>
-</tr>
-</tbody></table>
-<p>前两个规则可以概括为 “向上写入，向下读取”。可以将机密信息分享给拥有更高安全许可的人（向上写入），并从拥有较低安全许可的人接收机密信息（向下读取）。</p>
-<p>Bell-LaPadula 模型局限性包括它不适用于文件共享场景</p>
-<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型旨在通过以下两条规则来实现数据<strong>完整性</strong>：</p>
-<p><strong>简单完整性属性</strong>（No Read Down）：高完整性的主体不应从低完整性的对象中读取数据<br><strong>星型完整性属性</strong>（No Write Up）：低完整性的主体不应向高完整性的对象写入数据</p>
-<p>这两条规则可以概括为“向上读取，向下写入”。这与 Bell-LaPadula 模型形成对比，因为 Bell-LaPadula 关注机密性，而 Biba 关注完整性。</p>
-<p>Biba 模型的局限性包括它无法应对内部威胁</p>
-<h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型同样旨在通过以下概念来维护数据<strong>完整性</strong>：</p>
-<p><strong>受约束数据项</strong>（CDI）：指需要保护完整性的数据类型。<br><strong>非受约束数据项</strong>（UDI）：指除 CDI 之外的所有数据类型，例如用户输入和系统输入。<br><strong>转换程序</strong>（TPs）：这些是已编程的操作（如读取和写入），应确保 CDI 的完整性。<br><strong>完整性验证程序</strong>（IVPs）：这些程序用于检查并验证 CDI 的有效性。</p>
-<p>其他安全模型：<br>Brewer-Nash 模型<br>Goguen-Meseguer 模型<br>Sutherland 模型<br>Graham-Denning 模型<br>Harrison-Ruzzo-Ullman 模型<br><br></p>
-<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是指构建一个多层次的安全系统，因此也称为多层安全（Multi-Level Security）。<br><br></p>
-<h2 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h2><p>国际标准化组织（ISO）和国际电工委员会（IEC）制定了ISO&#x2F;IEC 19249标准。ISO&#x2F;IEC 19249:2017《信息技术 - 安全技术 - 安全产品、系统和应用的架构和设计原则目录》，目的是帮助更好地理解国际组织在安全原则方面的指导。</p>
-<h3 id="ISO-IEC-19249列出了五项架构原则："><a href="#ISO-IEC-19249列出了五项架构原则：" class="headerlink" title="ISO&#x2F;IEC 19249列出了五项架构原则："></a>ISO&#x2F;IEC 19249列出了五项架构原则：</h3><p><strong>域分离</strong>：将一组相关的组件分组为单个实体，组件可以是应用程序、数据或其他资源。每个实体都会有自己的域，并分配一组共用的安全属性</p>
-<p><strong>分层</strong>：当系统被划分为多个抽象层次或层级时，可以在不同的层次上实施安全策略；此外，还能验证操作是否符合预期。分层原则与纵深防御有关</p>
-<p><strong>封装</strong>：在面向对象编程（OOP）中，通过特定方法隐藏底层实现，防止直接操控对象中的数据</p>
-<p><strong>冗余</strong>：确保系统的可用性和完整性是冗余的核心目的</p>
-<p><strong>虚拟化</strong>：虚拟化的核心理念是将一套硬件资源分配给多个操作系统。虚拟化提供了沙箱能力，加强了安全边界、隔离及对恶意程序的观察</p>
-<h3 id="ISO-IEC-19249还列出了五个设计原则："><a href="#ISO-IEC-19249还列出了五个设计原则：" class="headerlink" title="ISO&#x2F;IEC 19249还列出了五个设计原则："></a>ISO&#x2F;IEC 19249还列出了五个设计原则：</h3><p><strong>最小特权</strong>：可以简单称为“按需原则”或“知情原则”。最小特权原则只为完成任务提供最低限度的权限</p>
-<p><strong>攻击面最小化</strong>：每个系统都可能存在攻击者利用的漏洞。有些漏洞已被发现，有些尚未被发现。这些漏洞构成了需要减少的风险</p>
-<p><strong>集中化参数验证</strong>：无效输入可能被用来利用系统漏洞，因此，参数验证是保持系统状态正确的必要步骤。考虑到系统处理的参数数量，验证应集中在一个库或系统内</p>
-<p><strong>集中化的通用安全服务</strong>：作为安全原则，应尽量集中化所有安全服务。采取适当措施，确保服务可用性，并避免单点故障</p>
-<p><strong>错误和异常处理准备</strong>：在系统构建过程中，应考虑错误和异常的发生。该原则强调，系统应设计为在故障时能安全应对；此外，还应注意，不要让错误信息泄露机密信息<br><br></p>
-<h2 id="零信任-vs-信任但验证"><a href="#零信任-vs-信任但验证" class="headerlink" title="零信任 vs 信任但验证"></a>零信任 vs 信任但验证</h2><p>信任是一个复杂的问题，在没有信任的情况下无法运作。当将信任放在商业背景下，问题会变得更为复杂；然而，仍然需要一些指导性的安全原则。</p>
-<h3 id="信任但需验证"><a href="#信任但需验证" class="headerlink" title="信任但需验证"></a>信任但需验证</h3><p>这一原则提醒，即使信任某个实体及其行为，仍应进行验证。实体可以是用户或系统。验证通常需要设置有效的日志记录机制；验证意味着审查日志，以确保系统行为正常。然而，完全验证所有内容是不现实的。这就需要借助自动化安全机制</p>
-<h3 id="零信任"><a href="#零信任" class="headerlink" title="零信任"></a>零信任</h3><p>这一原则将信任视为一种潜在的风险，因此特别关注内部相关的威胁。考虑到信任是一种脆弱点，零信任原则试图消除这种风险。它传达的是“永不信任，始终验证”的理念。每个实体在被证明确实可信之前，都被视为潜在威胁。零信任不会因为设备的位置或所有权而赋予信任。这一理念与旧的安全模型形成了鲜明对比，旧模型会信任内部网络或企业拥有的设备。在访问任何资源之前，必须进行身份验证和授权。因此，如果发生安全漏洞，在零信任架构下，损害会更为有限。</p>
-<p>微分段是零信任的一种实现方式。它指的是一种网络设计，网络分段可以小到单个主机。此外，不同分段之间的通信需要进行身份验证、访问控制列表检查以及其他安全要求。</p>
-<p>零信任的应用有一定的限度，因为过度应用可能对企业产生负面影响；但这并不意味着在可行的情况下不应采用这种原则。<br><br></p>
-<h2 id="威胁-vs-风险"><a href="#威胁-vs-风险" class="headerlink" title="威胁 vs 风险"></a>威胁 vs 风险</h2><p><strong>漏洞</strong>：漏洞指的是容易受到攻击或损害的状态。在信息安全领域，漏洞代表系统中的弱点。<br><strong>威胁</strong>：威胁是与这些弱点或漏洞相关的潜在危险。<br><strong>风险</strong>：风险涉及威胁行为者利用漏洞的可能性，以及对业务造成的影响。<br><br></p>
-<!-- https://tryhackme.com/r/room/securityprinciples -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
-      <categories>
-        <category>网络安全基础</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>治理与监管</title>
-    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/</url>
-    <content><![CDATA[<h2 id="为什么很重要？"><a href="#为什么很重要？" class="headerlink" title="为什么很重要？"></a>为什么很重要？</h2><p><strong>治理</strong>：管理和指导一个组织或系统，以实现其目标并确保遵守法律、法规和标准<br><strong>法规</strong>：由管理机构强制执行的规则或法律，旨在确保合规性并防止潜在风险<br><strong>合规性</strong>：指组织或系统遵守适用的法律、法规和标准的状态</p>
-<h3 id="信息安全治理"><a href="#信息安全治理" class="headerlink" title="信息安全治理"></a>信息安全治理</h3><p>信息安全治理是指组织建立的结构、政策、方法和指南，以保证其信息资产的隐私性、可靠性和可用性。它在风险管理、保护机密数据免受未经授权的入侵以及遵守相关法规方面起着关键作用。信息安全治理属于高层管理层的职责范围</p>
-<p>信息安全治理的流程：<br><strong>战略</strong>：制定和实施与组织整体业务目标相符的全面信息安全战略<br><strong>政策与程序</strong>：制定用于管理和保护信息资产的政策和程序<br><strong>风险管理</strong>：进行风险评估，识别可能威胁到组织信息资产的潜在风险，并采取措施缓解这些风险<br><strong>绩效衡量</strong>：建立指标和关键绩效指标（KPI）来评估信息安全治理计划的有效性<br><strong>合规性</strong>：确保遵循相关法规和行业最佳实践</p>
-<h3 id="信息安全法规"><a href="#信息安全法规" class="headerlink" title="信息安全法规"></a>信息安全法规</h3><p>在信息安全范式中，治理与法规密不可分，但有各自的含义。信息安全法规是指管理信息资产使用和保护的法律和监管框架。这些法规旨在防止未经授权的访问、窃取和误用敏感数据。遵守法规通常是强制性的，并由政府机构或其他监管机构实施。</p>
-<h3 id="关键利益"><a href="#关键利益" class="headerlink" title="关键利益"></a>关键利益</h3><p>实施治理和法规的主要好处：</p>
-<p><strong>更强的安全姿态</strong>：全面的安全治理计划和遵守相关法规，有助于组织降低安全漏洞风险，并保护敏感信息免受未经授权的访问、窃取和误用</p>
-<p><strong>增强利益相关者的信任</strong>：有效的安全治理和法规能够通过展示组织在网络安全方面的重视来提高利益相关者的信任。<br>法规合规性：遵循相关法规，能够帮助组织避免因不合规带来的法律和财务处罚及声誉损害</p>
-<p><strong>更好地与业务目标对齐</strong>：安全治理框架有助于组织将信息安全战略与整体业务目标保持一致，确保安全措施的成本效益并有助于组织成功</p>
-<p><strong>明智的决策</strong>：安全治理计划可以为决策者提供准确的信息，以便就信息安全风险做出明智决策，并确保安全措施在最需要的地方实施</p>
-<p><strong>竞争优势</strong>：有效的安全治理和对相关法规的遵守，可以通过展示组织保护敏感数据的承诺及增强利益相关者信任，从而获得竞争优势</p>
-<h3 id="相关法律和法规"><a href="#相关法律和法规" class="headerlink" title="相关法律和法规"></a>相关法律和法规</h3><p>一些特定的法律和法规在安全治理和监管生态系统提供了一个结构化的框架，以设定最低合规标准、促进问责制、建立信任，并鼓励创新方法来保护关键系统和数据。通过提供明确的规则，它们减少了模糊性，并为组织提供了一个通用语言，用于衡量其安全状态并确保合规性<br><br></p>
-<h2 id="信息安全框架"><a href="#信息安全框架" class="headerlink" title="信息安全框架"></a>信息安全框架</h2><p>信息安全框架提供了一份详细的文档，概述了组织的信息安全策略，并指导如何在组织内部实施、管理和执行安全措施</p>
-<p><strong>政策</strong>：概述了组织为实现特定目标而设定的目标、原则和指南<br><strong>标准</strong>：建立特定过程、产品或服务的具体要求或规范的文件<br><strong>指南</strong>：为实现特定目标或任务提供建议和最佳实践的文件<br><strong>程序</strong>：完成特定任务或过程的一系列明确步骤<br><strong>基线</strong>：组织或系统必须满足的最低安全标准或要求</p>
-<h3 id="制定治理文件"><a href="#制定治理文件" class="headerlink" title="制定治理文件"></a>制定治理文件</h3><p>制定政策、标准、指南等的通用步骤：</p>
-<p><strong>确定范围和目的</strong>：明确文件的覆盖范围及其目的</p>
-<p><strong>研究和审查</strong>：研究相关的法律、法规、行业标准和最佳实践，以确保文件的全面性和时效性。审查现有的政策、程序和其他文件，以避免重复或与现有指导不符</p>
-<p><strong>起草文件</strong>：制定大纲并开始撰写文件，遵循编写清晰、简洁的政策、程序、标准、指南和基线的最佳实践。确保文件具有针对性、可操作性，并与组织的目标和价值观保持一致</p>
-<p><strong>审查和批准</strong>：由利益相关者审阅文件，整合反馈，确保文件与组织的目标和价值观一致。获得适当利益相关者的最终批准</p>
-<p><strong>实施和沟通</strong>：将文件传达给所有相关员工和利益相关者，确保清楚各自的角色和责任。开发培训和意识计划，以确保文件被理解和遵循</p>
-<p><strong>审查和更新</strong>：定期审查和更新文件，以确保其保持相关性和有效性。监控合规情况，并根据反馈及威胁环境或监管环境的变化进行调整</p>
-<p>组织不需要总是制定新的标准、框架或基线；相反，它们通常会遵循和使用已经存在的、与其行业或领域相关的文件。选择使用哪个标准框架或基线检查表主要取决于地理区域的监管要求、项目范围、目标、可用资源等多种因素<br><br></p>
-<h2 id="治理、风险与合规（GRC）"><a href="#治理、风险与合规（GRC）" class="headerlink" title="治理、风险与合规（GRC）"></a>治理、风险与合规（GRC）</h2><p>GRC框架专注于在整体上引导组织的治理、企业风险管理和合规性。这是一种符合组织目标和方向的整体信息安全方法，有助于确保组织在遵守相关法规和行业标准的前提下进行运作</p>
-<p>GRC的组成部分<br><strong>治理组成部分</strong>：通过信息安全战略引导组织的方向，包括政策、标准、基线和框架等内容，还需建立监控方法以衡量绩效和评估结果</p>
-<p><strong>风险管理组成部分</strong>：识别、评估和优先处理风险，并实施控制和缓解策略以有效管理风险。这包括监控和报告风险，并不断评估和优化风险管理计划，确保其长期有效</p>
-<p><strong>合规组成部分</strong>：确保组织符合法律、法规和行业标准，并确保其活动符合内部政策和程序。这包括制定和实施合规计划，定期进行审计和评估，并向利益相关者报告合规情况</p>
-<h3 id="如何制定GRC程序-通用指南"><a href="#如何制定GRC程序-通用指南" class="headerlink" title="如何制定GRC程序 - 通用指南"></a>如何制定GRC程序 - 通用指南</h3><p>一个良好设计和实施的GRC程序为网络安全管理、法规合规及组织整体安全视角的提升提供了综合框架。它可以有效地整合治理、风险管理和合规活动，减轻网络事件的影响，并确保业务的弹性。</p>
-<p>开发和实施GRC框架涉及多个步骤：<br><strong>定义范围和目标</strong>：确定GRC程序的覆盖范围和具体目标<br><strong>进行风险评估</strong>：识别和评估组织的网络风险<br><strong>制定政策和程序</strong>：制定政策和程序，以指导组织内的网络安全实践<br><strong>建立治理流程</strong>：治理流程确保GRC程序得到有效的管理和控制<br><strong>实施控制措施</strong>：实施技术和非技术控制措施，以减轻识别到的风险<br><strong>监控和衡量绩效</strong>：建立流程，以监控和衡量GRC程序的有效性<br><strong>持续改进</strong>：根据绩效指标、变化的风险状况和利益相关者的反馈，不断审查和改进GRC程序<br><br></p>
-<h2 id="隐私与数据保护"><a href="#隐私与数据保护" class="headerlink" title="隐私与数据保护"></a>隐私与数据保护</h2><p>在金融、医疗保健、政府和工业等各个领域，隐私和数据保护法规涉及公民的个人身份信息（PII）。隐私法规的作用在于确保个人信息以负责任和符合伦理的方式处理和存储。这些法规还帮助建立信任、保护个人信息，并确保合规性。<br><br></p>
-<h2 id="NIST特别出版物"><a href="#NIST特别出版物" class="headerlink" title="NIST特别出版物"></a>NIST特别出版物</h2><p>NIST 800-53是美国国家标准与技术研究院（NIST）发布的名为《信息系统和组织的安全与隐私控制》的出版物。它提供了一系列安全控制的目录，用于保护信息系统的CIA。该出版物作为一个框架，帮助组织评估和提高其信息系统的安全性和隐私性，同时确保符合各种法律、法规和政策要求。NIST 800-53结合了多个来源的最佳实践，包括行业标准、指南和国际框架。</p>
-<h3 id="关键点"><a href="#关键点" class="headerlink" title="关键点"></a>关键点</h3><p>NIST 800-53提供了一个全面的安全和隐私控制集合，组织可以使用这些控制来保护其操作、资产、人员以及其他组织免受各种威胁和风险的侵害。这些威胁包括有意攻击、无意错误、自然灾害、基础设施故障、外国情报活动和隐私问题。NIST 800-53将安全控制分为20个类别，每个类别专门针对特定的安全问题。</p>
-<h3 id="基于NIST-800-53的信息安全程序的制定与实施"><a href="#基于NIST-800-53的信息安全程序的制定与实施" class="headerlink" title="基于NIST 800-53的信息安全程序的制定与实施"></a>基于NIST 800-53的信息安全程序的制定与实施</h3><p>在所有的控制类别中，“程序管理”是NIST 800-53框架中的一个关键控制点。程序管理控制要求建立、实施和监控整个组织范围的信息安全和隐私计划，以保护通过系统处理、存储或传输的信息。</p>
-<h3 id="合规最佳实践"><a href="#合规最佳实践" class="headerlink" title="合规最佳实践"></a>合规最佳实践</h3><p>企业应进行全面的调查，以识别和分类其数据资产、信息系统及相关威胁。这包括理解数据流、系统依赖关系和潜在的漏洞。NIST 800-53的控制类别应与识别出的资产和风险进行映射，以便更轻松地创建一个结构化的控制匹配方案，满足组织的特定需求。接下来，需要创建治理结构、分配职责，并明确实施和维护控制的具体流程，以有效管理实施过程。所有措施必须定期监控和评估以确保合规性。最后，组织应建立有效的监控系统，以识别和解决安全问题，进行定期评估和审计，并优化控制的实施。通过遵循这些最佳实践，组织可以成功地实施NIST 800-53，增强安全性，同时有效降低风险。</p>
-<h3 id="NIST-800-63B"><a href="#NIST-800-63B" class="headerlink" title="NIST 800-63B"></a>NIST 800-63B</h3><p>NIST特别出版物800-63B是一组由NIST创建的指南，旨在帮助组织建立有效的数字身份管理实践。它主要关注于验证和确认访问数字服务、系统和网络的个人身份。这些指南涵盖了不同级别的身份保证，从基本到高级，提供了有关使用身份验证因素以及安全管理和存储用户凭证的建议。<br><br></p>
-<h2 id="信息安全管理与合规"><a href="#信息安全管理与合规" class="headerlink" title="信息安全管理与合规"></a>信息安全管理与合规</h2><p>信息安全（IS）管理包括战略规划、执行和持续管理安全措施，以保护信息资产免受未经授权的访问、使用、披露、中断、篡改和破坏。它涉及风险评估与识别、安全控制和程序的开发、事件响应规划以及安全意识培训。相比之下，合规性指的是遵守与信息安全相关的法律、法规、合同和行业特定的标准</p>
-<h3 id="ISO-IEC-27001"><a href="#ISO-IEC-27001" class="headerlink" title="ISO&#x2F;IEC 27001"></a>ISO&#x2F;IEC 27001</h3><p>ISO 27001 是一个国际公认的标准，规定了计划、开发、运行和更新组织的信息安全管理体系（ISMS）的要求。它由国际标准化组织（ISO）和国际电工委员会（IEC）制定，具有以下核心组成部分：</p>
-<p><strong>范围</strong>：规定 ISMS 的边界，包括覆盖的资产和流程<br><strong>信息安全政策</strong>：定义组织信息安全方法的高层文件<br><strong>风险评估</strong>：涉及识别和评估对组织信息的机密性、完整性和可用性的风险<br><strong>风险处理</strong>：选择和实施控制措施，以将识别的风险降低到可接受的水平<br><strong>适用性声明</strong>（SoA）：该文件指定哪些标准中的控制措施是适用的，哪些是不适用的<br><strong>内部审计</strong>：定期对 ISMS 进行审计，以确保其有效运行<br><strong>管理评审</strong>：定期评估 ISMS 的运行表现</p>
-<p>基于 ISO 27001 标准构建的信息安全管理体系（ISMS）需要精心设计和执行。这包括对组织的安全程序进行详尽的评估，识别漏洞，并进行彻底的风险评估。在访问控制、事件响应等领域，需要制定明确的规则和流程，并确保它们符合 ISO 27001 的要求。领导层的支持和资源的合理分配对于 ISMS 的成功实施也至关重要。定期监控、衡量和持续改进对于保证 ISMS 的有效性及其与组织目标的持续一致性非常关键。</p>
-<h3 id="服务组织控制-2（SOC-2）"><a href="#服务组织控制-2（SOC-2）" class="headerlink" title="服务组织控制 2（SOC 2）"></a>服务组织控制 2（SOC 2）</h3><p>SOC 2 是由美国注册会计师协会（AICPA）开发的一种合规和审计框架。它基于CIA来评估公司数据安全的有效性。SOC 2 报告能够向客户、利益相关者和商业合作伙伴保证，公司已经实施了足够的控制措施来保护系统、数据和敏感信息</p>
-<p>SOC 2 框架对与客户数据进行交互或提供涉及处理、存储或传输敏感数据解决方案的服务提供商能帮助企业表明它们对严格隐私和安全标准的承诺。客户经常要求提供 SOC 2 报告，或者将其作为一种竞争优势来证明客户信息能够得到安全处理</p>
-<h3 id="重要准则"><a href="#重要准则" class="headerlink" title="重要准则"></a>重要准则</h3><p>SOC 2 是一种审计标准，用于评估服务组织在机密性、可用性、完整性和隐私方面控制措施的有效性<br>SOC 2 审计由独立的审计员进行，以验证安全控制措施是否满足相关标准<br>SOC 2 报告为客户、利益相关者和监管机构提供关于服务组织的安全和隐私措施的重要信息。它们可用于展示服务组织是否具备充分的控制措施，以保护其在处理客户信息时所使用的数据和系统<br>SOC 2 审计报告会评估云计算公司所采取的控制措施，并包含任何发现的缺陷或改进建议。报告可以与客户及其他利益相关者分享，以确保公司在数据和系统保护方面采取了适当的措施</p>
-<h3 id="SOC-2-提供的信息安全保护是什么？"><a href="#SOC-2-提供的信息安全保护是什么？" class="headerlink" title="SOC 2 提供的信息安全保护是什么？"></a>SOC 2 提供的信息安全保护是什么？</h3><p>SOC 2 审计的主要目标是确保第三方服务提供商能安全地存储和处理敏感信息。</p>
-<p>在规划和进行 SOC 2 审计，组织的管理团队可以采取步骤：<br><strong>确定审计范围</strong>：包括与客户数据的安全和隐私相关的特定系统、流程或位置</p>
-<p><strong>选择合适的审计员</strong>：挑选一位具备金融公司 SOC 2 审计经验的合格审计员。应考虑审计员的声誉、经验和可用性等因素</p>
-<p><strong>制定审计计划</strong>：与审计员合作制定审计计划，包括审计的时间表、范围和标准</p>
-<p><strong>准备审计</strong>：通过审查安全和隐私控制措施、政策和程序为审计做好准备。识别任何漏洞或不足，并制定改进计划</p>
-<p><strong>进行审计</strong>：审计员将检查控制措施，并进行测试以评估其有效性。审计可能包括与关键人员的访谈、文档审查和控制测试</p>
-<p><strong>获取审计报告</strong>：审计完成后，审计员会提供一份报告，详细说明审计结果。报告可能包括控制措施的描述、识别的缺陷或漏洞，以及改进建议<br><br></p>
-<!-- https://tryhackme.com/r/room/cybergovernanceregulation -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
-      <categories>
-        <category>网络安全基础</category>
       </categories>
   </entry>
   <entry>
