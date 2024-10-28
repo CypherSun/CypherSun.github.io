@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>工具模板</title>
+    <url>/2024/10/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
+
+
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
     <title>博客模板</title>
     <url>/2024/10/27/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
@@ -19,160 +39,7 @@
       </categories>
   </entry>
   <entry>
-    <title>Linux基础知识 第一部分</title>
-    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-1/</url>
-    <content><![CDATA[<h2 id="Linux-背景知识简介"><a href="#Linux-背景知识简介" class="headerlink" title="Linux 背景知识简介"></a>Linux 背景知识简介</h2><p>与 Windows 等操作系统（OS）相比，Linux 和 Windows 各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 开源，有各种各样的 Linux 发行版适用于不同的用途。Windows 有不同的版本，Linux 也有不同的发行版。<br><br></p>
-<h2 id="运行第一个命令"><a href="#运行第一个命令" class="headerlink" title="运行第一个命令"></a>运行第一个命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>echo</td>
-<td>输出提供的任何文本</td>
-</tr>
-<tr>
-<td>whoami</td>
-<td>查看当前登录的用户身份</td>
-</tr>
-</tbody></table>
-<h3 id="使用-echo-命令"><a href="#使用-echo-命令" class="headerlink" title="使用 echo 命令"></a>使用 echo 命令</h3><p>使用 “echo” 命令在终端输出文本</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span></span><br><span class="line"><span class="comment"># 输出 Hello World!</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-whoami-命令"><a href="#使用-whoami-命令" class="headerlink" title="使用 whoami 命令"></a>使用 whoami 命令</h3><p>使用 “whoami” 命令显示当前系统中登录的用户名</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">whoami</span></span><br><span class="line"><span class="comment"># 查询当前用户</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-
-<h2 id="与文件系统的交互"><a href="#与文件系统的交互" class="headerlink" title="与文件系统的交互"></a>与文件系统的交互</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ls</td>
-<td>列出当前目录的内容（listing）</td>
-</tr>
-<tr>
-<td>cd</td>
-<td>更改当前目录（change directory）</td>
-</tr>
-<tr>
-<td>cat</td>
-<td>输出文件内容（concatenate）</td>
-</tr>
-<tr>
-<td>pwd</td>
-<td>找到当前工作目录的完整路径（print working directory）</td>
-</tr>
-</tbody></table>
-<h3 id="列出当前目录的内容（ls）"><a href="#列出当前目录的内容（ls）" class="headerlink" title="列出当前目录的内容（ls）"></a>列出当前目录的内容（ls）</h3><p>使用 “ls” 命令来列出当前目录的内容<br>使用 “ls” 命令和目录名称不进入该目录列出某个目录的内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 列出当前目录下的所有文件和文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> folder1</span><br><span class="line"><span class="comment"># 列出 folder1 目录下的所有文件和文件夹</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="更改当前目录（cd）"><a href="#更改当前目录（cd）" class="headerlink" title="更改当前目录（cd）"></a>更改当前目录（cd）</h3><p>使用 “cd” 命令来切换到指定目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 进入 folder1 目录</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="输出文件内容（cat）"><a href="#输出文件内容（cat）" class="headerlink" title="输出文件内容（cat）"></a>输出文件内容（cat）</h3><p>使用 “cat” 命令来查看文本文件的内容<br>使用 “cat” 命令不进入该目录直接查看某个目录中的文件内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> passwords.txt</span><br><span class="line"><span class="comment"># 显示当前目录 passwords.txt 文件的内容</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /home/ubuntu/Documents/passwords.txt</span><br><span class="line"><span class="comment"># 显示 /home/ubuntu/Documents/passwords.txt 文件的内容</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="找到当前工作目录的完整路径（pwd）"><a href="#找到当前工作目录的完整路径（pwd）" class="headerlink" title="找到当前工作目录的完整路径（pwd）"></a>找到当前工作目录的完整路径（pwd）</h3><p>使用 “pwd” 命令查看当前目录的完整路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="comment"># 显示当前工作目录的完整路径</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-
-<h2 id="查找文件"><a href="#查找文件" class="headerlink" title="查找文件"></a>查找文件</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>find</td>
-<td>查找文件或目录</td>
-</tr>
-<tr>
-<td>grep</td>
-<td>全局正则表达式搜索（Global Regular Expression Print）</td>
-</tr>
-</tbody></table>
-<h3 id="使用-find-命令"><a href="#使用-find-命令" class="headerlink" title="使用 find 命令"></a>使用 find 命令</h3><p>记得文件名，使用 “find -name” 在当前目录的所有子目录中查找特定文件<br>不记得文件名或搜索所有具有特定扩展名的文件，使用find -name和通配符（*）来搜索以 .txt 结尾的所有文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">find -name passwords.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找名为 passwords.txt 的文件</span></span><br><span class="line"></span><br><span class="line">find -name *.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找所有以 .txt 结尾的文件</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-grep-命令"><a href="#使用-grep-命令" class="headerlink" title="使用 grep 命令"></a>使用 grep 命令</h3><p>使用 “grep” 命令搜索整个文件中包含特定值的行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;123456&quot;</span> passwords.txt</span><br><span class="line"><span class="comment"># 在 passwords.txt 文件中搜索包含 &quot;123456&quot;</span></span><br></pre></td></tr></table></figure>
-<br>
-
-<p>字符串内需要注意大小写需要完全符合</p>
-<h2 id="Shell-操作符简介"><a href="#Shell-操作符简介" class="headerlink" title="Shell 操作符简介"></a>Shell 操作符简介</h2><table>
-<thead>
-<tr>
-<th>符号&#x2F;操作符</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>&amp;</td>
-<td>允许在终端后台执行命令</td>
-</tr>
-<tr>
-<td>&amp;&amp;</td>
-<td>允许将多个命令结合在一行中执行</td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>一个重定向符，可以将某个命令的输出重定向到其他地方（覆盖原有内容）</td>
-</tr>
-<tr>
-<td>&gt;&gt;</td>
-<td>功能类似于 &gt;，但会将输出追加而不是替换（不会覆盖原有内容）</td>
-</tr>
-</tbody></table>
-<h3 id="操作符-“-”"><a href="#操作符-“-”" class="headerlink" title="操作符 “&amp;”"></a>操作符 “&amp;”</h3><p>使用 “&amp;” 操作符执行一个命令并在后台运行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://example.com/passwords.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/passwords.txt 文件</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="操作符-“-”-1"><a href="#操作符-“-”-1" class="headerlink" title="操作符 “&amp;&amp;”"></a>操作符 “&amp;&amp;”</h3><p>使用 “&amp;&amp;” 操作符创建一个命令链，只有第一个命令成功执行后，第二个命令才会被执行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> folder1 &amp;&amp; <span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 创建 folder1 文件夹并进入该文件夹</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="操作符-“-”-2"><a href="#操作符-“-”-2" class="headerlink" title="操作符 “&gt;”"></a>操作符 “&gt;”</h3><p>使用 “&gt;” 操作符输出重定向符，将命令的输出重定向到其他地方</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> 123456 &gt; passwords.txt</span><br><span class="line"><span class="comment"># 将 123456 写入 passwords.txt 文件（覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
-
-<p>文件 “passwords.txt” 存在，内容将会被覆盖<br>文件 “passwords.txt” 不存在，将会创建并写入</p>
-<h3 id="操作符-“-”-3"><a href="#操作符-“-”-3" class="headerlink" title="操作符 “&gt;&gt;”"></a>操作符 “&gt;&gt;”</h3><p>使用 “&gt;” 操作符输出重定向符，将命令的输出重定向到其他地方，将新的内容追加到文件末尾但不会覆盖文件的内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> 123456 &gt; passwords.txt</span><br><span class="line"><span class="comment"># 将 123456 写入 passwords.txt 文件（不会覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-<!-- https://tryhackme.com/r/room/linuxfundamentalspart1 -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
-]]></content>
-      <categories>
-        <category>基本技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Linux基础知识 第二部分</title>
+    <title>Linux基础知识 第三部分</title>
     <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-3/</url>
     <content><![CDATA[<h2 id="终端文本编辑器"><a href="#终端文本编辑器" class="headerlink" title="终端文本编辑器"></a>终端文本编辑器</h2><h3 id="Nano"><a href="#Nano" class="headerlink" title="Nano"></a>Nano</h3><p>nano 是一个易于使用的文本编辑器，输入 nano 和文件名来创建或编辑文件</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nano file1</span><br><span class="line"><span class="comment"># 打开或创建名为 file1 的文件进行编辑</span></span><br></pre></td></tr></table></figure>
@@ -457,23 +324,171 @@
       </categories>
   </entry>
   <entry>
-    <title>工具模板</title>
-    <url>/2024/10/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
-
-
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+    <title>OSINT_Framework</title>
+    <url>/2024/10/27/%E7%BD%91%E7%AB%99OSINT-Framework/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
 
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+<!-- 成功使用✔? ✖? -->]]></content>
       <categories>
-        <category>模板</category>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Linux基础知识 第一部分</title>
+    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-1/</url>
+    <content><![CDATA[<h2 id="Linux-背景知识简介"><a href="#Linux-背景知识简介" class="headerlink" title="Linux 背景知识简介"></a>Linux 背景知识简介</h2><p>与 Windows 等操作系统（OS）相比，Linux 和 Windows 各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 开源，有各种各样的 Linux 发行版适用于不同的用途。Windows 有不同的版本，Linux 也有不同的发行版。<br><br></p>
+<h2 id="运行第一个命令"><a href="#运行第一个命令" class="headerlink" title="运行第一个命令"></a>运行第一个命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>echo</td>
+<td>输出提供的任何文本</td>
+</tr>
+<tr>
+<td>whoami</td>
+<td>查看当前登录的用户身份</td>
+</tr>
+</tbody></table>
+<h3 id="使用-echo-命令"><a href="#使用-echo-命令" class="headerlink" title="使用 echo 命令"></a>使用 echo 命令</h3><p>使用 “echo” 命令在终端输出文本</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span></span><br><span class="line"><span class="comment"># 输出 Hello World!</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-whoami-命令"><a href="#使用-whoami-命令" class="headerlink" title="使用 whoami 命令"></a>使用 whoami 命令</h3><p>使用 “whoami” 命令显示当前系统中登录的用户名</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">whoami</span></span><br><span class="line"><span class="comment"># 查询当前用户</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="与文件系统的交互"><a href="#与文件系统的交互" class="headerlink" title="与文件系统的交互"></a>与文件系统的交互</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ls</td>
+<td>列出当前目录的内容（listing）</td>
+</tr>
+<tr>
+<td>cd</td>
+<td>更改当前目录（change directory）</td>
+</tr>
+<tr>
+<td>cat</td>
+<td>输出文件内容（concatenate）</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>找到当前工作目录的完整路径（print working directory）</td>
+</tr>
+</tbody></table>
+<h3 id="列出当前目录的内容（ls）"><a href="#列出当前目录的内容（ls）" class="headerlink" title="列出当前目录的内容（ls）"></a>列出当前目录的内容（ls）</h3><p>使用 “ls” 命令来列出当前目录的内容<br>使用 “ls” 命令和目录名称不进入该目录列出某个目录的内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 列出当前目录下的所有文件和文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> folder1</span><br><span class="line"><span class="comment"># 列出 folder1 目录下的所有文件和文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="更改当前目录（cd）"><a href="#更改当前目录（cd）" class="headerlink" title="更改当前目录（cd）"></a>更改当前目录（cd）</h3><p>使用 “cd” 命令来切换到指定目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 进入 folder1 目录</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="输出文件内容（cat）"><a href="#输出文件内容（cat）" class="headerlink" title="输出文件内容（cat）"></a>输出文件内容（cat）</h3><p>使用 “cat” 命令来查看文本文件的内容<br>使用 “cat” 命令不进入该目录直接查看某个目录中的文件内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> passwords.txt</span><br><span class="line"><span class="comment"># 显示当前目录 passwords.txt 文件的内容</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /home/ubuntu/Documents/passwords.txt</span><br><span class="line"><span class="comment"># 显示 /home/ubuntu/Documents/passwords.txt 文件的内容</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="找到当前工作目录的完整路径（pwd）"><a href="#找到当前工作目录的完整路径（pwd）" class="headerlink" title="找到当前工作目录的完整路径（pwd）"></a>找到当前工作目录的完整路径（pwd）</h3><p>使用 “pwd” 命令查看当前目录的完整路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="comment"># 显示当前工作目录的完整路径</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="查找文件"><a href="#查找文件" class="headerlink" title="查找文件"></a>查找文件</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>find</td>
+<td>查找文件或目录</td>
+</tr>
+<tr>
+<td>grep</td>
+<td>全局正则表达式搜索（Global Regular Expression Print）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-find-命令"><a href="#使用-find-命令" class="headerlink" title="使用 find 命令"></a>使用 find 命令</h3><p>记得文件名，使用 “find -name” 在当前目录的所有子目录中查找特定文件<br>不记得文件名或搜索所有具有特定扩展名的文件，使用find -name和通配符（*）来搜索以 .txt 结尾的所有文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">find -name passwords.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找名为 passwords.txt 的文件</span></span><br><span class="line"></span><br><span class="line">find -name *.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找所有以 .txt 结尾的文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-grep-命令"><a href="#使用-grep-命令" class="headerlink" title="使用 grep 命令"></a>使用 grep 命令</h3><p>使用 “grep” 命令搜索整个文件中包含特定值的行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;123456&quot;</span> passwords.txt</span><br><span class="line"><span class="comment"># 在 passwords.txt 文件中搜索包含 &quot;123456&quot;</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p>字符串内需要注意大小写需要完全符合</p>
+<h2 id="Shell-操作符简介"><a href="#Shell-操作符简介" class="headerlink" title="Shell 操作符简介"></a>Shell 操作符简介</h2><table>
+<thead>
+<tr>
+<th>符号&#x2F;操作符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td>允许在终端后台执行命令</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>允许将多个命令结合在一行中执行</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>一个重定向符，可以将某个命令的输出重定向到其他地方（覆盖原有内容）</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>功能类似于 &gt;，但会将输出追加而不是替换（不会覆盖原有内容）</td>
+</tr>
+</tbody></table>
+<h3 id="操作符-“-”"><a href="#操作符-“-”" class="headerlink" title="操作符 “&amp;”"></a>操作符 “&amp;”</h3><p>使用 “&amp;” 操作符执行一个命令并在后台运行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://example.com/passwords.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/passwords.txt 文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="操作符-“-”-1"><a href="#操作符-“-”-1" class="headerlink" title="操作符 “&amp;&amp;”"></a>操作符 “&amp;&amp;”</h3><p>使用 “&amp;&amp;” 操作符创建一个命令链，只有第一个命令成功执行后，第二个命令才会被执行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> folder1 &amp;&amp; <span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 创建 folder1 文件夹并进入该文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="操作符-“-”-2"><a href="#操作符-“-”-2" class="headerlink" title="操作符 “&gt;”"></a>操作符 “&gt;”</h3><p>使用 “&gt;” 操作符输出重定向符，将命令的输出重定向到其他地方</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> 123456 &gt; passwords.txt</span><br><span class="line"><span class="comment"># 将 123456 写入 passwords.txt 文件（覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
+
+<p>文件 “passwords.txt” 存在，内容将会被覆盖<br>文件 “passwords.txt” 不存在，将会创建并写入</p>
+<h3 id="操作符-“-”-3"><a href="#操作符-“-”-3" class="headerlink" title="操作符 “&gt;&gt;”"></a>操作符 “&gt;&gt;”</h3><p>使用 “&gt;” 操作符输出重定向符，将命令的输出重定向到其他地方，将新的内容追加到文件末尾但不会覆盖文件的内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> 123456 &gt; passwords.txt</span><br><span class="line"><span class="comment"># 将 123456 写入 passwords.txt 文件（不会覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+<!-- https://tryhackme.com/r/room/linuxfundamentalspart1 -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
+]]></content>
+      <categories>
+        <category>基本技能</category>
       </categories>
   </entry>
   <entry>
@@ -492,18 +507,21 @@
       </categories>
   </entry>
   <entry>
-    <title>OSINT_Framework</title>
-    <url>/2024/10/27/%E7%BD%91%E7%AB%99OSINT-Framework/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
+    <title>网络安全职业</title>
+    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
+    <content><![CDATA[<h2 id="安全分析师"><a href="#安全分析师" class="headerlink" title="安全分析师"></a>安全分析师</h2><p>负责维护组织数据的安全</p>
+<p>安全分析师在组织中通过构建安全措施来保护公司免受攻击。分析师会对公司网络进行探索和评估，找出可操作的数据和建议，以便工程师能够制定预防措施。此职位要求与各类利益相关者合作，以全面理解安全需求和整体的安全态势。</p>
+<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与不同的利益相关者合作，分析公司范围内的网络安全情况。<br>编写有关网络安全性的持续报告，记录安全问题及采取的应对措施。<br>制定安全计划，包括研究新的攻击工具和趋势，以及各团队为保持数据安全所需采取的措施。<br><br></p>
+<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p>负责测试技术产品中的安全漏洞</p>
+<p>渗透测试也常被称为“渗测（pentesting）”或“道德黑客（ethical hacking）”。渗透测试工程师的职责是测试公司内部系统和软件的安全性——通过系统化的黑客手段尝试发现缺陷和漏洞。渗透测试工程师会利用这些漏洞来评估每个实例中的风险。公司可以基于这些信息来修复问题，以防止现实中的网络攻击。</p>
+<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络和网络应用程序进行测试<br>执行安全评估、审计，并分析相关的安全策略<br>评估并报告测试结果，提出防范攻击的建议措施<br><br></p>
+<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>负责设计、监控和维护安全控制、网络和系统，以防止网络攻击</p>
+<p>安全工程师通过使用安全团队成员提供的威胁和漏洞数据，开发并实施安全解决方案。安全工程师负责防范多种类型的攻击，包括网页应用攻击、网络威胁以及不断变化的攻击趋势和策略。最终目标是采用并保持有效的安全措施，以降低攻击和数据丢失的风险。</p>
+<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>测试和筛选软件中的安全措施<br>监控网络并生成报告，以及时更新系统，降低漏洞风险<br>识别并部署必要的系统，以实现最佳的安全保护<br><br></p>
+<!-- https://tryhackme.com/r/room/careersincyber -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
       <categories>
-        <category>网站</category>
+        <category>网络安全基础</category>
       </categories>
   </entry>
   <entry>
@@ -594,67 +612,6 @@
       </categories>
   </entry>
   <entry>
-    <title>网络安全职业</title>
-    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
-    <content><![CDATA[<h2 id="安全分析师"><a href="#安全分析师" class="headerlink" title="安全分析师"></a>安全分析师</h2><p>负责维护组织数据的安全</p>
-<p>安全分析师在组织中通过构建安全措施来保护公司免受攻击。分析师会对公司网络进行探索和评估，找出可操作的数据和建议，以便工程师能够制定预防措施。此职位要求与各类利益相关者合作，以全面理解安全需求和整体的安全态势。</p>
-<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与不同的利益相关者合作，分析公司范围内的网络安全情况。<br>编写有关网络安全性的持续报告，记录安全问题及采取的应对措施。<br>制定安全计划，包括研究新的攻击工具和趋势，以及各团队为保持数据安全所需采取的措施。<br><br></p>
-<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p>负责测试技术产品中的安全漏洞</p>
-<p>渗透测试也常被称为“渗测（pentesting）”或“道德黑客（ethical hacking）”。渗透测试工程师的职责是测试公司内部系统和软件的安全性——通过系统化的黑客手段尝试发现缺陷和漏洞。渗透测试工程师会利用这些漏洞来评估每个实例中的风险。公司可以基于这些信息来修复问题，以防止现实中的网络攻击。</p>
-<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络和网络应用程序进行测试<br>执行安全评估、审计，并分析相关的安全策略<br>评估并报告测试结果，提出防范攻击的建议措施<br><br></p>
-<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>负责设计、监控和维护安全控制、网络和系统，以防止网络攻击</p>
-<p>安全工程师通过使用安全团队成员提供的威胁和漏洞数据，开发并实施安全解决方案。安全工程师负责防范多种类型的攻击，包括网页应用攻击、网络威胁以及不断变化的攻击趋势和策略。最终目标是采用并保持有效的安全措施，以降低攻击和数据丢失的风险。</p>
-<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>测试和筛选软件中的安全措施<br>监控网络并生成报告，以及时更新系统，降低漏洞风险<br>识别并部署必要的系统，以实现最佳的安全保护<br><br></p>
-<!-- https://tryhackme.com/r/room/careersincyber -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
-      <categories>
-        <category>网络安全基础</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网络攻击杀伤链</title>
-    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/</url>
-    <content><![CDATA[<h2 id="侦察"><a href="#侦察" class="headerlink" title="侦察"></a>侦察</h2><p><strong>侦察</strong>：是指发现并收集关于系统和受害者的信息。侦察阶段是对手计划攻击的阶段。</p>
-<p>开源情报（OSINT）也属于侦察范畴。OSINT 是攻击者在进行后续攻击步骤之前必须完成的第一步。攻击者需要通过收集关于公司及其员工的所有可用信息，来研究目标，以便确定最佳的攻击目标。</p>
-<p>为了在这个阶段进行操作，攻击者需要进行 OSINT</p>
-<p><strong>电子邮件收集</strong>：是通过公共、付费或免费服务获取电子邮件地址的过程。攻击者可以利用电子邮件收集进行网络钓鱼攻击。在侦察阶段，攻击者有大量的工具可用，其中一些包括：</p>
-<p><strong>theHarvester</strong>：除了收集电子邮件，这个工具还能通过多个公共数据源收集姓名、子域、IP 和 URL<br><strong>Hunter.io</strong>：这是一个电子邮件搜寻工具，可以获取与特定域名相关的联系信息<br><strong>OSINT Framework</strong>：提供了基于各种类别的 OSINT 工具集合</p>
-<p>攻击者还会利用社交媒体网站，来收集想要攻击的特定受害者或公司的信息。这些社交媒体上的信息对于攻击者进行网络钓鱼攻击可能非常有帮助。<br><br></p>
-<h2 id="武器化"><a href="#武器化" class="headerlink" title="武器化"></a>武器化</h2><p>在顺利完成侦察阶段后，大多数攻击者通常会使用自动化工具生成恶意软件，或者从暗网上购买恶意软件。这种工具会将恶意软件和漏洞利用结合成一个可传递的有效载荷。而那些更复杂的攻击者或由国家资助的高级持续性威胁（APT）组织则会编写自定义的恶意软件，以确保其独特性，从而避开目标上的检测。</p>
-<p><strong>恶意软件</strong>：一种用于破坏、干扰或未经授权访问计算机的程序或软件。<br><strong>漏洞利用</strong>：利用应用程序或系统中的漏洞或缺陷的程序或代码。<br><strong>有效载荷</strong>：攻击者在系统上执行的恶意代码。</p>
-<p>在武器化阶段，攻击者可能会进行以下操作：<br>创建一个包含恶意宏或 VBA（Visual Basic for Applications）脚本的感染 Microsoft Office 文档<br>攻击者可以创建恶意有效载荷或非常复杂的蠕虫病毒，将其植入 USB 驱动器，然后在公共场所分发<br>攻击者可能会选择使用指挥与控制（C2）技术，在受害者的计算机上执行命令或传递更多有效载荷<br>攻击者会选择后门植入方式<br><br></p>
-<h2 id="传递"><a href="#传递" class="headerlink" title="传递"></a>传递</h2><p>在传递阶段，有几种常见选择：</p>
-<p><strong>钓鱼邮件</strong>：在进行侦察并确定目标后，恶意攻击者会精心编写一封恶意邮件，目标可能是特定个人（鱼叉式钓鱼攻击）或公司内部的多名人员。邮件内包含有效载荷或恶意软件</p>
-<p><strong>在公共场所投放受感染的 USB 驱动器</strong>：例如在咖啡店、停车场或街道上。攻击者可能会通过印有公司 logo 的 USB 驱动器实施高级 USB 投放攻击，并假装是客户，将这些设备作为礼物寄送给公司</p>
-<p><strong>水坑攻击</strong>：这是一种专门针对特定群体的攻击方式，攻击者会入侵目标群体经常访问的网站，并将其重定向到恶意网站。攻击者会寻找并利用网站的已知漏洞。为了提高攻击成功率，攻击者可能会发送看似“无害”的电子邮件，引导受害者访问目标网站并点击恶意链接。受害者访问网站后，会无意中下载恶意软件或恶意应用程序，这种攻击类型被称为“驱动式下载”<br><br></p>
-<h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p>为了获得系统的访问权限，攻击者需要利用系统中的漏洞。在获得系统访问权限后，恶意攻击者可能会利用软件、系统或服务器漏洞来提升权限，或者在网络中进行横向移动。横向移动是指恶意攻击者在获得初始访问权限后，使用各种技术进一步深入网络，以便获取敏感数据。</p>
-<p>在这个阶段，攻击者也可能使用“零日漏洞利用”。零日漏洞利用或零日漏洞是一个在尚未被发现的漏洞，它暴露了软件或硬件中的安全漏洞，可能在问题显现之前造成严重影响。零日漏洞在一开始几乎没有检测机会。</p>
-<p>以下是攻击者执行漏洞利用的常见方式：<br>受害者通过打开邮件附件或点击恶意链接来触发漏洞<br>使用零日漏洞进行攻击<br>利用软件、硬件，甚至是人性的弱点<br>攻击者利用服务器漏洞进行攻击<br><br></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>后门可以让攻击者绕过安全机制并隐藏访问权限。后门也被称为“访问点”。</p>
-<p>一旦攻击者成功获取了系统访问权限，攻击者会希望能够在连接丢失、被检测到或初始访问权限被移除，或者系统被修补后，仍能重新访问系统。此时，攻击者需要安装一个持久性的后门。持久性后门可以确保攻击者能够重新访问之前已被攻陷的系统。</p>
-<p>以下是实现持久性的几种方式：<br><strong>在 Web 服务器上安装 Web Shell</strong>：Web Shell 是一种由攻击者编写的恶意脚本，使用 ASP、PHP 或 JSP 等 Web 开发语言，目的是维持对被攻陷系统的持续访问。由于 Web Shell 的简单性和文件格式，它们可能难以被检测并被误认为是无害文件。</p>
-<p><strong>在受害者的机器上安装后门</strong>：使攻击者可以远程控制受害者的机器并执行恶意代码。</p>
-<p><strong>创建或修改 Windows 服务</strong>：攻击者可以创建或修改 Windows 服务，使其能够定期执行恶意脚本或有效载荷，作为保持持久性的一部分。攻击者可以使用 sc.exe和 Reg 这些工具来修改服务配置。攻击者还可能伪装恶意有效载荷，使用与操作系统或合法软件相关的服务名称。</p>
-<p><strong>在注册表的“运行键”或启动文件夹中为恶意有效载荷添加条目</strong>：通过这种方式，每次用户登录计算机时，有效载荷都会被执行。启动文件夹既有针对单个用户账户的位置，也有系统范围的启动文件夹，无论哪个用户登录，都会被检查。</p>
-<p>此外，攻击者还可能在这一阶段使用时间篡改技术（Timestomping），以避免被取证调查人员检测，并让恶意软件看起来像合法程序的一部分。时间篡改技术允许攻击者修改文件的时间戳，包括修改、访问、创建和更改的时间。<br><br></p>
-<h2 id="指挥与控制"><a href="#指挥与控制" class="headerlink" title="指挥与控制"></a>指挥与控制</h2><p>在成功建立持久性并在受害者计算机上执行恶意软件后，攻击者通过该恶意软件打开了 C2（指挥与控制）通道，以便远程控制和操纵受害者。这一通信类型也被称为 C&amp;C 或 C2 信标，是指 C&amp;C 服务器与被感染主机之间的一种恶意通信方式。被感染的主机会持续与 C2 服务器通信，这就是“信标”一词的由来。</p>
-<p>被攻陷的终端将与攻击者设置的外部服务器通信，以建立指挥与控制通道。一旦连接建立，攻击者即可完全控制受害者的计算机</p>
-<p>攻击者通常使用以下 C2 通道：<br><strong>HTTP（端口 80）和 HTTPS（端口 443）协议</strong>：这种信标方式将恶意流量与合法流量混合，帮助攻击者规避防火墙的检测</p>
-<p><strong>DNS（域名服务器）</strong>：被感染的机器会不断向归属于攻击者的 DNS 服务器发送 DNS 请求，这种 C2 通信方式也被称为 DNS 隧道</p>
-<p>对手或者其他被攻陷的主机也可能是 C2 基础设施的拥有者。<br><br></p>
-<h2 id="达成目标"><a href="#达成目标" class="headerlink" title="达成目标"></a>达成目标</h2><p>在经历了攻击的前六个阶段后，这意味着攻击者将对最初设定的目的采取行动。通过直接访问系统，攻击者可以执行以下操作：</p>
-<p>收集用户的登录凭证<br>执行权限提升<br>进行内部侦察<br>在公司网络环境中横向移动<br>收集并外泄敏感数据<br>删除备份和影子副本，影子副本是微软的一项技术，可以创建文件或卷的备份副本和快照<br>覆盖或损坏数据</p>
-<br>
-
-
-<!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
-]]></content>
-      <categories>
-        <category>网络安全基础</category>
-      </categories>
-  </entry>
-  <entry>
     <title>治理与监管</title>
     <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/</url>
     <content><![CDATA[<h2 id="为什么很重要？"><a href="#为什么很重要？" class="headerlink" title="为什么很重要？"></a>为什么很重要？</h2><p><strong>治理</strong>：管理和指导一个组织或系统，以实现其目标并确保遵守法律、法规和标准<br><strong>法规</strong>：由管理机构强制执行的规则或法律，旨在确保合规性并防止潜在风险<br><strong>合规性</strong>：指组织或系统遵守适用的法律、法规和标准的状态</p>
@@ -706,6 +663,49 @@
 <p><strong>获取审计报告</strong>：审计完成后，审计员会提供一份报告，详细说明审计结果。报告可能包括控制措施的描述、识别的缺陷或漏洞，以及改进建议<br><br></p>
 <!-- https://tryhackme.com/r/room/cybergovernanceregulation -->
 <!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网络攻击杀伤链</title>
+    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/</url>
+    <content><![CDATA[<h2 id="侦察"><a href="#侦察" class="headerlink" title="侦察"></a>侦察</h2><p><strong>侦察</strong>：是指发现并收集关于系统和受害者的信息。侦察阶段是对手计划攻击的阶段。</p>
+<p>开源情报（OSINT）也属于侦察范畴。OSINT 是攻击者在进行后续攻击步骤之前必须完成的第一步。攻击者需要通过收集关于公司及其员工的所有可用信息，来研究目标，以便确定最佳的攻击目标。</p>
+<p>为了在这个阶段进行操作，攻击者需要进行 OSINT</p>
+<p><strong>电子邮件收集</strong>：是通过公共、付费或免费服务获取电子邮件地址的过程。攻击者可以利用电子邮件收集进行网络钓鱼攻击。在侦察阶段，攻击者有大量的工具可用，其中一些包括：</p>
+<p><strong>theHarvester</strong>：除了收集电子邮件，这个工具还能通过多个公共数据源收集姓名、子域、IP 和 URL<br><strong>Hunter.io</strong>：这是一个电子邮件搜寻工具，可以获取与特定域名相关的联系信息<br><strong>OSINT Framework</strong>：提供了基于各种类别的 OSINT 工具集合</p>
+<p>攻击者还会利用社交媒体网站，来收集想要攻击的特定受害者或公司的信息。这些社交媒体上的信息对于攻击者进行网络钓鱼攻击可能非常有帮助。<br><br></p>
+<h2 id="武器化"><a href="#武器化" class="headerlink" title="武器化"></a>武器化</h2><p>在顺利完成侦察阶段后，大多数攻击者通常会使用自动化工具生成恶意软件，或者从暗网上购买恶意软件。这种工具会将恶意软件和漏洞利用结合成一个可传递的有效载荷。而那些更复杂的攻击者或由国家资助的高级持续性威胁（APT）组织则会编写自定义的恶意软件，以确保其独特性，从而避开目标上的检测。</p>
+<p><strong>恶意软件</strong>：一种用于破坏、干扰或未经授权访问计算机的程序或软件。<br><strong>漏洞利用</strong>：利用应用程序或系统中的漏洞或缺陷的程序或代码。<br><strong>有效载荷</strong>：攻击者在系统上执行的恶意代码。</p>
+<p>在武器化阶段，攻击者可能会进行以下操作：<br>创建一个包含恶意宏或 VBA（Visual Basic for Applications）脚本的感染 Microsoft Office 文档<br>攻击者可以创建恶意有效载荷或非常复杂的蠕虫病毒，将其植入 USB 驱动器，然后在公共场所分发<br>攻击者可能会选择使用指挥与控制（C2）技术，在受害者的计算机上执行命令或传递更多有效载荷<br>攻击者会选择后门植入方式<br><br></p>
+<h2 id="传递"><a href="#传递" class="headerlink" title="传递"></a>传递</h2><p>在传递阶段，有几种常见选择：</p>
+<p><strong>钓鱼邮件</strong>：在进行侦察并确定目标后，恶意攻击者会精心编写一封恶意邮件，目标可能是特定个人（鱼叉式钓鱼攻击）或公司内部的多名人员。邮件内包含有效载荷或恶意软件</p>
+<p><strong>在公共场所投放受感染的 USB 驱动器</strong>：例如在咖啡店、停车场或街道上。攻击者可能会通过印有公司 logo 的 USB 驱动器实施高级 USB 投放攻击，并假装是客户，将这些设备作为礼物寄送给公司</p>
+<p><strong>水坑攻击</strong>：这是一种专门针对特定群体的攻击方式，攻击者会入侵目标群体经常访问的网站，并将其重定向到恶意网站。攻击者会寻找并利用网站的已知漏洞。为了提高攻击成功率，攻击者可能会发送看似“无害”的电子邮件，引导受害者访问目标网站并点击恶意链接。受害者访问网站后，会无意中下载恶意软件或恶意应用程序，这种攻击类型被称为“驱动式下载”<br><br></p>
+<h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p>为了获得系统的访问权限，攻击者需要利用系统中的漏洞。在获得系统访问权限后，恶意攻击者可能会利用软件、系统或服务器漏洞来提升权限，或者在网络中进行横向移动。横向移动是指恶意攻击者在获得初始访问权限后，使用各种技术进一步深入网络，以便获取敏感数据。</p>
+<p>在这个阶段，攻击者也可能使用“零日漏洞利用”。零日漏洞利用或零日漏洞是一个在尚未被发现的漏洞，它暴露了软件或硬件中的安全漏洞，可能在问题显现之前造成严重影响。零日漏洞在一开始几乎没有检测机会。</p>
+<p>以下是攻击者执行漏洞利用的常见方式：<br>受害者通过打开邮件附件或点击恶意链接来触发漏洞<br>使用零日漏洞进行攻击<br>利用软件、硬件，甚至是人性的弱点<br>攻击者利用服务器漏洞进行攻击<br><br></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>后门可以让攻击者绕过安全机制并隐藏访问权限。后门也被称为“访问点”。</p>
+<p>一旦攻击者成功获取了系统访问权限，攻击者会希望能够在连接丢失、被检测到或初始访问权限被移除，或者系统被修补后，仍能重新访问系统。此时，攻击者需要安装一个持久性的后门。持久性后门可以确保攻击者能够重新访问之前已被攻陷的系统。</p>
+<p>以下是实现持久性的几种方式：<br><strong>在 Web 服务器上安装 Web Shell</strong>：Web Shell 是一种由攻击者编写的恶意脚本，使用 ASP、PHP 或 JSP 等 Web 开发语言，目的是维持对被攻陷系统的持续访问。由于 Web Shell 的简单性和文件格式，它们可能难以被检测并被误认为是无害文件。</p>
+<p><strong>在受害者的机器上安装后门</strong>：使攻击者可以远程控制受害者的机器并执行恶意代码。</p>
+<p><strong>创建或修改 Windows 服务</strong>：攻击者可以创建或修改 Windows 服务，使其能够定期执行恶意脚本或有效载荷，作为保持持久性的一部分。攻击者可以使用 sc.exe和 Reg 这些工具来修改服务配置。攻击者还可能伪装恶意有效载荷，使用与操作系统或合法软件相关的服务名称。</p>
+<p><strong>在注册表的“运行键”或启动文件夹中为恶意有效载荷添加条目</strong>：通过这种方式，每次用户登录计算机时，有效载荷都会被执行。启动文件夹既有针对单个用户账户的位置，也有系统范围的启动文件夹，无论哪个用户登录，都会被检查。</p>
+<p>此外，攻击者还可能在这一阶段使用时间篡改技术（Timestomping），以避免被取证调查人员检测，并让恶意软件看起来像合法程序的一部分。时间篡改技术允许攻击者修改文件的时间戳，包括修改、访问、创建和更改的时间。<br><br></p>
+<h2 id="指挥与控制"><a href="#指挥与控制" class="headerlink" title="指挥与控制"></a>指挥与控制</h2><p>在成功建立持久性并在受害者计算机上执行恶意软件后，攻击者通过该恶意软件打开了 C2（指挥与控制）通道，以便远程控制和操纵受害者。这一通信类型也被称为 C&amp;C 或 C2 信标，是指 C&amp;C 服务器与被感染主机之间的一种恶意通信方式。被感染的主机会持续与 C2 服务器通信，这就是“信标”一词的由来。</p>
+<p>被攻陷的终端将与攻击者设置的外部服务器通信，以建立指挥与控制通道。一旦连接建立，攻击者即可完全控制受害者的计算机</p>
+<p>攻击者通常使用以下 C2 通道：<br><strong>HTTP（端口 80）和 HTTPS（端口 443）协议</strong>：这种信标方式将恶意流量与合法流量混合，帮助攻击者规避防火墙的检测</p>
+<p><strong>DNS（域名服务器）</strong>：被感染的机器会不断向归属于攻击者的 DNS 服务器发送 DNS 请求，这种 C2 通信方式也被称为 DNS 隧道</p>
+<p>对手或者其他被攻陷的主机也可能是 C2 基础设施的拥有者。<br><br></p>
+<h2 id="达成目标"><a href="#达成目标" class="headerlink" title="达成目标"></a>达成目标</h2><p>在经历了攻击的前六个阶段后，这意味着攻击者将对最初设定的目的采取行动。通过直接访问系统，攻击者可以执行以下操作：</p>
+<p>收集用户的登录凭证<br>执行权限提升<br>进行内部侦察<br>在公司网络环境中横向移动<br>收集并外泄敏感数据<br>删除备份和影子副本，影子副本是微软的一项技术，可以创建文件或卷的备份副本和快照<br>覆盖或损坏数据</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
+]]></content>
       <categories>
         <category>网络安全基础</category>
       </categories>
