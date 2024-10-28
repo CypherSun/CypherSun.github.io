@@ -15,7 +15,7 @@
 <meta property="og:description" content="终端文本编辑器Nanonano 是一个易于使用的文本编辑器，输入 nano 和文件名来创建或编辑文件 12nano file1# 打开或创建名为 file1 的文件进行编辑  使用 “向上” 和 “向下” 箭头键在各行之间导航，或者使用 “Enter” 键开始新行 Nano 具备一些易于记忆的功能，涵盖了对文本编辑器的常用需求，包括： 搜索文本复制和粘贴跳转到指定行号查看当前所在的行号 可以通过按">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-10-27T21:03:17.000Z">
-<meta property="article:modified_time" content="2024-10-27T22:41:22.628Z">
+<meta property="article:modified_time" content="2024-10-28T14:00:39.292Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-27 23:41:22"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-28 15:00:39"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -411,7 +411,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://1.1.1.1:8000/file1</span><br></pre></td></tr></table></figure>
 
 <p>需要打开一个新终端来使用 wget，而运行 Python3 Web 服务器的终端必须保持打开状态<br>因为 Python3 Web 服务器启动后会在该终端中持续运行，直到手动取消</p>
-<p>http.server 模块没有目录索引功能，因此你必须确切知道要下载的文件的名称和路径。</p>
+<p>http.server 模块没有目录索引功能，因此必须确切知道要下载的文件的名称和路径。</p>
 <p>虽然 http.server 足够简单易用，但它没有索引功能。还有一些功能更强大的轻量级 Web 服务器，比如 Updog<br><br></p>
 <h2 id="进程基础知识"><a href="#进程基础知识" class="headerlink" title="进程基础知识"></a>进程基础知识</h2><p>进程是计算机上运行的程序，由内核进行管理。每个进程都有一个唯一的进程标识符（PID），PID 会按照进程启动的顺序递增。</p>
 <h3 id="查看进程"><a href="#查看进程" class="headerlink" title="查看进程"></a>查看进程</h3><p>使用 “ps” 命令显示当前用户会话中运行的进程列表，以及一些附加信息<br>使用 “ps aux” 命令查看所有用户的进程以及不属于当前会话的进程</p>
@@ -434,7 +434,6 @@
 <p>使用 “systemctl” 命令与 systemd 守护进程交互来管理这些服务</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl Start apache</span><br><span class="line">systemctl [选项] [服务]</span><br></pre></td></tr></table></figure>
 
-
 <p>通过systemctl，可以执行四种操作：</p>
 <p>start（启动）<br>stop（停止）<br>enable（启用）<br>disable（禁用）</p>
 <h3 id="Linux中的后台与前台运行"><a href="#Linux中的后台与前台运行" class="headerlink" title="Linux中的后台与前台运行"></a>Linux中的后台与前台运行</h3><p>在 Linux 中，进程可以运行在前台或后台</p>
@@ -448,23 +447,96 @@
 
 
 
-<h2 id="系统维护：自动化"><a href="#系统维护：自动化" class="headerlink" title="系统维护：自动化"></a>系统维护：自动化</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+<h2 id="系统维护：自动化"><a href="#系统维护：自动化" class="headerlink" title="系统维护：自动化"></a>系统维护：自动化</h2><p>Crontab 是一个具有特定格式的特殊文件，cron 进程会识别它，并逐行执行其中的每一条命令。使用 crontab 来管理和执行定时任务。cron 是一个在系统启动时运行的进程，用于管理和执行 crontab 中定义的任务。</p>
+<p>Crontab 需要设置 6 个特定的字段：</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MIN</td>
+<td>在每小时的第几分钟执行（0-59）</td>
+</tr>
+<tr>
+<td>HOUR</td>
+<td>在每天的几点钟执行（0-23）</td>
+</tr>
+<tr>
+<td>DOM</td>
+<td>在每月的哪一天执行（1-31）</td>
+</tr>
+<tr>
+<td>MON</td>
+<td>在每年的哪个月份执行（1-12）</td>
+</tr>
+<tr>
+<td>DOW</td>
+<td>在每周的哪一天执行（0-7，0和7表示星期日）</td>
+</tr>
+<tr>
+<td>CMD</td>
+<td>要执行的实际命令</td>
+</tr>
+</tbody></table>
+<p>通过 crontab -e 命令打开文本编辑器来编辑定时任务<br>使用 * 通配符来表示任意值，不指定特定的时间字段</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">0 */12 * * * <span class="built_in">cp</span> -R /home/cmnatic/Documents /var/backups/</span><br><span class="line"><span class="comment"># 每 12 小时执行一次 cp 命令，将 /home/cmnatic/Documents 目录备份到 /var/backups/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">0 */12 * * * [要执行的命令] [源路径] [目标路径]</span><br><span class="line"><span class="comment"># 每 12 小时执行一次 [要执行的命令]，从 [源路径] 复制或备份到 [目标路径]</span></span><br></pre></td></tr></table></figure>
+
+<br>
 
 
 
 
 
-<h2 id="系统维护：软件包管理"><a href="#系统维护：软件包管理" class="headerlink" title="系统维护：软件包管理"></a>系统维护：软件包管理</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+<h2 id="系统维护：软件包管理"><a href="#系统维护：软件包管理" class="headerlink" title="系统维护：软件包管理"></a>系统维护：软件包管理</h2><p>当开发者希望将软件提交给社区时，会将其提交到一个“apt”软件库中。程序和工具将被发布给广大用户。在这里，Linux 的两个最显著的优势得以展现：用户可访问性和开源工具的优点。</p>
+<p>在 Linux 机器上使用 ls 命令时，这些文件充当了网关或注册表的角色。</p>
+<p>虽然操作系统供应商通常会维护自己的软件库，但您也可以将社区软件库添加到您的列表中！这使您可以扩展操作系统的功能。可以通过 add-apt-repository 命令或列出另一个提供商来添加额外的软件库</p>
+<h3 id="管理您的软件库（添加和移除）"><a href="#管理您的软件库（添加和移除）" class="headerlink" title="管理您的软件库（添加和移除）"></a>管理您的软件库（添加和移除）</h3><p>添加软件库使用 add-apt-repository 命令，通过添加新的软件库，可以访问更多的软件包。<br>安装软件使用 apt 命令，apt 是一个软件包管理工具，包含了一整套工具用于管理软件包和软件源，同时可以安装或移除软件包。apt 的优势在于每次更新系统时，会自动检查并更新已添加的软件库中的软件包。</p>
+<p>软件库：存放软件包的集合，包含数百或数千个软件包<br>软件包：可安装的软件单元，包含特定程序的所有文件和依赖项</p>
+<p>add-apt-repository：用于添加或移除软件库的工具，这会将新的软件库地址添加到系统的 sources.list.d 目录中，并自动更新 GPG 密钥<br>apt：用于管理软件包的安装和更新的工具</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> add-apt-repository ppa:PPA_Name/ppa</span><br><span class="line"><span class="comment"># 添加 PPA 软件库，现在系统中包含两个软件库：自带的 Ubuntu 软件库和 PPA 软件库，将自动处理 GPG 密钥</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="comment"># 更新系统中的软件库列表。更新成功后，使用以下命令下载和安装软件。</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> apt install sublime-text</span><br><span class="line"><span class="comment"># 从可用的软件库中自动选择下载和安装软件</span></span><br><span class="line"></span><br><span class="line">wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | <span class="built_in">sudo</span> apt-key add -</span><br><span class="line"><span class="comment"># 对于第三方软件库，需要手动添加 GPG 密钥和软件库地址，将密钥添加到系统的信任列表中</span></span><br><span class="line"><span class="comment"># 在 /etc/apt/sources.list.d 目录中创建一个 sublimetext.list 的文件</span></span><br></pre></td></tr></table></figure>
+
+
+<p>在添加第三方软件时，需要手动添加 GPG 密钥和软件库地址，以确保下载内容的完整性。GPG（GNU Privacy Guard）密钥是一种开发者提供的安全验证工具，用于确保下载的软件包是来自可信任的来源。如果密钥与系统信任的密钥和开发者使用的密钥不匹配，软件将无法下载。</p>
+<p>对于第三方软件库，流程如下：</p>
+<p>1.添加 GPG 密钥：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | <span class="built_in">sudo</span> apt-key add -</span><br><span class="line"><span class="comment"># 对于第三方软件库，需要手动添加 GPG 密钥和软件库地址，将密钥添加到系统的信任列表中</span></span><br></pre></td></tr></table></figure>
+
+
+<p>2.手动创建 .list 文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/apt/sources.list.d/sublime-text.list</span><br><span class="line"><span class="comment"># 在 /etc/apt/sources.list.d 目录中创建一个文件</span></span><br></pre></td></tr></table></figure>
+
+
+<p>3.添加软件库源信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deb https://download.sublimetext.com/ apt/stable/</span><br><span class="line"><span class="comment"># 在编辑器中添加类似以下内容的软件库地址</span></span><br></pre></td></tr></table></figure>
+
+
+<p>4.更新软件库列表</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="comment"># 更新系统中的软件库列表，使 `apt` 识别新的第三方软件库。</span></span><br></pre></td></tr></table></figure>
+
+
+<p>5.安装软件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install sublime-text</span><br><span class="line"><span class="comment"># 从新的第三方软件库中安装软件</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>使用 apt remove 命令来删除软件<br>使用 add-apt-repository –remove ppa:PPA_Name&#x2F;ppa 命令来删除软件库。或者手动删除之前添加的源文件，然后使用以下命令删除已安装的软件包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt remove sublime-text</span><br><span class="line"><span class="comment"># sudo apt remove [软件名]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> add-apt-repository --remove ppa:PPA_Name/ppa</span><br><span class="line"><span class="comment"># 删除已添加的 PPA 软件库</span></span><br></pre></td></tr></table></figure>
+
+<br>
 
 
 
 
 
-<h2 id="系统维护：日志"><a href="#系统维护：日志" class="headerlink" title="系统维护：日志"></a>系统维护：日志</h2><h3 id="副主题1-2"><a href="#副主题1-2" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-2"><a href="#副主题2-2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-<!-- 网站 -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->
+<h2 id="系统维护：日志"><a href="#系统维护：日志" class="headerlink" title="系统维护：日志"></a>系统维护：日志</h2><p>日志文件存放在 &#x2F;var&#x2F;log 目录中。这个目录包含了系统上运行的应用程序和服务生成的日志信息。操作系统能自动管理这些日志，这一过程称为 <strong>“日志轮替”</strong>（log rotation）。日志轮替会自动归档和清理旧的日志文件，以防止日志文件占用过多的磁盘空间。</p>
+<p>在 Ubuntu 系统上运行的三项服务的日志：<br>Apache2 Web 服务器的日志：包括访问日志（access.log）和错误日志（error.log），记录了每一个 Web 请求的信息。<br>Fail2ban 服务的日志：用于监控和防止暴力破解行为，日志文件通常是 fail2ban.log。<br>UFW（Uncomplicated Firewall）防火墙的日志：UFW 是一个常用的防火墙工具，日志文件通常位于 ufw.log，记录了所有的防火墙规则和活动。</p>
+<p>这些服务日志是监控系统健康状况和安全性的有效工具。特别是像 Web 服务器这样的服务日志，能够记录每一个请求的信息，这让开发人员和系统管理员能够诊断性能问题或调查入侵行为。</p>
+<p>除了应用程序和服务的日志，系统还会生成一些日志文件，用于记录操作系统的运行状态和用户行为。<br><br></p>
+<!-- https://tryhackme.com/r/room/linuxfundamentalspart3 -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
 </article>
     
     
