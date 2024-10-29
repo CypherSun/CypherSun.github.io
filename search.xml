@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客模板</title>
-    <url>/2024/10/27/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+    <title>网站模板</title>
+    <url>/2024/10/27/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
 
 
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
-<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+<!-- 成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>工具模板</title>
+    <url>/2024/10/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
 
 
-<!-- 网站 -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
       <categories>
         <category>模板</category>
       </categories>
@@ -275,21 +294,179 @@
       </categories>
   </entry>
   <entry>
-    <title>工具模板</title>
-    <url>/2024/10/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
+    <title>Python基础</title>
+    <url>/2024/10/28/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD2/</url>
+    <content><![CDATA[<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><p>使用 print() 函数输出放在括号 () 里的内容，因为输出的为字符串，所以需要双引号 “”</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello World&quot;</span>)</span><br><span class="line"><span class="comment"># 这是一个注释</span></span><br></pre></td></tr></table></figure>
+
+<p>第 1 行代码是输出代码，当运行时，它会在屏幕上输出文本 Hello World<br>第 2 行代码是注释代码，以 # 符号开头，注释不会被计算机执行，它是程序员用来帮助其他人理解代码含义的解释性文本<br><br></p>
+<h2 id="数学运算符"><a href="#数学运算符" class="headerlink" title="数学运算符"></a>数学运算符</h2><h3 id="数学运算符-1"><a href="#数学运算符-1" class="headerlink" title="数学运算符"></a>数学运算符</h3><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>语法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>加法</td>
+<td>+</td>
+</tr>
+<tr>
+<td>减法</td>
+<td>-</td>
+</tr>
+<tr>
+<td>乘法</td>
+<td>*</td>
+</tr>
+<tr>
+<td>除法</td>
+<td>&#x2F;</td>
+</tr>
+<tr>
+<td>取模</td>
+<td>%</td>
+</tr>
+<tr>
+<td>幂运算</td>
+<td>**</td>
+</tr>
+</tbody></table>
+<br>
 
 
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
 
 
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+<h2 id="变量和数据类型"><a href="#变量和数据类型" class="headerlink" title="变量和数据类型"></a>变量和数据类型</h2><p>变量允许在程序中存储和更新数据，通过变量名可访问和管理存储的数据</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">food = <span class="string">&quot;ice cream&quot;</span></span><br><span class="line"><span class="comment"># 变量 food 存储字符串 &quot;ice cream&quot;</span></span><br><span class="line"></span><br><span class="line">money = 2000</span><br><span class="line"><span class="comment"># 变量 money 存储数字 2000</span></span><br><span class="line"></span><br><span class="line">age = 30</span><br><span class="line"><span class="comment"># 将变量 age 赋值为 30</span></span><br><span class="line"></span><br><span class="line">age = age + 1</span><br><span class="line"><span class="comment"># 等号左侧是已创建的变量名 age，等号右侧是要赋的新值。将 age 增加 1，通过 = 运算符更新 age 变量值</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(age)</span><br><span class="line"><span class="comment"># 输出 age 为 31</span></span><br></pre></td></tr></table></figure>
+
+<p>存储在变量中的数据的类型包括:</p>
+<p>字符串（String）：用于存储字符<br>整数（Integer）：表示整数值<br>浮点数（Float）：表示小数或分数<br>布尔值（Boolean）：通常用于条件判断，存储布尔值 True 或 False<br>列表（List）：允许按位置存储多个值，用于存储不同数据类型的集合<br><br></p>
+<h2 id="逻辑和布尔运算符"><a href="#逻辑和布尔运算符" class="headerlink" title="逻辑和布尔运算符"></a>逻辑和布尔运算符</h2><p>逻辑运算符允许进行赋值和比较，常用于条件测试</p>
+<table>
+<thead>
+<tr>
+<th>逻辑运算</th>
+<th>运算符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>大于</td>
+<td>&gt;</td>
+</tr>
+<tr>
+<td>小于</td>
+<td>&lt;</td>
+</tr>
+<tr>
+<td>等于</td>
+<td>&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>不等于</td>
+<td>!&#x3D;</td>
+</tr>
+<tr>
+<td>大于或等于</td>
+<td>&gt;&#x3D;</td>
+</tr>
+<tr>
+<td>小于或等于</td>
+<td>&lt;&#x3D;</td>
+</tr>
+</tbody></table>
+<p>布尔运算符用于连接和比较语句之间的关系</p>
+<table>
+<thead>
+<tr>
+<th>布尔运算</th>
+<th>运算符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>仅当两个条件都为真时，结果才为真</td>
+<td>AND</td>
+</tr>
+<tr>
+<td>只需一个条件为真即可</td>
+<td>OR</td>
+</tr>
+<tr>
+<td>条件为参数的相反情况</td>
+<td>NOT</td>
+</tr>
+</tbody></table>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">a = 1</span><br><span class="line"><span class="keyword">if</span> a == 1 or a &gt; 10:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;a 要么是 1，要么大于 10&quot;</span>)</span><br><span class="line"></span><br><span class="line">name = <span class="string">&quot;bob&quot;</span> </span><br><span class="line">hungry = True</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> name == <span class="string">&quot;bob&quot;</span> and hungry == True:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;bob 很饿&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> name == <span class="string">&quot;bob&quot;</span> and not hungry:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;bob 不饿&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>: <span class="comment"># 如果所有其他 if 条件都不满足</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;不确定这是谁，也不确定是否饿了&quot;</span>)</span><br></pre></td></tr></table></figure>
+<br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
 
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+
+<h2 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h2><p>使用 if 语句可让程序根据条件判断来选择不同的执行路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> age &lt; 18:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;没有达到驾驶年龄&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;达到驾驶年龄&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>if 关键字表示语句开始，后面跟随条件<br>冒号 : 表示 if 语句结束<br>if 语句检查条件是否为真，如果为真，则执行相应的代码块，否则可以执行 else 或 elif 分支中的其他代码块。<br>任何在冒号后缩进的内容都被视为 if 语句的一部分，程序将执行这些内容<br><br></p>
+<h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><p>循环可以让程序多次重复执行操作，主要有两种类型的循环：for 循环和 while 循环</p>
+<h3 id="While-循环"><a href="#While-循环" class="headerlink" title="While 循环"></a>While 循环</h3><p>while 循环基于条件判断执行，用于在条件满足时执行，直到条件不满足为止<br>当条件始终为 True 时，while 循环会无限次运行<br>当条件变为 False 时，循环会停止</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">i = 1</span><br><span class="line"><span class="keyword">while</span> i &lt;= 10:</span><br><span class="line">     <span class="built_in">print</span>(i)</span><br><span class="line">     i = i + 1</span><br><span class="line"><span class="comment"># while 循环将运行 10 次，每次循环都会输出变量 i 的值</span></span><br></pre></td></tr></table></figure>
+
+<p>while 语句指定了循环的起始位置<br>每次循环，程序从循环顶部开始<br>接着程序执行循环中的下一行<br>没有更多代码执行时，程序回到循环顶部，重复上述过程</p>
+<h3 id="For-循环"><a href="#For-循环" class="headerlink" title="For 循环"></a>For 循环</h3><p>for 循环用于遍历序列或根据固定次数执行循环</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">websites =[<span class="string">&quot;facebook.com&quot;</span>, <span class="string">&quot;google.com&quot;</span>, <span class="string">&quot;amazon.com&quot;</span>]</span><br><span class="line"><span class="keyword">for</span> site <span class="keyword">in</span> websites:</span><br><span class="line">     <span class="built_in">print</span>(site)</span><br><span class="line"><span class="comment"># 上面的 for 循环将运行 3 次，输出列表中的每个网站</span></span><br></pre></td></tr></table></figure>
+
+<p>循环遍历每个元素<br>当循环遍历完列表中的所有元素时，程序停止循环</p>
+<p>使用 range 函数生成一系列数值，然后在 for 循环中遍历数值</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(5):</span><br><span class="line">     <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="函数介绍"><a href="#函数介绍" class="headerlink" title="函数介绍"></a>函数介绍</h2><p>函数是一段代码块，可在程序的不同位置被调用，用于执行特定的任务。函数可接收输入参数，处理数据，并返回结果</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">def sayHello(name):</span><br><span class="line">     <span class="built_in">print</span>(<span class="string">&quot;Hello &quot;</span> + name + <span class="string">&quot;! Nice to meet you.&quot;</span>)</span><br><span class="line"></span><br><span class="line">sayHello(<span class="string">&quot;ben&quot;</span>) <span class="comment"># 输出：Hello Ben! Nice to meet you</span></span><br></pre></td></tr></table></figure>
+
+
+<p>def 关键字表示函数的开始。函数名和参数由程序员定义<br>在函数名后面有一对括号 ()，其中包含可以传递给函数的数据<br>冒号 : 表示函数头的结束<br>冒号后缩进的内容都被视为函数的一部分<br>函数会返回一个结果<br><br></p>
+<h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><p>常用的文件操作模式包括读取、写入和追加等，文件操作通过内置的 open() 函数完成</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">f = open(<span class="string">&quot;file_name&quot;</span>, <span class="string">&quot;r&quot;</span>)</span><br><span class="line"><span class="comment"># 使用内置的 open() 函数打开文件，&quot;r&quot; 参数表示“读取”（read），读取文件内容</span></span><br><span class="line"><span class="built_in">print</span>(f.read())</span><br><span class="line"><span class="comment"># 变量 f 调用了 read() 方法来读取文件内容</span></span><br></pre></td></tr></table></figure>
+
+<p>可用 readlines() 方法并循环遍历文件中的每一行，如果文件位于其他位置，需要提供文件的完整路径</p>
+<p>要写入新文件，使用 “w”参数表示“写入”（write）<br>要追加内容，需先打开文件，并在 open() 函数中使用 “a” 参数表示“追加”（append）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">f = open(<span class="string">&quot;text2.txt&quot;</span>, <span class="string">&quot;w&quot;</span>) </span><br><span class="line"><span class="comment"># 要写入新文件，使用 &quot;w&quot;参数表示“写入”（write）</span></span><br><span class="line">f.write(<span class="string">&quot;text2 文件已创建，内容为此文本！&quot;</span>)</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">f = open(<span class="string">&quot;text2.txt&quot;</span>, <span class="string">&quot;a&quot;</span>) </span><br><span class="line"><span class="comment"># 要追加内容，使用 &quot;a&quot; 参数表示“追加”（append）</span></span><br><span class="line">f.write(<span class="string">&quot;文件将包含更多的文本..&quot;</span>)</span><br><span class="line">f.close()</span><br></pre></td></tr></table></figure>
+
+<p>写入文件后使用 close() 函数关闭文件，防止在程序中进一步对该文件进行写入操作<br><br></p>
+<h2 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h2><p>库是一组包含函数、类和变量的文件。通过将库导入到程序中，可使用库中已定义的函数和功能</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import datetime</span><br><span class="line">current_time = datetime.datetime.now()</span><br><span class="line"><span class="built_in">print</span>(current_time)</span><br><span class="line"><span class="comment"># 导入 datetime 库，通过 datetime.datetime.now() 方法调用 .now()</span></span><br></pre></td></tr></table></figure>
+
+<p>使用 import 关键字来导入库，通过引用库名调用其函数</p>
+<p>对渗透测试人员有用的常用库：</p>
+<p>Request - 简单的 HTTP 库。<a href="https://github.com/psf/requests">https://github.com/psf/requests</a><br>Scapy - 用于发送、嗅探、解析和伪造网络数据包。<a href="https://github.com/secdev/scapy">https://github.com/secdev/scapy</a><br>Pwntools - 一个用于 CTF 和漏洞开发的库。<a href="https://github.com/Gallopsled/pwntools">https://github.com/Gallopsled/pwntools</a></p>
+<p>许多库已内置于 Python 编程语言中；对于未预装的第三方库，可使用 pip 工具进行安装，pip 是 Python 的包管理器<br><br></p>
+<!-- https://tryhackme.com/r/room/pythonbasics -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
+]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>博客模板</title>
+    <url>/2024/10/27/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+
+
+
+<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+<!-- 网站 -->
+<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
       <categories>
         <category>模板</category>
       </categories>
@@ -453,163 +630,35 @@
       </categories>
   </entry>
   <entry>
-    <title>Python基础</title>
-    <url>/2024/10/28/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD2/</url>
-    <content><![CDATA[<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><p>使用 print() 函数输出放在括号 () 里的内容，因为输出的为字符串，所以需要双引号 “”</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello World&quot;</span>)</span><br><span class="line"><span class="comment"># 这是一个注释</span></span><br></pre></td></tr></table></figure>
-
-<p>第 1 行代码是输出代码，当运行时，它会在屏幕上输出文本 Hello World<br>第 2 行代码是注释代码，以 # 符号开头，注释不会被计算机执行，它是程序员用来帮助其他人理解代码含义的解释性文本<br><br></p>
-<h2 id="数学运算符"><a href="#数学运算符" class="headerlink" title="数学运算符"></a>数学运算符</h2><h3 id="数学运算符-1"><a href="#数学运算符-1" class="headerlink" title="数学运算符"></a>数学运算符</h3><table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>语法</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>加法</td>
-<td>+</td>
-</tr>
-<tr>
-<td>减法</td>
-<td>-</td>
-</tr>
-<tr>
-<td>乘法</td>
-<td>*</td>
-</tr>
-<tr>
-<td>除法</td>
-<td>&#x2F;</td>
-</tr>
-<tr>
-<td>取模</td>
-<td>%</td>
-</tr>
-<tr>
-<td>幂运算</td>
-<td>**</td>
-</tr>
-</tbody></table>
-<br>
+    <title>pwntools</title>
+    <url>/2024/10/29/%E5%B7%A5%E5%85%B7pwntools/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Gallopsled/pwntools">pwntools</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Pwntools 是一个 CTF 框架和漏洞开发库。它用 Python 编写，旨在快速进行原型设计和开发，并旨在使漏洞编写尽可能简单。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
 
-
-<h2 id="变量和数据类型"><a href="#变量和数据类型" class="headerlink" title="变量和数据类型"></a>变量和数据类型</h2><p>变量允许在程序中存储和更新数据，通过变量名可访问和管理存储的数据</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">food = <span class="string">&quot;ice cream&quot;</span></span><br><span class="line"><span class="comment"># 变量 food 存储字符串 &quot;ice cream&quot;</span></span><br><span class="line"></span><br><span class="line">money = 2000</span><br><span class="line"><span class="comment"># 变量 money 存储数字 2000</span></span><br><span class="line"></span><br><span class="line">age = 30</span><br><span class="line"><span class="comment"># 将变量 age 赋值为 30</span></span><br><span class="line"></span><br><span class="line">age = age + 1</span><br><span class="line"><span class="comment"># 等号左侧是已创建的变量名 age，等号右侧是要赋的新值。将 age 增加 1，通过 = 运算符更新 age 变量值</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(age)</span><br><span class="line"><span class="comment"># 输出 age 为 31</span></span><br></pre></td></tr></table></figure>
-
-<p>存储在变量中的数据的类型包括:</p>
-<p>字符串（String）：用于存储字符<br>整数（Integer）：表示整数值<br>浮点数（Float）：表示小数或分数<br>布尔值（Boolean）：通常用于条件判断，存储布尔值 True 或 False<br>列表（List）：允许按位置存储多个值，用于存储不同数据类型的集合<br><br></p>
-<h2 id="逻辑和布尔运算符"><a href="#逻辑和布尔运算符" class="headerlink" title="逻辑和布尔运算符"></a>逻辑和布尔运算符</h2><p>逻辑运算符允许进行赋值和比较，常用于条件测试</p>
-<table>
-<thead>
-<tr>
-<th>逻辑运算</th>
-<th>运算符</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>大于</td>
-<td>&gt;</td>
-</tr>
-<tr>
-<td>小于</td>
-<td>&lt;</td>
-</tr>
-<tr>
-<td>等于</td>
-<td>&#x3D;&#x3D;</td>
-</tr>
-<tr>
-<td>不等于</td>
-<td>!&#x3D;</td>
-</tr>
-<tr>
-<td>大于或等于</td>
-<td>&gt;&#x3D;</td>
-</tr>
-<tr>
-<td>小于或等于</td>
-<td>&lt;&#x3D;</td>
-</tr>
-</tbody></table>
-<p>布尔运算符用于连接和比较语句之间的关系</p>
-<table>
-<thead>
-<tr>
-<th>布尔运算</th>
-<th>运算符</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>仅当两个条件都为真时，结果才为真</td>
-<td>AND</td>
-</tr>
-<tr>
-<td>只需一个条件为真即可</td>
-<td>OR</td>
-</tr>
-<tr>
-<td>条件为参数的相反情况</td>
-<td>NOT</td>
-</tr>
-</tbody></table>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">a = 1</span><br><span class="line"><span class="keyword">if</span> a == 1 or a &gt; 10:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;a 要么是 1，要么大于 10&quot;</span>)</span><br><span class="line"></span><br><span class="line">name = <span class="string">&quot;bob&quot;</span> </span><br><span class="line">hungry = True</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> name == <span class="string">&quot;bob&quot;</span> and hungry == True:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;bob 很饿&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> name == <span class="string">&quot;bob&quot;</span> and not hungry:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;bob 不饿&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>: <span class="comment"># 如果所有其他 if 条件都不满足</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;不确定这是谁，也不确定是否饿了&quot;</span>)</span><br></pre></td></tr></table></figure>
-<br>
-
-
-
-
-
-<h2 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h2><p>使用 if 语句可让程序根据条件判断来选择不同的执行路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> age &lt; 18:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;没有达到驾驶年龄&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;达到驾驶年龄&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>if 关键字表示语句开始，后面跟随条件<br>冒号 : 表示 if 语句结束<br>if 语句检查条件是否为真，如果为真，则执行相应的代码块，否则可以执行 else 或 elif 分支中的其他代码块。<br>任何在冒号后缩进的内容都被视为 if 语句的一部分，程序将执行这些内容<br><br></p>
-<h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><p>循环可以让程序多次重复执行操作，主要有两种类型的循环：for 循环和 while 循环</p>
-<h3 id="While-循环"><a href="#While-循环" class="headerlink" title="While 循环"></a>While 循环</h3><p>while 循环基于条件判断执行，用于在条件满足时执行，直到条件不满足为止<br>当条件始终为 True 时，while 循环会无限次运行<br>当条件变为 False 时，循环会停止</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">i = 1</span><br><span class="line"><span class="keyword">while</span> i &lt;= 10:</span><br><span class="line">     <span class="built_in">print</span>(i)</span><br><span class="line">     i = i + 1</span><br><span class="line"><span class="comment"># while 循环将运行 10 次，每次循环都会输出变量 i 的值</span></span><br></pre></td></tr></table></figure>
-
-<p>while 语句指定了循环的起始位置<br>每次循环，程序从循环顶部开始<br>接着程序执行循环中的下一行<br>没有更多代码执行时，程序回到循环顶部，重复上述过程</p>
-<h3 id="For-循环"><a href="#For-循环" class="headerlink" title="For 循环"></a>For 循环</h3><p>for 循环用于遍历序列或根据固定次数执行循环</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">websites =[<span class="string">&quot;facebook.com&quot;</span>, <span class="string">&quot;google.com&quot;</span>, <span class="string">&quot;amazon.com&quot;</span>]</span><br><span class="line"><span class="keyword">for</span> site <span class="keyword">in</span> websites:</span><br><span class="line">     <span class="built_in">print</span>(site)</span><br><span class="line"><span class="comment"># 上面的 for 循环将运行 3 次，输出列表中的每个网站</span></span><br></pre></td></tr></table></figure>
-
-<p>循环遍历每个元素<br>当循环遍历完列表中的所有元素时，程序停止循环</p>
-<p>使用 range 函数生成一系列数值，然后在 for 循环中遍历数值</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(5):</span><br><span class="line">     <span class="built_in">print</span>(i)</span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-
-<h2 id="函数介绍"><a href="#函数介绍" class="headerlink" title="函数介绍"></a>函数介绍</h2><p>函数是一段代码块，可在程序的不同位置被调用，用于执行特定的任务。函数可接收输入参数，处理数据，并返回结果</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">def sayHello(name):</span><br><span class="line">     <span class="built_in">print</span>(<span class="string">&quot;Hello &quot;</span> + name + <span class="string">&quot;! Nice to meet you.&quot;</span>)</span><br><span class="line"></span><br><span class="line">sayHello(<span class="string">&quot;ben&quot;</span>) <span class="comment"># 输出：Hello Ben! Nice to meet you</span></span><br></pre></td></tr></table></figure>
-
-
-<p>def 关键字表示函数的开始。函数名和参数由程序员定义<br>在函数名后面有一对括号 ()，其中包含可以传递给函数的数据<br>冒号 : 表示函数头的结束<br>冒号后缩进的内容都被视为函数的一部分<br>函数会返回一个结果<br><br></p>
-<h2 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h2><p>常用的文件操作模式包括读取、写入和追加等，文件操作通过内置的 open() 函数完成</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">f = open(<span class="string">&quot;file_name&quot;</span>, <span class="string">&quot;r&quot;</span>)</span><br><span class="line"><span class="comment"># 使用内置的 open() 函数打开文件，&quot;r&quot; 参数表示“读取”（read），读取文件内容</span></span><br><span class="line"><span class="built_in">print</span>(f.read())</span><br><span class="line"><span class="comment"># 变量 f 调用了 read() 方法来读取文件内容</span></span><br></pre></td></tr></table></figure>
-
-<p>可用 readlines() 方法并循环遍历文件中的每一行，如果文件位于其他位置，需要提供文件的完整路径</p>
-<p>要写入新文件，使用 “w”参数表示“写入”（write）<br>要追加内容，需先打开文件，并在 open() 函数中使用 “a” 参数表示“追加”（append）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">f = open(<span class="string">&quot;text2.txt&quot;</span>, <span class="string">&quot;w&quot;</span>) </span><br><span class="line"><span class="comment"># 要写入新文件，使用 &quot;w&quot;参数表示“写入”（write）</span></span><br><span class="line">f.write(<span class="string">&quot;text2 文件已创建，内容为此文本！&quot;</span>)</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">f = open(<span class="string">&quot;text2.txt&quot;</span>, <span class="string">&quot;a&quot;</span>) </span><br><span class="line"><span class="comment"># 要追加内容，使用 &quot;a&quot; 参数表示“追加”（append）</span></span><br><span class="line">f.write(<span class="string">&quot;文件将包含更多的文本..&quot;</span>)</span><br><span class="line">f.close()</span><br></pre></td></tr></table></figure>
-
-<p>写入文件后使用 close() 函数关闭文件，防止在程序中进一步对该文件进行写入操作<br><br></p>
-<h2 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h2><p>库是一组包含函数、类和变量的文件。通过将库导入到程序中，可使用库中已定义的函数和功能</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import datetime</span><br><span class="line">current_time = datetime.datetime.now()</span><br><span class="line"><span class="built_in">print</span>(current_time)</span><br><span class="line"><span class="comment"># 导入 datetime 库，通过 datetime.datetime.now() 方法调用 .now()</span></span><br></pre></td></tr></table></figure>
-
-<p>使用 import 关键字来导入库，通过引用库名调用其函数</p>
-<p>对渗透测试人员有用的常用库：</p>
-<p>Request - 简单的 HTTP 库。<a href="https://github.com/psf/requests">https://github.com/psf/requests</a><br>Scapy - 用于发送、嗅探、解析和伪造网络数据包。<a href="https://github.com/secdev/scapy">https://github.com/secdev/scapy</a><br>Pwntools - 一个用于 CTF 和漏洞开发的库。<a href="https://github.com/Gallopsled/pwntools">https://github.com/Gallopsled/pwntools</a></p>
-<p>许多库已内置于 Python 编程语言中；对于未预装的第三方库，可使用 pip 工具进行安装，pip 是 Python 的包管理器<br><br></p>
-<!-- https://tryhackme.com/r/room/pythonbasics -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
-]]></content>
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
       <categories>
-        <category>基本技能</category>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>scapy</title>
+    <url>/2024/10/29/%E5%B7%A5%E5%85%B7scapy/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/secdev/scapy">scapy</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Scapy 是一个强大的基于 Python 的交互式数据包操作程序和库。<br>它能够伪造或解码多种协议的数据包、在线上发送数据包、捕获数据包、使用 pcap 文件存储或读取数据包、匹配请求和回复等等。它旨在通过使用有效的默认值来实现快速数据包原型设计。<br>它可以轻松处理大多数经典任务，如扫描、跟踪路由、探测、单元测试、攻击或网络发现（它可以替代 hping、85% 的 nmap、arpspoof、arp-sk、arping、tcpdump、wireshark、p0f 等）。它在许多其他大多数工具无法处理的特定任务上也表现得非常出色，例如发送无效帧、注入您自己的 802.11 帧、组合技术（VLAN 跳跃+ARP 缓存中毒、在 WEP 保护通道上解码 VoIP，…）等<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -641,23 +690,6 @@
 <!-- 成功使用✔? ✖? -->]]></content>
       <categories>
         <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网站模板</title>
-    <url>/2024/10/27/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
       </categories>
   </entry>
   <entry>
@@ -761,6 +793,22 @@
 <!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
       <categories>
         <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>requests</title>
+    <url>/2024/10/29/%E5%B7%A5%E5%85%B7requests/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/psf/requests">requests</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Requests是一个简单而优雅的 HTTP 库<br>Requests可让您极其轻松地发送 HTTP&#x2F;1.1 请求。无需手动将查询字符串添加到 URL，也无需对PUT&amp;POST数据进行表单编码 — 但现在，只需使用该json方法即可！<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
