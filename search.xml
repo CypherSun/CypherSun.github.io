@@ -19,161 +19,23 @@
       </categories>
   </entry>
   <entry>
-    <title>Linux基础知识 第三部分</title>
-    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-3/</url>
-    <content><![CDATA[<h2 id="终端文本编辑器"><a href="#终端文本编辑器" class="headerlink" title="终端文本编辑器"></a>终端文本编辑器</h2><h3 id="使用-Nano-文本编辑器"><a href="#使用-Nano-文本编辑器" class="headerlink" title="使用 Nano 文本编辑器"></a>使用 Nano 文本编辑器</h3><p>nano 是简单文本编辑器，输入 nano 和文件名来创建或编辑文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nano file1</span><br><span class="line"><span class="comment"># 打开或创建名为 file1 的文件进行编辑</span></span><br></pre></td></tr></table></figure>
-
-<p>使用上下键，回车开始新行</p>
-<p>Nano 可用功能包括：<br>搜索文本<br>复制和粘贴<br>跳转到指定行号<br>查看当前所在的行号</p>
-<p>按 Ctrl（显示为 ^）和字母使用功能：<br>Ctrl + W：搜索文本<br>Ctrl + K：剪切行<br>Ctrl + U：粘贴行<br>Ctrl + _：跳转到指定行号<br>Ctrl + C：查看当前行号<br>Ctrl + X：退出 nano</p>
-<h3 id="VIM"><a href="#VIM" class="headerlink" title="VIM"></a>VIM</h3><p>VIM 是高级文本编辑器，显著优势包括：</p>
-<p><strong>可定制</strong>：可根据自己需求修改快捷键和配置<br><strong>语法高亮</strong>：支持语法高亮显示，对编写或维护代码非常有帮助，是首选<br><strong>兼容</strong>：可在几乎所有终端运行，某些系统可能默认没安装 nano<br><strong>学习资源</strong>：拥有大量的学习资料，包括速查表、教程和社区支持等<br><br></p>
-<h2 id="常用-实用工具"><a href="#常用-实用工具" class="headerlink" title="常用&#x2F;实用工具"></a>常用&#x2F;实用工具</h2><h3 id="使用-Wget-命令"><a href="#使用-Wget-命令" class="headerlink" title="使用 Wget 命令"></a>使用 Wget 命令</h3><p>使用 wget 命令通过提供的目标资源 URL 地址， 使用 HTTP 协议从网页上下载文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://example/text1.txt</span><br><span class="line"><span class="comment"># 从指定网址下载文件 text1.txt</span></span><br></pre></td></tr></table></figure>
+    <title>工具模板</title>
+    <url>/2024/10/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
 
 
-<h3 id="从主机传输文件-SCP（SSH）"><a href="#从主机传输文件-SCP（SSH）" class="headerlink" title="从主机传输文件 - SCP（SSH）"></a>从主机传输文件 - SCP（SSH）</h3><p>安全复制（SCP）是一种通过 SSH 协议在两台计算机之间传输文件的方法，SCP 提供了身份验证和加密</p>
-<p>使用 scp “来源”和“目标”的模式，需要当前系统和远程系统的用户名和密码<br>scp 可以将文件或目录从当前系统复制到远程系统，或者从远程系统复制到当前系统。</p>
-<p>使用 scp 命令和地址从本地系统复制文件到远程系统</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scp /path/text1.txt remoteuser@1.1.1.1:/path/text1.txt</span><br><span class="line"><span class="comment"># 将本地系统中的 /path/text1.txt 复制到远程系统上的 /path/text1.txt</span></span><br><span class="line"><span class="comment"># scp [本地文件路径] [远程用户]@[远程IP地址]:[远程目标路径]</span></span><br></pre></td></tr></table></figure>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
 
 
-<p>使用 scp 命令和地址从远程系统复制文件到本地系统</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scp remoteuser@1.1.1.1:/path/remote/text1.txt /path/local/text1.txt</span><br><span class="line"><span class="comment"># 将远程系统上的 /path/remote/text1.txt 复制到本地系统的 /path/local/text1.txt</span></span><br><span class="line"><span class="comment"># scp [远程用户]@[远程IP地址]:[远程文件路径] [本地目标路径]</span></span><br></pre></td></tr></table></figure>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
-
-<h3 id="从主机提供文件-WEB"><a href="#从主机提供文件-WEB" class="headerlink" title="从主机提供文件 - WEB"></a>从主机提供文件 - WEB</h3><p>Python 提供了 http.server 模块，它可以将计算机变成一个简易 Web 服务器用于提供文件，其他计算机可以通过命令来下载文件</p>
-<p>使用 Python3 的 http.server 模块会在当前目录下提供文件，并且可通过参数更改目录<br>运行 Python3 Web 服务器的终端必须保持打开状态，因为 Python3 Web 服务器启动后会在终端持续运行，直到手动取消</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python3 -m http.server</span><br><span class="line"><span class="comment"># 使用 pyhon 搭建简易的 http 服务器</span></span><br></pre></td></tr></table></figure>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
 
-<p>Python3 Web 服务器默认在端口 8000 上运行，另一台在使用命令下载文件时，需要指定该端口</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://1.1.1.1:8000/file1</span><br><span class="line"><span class="comment"># 另一台主机通过 wget 命令下载 file1</span></span><br></pre></td></tr></table></figure>
-
-<p>http.server 模块没有目录索引功能，因此必须确切知道要下载的文件的名称和路径<br><br></p>
-<h2 id="进程基础知识"><a href="#进程基础知识" class="headerlink" title="进程基础知识"></a>进程基础知识</h2><p>进程是计算机上运行的程序，由内核进行管理。每个进程都有唯一的进程标识符（PID），PID 会按照进程启动的顺序递增</p>
-<h3 id="查看进程"><a href="#查看进程" class="headerlink" title="查看进程"></a>查看进程</h3><p>使用 ps 命令提供正在运行的进程列表和附加信息<br>使用 ps aux 命令查看其他用户运行的进程以及未从会话运行的进程</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ps</span><br><span class="line"><span class="comment"># 显示当前用户会话中的进程列表</span></span><br><span class="line"></span><br><span class="line">ps aux</span><br><span class="line"><span class="comment"># 显示所有用户的所有进程，包括系统进程和后台进程</span></span><br></pre></td></tr></table></figure>
-
-
-<p>使用 top 命令实时显示系统上运行的进程信息，不是一次性的快照。这些统计数据自动刷新，默认每 10 秒刷新一次，可以更详细地了解系统的实时运行状态</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">top</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="管理进程"><a href="#管理进程" class="headerlink" title="管理进程"></a>管理进程</h3><p>使用 kill 命令提供要终止进程的 PID，通过发送信号来终止进程</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">kill</span> 1</span><br><span class="line"><span class="comment"># 终止 PID 为 1 的进程</span></span><br></pre></td></tr></table></figure>
-
-<p>使用不同的信号类型来指定终止方式：</p>
-<p>SIGTERM (15)：进程终止，但允许它在终止前进行清理操作。默认 kill 命令会发送这个信号<br>SIGKILL (9)：强制终止进程，不允许其进行清理操作，适用于无法正常停止的进程<br>SIGSTOP (19)：停止或挂起进程但不终止，可使用 SIGCONT 恢复执行</p>
-<h3 id="进程是如何启动的？"><a href="#进程是如何启动的？" class="headerlink" title="进程是如何启动的？"></a>进程是如何启动的？</h3><p>操作系统（os）使用命名空间将计算机上可用的资源最终分配给进程。命名空间的优点是安全性，它可隔离进程，只有位于同一命名空间中的进程才可见</p>
-<p>在系统启动时，ID 为 0 的进程是最早创建的进程，这个进程通常是系统的 init 进程。<br>init 进程通常是 systemd，负责启动和管理系统的所有其他进程，是所有用户进程的父进程</p>
-<h3 id="进程-服务在系统启动时自动运行"><a href="#进程-服务在系统启动时自动运行" class="headerlink" title="进程&#x2F;服务在系统启动时自动运行"></a>进程&#x2F;服务在系统启动时自动运行</h3><p>管理员会配置有些应用程序在系统启动时自动运行</p>
-<p>使用 systemctl 命令与 systemd 进程进行交互和管理</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">systemctl start apache</span><br><span class="line"><span class="comment"># systemctl [选项] [服务]</span></span><br></pre></td></tr></table></figure>
-
-<p>systemctl可以执行四种操作：</p>
-<p>start（启动）<br>stop（停止）<br>enable（启用）<br>disable（禁用）</p>
-<h3 id="Linux中的后台与前台运行"><a href="#Linux中的后台与前台运行" class="headerlink" title="Linux中的后台与前台运行"></a>Linux中的后台与前台运行</h3><p>进程可以以两种状态运行：后台和前台</p>
-<p>使用 &amp; 操作符执行命令并在后台运行<br>使用 ctrl + z 将前台进程挂起<br>使用 fg 命令可以将挂起或在后台的进程恢复到前台<br>使用 bg 命令可以将已挂起的进程恢复为在后台继续运行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://example.com/passwords.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/passwords.txt 文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">fg</span></span><br><span class="line"><span class="comment"># 将最近挂起或后台的进程恢复到前台</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">bg</span></span><br><span class="line"><span class="comment"># 将已挂起的进程恢复为在后台继续运行</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-
-<h2 id="系统维护：自动化"><a href="#系统维护：自动化" class="headerlink" title="系统维护：自动化"></a>系统维护：自动化</h2><p>cron：<br>cron 在系统启动时运行，用于管理和执行定时任务<br>cron 会定期检查是否有预定任务需要执行，如果有，它就会执行任务<br>cron 负责执行所有已定义的任务，这些任务的定义来源是 crontab 文件</p>
-<p>crontab：<br>crontab 是包含定时任务定义的特殊文件，任务按照特定的时间格式设定，告诉 cron 在什么时间运行哪些任务<br>crontab 格式可被 cron 进程识别，并可逐步执行每行</p>
-<p>crontab 需要 6 个特定值：</p>
-<table>
-<thead>
-<tr>
-<th>值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>MIN</td>
-<td>在每小时的第几分钟执行（0-59）</td>
-</tr>
-<tr>
-<td>HOUR</td>
-<td>在每天的几点钟执行（0-23）</td>
-</tr>
-<tr>
-<td>DOM</td>
-<td>在每月的哪一天执行（1-31）</td>
-</tr>
-<tr>
-<td>MON</td>
-<td>在每年的哪个月份执行（1-12）</td>
-</tr>
-<tr>
-<td>DOW</td>
-<td>在每周的哪一天执行（0-7，0和7表示星期日）</td>
-</tr>
-<tr>
-<td>CMD</td>
-<td>要执行的实际命令</td>
-</tr>
-</tbody></table>
-<p>通过 crontab -e 命令打开文本编辑器来编辑定时任务<br>使用 * 通配符来表示任意值，不指定特定的时间字段</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">0 */12 * * * <span class="built_in">cp</span> -R /home/cmnatic/Documents /var/backups/</span><br><span class="line"><span class="comment"># 每 12 小时执行一次 cp 命令，将 /home/cmnatic/Documents 目录备份到 /var/backups/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">0 */12 * * * [要执行的命令] [源路径] [目标路径]</span><br><span class="line"><span class="comment"># 每 12 小时执行一次 [要执行的命令]，从 [源路径] 复制或备份到 [目标路径]</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-
-<h2 id="系统维护：软件包管理"><a href="#系统维护：软件包管理" class="headerlink" title="系统维护：软件包管理"></a>系统维护：软件包管理</h2><p>Linux 最显著的优势：用户可访问性和开源工具的优点。当开发者可以将软件提交给社区，会将其提交到一个“apt”软件库中，程序和工具将被发布给广大用户。在 Linux 上使用 ls 命令时，这些文件充当了网关或注册表的角色。</p>
-<h3 id="使用-add-apt-repository-和-apt-命令"><a href="#使用-add-apt-repository-和-apt-命令" class="headerlink" title="使用 add-apt-repository 和 apt 命令"></a>使用 add-apt-repository 和 apt 命令</h3><p>软件库：存放软件包的集合，包含很多软件包<br>软件包：可安装的软件单元，包含特定程序的所有文件和依赖项</p>
-<p>add-apt-repository：用于添加或移除软件库的工具，这会将新的软件库地址添加到系统的 sources.list.d 目录中，并自动更新 GPG 密钥<br>apt：用于管理软件包的安装和更新的工具，包含整套工具用于管理软件包和软件源，优势在于每次更新系统时，会自动检查并更新已添加的软件库中的软件包</p>
-<p>使用 add-apt-repository 命令添加第三方提供的软件库，包含官方库中没有的软件包或最新版本<br>使用 apt 命令安装和卸载软件包，更新已安装的软件包</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> add-apt-repository ppa:PPA_Name/ppa</span><br><span class="line"><span class="comment"># 添加 PPA 软件库，现在系统中包含两个软件库：自带的 Ubuntu 官方软件库和 PPA 软件库，软件库将自动处理 GPG 密钥</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="comment"># 更新系统中的软件库列表</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> apt install sublime-text</span><br><span class="line"><span class="comment"># 从可用的软件库中自动选择下载和安装软件</span></span><br></pre></td></tr></table></figure>
-
-
-<p>添加第三方软件，需要手动添加 GPG 密钥和软件库地址，以确保下载内容的完整性。GPG（GNU Privacy Guard）密钥是开发者提供的安全验证工具，用于确保下载的软件包是来自可信任的来源。如果密钥与系统信任的密钥和开发者使用的密钥不匹配，软件将无法下载。</p>
-<p>对于第三方软件库，流程如下：</p>
-<p>1.添加 GPG 密钥：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | <span class="built_in">sudo</span> apt-key add -</span><br><span class="line"><span class="comment"># 对于第三方软件库，需要手动添加 GPG 密钥和软件库地址，将密钥添加到系统的信任列表中</span></span><br></pre></td></tr></table></figure>
-
-
-<p>2.手动创建 .list 文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/apt/sources.list.d/sublime-text.list</span><br><span class="line"><span class="comment"># 在 /etc/apt/sources.list.d 目录中创建一个 sublimetext.list 的文件</span></span><br></pre></td></tr></table></figure>
-
-
-<p>3.添加软件库源信息：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deb https://download.sublimetext.com/ apt/stable/</span><br><span class="line"><span class="comment"># 在编辑器中添加类似以下内容的软件库地址</span></span><br></pre></td></tr></table></figure>
-
-
-<p>4.更新软件库列表</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="comment"># 更新系统中的软件库列表，使 `apt` 识别新的第三方软件库。</span></span><br></pre></td></tr></table></figure>
-
-
-<p>5.安装软件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install sublime-text</span><br><span class="line"><span class="comment"># 从新的第三方软件库中安装软件</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p>使用 apt remove 命令来删除软件<br>使用 add-apt-repository –remove 命令来删除软件库，或者手动删除之前添加的源文件，使用命令删除已安装的软件包</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt remove sublime-text</span><br><span class="line"><span class="comment"># sudo apt remove [软件名]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> add-apt-repository --remove ppa:PPA_Name/ppa</span><br><span class="line"><span class="comment"># 删除已添加的 PPA 软件库</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-
-<h2 id="系统维护：日志"><a href="#系统维护：日志" class="headerlink" title="系统维护：日志"></a>系统维护：日志</h2><p>日志文件存放在 &#x2F;var&#x2F;log 目录中，包含了系统上运行的应用程序和服务生成的日志信息。操作系统能自动管理这些日志，称为 <strong>“日志轮替”</strong>（log rotation）。日志轮替会自动归档和清理旧的日志文件，以防止日志文件占用过多的磁盘空间。</p>
-<p>服务日志能监控系统健康状况和安全性，系统还会生成日志文件，记录操作系统的运行状态和用户行为<br><br></p>
-<!-- https://tryhackme.com/r/room/linuxfundamentalspart3 -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
       <categories>
-        <category>基本技能</category>
+        <category>模板</category>
       </categories>
   </entry>
   <entry>
@@ -450,6 +312,164 @@
       </categories>
   </entry>
   <entry>
+    <title>Linux基础知识 第三部分</title>
+    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-3/</url>
+    <content><![CDATA[<h2 id="终端文本编辑器"><a href="#终端文本编辑器" class="headerlink" title="终端文本编辑器"></a>终端文本编辑器</h2><h3 id="使用-Nano-文本编辑器"><a href="#使用-Nano-文本编辑器" class="headerlink" title="使用 Nano 文本编辑器"></a>使用 Nano 文本编辑器</h3><p>nano 是简单文本编辑器，输入 nano 和文件名来创建或编辑文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nano file1</span><br><span class="line"><span class="comment"># 打开或创建名为 file1 的文件进行编辑</span></span><br></pre></td></tr></table></figure>
+
+<p>使用上下键，回车开始新行</p>
+<p>Nano 可用功能包括：<br>搜索文本<br>复制和粘贴<br>跳转到指定行号<br>查看当前所在的行号</p>
+<p>按 Ctrl（显示为 ^）和字母使用功能：<br>Ctrl + W：搜索文本<br>Ctrl + K：剪切行<br>Ctrl + U：粘贴行<br>Ctrl + _：跳转到指定行号<br>Ctrl + C：查看当前行号<br>Ctrl + X：退出 nano</p>
+<h3 id="VIM"><a href="#VIM" class="headerlink" title="VIM"></a>VIM</h3><p>VIM 是高级文本编辑器，显著优势包括：</p>
+<p><strong>可定制</strong>：可根据自己需求修改快捷键和配置<br><strong>语法高亮</strong>：支持语法高亮显示，对编写或维护代码非常有帮助，是首选<br><strong>兼容</strong>：可在几乎所有终端运行，某些系统可能默认没安装 nano<br><strong>学习资源</strong>：拥有大量的学习资料，包括速查表、教程和社区支持等<br><br></p>
+<h2 id="常用-实用工具"><a href="#常用-实用工具" class="headerlink" title="常用&#x2F;实用工具"></a>常用&#x2F;实用工具</h2><h3 id="使用-Wget-命令"><a href="#使用-Wget-命令" class="headerlink" title="使用 Wget 命令"></a>使用 Wget 命令</h3><p>使用 wget 命令通过提供的目标资源 URL 地址， 使用 HTTP 协议从网页上下载文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://example/text1.txt</span><br><span class="line"><span class="comment"># 从指定网址下载文件 text1.txt</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="从主机传输文件-SCP（SSH）"><a href="#从主机传输文件-SCP（SSH）" class="headerlink" title="从主机传输文件 - SCP（SSH）"></a>从主机传输文件 - SCP（SSH）</h3><p>安全复制（SCP）是一种通过 SSH 协议在两台计算机之间传输文件的方法，SCP 提供了身份验证和加密</p>
+<p>使用 scp “来源”和“目标”的模式，需要当前系统和远程系统的用户名和密码<br>scp 可以将文件或目录从当前系统复制到远程系统，或者从远程系统复制到当前系统。</p>
+<p>使用 scp 命令和地址从本地系统复制文件到远程系统</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scp /path/text1.txt remoteuser@1.1.1.1:/path/text1.txt</span><br><span class="line"><span class="comment"># 将本地系统中的 /path/text1.txt 复制到远程系统上的 /path/text1.txt</span></span><br><span class="line"><span class="comment"># scp [本地文件路径] [远程用户]@[远程IP地址]:[远程目标路径]</span></span><br></pre></td></tr></table></figure>
+
+
+<p>使用 scp 命令和地址从远程系统复制文件到本地系统</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">scp remoteuser@1.1.1.1:/path/remote/text1.txt /path/local/text1.txt</span><br><span class="line"><span class="comment"># 将远程系统上的 /path/remote/text1.txt 复制到本地系统的 /path/local/text1.txt</span></span><br><span class="line"><span class="comment"># scp [远程用户]@[远程IP地址]:[远程文件路径] [本地目标路径]</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="从主机提供文件-WEB"><a href="#从主机提供文件-WEB" class="headerlink" title="从主机提供文件 - WEB"></a>从主机提供文件 - WEB</h3><p>Python 提供了 http.server 模块，它可以将计算机变成一个简易 Web 服务器用于提供文件，其他计算机可以通过命令来下载文件</p>
+<p>使用 Python3 的 http.server 模块会在当前目录下提供文件，并且可通过参数更改目录<br>运行 Python3 Web 服务器的终端必须保持打开状态，因为 Python3 Web 服务器启动后会在终端持续运行，直到手动取消</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python3 -m http.server</span><br><span class="line"><span class="comment"># 使用 pyhon 搭建简易的 http 服务器</span></span><br></pre></td></tr></table></figure>
+
+
+<p>Python3 Web 服务器默认在端口 8000 上运行，另一台在使用命令下载文件时，需要指定该端口</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://1.1.1.1:8000/file1</span><br><span class="line"><span class="comment"># 另一台主机通过 wget 命令下载 file1</span></span><br></pre></td></tr></table></figure>
+
+<p>http.server 模块没有目录索引功能，因此必须确切知道要下载的文件的名称和路径<br><br></p>
+<h2 id="进程基础知识"><a href="#进程基础知识" class="headerlink" title="进程基础知识"></a>进程基础知识</h2><p>进程是计算机上运行的程序，由内核进行管理。每个进程都有唯一的进程标识符（PID），PID 会按照进程启动的顺序递增</p>
+<h3 id="查看进程"><a href="#查看进程" class="headerlink" title="查看进程"></a>查看进程</h3><p>使用 ps 命令提供正在运行的进程列表和附加信息<br>使用 ps aux 命令查看其他用户运行的进程以及未从会话运行的进程</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ps</span><br><span class="line"><span class="comment"># 显示当前用户会话中的进程列表</span></span><br><span class="line"></span><br><span class="line">ps aux</span><br><span class="line"><span class="comment"># 显示所有用户的所有进程，包括系统进程和后台进程</span></span><br></pre></td></tr></table></figure>
+
+
+<p>使用 top 命令实时显示系统上运行的进程信息，不是一次性的快照。这些统计数据自动刷新，默认每 10 秒刷新一次，可以更详细地了解系统的实时运行状态</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">top</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="管理进程"><a href="#管理进程" class="headerlink" title="管理进程"></a>管理进程</h3><p>使用 kill 命令提供要终止进程的 PID，通过发送信号来终止进程</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">kill</span> 1</span><br><span class="line"><span class="comment"># 终止 PID 为 1 的进程</span></span><br></pre></td></tr></table></figure>
+
+<p>使用不同的信号类型来指定终止方式：</p>
+<p>SIGTERM (15)：进程终止，但允许它在终止前进行清理操作。默认 kill 命令会发送这个信号<br>SIGKILL (9)：强制终止进程，不允许其进行清理操作，适用于无法正常停止的进程<br>SIGSTOP (19)：停止或挂起进程但不终止，可使用 SIGCONT 恢复执行</p>
+<h3 id="进程是如何启动的？"><a href="#进程是如何启动的？" class="headerlink" title="进程是如何启动的？"></a>进程是如何启动的？</h3><p>操作系统（os）使用命名空间将计算机上可用的资源最终分配给进程。命名空间的优点是安全性，它可隔离进程，只有位于同一命名空间中的进程才可见</p>
+<p>在系统启动时，ID 为 0 的进程是最早创建的进程，这个进程通常是系统的 init 进程。<br>init 进程通常是 systemd，负责启动和管理系统的所有其他进程，是所有用户进程的父进程</p>
+<h3 id="进程-服务在系统启动时自动运行"><a href="#进程-服务在系统启动时自动运行" class="headerlink" title="进程&#x2F;服务在系统启动时自动运行"></a>进程&#x2F;服务在系统启动时自动运行</h3><p>管理员会配置有些应用程序在系统启动时自动运行</p>
+<p>使用 systemctl 命令与 systemd 进程进行交互和管理</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">systemctl start apache</span><br><span class="line"><span class="comment"># systemctl [选项] [服务]</span></span><br></pre></td></tr></table></figure>
+
+<p>systemctl可以执行四种操作：</p>
+<p>start（启动）<br>stop（停止）<br>enable（启用）<br>disable（禁用）</p>
+<h3 id="Linux中的后台与前台运行"><a href="#Linux中的后台与前台运行" class="headerlink" title="Linux中的后台与前台运行"></a>Linux中的后台与前台运行</h3><p>进程可以以两种状态运行：后台和前台</p>
+<p>使用 &amp; 操作符执行命令并在后台运行<br>使用 ctrl + z 将前台进程挂起<br>使用 fg 命令可以将挂起或在后台的进程恢复到前台<br>使用 bg 命令可以将已挂起的进程恢复为在后台继续运行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://example.com/passwords.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/passwords.txt 文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">fg</span></span><br><span class="line"><span class="comment"># 将最近挂起或后台的进程恢复到前台</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">bg</span></span><br><span class="line"><span class="comment"># 将已挂起的进程恢复为在后台继续运行</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="系统维护：自动化"><a href="#系统维护：自动化" class="headerlink" title="系统维护：自动化"></a>系统维护：自动化</h2><p>cron：<br>cron 在系统启动时运行，用于管理和执行定时任务<br>cron 会定期检查是否有预定任务需要执行，如果有，它就会执行任务<br>cron 负责执行所有已定义的任务，这些任务的定义来源是 crontab 文件</p>
+<p>crontab：<br>crontab 是包含定时任务定义的特殊文件，任务按照特定的时间格式设定，告诉 cron 在什么时间运行哪些任务<br>crontab 格式可被 cron 进程识别，并可逐步执行每行</p>
+<p>crontab 需要 6 个特定值：</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MIN</td>
+<td>在每小时的第几分钟执行（0-59）</td>
+</tr>
+<tr>
+<td>HOUR</td>
+<td>在每天的几点钟执行（0-23）</td>
+</tr>
+<tr>
+<td>DOM</td>
+<td>在每月的哪一天执行（1-31）</td>
+</tr>
+<tr>
+<td>MON</td>
+<td>在每年的哪个月份执行（1-12）</td>
+</tr>
+<tr>
+<td>DOW</td>
+<td>在每周的哪一天执行（0-7，0和7表示星期日）</td>
+</tr>
+<tr>
+<td>CMD</td>
+<td>要执行的实际命令</td>
+</tr>
+</tbody></table>
+<p>通过 crontab -e 命令打开文本编辑器来编辑定时任务<br>使用 * 通配符来表示任意值，不指定特定的时间字段</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">0 */12 * * * <span class="built_in">cp</span> -R /home/cmnatic/Documents /var/backups/</span><br><span class="line"><span class="comment"># 每 12 小时执行一次 cp 命令，将 /home/cmnatic/Documents 目录备份到 /var/backups/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">0 */12 * * * [要执行的命令] [源路径] [目标路径]</span><br><span class="line"><span class="comment"># 每 12 小时执行一次 [要执行的命令]，从 [源路径] 复制或备份到 [目标路径]</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="系统维护：软件包管理"><a href="#系统维护：软件包管理" class="headerlink" title="系统维护：软件包管理"></a>系统维护：软件包管理</h2><p>Linux 最显著的优势：用户可访问性和开源工具的优点。当开发者可以将软件提交给社区，会将其提交到一个“apt”软件库中，程序和工具将被发布给广大用户。在 Linux 上使用 ls 命令时，这些文件充当了网关或注册表的角色。</p>
+<h3 id="使用-add-apt-repository-和-apt-命令"><a href="#使用-add-apt-repository-和-apt-命令" class="headerlink" title="使用 add-apt-repository 和 apt 命令"></a>使用 add-apt-repository 和 apt 命令</h3><p>软件库：存放软件包的集合，包含很多软件包<br>软件包：可安装的软件单元，包含特定程序的所有文件和依赖项</p>
+<p>add-apt-repository：用于添加或移除软件库的工具，这会将新的软件库地址添加到系统的 sources.list.d 目录中，并自动更新 GPG 密钥<br>apt：用于管理软件包的安装和更新的工具，包含整套工具用于管理软件包和软件源，优势在于每次更新系统时，会自动检查并更新已添加的软件库中的软件包</p>
+<p>使用 add-apt-repository 命令添加第三方提供的软件库，包含官方库中没有的软件包或最新版本<br>使用 apt 命令安装和卸载软件包，更新已安装的软件包</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> add-apt-repository ppa:PPA_Name/ppa</span><br><span class="line"><span class="comment"># 添加 PPA 软件库，现在系统中包含两个软件库：自带的 Ubuntu 官方软件库和 PPA 软件库，软件库将自动处理 GPG 密钥</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="comment"># 更新系统中的软件库列表</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> apt install sublime-text</span><br><span class="line"><span class="comment"># 从可用的软件库中自动选择下载和安装软件</span></span><br></pre></td></tr></table></figure>
+
+
+<p>添加第三方软件，需要手动添加 GPG 密钥和软件库地址，以确保下载内容的完整性。GPG（GNU Privacy Guard）密钥是开发者提供的安全验证工具，用于确保下载的软件包是来自可信任的来源。如果密钥与系统信任的密钥和开发者使用的密钥不匹配，软件将无法下载。</p>
+<p>对于第三方软件库，流程如下：</p>
+<p>1.添加 GPG 密钥：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | <span class="built_in">sudo</span> apt-key add -</span><br><span class="line"><span class="comment"># 对于第三方软件库，需要手动添加 GPG 密钥和软件库地址，将密钥添加到系统的信任列表中</span></span><br></pre></td></tr></table></figure>
+
+
+<p>2.手动创建 .list 文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> nano /etc/apt/sources.list.d/sublime-text.list</span><br><span class="line"><span class="comment"># 在 /etc/apt/sources.list.d 目录中创建一个 sublimetext.list 的文件</span></span><br></pre></td></tr></table></figure>
+
+
+<p>3.添加软件库源信息：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deb https://download.sublimetext.com/ apt/stable/</span><br><span class="line"><span class="comment"># 在编辑器中添加类似以下内容的软件库地址</span></span><br></pre></td></tr></table></figure>
+
+
+<p>4.更新软件库列表</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="comment"># 更新系统中的软件库列表，使 `apt` 识别新的第三方软件库。</span></span><br></pre></td></tr></table></figure>
+
+
+<p>5.安装软件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install sublime-text</span><br><span class="line"><span class="comment"># 从新的第三方软件库中安装软件</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>使用 apt remove 命令来删除软件<br>使用 add-apt-repository –remove 命令来删除软件库，或者手动删除之前添加的源文件，使用命令删除已安装的软件包</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt remove sublime-text</span><br><span class="line"><span class="comment"># sudo apt remove [软件名]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> add-apt-repository --remove ppa:PPA_Name/ppa</span><br><span class="line"><span class="comment"># 删除已添加的 PPA 软件库</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="系统维护：日志"><a href="#系统维护：日志" class="headerlink" title="系统维护：日志"></a>系统维护：日志</h2><p>日志文件存放在 &#x2F;var&#x2F;log 目录中，包含了系统上运行的应用程序和服务生成的日志信息。操作系统能自动管理这些日志，称为 <strong>“日志轮替”</strong>（log rotation）。日志轮替会自动归档和清理旧的日志文件，以防止日志文件占用过多的磁盘空间。</p>
+<p>服务日志能监控系统健康状况和安全性，系统还会生成日志文件，记录操作系统的运行状态和用户行为<br><br></p>
+<!-- https://tryhackme.com/r/room/linuxfundamentalspart3 -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Python基础</title>
     <url>/2024/10/28/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD2/</url>
     <content><![CDATA[<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><p>使用 print() 函数输出放在括号 () 里的内容，因为输出的为字符串，所以需要双引号 “”</p>
@@ -610,143 +630,6 @@
       </categories>
   </entry>
   <entry>
-    <title>工具模板</title>
-    <url>/2024/10/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
-
-
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>什么是网络？</title>
-    <url>/2024/10/30/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-1/</url>
-    <content><![CDATA[<h2 id="什么是网络？"><a href="#什么是网络？" class="headerlink" title="什么是网络？"></a>什么是网络？</h2><p>网络简单来说就是连接在一起的事物</p>
-<p>在计算机领域，网络的概念相同，只是连接的是各种技术设备，网络可以由2台设备到数十亿台设备组成。这些设备包括从笔记本电脑、手机到安全摄像头、交通信号灯，甚至农业设备</p>
-<p>无论是收集天气数据、向家庭输送电力，还是判断道路上的通行优先权。因为网络在现代生活中如此重要，理解网络的概念是掌握网络安全的关键。</p>
-<br>
-
-
-
-
-
-<h2 id="什么是互联网？"><a href="#什么是互联网？" class="headerlink" title="什么是互联网？"></a>什么是互联网？</h2><p>互联网是一个巨大的网络，由许许多多的小型网络组成</p>
-<p>互联网的首次雏形出现在1960年代末的ARPANET项目中。该项目由美国国防部资助，是首个实际应用的网络。然而，直到1989年，由蒂姆·伯纳斯-李发明了万维网（WWW）。互联网开始被用作存储和共享信息的存储库</p>
-<p>互联网是由许多小型网络相互连接而成的。这些小型网络称为私有网络，而连接这些小网络的网络称为公共网络——也就是互联网！所以，简而言之，网络可以分为两种类型：</p>
-<p>私有网络<br>公共网络</p>
-<br>
-
-
-
-
-
-<h2 id="识别网络中的设备"><a href="#识别网络中的设备" class="headerlink" title="识别网络中的设备"></a>识别网络中的设备</h2><p>网络中的设备和人类非常相似，有两种识别方式：</p>
-<p>名字<br>指纹</p>
-<p>我们可以通过合法程序改名字，但指纹却无法改变。每个人都有一套独特的指纹，这意味着即使改了名字，背后仍有其身份。设备也是如此：它们有两种身份识别方式，其中一种是可更改的。这两种方式分别是：</p>
-<p>IP地址<br>媒体访问控制（MAC）地址——可以将其看作设备的序列号。</p>
-<p>IP地址<br>IP地址可以在一段时间内用于标识网络中的一台主机，然后该IP地址可以分配给其他设备，而不改变IP地址本身。让我们通过下图更详细地了解IP地址的构成：</p>
-<p>IP地址是一组数字，由四个八位字节组成，每个八位字节的数值组合成设备在网络中的IP地址。这个数字通过一种叫做IP地址分配与子网划分的技术生成，不过这属于更高阶的内容。这里需要理解的是，IP地址可以在不同设备之间更换，但在同一网络中不会同时分配给多个设备。</p>
-<p>IP地址遵循一套被称为“协议”的标准。这些协议是网络通信的基础，使得多个设备可以使用相同的语言交流。设备可以处于私有网络或公共网络中，而其所处的网络类型决定了它拥有的IP地址类型：公共IP地址或私有IP地址。</p>
-<p>公共地址用于在互联网上识别设备，而私有地址则用于在设备间的相互识别。以下表格和截图展示了两个设备在一个私有网络中的示例：</p>
-<p>设备名称	IP地址	IP地址类型<br>DESKTOP-KJE57FD	192.168.1.77	私有<br>DESKTOP-KJE57FD	86.157.52.21	公共<br>CMNatic-PC	192.168.1.74	私有<br>CMNatic-PC	86.157.52.21	公共</p>
-<p>在私有网络中，这两个设备可以使用它们的私有IP地址进行通信。然而，任何从这些设备发送到互联网的数据都会通过相同的公共IP地址进行标识。公共IP地址是由互联网服务提供商（ISP）分配的，通常按月收费。</p>
-<p>随着越来越多的设备连接到网络上，获得一个未被占用的公共地址变得越来越困难。到2021年底，互联网连接设备将达到约500亿台。这就引入了IP地址的不同版本。被称为IPv4的互联网协议寻址方案的一个版本，它使用2^32个IP地址（42.9亿）</p>
-<p>IPv6是互联网协议寻址方案的新版本，用来帮助解决这个问题。尽管它看起来更复杂，但却有几个优势：</p>
-<p>支持多达2^128个IP地址（超过340万亿个），解决了IPv4面临的问题</p>
-<p>由于采用了新的方法IPv6，更加高效</p>
-<p>MAC地址</p>
-<p>网络中的设备都会有一个物理网络接口，即设备主板上的微芯片板。该网络接口在制造时被分配了一个唯一的地址，称为MAC（媒体访问控制）地址。MAC地址是一个十二字符的十六进制数字（十六进制是一种用于表示数字的计算机进制系统），按每两个字符一组，用冒号分隔。例如：a4:c3:f0:85:ac:2d。前六个字符代表制造该网络接口的公司，后六个字符是唯一编号。</p>
-<p>MAC地址是可以伪造或“欺骗”的，这一过程称为伪装（spoofing）。当网络设备使用其他设备的MAC地址假装自己是另一个设备时，就会发生这种伪装。此时，它往往会破坏那些假定网络内设备可信赖的不完善的安全设计</p>
-<p>咖啡馆、酒店等场所的“访客”或“公共”Wi-Fi通常使用MAC地址控制。这种配置可以提供更好的服务，例如如果你愿意按设备支付费用，可以获得更快的连接速度</p>
-<br>
-
-
-
-
-
-<h2 id="Ping（ICMP）"><a href="#Ping（ICMP）" class="headerlink" title="Ping（ICMP）"></a>Ping（ICMP）</h2><p>Ping是可用的最基础的网络工具之一。Ping使用互联网控制消息协议（ICMP）数据包来确定设备之间的连接性能</p>
-<p>Ping测量ICMP数据包在设备之间的往返时间来评估连接的表现</p>
-<p>Ping可用于测试网络中的设备或网站等资源。这个工具在Linux和Windows等操作系统中预装。执行简单的Ping命令的语法为ping IP地址或网站URL</p>
-<br>
-
-
-<!-- 网站 -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
-      <categories>
-        <category>基本技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Mullvad</title>
-    <url>/2024/10/30/%E5%B7%A5%E5%85%B7Mullvad/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://mullvad.net/en">Mullvad</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>VPN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Proton VPN</title>
-    <url>/2024/10/30/%E5%B7%A5%E5%85%B7Proton_VPN/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://protonvpn.com/">Proton VPN</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>VPN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Pwntools</title>
-    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Pwntools/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Gallopsled/pwntools">Pwntools</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Pwntools 是一个 CTF 框架和漏洞开发库。它用 Python 编写，旨在快速进行原型设计和开发，并旨在使漏洞编写尽可能简单。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
     <title>常见攻击</title>
     <url>/2024/10/29/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD3/</url>
     <content><![CDATA[<h2 id="社会工程学"><a href="#社会工程学" class="headerlink" title="社会工程学"></a>社会工程学</h2><h3 id="什么是社会工程学？"><a href="#什么是社会工程学？" class="headerlink" title="什么是社会工程学？"></a>什么是社会工程学？</h3><p>社会工程学：用来描述任何以人为目标的网络攻击的术语，会导致攻击者对目标的生活进行重大控制。社会工程学攻击是多层次的，并随着“滚雪球效应”逐步升级</p>
@@ -871,6 +754,96 @@
       </categories>
   </entry>
   <entry>
+    <title>什么是网络？</title>
+    <url>/2024/10/30/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-1/</url>
+    <content><![CDATA[<h2 id="什么是网络？"><a href="#什么是网络？" class="headerlink" title="什么是网络？"></a>什么是网络？</h2><p>网络简单来说就是连接在一起的事物</p>
+<p>在计算机领域，网络的概念相同，只是连接的是各种技术设备，网络可以由2台设备到数十亿台设备组成。这些设备包括从笔记本电脑、手机到安全摄像头、交通信号灯，甚至农业设备</p>
+<p>无论是收集天气数据、向家庭输送电力，还是判断道路上的通行优先权。因为网络在现代生活中如此重要，理解网络的概念是掌握网络安全的关键。</p>
+<br>
+
+
+
+
+
+<h2 id="什么是互联网？"><a href="#什么是互联网？" class="headerlink" title="什么是互联网？"></a>什么是互联网？</h2><p>互联网是一个巨大的网络，由许许多多的小型网络组成</p>
+<p>互联网的首次雏形出现在1960年代末的ARPANET项目中。该项目由美国国防部资助，是首个实际应用的网络。然而，直到1989年，由蒂姆·伯纳斯-李发明了万维网（WWW）。互联网开始被用作存储和共享信息的存储库</p>
+<p>互联网是由许多小型网络相互连接而成的。这些小型网络称为私有网络，而连接这些小网络的网络称为公共网络——也就是互联网！所以，简而言之，网络可以分为两种类型：</p>
+<p>私有网络<br>公共网络</p>
+<br>
+
+
+
+
+
+<h2 id="识别网络中的设备"><a href="#识别网络中的设备" class="headerlink" title="识别网络中的设备"></a>识别网络中的设备</h2><p>网络中的设备和人类非常相似，有两种识别方式：</p>
+<p>名字<br>指纹</p>
+<p>我们可以通过合法程序改名字，但指纹却无法改变。每个人都有一套独特的指纹，这意味着即使改了名字，背后仍有其身份。设备也是如此：它们有两种身份识别方式，其中一种是可更改的。这两种方式分别是：</p>
+<p>IP地址<br>媒体访问控制（MAC）地址——可以将其看作设备的序列号。</p>
+<p>IP地址<br>IP地址可以在一段时间内用于标识网络中的一台主机，然后该IP地址可以分配给其他设备，而不改变IP地址本身。让我们通过下图更详细地了解IP地址的构成：</p>
+<p>IP地址是一组数字，由四个八位字节组成，每个八位字节的数值组合成设备在网络中的IP地址。这个数字通过一种叫做IP地址分配与子网划分的技术生成，不过这属于更高阶的内容。这里需要理解的是，IP地址可以在不同设备之间更换，但在同一网络中不会同时分配给多个设备。</p>
+<p>IP地址遵循一套被称为“协议”的标准。这些协议是网络通信的基础，使得多个设备可以使用相同的语言交流。设备可以处于私有网络或公共网络中，而其所处的网络类型决定了它拥有的IP地址类型：公共IP地址或私有IP地址。</p>
+<p>公共地址用于在互联网上识别设备，而私有地址则用于在设备间的相互识别。以下表格和截图展示了两个设备在一个私有网络中的示例：</p>
+<p>设备名称	IP地址	IP地址类型<br>DESKTOP-KJE57FD	192.168.1.77	私有<br>DESKTOP-KJE57FD	86.157.52.21	公共<br>CMNatic-PC	192.168.1.74	私有<br>CMNatic-PC	86.157.52.21	公共</p>
+<p>在私有网络中，这两个设备可以使用它们的私有IP地址进行通信。然而，任何从这些设备发送到互联网的数据都会通过相同的公共IP地址进行标识。公共IP地址是由互联网服务提供商（ISP）分配的，通常按月收费。</p>
+<p>随着越来越多的设备连接到网络上，获得一个未被占用的公共地址变得越来越困难。到2021年底，互联网连接设备将达到约500亿台。这就引入了IP地址的不同版本。被称为IPv4的互联网协议寻址方案的一个版本，它使用2^32个IP地址（42.9亿）</p>
+<p>IPv6是互联网协议寻址方案的新版本，用来帮助解决这个问题。尽管它看起来更复杂，但却有几个优势：</p>
+<p>支持多达2^128个IP地址（超过340万亿个），解决了IPv4面临的问题</p>
+<p>由于采用了新的方法IPv6，更加高效</p>
+<p>MAC地址</p>
+<p>网络中的设备都会有一个物理网络接口，即设备主板上的微芯片板。该网络接口在制造时被分配了一个唯一的地址，称为MAC（媒体访问控制）地址。MAC地址是一个十二字符的十六进制数字（十六进制是一种用于表示数字的计算机进制系统），按每两个字符一组，用冒号分隔。例如：a4:c3:f0:85:ac:2d。前六个字符代表制造该网络接口的公司，后六个字符是唯一编号。</p>
+<p>MAC地址是可以伪造或“欺骗”的，这一过程称为伪装（spoofing）。当网络设备使用其他设备的MAC地址假装自己是另一个设备时，就会发生这种伪装。此时，它往往会破坏那些假定网络内设备可信赖的不完善的安全设计</p>
+<p>咖啡馆、酒店等场所的“访客”或“公共”Wi-Fi通常使用MAC地址控制。这种配置可以提供更好的服务，例如如果你愿意按设备支付费用，可以获得更快的连接速度</p>
+<br>
+
+
+
+
+
+<h2 id="Ping（ICMP）"><a href="#Ping（ICMP）" class="headerlink" title="Ping（ICMP）"></a>Ping（ICMP）</h2><p>Ping是可用的最基础的网络工具之一。Ping使用互联网控制消息协议（ICMP）数据包来确定设备之间的连接性能</p>
+<p>Ping测量ICMP数据包在设备之间的往返时间来评估连接的表现</p>
+<p>Ping可用于测试网络中的设备或网站等资源。这个工具在Linux和Windows等操作系统中预装。执行简单的Ping命令的语法为ping IP地址或网站URL</p>
+<br>
+
+
+<!-- 网站 -->
+<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Requests</title>
+    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Requests/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/psf/requests">Requests</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Requests是一个简单而优雅的 HTTP 库<br>Requests可让您极其轻松地发送 HTTP&#x2F;1.1 请求。无需手动将查询字符串添加到 URL，也无需对PUT&amp;POST数据进行表单编码 — 但现在，只需使用该json方法即可！<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Pwntools</title>
+    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Pwntools/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Gallopsled/pwntools">Pwntools</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Pwntools 是一个 CTF 框架和漏洞开发库。它用 Python 编写，旨在快速进行原型设计和开发，并旨在使漏洞编写尽可能简单。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Scapy</title>
     <url>/2024/10/29/%E5%B7%A5%E5%85%B7Scapy/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/secdev/scapy">scapy</a><br><br></p>
@@ -918,9 +891,9 @@
       </categories>
   </entry>
   <entry>
-    <title>hunter</title>
-    <url>/2024/10/27/%E7%BD%91%E7%AB%99hunter/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
+    <title>Pigcha</title>
+    <url>/2024/10/30/%E7%BD%91%E7%AB%99Pigcha/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.pigcha.com/">Pigcha</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
@@ -931,6 +904,52 @@
       <categories>
         <category>网站</category>
       </categories>
+      <tags>
+        <tag>VPN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Proton VPN</title>
+    <url>/2024/10/30/%E7%BD%91%E7%AB%99Proton_VPN/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://protonvpn.com/">Proton VPN</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>VPN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mullvad</title>
+    <url>/2024/10/30/%E7%BD%91%E7%AB%99Mullvad/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://mullvad.net/en">Mullvad</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>VPN</tag>
+      </tags>
   </entry>
   <entry>
     <title>网络安全职业</title>
@@ -1021,6 +1040,49 @@
       </categories>
   </entry>
   <entry>
+    <title>网络攻击杀伤链</title>
+    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/</url>
+    <content><![CDATA[<h2 id="侦察"><a href="#侦察" class="headerlink" title="侦察"></a>侦察</h2><p><strong>侦察</strong>：是指发现并收集关于系统和受害者的信息。侦察阶段是对手计划攻击的阶段。</p>
+<p>开源情报（OSINT）也属于侦察范畴。OSINT 是攻击者在进行后续攻击步骤之前必须完成的第一步。攻击者需要通过收集关于公司及其员工的所有可用信息，来研究目标，以便确定最佳的攻击目标。</p>
+<p>为了在这个阶段进行操作，攻击者需要进行 OSINT</p>
+<p><strong>电子邮件收集</strong>：是通过公共、付费或免费服务获取电子邮件地址的过程。攻击者可以利用电子邮件收集进行网络钓鱼攻击。在侦察阶段，攻击者有大量的工具可用，其中一些包括：</p>
+<p><strong>theHarvester</strong>：除了收集电子邮件，这个工具还能通过多个公共数据源收集姓名、子域、IP 和 URL<br><strong>Hunter.io</strong>：这是一个电子邮件搜寻工具，可以获取与特定域名相关的联系信息<br><strong>OSINT Framework</strong>：提供了基于各种类别的 OSINT 工具集合</p>
+<p>攻击者还会利用社交媒体网站，来收集想要攻击的特定受害者或公司的信息。这些社交媒体上的信息对于攻击者进行网络钓鱼攻击可能非常有帮助。<br><br></p>
+<h2 id="武器化"><a href="#武器化" class="headerlink" title="武器化"></a>武器化</h2><p>在顺利完成侦察阶段后，大多数攻击者通常会使用自动化工具生成恶意软件，或者从暗网上购买恶意软件。这种工具会将恶意软件和漏洞利用结合成一个可传递的有效载荷。而那些更复杂的攻击者或由国家资助的高级持续性威胁（APT）组织则会编写自定义的恶意软件，以确保其独特性，从而避开目标上的检测。</p>
+<p><strong>恶意软件</strong>：一种用于破坏、干扰或未经授权访问计算机的程序或软件。<br><strong>漏洞利用</strong>：利用应用程序或系统中的漏洞或缺陷的程序或代码。<br><strong>有效载荷</strong>：攻击者在系统上执行的恶意代码。</p>
+<p>在武器化阶段，攻击者可能会进行以下操作：<br>创建一个包含恶意宏或 VBA（Visual Basic for Applications）脚本的感染 Microsoft Office 文档<br>攻击者可以创建恶意有效载荷或非常复杂的蠕虫病毒，将其植入 USB 驱动器，然后在公共场所分发<br>攻击者可能会选择使用指挥与控制（C2）技术，在受害者的计算机上执行命令或传递更多有效载荷<br>攻击者会选择后门植入方式<br><br></p>
+<h2 id="传递"><a href="#传递" class="headerlink" title="传递"></a>传递</h2><p>在传递阶段，有几种常见选择：</p>
+<p><strong>钓鱼邮件</strong>：在进行侦察并确定目标后，恶意攻击者会精心编写一封恶意邮件，目标可能是特定个人（鱼叉式钓鱼攻击）或公司内部的多名人员。邮件内包含有效载荷或恶意软件</p>
+<p><strong>在公共场所投放受感染的 USB 驱动器</strong>：例如在咖啡店、停车场或街道上。攻击者可能会通过印有公司 logo 的 USB 驱动器实施高级 USB 投放攻击，并假装是客户，将这些设备作为礼物寄送给公司</p>
+<p><strong>水坑攻击</strong>：这是一种专门针对特定群体的攻击方式，攻击者会入侵目标群体经常访问的网站，并将其重定向到恶意网站。攻击者会寻找并利用网站的已知漏洞。为了提高攻击成功率，攻击者可能会发送看似“无害”的电子邮件，引导受害者访问目标网站并点击恶意链接。受害者访问网站后，会无意中下载恶意软件或恶意应用程序，这种攻击类型被称为“驱动式下载”<br><br></p>
+<h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p>为了获得系统的访问权限，攻击者需要利用系统中的漏洞。在获得系统访问权限后，恶意攻击者可能会利用软件、系统或服务器漏洞来提升权限，或者在网络中进行横向移动。横向移动是指恶意攻击者在获得初始访问权限后，使用各种技术进一步深入网络，以便获取敏感数据。</p>
+<p>在这个阶段，攻击者也可能使用“零日漏洞利用”。零日漏洞利用或零日漏洞是一个在尚未被发现的漏洞，它暴露了软件或硬件中的安全漏洞，可能在问题显现之前造成严重影响。零日漏洞在一开始几乎没有检测机会。</p>
+<p>以下是攻击者执行漏洞利用的常见方式：<br>受害者通过打开邮件附件或点击恶意链接来触发漏洞<br>使用零日漏洞进行攻击<br>利用软件、硬件，甚至是人性的弱点<br>攻击者利用服务器漏洞进行攻击<br><br></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>后门可以让攻击者绕过安全机制并隐藏访问权限。后门也被称为“访问点”。</p>
+<p>一旦攻击者成功获取了系统访问权限，攻击者会希望能够在连接丢失、被检测到或初始访问权限被移除，或者系统被修补后，仍能重新访问系统。此时，攻击者需要安装一个持久性的后门。持久性后门可以确保攻击者能够重新访问之前已被攻陷的系统。</p>
+<p>以下是实现持久性的几种方式：<br><strong>在 Web 服务器上安装 Web Shell</strong>：Web Shell 是一种由攻击者编写的恶意脚本，使用 ASP、PHP 或 JSP 等 Web 开发语言，目的是维持对被攻陷系统的持续访问。由于 Web Shell 的简单性和文件格式，它们可能难以被检测并被误认为是无害文件。</p>
+<p><strong>在受害者的机器上安装后门</strong>：使攻击者可以远程控制受害者的机器并执行恶意代码。</p>
+<p><strong>创建或修改 Windows 服务</strong>：攻击者可以创建或修改 Windows 服务，使其能够定期执行恶意脚本或有效载荷，作为保持持久性的一部分。攻击者可以使用 sc.exe和 Reg 这些工具来修改服务配置。攻击者还可能伪装恶意有效载荷，使用与操作系统或合法软件相关的服务名称。</p>
+<p><strong>在注册表的“运行键”或启动文件夹中为恶意有效载荷添加条目</strong>：通过这种方式，每次用户登录计算机时，有效载荷都会被执行。启动文件夹既有针对单个用户账户的位置，也有系统范围的启动文件夹，无论哪个用户登录，都会被检查。</p>
+<p>此外，攻击者还可能在这一阶段使用时间篡改技术（Timestomping），以避免被取证调查人员检测，并让恶意软件看起来像合法程序的一部分。时间篡改技术允许攻击者修改文件的时间戳，包括修改、访问、创建和更改的时间。<br><br></p>
+<h2 id="指挥与控制"><a href="#指挥与控制" class="headerlink" title="指挥与控制"></a>指挥与控制</h2><p>在成功建立持久性并在受害者计算机上执行恶意软件后，攻击者通过该恶意软件打开了 C2（指挥与控制）通道，以便远程控制和操纵受害者。这一通信类型也被称为 C&amp;C 或 C2 信标，是指 C&amp;C 服务器与被感染主机之间的一种恶意通信方式。被感染的主机会持续与 C2 服务器通信，这就是“信标”一词的由来。</p>
+<p>被攻陷的终端将与攻击者设置的外部服务器通信，以建立指挥与控制通道。一旦连接建立，攻击者即可完全控制受害者的计算机</p>
+<p>攻击者通常使用以下 C2 通道：<br><strong>HTTP（端口 80）和 HTTPS（端口 443）协议</strong>：这种信标方式将恶意流量与合法流量混合，帮助攻击者规避防火墙的检测</p>
+<p><strong>DNS（域名服务器）</strong>：被感染的机器会不断向归属于攻击者的 DNS 服务器发送 DNS 请求，这种 C2 通信方式也被称为 DNS 隧道</p>
+<p>对手或者其他被攻陷的主机也可能是 C2 基础设施的拥有者。<br><br></p>
+<h2 id="达成目标"><a href="#达成目标" class="headerlink" title="达成目标"></a>达成目标</h2><p>在经历了攻击的前六个阶段后，这意味着攻击者将对最初设定的目的采取行动。通过直接访问系统，攻击者可以执行以下操作：</p>
+<p>收集用户的登录凭证<br>执行权限提升<br>进行内部侦察<br>在公司网络环境中横向移动<br>收集并外泄敏感数据<br>删除备份和影子副本，影子副本是微软的一项技术，可以创建文件或卷的备份副本和快照<br>覆盖或损坏数据</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
+]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
     <title>治理与监管</title>
     <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/</url>
     <content><![CDATA[<h2 id="为什么很重要？"><a href="#为什么很重要？" class="headerlink" title="为什么很重要？"></a>为什么很重要？</h2><p><strong>治理</strong>：管理和指导一个组织或系统，以实现其目标并确保遵守法律、法规和标准<br><strong>法规</strong>：由管理机构强制执行的规则或法律，旨在确保合规性并防止潜在风险<br><strong>合规性</strong>：指组织或系统遵守适用的法律、法规和标准的状态</p>
@@ -1077,62 +1139,18 @@
       </categories>
   </entry>
   <entry>
-    <title>网络攻击杀伤链</title>
-    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/</url>
-    <content><![CDATA[<h2 id="侦察"><a href="#侦察" class="headerlink" title="侦察"></a>侦察</h2><p><strong>侦察</strong>：是指发现并收集关于系统和受害者的信息。侦察阶段是对手计划攻击的阶段。</p>
-<p>开源情报（OSINT）也属于侦察范畴。OSINT 是攻击者在进行后续攻击步骤之前必须完成的第一步。攻击者需要通过收集关于公司及其员工的所有可用信息，来研究目标，以便确定最佳的攻击目标。</p>
-<p>为了在这个阶段进行操作，攻击者需要进行 OSINT</p>
-<p><strong>电子邮件收集</strong>：是通过公共、付费或免费服务获取电子邮件地址的过程。攻击者可以利用电子邮件收集进行网络钓鱼攻击。在侦察阶段，攻击者有大量的工具可用，其中一些包括：</p>
-<p><strong>theHarvester</strong>：除了收集电子邮件，这个工具还能通过多个公共数据源收集姓名、子域、IP 和 URL<br><strong>Hunter.io</strong>：这是一个电子邮件搜寻工具，可以获取与特定域名相关的联系信息<br><strong>OSINT Framework</strong>：提供了基于各种类别的 OSINT 工具集合</p>
-<p>攻击者还会利用社交媒体网站，来收集想要攻击的特定受害者或公司的信息。这些社交媒体上的信息对于攻击者进行网络钓鱼攻击可能非常有帮助。<br><br></p>
-<h2 id="武器化"><a href="#武器化" class="headerlink" title="武器化"></a>武器化</h2><p>在顺利完成侦察阶段后，大多数攻击者通常会使用自动化工具生成恶意软件，或者从暗网上购买恶意软件。这种工具会将恶意软件和漏洞利用结合成一个可传递的有效载荷。而那些更复杂的攻击者或由国家资助的高级持续性威胁（APT）组织则会编写自定义的恶意软件，以确保其独特性，从而避开目标上的检测。</p>
-<p><strong>恶意软件</strong>：一种用于破坏、干扰或未经授权访问计算机的程序或软件。<br><strong>漏洞利用</strong>：利用应用程序或系统中的漏洞或缺陷的程序或代码。<br><strong>有效载荷</strong>：攻击者在系统上执行的恶意代码。</p>
-<p>在武器化阶段，攻击者可能会进行以下操作：<br>创建一个包含恶意宏或 VBA（Visual Basic for Applications）脚本的感染 Microsoft Office 文档<br>攻击者可以创建恶意有效载荷或非常复杂的蠕虫病毒，将其植入 USB 驱动器，然后在公共场所分发<br>攻击者可能会选择使用指挥与控制（C2）技术，在受害者的计算机上执行命令或传递更多有效载荷<br>攻击者会选择后门植入方式<br><br></p>
-<h2 id="传递"><a href="#传递" class="headerlink" title="传递"></a>传递</h2><p>在传递阶段，有几种常见选择：</p>
-<p><strong>钓鱼邮件</strong>：在进行侦察并确定目标后，恶意攻击者会精心编写一封恶意邮件，目标可能是特定个人（鱼叉式钓鱼攻击）或公司内部的多名人员。邮件内包含有效载荷或恶意软件</p>
-<p><strong>在公共场所投放受感染的 USB 驱动器</strong>：例如在咖啡店、停车场或街道上。攻击者可能会通过印有公司 logo 的 USB 驱动器实施高级 USB 投放攻击，并假装是客户，将这些设备作为礼物寄送给公司</p>
-<p><strong>水坑攻击</strong>：这是一种专门针对特定群体的攻击方式，攻击者会入侵目标群体经常访问的网站，并将其重定向到恶意网站。攻击者会寻找并利用网站的已知漏洞。为了提高攻击成功率，攻击者可能会发送看似“无害”的电子邮件，引导受害者访问目标网站并点击恶意链接。受害者访问网站后，会无意中下载恶意软件或恶意应用程序，这种攻击类型被称为“驱动式下载”<br><br></p>
-<h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p>为了获得系统的访问权限，攻击者需要利用系统中的漏洞。在获得系统访问权限后，恶意攻击者可能会利用软件、系统或服务器漏洞来提升权限，或者在网络中进行横向移动。横向移动是指恶意攻击者在获得初始访问权限后，使用各种技术进一步深入网络，以便获取敏感数据。</p>
-<p>在这个阶段，攻击者也可能使用“零日漏洞利用”。零日漏洞利用或零日漏洞是一个在尚未被发现的漏洞，它暴露了软件或硬件中的安全漏洞，可能在问题显现之前造成严重影响。零日漏洞在一开始几乎没有检测机会。</p>
-<p>以下是攻击者执行漏洞利用的常见方式：<br>受害者通过打开邮件附件或点击恶意链接来触发漏洞<br>使用零日漏洞进行攻击<br>利用软件、硬件，甚至是人性的弱点<br>攻击者利用服务器漏洞进行攻击<br><br></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>后门可以让攻击者绕过安全机制并隐藏访问权限。后门也被称为“访问点”。</p>
-<p>一旦攻击者成功获取了系统访问权限，攻击者会希望能够在连接丢失、被检测到或初始访问权限被移除，或者系统被修补后，仍能重新访问系统。此时，攻击者需要安装一个持久性的后门。持久性后门可以确保攻击者能够重新访问之前已被攻陷的系统。</p>
-<p>以下是实现持久性的几种方式：<br><strong>在 Web 服务器上安装 Web Shell</strong>：Web Shell 是一种由攻击者编写的恶意脚本，使用 ASP、PHP 或 JSP 等 Web 开发语言，目的是维持对被攻陷系统的持续访问。由于 Web Shell 的简单性和文件格式，它们可能难以被检测并被误认为是无害文件。</p>
-<p><strong>在受害者的机器上安装后门</strong>：使攻击者可以远程控制受害者的机器并执行恶意代码。</p>
-<p><strong>创建或修改 Windows 服务</strong>：攻击者可以创建或修改 Windows 服务，使其能够定期执行恶意脚本或有效载荷，作为保持持久性的一部分。攻击者可以使用 sc.exe和 Reg 这些工具来修改服务配置。攻击者还可能伪装恶意有效载荷，使用与操作系统或合法软件相关的服务名称。</p>
-<p><strong>在注册表的“运行键”或启动文件夹中为恶意有效载荷添加条目</strong>：通过这种方式，每次用户登录计算机时，有效载荷都会被执行。启动文件夹既有针对单个用户账户的位置，也有系统范围的启动文件夹，无论哪个用户登录，都会被检查。</p>
-<p>此外，攻击者还可能在这一阶段使用时间篡改技术（Timestomping），以避免被取证调查人员检测，并让恶意软件看起来像合法程序的一部分。时间篡改技术允许攻击者修改文件的时间戳，包括修改、访问、创建和更改的时间。<br><br></p>
-<h2 id="指挥与控制"><a href="#指挥与控制" class="headerlink" title="指挥与控制"></a>指挥与控制</h2><p>在成功建立持久性并在受害者计算机上执行恶意软件后，攻击者通过该恶意软件打开了 C2（指挥与控制）通道，以便远程控制和操纵受害者。这一通信类型也被称为 C&amp;C 或 C2 信标，是指 C&amp;C 服务器与被感染主机之间的一种恶意通信方式。被感染的主机会持续与 C2 服务器通信，这就是“信标”一词的由来。</p>
-<p>被攻陷的终端将与攻击者设置的外部服务器通信，以建立指挥与控制通道。一旦连接建立，攻击者即可完全控制受害者的计算机</p>
-<p>攻击者通常使用以下 C2 通道：<br><strong>HTTP（端口 80）和 HTTPS（端口 443）协议</strong>：这种信标方式将恶意流量与合法流量混合，帮助攻击者规避防火墙的检测</p>
-<p><strong>DNS（域名服务器）</strong>：被感染的机器会不断向归属于攻击者的 DNS 服务器发送 DNS 请求，这种 C2 通信方式也被称为 DNS 隧道</p>
-<p>对手或者其他被攻陷的主机也可能是 C2 基础设施的拥有者。<br><br></p>
-<h2 id="达成目标"><a href="#达成目标" class="headerlink" title="达成目标"></a>达成目标</h2><p>在经历了攻击的前六个阶段后，这意味着攻击者将对最初设定的目的采取行动。通过直接访问系统，攻击者可以执行以下操作：</p>
-<p>收集用户的登录凭证<br>执行权限提升<br>进行内部侦察<br>在公司网络环境中横向移动<br>收集并外泄敏感数据<br>删除备份和影子副本，影子副本是微软的一项技术，可以创建文件或卷的备份副本和快照<br>覆盖或损坏数据</p>
-<br>
-
-
-<!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
-]]></content>
-      <categories>
-        <category>网络安全基础</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Requests</title>
-    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Requests/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/psf/requests">Requests</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Requests是一个简单而优雅的 HTTP 库<br>Requests可让您极其轻松地发送 HTTP&#x2F;1.1 请求。无需手动将查询字符串添加到 URL，也无需对PUT&amp;POST数据进行表单编码 — 但现在，只需使用该json方法即可！<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+    <title>hunter</title>
+    <url>/2024/10/27/%E7%BD%91%E7%AB%99hunter/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
 
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+<!-- 成功使用✔? ✖? -->]]></content>
       <categories>
-        <category>工具</category>
+        <category>网站</category>
       </categories>
   </entry>
 </search>
