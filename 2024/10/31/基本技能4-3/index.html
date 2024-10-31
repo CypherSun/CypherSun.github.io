@@ -7,15 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="什么是 OSI 模型？OSI 模型（即开放系统互联模型）是网络领域中一项至关重要的基础模型。这个关键模型为所有联网设备如何发送、接收和解释数据提供了框架。 OSI 模型的一个主要优势在于，网络中的设备可以具有不同的功能和设计，但仍然能够相互通信。符合 OSI 模型统一标准传输的数据可以被其他设备理解。 OSI 模型由七层组成，示意图如下所示。每一层都有不同的职责，按照从第 7 层到第 1 层的顺序">
+<meta name="description" content="什么是 OSI 模型？开放系统互联模型（OSI）是网络中的基础模型，规定了联网设备如何发送、接收和解释数据的框架 OSI 模型的优势在于即使网络中的设备功能和设计不同，只要遵循OSI标准就能够相互通信。遵循OSI模型可确保数据在不同设备之间被理解 OSI 模型由七层组成，每层负责不同的任务，从第7层到第1层依次排列。数据在每一层传输时都会经过特定的处理过程，并附加相应的信息，这一过程称为“封装”。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基本技能4-3">
 <meta property="og:url" content="https://cyphersun.github.io/2024/10/31/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-3/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="什么是 OSI 模型？OSI 模型（即开放系统互联模型）是网络领域中一项至关重要的基础模型。这个关键模型为所有联网设备如何发送、接收和解释数据提供了框架。 OSI 模型的一个主要优势在于，网络中的设备可以具有不同的功能和设计，但仍然能够相互通信。符合 OSI 模型统一标准传输的数据可以被其他设备理解。 OSI 模型由七层组成，示意图如下所示。每一层都有不同的职责，按照从第 7 层到第 1 层的顺序">
+<meta property="og:description" content="什么是 OSI 模型？开放系统互联模型（OSI）是网络中的基础模型，规定了联网设备如何发送、接收和解释数据的框架 OSI 模型的优势在于即使网络中的设备功能和设计不同，只要遵循OSI标准就能够相互通信。遵循OSI模型可确保数据在不同设备之间被理解 OSI 模型由七层组成，每层负责不同的任务，从第7层到第1层依次排列。数据在每一层传输时都会经过特定的处理过程，并附加相应的信息，这一过程称为“封装”。">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-10-31T10:05:00.000Z">
-<meta property="article:modified_time" content="2024-10-31T10:41:28.767Z">
+<meta property="article:modified_time" content="2024-10-31T12:37:16.862Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-31 11:41:28"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-10-31 13:37:16"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -378,37 +378,85 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="什么是-OSI-模型？"><a href="#什么是-OSI-模型？" class="headerlink" title="什么是 OSI 模型？"></a>什么是 OSI 模型？</h2><p>OSI 模型（即开放系统互联模型）是网络领域中一项至关重要的基础模型。这个关键模型为所有联网设备如何发送、接收和解释数据提供了框架。</p>
-<p>OSI 模型的一个主要优势在于，网络中的设备可以具有不同的功能和设计，但仍然能够相互通信。符合 OSI 模型统一标准传输的数据可以被其他设备理解。</p>
-<p>OSI 模型由七层组成，示意图如下所示。每一层都有不同的职责，按照从第 7 层到第 1 层的顺序排列。</p>
-<p>数据在每一层传输时，都会经历特定的处理过程，并附加上一些信息。这一过程称为“封装”，我们将在后续的任务中详细讨论。不过，目前我们只需理解封装过程，以及下图展示的 OSI 模型的结构。<br><br></p>
-<h2 id="第-1-层-物理层"><a href="#第-1-层-物理层" class="headerlink" title="第 1 层 - 物理层"></a>第 1 层 - 物理层</h2><p>这一层是最容易理解的一层。它指的是用于网络连接的物理硬件组件，是 OSI 模型中最底层的部分。设备之间通过电信号以二进制（1 和 0）的形式传输数据。<br><br></p>
-<h2 id="第-2-层-数据链路层"><a href="#第-2-层-数据链路层" class="headerlink" title="第 2 层 - 数据链路层"></a>第 2 层 - 数据链路层</h2><p>数据链路层关注传输的物理地址。它从网络层接收数据包（其中包含远程计算机的 IP 地址），并添加接收端的物理 MAC（介质访问控制）地址。每台支持网络的计算机内部都有一个网络接口卡（NIC），其上自带一个唯一的 MAC 地址，用于标识该设备。</p>
-<p>MAC 地址是由制造商设定的，且被“烧录”到网卡中，无法更改——尽管可以通过某些手段进行伪造。当信息在网络中传输时，实际上是通过物理地址来定位信息的接收位置。</p>
-<p>此外，数据链路层还负责将数据呈现为适合传输的格式。<br><br></p>
-<h2 id="第-3-层-网络层"><a href="#第-3-层-网络层" class="headerlink" title="第 3 层 - 网络层"></a>第 3 层 - 网络层</h2><p>OSI 模型的第三层（网络层）是路由和数据重组的关键所在（将小数据块重组为更大的数据块）。首先，路由的功能是确定数据块传输的最优路径。</p>
-<p>在这一层，一些协议具体负责决定数据到达设备的“最佳”路径。目前，我们只需知道这些协议的存在即可。这些协议包括 OSPF（开放最短路径优先协议）和 RIP（路由信息协议）。决定路由选择的因素包括：</p>
-<p>路径是否最短？即数据包需要经过的设备数量最少。<br>路径是否最可靠？即该路径上是否存在数据包丢失的情况。<br>路径的物理连接速度是否更快？例如，一个路径使用铜线连接（较慢），另一个路径使用光纤（速度更快）。<br>在这一层，所有操作都基于 IP 地址（例如 192.168.1.100）。路由器等能够利用 IP 地址传输数据包的设备被称为三层设备——因为它们能够在 OSI 模型的第三层上运行。<br><br></p>
-<h2 id="第-4-层-传输层"><a href="#第-4-层-传输层" class="headerlink" title="第 4 层 - 传输层"></a>第 4 层 - 传输层</h2><p>OSI 模型的第 4 层在网络中的数据传输中发挥着至关重要的作用，理解起来可能有些难度。当设备之间传输数据时，会根据一些因素选择以下两种协议之一：</p>
-<p>TCP<br>UDP<br>首先，让我们来看 TCP（传输控制协议）。顾名思义，该协议的设计目标是确保数据传输的可靠性。它会在两个设备之间建立一个持续的连接，直到数据全部发送和接收完毕。</p>
-<p>不仅如此，TCP 还具有错误检查机制，确保从会话层（第 5 层）传输的小数据块能按顺序接收并重新组装。</p>
-<p>以下是 TCP 的优缺点总结：</p>
-<p>TCP 优点	TCP 缺点<br>保证数据的准确性。	需要设备之间建立可靠连接。如果有小数据块未接收，则整个数据块无法使用。<br>同步设备间的数据传输，防止设备被数据淹没。	较慢的连接会导致另一设备的瓶颈，因为接收端的连接始终被保留。<br>提供更多的可靠性保障。	由于协议要求较多操作，TCP 比 UDP 传输速度慢得多。<br>TCP 常用于需要数据完整性和准确性的场景，例如文件共享、网页浏览或发送电子邮件（不完整的文件毫无用处！）。</p>
-<p>在下图中，我们可以看到一张猫咪图片从“网络服务器”分解为小数据包，然后“计算机”会将这些数据包按正确顺序重新组合成完整的图片。</p>
-<p>接下来，让我们讨论用户数据报协议（UDP）。与功能丰富的 TCP 协议相比，UDP 相对简单。它不具备 TCP 所提供的错误检查和可靠性保障。通过 UDP 发送的数据是否到达接收端并不重要——没有设备之间的同步，也没有任何保证。</p>
-<p>虽然听起来 UDP 有许多限制，但它也有自身的优点，具体见下表：</p>
-<p>UDP 优点	UDP 缺点<br>UDP 传输速度比 TCP 快得多。	UDP 不保证数据的接收。<br>将控制数据包发送速率的任务交给应用层。	不保留设备的持续连接。<br>对开发者来说更具灵活性。	不稳定连接会导致用户体验糟糕。<br>使用前面的例子，现在可以看到只有数据包 #1 和 #3 被“计算机”接收到，导致图片缺失一部分。</p>
-<p>UDP 适合用于传输小数据块的场景。例如，设备发现协议（如 ARP 和 DHCP，我们在第 2 单元 - 局域网介绍中讨论过）或视频流等大文件传输。在视频流中，即使某些部分出现像素化或数据丢失，整体观看体验影响不大。<br><br></p>
-<h2 id="第-5-层-会话层"><a href="#第-5-层-会话层" class="headerlink" title="第 5 层 - 会话层"></a>第 5 层 - 会话层</h2><p>一旦数据经过表示层（第 6 层）正确翻译或格式化后，会话层（第 5 层）就会开始创建和维护与目标计算机的连接。当连接建立时，一个会话就创建了。在连接保持活跃的同时，会话也会持续存在。</p>
-<p>会话层还负责在连接长时间未使用或连接丢失时关闭该连接。此外，会话中可以包含“检查点”。当数据丢失时，仅需重新发送最新的数据，从而节省带宽。</p>
-<p>值得注意的是，每个会话都是独立的——也就是说，数据不能在不同会话之间传输，而只能在各自的会话中传输。<br><br></p>
-<h2 id="第-6-层-表示层"><a href="#第-6-层-表示层" class="headerlink" title="第 6 层 - 表示层"></a>第 6 层 - 表示层</h2><p>OSI 模型的第 6 层是标准化开始发生的层级。由于软件开发者可以用不同的方式开发各种软件（如电子邮件客户端），数据的处理方式必须保持一致——无论软件的具体实现如何。</p>
-<p>这一层充当数据与应用层（第 7 层）之间的“翻译器”。接收方计算机能够理解从一种格式传送过来的数据，并将其转换为适合自身的格式。例如，当你发送一封电子邮件时，对方可能使用不同的邮件客户端，但邮件内容仍需要以一致的方式显示。</p>
-<p>该层还负责安全特性，例如数据加密（如访问安全网站时的 HTTPS 加密）。<br><br></p>
-<h2 id="第-7-层-应用层"><a href="#第-7-层-应用层" class="headerlink" title="第 7 层 - 应用层"></a>第 7 层 - 应用层</h2><p>OSI 模型的应用层是用户最为熟悉的一层。这是因为应用层包含了决定用户如何与接收或发送的数据交互的各种协议和规则。</p>
-<p>常见的应用程序（如电子邮件客户端、浏览器或文件服务器浏览软件如 FileZilla）为用户提供了一个友好的图形用户界面（GUI），方便用户与接收或发送的数据进行交互。应用层的其他协议还包括 DNS（域名系统），即将网站地址转换为 IP 地址的系统。<br><br></p>
-<!-- 网站 -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->
+    <h2 id="什么是-OSI-模型？"><a href="#什么是-OSI-模型？" class="headerlink" title="什么是 OSI 模型？"></a>什么是 OSI 模型？</h2><p>开放系统互联模型（OSI）是网络中的基础模型，规定了联网设备如何发送、接收和解释数据的框架</p>
+<p>OSI 模型的优势在于即使网络中的设备功能和设计不同，只要遵循OSI标准就能够相互通信。遵循OSI模型可确保数据在不同设备之间被理解</p>
+<p>OSI 模型由七层组成，每层负责不同的任务，从第7层到第1层依次排列。数据在每一层传输时都会经过特定的处理过程，并附加相应的信息，这一过程称为“封装”。<br><br></p>
+<h2 id="第-1-层-物理层"><a href="#第-1-层-物理层" class="headerlink" title="第 1 层 - 物理层"></a>第 1 层 - 物理层</h2><p>第1层（物理层）是 OSI 模型的最底层，用于网络连接的物理硬件组件。在这一层，数据以电信号的形式传输，并以二进制（1和0）表示。这一层主要关注的是数据的物理传输方式和介质。<br><br></p>
+<h2 id="第-2-层-数据链路层"><a href="#第-2-层-数据链路层" class="headerlink" title="第 2 层 - 数据链路层"></a>第 2 层 - 数据链路层</h2><p>第2层（数据链路层）负责管理设备间的数据传输，并通过媒体访问控制（MAC）物理地址来标识网络中的设备。从网络层接收到包含远程计算机 IP 地址的数据包时，数据链路层会添加目标设备的 MAC 地址，以便在网络中找到具体的接收设备</p>
+<p>每台联网设备都有一个网络接口卡（NIC），其中包含唯一的 MAC 地址，由制造商设置到网卡上，无法更改但可通过技术手段进行伪造。当信息通过网络发送时，信息是根据 MAC 地址而非 IP 地址来定位的</p>
+<p>数据链路层还将数据组织成适合物理传输的格式，处理数据帧的错误检测和校正，确保传输的可靠性<br><br></p>
+<h2 id="第-3-层-网络层"><a href="#第-3-层-网络层" class="headerlink" title="第 3 层 - 网络层"></a>第 3 层 - 网络层</h2><p>第3层（网络层）负责路由和数据分组的管理。路由功能用于决定数据包传输的最佳路径。网络层将数据分组为小数据包进行传输，最后重组为完整的数据块</p>
+<p>网络层使用协议来选择数据到达目标设备的最佳路径，主要的协议包括开放最短路径优先协议（OSPF）和路由信息协议（RIP）。这些协议的路径选择基于以下因素：</p>
+<p>数据包经过的设备数量是否最少，路径是否最短<br>路径上是否存在数据丢失的风险，是否可靠<br>路径的物理传输速度是否更快</p>
+<p>一切都通过 IP 地址进行处理，路由器等利用 IP 地址传输数据包的设备被称为三层设备，因为它们在 OSI 模型的第三层工作<br><br></p>
+<h2 id="第-4-层-传输层"><a href="#第-4-层-传输层" class="headerlink" title="第 4 层 - 传输层"></a>第 4 层 - 传输层</h2><p>第4层（传输层）在设备之间传输数据时，传输层会选择以下两种协议之一：</p>
+<p>传输控制协议（TCP）<br>用户数据报协议（UDP）</p>
+<p>TCP的主要设计目的是确保数据传输的可靠性。它会在两个设备之间建立一个连接，并保持连接，直到所有数据成功传输完毕。TCP具有错误检查和确认机制，确保传输中的小数据块分段按顺序到达并重新组装</p>
+<table>
+<thead>
+<tr>
+<th>TCP 优点</th>
+<th>TCP 缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>保证数据的准确性</td>
+<td>需要设备之间建立可靠连接。如果有一小块数据未收到，则整个数据块无法使用。</td>
+</tr>
+<tr>
+<td>同步设备间的数据传输，防止设备因数据过多而过载</td>
+<td>较慢的连接会成为瓶颈，因为接收端的连接需要始终始终保持</td>
+</tr>
+<tr>
+<td>提供更多的可靠性保障</td>
+<td>由于更多的握手和确认操作，TCP 比 UDP 传输速度更慢</td>
+</tr>
+</tbody></table>
+<p>TCP 用于需要数据完整性和准确性的场景，在这些场景中丢失或不完整的数据是不接受的</p>
+<p>UDP 与 TCP 相比，不如 TCP 先进，但相对简单。UDP 不具备 TCP 的错误检查和可靠性保障。通过 UDP 发送的数据不保证一定到达接收端，也没有同步和确认机制</p>
+<table>
+<thead>
+<tr>
+<th>UDP 优点</th>
+<th>UDP 缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>传输速度比TCP快得多</td>
+<td>不保证数据的接收</td>
+</tr>
+<tr>
+<td>数据包发送速率由应用层控制</td>
+<td>不保留设备之间的持续连接</td>
+</tr>
+<tr>
+<td>对开发者更灵活性</td>
+<td>不稳定的连接会影响用户体验</td>
+</tr>
+</tbody></table>
+<p>UDP 适用于对可靠性要求不高的小数据传输场景。即使某些数据包丢失，整体效果影响不大，可优先考虑速度</p>
+<br>
+
+
+
+
+
+<h2 id="第-5-层-会话层"><a href="#第-5-层-会话层" class="headerlink" title="第 5 层 - 会话层"></a>第 5 层 - 会话层</h2><p>第5层（会话层）在数据经过表示层（第6层）正确转换和格式化后，负责创建并维护与目标计算机的连接。连接建立后，将创建会话，并在连接保持活跃的期间持续存在</p>
+<p>会话层还负责一段时间内未使用或连接丢失时关闭连接。并且会话可设置“检查点”，当数据丢失，仅需重新发送上次检查点以后的数据节省带宽</p>
+<p>每个会话是独立的，数据只能在当前会话中传输，无法跨会话传输。<br><br></p>
+<h2 id="第-6-层-表示层"><a href="#第-6-层-表示层" class="headerlink" title="第 6 层 - 表示层"></a>第 6 层 - 表示层</h2><p>第6层（表示层）是实施数据标准化的层级。由于软件开发人员以不同的方式开发软件，表示层需确保数据格式的一致性，使接收方能够正确解读数据</p>
+<p>表示层充当数据和应用层（第7层）之间的转换器。它将数据从一种格式转换为另一种格式，使得不同软件之间的数据显示保持一致</p>
+<p>数据加密等安全功能发生在此层</p>
+<br>
+
+
+
+
+
+<h2 id="第-7-层-应用层"><a href="#第-7-层-应用层" class="headerlink" title="第 7 层 - 应用层"></a>第 7 层 - 应用层</h2><p>第7层（应用层）是最接近用户的一层，应用层是制定协议和规则的层，用于确定用户应如何与发送或接收的数据进行交互</p>
+<p>日常应用程序提供图形用户界面（GUI），以便用户与发送或接收的数据进行交互。应用层协议也包括 DNS（域名系统），负责将网站地址转换为 IP 地址，使访问网络资源更加便捷，这层是用户直接接触的数据交互层<br><br></p>
+<!-- https://tryhackme.com/r/room/osimodelzi -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
 </article>
     
     
