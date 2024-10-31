@@ -1,194 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客模板</title>
-    <url>/2024/10/27/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+    <title>网站模板</title>
+    <url>/2024/10/27/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
 
 
-
-
-
-<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-<!-- 网站 -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>工具模板</title>
-    <url>/2024/10/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
-
-
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
 
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+<!-- 成功使用✔? ✖? -->]]></content>
       <categories>
         <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Linux基础知识 第一部分</title>
-    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-1/</url>
-    <content><![CDATA[<h2 id="Linux-背景知识简介"><a href="#Linux-背景知识简介" class="headerlink" title="Linux 背景知识简介"></a>Linux 背景知识简介</h2><p>与 Windows 等其他操作系统（OS）相比，各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 是开源的，因此有许多不同的 Linux 发行版<br><br></p>
-<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>echo</td>
-<td>输出提供的任何文本</td>
-</tr>
-<tr>
-<td>whoami</td>
-<td>查看当前登录的用户身份</td>
-</tr>
-</tbody></table>
-<h3 id="使用-echo-命令，输出文本"><a href="#使用-echo-命令，输出文本" class="headerlink" title="使用 echo 命令，输出文本"></a>使用 echo 命令，输出文本</h3><p>使用 echo 命令输出字符串</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span></span><br><span class="line"><span class="comment"># 输出 Hello World!</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-whoami-命令，查看当前登录的用户身份"><a href="#使用-whoami-命令，查看当前登录的用户身份" class="headerlink" title="使用 whoami 命令，查看当前登录的用户身份"></a>使用 whoami 命令，查看当前登录的用户身份</h3><p>使用 whoami 命令查看当前登录的用户身份 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">whoami</span></span><br><span class="line"><span class="comment"># 查询当前用户</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-
-<h2 id="与文件系统的交互命令"><a href="#与文件系统的交互命令" class="headerlink" title="与文件系统的交互命令"></a>与文件系统的交互命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ls</td>
-<td>列出当前目录中的文件（listing）</td>
-</tr>
-<tr>
-<td>cd</td>
-<td>更改当前目录（change directory）</td>
-</tr>
-<tr>
-<td>cat</td>
-<td>输出文件内容（concatenate）</td>
-</tr>
-<tr>
-<td>pwd</td>
-<td>显示当前工作目录的完整路径（print working directory）</td>
-</tr>
-</tbody></table>
-<h3 id="使用-ls-命令"><a href="#使用-ls-命令" class="headerlink" title="使用 ls 命令"></a>使用 ls 命令</h3><p>使用 ls 命令来列出当前目录的文件<br>使用 ls 命令和目录名称不进入该目录列出目录的文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 列出当前目录下的所有文件和文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> folder1</span><br><span class="line"><span class="comment"># 列出 folder1 目录下的所有文件和文件夹</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="使用-cd-命令"><a href="#使用-cd-命令" class="headerlink" title="使用 cd 命令"></a>使用 cd 命令</h3><p>使用 cd 命令更改当前目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 进入 folder1 目录</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-cat-命令"><a href="#使用-cat-命令" class="headerlink" title="使用 cat 命令"></a>使用 cat 命令</h3><p>使用 cat 命令来输出文件内容<br>使用 cat 命令和目录路径不进入该目录输出目录中文件内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> text1.txt</span><br><span class="line"><span class="comment"># 显示当前目录 text1.txt 文件的内容</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /home/folder1/text1.txt</span><br><span class="line"><span class="comment"># 显示 /home/folder1/text1.txt 文件的内容</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-pwd-命令"><a href="#使用-pwd-命令" class="headerlink" title="使用 pwd 命令"></a>使用 pwd 命令</h3><p>使用 pwd 命令显示当前工作目录的完整路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="comment"># 显示当前工作目录的完整路径</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-
-<h2 id="查找文件命令"><a href="#查找文件命令" class="headerlink" title="查找文件命令"></a>查找文件命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>find</td>
-<td>在当前目录所有子目录中搜索文件</td>
-</tr>
-<tr>
-<td>grep</td>
-<td>搜索整个文件中包含特定值的行（Global Regular Expression Print）</td>
-</tr>
-</tbody></table>
-<h3 id="使用-find-命令"><a href="#使用-find-命令" class="headerlink" title="使用 find 命令"></a>使用 find 命令</h3><p>如果记得文件名，使用 find -name 命令在当前目录所有子目录中搜索文件<br>如果不记得文件名，可搜索所有具有特定扩展名的文件，使用 find -name 命令和通配符（*）来搜索所有以特定扩展名结尾的文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">find -name txt1.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找名为 txt1.txt 的文件</span></span><br><span class="line"></span><br><span class="line">find -name *.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找所有以 .txt 结尾的文件</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-grep-命令"><a href="#使用-grep-命令" class="headerlink" title="使用 grep 命令"></a>使用 grep 命令</h3><p>使用 grep 命令搜索整个文件内容来查找包含特定值的行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;Hello World!&quot;</span> txt1.txt</span><br><span class="line"><span class="comment"># 在 txt1.txt 文件中搜索包含 &quot;Hello World!&quot;</span></span><br></pre></td></tr></table></figure>
-<br>
-
-<p>字符串内注意需要完全符合大小写</p>
-<h2 id="Shell-操作符"><a href="#Shell-操作符" class="headerlink" title="Shell 操作符"></a>Shell 操作符</h2><table>
-<thead>
-<tr>
-<th>符号&#x2F;操作符</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>&amp;</td>
-<td>执行命令并在后台运行</td>
-</tr>
-<tr>
-<td>&amp;&amp;</td>
-<td>将多个命令结合在一行中执行（仅前一命令成功执行才能继续）</td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>一个重定向符，可以将某个命令的输出重定向到其他地方（覆盖原有内容）</td>
-</tr>
-<tr>
-<td>&gt;&gt;</td>
-<td>功能类似于 &gt;，但会将输出追加而不是替换（不会覆盖原有内容）</td>
-</tr>
-</tbody></table>
-<h3 id="使用-操作符"><a href="#使用-操作符" class="headerlink" title="使用 &amp; 操作符"></a>使用 &amp; 操作符</h3><p>使用 &amp; 操作符执行命令并在后台运行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://example.com/txt1.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/txt1.txt 文件</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-操作符-1"><a href="#使用-操作符-1" class="headerlink" title="使用 &amp;&amp; 操作符"></a>使用 &amp;&amp; 操作符</h3><p>使用 &amp;&amp; 操作符创建命令链，只有第一个命令成功执行后，第二个命令才会执行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> folder1 &amp;&amp; <span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 创建 folder1 文件夹，并进入该文件夹</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-操作符-2"><a href="#使用-操作符-2" class="headerlink" title="使用 &gt; 操作符"></a>使用 &gt; 操作符</h3><p>使用 &gt; 操作符输出重定向，可以将命令的输出保存到指定的文件或其他地方</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
-
-<p>如果文件已存在，内容会被替换<br>如果文件不存在，会创建该文件，并将输出写入其中</p>
-<h3 id="使用-操作符-3"><a href="#使用-操作符-3" class="headerlink" title="使用 &gt;&gt; 操作符"></a>使用 &gt;&gt; 操作符</h3><p>使用 &gt;&gt; 操作符输出重定向，并会将内容追加到文件末尾，而不会覆盖文件原有的内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt;&gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（不会覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-<!-- https://tryhackme.com/r/room/linuxfundamentalspart1 -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
-]]></content>
-      <categories>
-        <category>基本技能</category>
       </categories>
   </entry>
   <entry>
@@ -510,43 +336,10 @@
       </categories>
   </entry>
   <entry>
-    <title>网站模板</title>
-    <url>/2024/10/27/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Linux基础知识 第二部分</title>
-    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-2/</url>
-    <content><![CDATA[<h2 id="SSH-访问-Linux"><a href="#SSH-访问-Linux" class="headerlink" title="SSH 访问 Linux"></a>SSH 访问 Linux</h2><h3 id="什么是-SSH-及其工作原理？"><a href="#什么是-SSH-及其工作原理？" class="headerlink" title="什么是 SSH 及其工作原理？"></a>什么是 SSH 及其工作原理？</h3><p>Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式</p>
-<p>SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密</p>
-<p>使用 SSH 需要两个信息：<br>远程机器的 IP 地址<br>远程机器上有效账户的登录凭证</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh username@1.1.1.1</span><br><span class="line"><span class="comment"># ssh [用户名]@[IP地址]</span></span><br></pre></td></tr></table></figure>
-
-<p>输入 yes 信任主机，输入账户的密码。连接成功后，任何执行的命令将会在远程机器上运行</p>
-<p>在 SSH 登录中输入密码时，不会看到任何文本或符号不会有任何反馈，只需输入密码后回车登录</p>
-<p>输入exit断开连接<br><br></p>
-<h2 id="标志和开关简介（flags-and-switches）"><a href="#标志和开关简介（flags-and-switches）" class="headerlink" title="标志和开关简介（flags and switches）"></a>标志和开关简介（flags and switches）</h2><p>大多数命令都允许使用参数，这些参数由连字符和一个特定的关键字标识，这些关键字被称为标志或开关。在使用命令时，除非另有指定，否则它将执行默认行为。</p>
-<p>使用 ls -a 命令查看所有文件和文件夹，包括以 . 开头的隐藏文件和文件夹<br>使用 ls –help 命令列出 ls 命令列出提供简短的描述和使用示例的使用参数选项</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br><span class="line"><span class="comment"># 列出当前目录中的所有文件和目录，包括隐藏文件（以 . 开头的文件）</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> --<span class="built_in">help</span></span><br><span class="line"><span class="comment"># 显示 ls 命令的帮助信息，包括可用选项及其说明</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="使用-man-命令"><a href="#使用-man-命令" class="headerlink" title="使用 man 命令"></a>使用 man 命令</h3><p>手册页（man page）包含 Linux 系统命令和应用程序的信息，可直接在 Linux 上或网站访问</p>
-<p>使用 man 命令来查看手册页，可搭配其他命令一起使用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">man <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 查看 ls 命令的手册页，获取详细信息和选项说明</span></span><br></pre></td></tr></table></figure>
-
-<p>man 命令搭配其他命令可以查看 Linux 上几乎所有的命令，使用上下箭头阅读，q 退出<br><br></p>
-<h2 id="文件系统交互命令"><a href="#文件系统交互命令" class="headerlink" title="文件系统交互命令"></a>文件系统交互命令</h2><table>
+    <title>Linux基础知识 第一部分</title>
+    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-1/</url>
+    <content><![CDATA[<h2 id="Linux-背景知识简介"><a href="#Linux-背景知识简介" class="headerlink" title="Linux 背景知识简介"></a>Linux 背景知识简介</h2><p>与 Windows 等其他操作系统（OS）相比，各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 是开源的，因此有许多不同的 Linux 发行版<br><br></p>
+<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><table>
 <thead>
 <tr>
 <th>命令</th>
@@ -554,79 +347,183 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>touch</td>
-<td>创建新文件</td>
+<td>echo</td>
+<td>输出提供的任何文本</td>
 </tr>
 <tr>
-<td>mkdir</td>
-<td>创建新文件夹&#x2F;目录（make directory）</td>
-</tr>
-<tr>
-<td>cp</td>
-<td>复制文件或文件夹（copy）</td>
-</tr>
-<tr>
-<td>mv</td>
-<td>移动文件或文件夹或重命名（move）</td>
-</tr>
-<tr>
-<td>rm</td>
-<td>删除文件或文件夹（remove）</td>
-</tr>
-<tr>
-<td>file</td>
-<td>确定文件的类型</td>
+<td>whoami</td>
+<td>查看当前登录的用户身份</td>
 </tr>
 </tbody></table>
-<p>以上所有命令都可搭配使用完整的文件路径</p>
-<h3 id="使用-touch-和-mkdir-命令"><a href="#使用-touch-和-mkdir-命令" class="headerlink" title="使用 touch 和 mkdir 命令"></a>使用 touch 和 mkdir 命令</h3><p>使用 touch 命令创建创建新文件<br>使用 mkdir 命令创建新文件夹&#x2F;目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">touch</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
-
-<p>使用 echo 命令或 nano 等文本编辑器在文件中添加内容</p>
-<h3 id="使用-rm-命令"><a href="#使用-rm-命令" class="headerlink" title="使用 rm 命令"></a>使用 rm 命令</h3><p>使用 rm 命令删除文件<br>使用 rm -R 命令删除文件夹</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">rm</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -R folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用-echo-命令，输出文本"><a href="#使用-echo-命令，输出文本" class="headerlink" title="使用 echo 命令，输出文本"></a>使用 echo 命令，输出文本</h3><p>使用 echo 命令输出字符串</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span></span><br><span class="line"><span class="comment"># 输出 Hello World!</span></span><br></pre></td></tr></table></figure>
 
 
-<h3 id="使用-cp-和-mv-命令"><a href="#使用-cp-和-mv-命令" class="headerlink" title="使用 cp 和 mv 命令"></a>使用 cp 和 mv 命令</h3><p>使用 cp 命令将文件内容复制到新的文件中，第一个参数为已存在文件的名称，第二个参数为复制新文件指定的名称。如果目标文件不存在，将自动创建新文件<br>使用 cp -r 命令将文件夹及其内容复制到新的文件夹中，第一个参数为已存在文件夹的名称，第二个参数为复制新文件夹指定的名称。如果目标文件夹不存在，将自动创建新文件夹</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 file2</span><br><span class="line"><span class="comment"># 将 file1 的内容复制到 file2，如果 file2 不存在会自动创建</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> -r folder1 folder2</span><br><span class="line"><span class="comment"># 将 folder1 文件夹及其内容复制到 folder2，如果 folder2 不存在会自动创建</span></span><br></pre></td></tr></table></figure>
-
-
-<p>使用 mv 命令将文件或文件夹移动到新文件夹，或者对第二个参数提供的文件或文件夹名称进行重命名，不会创建新文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mv</span> file1 file2</span><br><span class="line"><span class="comment"># 如果 file2 是一个新名称，会将 file1 重命名为 file2</span></span><br><span class="line"><span class="comment"># 如果 file2 是一个已存在的目录，会将 file1 移动到该目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mv</span> folder1 folder2</span><br><span class="line"><span class="comment"># 如果 folder2 是一个新名称，会将 folder1 重命名为 folder2</span></span><br><span class="line"><span class="comment"># 如果 folder2 是一个已存在的目录，会将 folder1 移动到该目录</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="使用-file-命令"><a href="#使用-file-命令" class="headerlink" title="使用 file 命令"></a>使用 file 命令</h3><p>使用 file 命令确定文件或文件夹的类型，返回文件的类型描述</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">file file1</span><br><span class="line"><span class="comment"># 查看 file1 的文件类型，并显示类型信息</span></span><br><span class="line"></span><br><span class="line">file folder1</span><br><span class="line"><span class="comment"># 查看 folder1 的文件类型，如果为文件夹，将显示为 &quot;directory&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用-whoami-命令，查看当前登录的用户身份"><a href="#使用-whoami-命令，查看当前登录的用户身份" class="headerlink" title="使用 whoami 命令，查看当前登录的用户身份"></a>使用 whoami 命令，查看当前登录的用户身份</h3><p>使用 whoami 命令查看当前登录的用户身份 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">whoami</span></span><br><span class="line"><span class="comment"># 查询当前用户</span></span><br></pre></td></tr></table></figure>
 
 <br>
 
 
 
 
-<h2 id="权限基础知识"><a href="#权限基础知识" class="headerlink" title="权限基础知识"></a>权限基础知识</h2><p>使用 ls -lh 命令列出目录中所有文件的详细信息，包括文件权限、大小、所有者、修改时间等</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -lh</span><br><span class="line"><span class="comment"># 以详细格式列出当前目录中的所有文件信息，包括权限、大小和修改时间</span></span><br></pre></td></tr></table></figure>
 
-<p>文件或文件夹有几种特性，特性决定了允许执行哪些操作，以及哪个用户或用户组有权限执行操作：</p>
-<p>读取 (Read)<br>写入 (Write)<br>执行 (Execute)</p>
-<h3 id="用户和用户组之间的区别"><a href="#用户和用户组之间的区别" class="headerlink" title="用户和用户组之间的区别"></a>用户和用户组之间的区别</h3><p>Linux 的优点在于权限非常细化，通过设置权限，一组用户可以对同一个文件拥有相同或不同的权限，而不会影响文件的所有者</p>
-<h3 id="使用-su-命令"><a href="#使用-su-命令" class="headerlink" title="使用 su 命令"></a>使用 su 命令</h3><p>通过目标用户的用户名和密码进行切换账户</p>
-<p>使用 su 命令需要输入用户的密码来切换到指定的用户账户，默认情况下不会加载该用户的完整环境变量<br>使用 su -l 命令需要输入用户的密码，它会完全切换到指定用户的实际登录环境，加载所有新用户的属性等</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">su user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，不会加载该用户的完整环境变量</span></span><br><span class="line"></span><br><span class="line">su -l user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，加载该用户的完整环境变量和配置</span></span><br></pre></td></tr></table></figure>
+<h2 id="与文件系统的交互命令"><a href="#与文件系统的交互命令" class="headerlink" title="与文件系统的交互命令"></a>与文件系统的交互命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ls</td>
+<td>列出当前目录中的文件（listing）</td>
+</tr>
+<tr>
+<td>cd</td>
+<td>更改当前目录（change directory）</td>
+</tr>
+<tr>
+<td>cat</td>
+<td>输出文件内容（concatenate）</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>显示当前工作目录的完整路径（print working directory）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-ls-命令"><a href="#使用-ls-命令" class="headerlink" title="使用 ls 命令"></a>使用 ls 命令</h3><p>使用 ls 命令来列出当前目录的文件<br>使用 ls 命令和目录名称不进入该目录列出目录的文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 列出当前目录下的所有文件和文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> folder1</span><br><span class="line"><span class="comment"># 列出 folder1 目录下的所有文件和文件夹</span></span><br></pre></td></tr></table></figure>
 
-<p>如果没有指定用户，默认情况下会切换到 root 用户。<br><br></p>
-<h2 id="常见目录"><a href="#常见目录" class="headerlink" title="常见目录"></a>常见目录</h2><h3 id="etc"><a href="#etc" class="headerlink" title="&#x2F;etc"></a>&#x2F;etc</h3><p>&#x2F;etc 目录（“etc” 代表 etcetera）是存放操作系统使用的配置和系统文件位置</p>
-<p>在 &#x2F;etc 文件夹中包含 passwd 和 shadow 文件，&#x2F;etc&#x2F;passwd 文件存储了用户账户的信息，&#x2F;etc&#x2F;shadow 文件存储了每个用户的加密哈希密码。系统常使 SHA-512 或其他哈希算法对密码进行加密</p>
-<h3 id="var"><a href="#var" class="headerlink" title="&#x2F;var"></a>&#x2F;var</h3><p>&#x2F;var 目录（“var” 代表 variable data）是存放由系统上运行的服务或应用程序访问、修改或生成的数据</p>
-<h3 id="root"><a href="#root" class="headerlink" title="&#x2F;root"></a>&#x2F;root</h3><p>&#x2F;root 目录是 root 用户系统管理员的主目录，它与普通用户的主目录 &#x2F;home 不同，&#x2F;root 是专门为 root 用户保留的</p>
-<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录（“tmp” 代表 temporary）是用于存放仅需临时访问的文件和数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除。&#x2F;tmp 目录在默认情况下任何用户都有写入权限，&#x2F;tmp 是存放枚举脚本和其他工具的好位置</p>
+
+
+<h3 id="使用-cd-命令"><a href="#使用-cd-命令" class="headerlink" title="使用 cd 命令"></a>使用 cd 命令</h3><p>使用 cd 命令更改当前目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 进入 folder1 目录</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-cat-命令"><a href="#使用-cat-命令" class="headerlink" title="使用 cat 命令"></a>使用 cat 命令</h3><p>使用 cat 命令来输出文件内容<br>使用 cat 命令和目录路径不进入该目录输出目录中文件内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> text1.txt</span><br><span class="line"><span class="comment"># 显示当前目录 text1.txt 文件的内容</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /home/folder1/text1.txt</span><br><span class="line"><span class="comment"># 显示 /home/folder1/text1.txt 文件的内容</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-pwd-命令"><a href="#使用-pwd-命令" class="headerlink" title="使用 pwd 命令"></a>使用 pwd 命令</h3><p>使用 pwd 命令显示当前工作目录的完整路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="comment"># 显示当前工作目录的完整路径</span></span><br></pre></td></tr></table></figure>
+
 <br>
 
 
-<!-- https://tryhackme.com/r/room/linuxfundamentalspart2 -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+
+
+
+<h2 id="查找文件命令"><a href="#查找文件命令" class="headerlink" title="查找文件命令"></a>查找文件命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>find</td>
+<td>在当前目录所有子目录中搜索文件</td>
+</tr>
+<tr>
+<td>grep</td>
+<td>搜索整个文件中包含特定值的行（Global Regular Expression Print）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-find-命令"><a href="#使用-find-命令" class="headerlink" title="使用 find 命令"></a>使用 find 命令</h3><p>如果记得文件名，使用 find -name 命令在当前目录所有子目录中搜索文件<br>如果不记得文件名，可搜索所有具有特定扩展名的文件，使用 find -name 命令和通配符（*）来搜索所有以特定扩展名结尾的文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">find -name txt1.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找名为 txt1.txt 的文件</span></span><br><span class="line"></span><br><span class="line">find -name *.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找所有以 .txt 结尾的文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-grep-命令"><a href="#使用-grep-命令" class="headerlink" title="使用 grep 命令"></a>使用 grep 命令</h3><p>使用 grep 命令搜索整个文件内容来查找包含特定值的行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;Hello World!&quot;</span> txt1.txt</span><br><span class="line"><span class="comment"># 在 txt1.txt 文件中搜索包含 &quot;Hello World!&quot;</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p>字符串内注意需要完全符合大小写</p>
+<h2 id="Shell-操作符"><a href="#Shell-操作符" class="headerlink" title="Shell 操作符"></a>Shell 操作符</h2><table>
+<thead>
+<tr>
+<th>符号&#x2F;操作符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td>执行命令并在后台运行</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>将多个命令结合在一行中执行（仅前一命令成功执行才能继续）</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>一个重定向符，可以将某个命令的输出重定向到其他地方（覆盖原有内容）</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>功能类似于 &gt;，但会将输出追加而不是替换（不会覆盖原有内容）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-操作符"><a href="#使用-操作符" class="headerlink" title="使用 &amp; 操作符"></a>使用 &amp; 操作符</h3><p>使用 &amp; 操作符执行命令并在后台运行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://example.com/txt1.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/txt1.txt 文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-操作符-1"><a href="#使用-操作符-1" class="headerlink" title="使用 &amp;&amp; 操作符"></a>使用 &amp;&amp; 操作符</h3><p>使用 &amp;&amp; 操作符创建命令链，只有第一个命令成功执行后，第二个命令才会执行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> folder1 &amp;&amp; <span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 创建 folder1 文件夹，并进入该文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-操作符-2"><a href="#使用-操作符-2" class="headerlink" title="使用 &gt; 操作符"></a>使用 &gt; 操作符</h3><p>使用 &gt; 操作符输出重定向，可以将命令的输出保存到指定的文件或其他地方</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
+
+<p>如果文件已存在，内容会被替换<br>如果文件不存在，会创建该文件，并将输出写入其中</p>
+<h3 id="使用-操作符-3"><a href="#使用-操作符-3" class="headerlink" title="使用 &gt;&gt; 操作符"></a>使用 &gt;&gt; 操作符</h3><p>使用 &gt;&gt; 操作符输出重定向，并会将内容追加到文件末尾，而不会覆盖文件原有的内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt;&gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（不会覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+<!-- https://tryhackme.com/r/room/linuxfundamentalspart1 -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
+]]></content>
       <categories>
         <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>工具模板</title>
+    <url>/2024/10/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
+
+
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>博客模板</title>
+    <url>/2024/10/27/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+
+
+
+<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+<!-- 网站 -->
+<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
       </categories>
   </entry>
   <entry>
@@ -805,22 +702,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Pwntools</title>
-    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Pwntools/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Gallopsled/pwntools">Pwntools</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Pwntools 是一个 CTF 框架和漏洞开发库。它用 Python 编写，旨在快速进行原型设计和开发，并旨在使漏洞编写尽可能简单。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
     <title>局域网简介</title>
     <url>/2024/10/30/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-2/</url>
     <content><![CDATA[<h2 id="局域网（LAN）拓扑结构介绍"><a href="#局域网（LAN）拓扑结构介绍" class="headerlink" title="局域网（LAN）拓扑结构介绍"></a>局域网（LAN）拓扑结构介绍</h2><p><strong>拓扑</strong>指网络的设计或布局，描述网络中各设备如何相互连接和组织</p>
@@ -896,23 +777,110 @@
       </categories>
   </entry>
   <entry>
-    <title>Requests</title>
-    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Requests/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/psf/requests">Requests</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Requests是一个简单而优雅的 HTTP 库<br>Requests可让您极其轻松地发送 HTTP&#x2F;1.1 请求。无需手动将查询字符串添加到 URL，也无需对PUT&amp;POST数据进行表单编码 — 但现在，只需使用该json方法即可！<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+    <title>Linux基础知识 第二部分</title>
+    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-2/</url>
+    <content><![CDATA[<h2 id="SSH-访问-Linux"><a href="#SSH-访问-Linux" class="headerlink" title="SSH 访问 Linux"></a>SSH 访问 Linux</h2><h3 id="什么是-SSH-及其工作原理？"><a href="#什么是-SSH-及其工作原理？" class="headerlink" title="什么是 SSH 及其工作原理？"></a>什么是 SSH 及其工作原理？</h3><p>Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式</p>
+<p>SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密</p>
+<p>使用 SSH 需要两个信息：<br>远程机器的 IP 地址<br>远程机器上有效账户的登录凭证</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh username@1.1.1.1</span><br><span class="line"><span class="comment"># ssh [用户名]@[IP地址]</span></span><br></pre></td></tr></table></figure>
+
+<p>输入 yes 信任主机，输入账户的密码。连接成功后，任何执行的命令将会在远程机器上运行</p>
+<p>在 SSH 登录中输入密码时，不会看到任何文本或符号不会有任何反馈，只需输入密码后回车登录</p>
+<p>输入exit断开连接<br><br></p>
+<h2 id="标志和开关简介（flags-and-switches）"><a href="#标志和开关简介（flags-and-switches）" class="headerlink" title="标志和开关简介（flags and switches）"></a>标志和开关简介（flags and switches）</h2><p>大多数命令都允许使用参数，这些参数由连字符和一个特定的关键字标识，这些关键字被称为标志或开关。在使用命令时，除非另有指定，否则它将执行默认行为。</p>
+<p>使用 ls -a 命令查看所有文件和文件夹，包括以 . 开头的隐藏文件和文件夹<br>使用 ls –help 命令列出 ls 命令列出提供简短的描述和使用示例的使用参数选项</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br><span class="line"><span class="comment"># 列出当前目录中的所有文件和目录，包括隐藏文件（以 . 开头的文件）</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> --<span class="built_in">help</span></span><br><span class="line"><span class="comment"># 显示 ls 命令的帮助信息，包括可用选项及其说明</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="使用-man-命令"><a href="#使用-man-命令" class="headerlink" title="使用 man 命令"></a>使用 man 命令</h3><p>手册页（man page）包含 Linux 系统命令和应用程序的信息，可直接在 Linux 上或网站访问</p>
+<p>使用 man 命令来查看手册页，可搭配其他命令一起使用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">man <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 查看 ls 命令的手册页，获取详细信息和选项说明</span></span><br></pre></td></tr></table></figure>
+
+<p>man 命令搭配其他命令可以查看 Linux 上几乎所有的命令，使用上下箭头阅读，q 退出<br><br></p>
+<h2 id="文件系统交互命令"><a href="#文件系统交互命令" class="headerlink" title="文件系统交互命令"></a>文件系统交互命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>touch</td>
+<td>创建新文件</td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>创建新文件夹&#x2F;目录（make directory）</td>
+</tr>
+<tr>
+<td>cp</td>
+<td>复制文件或文件夹（copy）</td>
+</tr>
+<tr>
+<td>mv</td>
+<td>移动文件或文件夹或重命名（move）</td>
+</tr>
+<tr>
+<td>rm</td>
+<td>删除文件或文件夹（remove）</td>
+</tr>
+<tr>
+<td>file</td>
+<td>确定文件的类型</td>
+</tr>
+</tbody></table>
+<p>以上所有命令都可搭配使用完整的文件路径</p>
+<h3 id="使用-touch-和-mkdir-命令"><a href="#使用-touch-和-mkdir-命令" class="headerlink" title="使用 touch 和 mkdir 命令"></a>使用 touch 和 mkdir 命令</h3><p>使用 touch 命令创建创建新文件<br>使用 mkdir 命令创建新文件夹&#x2F;目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">touch</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
+
+<p>使用 echo 命令或 nano 等文本编辑器在文件中添加内容</p>
+<h3 id="使用-rm-命令"><a href="#使用-rm-命令" class="headerlink" title="使用 rm 命令"></a>使用 rm 命令</h3><p>使用 rm 命令删除文件<br>使用 rm -R 命令删除文件夹</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">rm</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -R folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+<h3 id="使用-cp-和-mv-命令"><a href="#使用-cp-和-mv-命令" class="headerlink" title="使用 cp 和 mv 命令"></a>使用 cp 和 mv 命令</h3><p>使用 cp 命令将文件内容复制到新的文件中，第一个参数为已存在文件的名称，第二个参数为复制新文件指定的名称。如果目标文件不存在，将自动创建新文件<br>使用 cp -r 命令将文件夹及其内容复制到新的文件夹中，第一个参数为已存在文件夹的名称，第二个参数为复制新文件夹指定的名称。如果目标文件夹不存在，将自动创建新文件夹</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 file2</span><br><span class="line"><span class="comment"># 将 file1 的内容复制到 file2，如果 file2 不存在会自动创建</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> -r folder1 folder2</span><br><span class="line"><span class="comment"># 将 folder1 文件夹及其内容复制到 folder2，如果 folder2 不存在会自动创建</span></span><br></pre></td></tr></table></figure>
 
 
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+<p>使用 mv 命令将文件或文件夹移动到新文件夹，或者对第二个参数提供的文件或文件夹名称进行重命名，不会创建新文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mv</span> file1 file2</span><br><span class="line"><span class="comment"># 如果 file2 是一个新名称，会将 file1 重命名为 file2</span></span><br><span class="line"><span class="comment"># 如果 file2 是一个已存在的目录，会将 file1 移动到该目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mv</span> folder1 folder2</span><br><span class="line"><span class="comment"># 如果 folder2 是一个新名称，会将 folder1 重命名为 folder2</span></span><br><span class="line"><span class="comment"># 如果 folder2 是一个已存在的目录，会将 folder1 移动到该目录</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="使用-file-命令"><a href="#使用-file-命令" class="headerlink" title="使用 file 命令"></a>使用 file 命令</h3><p>使用 file 命令确定文件或文件夹的类型，返回文件的类型描述</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">file file1</span><br><span class="line"><span class="comment"># 查看 file1 的文件类型，并显示类型信息</span></span><br><span class="line"></span><br><span class="line">file folder1</span><br><span class="line"><span class="comment"># 查看 folder1 的文件类型，如果为文件夹，将显示为 &quot;directory&quot;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+<h2 id="权限基础知识"><a href="#权限基础知识" class="headerlink" title="权限基础知识"></a>权限基础知识</h2><p>使用 ls -lh 命令列出目录中所有文件的详细信息，包括文件权限、大小、所有者、修改时间等</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -lh</span><br><span class="line"><span class="comment"># 以详细格式列出当前目录中的所有文件信息，包括权限、大小和修改时间</span></span><br></pre></td></tr></table></figure>
+
+<p>文件或文件夹有几种特性，特性决定了允许执行哪些操作，以及哪个用户或用户组有权限执行操作：</p>
+<p>读取 (Read)<br>写入 (Write)<br>执行 (Execute)</p>
+<h3 id="用户和用户组之间的区别"><a href="#用户和用户组之间的区别" class="headerlink" title="用户和用户组之间的区别"></a>用户和用户组之间的区别</h3><p>Linux 的优点在于权限非常细化，通过设置权限，一组用户可以对同一个文件拥有相同或不同的权限，而不会影响文件的所有者</p>
+<h3 id="使用-su-命令"><a href="#使用-su-命令" class="headerlink" title="使用 su 命令"></a>使用 su 命令</h3><p>通过目标用户的用户名和密码进行切换账户</p>
+<p>使用 su 命令需要输入用户的密码来切换到指定的用户账户，默认情况下不会加载该用户的完整环境变量<br>使用 su -l 命令需要输入用户的密码，它会完全切换到指定用户的实际登录环境，加载所有新用户的属性等</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">su user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，不会加载该用户的完整环境变量</span></span><br><span class="line"></span><br><span class="line">su -l user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，加载该用户的完整环境变量和配置</span></span><br></pre></td></tr></table></figure>
+
+<p>如果没有指定用户，默认情况下会切换到 root 用户。<br><br></p>
+<h2 id="常见目录"><a href="#常见目录" class="headerlink" title="常见目录"></a>常见目录</h2><h3 id="etc"><a href="#etc" class="headerlink" title="&#x2F;etc"></a>&#x2F;etc</h3><p>&#x2F;etc 目录（“etc” 代表 etcetera）是存放操作系统使用的配置和系统文件位置</p>
+<p>在 &#x2F;etc 文件夹中包含 passwd 和 shadow 文件，&#x2F;etc&#x2F;passwd 文件存储了用户账户的信息，&#x2F;etc&#x2F;shadow 文件存储了每个用户的加密哈希密码。系统常使 SHA-512 或其他哈希算法对密码进行加密</p>
+<h3 id="var"><a href="#var" class="headerlink" title="&#x2F;var"></a>&#x2F;var</h3><p>&#x2F;var 目录（“var” 代表 variable data）是存放由系统上运行的服务或应用程序访问、修改或生成的数据</p>
+<h3 id="root"><a href="#root" class="headerlink" title="&#x2F;root"></a>&#x2F;root</h3><p>&#x2F;root 目录是 root 用户系统管理员的主目录，它与普通用户的主目录 &#x2F;home 不同，&#x2F;root 是专门为 root 用户保留的</p>
+<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录（“tmp” 代表 temporary）是用于存放仅需临时访问的文件和数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除。&#x2F;tmp 目录在默认情况下任何用户都有写入权限，&#x2F;tmp 是存放枚举脚本和其他工具的好位置</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/linuxfundamentalspart2 -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
       <categories>
-        <category>工具</category>
+        <category>基本技能</category>
       </categories>
   </entry>
   <entry>
-    <title>基本技能4-3</title>
+    <title>OSI 模型</title>
     <url>/2024/10/31/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-3/</url>
     <content><![CDATA[<h2 id="什么是-OSI-模型？"><a href="#什么是-OSI-模型？" class="headerlink" title="什么是 OSI 模型？"></a>什么是 OSI 模型？</h2><p>开放系统互联模型（OSI）是网络中的基础模型，规定了联网设备如何发送、接收和解释数据的框架</p>
 <p>OSI 模型的优势在于即使网络中的设备功能和设计不同，只要遵循OSI标准就能够相互通信。遵循OSI模型可确保数据在不同设备之间被理解</p>
@@ -993,6 +961,46 @@
 <p>日常应用程序提供图形用户界面（GUI），以便用户与发送或接收的数据进行交互。应用层协议也包括 DNS（域名系统），负责将网站地址转换为 IP 地址，使访问网络资源更加便捷，这层是用户直接接触的数据交互层<br><br></p>
 <!-- https://tryhackme.com/r/room/osimodelzi -->
 <!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Requests</title>
+    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Requests/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/psf/requests">Requests</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Requests是一个简单而优雅的 HTTP 库<br>Requests可让您极其轻松地发送 HTTP&#x2F;1.1 请求。无需手动将查询字符串添加到 URL，也无需对PUT&amp;POST数据进行表单编码 — 但现在，只需使用该json方法即可！<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>基本技能4-4</title>
+    <url>/2024/10/31/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-4/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Pwntools</title>
+    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Pwntools/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Gallopsled/pwntools">Pwntools</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Pwntools 是一个 CTF 框架和漏洞开发库。它用 Python 编写，旨在快速进行原型设计和开发，并旨在使漏洞编写尽可能简单。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
   </entry>
   <entry>
     <title>Scapy</title>
@@ -1038,6 +1046,46 @@
       <categories>
         <category>网站</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Pigcha</title>
+    <url>/2024/10/30/%E7%BD%91%E7%AB%99Pigcha/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.pigcha.com/">Pigcha</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>VPN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mullvad</title>
+    <url>/2024/10/30/%E7%BD%91%E7%AB%99Mullvad/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://mullvad.net/en">Mullvad</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>VPN</tag>
+      </tags>
   </entry>
   <entry>
     <title>Proton VPN</title>
@@ -1086,145 +1134,6 @@
 <p>安全工程师通过使用安全团队成员提供的威胁和漏洞数据，开发并实施安全解决方案。安全工程师负责防范多种类型的攻击，包括网页应用攻击、网络威胁以及不断变化的攻击趋势和策略。最终目标是采用并保持有效的安全措施，以降低攻击和数据丢失的风险。</p>
 <h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>测试和筛选软件中的安全措施<br>监控网络并生成报告，以及时更新系统，降低漏洞风险<br>识别并部署必要的系统，以实现最佳的安全保护<br><br></p>
 <!-- https://tryhackme.com/r/room/careersincyber -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
-      <categories>
-        <category>网络安全基础</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Mullvad</title>
-    <url>/2024/10/30/%E7%BD%91%E7%AB%99Mullvad/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://mullvad.net/en">Mullvad</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>VPN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网络攻击杀伤链</title>
-    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/</url>
-    <content><![CDATA[<h2 id="侦察"><a href="#侦察" class="headerlink" title="侦察"></a>侦察</h2><p><strong>侦察</strong>：是指发现并收集关于系统和受害者的信息。侦察阶段是对手计划攻击的阶段。</p>
-<p>开源情报（OSINT）也属于侦察范畴。OSINT 是攻击者在进行后续攻击步骤之前必须完成的第一步。攻击者需要通过收集关于公司及其员工的所有可用信息，来研究目标，以便确定最佳的攻击目标。</p>
-<p>为了在这个阶段进行操作，攻击者需要进行 OSINT</p>
-<p><strong>电子邮件收集</strong>：是通过公共、付费或免费服务获取电子邮件地址的过程。攻击者可以利用电子邮件收集进行网络钓鱼攻击。在侦察阶段，攻击者有大量的工具可用，其中一些包括：</p>
-<p><strong>theHarvester</strong>：除了收集电子邮件，这个工具还能通过多个公共数据源收集姓名、子域、IP 和 URL<br><strong>Hunter.io</strong>：这是一个电子邮件搜寻工具，可以获取与特定域名相关的联系信息<br><strong>OSINT Framework</strong>：提供了基于各种类别的 OSINT 工具集合</p>
-<p>攻击者还会利用社交媒体网站，来收集想要攻击的特定受害者或公司的信息。这些社交媒体上的信息对于攻击者进行网络钓鱼攻击可能非常有帮助。<br><br></p>
-<h2 id="武器化"><a href="#武器化" class="headerlink" title="武器化"></a>武器化</h2><p>在顺利完成侦察阶段后，大多数攻击者通常会使用自动化工具生成恶意软件，或者从暗网上购买恶意软件。这种工具会将恶意软件和漏洞利用结合成一个可传递的有效载荷。而那些更复杂的攻击者或由国家资助的高级持续性威胁（APT）组织则会编写自定义的恶意软件，以确保其独特性，从而避开目标上的检测。</p>
-<p><strong>恶意软件</strong>：一种用于破坏、干扰或未经授权访问计算机的程序或软件。<br><strong>漏洞利用</strong>：利用应用程序或系统中的漏洞或缺陷的程序或代码。<br><strong>有效载荷</strong>：攻击者在系统上执行的恶意代码。</p>
-<p>在武器化阶段，攻击者可能会进行以下操作：<br>创建一个包含恶意宏或 VBA（Visual Basic for Applications）脚本的感染 Microsoft Office 文档<br>攻击者可以创建恶意有效载荷或非常复杂的蠕虫病毒，将其植入 USB 驱动器，然后在公共场所分发<br>攻击者可能会选择使用指挥与控制（C2）技术，在受害者的计算机上执行命令或传递更多有效载荷<br>攻击者会选择后门植入方式<br><br></p>
-<h2 id="传递"><a href="#传递" class="headerlink" title="传递"></a>传递</h2><p>在传递阶段，有几种常见选择：</p>
-<p><strong>钓鱼邮件</strong>：在进行侦察并确定目标后，恶意攻击者会精心编写一封恶意邮件，目标可能是特定个人（鱼叉式钓鱼攻击）或公司内部的多名人员。邮件内包含有效载荷或恶意软件</p>
-<p><strong>在公共场所投放受感染的 USB 驱动器</strong>：例如在咖啡店、停车场或街道上。攻击者可能会通过印有公司 logo 的 USB 驱动器实施高级 USB 投放攻击，并假装是客户，将这些设备作为礼物寄送给公司</p>
-<p><strong>水坑攻击</strong>：这是一种专门针对特定群体的攻击方式，攻击者会入侵目标群体经常访问的网站，并将其重定向到恶意网站。攻击者会寻找并利用网站的已知漏洞。为了提高攻击成功率，攻击者可能会发送看似“无害”的电子邮件，引导受害者访问目标网站并点击恶意链接。受害者访问网站后，会无意中下载恶意软件或恶意应用程序，这种攻击类型被称为“驱动式下载”<br><br></p>
-<h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p>为了获得系统的访问权限，攻击者需要利用系统中的漏洞。在获得系统访问权限后，恶意攻击者可能会利用软件、系统或服务器漏洞来提升权限，或者在网络中进行横向移动。横向移动是指恶意攻击者在获得初始访问权限后，使用各种技术进一步深入网络，以便获取敏感数据。</p>
-<p>在这个阶段，攻击者也可能使用“零日漏洞利用”。零日漏洞利用或零日漏洞是一个在尚未被发现的漏洞，它暴露了软件或硬件中的安全漏洞，可能在问题显现之前造成严重影响。零日漏洞在一开始几乎没有检测机会。</p>
-<p>以下是攻击者执行漏洞利用的常见方式：<br>受害者通过打开邮件附件或点击恶意链接来触发漏洞<br>使用零日漏洞进行攻击<br>利用软件、硬件，甚至是人性的弱点<br>攻击者利用服务器漏洞进行攻击<br><br></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>后门可以让攻击者绕过安全机制并隐藏访问权限。后门也被称为“访问点”。</p>
-<p>一旦攻击者成功获取了系统访问权限，攻击者会希望能够在连接丢失、被检测到或初始访问权限被移除，或者系统被修补后，仍能重新访问系统。此时，攻击者需要安装一个持久性的后门。持久性后门可以确保攻击者能够重新访问之前已被攻陷的系统。</p>
-<p>以下是实现持久性的几种方式：<br><strong>在 Web 服务器上安装 Web Shell</strong>：Web Shell 是一种由攻击者编写的恶意脚本，使用 ASP、PHP 或 JSP 等 Web 开发语言，目的是维持对被攻陷系统的持续访问。由于 Web Shell 的简单性和文件格式，它们可能难以被检测并被误认为是无害文件。</p>
-<p><strong>在受害者的机器上安装后门</strong>：使攻击者可以远程控制受害者的机器并执行恶意代码。</p>
-<p><strong>创建或修改 Windows 服务</strong>：攻击者可以创建或修改 Windows 服务，使其能够定期执行恶意脚本或有效载荷，作为保持持久性的一部分。攻击者可以使用 sc.exe和 Reg 这些工具来修改服务配置。攻击者还可能伪装恶意有效载荷，使用与操作系统或合法软件相关的服务名称。</p>
-<p><strong>在注册表的“运行键”或启动文件夹中为恶意有效载荷添加条目</strong>：通过这种方式，每次用户登录计算机时，有效载荷都会被执行。启动文件夹既有针对单个用户账户的位置，也有系统范围的启动文件夹，无论哪个用户登录，都会被检查。</p>
-<p>此外，攻击者还可能在这一阶段使用时间篡改技术（Timestomping），以避免被取证调查人员检测，并让恶意软件看起来像合法程序的一部分。时间篡改技术允许攻击者修改文件的时间戳，包括修改、访问、创建和更改的时间。<br><br></p>
-<h2 id="指挥与控制"><a href="#指挥与控制" class="headerlink" title="指挥与控制"></a>指挥与控制</h2><p>在成功建立持久性并在受害者计算机上执行恶意软件后，攻击者通过该恶意软件打开了 C2（指挥与控制）通道，以便远程控制和操纵受害者。这一通信类型也被称为 C&amp;C 或 C2 信标，是指 C&amp;C 服务器与被感染主机之间的一种恶意通信方式。被感染的主机会持续与 C2 服务器通信，这就是“信标”一词的由来。</p>
-<p>被攻陷的终端将与攻击者设置的外部服务器通信，以建立指挥与控制通道。一旦连接建立，攻击者即可完全控制受害者的计算机</p>
-<p>攻击者通常使用以下 C2 通道：<br><strong>HTTP（端口 80）和 HTTPS（端口 443）协议</strong>：这种信标方式将恶意流量与合法流量混合，帮助攻击者规避防火墙的检测</p>
-<p><strong>DNS（域名服务器）</strong>：被感染的机器会不断向归属于攻击者的 DNS 服务器发送 DNS 请求，这种 C2 通信方式也被称为 DNS 隧道</p>
-<p>对手或者其他被攻陷的主机也可能是 C2 基础设施的拥有者。<br><br></p>
-<h2 id="达成目标"><a href="#达成目标" class="headerlink" title="达成目标"></a>达成目标</h2><p>在经历了攻击的前六个阶段后，这意味着攻击者将对最初设定的目的采取行动。通过直接访问系统，攻击者可以执行以下操作：</p>
-<p>收集用户的登录凭证<br>执行权限提升<br>进行内部侦察<br>在公司网络环境中横向移动<br>收集并外泄敏感数据<br>删除备份和影子副本，影子副本是微软的一项技术，可以创建文件或卷的备份副本和快照<br>覆盖或损坏数据</p>
-<br>
-
-
-<!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
-]]></content>
-      <categories>
-        <category>网络安全基础</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Pigcha</title>
-    <url>/2024/10/30/%E7%BD%91%E7%AB%99Pigcha/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.pigcha.com/">Pigcha</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>VPN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>治理与监管</title>
-    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/</url>
-    <content><![CDATA[<h2 id="为什么很重要？"><a href="#为什么很重要？" class="headerlink" title="为什么很重要？"></a>为什么很重要？</h2><p><strong>治理</strong>：管理和指导一个组织或系统，以实现其目标并确保遵守法律、法规和标准<br><strong>法规</strong>：由管理机构强制执行的规则或法律，旨在确保合规性并防止潜在风险<br><strong>合规性</strong>：指组织或系统遵守适用的法律、法规和标准的状态</p>
-<h3 id="信息安全治理"><a href="#信息安全治理" class="headerlink" title="信息安全治理"></a>信息安全治理</h3><p>信息安全治理是指组织建立的结构、政策、方法和指南，以保证其信息资产的隐私性、可靠性和可用性。它在风险管理、保护机密数据免受未经授权的入侵以及遵守相关法规方面起着关键作用。信息安全治理属于高层管理层的职责范围</p>
-<p>信息安全治理的流程：<br><strong>战略</strong>：制定和实施与组织整体业务目标相符的全面信息安全战略<br><strong>政策与程序</strong>：制定用于管理和保护信息资产的政策和程序<br><strong>风险管理</strong>：进行风险评估，识别可能威胁到组织信息资产的潜在风险，并采取措施缓解这些风险<br><strong>绩效衡量</strong>：建立指标和关键绩效指标（KPI）来评估信息安全治理计划的有效性<br><strong>合规性</strong>：确保遵循相关法规和行业最佳实践</p>
-<h3 id="信息安全法规"><a href="#信息安全法规" class="headerlink" title="信息安全法规"></a>信息安全法规</h3><p>在信息安全范式中，治理与法规密不可分，但有各自的含义。信息安全法规是指管理信息资产使用和保护的法律和监管框架。这些法规旨在防止未经授权的访问、窃取和误用敏感数据。遵守法规通常是强制性的，并由政府机构或其他监管机构实施。</p>
-<h3 id="关键利益"><a href="#关键利益" class="headerlink" title="关键利益"></a>关键利益</h3><p>实施治理和法规的主要好处：</p>
-<p><strong>更强的安全姿态</strong>：全面的安全治理计划和遵守相关法规，有助于组织降低安全漏洞风险，并保护敏感信息免受未经授权的访问、窃取和误用</p>
-<p><strong>增强利益相关者的信任</strong>：有效的安全治理和法规能够通过展示组织在网络安全方面的重视来提高利益相关者的信任。<br>法规合规性：遵循相关法规，能够帮助组织避免因不合规带来的法律和财务处罚及声誉损害</p>
-<p><strong>更好地与业务目标对齐</strong>：安全治理框架有助于组织将信息安全战略与整体业务目标保持一致，确保安全措施的成本效益并有助于组织成功</p>
-<p><strong>明智的决策</strong>：安全治理计划可以为决策者提供准确的信息，以便就信息安全风险做出明智决策，并确保安全措施在最需要的地方实施</p>
-<p><strong>竞争优势</strong>：有效的安全治理和对相关法规的遵守，可以通过展示组织保护敏感数据的承诺及增强利益相关者信任，从而获得竞争优势</p>
-<h3 id="相关法律和法规"><a href="#相关法律和法规" class="headerlink" title="相关法律和法规"></a>相关法律和法规</h3><p>一些特定的法律和法规在安全治理和监管生态系统提供了一个结构化的框架，以设定最低合规标准、促进问责制、建立信任，并鼓励创新方法来保护关键系统和数据。通过提供明确的规则，它们减少了模糊性，并为组织提供了一个通用语言，用于衡量其安全状态并确保合规性<br><br></p>
-<h2 id="信息安全框架"><a href="#信息安全框架" class="headerlink" title="信息安全框架"></a>信息安全框架</h2><p>信息安全框架提供了一份详细的文档，概述了组织的信息安全策略，并指导如何在组织内部实施、管理和执行安全措施</p>
-<p><strong>政策</strong>：概述了组织为实现特定目标而设定的目标、原则和指南<br><strong>标准</strong>：建立特定过程、产品或服务的具体要求或规范的文件<br><strong>指南</strong>：为实现特定目标或任务提供建议和最佳实践的文件<br><strong>程序</strong>：完成特定任务或过程的一系列明确步骤<br><strong>基线</strong>：组织或系统必须满足的最低安全标准或要求</p>
-<h3 id="制定治理文件"><a href="#制定治理文件" class="headerlink" title="制定治理文件"></a>制定治理文件</h3><p>制定政策、标准、指南等的通用步骤：</p>
-<p><strong>确定范围和目的</strong>：明确文件的覆盖范围及其目的</p>
-<p><strong>研究和审查</strong>：研究相关的法律、法规、行业标准和最佳实践，以确保文件的全面性和时效性。审查现有的政策、程序和其他文件，以避免重复或与现有指导不符</p>
-<p><strong>起草文件</strong>：制定大纲并开始撰写文件，遵循编写清晰、简洁的政策、程序、标准、指南和基线的最佳实践。确保文件具有针对性、可操作性，并与组织的目标和价值观保持一致</p>
-<p><strong>审查和批准</strong>：由利益相关者审阅文件，整合反馈，确保文件与组织的目标和价值观一致。获得适当利益相关者的最终批准</p>
-<p><strong>实施和沟通</strong>：将文件传达给所有相关员工和利益相关者，确保清楚各自的角色和责任。开发培训和意识计划，以确保文件被理解和遵循</p>
-<p><strong>审查和更新</strong>：定期审查和更新文件，以确保其保持相关性和有效性。监控合规情况，并根据反馈及威胁环境或监管环境的变化进行调整</p>
-<p>组织不需要总是制定新的标准、框架或基线；相反，它们通常会遵循和使用已经存在的、与其行业或领域相关的文件。选择使用哪个标准框架或基线检查表主要取决于地理区域的监管要求、项目范围、目标、可用资源等多种因素<br><br></p>
-<h2 id="治理、风险与合规（GRC）"><a href="#治理、风险与合规（GRC）" class="headerlink" title="治理、风险与合规（GRC）"></a>治理、风险与合规（GRC）</h2><p>GRC框架专注于在整体上引导组织的治理、企业风险管理和合规性。这是一种符合组织目标和方向的整体信息安全方法，有助于确保组织在遵守相关法规和行业标准的前提下进行运作</p>
-<p>GRC的组成部分<br><strong>治理组成部分</strong>：通过信息安全战略引导组织的方向，包括政策、标准、基线和框架等内容，还需建立监控方法以衡量绩效和评估结果</p>
-<p><strong>风险管理组成部分</strong>：识别、评估和优先处理风险，并实施控制和缓解策略以有效管理风险。这包括监控和报告风险，并不断评估和优化风险管理计划，确保其长期有效</p>
-<p><strong>合规组成部分</strong>：确保组织符合法律、法规和行业标准，并确保其活动符合内部政策和程序。这包括制定和实施合规计划，定期进行审计和评估，并向利益相关者报告合规情况</p>
-<h3 id="如何制定GRC程序-通用指南"><a href="#如何制定GRC程序-通用指南" class="headerlink" title="如何制定GRC程序 - 通用指南"></a>如何制定GRC程序 - 通用指南</h3><p>一个良好设计和实施的GRC程序为网络安全管理、法规合规及组织整体安全视角的提升提供了综合框架。它可以有效地整合治理、风险管理和合规活动，减轻网络事件的影响，并确保业务的弹性。</p>
-<p>开发和实施GRC框架涉及多个步骤：<br><strong>定义范围和目标</strong>：确定GRC程序的覆盖范围和具体目标<br><strong>进行风险评估</strong>：识别和评估组织的网络风险<br><strong>制定政策和程序</strong>：制定政策和程序，以指导组织内的网络安全实践<br><strong>建立治理流程</strong>：治理流程确保GRC程序得到有效的管理和控制<br><strong>实施控制措施</strong>：实施技术和非技术控制措施，以减轻识别到的风险<br><strong>监控和衡量绩效</strong>：建立流程，以监控和衡量GRC程序的有效性<br><strong>持续改进</strong>：根据绩效指标、变化的风险状况和利益相关者的反馈，不断审查和改进GRC程序<br><br></p>
-<h2 id="隐私与数据保护"><a href="#隐私与数据保护" class="headerlink" title="隐私与数据保护"></a>隐私与数据保护</h2><p>在金融、医疗保健、政府和工业等各个领域，隐私和数据保护法规涉及公民的个人身份信息（PII）。隐私法规的作用在于确保个人信息以负责任和符合伦理的方式处理和存储。这些法规还帮助建立信任、保护个人信息，并确保合规性。<br><br></p>
-<h2 id="NIST特别出版物"><a href="#NIST特别出版物" class="headerlink" title="NIST特别出版物"></a>NIST特别出版物</h2><p>NIST 800-53是美国国家标准与技术研究院（NIST）发布的名为《信息系统和组织的安全与隐私控制》的出版物。它提供了一系列安全控制的目录，用于保护信息系统的CIA。该出版物作为一个框架，帮助组织评估和提高其信息系统的安全性和隐私性，同时确保符合各种法律、法规和政策要求。NIST 800-53结合了多个来源的最佳实践，包括行业标准、指南和国际框架。</p>
-<h3 id="关键点"><a href="#关键点" class="headerlink" title="关键点"></a>关键点</h3><p>NIST 800-53提供了一个全面的安全和隐私控制集合，组织可以使用这些控制来保护其操作、资产、人员以及其他组织免受各种威胁和风险的侵害。这些威胁包括有意攻击、无意错误、自然灾害、基础设施故障、外国情报活动和隐私问题。NIST 800-53将安全控制分为20个类别，每个类别专门针对特定的安全问题。</p>
-<h3 id="基于NIST-800-53的信息安全程序的制定与实施"><a href="#基于NIST-800-53的信息安全程序的制定与实施" class="headerlink" title="基于NIST 800-53的信息安全程序的制定与实施"></a>基于NIST 800-53的信息安全程序的制定与实施</h3><p>在所有的控制类别中，“程序管理”是NIST 800-53框架中的一个关键控制点。程序管理控制要求建立、实施和监控整个组织范围的信息安全和隐私计划，以保护通过系统处理、存储或传输的信息。</p>
-<h3 id="合规最佳实践"><a href="#合规最佳实践" class="headerlink" title="合规最佳实践"></a>合规最佳实践</h3><p>企业应进行全面的调查，以识别和分类其数据资产、信息系统及相关威胁。这包括理解数据流、系统依赖关系和潜在的漏洞。NIST 800-53的控制类别应与识别出的资产和风险进行映射，以便更轻松地创建一个结构化的控制匹配方案，满足组织的特定需求。接下来，需要创建治理结构、分配职责，并明确实施和维护控制的具体流程，以有效管理实施过程。所有措施必须定期监控和评估以确保合规性。最后，组织应建立有效的监控系统，以识别和解决安全问题，进行定期评估和审计，并优化控制的实施。通过遵循这些最佳实践，组织可以成功地实施NIST 800-53，增强安全性，同时有效降低风险。</p>
-<h3 id="NIST-800-63B"><a href="#NIST-800-63B" class="headerlink" title="NIST 800-63B"></a>NIST 800-63B</h3><p>NIST特别出版物800-63B是一组由NIST创建的指南，旨在帮助组织建立有效的数字身份管理实践。它主要关注于验证和确认访问数字服务、系统和网络的个人身份。这些指南涵盖了不同级别的身份保证，从基本到高级，提供了有关使用身份验证因素以及安全管理和存储用户凭证的建议。<br><br></p>
-<h2 id="信息安全管理与合规"><a href="#信息安全管理与合规" class="headerlink" title="信息安全管理与合规"></a>信息安全管理与合规</h2><p>信息安全（IS）管理包括战略规划、执行和持续管理安全措施，以保护信息资产免受未经授权的访问、使用、披露、中断、篡改和破坏。它涉及风险评估与识别、安全控制和程序的开发、事件响应规划以及安全意识培训。相比之下，合规性指的是遵守与信息安全相关的法律、法规、合同和行业特定的标准</p>
-<h3 id="ISO-IEC-27001"><a href="#ISO-IEC-27001" class="headerlink" title="ISO&#x2F;IEC 27001"></a>ISO&#x2F;IEC 27001</h3><p>ISO 27001 是一个国际公认的标准，规定了计划、开发、运行和更新组织的信息安全管理体系（ISMS）的要求。它由国际标准化组织（ISO）和国际电工委员会（IEC）制定，具有以下核心组成部分：</p>
-<p><strong>范围</strong>：规定 ISMS 的边界，包括覆盖的资产和流程<br><strong>信息安全政策</strong>：定义组织信息安全方法的高层文件<br><strong>风险评估</strong>：涉及识别和评估对组织信息的机密性、完整性和可用性的风险<br><strong>风险处理</strong>：选择和实施控制措施，以将识别的风险降低到可接受的水平<br><strong>适用性声明</strong>（SoA）：该文件指定哪些标准中的控制措施是适用的，哪些是不适用的<br><strong>内部审计</strong>：定期对 ISMS 进行审计，以确保其有效运行<br><strong>管理评审</strong>：定期评估 ISMS 的运行表现</p>
-<p>基于 ISO 27001 标准构建的信息安全管理体系（ISMS）需要精心设计和执行。这包括对组织的安全程序进行详尽的评估，识别漏洞，并进行彻底的风险评估。在访问控制、事件响应等领域，需要制定明确的规则和流程，并确保它们符合 ISO 27001 的要求。领导层的支持和资源的合理分配对于 ISMS 的成功实施也至关重要。定期监控、衡量和持续改进对于保证 ISMS 的有效性及其与组织目标的持续一致性非常关键。</p>
-<h3 id="服务组织控制-2（SOC-2）"><a href="#服务组织控制-2（SOC-2）" class="headerlink" title="服务组织控制 2（SOC 2）"></a>服务组织控制 2（SOC 2）</h3><p>SOC 2 是由美国注册会计师协会（AICPA）开发的一种合规和审计框架。它基于CIA来评估公司数据安全的有效性。SOC 2 报告能够向客户、利益相关者和商业合作伙伴保证，公司已经实施了足够的控制措施来保护系统、数据和敏感信息</p>
-<p>SOC 2 框架对与客户数据进行交互或提供涉及处理、存储或传输敏感数据解决方案的服务提供商能帮助企业表明它们对严格隐私和安全标准的承诺。客户经常要求提供 SOC 2 报告，或者将其作为一种竞争优势来证明客户信息能够得到安全处理</p>
-<h3 id="重要准则"><a href="#重要准则" class="headerlink" title="重要准则"></a>重要准则</h3><p>SOC 2 是一种审计标准，用于评估服务组织在机密性、可用性、完整性和隐私方面控制措施的有效性<br>SOC 2 审计由独立的审计员进行，以验证安全控制措施是否满足相关标准<br>SOC 2 报告为客户、利益相关者和监管机构提供关于服务组织的安全和隐私措施的重要信息。它们可用于展示服务组织是否具备充分的控制措施，以保护其在处理客户信息时所使用的数据和系统<br>SOC 2 审计报告会评估云计算公司所采取的控制措施，并包含任何发现的缺陷或改进建议。报告可以与客户及其他利益相关者分享，以确保公司在数据和系统保护方面采取了适当的措施</p>
-<h3 id="SOC-2-提供的信息安全保护是什么？"><a href="#SOC-2-提供的信息安全保护是什么？" class="headerlink" title="SOC 2 提供的信息安全保护是什么？"></a>SOC 2 提供的信息安全保护是什么？</h3><p>SOC 2 审计的主要目标是确保第三方服务提供商能安全地存储和处理敏感信息。</p>
-<p>在规划和进行 SOC 2 审计，组织的管理团队可以采取步骤：<br><strong>确定审计范围</strong>：包括与客户数据的安全和隐私相关的特定系统、流程或位置</p>
-<p><strong>选择合适的审计员</strong>：挑选一位具备金融公司 SOC 2 审计经验的合格审计员。应考虑审计员的声誉、经验和可用性等因素</p>
-<p><strong>制定审计计划</strong>：与审计员合作制定审计计划，包括审计的时间表、范围和标准</p>
-<p><strong>准备审计</strong>：通过审查安全和隐私控制措施、政策和程序为审计做好准备。识别任何漏洞或不足，并制定改进计划</p>
-<p><strong>进行审计</strong>：审计员将检查控制措施，并进行测试以评估其有效性。审计可能包括与关键人员的访谈、文档审查和控制测试</p>
-<p><strong>获取审计报告</strong>：审计完成后，审计员会提供一份报告，详细说明审计结果。报告可能包括控制措施的描述、识别的缺陷或漏洞，以及改进建议<br><br></p>
-<!-- https://tryhackme.com/r/room/cybergovernanceregulation -->
 <!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
       <categories>
         <category>网络安全基础</category>
@@ -1296,6 +1205,105 @@
 <h2 id="威胁-vs-风险"><a href="#威胁-vs-风险" class="headerlink" title="威胁 vs 风险"></a>威胁 vs 风险</h2><p><strong>漏洞</strong>：漏洞指的是容易受到攻击或损害的状态。在信息安全领域，漏洞代表系统中的弱点。<br><strong>威胁</strong>：威胁是与这些弱点或漏洞相关的潜在危险。<br><strong>风险</strong>：风险涉及威胁行为者利用漏洞的可能性，以及对业务造成的影响。<br><br></p>
 <!-- https://tryhackme.com/r/room/securityprinciples -->
 <!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>治理与监管</title>
+    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/</url>
+    <content><![CDATA[<h2 id="为什么很重要？"><a href="#为什么很重要？" class="headerlink" title="为什么很重要？"></a>为什么很重要？</h2><p><strong>治理</strong>：管理和指导一个组织或系统，以实现其目标并确保遵守法律、法规和标准<br><strong>法规</strong>：由管理机构强制执行的规则或法律，旨在确保合规性并防止潜在风险<br><strong>合规性</strong>：指组织或系统遵守适用的法律、法规和标准的状态</p>
+<h3 id="信息安全治理"><a href="#信息安全治理" class="headerlink" title="信息安全治理"></a>信息安全治理</h3><p>信息安全治理是指组织建立的结构、政策、方法和指南，以保证其信息资产的隐私性、可靠性和可用性。它在风险管理、保护机密数据免受未经授权的入侵以及遵守相关法规方面起着关键作用。信息安全治理属于高层管理层的职责范围</p>
+<p>信息安全治理的流程：<br><strong>战略</strong>：制定和实施与组织整体业务目标相符的全面信息安全战略<br><strong>政策与程序</strong>：制定用于管理和保护信息资产的政策和程序<br><strong>风险管理</strong>：进行风险评估，识别可能威胁到组织信息资产的潜在风险，并采取措施缓解这些风险<br><strong>绩效衡量</strong>：建立指标和关键绩效指标（KPI）来评估信息安全治理计划的有效性<br><strong>合规性</strong>：确保遵循相关法规和行业最佳实践</p>
+<h3 id="信息安全法规"><a href="#信息安全法规" class="headerlink" title="信息安全法规"></a>信息安全法规</h3><p>在信息安全范式中，治理与法规密不可分，但有各自的含义。信息安全法规是指管理信息资产使用和保护的法律和监管框架。这些法规旨在防止未经授权的访问、窃取和误用敏感数据。遵守法规通常是强制性的，并由政府机构或其他监管机构实施。</p>
+<h3 id="关键利益"><a href="#关键利益" class="headerlink" title="关键利益"></a>关键利益</h3><p>实施治理和法规的主要好处：</p>
+<p><strong>更强的安全姿态</strong>：全面的安全治理计划和遵守相关法规，有助于组织降低安全漏洞风险，并保护敏感信息免受未经授权的访问、窃取和误用</p>
+<p><strong>增强利益相关者的信任</strong>：有效的安全治理和法规能够通过展示组织在网络安全方面的重视来提高利益相关者的信任。<br>法规合规性：遵循相关法规，能够帮助组织避免因不合规带来的法律和财务处罚及声誉损害</p>
+<p><strong>更好地与业务目标对齐</strong>：安全治理框架有助于组织将信息安全战略与整体业务目标保持一致，确保安全措施的成本效益并有助于组织成功</p>
+<p><strong>明智的决策</strong>：安全治理计划可以为决策者提供准确的信息，以便就信息安全风险做出明智决策，并确保安全措施在最需要的地方实施</p>
+<p><strong>竞争优势</strong>：有效的安全治理和对相关法规的遵守，可以通过展示组织保护敏感数据的承诺及增强利益相关者信任，从而获得竞争优势</p>
+<h3 id="相关法律和法规"><a href="#相关法律和法规" class="headerlink" title="相关法律和法规"></a>相关法律和法规</h3><p>一些特定的法律和法规在安全治理和监管生态系统提供了一个结构化的框架，以设定最低合规标准、促进问责制、建立信任，并鼓励创新方法来保护关键系统和数据。通过提供明确的规则，它们减少了模糊性，并为组织提供了一个通用语言，用于衡量其安全状态并确保合规性<br><br></p>
+<h2 id="信息安全框架"><a href="#信息安全框架" class="headerlink" title="信息安全框架"></a>信息安全框架</h2><p>信息安全框架提供了一份详细的文档，概述了组织的信息安全策略，并指导如何在组织内部实施、管理和执行安全措施</p>
+<p><strong>政策</strong>：概述了组织为实现特定目标而设定的目标、原则和指南<br><strong>标准</strong>：建立特定过程、产品或服务的具体要求或规范的文件<br><strong>指南</strong>：为实现特定目标或任务提供建议和最佳实践的文件<br><strong>程序</strong>：完成特定任务或过程的一系列明确步骤<br><strong>基线</strong>：组织或系统必须满足的最低安全标准或要求</p>
+<h3 id="制定治理文件"><a href="#制定治理文件" class="headerlink" title="制定治理文件"></a>制定治理文件</h3><p>制定政策、标准、指南等的通用步骤：</p>
+<p><strong>确定范围和目的</strong>：明确文件的覆盖范围及其目的</p>
+<p><strong>研究和审查</strong>：研究相关的法律、法规、行业标准和最佳实践，以确保文件的全面性和时效性。审查现有的政策、程序和其他文件，以避免重复或与现有指导不符</p>
+<p><strong>起草文件</strong>：制定大纲并开始撰写文件，遵循编写清晰、简洁的政策、程序、标准、指南和基线的最佳实践。确保文件具有针对性、可操作性，并与组织的目标和价值观保持一致</p>
+<p><strong>审查和批准</strong>：由利益相关者审阅文件，整合反馈，确保文件与组织的目标和价值观一致。获得适当利益相关者的最终批准</p>
+<p><strong>实施和沟通</strong>：将文件传达给所有相关员工和利益相关者，确保清楚各自的角色和责任。开发培训和意识计划，以确保文件被理解和遵循</p>
+<p><strong>审查和更新</strong>：定期审查和更新文件，以确保其保持相关性和有效性。监控合规情况，并根据反馈及威胁环境或监管环境的变化进行调整</p>
+<p>组织不需要总是制定新的标准、框架或基线；相反，它们通常会遵循和使用已经存在的、与其行业或领域相关的文件。选择使用哪个标准框架或基线检查表主要取决于地理区域的监管要求、项目范围、目标、可用资源等多种因素<br><br></p>
+<h2 id="治理、风险与合规（GRC）"><a href="#治理、风险与合规（GRC）" class="headerlink" title="治理、风险与合规（GRC）"></a>治理、风险与合规（GRC）</h2><p>GRC框架专注于在整体上引导组织的治理、企业风险管理和合规性。这是一种符合组织目标和方向的整体信息安全方法，有助于确保组织在遵守相关法规和行业标准的前提下进行运作</p>
+<p>GRC的组成部分<br><strong>治理组成部分</strong>：通过信息安全战略引导组织的方向，包括政策、标准、基线和框架等内容，还需建立监控方法以衡量绩效和评估结果</p>
+<p><strong>风险管理组成部分</strong>：识别、评估和优先处理风险，并实施控制和缓解策略以有效管理风险。这包括监控和报告风险，并不断评估和优化风险管理计划，确保其长期有效</p>
+<p><strong>合规组成部分</strong>：确保组织符合法律、法规和行业标准，并确保其活动符合内部政策和程序。这包括制定和实施合规计划，定期进行审计和评估，并向利益相关者报告合规情况</p>
+<h3 id="如何制定GRC程序-通用指南"><a href="#如何制定GRC程序-通用指南" class="headerlink" title="如何制定GRC程序 - 通用指南"></a>如何制定GRC程序 - 通用指南</h3><p>一个良好设计和实施的GRC程序为网络安全管理、法规合规及组织整体安全视角的提升提供了综合框架。它可以有效地整合治理、风险管理和合规活动，减轻网络事件的影响，并确保业务的弹性。</p>
+<p>开发和实施GRC框架涉及多个步骤：<br><strong>定义范围和目标</strong>：确定GRC程序的覆盖范围和具体目标<br><strong>进行风险评估</strong>：识别和评估组织的网络风险<br><strong>制定政策和程序</strong>：制定政策和程序，以指导组织内的网络安全实践<br><strong>建立治理流程</strong>：治理流程确保GRC程序得到有效的管理和控制<br><strong>实施控制措施</strong>：实施技术和非技术控制措施，以减轻识别到的风险<br><strong>监控和衡量绩效</strong>：建立流程，以监控和衡量GRC程序的有效性<br><strong>持续改进</strong>：根据绩效指标、变化的风险状况和利益相关者的反馈，不断审查和改进GRC程序<br><br></p>
+<h2 id="隐私与数据保护"><a href="#隐私与数据保护" class="headerlink" title="隐私与数据保护"></a>隐私与数据保护</h2><p>在金融、医疗保健、政府和工业等各个领域，隐私和数据保护法规涉及公民的个人身份信息（PII）。隐私法规的作用在于确保个人信息以负责任和符合伦理的方式处理和存储。这些法规还帮助建立信任、保护个人信息，并确保合规性。<br><br></p>
+<h2 id="NIST特别出版物"><a href="#NIST特别出版物" class="headerlink" title="NIST特别出版物"></a>NIST特别出版物</h2><p>NIST 800-53是美国国家标准与技术研究院（NIST）发布的名为《信息系统和组织的安全与隐私控制》的出版物。它提供了一系列安全控制的目录，用于保护信息系统的CIA。该出版物作为一个框架，帮助组织评估和提高其信息系统的安全性和隐私性，同时确保符合各种法律、法规和政策要求。NIST 800-53结合了多个来源的最佳实践，包括行业标准、指南和国际框架。</p>
+<h3 id="关键点"><a href="#关键点" class="headerlink" title="关键点"></a>关键点</h3><p>NIST 800-53提供了一个全面的安全和隐私控制集合，组织可以使用这些控制来保护其操作、资产、人员以及其他组织免受各种威胁和风险的侵害。这些威胁包括有意攻击、无意错误、自然灾害、基础设施故障、外国情报活动和隐私问题。NIST 800-53将安全控制分为20个类别，每个类别专门针对特定的安全问题。</p>
+<h3 id="基于NIST-800-53的信息安全程序的制定与实施"><a href="#基于NIST-800-53的信息安全程序的制定与实施" class="headerlink" title="基于NIST 800-53的信息安全程序的制定与实施"></a>基于NIST 800-53的信息安全程序的制定与实施</h3><p>在所有的控制类别中，“程序管理”是NIST 800-53框架中的一个关键控制点。程序管理控制要求建立、实施和监控整个组织范围的信息安全和隐私计划，以保护通过系统处理、存储或传输的信息。</p>
+<h3 id="合规最佳实践"><a href="#合规最佳实践" class="headerlink" title="合规最佳实践"></a>合规最佳实践</h3><p>企业应进行全面的调查，以识别和分类其数据资产、信息系统及相关威胁。这包括理解数据流、系统依赖关系和潜在的漏洞。NIST 800-53的控制类别应与识别出的资产和风险进行映射，以便更轻松地创建一个结构化的控制匹配方案，满足组织的特定需求。接下来，需要创建治理结构、分配职责，并明确实施和维护控制的具体流程，以有效管理实施过程。所有措施必须定期监控和评估以确保合规性。最后，组织应建立有效的监控系统，以识别和解决安全问题，进行定期评估和审计，并优化控制的实施。通过遵循这些最佳实践，组织可以成功地实施NIST 800-53，增强安全性，同时有效降低风险。</p>
+<h3 id="NIST-800-63B"><a href="#NIST-800-63B" class="headerlink" title="NIST 800-63B"></a>NIST 800-63B</h3><p>NIST特别出版物800-63B是一组由NIST创建的指南，旨在帮助组织建立有效的数字身份管理实践。它主要关注于验证和确认访问数字服务、系统和网络的个人身份。这些指南涵盖了不同级别的身份保证，从基本到高级，提供了有关使用身份验证因素以及安全管理和存储用户凭证的建议。<br><br></p>
+<h2 id="信息安全管理与合规"><a href="#信息安全管理与合规" class="headerlink" title="信息安全管理与合规"></a>信息安全管理与合规</h2><p>信息安全（IS）管理包括战略规划、执行和持续管理安全措施，以保护信息资产免受未经授权的访问、使用、披露、中断、篡改和破坏。它涉及风险评估与识别、安全控制和程序的开发、事件响应规划以及安全意识培训。相比之下，合规性指的是遵守与信息安全相关的法律、法规、合同和行业特定的标准</p>
+<h3 id="ISO-IEC-27001"><a href="#ISO-IEC-27001" class="headerlink" title="ISO&#x2F;IEC 27001"></a>ISO&#x2F;IEC 27001</h3><p>ISO 27001 是一个国际公认的标准，规定了计划、开发、运行和更新组织的信息安全管理体系（ISMS）的要求。它由国际标准化组织（ISO）和国际电工委员会（IEC）制定，具有以下核心组成部分：</p>
+<p><strong>范围</strong>：规定 ISMS 的边界，包括覆盖的资产和流程<br><strong>信息安全政策</strong>：定义组织信息安全方法的高层文件<br><strong>风险评估</strong>：涉及识别和评估对组织信息的机密性、完整性和可用性的风险<br><strong>风险处理</strong>：选择和实施控制措施，以将识别的风险降低到可接受的水平<br><strong>适用性声明</strong>（SoA）：该文件指定哪些标准中的控制措施是适用的，哪些是不适用的<br><strong>内部审计</strong>：定期对 ISMS 进行审计，以确保其有效运行<br><strong>管理评审</strong>：定期评估 ISMS 的运行表现</p>
+<p>基于 ISO 27001 标准构建的信息安全管理体系（ISMS）需要精心设计和执行。这包括对组织的安全程序进行详尽的评估，识别漏洞，并进行彻底的风险评估。在访问控制、事件响应等领域，需要制定明确的规则和流程，并确保它们符合 ISO 27001 的要求。领导层的支持和资源的合理分配对于 ISMS 的成功实施也至关重要。定期监控、衡量和持续改进对于保证 ISMS 的有效性及其与组织目标的持续一致性非常关键。</p>
+<h3 id="服务组织控制-2（SOC-2）"><a href="#服务组织控制-2（SOC-2）" class="headerlink" title="服务组织控制 2（SOC 2）"></a>服务组织控制 2（SOC 2）</h3><p>SOC 2 是由美国注册会计师协会（AICPA）开发的一种合规和审计框架。它基于CIA来评估公司数据安全的有效性。SOC 2 报告能够向客户、利益相关者和商业合作伙伴保证，公司已经实施了足够的控制措施来保护系统、数据和敏感信息</p>
+<p>SOC 2 框架对与客户数据进行交互或提供涉及处理、存储或传输敏感数据解决方案的服务提供商能帮助企业表明它们对严格隐私和安全标准的承诺。客户经常要求提供 SOC 2 报告，或者将其作为一种竞争优势来证明客户信息能够得到安全处理</p>
+<h3 id="重要准则"><a href="#重要准则" class="headerlink" title="重要准则"></a>重要准则</h3><p>SOC 2 是一种审计标准，用于评估服务组织在机密性、可用性、完整性和隐私方面控制措施的有效性<br>SOC 2 审计由独立的审计员进行，以验证安全控制措施是否满足相关标准<br>SOC 2 报告为客户、利益相关者和监管机构提供关于服务组织的安全和隐私措施的重要信息。它们可用于展示服务组织是否具备充分的控制措施，以保护其在处理客户信息时所使用的数据和系统<br>SOC 2 审计报告会评估云计算公司所采取的控制措施，并包含任何发现的缺陷或改进建议。报告可以与客户及其他利益相关者分享，以确保公司在数据和系统保护方面采取了适当的措施</p>
+<h3 id="SOC-2-提供的信息安全保护是什么？"><a href="#SOC-2-提供的信息安全保护是什么？" class="headerlink" title="SOC 2 提供的信息安全保护是什么？"></a>SOC 2 提供的信息安全保护是什么？</h3><p>SOC 2 审计的主要目标是确保第三方服务提供商能安全地存储和处理敏感信息。</p>
+<p>在规划和进行 SOC 2 审计，组织的管理团队可以采取步骤：<br><strong>确定审计范围</strong>：包括与客户数据的安全和隐私相关的特定系统、流程或位置</p>
+<p><strong>选择合适的审计员</strong>：挑选一位具备金融公司 SOC 2 审计经验的合格审计员。应考虑审计员的声誉、经验和可用性等因素</p>
+<p><strong>制定审计计划</strong>：与审计员合作制定审计计划，包括审计的时间表、范围和标准</p>
+<p><strong>准备审计</strong>：通过审查安全和隐私控制措施、政策和程序为审计做好准备。识别任何漏洞或不足，并制定改进计划</p>
+<p><strong>进行审计</strong>：审计员将检查控制措施，并进行测试以评估其有效性。审计可能包括与关键人员的访谈、文档审查和控制测试</p>
+<p><strong>获取审计报告</strong>：审计完成后，审计员会提供一份报告，详细说明审计结果。报告可能包括控制措施的描述、识别的缺陷或漏洞，以及改进建议<br><br></p>
+<!-- https://tryhackme.com/r/room/cybergovernanceregulation -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网络攻击杀伤链</title>
+    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/</url>
+    <content><![CDATA[<h2 id="侦察"><a href="#侦察" class="headerlink" title="侦察"></a>侦察</h2><p><strong>侦察</strong>：是指发现并收集关于系统和受害者的信息。侦察阶段是对手计划攻击的阶段。</p>
+<p>开源情报（OSINT）也属于侦察范畴。OSINT 是攻击者在进行后续攻击步骤之前必须完成的第一步。攻击者需要通过收集关于公司及其员工的所有可用信息，来研究目标，以便确定最佳的攻击目标。</p>
+<p>为了在这个阶段进行操作，攻击者需要进行 OSINT</p>
+<p><strong>电子邮件收集</strong>：是通过公共、付费或免费服务获取电子邮件地址的过程。攻击者可以利用电子邮件收集进行网络钓鱼攻击。在侦察阶段，攻击者有大量的工具可用，其中一些包括：</p>
+<p><strong>theHarvester</strong>：除了收集电子邮件，这个工具还能通过多个公共数据源收集姓名、子域、IP 和 URL<br><strong>Hunter.io</strong>：这是一个电子邮件搜寻工具，可以获取与特定域名相关的联系信息<br><strong>OSINT Framework</strong>：提供了基于各种类别的 OSINT 工具集合</p>
+<p>攻击者还会利用社交媒体网站，来收集想要攻击的特定受害者或公司的信息。这些社交媒体上的信息对于攻击者进行网络钓鱼攻击可能非常有帮助。<br><br></p>
+<h2 id="武器化"><a href="#武器化" class="headerlink" title="武器化"></a>武器化</h2><p>在顺利完成侦察阶段后，大多数攻击者通常会使用自动化工具生成恶意软件，或者从暗网上购买恶意软件。这种工具会将恶意软件和漏洞利用结合成一个可传递的有效载荷。而那些更复杂的攻击者或由国家资助的高级持续性威胁（APT）组织则会编写自定义的恶意软件，以确保其独特性，从而避开目标上的检测。</p>
+<p><strong>恶意软件</strong>：一种用于破坏、干扰或未经授权访问计算机的程序或软件。<br><strong>漏洞利用</strong>：利用应用程序或系统中的漏洞或缺陷的程序或代码。<br><strong>有效载荷</strong>：攻击者在系统上执行的恶意代码。</p>
+<p>在武器化阶段，攻击者可能会进行以下操作：<br>创建一个包含恶意宏或 VBA（Visual Basic for Applications）脚本的感染 Microsoft Office 文档<br>攻击者可以创建恶意有效载荷或非常复杂的蠕虫病毒，将其植入 USB 驱动器，然后在公共场所分发<br>攻击者可能会选择使用指挥与控制（C2）技术，在受害者的计算机上执行命令或传递更多有效载荷<br>攻击者会选择后门植入方式<br><br></p>
+<h2 id="传递"><a href="#传递" class="headerlink" title="传递"></a>传递</h2><p>在传递阶段，有几种常见选择：</p>
+<p><strong>钓鱼邮件</strong>：在进行侦察并确定目标后，恶意攻击者会精心编写一封恶意邮件，目标可能是特定个人（鱼叉式钓鱼攻击）或公司内部的多名人员。邮件内包含有效载荷或恶意软件</p>
+<p><strong>在公共场所投放受感染的 USB 驱动器</strong>：例如在咖啡店、停车场或街道上。攻击者可能会通过印有公司 logo 的 USB 驱动器实施高级 USB 投放攻击，并假装是客户，将这些设备作为礼物寄送给公司</p>
+<p><strong>水坑攻击</strong>：这是一种专门针对特定群体的攻击方式，攻击者会入侵目标群体经常访问的网站，并将其重定向到恶意网站。攻击者会寻找并利用网站的已知漏洞。为了提高攻击成功率，攻击者可能会发送看似“无害”的电子邮件，引导受害者访问目标网站并点击恶意链接。受害者访问网站后，会无意中下载恶意软件或恶意应用程序，这种攻击类型被称为“驱动式下载”<br><br></p>
+<h2 id="利用"><a href="#利用" class="headerlink" title="利用"></a>利用</h2><p>为了获得系统的访问权限，攻击者需要利用系统中的漏洞。在获得系统访问权限后，恶意攻击者可能会利用软件、系统或服务器漏洞来提升权限，或者在网络中进行横向移动。横向移动是指恶意攻击者在获得初始访问权限后，使用各种技术进一步深入网络，以便获取敏感数据。</p>
+<p>在这个阶段，攻击者也可能使用“零日漏洞利用”。零日漏洞利用或零日漏洞是一个在尚未被发现的漏洞，它暴露了软件或硬件中的安全漏洞，可能在问题显现之前造成严重影响。零日漏洞在一开始几乎没有检测机会。</p>
+<p>以下是攻击者执行漏洞利用的常见方式：<br>受害者通过打开邮件附件或点击恶意链接来触发漏洞<br>使用零日漏洞进行攻击<br>利用软件、硬件，甚至是人性的弱点<br>攻击者利用服务器漏洞进行攻击<br><br></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>后门可以让攻击者绕过安全机制并隐藏访问权限。后门也被称为“访问点”。</p>
+<p>一旦攻击者成功获取了系统访问权限，攻击者会希望能够在连接丢失、被检测到或初始访问权限被移除，或者系统被修补后，仍能重新访问系统。此时，攻击者需要安装一个持久性的后门。持久性后门可以确保攻击者能够重新访问之前已被攻陷的系统。</p>
+<p>以下是实现持久性的几种方式：<br><strong>在 Web 服务器上安装 Web Shell</strong>：Web Shell 是一种由攻击者编写的恶意脚本，使用 ASP、PHP 或 JSP 等 Web 开发语言，目的是维持对被攻陷系统的持续访问。由于 Web Shell 的简单性和文件格式，它们可能难以被检测并被误认为是无害文件。</p>
+<p><strong>在受害者的机器上安装后门</strong>：使攻击者可以远程控制受害者的机器并执行恶意代码。</p>
+<p><strong>创建或修改 Windows 服务</strong>：攻击者可以创建或修改 Windows 服务，使其能够定期执行恶意脚本或有效载荷，作为保持持久性的一部分。攻击者可以使用 sc.exe和 Reg 这些工具来修改服务配置。攻击者还可能伪装恶意有效载荷，使用与操作系统或合法软件相关的服务名称。</p>
+<p><strong>在注册表的“运行键”或启动文件夹中为恶意有效载荷添加条目</strong>：通过这种方式，每次用户登录计算机时，有效载荷都会被执行。启动文件夹既有针对单个用户账户的位置，也有系统范围的启动文件夹，无论哪个用户登录，都会被检查。</p>
+<p>此外，攻击者还可能在这一阶段使用时间篡改技术（Timestomping），以避免被取证调查人员检测，并让恶意软件看起来像合法程序的一部分。时间篡改技术允许攻击者修改文件的时间戳，包括修改、访问、创建和更改的时间。<br><br></p>
+<h2 id="指挥与控制"><a href="#指挥与控制" class="headerlink" title="指挥与控制"></a>指挥与控制</h2><p>在成功建立持久性并在受害者计算机上执行恶意软件后，攻击者通过该恶意软件打开了 C2（指挥与控制）通道，以便远程控制和操纵受害者。这一通信类型也被称为 C&amp;C 或 C2 信标，是指 C&amp;C 服务器与被感染主机之间的一种恶意通信方式。被感染的主机会持续与 C2 服务器通信，这就是“信标”一词的由来。</p>
+<p>被攻陷的终端将与攻击者设置的外部服务器通信，以建立指挥与控制通道。一旦连接建立，攻击者即可完全控制受害者的计算机</p>
+<p>攻击者通常使用以下 C2 通道：<br><strong>HTTP（端口 80）和 HTTPS（端口 443）协议</strong>：这种信标方式将恶意流量与合法流量混合，帮助攻击者规避防火墙的检测</p>
+<p><strong>DNS（域名服务器）</strong>：被感染的机器会不断向归属于攻击者的 DNS 服务器发送 DNS 请求，这种 C2 通信方式也被称为 DNS 隧道</p>
+<p>对手或者其他被攻陷的主机也可能是 C2 基础设施的拥有者。<br><br></p>
+<h2 id="达成目标"><a href="#达成目标" class="headerlink" title="达成目标"></a>达成目标</h2><p>在经历了攻击的前六个阶段后，这意味着攻击者将对最初设定的目的采取行动。通过直接访问系统，攻击者可以执行以下操作：</p>
+<p>收集用户的登录凭证<br>执行权限提升<br>进行内部侦察<br>在公司网络环境中横向移动<br>收集并外泄敏感数据<br>删除备份和影子副本，影子副本是微软的一项技术，可以创建文件或卷的备份副本和快照<br>覆盖或损坏数据</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
+]]></content>
       <categories>
         <category>网络安全基础</category>
       </categories>
