@@ -1,6 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>博客模板</title>
+    <url>/2024/10/27/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+
+
+
+<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+<!-- 网站 -->
+<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>工具模板</title>
+    <url>/2024/10/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
+
+
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Linux基础知识 第一部分</title>
+    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-1/</url>
+    <content><![CDATA[<h2 id="Linux-背景知识简介"><a href="#Linux-背景知识简介" class="headerlink" title="Linux 背景知识简介"></a>Linux 背景知识简介</h2><p>与 Windows 等其他操作系统（OS）相比，各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 是开源的，因此有许多不同的 Linux 发行版<br><br></p>
+<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>echo</td>
+<td>输出提供的任何文本</td>
+</tr>
+<tr>
+<td>whoami</td>
+<td>查看当前登录的用户身份</td>
+</tr>
+</tbody></table>
+<h3 id="使用-echo-命令，输出文本"><a href="#使用-echo-命令，输出文本" class="headerlink" title="使用 echo 命令，输出文本"></a>使用 echo 命令，输出文本</h3><p>使用 echo 命令输出字符串</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span></span><br><span class="line"><span class="comment"># 输出 Hello World!</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-whoami-命令，查看当前登录的用户身份"><a href="#使用-whoami-命令，查看当前登录的用户身份" class="headerlink" title="使用 whoami 命令，查看当前登录的用户身份"></a>使用 whoami 命令，查看当前登录的用户身份</h3><p>使用 whoami 命令查看当前登录的用户身份 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">whoami</span></span><br><span class="line"><span class="comment"># 查询当前用户</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="与文件系统的交互命令"><a href="#与文件系统的交互命令" class="headerlink" title="与文件系统的交互命令"></a>与文件系统的交互命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ls</td>
+<td>列出当前目录中的文件（listing）</td>
+</tr>
+<tr>
+<td>cd</td>
+<td>更改当前目录（change directory）</td>
+</tr>
+<tr>
+<td>cat</td>
+<td>输出文件内容（concatenate）</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>显示当前工作目录的完整路径（print working directory）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-ls-命令"><a href="#使用-ls-命令" class="headerlink" title="使用 ls 命令"></a>使用 ls 命令</h3><p>使用 ls 命令来列出当前目录的文件<br>使用 ls 命令和目录名称不进入该目录列出目录的文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 列出当前目录下的所有文件和文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> folder1</span><br><span class="line"><span class="comment"># 列出 folder1 目录下的所有文件和文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="使用-cd-命令"><a href="#使用-cd-命令" class="headerlink" title="使用 cd 命令"></a>使用 cd 命令</h3><p>使用 cd 命令更改当前目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 进入 folder1 目录</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-cat-命令"><a href="#使用-cat-命令" class="headerlink" title="使用 cat 命令"></a>使用 cat 命令</h3><p>使用 cat 命令来输出文件内容<br>使用 cat 命令和目录路径不进入该目录输出目录中文件内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> text1.txt</span><br><span class="line"><span class="comment"># 显示当前目录 text1.txt 文件的内容</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /home/folder1/text1.txt</span><br><span class="line"><span class="comment"># 显示 /home/folder1/text1.txt 文件的内容</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-pwd-命令"><a href="#使用-pwd-命令" class="headerlink" title="使用 pwd 命令"></a>使用 pwd 命令</h3><p>使用 pwd 命令显示当前工作目录的完整路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="comment"># 显示当前工作目录的完整路径</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="查找文件命令"><a href="#查找文件命令" class="headerlink" title="查找文件命令"></a>查找文件命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>find</td>
+<td>在当前目录所有子目录中搜索文件</td>
+</tr>
+<tr>
+<td>grep</td>
+<td>搜索整个文件中包含特定值的行（Global Regular Expression Print）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-find-命令"><a href="#使用-find-命令" class="headerlink" title="使用 find 命令"></a>使用 find 命令</h3><p>如果记得文件名，使用 find -name 命令在当前目录所有子目录中搜索文件<br>如果不记得文件名，可搜索所有具有特定扩展名的文件，使用 find -name 命令和通配符（*）来搜索所有以特定扩展名结尾的文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">find -name txt1.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找名为 txt1.txt 的文件</span></span><br><span class="line"></span><br><span class="line">find -name *.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找所有以 .txt 结尾的文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-grep-命令"><a href="#使用-grep-命令" class="headerlink" title="使用 grep 命令"></a>使用 grep 命令</h3><p>使用 grep 命令搜索整个文件内容来查找包含特定值的行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;Hello World!&quot;</span> txt1.txt</span><br><span class="line"><span class="comment"># 在 txt1.txt 文件中搜索包含 &quot;Hello World!&quot;</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p>字符串内注意需要完全符合大小写</p>
+<h2 id="Shell-操作符"><a href="#Shell-操作符" class="headerlink" title="Shell 操作符"></a>Shell 操作符</h2><table>
+<thead>
+<tr>
+<th>符号&#x2F;操作符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td>执行命令并在后台运行</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>将多个命令结合在一行中执行（仅前一命令成功执行才能继续）</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>一个重定向符，可以将某个命令的输出重定向到其他地方（覆盖原有内容）</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>功能类似于 &gt;，但会将输出追加而不是替换（不会覆盖原有内容）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-操作符"><a href="#使用-操作符" class="headerlink" title="使用 &amp; 操作符"></a>使用 &amp; 操作符</h3><p>使用 &amp; 操作符执行命令并在后台运行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://example.com/txt1.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/txt1.txt 文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-操作符-1"><a href="#使用-操作符-1" class="headerlink" title="使用 &amp;&amp; 操作符"></a>使用 &amp;&amp; 操作符</h3><p>使用 &amp;&amp; 操作符创建命令链，只有第一个命令成功执行后，第二个命令才会执行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> folder1 &amp;&amp; <span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 创建 folder1 文件夹，并进入该文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-操作符-2"><a href="#使用-操作符-2" class="headerlink" title="使用 &gt; 操作符"></a>使用 &gt; 操作符</h3><p>使用 &gt; 操作符输出重定向，可以将命令的输出保存到指定的文件或其他地方</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
+
+<p>如果文件已存在，内容会被替换<br>如果文件不存在，会创建该文件，并将输出写入其中</p>
+<h3 id="使用-操作符-3"><a href="#使用-操作符-3" class="headerlink" title="使用 &gt;&gt; 操作符"></a>使用 &gt;&gt; 操作符</h3><p>使用 &gt;&gt; 操作符输出重定向，并会将内容追加到文件末尾，而不会覆盖文件原有的内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt;&gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（不会覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+<!-- https://tryhackme.com/r/room/linuxfundamentalspart1 -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
+]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
     <title>网站模板</title>
     <url>/2024/10/27/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
@@ -176,6 +367,160 @@
       </categories>
   </entry>
   <entry>
+    <title>Linux基础知识 第二部分</title>
+    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-2/</url>
+    <content><![CDATA[<h2 id="SSH-访问-Linux"><a href="#SSH-访问-Linux" class="headerlink" title="SSH 访问 Linux"></a>SSH 访问 Linux</h2><h3 id="什么是-SSH-及其工作原理？"><a href="#什么是-SSH-及其工作原理？" class="headerlink" title="什么是 SSH 及其工作原理？"></a>什么是 SSH 及其工作原理？</h3><p>Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式</p>
+<p>SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密</p>
+<p>使用 SSH 需要两个信息：<br>远程机器的 IP 地址<br>远程机器上有效账户的登录凭证</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh username@1.1.1.1</span><br><span class="line"><span class="comment"># ssh [用户名]@[IP地址]</span></span><br></pre></td></tr></table></figure>
+
+<p>输入 yes 信任主机，输入账户的密码。连接成功后，任何执行的命令将会在远程机器上运行</p>
+<p>在 SSH 登录中输入密码时，不会看到任何文本或符号不会有任何反馈，只需输入密码后回车登录</p>
+<p>输入exit断开连接<br><br></p>
+<h2 id="标志和开关简介（flags-and-switches）"><a href="#标志和开关简介（flags-and-switches）" class="headerlink" title="标志和开关简介（flags and switches）"></a>标志和开关简介（flags and switches）</h2><p>大多数命令都允许使用参数，这些参数由连字符和一个特定的关键字标识，这些关键字被称为标志或开关。在使用命令时，除非另有指定，否则它将执行默认行为。</p>
+<p>使用 ls -a 命令查看所有文件和文件夹，包括以 . 开头的隐藏文件和文件夹<br>使用 ls –help 命令列出 ls 命令列出提供简短的描述和使用示例的使用参数选项</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br><span class="line"><span class="comment"># 列出当前目录中的所有文件和目录，包括隐藏文件（以 . 开头的文件）</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> --<span class="built_in">help</span></span><br><span class="line"><span class="comment"># 显示 ls 命令的帮助信息，包括可用选项及其说明</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="使用-man-命令"><a href="#使用-man-命令" class="headerlink" title="使用 man 命令"></a>使用 man 命令</h3><p>手册页（man page）包含 Linux 系统命令和应用程序的信息，可直接在 Linux 上或网站访问</p>
+<p>使用 man 命令来查看手册页，可搭配其他命令一起使用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">man <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 查看 ls 命令的手册页，获取详细信息和选项说明</span></span><br></pre></td></tr></table></figure>
+
+<p>man 命令搭配其他命令可以查看 Linux 上几乎所有的命令，使用上下箭头阅读，q 退出<br><br></p>
+<h2 id="文件系统交互命令"><a href="#文件系统交互命令" class="headerlink" title="文件系统交互命令"></a>文件系统交互命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>touch</td>
+<td>创建新文件</td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>创建新文件夹&#x2F;目录（make directory）</td>
+</tr>
+<tr>
+<td>cp</td>
+<td>复制文件或文件夹（copy）</td>
+</tr>
+<tr>
+<td>mv</td>
+<td>移动文件或文件夹或重命名（move）</td>
+</tr>
+<tr>
+<td>rm</td>
+<td>删除文件或文件夹（remove）</td>
+</tr>
+<tr>
+<td>file</td>
+<td>确定文件的类型</td>
+</tr>
+</tbody></table>
+<p>以上所有命令都可搭配使用完整的文件路径</p>
+<h3 id="使用-touch-和-mkdir-命令"><a href="#使用-touch-和-mkdir-命令" class="headerlink" title="使用 touch 和 mkdir 命令"></a>使用 touch 和 mkdir 命令</h3><p>使用 touch 命令创建创建新文件<br>使用 mkdir 命令创建新文件夹&#x2F;目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">touch</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
+
+<p>使用 echo 命令或 nano 等文本编辑器在文件中添加内容</p>
+<h3 id="使用-rm-命令"><a href="#使用-rm-命令" class="headerlink" title="使用 rm 命令"></a>使用 rm 命令</h3><p>使用 rm 命令删除文件<br>使用 rm -R 命令删除文件夹</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">rm</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -R folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-cp-和-mv-命令"><a href="#使用-cp-和-mv-命令" class="headerlink" title="使用 cp 和 mv 命令"></a>使用 cp 和 mv 命令</h3><p>使用 cp 命令将文件内容复制到新的文件中，第一个参数为已存在文件的名称，第二个参数为复制新文件指定的名称。如果目标文件不存在，将自动创建新文件<br>使用 cp -r 命令将文件夹及其内容复制到新的文件夹中，第一个参数为已存在文件夹的名称，第二个参数为复制新文件夹指定的名称。如果目标文件夹不存在，将自动创建新文件夹</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 file2</span><br><span class="line"><span class="comment"># 将 file1 的内容复制到 file2，如果 file2 不存在会自动创建</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> -r folder1 folder2</span><br><span class="line"><span class="comment"># 将 folder1 文件夹及其内容复制到 folder2，如果 folder2 不存在会自动创建</span></span><br></pre></td></tr></table></figure>
+
+
+<p>使用 mv 命令将文件或文件夹移动到新文件夹，或者对第二个参数提供的文件或文件夹名称进行重命名，不会创建新文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mv</span> file1 file2</span><br><span class="line"><span class="comment"># 如果 file2 是一个新名称，会将 file1 重命名为 file2</span></span><br><span class="line"><span class="comment"># 如果 file2 是一个已存在的目录，会将 file1 移动到该目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mv</span> folder1 folder2</span><br><span class="line"><span class="comment"># 如果 folder2 是一个新名称，会将 folder1 重命名为 folder2</span></span><br><span class="line"><span class="comment"># 如果 folder2 是一个已存在的目录，会将 folder1 移动到该目录</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="使用-file-命令"><a href="#使用-file-命令" class="headerlink" title="使用 file 命令"></a>使用 file 命令</h3><p>使用 file 命令确定文件或文件夹的类型，返回文件的类型描述</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">file file1</span><br><span class="line"><span class="comment"># 查看 file1 的文件类型，并显示类型信息</span></span><br><span class="line"></span><br><span class="line">file folder1</span><br><span class="line"><span class="comment"># 查看 folder1 的文件类型，如果为文件夹，将显示为 &quot;directory&quot;</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+<h2 id="权限基础知识"><a href="#权限基础知识" class="headerlink" title="权限基础知识"></a>权限基础知识</h2><p>使用 ls -lh 命令列出目录中所有文件的详细信息，包括文件权限、大小、所有者、修改时间等</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -lh</span><br><span class="line"><span class="comment"># 以详细格式列出当前目录中的所有文件信息，包括权限、大小和修改时间</span></span><br></pre></td></tr></table></figure>
+
+<p>文件或文件夹有几种特性，特性决定了允许执行哪些操作，以及哪个用户或用户组有权限执行操作：</p>
+<p>读取 (Read)<br>写入 (Write)<br>执行 (Execute)</p>
+<h3 id="用户和用户组之间的区别"><a href="#用户和用户组之间的区别" class="headerlink" title="用户和用户组之间的区别"></a>用户和用户组之间的区别</h3><p>Linux 的优点在于权限非常细化，通过设置权限，一组用户可以对同一个文件拥有相同或不同的权限，而不会影响文件的所有者</p>
+<h3 id="使用-su-命令"><a href="#使用-su-命令" class="headerlink" title="使用 su 命令"></a>使用 su 命令</h3><p>通过目标用户的用户名和密码进行切换账户</p>
+<p>使用 su 命令需要输入用户的密码来切换到指定的用户账户，默认情况下不会加载该用户的完整环境变量<br>使用 su -l 命令需要输入用户的密码，它会完全切换到指定用户的实际登录环境，加载所有新用户的属性等</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">su user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，不会加载该用户的完整环境变量</span></span><br><span class="line"></span><br><span class="line">su -l user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，加载该用户的完整环境变量和配置</span></span><br></pre></td></tr></table></figure>
+
+<p>如果没有指定用户，默认情况下会切换到 root 用户。<br><br></p>
+<h2 id="常见目录"><a href="#常见目录" class="headerlink" title="常见目录"></a>常见目录</h2><h3 id="etc"><a href="#etc" class="headerlink" title="&#x2F;etc"></a>&#x2F;etc</h3><p>&#x2F;etc 目录（“etc” 代表 etcetera）是存放操作系统使用的配置和系统文件位置</p>
+<p>在 &#x2F;etc 文件夹中包含 passwd 和 shadow 文件，&#x2F;etc&#x2F;passwd 文件存储了用户账户的信息，&#x2F;etc&#x2F;shadow 文件存储了每个用户的加密哈希密码。系统常使 SHA-512 或其他哈希算法对密码进行加密</p>
+<h3 id="var"><a href="#var" class="headerlink" title="&#x2F;var"></a>&#x2F;var</h3><p>&#x2F;var 目录（“var” 代表 variable data）是存放由系统上运行的服务或应用程序访问、修改或生成的数据</p>
+<h3 id="root"><a href="#root" class="headerlink" title="&#x2F;root"></a>&#x2F;root</h3><p>&#x2F;root 目录是 root 用户系统管理员的主目录，它与普通用户的主目录 &#x2F;home 不同，&#x2F;root 是专门为 root 用户保留的</p>
+<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录（“tmp” 代表 temporary）是用于存放仅需临时访问的文件和数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除。&#x2F;tmp 目录在默认情况下任何用户都有写入权限，&#x2F;tmp 是存放枚举脚本和其他工具的好位置</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/linuxfundamentalspart2 -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>什么是网络？</title>
+    <url>/2024/10/30/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-1/</url>
+    <content><![CDATA[<h2 id="什么是网络？"><a href="#什么是网络？" class="headerlink" title="什么是网络？"></a>什么是网络？</h2><p><strong>网络</strong>就是连接在一起的事物。在计算机领域，网络的概念相同，连接的是各种技术设备，网络可以由2台设备到数十亿台设备组成</p>
+<br>
+
+
+
+
+
+<h2 id="什么是互联网？"><a href="#什么是互联网？" class="headerlink" title="什么是互联网？"></a>什么是互联网？</h2><p><strong>互联网</strong>是一个巨大的网络，由许许多多的小型网络组成。</p>
+<p>互联网的首次雏形出现在1960年代末的ARPANET项目中。该项目由美国国防部资助，是首个实际应用的网络。直到1989年，由Tim Berners-Lee发明了万维网（World Wide Web，WWW），互联网开始被用作存储和共享信息的存储库。</p>
+<p>互联网是由许多小型网络相互连接而成的。这些小型网络称为私有网络，而连接这些小网络的网络称为公共网络，也就是互联网。</p>
+<p>网络可以分为两种类型：<br><strong>私有网络</strong><br><strong>公共网络</strong></p>
+<br>
+
+
+
+
+
+<h2 id="识别网络中的设备"><a href="#识别网络中的设备" class="headerlink" title="识别网络中的设备"></a>识别网络中的设备</h2><p>网络中的设备和人类非常相似，有两种识别方式：<br><strong>名字</strong><br><strong>指纹</strong></p>
+<p>设备有两种身份识别方式，其中一种是可更改的：</p>
+<p><strong>IP地址</strong><br><strong>媒体访问控制</strong>（MAC）地址设备的序列号</p>
+<h3 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h3><p><strong>IP 地址</strong> (Internet Protocol) 可在一段时间内用作识别网络上主机的一种方式，该 IP 地址可与另一台设备关联，而无需更改 IP 地址</p>
+<p>IP 地址是一组分为四个八位字节的数字，每个八位字节的值将汇总为网络上设备的 IP 地址。该数字是通过称为 IP 寻址和子网划分的技术生成，IP 地址可以在不同设备之间更改，但不能在同一网络中同时处于活动状态多次</p>
+<p>IP 地址遵循一组协议的标准。这些协议是网络的基础，使得多个设备可交流。设备可处于私有网络或公共网络中，而其所处的网络类型决定了它拥有的 IP 地址类型：公共 IP 地址或私有 IP 地址</p>
+<p>公共地址用于在互联网上识别设备，而私有地址则用于在设备间的相互识别。</p>
+<p>这两个设备将能够使用其私有 IP 地址相互通信。任何从这些设备发送到互联网的数据都会通过相同的公共IP地址进行标识。公共 IP 地址是由互联网服务提供商（ISP）分配的，按月收费。</p>
+<p><strong>IPv4</strong> 是互联网协议，它使用2^32个 IP 地址（42.9亿）</p>
+<p><strong>IPv6</strong> 是互联网协议寻址方案的新版本，它使用2^128个IP地址（超过340万亿个），解决了 IPv4 IP 地址不够分配的问题</p>
+<h3 id="MAC地址"><a href="#MAC地址" class="headerlink" title="MAC地址"></a>MAC地址</h3><p>网络上的所有设备都具有物理网络接口，设备主板上的微芯片板。该网络接口在出厂时被分配了一个唯一的地址，称为 MAC（媒体访问控制）地址。MAC 地址是一个十二字符的十六进制数字，每两个字符一组，用冒号分隔。前六个字符代表制造该网络接口的公司，后六个字符是唯一编号。</p>
+<p>MAC 地址是可伪造或欺骗的，这一过程称为伪装（spoofed）。当网络设备使用其他设备的 MAC 地址假装自己是另一个设备时，就会发生伪装。</p>
+<p>咖啡馆、酒店等场所的访客或公共 Wi-Fi 使用 MAC 地址控制。这种配置可以提供更好的服务</p>
+<br>
+
+
+
+
+
+<h2 id="Ping（ICMP）"><a href="#Ping（ICMP）" class="headerlink" title="Ping（ICMP）"></a>Ping（ICMP）</h2><p><strong>Ping</strong> 是可用的最基础的网络工具之一。Ping 使用互联网控制消息协议（Internet Control Message Protocol，ICMP）数据包来确定设备之间的连接性能</p>
+<p>Ping 测量 ICMP 数据包在设备之间的往返时间来评估连接的表现</p>
+<p>Ping 可用于测试网络中的设备或网站等资源。Ping 在 Linux 和 Windows 等操作系统中预装。</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/whatisnetworking -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Python基础</title>
     <url>/2024/10/28/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD2/</url>
     <content><![CDATA[<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><p>使用 print() 函数输出放在括号 () 里的内容，因为输出的为字符串，所以需要双引号 “”</p>
@@ -336,167 +681,367 @@
       </categories>
   </entry>
   <entry>
-    <title>Linux基础知识 第一部分</title>
-    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-1/</url>
-    <content><![CDATA[<h2 id="Linux-背景知识简介"><a href="#Linux-背景知识简介" class="headerlink" title="Linux 背景知识简介"></a>Linux 背景知识简介</h2><p>与 Windows 等其他操作系统（OS）相比，各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 是开源的，因此有许多不同的 Linux 发行版<br><br></p>
-<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><table>
+    <title>OSI 模型</title>
+    <url>/2024/10/31/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-3/</url>
+    <content><![CDATA[<h2 id="什么是-OSI-模型？"><a href="#什么是-OSI-模型？" class="headerlink" title="什么是 OSI 模型？"></a>什么是 OSI 模型？</h2><p>开放系统互联模型（OSI）是网络中的基础模型，规定了联网设备如何发送、接收和解释数据的框架</p>
+<p>OSI 模型的优势在于即使网络中的设备功能和设计不同，只要遵循OSI标准就能够相互通信。遵循OSI模型可确保数据在不同设备之间被理解</p>
+<p>OSI 模型由七层组成，每层负责不同的任务，从第7层到第1层依次排列。数据在每一层传输时都会经过特定的处理过程，并附加相应的信息，这一过程称为“封装”。<br><br></p>
+<h2 id="第-1-层-物理层"><a href="#第-1-层-物理层" class="headerlink" title="第 1 层 - 物理层"></a>第 1 层 - 物理层</h2><p>第1层（物理层）是 OSI 模型的最底层，用于网络连接的物理硬件组件。在这一层，数据以电信号的形式传输，并以二进制（1和0）表示。这一层主要关注的是数据的物理传输方式和介质。<br><br></p>
+<h2 id="第-2-层-数据链路层"><a href="#第-2-层-数据链路层" class="headerlink" title="第 2 层 - 数据链路层"></a>第 2 层 - 数据链路层</h2><p>第2层（数据链路层）负责管理设备间的数据传输，并通过媒体访问控制（MAC）物理地址来标识网络中的设备。从网络层接收到包含远程计算机 IP 地址的数据包时，数据链路层会添加目标设备的 MAC 地址，以便在网络中找到具体的接收设备</p>
+<p>每台联网设备都有一个网络接口卡（NIC），其中包含唯一的 MAC 地址，由制造商设置到网卡上，无法更改但可通过技术手段进行伪造。当信息通过网络发送时，信息是根据 MAC 地址而非 IP 地址来定位的</p>
+<p>数据链路层还将数据组织成适合物理传输的格式，处理数据帧的错误检测和校正，确保传输的可靠性<br><br></p>
+<h2 id="第-3-层-网络层"><a href="#第-3-层-网络层" class="headerlink" title="第 3 层 - 网络层"></a>第 3 层 - 网络层</h2><p>第3层（网络层）负责路由和数据分组的管理。路由功能用于决定数据包传输的最佳路径。网络层将数据分组为小数据包进行传输，最后重组为完整的数据块</p>
+<p>网络层使用协议来选择数据到达目标设备的最佳路径，主要的协议包括开放最短路径优先协议（OSPF）和路由信息协议（RIP）。这些协议的路径选择基于以下因素：</p>
+<p>数据包经过的设备数量是否最少，路径是否最短<br>路径上是否存在数据丢失的风险，是否可靠<br>路径的物理传输速度是否更快</p>
+<p>一切都通过 IP 地址进行处理，路由器等利用 IP 地址传输数据包的设备被称为三层设备，因为它们在 OSI 模型的第三层工作<br><br></p>
+<h2 id="第-4-层-传输层"><a href="#第-4-层-传输层" class="headerlink" title="第 4 层 - 传输层"></a>第 4 层 - 传输层</h2><p>第4层（传输层）在设备之间传输数据时，传输层会选择以下两种协议之一：</p>
+<p>传输控制协议（TCP）<br>用户数据报协议（UDP）</p>
+<p>TCP的主要设计目的是确保数据传输的可靠性。它会在两个设备之间建立一个连接，并保持连接，直到所有数据成功传输完毕。TCP具有错误检查和确认机制，确保传输中的小数据块分段按顺序到达并重新组装</p>
+<table>
 <thead>
 <tr>
-<th>命令</th>
-<th>描述</th>
+<th>TCP 优点</th>
+<th>TCP 缺点</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>echo</td>
-<td>输出提供的任何文本</td>
+<td>保证数据的准确性</td>
+<td>需要设备之间建立可靠连接。如果有一小块数据未收到，则整个数据块无法使用。</td>
 </tr>
 <tr>
-<td>whoami</td>
-<td>查看当前登录的用户身份</td>
+<td>同步设备间的数据传输，防止设备因数据过多而过载</td>
+<td>较慢的连接会成为瓶颈，因为接收端的连接需要始终始终保持</td>
+</tr>
+<tr>
+<td>提供更多的可靠性保障</td>
+<td>由于更多的握手和确认操作，TCP 比 UDP 传输速度更慢</td>
 </tr>
 </tbody></table>
-<h3 id="使用-echo-命令，输出文本"><a href="#使用-echo-命令，输出文本" class="headerlink" title="使用 echo 命令，输出文本"></a>使用 echo 命令，输出文本</h3><p>使用 echo 命令输出字符串</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span></span><br><span class="line"><span class="comment"># 输出 Hello World!</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-whoami-命令，查看当前登录的用户身份"><a href="#使用-whoami-命令，查看当前登录的用户身份" class="headerlink" title="使用 whoami 命令，查看当前登录的用户身份"></a>使用 whoami 命令，查看当前登录的用户身份</h3><p>使用 whoami 命令查看当前登录的用户身份 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">whoami</span></span><br><span class="line"><span class="comment"># 查询当前用户</span></span><br></pre></td></tr></table></figure>
-
+<p>TCP 用于需要数据完整性和准确性的场景，在这些场景中丢失或不完整的数据是不接受的</p>
+<p>UDP 与 TCP 相比，不如 TCP 先进，但相对简单。UDP 不具备 TCP 的错误检查和可靠性保障。通过 UDP 发送的数据不保证一定到达接收端，也没有同步和确认机制</p>
+<table>
+<thead>
+<tr>
+<th>UDP 优点</th>
+<th>UDP 缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>传输速度比TCP快得多</td>
+<td>不保证数据的接收</td>
+</tr>
+<tr>
+<td>数据包发送速率由应用层控制</td>
+<td>不保留设备之间的持续连接</td>
+</tr>
+<tr>
+<td>对开发者更灵活性</td>
+<td>不稳定的连接会影响用户体验</td>
+</tr>
+</tbody></table>
+<p>UDP 适用于对可靠性要求不高的小数据传输场景。即使某些数据包丢失，整体效果影响不大，可优先考虑速度</p>
 <br>
 
 
 
 
 
-<h2 id="与文件系统的交互命令"><a href="#与文件系统的交互命令" class="headerlink" title="与文件系统的交互命令"></a>与文件系统的交互命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ls</td>
-<td>列出当前目录中的文件（listing）</td>
-</tr>
-<tr>
-<td>cd</td>
-<td>更改当前目录（change directory）</td>
-</tr>
-<tr>
-<td>cat</td>
-<td>输出文件内容（concatenate）</td>
-</tr>
-<tr>
-<td>pwd</td>
-<td>显示当前工作目录的完整路径（print working directory）</td>
-</tr>
-</tbody></table>
-<h3 id="使用-ls-命令"><a href="#使用-ls-命令" class="headerlink" title="使用 ls 命令"></a>使用 ls 命令</h3><p>使用 ls 命令来列出当前目录的文件<br>使用 ls 命令和目录名称不进入该目录列出目录的文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 列出当前目录下的所有文件和文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> folder1</span><br><span class="line"><span class="comment"># 列出 folder1 目录下的所有文件和文件夹</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="使用-cd-命令"><a href="#使用-cd-命令" class="headerlink" title="使用 cd 命令"></a>使用 cd 命令</h3><p>使用 cd 命令更改当前目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 进入 folder1 目录</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-cat-命令"><a href="#使用-cat-命令" class="headerlink" title="使用 cat 命令"></a>使用 cat 命令</h3><p>使用 cat 命令来输出文件内容<br>使用 cat 命令和目录路径不进入该目录输出目录中文件内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> text1.txt</span><br><span class="line"><span class="comment"># 显示当前目录 text1.txt 文件的内容</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /home/folder1/text1.txt</span><br><span class="line"><span class="comment"># 显示 /home/folder1/text1.txt 文件的内容</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-pwd-命令"><a href="#使用-pwd-命令" class="headerlink" title="使用 pwd 命令"></a>使用 pwd 命令</h3><p>使用 pwd 命令显示当前工作目录的完整路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="comment"># 显示当前工作目录的完整路径</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="第-5-层-会话层"><a href="#第-5-层-会话层" class="headerlink" title="第 5 层 - 会话层"></a>第 5 层 - 会话层</h2><p>第5层（会话层）在数据经过表示层（第6层）正确转换和格式化后，负责创建并维护与目标计算机的连接。连接建立后，将创建会话，并在连接保持活跃的期间持续存在</p>
+<p>会话层还负责一段时间内未使用或连接丢失时关闭连接。并且会话可设置“检查点”，当数据丢失，仅需重新发送上次检查点以后的数据节省带宽</p>
+<p>每个会话是独立的，数据只能在当前会话中传输，无法跨会话传输。<br><br></p>
+<h2 id="第-6-层-表示层"><a href="#第-6-层-表示层" class="headerlink" title="第 6 层 - 表示层"></a>第 6 层 - 表示层</h2><p>第6层（表示层）是实施数据标准化的层级。由于软件开发人员以不同的方式开发软件，表示层需确保数据格式的一致性，使接收方能够正确解读数据</p>
+<p>表示层充当数据和应用层（第7层）之间的转换器。它将数据从一种格式转换为另一种格式，使得不同软件之间的数据显示保持一致</p>
+<p>数据加密等安全功能发生在此层</p>
 <br>
 
 
 
 
 
-<h2 id="查找文件命令"><a href="#查找文件命令" class="headerlink" title="查找文件命令"></a>查找文件命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>find</td>
-<td>在当前目录所有子目录中搜索文件</td>
-</tr>
-<tr>
-<td>grep</td>
-<td>搜索整个文件中包含特定值的行（Global Regular Expression Print）</td>
-</tr>
-</tbody></table>
-<h3 id="使用-find-命令"><a href="#使用-find-命令" class="headerlink" title="使用 find 命令"></a>使用 find 命令</h3><p>如果记得文件名，使用 find -name 命令在当前目录所有子目录中搜索文件<br>如果不记得文件名，可搜索所有具有特定扩展名的文件，使用 find -name 命令和通配符（*）来搜索所有以特定扩展名结尾的文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">find -name txt1.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找名为 txt1.txt 的文件</span></span><br><span class="line"></span><br><span class="line">find -name *.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找所有以 .txt 结尾的文件</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-grep-命令"><a href="#使用-grep-命令" class="headerlink" title="使用 grep 命令"></a>使用 grep 命令</h3><p>使用 grep 命令搜索整个文件内容来查找包含特定值的行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;Hello World!&quot;</span> txt1.txt</span><br><span class="line"><span class="comment"># 在 txt1.txt 文件中搜索包含 &quot;Hello World!&quot;</span></span><br></pre></td></tr></table></figure>
-<br>
-
-<p>字符串内注意需要完全符合大小写</p>
-<h2 id="Shell-操作符"><a href="#Shell-操作符" class="headerlink" title="Shell 操作符"></a>Shell 操作符</h2><table>
-<thead>
-<tr>
-<th>符号&#x2F;操作符</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>&amp;</td>
-<td>执行命令并在后台运行</td>
-</tr>
-<tr>
-<td>&amp;&amp;</td>
-<td>将多个命令结合在一行中执行（仅前一命令成功执行才能继续）</td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>一个重定向符，可以将某个命令的输出重定向到其他地方（覆盖原有内容）</td>
-</tr>
-<tr>
-<td>&gt;&gt;</td>
-<td>功能类似于 &gt;，但会将输出追加而不是替换（不会覆盖原有内容）</td>
-</tr>
-</tbody></table>
-<h3 id="使用-操作符"><a href="#使用-操作符" class="headerlink" title="使用 &amp; 操作符"></a>使用 &amp; 操作符</h3><p>使用 &amp; 操作符执行命令并在后台运行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://example.com/txt1.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/txt1.txt 文件</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-操作符-1"><a href="#使用-操作符-1" class="headerlink" title="使用 &amp;&amp; 操作符"></a>使用 &amp;&amp; 操作符</h3><p>使用 &amp;&amp; 操作符创建命令链，只有第一个命令成功执行后，第二个命令才会执行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> folder1 &amp;&amp; <span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 创建 folder1 文件夹，并进入该文件夹</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-操作符-2"><a href="#使用-操作符-2" class="headerlink" title="使用 &gt; 操作符"></a>使用 &gt; 操作符</h3><p>使用 &gt; 操作符输出重定向，可以将命令的输出保存到指定的文件或其他地方</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
-
-<p>如果文件已存在，内容会被替换<br>如果文件不存在，会创建该文件，并将输出写入其中</p>
-<h3 id="使用-操作符-3"><a href="#使用-操作符-3" class="headerlink" title="使用 &gt;&gt; 操作符"></a>使用 &gt;&gt; 操作符</h3><p>使用 &gt;&gt; 操作符输出重定向，并会将内容追加到文件末尾，而不会覆盖文件原有的内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt;&gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（不会覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-<!-- https://tryhackme.com/r/room/linuxfundamentalspart1 -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
-]]></content>
+<h2 id="第-7-层-应用层"><a href="#第-7-层-应用层" class="headerlink" title="第 7 层 - 应用层"></a>第 7 层 - 应用层</h2><p>第7层（应用层）是最接近用户的一层，应用层是制定协议和规则的层，用于确定用户应如何与发送或接收的数据进行交互</p>
+<p>日常应用程序提供图形用户界面（GUI），以便用户与发送或接收的数据进行交互。应用层协议也包括 DNS（域名系统），负责将网站地址转换为 IP 地址，使访问网络资源更加便捷，这层是用户直接接触的数据交互层<br><br></p>
+<!-- https://tryhackme.com/r/room/osimodelzi -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
       <categories>
         <category>基本技能</category>
       </categories>
   </entry>
   <entry>
-    <title>工具模板</title>
-    <url>/2024/10/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
+    <title>数据包与帧</title>
+    <url>/2024/10/31/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-4/</url>
+    <content><![CDATA[<h2 id="什么是数据包和帧"><a href="#什么是数据包和帧" class="headerlink" title="什么是数据包和帧"></a>什么是数据包和帧</h2><p>数据包和帧都是数据的较小单元，它们组合在形成完整的信息或消息。在 OSI 模型中，数据包和帧有不同的定义：帧位于第2层（数据链路层），不包含IP地址等网络层信息</p>
+<p>这个过程称为封装（encapsulation）。在封装阶段，涉及 IP 地址的信息称为“数据包”。当信息从数据包剥离时，为“帧”。</p>
+<p>数据包是在联网设备之间传输数据的有效方式，因为数据以小块形式交换，减少了网络阻塞的风险。数据包的结构因协议而不同，网络中有许多标准和协议定义了数据包的处理方式，以确保互联网中的数十亿设备能够互通。</p>
+<p>每个数据包包含一个头部信息，用于附加传输数据之外的必要信息，以便在网络中有效传输。</p>
+<p>| 头部               | 描述                                                         |<br>| —————— | ————— ——————————————- |<br>| 生存时间（Time to Live） | 设置了数据包的过期时间，以防止其在无法到达主机或脱离网络时堵塞网络                 |<br>| 校验和（Checksum）       | 此字段为 TCP&#x2F;IP 等协议检查数据完整性。如果数据发生了更改，该值与预期值不同，数据会被视为损坏 |<br>| 源地址（Source Address） | 数据包发送设备的 IP 地址，用于确定数据返回的路径                 |<br>| 目标地址（Destination Address） | 数据包目标设备的 IP 地址，以便数据知道该去往的目标位置   |<br><br></p>
+<h2 id="TCP-IP-协议模型（三次握手）"><a href="#TCP-IP-协议模型（三次握手）" class="headerlink" title="TCP&#x2F;IP 协议模型（三次握手）"></a>TCP&#x2F;IP 协议模型（三次握手）</h2><p>传输控制协议（TCP）是网络中使用的另一种协议模型。TCP&#x2F;IP 协议模型由四层组成。这四层分别是：</p>
+<p>应用层<br>传输层<br>网络层<br>网络接口层</p>
+<p>当数据通过 TCP&#x2F;IP 模型的各层时，信息会逐层添加，称为封装（encapsulation），而逆过程则称为解封装（decapsulation）。</p>
+<p>TCP 的定义特征是基于连接的，在数据传输之前，TCP 必须在客户端和服务器之间建立连接。TCP 通过 “三次握手”（Three-way handshake）过程来确保连接的建立。</p>
+<table>
+<thead>
+<tr>
+<th>TCP 的优点</th>
+<th>TCP的缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>保证数据的完整性</td>
+<td>需要在设备之间建立可靠连接。如果某个数据块未接收，则需要重新发送整个数据块。</td>
+</tr>
+<tr>
+<td>同步数据顺序，防止数据错乱</td>
+<td>慢速连接可能导致另一设备的瓶颈，因为连接会一直保持</td>
+</tr>
+<tr>
+<td>提高了传输可靠性</td>
+<td>由于需要更多计算工作，TCP 比 UDP更慢</td>
+</tr>
+</tbody></table>
+<p>TCP 数据包包含多个通过封装添加的头部字段：</p>
+<table>
+<thead>
+<tr>
+<th>头部</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>源端口（Source Port）</td>
+<td>发送方用于发送TCP数据包的端口号，在0-65535随机选择一个未被占用的端口</td>
+</tr>
+<tr>
+<td>目标端口（Destination Port）</td>
+<td>远程主机上应用或服务的端口号，指定数据包的目标端口</td>
+</tr>
+<tr>
+<td>源 IP（Source IP）</td>
+<td>发送数据包设备的IP地址，以便数据知道返回到哪里</td>
+</tr>
+<tr>
+<td>目标 IP（Destination IP）</td>
+<td>数据包目标设备的IP地址，以便数据知道要传输到哪里</td>
+</tr>
+<tr>
+<td>序列号（Sequence Number）</td>
+<td>连接建立时第一个数据块会被赋予随机序号，用于标识数据的顺序</td>
+</tr>
+<tr>
+<td>确认号（Acknowledgement Number）</td>
+<td>用于确认接收的数据，下一块数据的序列号为 “当前序列号 + 1”</td>
+</tr>
+<tr>
+<td>校验和（Checksum）</td>
+<td>确保数据完整性的校验值。接收端通过计算校验和验证数据是否损坏</td>
+</tr>
+<tr>
+<td>数据（Data）</td>
+<td>包含传输的实际数据内容</td>
+</tr>
+<tr>
+<td>标志（Flag）</td>
+<td>控制 TCP 握手和数据传输过程的标志位，特定标志触发特定行为</td>
+</tr>
+</tbody></table>
+<p>“三次握手” 是 TCP 在两台设备间建立连接的过程，使用特定的消息类型进行通信：</p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>消息类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>SYN</td>
+<td>客户端发送的初始 SYN 数据包，用于启动连接并同步两台设备</td>
+</tr>
+<tr>
+<td>2</td>
+<td>SYN&#x2F;ACK</td>
+<td>服务器响应 SYN 数据包，并发送 SYN&#x2F;ACK 数据包，确认来自客户端的同步尝试</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ACK</td>
+<td>客户端或服务器发送 ACK 数据包，确认数据包已被成功接收，连接正式建立</td>
+</tr>
+<tr>
+<td>4</td>
+<td>DATA</td>
+<td>一旦连接建立，数据通过 DATA 发送</td>
+</tr>
+<tr>
+<td>5</td>
+<td>FIN</td>
+<td>通信完成后发送 FIN 数据包，关闭连接</td>
+</tr>
+<tr>
+<td>—</td>
+<td>RST</td>
+<td>突然结束所有通信，表示连接出现问题</td>
+</tr>
+</tbody></table>
+<p>在 TCP 三次握手过程中，任何发送的数据都会被赋予一个初始序列号（ISN），通过 “序列号 + 1” 的方式来确保数据按正确顺序组装。双方必须在序列号上达成一致，以确保数据按正确的顺序发送数据：</p>
+<p>SYN - 客户端：客户端发送 SYN 数据包，包含它的初始序列号（ISN &#x3D; 0），用于同步<br>SYN&#x2F;ACK - 服务器：服务器发送 SYN&#x2F;ACK 数据包，包含它的初始序列号（ISN &#x3D; 5000），同时收到客户端的初始序列号（ISN &#x3D; 0）<br>ACK - 客户端：客户端发送ACK数据包，确认服务器的初始序列号（5000），并包含客户端的序列号加1（0 + 1 &#x3D; 1）<br>数据传输开始 - 当服务器发送下一个数据包时，服务器的序列号将是5001</p>
+<p>双方通过交换和确认各自的初始序列号来同步数据的顺序，从而确保数据可靠传输</p>
+<table>
+<thead>
+<tr>
+<th>设备</th>
+<th>初始序列号（ISN）</th>
+<th>最终序列号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>客户端（发送方）</td>
+<td>0</td>
+<td>0 + 1 &#x3D; 1</td>
+</tr>
+<tr>
+<td>服务端（接收方）</td>
+<td>5000</td>
+<td>5000 + 1 &#x3D; 5001</td>
+</tr>
+<tr>
+<td>客户端（发送方）</td>
+<td>1</td>
+<td>1 + 1 &#x3D; 2</td>
+</tr>
+<tr>
+<td>服务端（接收方）</td>
+<td>5001</td>
+<td>5001 + 1 &#x3D; 5002</td>
+</tr>
+<tr>
+<td>客户端（发送方）</td>
+<td>2</td>
+<td>2 + 1 &#x3D; 3</td>
+</tr>
+<tr>
+<td>服务端（接收方）</td>
+<td>5002</td>
+<td>5002 + 1 &#x3D; 5003</td>
+</tr>
+</tbody></table>
+<h3 id="TCP-关闭连接"><a href="#TCP-关闭连接" class="headerlink" title="TCP 关闭连接"></a>TCP 关闭连接</h3><p>TCP 连接的关闭过程确保设备在数据传输完成后释放系统资源。当设备确认另一设备已成功接收所有数据后，TCP 会启动关闭连接节省系统资源</p>
+<p>要关闭 TCP 连接，设备会向另一设备发送一个 FIN 包（Finish包），表示希望终止连接。接收设备会发送一个确认 ACK 包确认这个FIN 请求。关闭连接的过程需双方都发送并确认 FIN 包，以确保连接安全结束<br><br></p>
+<h2 id="UDP-IP"><a href="#UDP-IP" class="headerlink" title="UDP&#x2F;IP"></a>UDP&#x2F;IP</h2><p>用户数据报协议（UDP）是轻量级的协议。与 TCP 不同，UDP 是无状态协议，不需要在两台设备之间建立和维持持续连接来发送数据，因此没有三次握手和同步机制</p>
+<p>UDP 用于能容忍少量数据丢失的应用场景，或在连接不稳定情况下仍可正常工作的场景。优先考虑传输速度而非数据的完全可靠性。</p>
+<table>
+<thead>
+<tr>
+<th>UDP的优点</th>
+<th>UDP的缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>速度比 TCP 快，因为不用建立连接</td>
+<td>UDP 不关心数据是否成功接收，不保证数据可靠性</td>
+</tr>
+<tr>
+<td>让应用程序决定是否控制数据包的发送速度</td>
+<td>对于软件开发人员来说灵活</td>
+</tr>
+<tr>
+<td>不保留持续连接，减少了系统资源消耗</td>
+<td>连接不稳定时用户体验变差，UDP 不提供重传或纠错机制</td>
+</tr>
+</tbody></table>
+<p>UDP 在两台设备之间传输数据时无需建立连接，不关心数据是否成功接收，也没有数据完整性保障。结构更简单。UDP是无状态的，连接期间不会发送任何确认与TCP。共享一些相同的头部字段，但头部字段较少：</p>
+<table>
+<thead>
+<tr>
+<th>头部字段</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>生存时间（TTL）</td>
+<td>设置数据包的过期时间，防止未达目标或离开网络时堵塞网络</td>
+</tr>
+<tr>
+<td>源地址（Source Address）</td>
+<td>数据包发送设备的IP地址，以便数据知道返回到哪里</td>
+</tr>
+<tr>
+<td>目标地址（Destination Address）</td>
+<td>数据包的目标设备IP地址，以便数据知道要传输到哪里</td>
+</tr>
+<tr>
+<td>源端口（Source Port）</td>
+<td>发送方发送 UDP 数据包的端口号，在0-65535之间未占用端口中随机选择</td>
+</tr>
+<tr>
+<td>目标端口（Destination Port）</td>
+<td>接收设备上应用程序或服务的端口号</td>
+</tr>
+<tr>
+<td>数据（Data）</td>
+<td>用于存储传输的数据内容</td>
+</tr>
+</tbody></table>
+<br>
 
 
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
 
 
+
+<h2 id="端口-101"><a href="#端口-101" class="headerlink" title="端口 101"></a>端口 101</h2><p>端口是数据交换的重要接口，端口定义了网络设备如何传输和接收特定类型的数据。建立连接后，设备发送和接收的任何数据都会通过端口。端口号是 0 到 65535 之间的数值，不同的端口号被分配给特定的服务和协议</p>
+<p>由于端口范围是 0 到 65535 ，如果没有规则会导致混乱，不清楚哪个应用程序在使用哪个端口。一套标准规则将特定端口分配给特定的应用程序和协议。所有的网页浏览器都遵循一个共同的标准，数据通过端口80发送</p>
+<p>HTTP 协议使用的标准端口是 80，但其他协议也有分配了标准端口。介于 0 到 1024 之间的端口为常用端口，这些端口将会分配给常用协议</p>
+<table>
+<thead>
+<tr>
+<th>协议</th>
+<th>端口号</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文件传输协议（FTP）</td>
+<td>21</td>
+<td>用于文件共享的客户端，服务器模型协议，允许下载和上传文件</td>
+</tr>
+<tr>
+<td>安全外壳协议（SSH）</td>
+<td>22</td>
+<td>通过基于文本的界面安全登录系统，用于远程系统管理</td>
+</tr>
+<tr>
+<td>超文本传输协议（HTTP）</td>
+<td>80</td>
+<td>支持WWW万维网的协议，浏览器使用此协议下载文本、图片和视频</td>
+</tr>
+<tr>
+<td>超文本传输协议安全版（HTTPS）</td>
+<td>443</td>
+<td>与 HTTP 相同，但通过加密实现更高的安全性</td>
+</tr>
+<tr>
+<td>服务器消息块协议（SMB）</td>
+<td>445</td>
+<td>类似于 FTP，还允许共享设备以及文件</td>
+</tr>
+<tr>
+<td>远程桌面协议（RDP）</td>
+<td>3389</td>
+<td>通过可视化的桌面界面实现远程登录，便于远程控制计算机</td>
+</tr>
+</tbody></table>
+<p>这些协议只是遵循标准而已，应用程序默认假定遵循标准端口，需在URL中加上端口号（使用“:”添加端口号）。<br><br></p>
+<!-- 网站 -->
+<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Pwntools</title>
+    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Pwntools/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Gallopsled/pwntools">Pwntools</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Pwntools 是一个 CTF 框架和漏洞开发库。它用 Python 编写，旨在快速进行原型设计和开发，并旨在使漏洞编写尽可能简单。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
@@ -505,25 +1050,82 @@
 
 <!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
       <categories>
-        <category>模板</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
-    <title>博客模板</title>
-    <url>/2024/10/27/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+    <title>局域网简介</title>
+    <url>/2024/10/30/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-2/</url>
+    <content><![CDATA[<h2 id="局域网（LAN）拓扑结构介绍"><a href="#局域网（LAN）拓扑结构介绍" class="headerlink" title="局域网（LAN）拓扑结构介绍"></a>局域网（LAN）拓扑结构介绍</h2><p><strong>拓扑</strong>指网络的设计或布局，描述网络中各设备如何相互连接和组织</p>
+<h3 id="星型拓扑"><a href="#星型拓扑" class="headerlink" title="星型拓扑"></a>星型拓扑</h3><p>星型拓扑的核心概念是每个网络设备都独立地连接到一个中央网络设备上。由于所有设备的通信都需要通过中央设备，这种拓扑具备良好的可靠性和扩展性，但也需要更多的布线和专用网络设备，成本比其他拓扑结构更高</p>
+<p>尽管星型拓扑的可靠性相对较高，但中央设备仍然存在故障风险</p>
+<h3 id="总线型拓扑"><a href="#总线型拓扑" class="headerlink" title="总线型拓扑"></a>总线型拓扑</h3><p>总线型拓扑依赖于一根称为主干电缆的连接，各设备通过分支连接到这条主干电缆上。由于所有设备共享同一条通信路径，若多个设备同时请求数据，会导致网络速度下降和瓶颈问题。这种单一数据路径会导致故障排查非常困难，很难确定哪个设备出现了问题</p>
+<p>总线型拓扑具有成本优势，结构简单且经济。但缺乏冗余来应对故障，缺点是因为主干电缆上有一个单点故障，一旦电缆损坏，所有设备都无法通信</p>
+<h3 id="环形拓扑"><a href="#环形拓扑" class="headerlink" title="环形拓扑"></a>环形拓扑</h3><p>环形拓扑&#x2F;令牌拓扑是一种闭环结构，所有设备直接连接成一个环，所需布线较少，不依赖中央设备或专用硬件。在环形拓扑中，数据沿着环路依次传输，直到到达目标设备。每台设备在没有数据要发送时会转发接收到的数据，如果有数据要发送，则优先发送自己的数据，再转发其他设备的数据。</p>
+<p>这种结构只能单向传输，因此故障排查相对容易。数据需要经过多个设备才能到达目标设备，传输效率较低。</p>
+<p>环形拓扑不容易出现网络瓶颈，因为不会同时传输大量数据。其设计意味着任何设备或连接出现故障都会中断整个环路，使网络中断</p>
+<h3 id="什么是交换机（Switch）？"><a href="#什么是交换机（Switch）？" class="headerlink" title="什么是交换机（Switch）？"></a>什么是交换机（Switch）？</h3><p>交换机是用于网络中的专用设备，通过以太网端口聚合多个设备，常用于需要连接大量设备的大型网络。交换机有多种规格，通常提供4、8、16、24、32或64个端口，以便于连接多个设备</p>
+<p>与集线器相比，交换机更高效，它能记录每个设备连接的端口。当接收到数据包时，交换机会将数据包直接发送到目标设备的端口，而非广播到所有端口，有效减少网络流量</p>
+<p>交换机和路由器可以互相连接，这种连接增加了网络的冗余性，因为为数据提供了多条传输路径。一旦某条路径故障，流量可转向备用路径，减少网络停机风险，但会带来些许性能损耗。</p>
+<h3 id="什么是路由器？"><a href="#什么是路由器？" class="headerlink" title="什么是路由器？"></a>什么是路由器？</h3><p>路由器的任务是连接不同的网络并在它们之间传输数据。它通过路由技术选择最佳路径，以便数据能有效地在网络间传输</p>
+<p>路由是指数据在网络间传输的路径选择过程。当存在多条连接路径时，它确保数据沿最佳路径传送，提高传输效率和网络可靠性</p>
+<br>
 
 
 
 
 
-<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+<h2 id="子网划分基础知识"><a href="#子网划分基础知识" class="headerlink" title="子网划分基础知识"></a>子网划分基础知识</h2><p>网络的规模从小型到大型不等。子网划分（Subnetting）是将一个网络分成多个更小的子网络的过程，网络管理员通过子网划分来将网络的特定部分分配给不同部门，以便更好地管理和分类。</p>
+<p>子网划分通过限制主机数量来实现，划分的数量由“子网掩码”决定。IP 地址和子网掩码由 . 区分包含4个字节或部分，每个字节或部分为 8 bit，总共 32 bit，每个部分的取值范围是0到255。</p>
+<p>子网通过以下三种方式使用 IP 地址：</p>
+<p>标识网络地址<br>标识主机地址<br>标识默认网关</p>
+<p>将这三种用途分开理解，并通过下表来进行说明：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>目的</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>网络地址</td>
+<td>标识网络的起始位置，标识网络的存在</td>
+<td>IP 地址为 192.168.1.100 的设备将位于 192.168.1.0 标识的网络上</td>
+</tr>
+<tr>
+<td>主机地址</td>
+<td>用于标识子网中的设备</td>
+<td>192.168.1.0网络中的设备可以被分配IP地址192.168.1.80</td>
+</tr>
+<tr>
+<td>默认网关</td>
+<td>网络中设备的特殊地址，用于将信息发送到其他网络</td>
+<td>需要发送到不同网络的数据会被转发至默认网关。网关地址通常使用网络中的第一个或最后一个主机地址192.168.1.1或192.168.1.254</td>
+</tr>
+</tbody></table>
+<p>在小型网络中常只使用一个子网，因为连接的设备数量不会超过254个 IP 地址</p>
+<p>子网划分提供好处：</p>
+<p>提高效率<br>提升安全性<br>实现控制性</p>
+<br>
 
 
-<!-- 网站 -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
+
+
+
+<h2 id="地址解析协议（ARP）"><a href="#地址解析协议（ARP）" class="headerlink" title="地址解析协议（ARP）"></a>地址解析协议（ARP）</h2><p>每个网络设备都有两个标识符：MAC地址和IP地址。地址解析协议（Address Resolution Protocol，ARP）用于将设备的IP地址与其MAC地址关联的协议，以在网络中识别和定位设备</p>
+<p>当设备需要与另一设备通信时，会使用ARP协议通过广播方式，询问目标IP地址的MAC地址。目标设备接收到请求后，将其MAC地址发送回请求设备。设备会将此IP地址与MAC地址的关联信息记录在其ARP缓存中，避免以后通信需要重复广播</p>
+<h3 id="ARP如何工作？"><a href="#ARP如何工作？" class="headerlink" title="ARP如何工作？"></a>ARP如何工作？</h3><p>每个设备都有一个用于存储信息的缓存，该缓存用于存储其他网络设备的IP地址和MAC地址的关联信息</p>
+<p>为了建立IP地址与MAC地址的关联，ARP协议发送两种类型的消息：</p>
+<p>ARP请求：设备会向网络广播一条请求，询问拥有这个 IP 地址的 MAC 地址是什么<br>ARP回复：只有拥有该IP地址的设备会回应，发送包含其MAC地址的ARP回复。发送请求的设备随后会将这个IP-MAC地址映射记录在ARP缓存中将来使用</p>
+<p>这种机制使得设备能够快速查找和联系目标设备，而无需重复广播查询<br><br></p>
+<h2 id="动态主机配置协议（DHCP）"><a href="#动态主机配置协议（DHCP）" class="headerlink" title="动态主机配置协议（DHCP）"></a>动态主机配置协议（DHCP）</h2><p>IP 地址可通过手动分配或动态主机配置协议（DHCP）服务器自动分配。当设备连接到网络时，如果没手动分配IP地址，它会发送 DHCP 发现（DHCP Discover）请求，询问网络上是否有可用的DHCP服务器。</p>
+<p>DHCP服务器接收到该请求后，会回复DHCP提供（DHCP Offer）消息，提供可用的IP地址。设备随后发送DHCP请求（DHCP Request）消息，表示它希望使用这个IP地址。最后，DHCP服务器发送DHCP确认（DHCP ACK）消息，设备便可以使用该IP地址来进行通信</p>
+<p>这四个步骤（Discover、Offer、Request、ACK）完成后，设备即可使用分配到的IP地址，无需手动配置<br><br></p>
+<!-- https://tryhackme.com/r/room/introtolan -->
+<!-- 删除例子✔? ✖?，删除主语✔，母语化✔，添加工具✔ -->]]></content>
       <categories>
-        <category>模板</category>
+        <category>基本技能</category>
       </categories>
   </entry>
   <entry>
@@ -651,346 +1253,32 @@
       </categories>
   </entry>
   <entry>
-    <title>什么是网络？</title>
-    <url>/2024/10/30/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-1/</url>
-    <content><![CDATA[<h2 id="什么是网络？"><a href="#什么是网络？" class="headerlink" title="什么是网络？"></a>什么是网络？</h2><p><strong>网络</strong>就是连接在一起的事物。在计算机领域，网络的概念相同，连接的是各种技术设备，网络可以由2台设备到数十亿台设备组成</p>
-<br>
+    <title>Mullvad</title>
+    <url>/2024/10/30/%E7%BD%91%E7%AB%99Mullvad/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://mullvad.net/en">Mullvad</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
 
 
-
-
-
-<h2 id="什么是互联网？"><a href="#什么是互联网？" class="headerlink" title="什么是互联网？"></a>什么是互联网？</h2><p><strong>互联网</strong>是一个巨大的网络，由许许多多的小型网络组成。</p>
-<p>互联网的首次雏形出现在1960年代末的ARPANET项目中。该项目由美国国防部资助，是首个实际应用的网络。直到1989年，由Tim Berners-Lee发明了万维网（World Wide Web，WWW），互联网开始被用作存储和共享信息的存储库。</p>
-<p>互联网是由许多小型网络相互连接而成的。这些小型网络称为私有网络，而连接这些小网络的网络称为公共网络，也就是互联网。</p>
-<p>网络可以分为两种类型：<br><strong>私有网络</strong><br><strong>公共网络</strong></p>
-<br>
-
-
-
-
-
-<h2 id="识别网络中的设备"><a href="#识别网络中的设备" class="headerlink" title="识别网络中的设备"></a>识别网络中的设备</h2><p>网络中的设备和人类非常相似，有两种识别方式：<br><strong>名字</strong><br><strong>指纹</strong></p>
-<p>设备有两种身份识别方式，其中一种是可更改的：</p>
-<p><strong>IP地址</strong><br><strong>媒体访问控制</strong>（MAC）地址设备的序列号</p>
-<h3 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h3><p><strong>IP 地址</strong> (Internet Protocol) 可在一段时间内用作识别网络上主机的一种方式，该 IP 地址可与另一台设备关联，而无需更改 IP 地址</p>
-<p>IP 地址是一组分为四个八位字节的数字，每个八位字节的值将汇总为网络上设备的 IP 地址。该数字是通过称为 IP 寻址和子网划分的技术生成，IP 地址可以在不同设备之间更改，但不能在同一网络中同时处于活动状态多次</p>
-<p>IP 地址遵循一组协议的标准。这些协议是网络的基础，使得多个设备可交流。设备可处于私有网络或公共网络中，而其所处的网络类型决定了它拥有的 IP 地址类型：公共 IP 地址或私有 IP 地址</p>
-<p>公共地址用于在互联网上识别设备，而私有地址则用于在设备间的相互识别。</p>
-<p>这两个设备将能够使用其私有 IP 地址相互通信。任何从这些设备发送到互联网的数据都会通过相同的公共IP地址进行标识。公共 IP 地址是由互联网服务提供商（ISP）分配的，按月收费。</p>
-<p><strong>IPv4</strong> 是互联网协议，它使用2^32个 IP 地址（42.9亿）</p>
-<p><strong>IPv6</strong> 是互联网协议寻址方案的新版本，它使用2^128个IP地址（超过340万亿个），解决了 IPv4 IP 地址不够分配的问题</p>
-<h3 id="MAC地址"><a href="#MAC地址" class="headerlink" title="MAC地址"></a>MAC地址</h3><p>网络上的所有设备都具有物理网络接口，设备主板上的微芯片板。该网络接口在出厂时被分配了一个唯一的地址，称为 MAC（媒体访问控制）地址。MAC 地址是一个十二字符的十六进制数字，每两个字符一组，用冒号分隔。前六个字符代表制造该网络接口的公司，后六个字符是唯一编号。</p>
-<p>MAC 地址是可伪造或欺骗的，这一过程称为伪装（spoofed）。当网络设备使用其他设备的 MAC 地址假装自己是另一个设备时，就会发生伪装。</p>
-<p>咖啡馆、酒店等场所的访客或公共 Wi-Fi 使用 MAC 地址控制。这种配置可以提供更好的服务</p>
-<br>
-
-
-
-
-
-<h2 id="Ping（ICMP）"><a href="#Ping（ICMP）" class="headerlink" title="Ping（ICMP）"></a>Ping（ICMP）</h2><p><strong>Ping</strong> 是可用的最基础的网络工具之一。Ping 使用互联网控制消息协议（Internet Control Message Protocol，ICMP）数据包来确定设备之间的连接性能</p>
-<p>Ping 测量 ICMP 数据包在设备之间的往返时间来评估连接的表现</p>
-<p>Ping 可用于测试网络中的设备或网站等资源。Ping 在 Linux 和 Windows 等操作系统中预装。</p>
-<br>
-
-
-<!-- https://tryhackme.com/r/room/whatisnetworking -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
-      <categories>
-        <category>基本技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>局域网简介</title>
-    <url>/2024/10/30/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-2/</url>
-    <content><![CDATA[<h2 id="局域网（LAN）拓扑结构介绍"><a href="#局域网（LAN）拓扑结构介绍" class="headerlink" title="局域网（LAN）拓扑结构介绍"></a>局域网（LAN）拓扑结构介绍</h2><p><strong>拓扑</strong>指网络的设计或布局，描述网络中各设备如何相互连接和组织</p>
-<h3 id="星型拓扑"><a href="#星型拓扑" class="headerlink" title="星型拓扑"></a>星型拓扑</h3><p>星型拓扑的核心概念是每个网络设备都独立地连接到一个中央网络设备上。由于所有设备的通信都需要通过中央设备，这种拓扑具备良好的可靠性和扩展性，但也需要更多的布线和专用网络设备，成本比其他拓扑结构更高</p>
-<p>尽管星型拓扑的可靠性相对较高，但中央设备仍然存在故障风险</p>
-<h3 id="总线型拓扑"><a href="#总线型拓扑" class="headerlink" title="总线型拓扑"></a>总线型拓扑</h3><p>总线型拓扑依赖于一根称为主干电缆的连接，各设备通过分支连接到这条主干电缆上。由于所有设备共享同一条通信路径，若多个设备同时请求数据，会导致网络速度下降和瓶颈问题。这种单一数据路径会导致故障排查非常困难，很难确定哪个设备出现了问题</p>
-<p>总线型拓扑具有成本优势，结构简单且经济。但缺乏冗余来应对故障，缺点是因为主干电缆上有一个单点故障，一旦电缆损坏，所有设备都无法通信</p>
-<h3 id="环形拓扑"><a href="#环形拓扑" class="headerlink" title="环形拓扑"></a>环形拓扑</h3><p>环形拓扑&#x2F;令牌拓扑是一种闭环结构，所有设备直接连接成一个环，所需布线较少，不依赖中央设备或专用硬件。在环形拓扑中，数据沿着环路依次传输，直到到达目标设备。每台设备在没有数据要发送时会转发接收到的数据，如果有数据要发送，则优先发送自己的数据，再转发其他设备的数据。</p>
-<p>这种结构只能单向传输，因此故障排查相对容易。数据需要经过多个设备才能到达目标设备，传输效率较低。</p>
-<p>环形拓扑不容易出现网络瓶颈，因为不会同时传输大量数据。其设计意味着任何设备或连接出现故障都会中断整个环路，使网络中断</p>
-<h3 id="什么是交换机（Switch）？"><a href="#什么是交换机（Switch）？" class="headerlink" title="什么是交换机（Switch）？"></a>什么是交换机（Switch）？</h3><p>交换机是用于网络中的专用设备，通过以太网端口聚合多个设备，常用于需要连接大量设备的大型网络。交换机有多种规格，通常提供4、8、16、24、32或64个端口，以便于连接多个设备</p>
-<p>与集线器相比，交换机更高效，它能记录每个设备连接的端口。当接收到数据包时，交换机会将数据包直接发送到目标设备的端口，而非广播到所有端口，有效减少网络流量</p>
-<p>交换机和路由器可以互相连接，这种连接增加了网络的冗余性，因为为数据提供了多条传输路径。一旦某条路径故障，流量可转向备用路径，减少网络停机风险，但会带来些许性能损耗。</p>
-<h3 id="什么是路由器？"><a href="#什么是路由器？" class="headerlink" title="什么是路由器？"></a>什么是路由器？</h3><p>路由器的任务是连接不同的网络并在它们之间传输数据。它通过路由技术选择最佳路径，以便数据能有效地在网络间传输</p>
-<p>路由是指数据在网络间传输的路径选择过程。当存在多条连接路径时，它确保数据沿最佳路径传送，提高传输效率和网络可靠性</p>
-<br>
-
-
-
-
-
-<h2 id="子网划分基础知识"><a href="#子网划分基础知识" class="headerlink" title="子网划分基础知识"></a>子网划分基础知识</h2><p>网络的规模从小型到大型不等。子网划分（Subnetting）是将一个网络分成多个更小的子网络的过程，网络管理员通过子网划分来将网络的特定部分分配给不同部门，以便更好地管理和分类。</p>
-<p>子网划分通过限制主机数量来实现，划分的数量由“子网掩码”决定。IP 地址和子网掩码由 . 区分包含4个字节或部分，每个字节或部分为 8 bit，总共 32 bit，每个部分的取值范围是0到255。</p>
-<p>子网通过以下三种方式使用 IP 地址：</p>
-<p>标识网络地址<br>标识主机地址<br>标识默认网关</p>
-<p>将这三种用途分开理解，并通过下表来进行说明：</p>
-<table>
-<thead>
-<tr>
-<th>类型</th>
-<th>目的</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>网络地址</td>
-<td>标识网络的起始位置，标识网络的存在</td>
-<td>IP 地址为 192.168.1.100 的设备将位于 192.168.1.0 标识的网络上</td>
-</tr>
-<tr>
-<td>主机地址</td>
-<td>用于标识子网中的设备</td>
-<td>192.168.1.0网络中的设备可以被分配IP地址192.168.1.80</td>
-</tr>
-<tr>
-<td>默认网关</td>
-<td>网络中设备的特殊地址，用于将信息发送到其他网络</td>
-<td>需要发送到不同网络的数据会被转发至默认网关。网关地址通常使用网络中的第一个或最后一个主机地址192.168.1.1或192.168.1.254</td>
-</tr>
-</tbody></table>
-<p>在小型网络中常只使用一个子网，因为连接的设备数量不会超过254个 IP 地址</p>
-<p>子网划分提供好处：</p>
-<p>提高效率<br>提升安全性<br>实现控制性</p>
-<br>
-
-
-
-
-
-<h2 id="地址解析协议（ARP）"><a href="#地址解析协议（ARP）" class="headerlink" title="地址解析协议（ARP）"></a>地址解析协议（ARP）</h2><p>每个网络设备都有两个标识符：MAC地址和IP地址。地址解析协议（Address Resolution Protocol，ARP）用于将设备的IP地址与其MAC地址关联的协议，以在网络中识别和定位设备</p>
-<p>当设备需要与另一设备通信时，会使用ARP协议通过广播方式，询问目标IP地址的MAC地址。目标设备接收到请求后，将其MAC地址发送回请求设备。设备会将此IP地址与MAC地址的关联信息记录在其ARP缓存中，避免以后通信需要重复广播</p>
-<h3 id="ARP如何工作？"><a href="#ARP如何工作？" class="headerlink" title="ARP如何工作？"></a>ARP如何工作？</h3><p>每个设备都有一个用于存储信息的缓存，该缓存用于存储其他网络设备的IP地址和MAC地址的关联信息</p>
-<p>为了建立IP地址与MAC地址的关联，ARP协议发送两种类型的消息：</p>
-<p>ARP请求：设备会向网络广播一条请求，询问拥有这个 IP 地址的 MAC 地址是什么<br>ARP回复：只有拥有该IP地址的设备会回应，发送包含其MAC地址的ARP回复。发送请求的设备随后会将这个IP-MAC地址映射记录在ARP缓存中将来使用</p>
-<p>这种机制使得设备能够快速查找和联系目标设备，而无需重复广播查询<br><br></p>
-<h2 id="动态主机配置协议（DHCP）"><a href="#动态主机配置协议（DHCP）" class="headerlink" title="动态主机配置协议（DHCP）"></a>动态主机配置协议（DHCP）</h2><p>IP 地址可通过手动分配或动态主机配置协议（DHCP）服务器自动分配。当设备连接到网络时，如果没手动分配IP地址，它会发送 DHCP 发现（DHCP Discover）请求，询问网络上是否有可用的DHCP服务器。</p>
-<p>DHCP服务器接收到该请求后，会回复DHCP提供（DHCP Offer）消息，提供可用的IP地址。设备随后发送DHCP请求（DHCP Request）消息，表示它希望使用这个IP地址。最后，DHCP服务器发送DHCP确认（DHCP ACK）消息，设备便可以使用该IP地址来进行通信</p>
-<p>这四个步骤（Discover、Offer、Request、ACK）完成后，设备即可使用分配到的IP地址，无需手动配置<br><br></p>
-<!-- https://tryhackme.com/r/room/introtolan -->
-<!-- 删除例子✔? ✖?，删除主语✔，母语化✔，添加工具✔ -->]]></content>
-      <categories>
-        <category>基本技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Linux基础知识 第二部分</title>
-    <url>/2024/10/27/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-2/</url>
-    <content><![CDATA[<h2 id="SSH-访问-Linux"><a href="#SSH-访问-Linux" class="headerlink" title="SSH 访问 Linux"></a>SSH 访问 Linux</h2><h3 id="什么是-SSH-及其工作原理？"><a href="#什么是-SSH-及其工作原理？" class="headerlink" title="什么是 SSH 及其工作原理？"></a>什么是 SSH 及其工作原理？</h3><p>Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式</p>
-<p>SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密</p>
-<p>使用 SSH 需要两个信息：<br>远程机器的 IP 地址<br>远程机器上有效账户的登录凭证</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh username@1.1.1.1</span><br><span class="line"><span class="comment"># ssh [用户名]@[IP地址]</span></span><br></pre></td></tr></table></figure>
-
-<p>输入 yes 信任主机，输入账户的密码。连接成功后，任何执行的命令将会在远程机器上运行</p>
-<p>在 SSH 登录中输入密码时，不会看到任何文本或符号不会有任何反馈，只需输入密码后回车登录</p>
-<p>输入exit断开连接<br><br></p>
-<h2 id="标志和开关简介（flags-and-switches）"><a href="#标志和开关简介（flags-and-switches）" class="headerlink" title="标志和开关简介（flags and switches）"></a>标志和开关简介（flags and switches）</h2><p>大多数命令都允许使用参数，这些参数由连字符和一个特定的关键字标识，这些关键字被称为标志或开关。在使用命令时，除非另有指定，否则它将执行默认行为。</p>
-<p>使用 ls -a 命令查看所有文件和文件夹，包括以 . 开头的隐藏文件和文件夹<br>使用 ls –help 命令列出 ls 命令列出提供简短的描述和使用示例的使用参数选项</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br><span class="line"><span class="comment"># 列出当前目录中的所有文件和目录，包括隐藏文件（以 . 开头的文件）</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> --<span class="built_in">help</span></span><br><span class="line"><span class="comment"># 显示 ls 命令的帮助信息，包括可用选项及其说明</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="使用-man-命令"><a href="#使用-man-命令" class="headerlink" title="使用 man 命令"></a>使用 man 命令</h3><p>手册页（man page）包含 Linux 系统命令和应用程序的信息，可直接在 Linux 上或网站访问</p>
-<p>使用 man 命令来查看手册页，可搭配其他命令一起使用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">man <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 查看 ls 命令的手册页，获取详细信息和选项说明</span></span><br></pre></td></tr></table></figure>
-
-<p>man 命令搭配其他命令可以查看 Linux 上几乎所有的命令，使用上下箭头阅读，q 退出<br><br></p>
-<h2 id="文件系统交互命令"><a href="#文件系统交互命令" class="headerlink" title="文件系统交互命令"></a>文件系统交互命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>touch</td>
-<td>创建新文件</td>
-</tr>
-<tr>
-<td>mkdir</td>
-<td>创建新文件夹&#x2F;目录（make directory）</td>
-</tr>
-<tr>
-<td>cp</td>
-<td>复制文件或文件夹（copy）</td>
-</tr>
-<tr>
-<td>mv</td>
-<td>移动文件或文件夹或重命名（move）</td>
-</tr>
-<tr>
-<td>rm</td>
-<td>删除文件或文件夹（remove）</td>
-</tr>
-<tr>
-<td>file</td>
-<td>确定文件的类型</td>
-</tr>
-</tbody></table>
-<p>以上所有命令都可搭配使用完整的文件路径</p>
-<h3 id="使用-touch-和-mkdir-命令"><a href="#使用-touch-和-mkdir-命令" class="headerlink" title="使用 touch 和 mkdir 命令"></a>使用 touch 和 mkdir 命令</h3><p>使用 touch 命令创建创建新文件<br>使用 mkdir 命令创建新文件夹&#x2F;目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">touch</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
-
-<p>使用 echo 命令或 nano 等文本编辑器在文件中添加内容</p>
-<h3 id="使用-rm-命令"><a href="#使用-rm-命令" class="headerlink" title="使用 rm 命令"></a>使用 rm 命令</h3><p>使用 rm 命令删除文件<br>使用 rm -R 命令删除文件夹</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">rm</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -R folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-cp-和-mv-命令"><a href="#使用-cp-和-mv-命令" class="headerlink" title="使用 cp 和 mv 命令"></a>使用 cp 和 mv 命令</h3><p>使用 cp 命令将文件内容复制到新的文件中，第一个参数为已存在文件的名称，第二个参数为复制新文件指定的名称。如果目标文件不存在，将自动创建新文件<br>使用 cp -r 命令将文件夹及其内容复制到新的文件夹中，第一个参数为已存在文件夹的名称，第二个参数为复制新文件夹指定的名称。如果目标文件夹不存在，将自动创建新文件夹</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 file2</span><br><span class="line"><span class="comment"># 将 file1 的内容复制到 file2，如果 file2 不存在会自动创建</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> -r folder1 folder2</span><br><span class="line"><span class="comment"># 将 folder1 文件夹及其内容复制到 folder2，如果 folder2 不存在会自动创建</span></span><br></pre></td></tr></table></figure>
-
-
-<p>使用 mv 命令将文件或文件夹移动到新文件夹，或者对第二个参数提供的文件或文件夹名称进行重命名，不会创建新文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mv</span> file1 file2</span><br><span class="line"><span class="comment"># 如果 file2 是一个新名称，会将 file1 重命名为 file2</span></span><br><span class="line"><span class="comment"># 如果 file2 是一个已存在的目录，会将 file1 移动到该目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mv</span> folder1 folder2</span><br><span class="line"><span class="comment"># 如果 folder2 是一个新名称，会将 folder1 重命名为 folder2</span></span><br><span class="line"><span class="comment"># 如果 folder2 是一个已存在的目录，会将 folder1 移动到该目录</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="使用-file-命令"><a href="#使用-file-命令" class="headerlink" title="使用 file 命令"></a>使用 file 命令</h3><p>使用 file 命令确定文件或文件夹的类型，返回文件的类型描述</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">file file1</span><br><span class="line"><span class="comment"># 查看 file1 的文件类型，并显示类型信息</span></span><br><span class="line"></span><br><span class="line">file folder1</span><br><span class="line"><span class="comment"># 查看 folder1 的文件类型，如果为文件夹，将显示为 &quot;directory&quot;</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-<h2 id="权限基础知识"><a href="#权限基础知识" class="headerlink" title="权限基础知识"></a>权限基础知识</h2><p>使用 ls -lh 命令列出目录中所有文件的详细信息，包括文件权限、大小、所有者、修改时间等</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -lh</span><br><span class="line"><span class="comment"># 以详细格式列出当前目录中的所有文件信息，包括权限、大小和修改时间</span></span><br></pre></td></tr></table></figure>
-
-<p>文件或文件夹有几种特性，特性决定了允许执行哪些操作，以及哪个用户或用户组有权限执行操作：</p>
-<p>读取 (Read)<br>写入 (Write)<br>执行 (Execute)</p>
-<h3 id="用户和用户组之间的区别"><a href="#用户和用户组之间的区别" class="headerlink" title="用户和用户组之间的区别"></a>用户和用户组之间的区别</h3><p>Linux 的优点在于权限非常细化，通过设置权限，一组用户可以对同一个文件拥有相同或不同的权限，而不会影响文件的所有者</p>
-<h3 id="使用-su-命令"><a href="#使用-su-命令" class="headerlink" title="使用 su 命令"></a>使用 su 命令</h3><p>通过目标用户的用户名和密码进行切换账户</p>
-<p>使用 su 命令需要输入用户的密码来切换到指定的用户账户，默认情况下不会加载该用户的完整环境变量<br>使用 su -l 命令需要输入用户的密码，它会完全切换到指定用户的实际登录环境，加载所有新用户的属性等</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">su user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，不会加载该用户的完整环境变量</span></span><br><span class="line"></span><br><span class="line">su -l user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，加载该用户的完整环境变量和配置</span></span><br></pre></td></tr></table></figure>
-
-<p>如果没有指定用户，默认情况下会切换到 root 用户。<br><br></p>
-<h2 id="常见目录"><a href="#常见目录" class="headerlink" title="常见目录"></a>常见目录</h2><h3 id="etc"><a href="#etc" class="headerlink" title="&#x2F;etc"></a>&#x2F;etc</h3><p>&#x2F;etc 目录（“etc” 代表 etcetera）是存放操作系统使用的配置和系统文件位置</p>
-<p>在 &#x2F;etc 文件夹中包含 passwd 和 shadow 文件，&#x2F;etc&#x2F;passwd 文件存储了用户账户的信息，&#x2F;etc&#x2F;shadow 文件存储了每个用户的加密哈希密码。系统常使 SHA-512 或其他哈希算法对密码进行加密</p>
-<h3 id="var"><a href="#var" class="headerlink" title="&#x2F;var"></a>&#x2F;var</h3><p>&#x2F;var 目录（“var” 代表 variable data）是存放由系统上运行的服务或应用程序访问、修改或生成的数据</p>
-<h3 id="root"><a href="#root" class="headerlink" title="&#x2F;root"></a>&#x2F;root</h3><p>&#x2F;root 目录是 root 用户系统管理员的主目录，它与普通用户的主目录 &#x2F;home 不同，&#x2F;root 是专门为 root 用户保留的</p>
-<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录（“tmp” 代表 temporary）是用于存放仅需临时访问的文件和数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除。&#x2F;tmp 目录在默认情况下任何用户都有写入权限，&#x2F;tmp 是存放枚举脚本和其他工具的好位置</p>
-<br>
-
-
-<!-- https://tryhackme.com/r/room/linuxfundamentalspart2 -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
-      <categories>
-        <category>基本技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>OSI 模型</title>
-    <url>/2024/10/31/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-3/</url>
-    <content><![CDATA[<h2 id="什么是-OSI-模型？"><a href="#什么是-OSI-模型？" class="headerlink" title="什么是 OSI 模型？"></a>什么是 OSI 模型？</h2><p>开放系统互联模型（OSI）是网络中的基础模型，规定了联网设备如何发送、接收和解释数据的框架</p>
-<p>OSI 模型的优势在于即使网络中的设备功能和设计不同，只要遵循OSI标准就能够相互通信。遵循OSI模型可确保数据在不同设备之间被理解</p>
-<p>OSI 模型由七层组成，每层负责不同的任务，从第7层到第1层依次排列。数据在每一层传输时都会经过特定的处理过程，并附加相应的信息，这一过程称为“封装”。<br><br></p>
-<h2 id="第-1-层-物理层"><a href="#第-1-层-物理层" class="headerlink" title="第 1 层 - 物理层"></a>第 1 层 - 物理层</h2><p>第1层（物理层）是 OSI 模型的最底层，用于网络连接的物理硬件组件。在这一层，数据以电信号的形式传输，并以二进制（1和0）表示。这一层主要关注的是数据的物理传输方式和介质。<br><br></p>
-<h2 id="第-2-层-数据链路层"><a href="#第-2-层-数据链路层" class="headerlink" title="第 2 层 - 数据链路层"></a>第 2 层 - 数据链路层</h2><p>第2层（数据链路层）负责管理设备间的数据传输，并通过媒体访问控制（MAC）物理地址来标识网络中的设备。从网络层接收到包含远程计算机 IP 地址的数据包时，数据链路层会添加目标设备的 MAC 地址，以便在网络中找到具体的接收设备</p>
-<p>每台联网设备都有一个网络接口卡（NIC），其中包含唯一的 MAC 地址，由制造商设置到网卡上，无法更改但可通过技术手段进行伪造。当信息通过网络发送时，信息是根据 MAC 地址而非 IP 地址来定位的</p>
-<p>数据链路层还将数据组织成适合物理传输的格式，处理数据帧的错误检测和校正，确保传输的可靠性<br><br></p>
-<h2 id="第-3-层-网络层"><a href="#第-3-层-网络层" class="headerlink" title="第 3 层 - 网络层"></a>第 3 层 - 网络层</h2><p>第3层（网络层）负责路由和数据分组的管理。路由功能用于决定数据包传输的最佳路径。网络层将数据分组为小数据包进行传输，最后重组为完整的数据块</p>
-<p>网络层使用协议来选择数据到达目标设备的最佳路径，主要的协议包括开放最短路径优先协议（OSPF）和路由信息协议（RIP）。这些协议的路径选择基于以下因素：</p>
-<p>数据包经过的设备数量是否最少，路径是否最短<br>路径上是否存在数据丢失的风险，是否可靠<br>路径的物理传输速度是否更快</p>
-<p>一切都通过 IP 地址进行处理，路由器等利用 IP 地址传输数据包的设备被称为三层设备，因为它们在 OSI 模型的第三层工作<br><br></p>
-<h2 id="第-4-层-传输层"><a href="#第-4-层-传输层" class="headerlink" title="第 4 层 - 传输层"></a>第 4 层 - 传输层</h2><p>第4层（传输层）在设备之间传输数据时，传输层会选择以下两种协议之一：</p>
-<p>传输控制协议（TCP）<br>用户数据报协议（UDP）</p>
-<p>TCP的主要设计目的是确保数据传输的可靠性。它会在两个设备之间建立一个连接，并保持连接，直到所有数据成功传输完毕。TCP具有错误检查和确认机制，确保传输中的小数据块分段按顺序到达并重新组装</p>
-<table>
-<thead>
-<tr>
-<th>TCP 优点</th>
-<th>TCP 缺点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>保证数据的准确性</td>
-<td>需要设备之间建立可靠连接。如果有一小块数据未收到，则整个数据块无法使用。</td>
-</tr>
-<tr>
-<td>同步设备间的数据传输，防止设备因数据过多而过载</td>
-<td>较慢的连接会成为瓶颈，因为接收端的连接需要始终始终保持</td>
-</tr>
-<tr>
-<td>提供更多的可靠性保障</td>
-<td>由于更多的握手和确认操作，TCP 比 UDP 传输速度更慢</td>
-</tr>
-</tbody></table>
-<p>TCP 用于需要数据完整性和准确性的场景，在这些场景中丢失或不完整的数据是不接受的</p>
-<p>UDP 与 TCP 相比，不如 TCP 先进，但相对简单。UDP 不具备 TCP 的错误检查和可靠性保障。通过 UDP 发送的数据不保证一定到达接收端，也没有同步和确认机制</p>
-<table>
-<thead>
-<tr>
-<th>UDP 优点</th>
-<th>UDP 缺点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>传输速度比TCP快得多</td>
-<td>不保证数据的接收</td>
-</tr>
-<tr>
-<td>数据包发送速率由应用层控制</td>
-<td>不保留设备之间的持续连接</td>
-</tr>
-<tr>
-<td>对开发者更灵活性</td>
-<td>不稳定的连接会影响用户体验</td>
-</tr>
-</tbody></table>
-<p>UDP 适用于对可靠性要求不高的小数据传输场景。即使某些数据包丢失，整体效果影响不大，可优先考虑速度</p>
-<br>
-
-
-
-
-
-<h2 id="第-5-层-会话层"><a href="#第-5-层-会话层" class="headerlink" title="第 5 层 - 会话层"></a>第 5 层 - 会话层</h2><p>第5层（会话层）在数据经过表示层（第6层）正确转换和格式化后，负责创建并维护与目标计算机的连接。连接建立后，将创建会话，并在连接保持活跃的期间持续存在</p>
-<p>会话层还负责一段时间内未使用或连接丢失时关闭连接。并且会话可设置“检查点”，当数据丢失，仅需重新发送上次检查点以后的数据节省带宽</p>
-<p>每个会话是独立的，数据只能在当前会话中传输，无法跨会话传输。<br><br></p>
-<h2 id="第-6-层-表示层"><a href="#第-6-层-表示层" class="headerlink" title="第 6 层 - 表示层"></a>第 6 层 - 表示层</h2><p>第6层（表示层）是实施数据标准化的层级。由于软件开发人员以不同的方式开发软件，表示层需确保数据格式的一致性，使接收方能够正确解读数据</p>
-<p>表示层充当数据和应用层（第7层）之间的转换器。它将数据从一种格式转换为另一种格式，使得不同软件之间的数据显示保持一致</p>
-<p>数据加密等安全功能发生在此层</p>
-<br>
-
-
-
-
-
-<h2 id="第-7-层-应用层"><a href="#第-7-层-应用层" class="headerlink" title="第 7 层 - 应用层"></a>第 7 层 - 应用层</h2><p>第7层（应用层）是最接近用户的一层，应用层是制定协议和规则的层，用于确定用户应如何与发送或接收的数据进行交互</p>
-<p>日常应用程序提供图形用户界面（GUI），以便用户与发送或接收的数据进行交互。应用层协议也包括 DNS（域名系统），负责将网站地址转换为 IP 地址，使访问网络资源更加便捷，这层是用户直接接触的数据交互层<br><br></p>
-<!-- https://tryhackme.com/r/room/osimodelzi -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
-      <categories>
-        <category>基本技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Requests</title>
-    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Requests/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/psf/requests">Requests</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Requests是一个简单而优雅的 HTTP 库<br>Requests可让您极其轻松地发送 HTTP&#x2F;1.1 请求。无需手动将查询字符串添加到 URL，也无需对PUT&amp;POST数据进行表单编码 — 但现在，只需使用该json方法即可！<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
 
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->
+]]></content>
       <categories>
-        <category>工具</category>
+        <category>网站</category>
       </categories>
+      <tags>
+        <tag>VPN</tag>
+      </tags>
   </entry>
   <entry>
-    <title>基本技能4-4</title>
-    <url>/2024/10/31/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-4/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Pwntools</title>
-    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Pwntools/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Gallopsled/pwntools">Pwntools</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Pwntools 是一个 CTF 框架和漏洞开发库。它用 Python 编写，旨在快速进行原型设计和开发，并旨在使漏洞编写尽可能简单。<br><br></p>
+    <title>Requests</title>
+    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Requests/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/psf/requests">Requests</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Requests是一个简单而优雅的 HTTP 库<br>Requests可让您极其轻松地发送 HTTP&#x2F;1.1 请求。无需手动将查询字符串添加到 URL，也无需对PUT&amp;POST数据进行表单编码 — 但现在，只需使用该json方法即可！<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
@@ -1019,35 +1307,6 @@
       </categories>
   </entry>
   <entry>
-    <title>theHarvester</title>
-    <url>/2024/10/27/%E5%B7%A5%E5%85%B7theHarvester/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>theHarvester 是一款简单易用但功能强大的工具，旨在用于红队评估或渗透测试的侦察阶段。它执行开源情报 (OSINT) 收集，以帮助确定域的外部威胁状况。该工具使用多种公共资源收集名称、电子邮件、IP、子域和 URL<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>OSINT Framework</title>
-    <url>/2024/10/27/%E7%BD%91%E7%AB%99OSINT_Framework/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>提供了基于各种类别的 OSINT 工具集合<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Pigcha</title>
     <url>/2024/10/30/%E7%BD%91%E7%AB%99Pigcha/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.pigcha.com/">Pigcha</a><br><br></p>
@@ -1058,28 +1317,6 @@
 
 
 <!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>VPN</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mullvad</title>
-    <url>/2024/10/30/%E7%BD%91%E7%AB%99Mullvad/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://mullvad.net/en">Mullvad</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->
-]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -1109,19 +1346,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hunter</title>
-    <url>/2024/10/27/%E7%BD%91%E7%AB%99hunter/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>这是一个电子邮件搜寻工具，可以获取与特定域名相关的联系信息<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>网络安全职业</title>
     <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
     <content><![CDATA[<h2 id="安全分析师"><a href="#安全分析师" class="headerlink" title="安全分析师"></a>安全分析师</h2><p>负责维护组织数据的安全</p>
@@ -1140,73 +1364,29 @@
       </categories>
   </entry>
   <entry>
-    <title>安全原则</title>
-    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/</url>
-    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在描述某样东西是安全的之前，需要更好地理解什么构成了安全。当想评估一个系统的安全性时，需要从安全三角的角度考虑：机密性（Confidentiality）、完整性（Integrity）和可用性（Availability），即CIA。</p>
-<p><strong>机密性</strong>：确保只有特定人员或接收者可以访问数据<br><strong>完整性</strong>：旨在确保数据不能被篡改；如果发生任何篡改，也能检测到<br><strong>可用性</strong>：确保系统或服务在需要时是可以使用的</p>
-<h3 id="除了CIA"><a href="#除了CIA" class="headerlink" title="除了CIA"></a>除了CIA</h3><p><strong>真实性</strong>：真实性意味着数据必须是真实的而不是伪造的。真实性旨在确保文档、文件或数据确实来自声明的来源</p>
-<p><strong>不可否认性</strong>：否认意味着拒绝承认某事的有效性。不可否认性旨在确保原始数据来源无法否认自己是该文档、文件或数据的源头</p>
-<h3 id="Parkerian六要素"><a href="#Parkerian六要素" class="headerlink" title="Parkerian六要素"></a>Parkerian六要素</h3><p>1998年，Donn Parker提出了Parkerian六要素，包含六个安全元素：</p>
-<p>可用性<br>实用性<br>完整性<br>真实性<br>机密性<br>所有权</p>
-<p><strong>实用性</strong>：实用性关注信息的可用性和有用性<br><strong>所有权</strong>：此安全元素强调保护信息免遭未经授权的获取、复制或控制<br><br></p>
-<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>一个系统的安全可以通过几种不同的手段受到攻击。这些手段可能包括机密数据的泄露、数据的篡改或数据的破坏</p>
-<p><strong>泄露</strong>：是机密性的反面，机密数据的泄露就是对机密性的攻击<br><strong>篡改</strong>：是完整性的反面<br><strong>破坏&#x2F;拒绝</strong>：是可用性的反面</p>
-<p>CIA三角的反面就是DAD三角：泄露（Disclosure）、篡改（Alteration）和破坏（Destruction）。</p>
-<p>防范泄露、篡改和破坏&#x2F;拒绝服务至关重要。这些防范措施实际上是在维护机密性、完整性和可用性。</p>
-<p>极度保护机密性和完整性可能会限制系统的可用性，而极度提高可用性可能会导致机密性和完整性的损失。好的安全策略需要在这三者之间找到适当的平衡。<br><br></p>
-<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>使用安全模型能创建一个能够确保一种或多种安全功能的系统</p>
-<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型旨在通过以下三条规则来实现<strong>机密性</strong>：</p>
-<p><strong>简单安全属性</strong>（No Read Up）：低安全级别的主体不能读取高安全级别的对象。这条规则防止了对超出授权级别的敏感信息的访问<br><strong>星型安全属性</strong>（No Write Down）：高安全级别的主体不能向低安全级别的对象写入数据。这条规则防止将敏感信息泄露给低安全级别的主体<br><strong>任意安全属性</strong>：此属性通过访问矩阵允许读和写操作</p>
-<table>
-<thead>
-<tr>
-<th>主体</th>
-<th>对象 A</th>
-<th>对象 B</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>主体 1</td>
-<td>写入</td>
-<td>无访问权限</td>
-</tr>
-<tr>
-<td>主体 2</td>
-<td>读&#x2F;写</td>
-<td>读取</td>
-</tr>
-</tbody></table>
-<p>前两个规则可以概括为 “向上写入，向下读取”。可以将机密信息分享给拥有更高安全许可的人（向上写入），并从拥有较低安全许可的人接收机密信息（向下读取）。</p>
-<p>Bell-LaPadula 模型局限性包括它不适用于文件共享场景</p>
-<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型旨在通过以下两条规则来实现数据<strong>完整性</strong>：</p>
-<p><strong>简单完整性属性</strong>（No Read Down）：高完整性的主体不应从低完整性的对象中读取数据<br><strong>星型完整性属性</strong>（No Write Up）：低完整性的主体不应向高完整性的对象写入数据</p>
-<p>这两条规则可以概括为“向上读取，向下写入”。这与 Bell-LaPadula 模型形成对比，因为 Bell-LaPadula 关注机密性，而 Biba 关注完整性。</p>
-<p>Biba 模型的局限性包括它无法应对内部威胁</p>
-<h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型同样旨在通过以下概念来维护数据<strong>完整性</strong>：</p>
-<p><strong>受约束数据项</strong>（CDI）：指需要保护完整性的数据类型。<br><strong>非受约束数据项</strong>（UDI）：指除 CDI 之外的所有数据类型，例如用户输入和系统输入。<br><strong>转换程序</strong>（TPs）：这些是已编程的操作（如读取和写入），应确保 CDI 的完整性。<br><strong>完整性验证程序</strong>（IVPs）：这些程序用于检查并验证 CDI 的有效性。</p>
-<p>其他安全模型：<br>Brewer-Nash 模型<br>Goguen-Meseguer 模型<br>Sutherland 模型<br>Graham-Denning 模型<br>Harrison-Ruzzo-Ullman 模型<br><br></p>
-<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是指构建一个多层次的安全系统，因此也称为多层安全（Multi-Level Security）。<br><br></p>
-<h2 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h2><p>国际标准化组织（ISO）和国际电工委员会（IEC）制定了ISO&#x2F;IEC 19249标准。ISO&#x2F;IEC 19249:2017《信息技术 - 安全技术 - 安全产品、系统和应用的架构和设计原则目录》，目的是帮助更好地理解国际组织在安全原则方面的指导。</p>
-<h3 id="ISO-IEC-19249列出了五项架构原则："><a href="#ISO-IEC-19249列出了五项架构原则：" class="headerlink" title="ISO&#x2F;IEC 19249列出了五项架构原则："></a>ISO&#x2F;IEC 19249列出了五项架构原则：</h3><p><strong>域分离</strong>：将一组相关的组件分组为单个实体，组件可以是应用程序、数据或其他资源。每个实体都会有自己的域，并分配一组共用的安全属性</p>
-<p><strong>分层</strong>：当系统被划分为多个抽象层次或层级时，可以在不同的层次上实施安全策略；此外，还能验证操作是否符合预期。分层原则与纵深防御有关</p>
-<p><strong>封装</strong>：在面向对象编程（OOP）中，通过特定方法隐藏底层实现，防止直接操控对象中的数据</p>
-<p><strong>冗余</strong>：确保系统的可用性和完整性是冗余的核心目的</p>
-<p><strong>虚拟化</strong>：虚拟化的核心理念是将一套硬件资源分配给多个操作系统。虚拟化提供了沙箱能力，加强了安全边界、隔离及对恶意程序的观察</p>
-<h3 id="ISO-IEC-19249还列出了五个设计原则："><a href="#ISO-IEC-19249还列出了五个设计原则：" class="headerlink" title="ISO&#x2F;IEC 19249还列出了五个设计原则："></a>ISO&#x2F;IEC 19249还列出了五个设计原则：</h3><p><strong>最小特权</strong>：可以简单称为“按需原则”或“知情原则”。最小特权原则只为完成任务提供最低限度的权限</p>
-<p><strong>攻击面最小化</strong>：每个系统都可能存在攻击者利用的漏洞。有些漏洞已被发现，有些尚未被发现。这些漏洞构成了需要减少的风险</p>
-<p><strong>集中化参数验证</strong>：无效输入可能被用来利用系统漏洞，因此，参数验证是保持系统状态正确的必要步骤。考虑到系统处理的参数数量，验证应集中在一个库或系统内</p>
-<p><strong>集中化的通用安全服务</strong>：作为安全原则，应尽量集中化所有安全服务。采取适当措施，确保服务可用性，并避免单点故障</p>
-<p><strong>错误和异常处理准备</strong>：在系统构建过程中，应考虑错误和异常的发生。该原则强调，系统应设计为在故障时能安全应对；此外，还应注意，不要让错误信息泄露机密信息<br><br></p>
-<h2 id="零信任-vs-信任但验证"><a href="#零信任-vs-信任但验证" class="headerlink" title="零信任 vs 信任但验证"></a>零信任 vs 信任但验证</h2><p>信任是一个复杂的问题，在没有信任的情况下无法运作。当将信任放在商业背景下，问题会变得更为复杂；然而，仍然需要一些指导性的安全原则。</p>
-<h3 id="信任但需验证"><a href="#信任但需验证" class="headerlink" title="信任但需验证"></a>信任但需验证</h3><p>这一原则提醒，即使信任某个实体及其行为，仍应进行验证。实体可以是用户或系统。验证通常需要设置有效的日志记录机制；验证意味着审查日志，以确保系统行为正常。然而，完全验证所有内容是不现实的。这就需要借助自动化安全机制</p>
-<h3 id="零信任"><a href="#零信任" class="headerlink" title="零信任"></a>零信任</h3><p>这一原则将信任视为一种潜在的风险，因此特别关注内部相关的威胁。考虑到信任是一种脆弱点，零信任原则试图消除这种风险。它传达的是“永不信任，始终验证”的理念。每个实体在被证明确实可信之前，都被视为潜在威胁。零信任不会因为设备的位置或所有权而赋予信任。这一理念与旧的安全模型形成了鲜明对比，旧模型会信任内部网络或企业拥有的设备。在访问任何资源之前，必须进行身份验证和授权。因此，如果发生安全漏洞，在零信任架构下，损害会更为有限。</p>
-<p>微分段是零信任的一种实现方式。它指的是一种网络设计，网络分段可以小到单个主机。此外，不同分段之间的通信需要进行身份验证、访问控制列表检查以及其他安全要求。</p>
-<p>零信任的应用有一定的限度，因为过度应用可能对企业产生负面影响；但这并不意味着在可行的情况下不应采用这种原则。<br><br></p>
-<h2 id="威胁-vs-风险"><a href="#威胁-vs-风险" class="headerlink" title="威胁 vs 风险"></a>威胁 vs 风险</h2><p><strong>漏洞</strong>：漏洞指的是容易受到攻击或损害的状态。在信息安全领域，漏洞代表系统中的弱点。<br><strong>威胁</strong>：威胁是与这些弱点或漏洞相关的潜在危险。<br><strong>风险</strong>：风险涉及威胁行为者利用漏洞的可能性，以及对业务造成的影响。<br><br></p>
-<!-- https://tryhackme.com/r/room/securityprinciples -->
-<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+    <title>hunter</title>
+    <url>/2024/10/27/%E7%BD%91%E7%AB%99hunter/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>这是一个电子邮件搜寻工具，可以获取与特定域名相关的联系信息<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功使用✔? ✖? -->]]></content>
       <categories>
-        <category>网络安全基础</category>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>OSINT Framework</title>
+    <url>/2024/10/27/%E7%BD%91%E7%AB%99OSINT_Framework/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>提供了基于各种类别的 OSINT 工具集合<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -1306,6 +1486,92 @@
 ]]></content>
       <categories>
         <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>安全原则</title>
+    <url>/2024/10/27/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/</url>
+    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在描述某样东西是安全的之前，需要更好地理解什么构成了安全。当想评估一个系统的安全性时，需要从安全三角的角度考虑：机密性（Confidentiality）、完整性（Integrity）和可用性（Availability），即CIA。</p>
+<p><strong>机密性</strong>：确保只有特定人员或接收者可以访问数据<br><strong>完整性</strong>：旨在确保数据不能被篡改；如果发生任何篡改，也能检测到<br><strong>可用性</strong>：确保系统或服务在需要时是可以使用的</p>
+<h3 id="除了CIA"><a href="#除了CIA" class="headerlink" title="除了CIA"></a>除了CIA</h3><p><strong>真实性</strong>：真实性意味着数据必须是真实的而不是伪造的。真实性旨在确保文档、文件或数据确实来自声明的来源</p>
+<p><strong>不可否认性</strong>：否认意味着拒绝承认某事的有效性。不可否认性旨在确保原始数据来源无法否认自己是该文档、文件或数据的源头</p>
+<h3 id="Parkerian六要素"><a href="#Parkerian六要素" class="headerlink" title="Parkerian六要素"></a>Parkerian六要素</h3><p>1998年，Donn Parker提出了Parkerian六要素，包含六个安全元素：</p>
+<p>可用性<br>实用性<br>完整性<br>真实性<br>机密性<br>所有权</p>
+<p><strong>实用性</strong>：实用性关注信息的可用性和有用性<br><strong>所有权</strong>：此安全元素强调保护信息免遭未经授权的获取、复制或控制<br><br></p>
+<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>一个系统的安全可以通过几种不同的手段受到攻击。这些手段可能包括机密数据的泄露、数据的篡改或数据的破坏</p>
+<p><strong>泄露</strong>：是机密性的反面，机密数据的泄露就是对机密性的攻击<br><strong>篡改</strong>：是完整性的反面<br><strong>破坏&#x2F;拒绝</strong>：是可用性的反面</p>
+<p>CIA三角的反面就是DAD三角：泄露（Disclosure）、篡改（Alteration）和破坏（Destruction）。</p>
+<p>防范泄露、篡改和破坏&#x2F;拒绝服务至关重要。这些防范措施实际上是在维护机密性、完整性和可用性。</p>
+<p>极度保护机密性和完整性可能会限制系统的可用性，而极度提高可用性可能会导致机密性和完整性的损失。好的安全策略需要在这三者之间找到适当的平衡。<br><br></p>
+<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>使用安全模型能创建一个能够确保一种或多种安全功能的系统</p>
+<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型旨在通过以下三条规则来实现<strong>机密性</strong>：</p>
+<p><strong>简单安全属性</strong>（No Read Up）：低安全级别的主体不能读取高安全级别的对象。这条规则防止了对超出授权级别的敏感信息的访问<br><strong>星型安全属性</strong>（No Write Down）：高安全级别的主体不能向低安全级别的对象写入数据。这条规则防止将敏感信息泄露给低安全级别的主体<br><strong>任意安全属性</strong>：此属性通过访问矩阵允许读和写操作</p>
+<table>
+<thead>
+<tr>
+<th>主体</th>
+<th>对象 A</th>
+<th>对象 B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主体 1</td>
+<td>写入</td>
+<td>无访问权限</td>
+</tr>
+<tr>
+<td>主体 2</td>
+<td>读&#x2F;写</td>
+<td>读取</td>
+</tr>
+</tbody></table>
+<p>前两个规则可以概括为 “向上写入，向下读取”。可以将机密信息分享给拥有更高安全许可的人（向上写入），并从拥有较低安全许可的人接收机密信息（向下读取）。</p>
+<p>Bell-LaPadula 模型局限性包括它不适用于文件共享场景</p>
+<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型旨在通过以下两条规则来实现数据<strong>完整性</strong>：</p>
+<p><strong>简单完整性属性</strong>（No Read Down）：高完整性的主体不应从低完整性的对象中读取数据<br><strong>星型完整性属性</strong>（No Write Up）：低完整性的主体不应向高完整性的对象写入数据</p>
+<p>这两条规则可以概括为“向上读取，向下写入”。这与 Bell-LaPadula 模型形成对比，因为 Bell-LaPadula 关注机密性，而 Biba 关注完整性。</p>
+<p>Biba 模型的局限性包括它无法应对内部威胁</p>
+<h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型同样旨在通过以下概念来维护数据<strong>完整性</strong>：</p>
+<p><strong>受约束数据项</strong>（CDI）：指需要保护完整性的数据类型。<br><strong>非受约束数据项</strong>（UDI）：指除 CDI 之外的所有数据类型，例如用户输入和系统输入。<br><strong>转换程序</strong>（TPs）：这些是已编程的操作（如读取和写入），应确保 CDI 的完整性。<br><strong>完整性验证程序</strong>（IVPs）：这些程序用于检查并验证 CDI 的有效性。</p>
+<p>其他安全模型：<br>Brewer-Nash 模型<br>Goguen-Meseguer 模型<br>Sutherland 模型<br>Graham-Denning 模型<br>Harrison-Ruzzo-Ullman 模型<br><br></p>
+<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是指构建一个多层次的安全系统，因此也称为多层安全（Multi-Level Security）。<br><br></p>
+<h2 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h2><p>国际标准化组织（ISO）和国际电工委员会（IEC）制定了ISO&#x2F;IEC 19249标准。ISO&#x2F;IEC 19249:2017《信息技术 - 安全技术 - 安全产品、系统和应用的架构和设计原则目录》，目的是帮助更好地理解国际组织在安全原则方面的指导。</p>
+<h3 id="ISO-IEC-19249列出了五项架构原则："><a href="#ISO-IEC-19249列出了五项架构原则：" class="headerlink" title="ISO&#x2F;IEC 19249列出了五项架构原则："></a>ISO&#x2F;IEC 19249列出了五项架构原则：</h3><p><strong>域分离</strong>：将一组相关的组件分组为单个实体，组件可以是应用程序、数据或其他资源。每个实体都会有自己的域，并分配一组共用的安全属性</p>
+<p><strong>分层</strong>：当系统被划分为多个抽象层次或层级时，可以在不同的层次上实施安全策略；此外，还能验证操作是否符合预期。分层原则与纵深防御有关</p>
+<p><strong>封装</strong>：在面向对象编程（OOP）中，通过特定方法隐藏底层实现，防止直接操控对象中的数据</p>
+<p><strong>冗余</strong>：确保系统的可用性和完整性是冗余的核心目的</p>
+<p><strong>虚拟化</strong>：虚拟化的核心理念是将一套硬件资源分配给多个操作系统。虚拟化提供了沙箱能力，加强了安全边界、隔离及对恶意程序的观察</p>
+<h3 id="ISO-IEC-19249还列出了五个设计原则："><a href="#ISO-IEC-19249还列出了五个设计原则：" class="headerlink" title="ISO&#x2F;IEC 19249还列出了五个设计原则："></a>ISO&#x2F;IEC 19249还列出了五个设计原则：</h3><p><strong>最小特权</strong>：可以简单称为“按需原则”或“知情原则”。最小特权原则只为完成任务提供最低限度的权限</p>
+<p><strong>攻击面最小化</strong>：每个系统都可能存在攻击者利用的漏洞。有些漏洞已被发现，有些尚未被发现。这些漏洞构成了需要减少的风险</p>
+<p><strong>集中化参数验证</strong>：无效输入可能被用来利用系统漏洞，因此，参数验证是保持系统状态正确的必要步骤。考虑到系统处理的参数数量，验证应集中在一个库或系统内</p>
+<p><strong>集中化的通用安全服务</strong>：作为安全原则，应尽量集中化所有安全服务。采取适当措施，确保服务可用性，并避免单点故障</p>
+<p><strong>错误和异常处理准备</strong>：在系统构建过程中，应考虑错误和异常的发生。该原则强调，系统应设计为在故障时能安全应对；此外，还应注意，不要让错误信息泄露机密信息<br><br></p>
+<h2 id="零信任-vs-信任但验证"><a href="#零信任-vs-信任但验证" class="headerlink" title="零信任 vs 信任但验证"></a>零信任 vs 信任但验证</h2><p>信任是一个复杂的问题，在没有信任的情况下无法运作。当将信任放在商业背景下，问题会变得更为复杂；然而，仍然需要一些指导性的安全原则。</p>
+<h3 id="信任但需验证"><a href="#信任但需验证" class="headerlink" title="信任但需验证"></a>信任但需验证</h3><p>这一原则提醒，即使信任某个实体及其行为，仍应进行验证。实体可以是用户或系统。验证通常需要设置有效的日志记录机制；验证意味着审查日志，以确保系统行为正常。然而，完全验证所有内容是不现实的。这就需要借助自动化安全机制</p>
+<h3 id="零信任"><a href="#零信任" class="headerlink" title="零信任"></a>零信任</h3><p>这一原则将信任视为一种潜在的风险，因此特别关注内部相关的威胁。考虑到信任是一种脆弱点，零信任原则试图消除这种风险。它传达的是“永不信任，始终验证”的理念。每个实体在被证明确实可信之前，都被视为潜在威胁。零信任不会因为设备的位置或所有权而赋予信任。这一理念与旧的安全模型形成了鲜明对比，旧模型会信任内部网络或企业拥有的设备。在访问任何资源之前，必须进行身份验证和授权。因此，如果发生安全漏洞，在零信任架构下，损害会更为有限。</p>
+<p>微分段是零信任的一种实现方式。它指的是一种网络设计，网络分段可以小到单个主机。此外，不同分段之间的通信需要进行身份验证、访问控制列表检查以及其他安全要求。</p>
+<p>零信任的应用有一定的限度，因为过度应用可能对企业产生负面影响；但这并不意味着在可行的情况下不应采用这种原则。<br><br></p>
+<h2 id="威胁-vs-风险"><a href="#威胁-vs-风险" class="headerlink" title="威胁 vs 风险"></a>威胁 vs 风险</h2><p><strong>漏洞</strong>：漏洞指的是容易受到攻击或损害的状态。在信息安全领域，漏洞代表系统中的弱点。<br><strong>威胁</strong>：威胁是与这些弱点或漏洞相关的潜在危险。<br><strong>风险</strong>：风险涉及威胁行为者利用漏洞的可能性，以及对业务造成的影响。<br><br></p>
+<!-- https://tryhackme.com/r/room/securityprinciples -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>theHarvester</title>
+    <url>/2024/10/27/%E5%B7%A5%E5%85%B7theHarvester/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>theHarvester 是一款简单易用但功能强大的工具，旨在用于红队评估或渗透测试的侦察阶段。它执行开源情报 (OSINT) 收集，以帮助确定域的外部威胁状况。该工具使用多种公共资源收集名称、电子邮件、IP、子域和 URL<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>工具</category>
       </categories>
   </entry>
 </search>
