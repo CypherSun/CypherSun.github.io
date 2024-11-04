@@ -15,7 +15,7 @@
 <meta property="og:description" content="网络文件系统（NFS）什么是 NFS？网络文件系统（Network File System，NFS）允许系统通过网络与其他系统共享目录和文件。借助 NFS，用户和程序可以像访问本地文件一样访问远程系统上的文件。通过将服务器上的整个或部分文件系统挂载到客户端系统上来实现。被挂载的文件系统部分可以由客户端访问，并按照分配给每个文件的权限进行访问。 NFS 如何工作？客户端请求将远程主机上的某个目录挂载">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-11-02T20:38:40.000Z">
-<meta property="article:modified_time" content="2024-11-03T15:16:02.680Z">
+<meta property="article:modified_time" content="2024-11-04T09:09:58.921Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-03 16:16:02"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-04 10:09:58"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -388,7 +388,7 @@
 <p>运行 Windows Server 的计算机可以作为其他非 Windows 客户端计算机的 NFS 文件服务器。NFS 也允许基于 Windows 的计算机访问存储在非 Windows NFS 服务器上的文件。<br><br></p>
 <h2 id="枚举-NFS"><a href="#枚举-NFS" class="headerlink" title="枚举 NFS"></a>枚举 NFS</h2><h3 id="什么是枚举？"><a href="#什么是枚举？" class="headerlink" title="什么是枚举？"></a>什么是枚举？</h3><p>枚举建立与目标主机的主动连接，以发现系统中潜在的攻击向量的过程，同时进一步对系统利用。指导攻击的信息将来自此阶段。</p>
 <h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>为了对 NFS 服务器和共享进行更高级的枚举需要 nfs-common，这是用于在本地计算机上与NFS共享进行交互的工具包。</p>
-<h3 id="NFS-Common"><a href="#NFS-Common" class="headerlink" title="NFS-Common"></a>NFS-Common</h3><p>任何使用 NFS 的机器都需要安装此软件包。该软件包包含多个程序，例如：lockd、statd、showmount、nfsstat、gssd、idmapd 和 mount.nfs。主要关注 showmount 和 mount.nfs，从NFS共享中提取信息时，这两个工具最好用。安装 nfs-common，这个软件包在大多数Linux发行版中都默认提供</p>
+<h3 id="NFS-Common"><a href="#NFS-Common" class="headerlink" title="NFS-Common"></a>NFS-Common</h3><p>任何使用 NFS 的机器都需要安装此软件包。该软件包包含多个程序。主要关注 showmount 和 mount.nfs，从NFS共享中提取信息时，这两个工具最好用。安装 nfs-common，这个软件包在大多数Linux发行版中都默认提供</p>
 <p>可使用 </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install nfs-common </span><br><span class="line"><span class="comment"># 安装 nfs-common</span></span><br></pre></td></tr></table></figure>
 
@@ -511,6 +511,40 @@
             <span data-number="02"></span>
         </h5>
     </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/04/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD7/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">04</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    未分类
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/04/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD7/" class="trm-anima-link">
+                    基础技能7
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/04</li>
+                <li>09:37</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
     
     
         <div class="col-lg-6">
