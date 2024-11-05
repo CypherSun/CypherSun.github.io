@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="整合所有内容通过之前的模块，已经了解到，当在浏览器中请求一个网页时，背后会发生很多过程。 当请求一个网站时，计算机需要知道要通信的服务器的IP地址；为此，它会使用DNS。计算机会通过一组称为HTTP协议的特殊指令与网络服务器通信；网络服务器随后返回HTML、JavaScript、CSS、图像等资源，浏览器则利用这些资源来正确地格式化并显示网站。 还有一些其他组件可以帮助网络更高效地运行，并提供附加">
+<meta property="og:type" content="article">
+<meta property="og:title" content="整合全部内容">
+<meta property="og:url" content="https://cyphersun.github.io/2024/11/04/2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD10/index.html">
+<meta property="og:site_name" content="CypherSun">
+<meta property="og:description" content="整合所有内容通过之前的模块，已经了解到，当在浏览器中请求一个网页时，背后会发生很多过程。 当请求一个网站时，计算机需要知道要通信的服务器的IP地址；为此，它会使用DNS。计算机会通过一组称为HTTP协议的特殊指令与网络服务器通信；网络服务器随后返回HTML、JavaScript、CSS、图像等资源，浏览器则利用这些资源来正确地格式化并显示网站。 还有一些其他组件可以帮助网络更高效地运行，并提供附加">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-11-04T09:42:29.000Z">
+<meta property="article:modified_time" content="2024-11-05T10:21:20.512Z">
+<meta property="article:author" content="CypherSun">
+<meta name="twitter:card" content="summary">
+
+
+<title >整合全部内容</title>
+
+<!-- Favicon -->
+
+
+    <link href='/favicon.ico?v=2.2.3' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="https://unpkg.com/hexo-theme-async@2.2.3/source/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-05 11:21:20"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+
+ 
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/tags/" target="">
+                    标签
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/categories/" target="">
+                    分类
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    关于
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+    
+    <div id="trm-search-btn" class="trm-search-btn">
+        <i class="iconfont fas fa-search"></i>
+    </div>
+     
+
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            整合全部内容
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        2024
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="trm-page-sidebar col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card"> 
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img alt="Avatar" class="trm-avatar" src="https://avatars.githubusercontent.com/u/80212458?v=4">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        CypherSun
+    </h5>
+    
+        <div class="trm-label">
+            I`m
+            <span class="trm-typed-text">
+                <!-- Words for theme.user.typedText -->
+            </span>
+        </div>
+    
+</div>
+<!-- card header end -->
+        <!-- sidebar social -->
+
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<div class="trm-social">
+    
+        <a href="https://github.com/CypherSun" title="Github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+        <a href="/wechat.jpg" title="Wechat" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-weixin"></i>
+        </a>
+    
+        <a href="/qq.jpg" title="QQ" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-qq"></i>
+        </a>
+    
+</div>
+
+<!-- sidebar social end -->
+        <!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                地址:
+            </div>
+            <div class="trm-label trm-label-light">
+                银河系
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                年龄:
+            </div>
+            <div class="trm-label trm-label-light">
+                不清楚
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                实力:
+            </div>
+            <div class="trm-label trm-label-light">
+                上升期
+            </div>
+        </li>
+    
+</ul>
+<!-- info end -->
+
+        
+    <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+    <!-- action button -->
+    <div class="text-center">
+        <a href="mailto:84860748@qq.com" class="trm-btn">
+            联系我
+            <i class="iconfont far fa-envelope"></i>
+        </a>
+    </div>
+    <!-- action button end -->
+
+    </div>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="trm-page-content col-lg-8">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            11/04
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            10:42
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            CypherSun
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="整合所有内容"><a href="#整合所有内容" class="headerlink" title="整合所有内容"></a>整合所有内容</h2><p>通过之前的模块，已经了解到，当在浏览器中请求一个网页时，背后会发生很多过程。</p>
+<p>当请求一个网站时，计算机需要知道要通信的服务器的IP地址；为此，它会使用DNS。计算机会通过一组称为HTTP协议的特殊指令与网络服务器通信；网络服务器随后返回HTML、JavaScript、CSS、图像等资源，浏览器则利用这些资源来正确地格式化并显示网站。</p>
+<p>还有一些其他组件可以帮助网络更高效地运行，并提供附加功能。<br><br></p>
+<h2 id="其他组件"><a href="#其他组件" class="headerlink" title="其他组件"></a>其他组件</h2><h3 id="负载均衡器"><a href="#负载均衡器" class="headerlink" title="负载均衡器"></a>负载均衡器</h3><p>当网站流量变大，或需要高可用性的应用程序时，单个服务器可能无法满足需求。负载均衡器提供两项主要功能：确保高流量网站能够处理负载，并在某个服务器无响应时提供故障切换。</p>
+<p>当您请求一个有负载均衡器的网站时，负载均衡器会先接收请求，然后将其转发给其后方的多台服务器之一。负载均衡器使用不同的算法来选择最适合处理请求的服务器。例如，轮询算法会依次将请求分配给每个服务器；加权算法会检查每台服务器当前处理的请求数，并将请求发送到最闲的服务器。</p>
+<p>负载均衡器还会定期与每台服务器进行健康检查，以确保其正常运行。如果某台服务器未能正确响应，负载均衡器将停止向其发送流量，直到该服务器恢复正常。</p>
+<h3 id="内容分发网络（CDN）"><a href="#内容分发网络（CDN）" class="headerlink" title="内容分发网络（CDN）"></a>内容分发网络（CDN）</h3><p>CDN可以有效减少繁忙网站的流量。它允许您将网站的静态文件（如JavaScript、CSS、图片、视频等）托管在全球成千上万台服务器上。当用户请求这些文件时，CDN会选择距离用户最近的服务器进行响应，而不必让请求跨越全球。</p>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>许多网站需要一种方式来存储用户数据。网络服务器可以通过数据库来存储和检索数据。数据库的形式可以从简单的纯文本文件到复杂的多服务器集群，以提供速度和稳定性。常见的数据库类型包括：MySQL、MSSQL、MongoDB、Postgres等，每种数据库都有其独特的功能。</p>
+<h3 id="网络应用防火墙（WAF）"><a href="#网络应用防火墙（WAF）" class="headerlink" title="网络应用防火墙（WAF）"></a>网络应用防火墙（WAF）</h3><p>WAF位于网络请求和服务器之间，主要目的是保护服务器免受黑客攻击或拒绝服务攻击。它会分析网络请求，以检测常见的攻击方式，并判断请求是否来自真实的浏览器而不是机器人。WAF还会通过“速率限制”来控制每秒每个IP的请求数量，以防止过量请求。如果某个请求被视为潜在攻击，WAF将丢弃该请求，不会将其发送到服务器。</p>
+<br>
+
+
+
+
+
+<h2 id="网络服务器的工作原理"><a href="#网络服务器的工作原理" class="headerlink" title="网络服务器的工作原理"></a>网络服务器的工作原理</h2><h3 id="什么是网络服务器？"><a href="#什么是网络服务器？" class="headerlink" title="什么是网络服务器？"></a>什么是网络服务器？</h3><p>网络服务器是一种监听传入连接的软件，它通过HTTP协议向客户端传送网页内容。常见的网络服务器软件包括Apache、Nginx、IIS和NodeJS。网络服务器会从“根目录”提供文件，这个根目录在软件设置中定义。例如，在Linux系统中，Nginx和Apache的默认根目录是&#x2F;var&#x2F;www&#x2F;html，而在Windows系统中，IIS的根目录是C:\inetpub\wwwroot。如果请求<a target="_blank" rel="noopener" href="http://www.example.com/picture.jpg%EF%BC%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%9A%E4%BB%8E%E6%9C%AC%E5%9C%B0%E7%A1%AC%E7%9B%98%E7%9A%84/var/www/html/picture.jpg%E4%B8%AD%E4%BC%A0%E9%80%81%E8%AF%A5%E6%96%87%E4%BB%B6%E3%80%82">http://www.example.com/picture.jpg，服务器会从本地硬盘的/var/www/html/picture.jpg中传送该文件。</a></p>
+<h3 id="虚拟主机"><a href="#虚拟主机" class="headerlink" title="虚拟主机"></a>虚拟主机</h3><p>网络服务器可以通过虚拟主机托管多个不同域名的网站。服务器软件会检查HTTP头中的主机名，并与其虚拟主机配置进行匹配（虚拟主机是基于文本的配置文件）。如果找到匹配的主机名，则提供对应的网站；如果没有匹配，则提供默认网站。</p>
+<p>虚拟主机可以将根目录映射到硬盘上的不同位置。例如，one.com映射到&#x2F;var&#x2F;www&#x2F;website_one，而two.com映射到&#x2F;var&#x2F;www&#x2F;website_two。</p>
+<p>理论上，网络服务器可以托管的不同网站数量没有限制。</p>
+<h3 id="静态内容与动态内容"><a href="#静态内容与动态内容" class="headerlink" title="静态内容与动态内容"></a>静态内容与动态内容</h3><p>静态内容是指永远不变的内容，常见的例子包括图片、JavaScript、CSS等，也可能包含永不改变的HTML文件。这些文件会直接从服务器传递，未经修改。</p>
+<p>动态内容是指根据不同请求而变化的内容。比如，博客的主页会显示最新的文章条目；如果有新文章发布，主页将更新为最新条目。搜索页面也会根据搜索词显示不同结果。</p>
+<p>这些动态变化由后台通过编程和脚本语言实现。称为“后台”（Backend）处理，是因为所有操作都在幕后完成。用户看不到后台的处理代码，只能看到最终呈现的HTML结果。用户在浏览器中看到的内容称为“前端”（Frontend）。</p>
+<h3 id="脚本语言和后台语言"><a href="#脚本语言和后台语言" class="headerlink" title="脚本语言和后台语言"></a>脚本语言和后台语言</h3><p>后台语言的功能几乎没有限制，能够使网站具备交互功能。常见的后台语言（无特定顺序）包括PHP、Python、Ruby、NodeJS和Perl等。这些语言可以与数据库交互，调用外部服务，处理用户数据等等。以下是一个简单的PHP示例：</p>
+<p>假设您请求网址<a target="_blank" rel="noopener" href="http://example.com/index.php?name=adam">http://example.com/index.php?name=adam</a></p>
+<p>如果index.php文件内容如下：</p>
+<p>php</p>
+<html><body>Hello <?php echo $_GET["name"]; ?></body></html>
+那么服务器返回给客户端的内容是：
+
+<p>html</p>
+<html><body>Hello adam</body></html>
+
+<p>客户端看不到任何PHP代码，因为这些代码在后台执行。这种交互性为未安全开发的网络应用程序带来了许多安全问题，您将在后续模块中了解这些问题。<br><br></p>
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/04/2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD9/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">04</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD/">
+                    基础技能
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/04/2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD9/" class="trm-anima-link">
+                    网站运作原理
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/04</li>
+                <li>10:25</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-footer-card trm-scroll-animation">
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2024 - 2024</span>
+            <span class="footer-separator"data-separator=" · "></span>
+            <span class="trm-accent-color">CypherSun</span>
+        </div>
+    
+
+      
+
+    
+        <div class="trm-footer-item blog-run-long"></div>
+     
+
+     
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
+    
+        <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
+            <i class="iconfont fas fa-arrows-alt-h"></i>
+        </div>
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+    <div class="trm-search-popup">
+        <div class="trm-search-wrapper">
+            <div class="form trm-search-form">
+                <div class="trm-search-input-icon">
+                    <i class="iconfont fas fa-search"></i>
+                </div>
+                <input class="trm-search-input" type="text" placeholder="搜索文章...">
+                <div class="trm-search-btn-close">
+                    <i class="iconfont fas fa-times"></i>
+                </div>
+            </div>
+            <div class="trm-search-result-container">
+                <div class="trm-search-empty">
+                    请输入关键词进行搜索
+                </div>
+            </div>
+            <div class="trm-search-footer">
+                <div class="trm-search-stats"></div>
+                <ul class="trm-search-commands">
+                    <li>
+                        <kbd class="command-palette-commands-key">
+                            <svg width="15" height="15" aria-label="Escape key" role="img">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.2">
+                                    <path
+                                        d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956">
+                                    </path>
+                                </g>
+                            </svg>
+                        </kbd>
+                        <span class="command-palette-Label">to close</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  <!-- Plugin -->
+
+
+
+
+    
+<script src="https://unpkg.com/swup@2.0.19/dist/swup.min.js"></script>
+
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+        <script src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/plugins/typing.js?v=2.2.3"></script>
+    
+
+    
+        
+<script src="https://unpkg.com/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+
+        <script src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/plugins/local_search.js?v=2.2.3"></script>
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+		
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+    <script data-swup-reload-script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+
+<script id="async-script" src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/main.js?v=2.2.3"></script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+<script src="https://unpkg.com/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>
