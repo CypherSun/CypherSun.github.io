@@ -15,6 +15,9 @@
 <!-- 网站地址 -->
 <!-- AI 翻译 ✔? ✖?，AI 优化 ✔? ✖?，手工检查（删除例子，主语，括号，链接）✔? ✖? -->
 <!-- 通读文章（句子母语化，删除无意义句）✔? ✖?，对比原文（文章格式，添加工具）✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
   </entry>
   <entry>
     <title>网站模板</title>
@@ -30,6 +33,9 @@
 
 <!-- 成功使用✔? ✖? -->
 ]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
   </entry>
   <entry>
     <title>工具模板</title>
@@ -47,5 +53,27 @@
 
 
 <!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网络安全职业</title>
+    <url>/2024/11/06/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
+    <content><![CDATA[<h2 id="安全分析师"><a href="#安全分析师" class="headerlink" title="安全分析师"></a>安全分析师</h2><p><strong>负责维护组织数据的安全</strong></p>
+<p>安全分析师构建组织的安全防护，负责保护公司免受各类攻击。安全分析师通过研究和评估公司网络，识别有价值的数据，提出防护建议，为工程师制定预防措施提供支持。该职位需要与各利益相关者合作，以全面了解安全需求和当前的安全环境。</p>
+<h3 id="职责"><a href="#职责" class="headerlink" title="职责"></a>职责</h3><p>与各利益相关者协作，分析公司整体的网络安全态势<br>编写关于网络安全的持续报告，记录安全问题及应对措施<br>制定安全计划，包括对新攻击手段和趋势的研究，指导各团队确保数据安全<br><br></p>
+<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p><strong>设计、监控并维护安全控制、网络和系统，以帮助防止网络攻击</strong></p>
+<p>安全工程师基于由安全团队提供威胁情报和漏洞分析开发并实施安全解决方案。职责范围涵盖多种攻击防护，包括网络应用攻击、网络威胁，以及适应不断变化的安全趋势和策略。最终目标是采用和维护有效的安全措施，降低攻击风险并防止数据丢失。</p>
+<h3 id="职责-1"><a href="#职责-1" class="headerlink" title="职责"></a>职责</h3><p>测试和验证软件中的安全控制措施<br>监控网络并生成报告，以更新系统并缓解漏洞<br>识别并实施所需的系统，确保最佳安全<br><br></p>
+<h2 id="渗透测试员"><a href="#渗透测试员" class="headerlink" title="渗透测试员"></a>渗透测试员</h2><p><strong>负责检测技术产品中的安全漏洞</strong></p>
+<p>渗透测试（pentesting）的核心是测试公司系统和软件的安全性。渗透测试员通过系统化的模拟攻击，发现漏洞和缺陷，并评估每个实例的潜在风险。这些评估为公司提供有价值的见解，以便修复问题、预防真实网络攻击。</p>
+<h3 id="职责-2"><a href="#职责-2" class="headerlink" title="职责"></a>职责</h3><p>对计算机系统、网络和基于 Web 的应用程序进行渗透测试<br>执行安全评估、审计，并分析相关安全政策<br>评估并报告测试结果，提出加强防护的建议<br><br></p>
+<!-- https://tryhackme.com/r/room/careersincyber -->
+<!-- AI 翻译 ✔，AI 优化 ✔，手工检查（删除例子，主语，括号，链接）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
   </entry>
 </search>
