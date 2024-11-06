@@ -9,18 +9,18 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
 <meta name="description" content="SSH 访问 Linux什么是 SSH 及其工作原理？Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式 SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密 使用 SSH 需要两个信息：远程机器的 IP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux基础知识 第二部分">
+<meta property="og:title" content="Linux 基础知识 第二部分">
 <meta property="og:url" content="https://cyphersun.github.io/2024/10/27/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-2/index.html">
 <meta property="og:site_name" content="CypherSun">
 <meta property="og:description" content="SSH 访问 Linux什么是 SSH 及其工作原理？Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式 SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密 使用 SSH 需要两个信息：远程机器的 IP">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-10-27T16:39:09.000Z">
-<meta property="article:modified_time" content="2024-11-05T10:21:12.000Z">
+<meta property="article:modified_time" content="2024-11-06T12:43:45.128Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >Linux基础知识 第二部分</title>
+<title >Linux 基础知识 第二部分</title>
 
 <!-- Favicon -->
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-05 11:21:12"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-06 13:43:45"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -227,7 +227,7 @@
                             NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            Linux基础知识 第二部分
+                            Linux 基础知识 第二部分
                         </h1>
 
                         
@@ -468,10 +468,7 @@
 <p>在 &#x2F;etc 文件夹中包含 passwd 和 shadow 文件，&#x2F;etc&#x2F;passwd 文件存储了用户账户的信息，&#x2F;etc&#x2F;shadow 文件存储了每个用户的加密哈希密码。系统常使 SHA-512 或其他哈希算法对密码进行加密</p>
 <h3 id="var"><a href="#var" class="headerlink" title="&#x2F;var"></a>&#x2F;var</h3><p>&#x2F;var 目录（“var” 代表 variable data）是存放由系统上运行的服务或应用程序访问、修改或生成的数据</p>
 <h3 id="root"><a href="#root" class="headerlink" title="&#x2F;root"></a>&#x2F;root</h3><p>&#x2F;root 目录是 root 用户系统管理员的主目录，它与普通用户的主目录 &#x2F;home 不同，&#x2F;root 是专门为 root 用户保留的</p>
-<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录（“tmp” 代表 temporary）是用于存放仅需临时访问的文件和数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除。&#x2F;tmp 目录在默认情况下任何用户都有写入权限，&#x2F;tmp 是存放枚举脚本和其他工具的好位置</p>
-<br>
-
-
+<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录（“tmp” 代表 temporary）是用于存放仅需临时访问的文件和数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除。&#x2F;tmp 目录在默认情况下任何用户都有写入权限，&#x2F;tmp 是存放枚举脚本和其他工具的好位置<br><br></p>
 
 </article>
     
@@ -507,7 +504,7 @@
             </div>
             <h5>
                 <a href="/2024/10/27/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-3/" class="trm-anima-link">
-                    Linux基础知识 第三部分
+                    Linux 基础知识 第三部分
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
@@ -542,7 +539,7 @@
             </div>
             <h5>
                 <a href="/2024/10/27/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-1/" class="trm-anima-link">
-                    Linux基础知识 第一部分
+                    Linux 基础知识 第一部分
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
