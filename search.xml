@@ -21,25 +21,6 @@
       </categories>
   </entry>
   <entry>
-    <title>博客模板</title>
-    <url>/2024/11/06/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-
-
-
-<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
-
-
-<!-- 网站地址 -->
-<!-- AI 翻译 ✔? ✖?，AI 优化 ✔? ✖?，手工检查（删除例子，主语，括号，链接）✔? ✖? -->
-<!-- 通读文章（句子母语化，删除无意义句）✔? ✖?，对比原文（文章格式，添加工具）✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
     <title>网站模板</title>
     <url>/2024/11/06/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
@@ -77,57 +58,22 @@
       </categories>
   </entry>
   <entry>
-    <title>安全原则</title>
-    <url>/2024/11/06/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/</url>
-    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在称某物为“安全”之前，必须更好地理解安全的组成部分。评估系统的安全性时，通常从安全三要素：机密性、完整性和可用性（CIA）的角度进行分析。</p>
-<p><strong>机密性</strong>：确保只有授权人员或接收方能够访问数据。<br><strong>完整性</strong>：确保数据不会被篡改，若发生篡改，系统应能够检测到。<br><em><strong>可用性</strong></em>：确保系统或服务在需要时能够正常使用。</p>
-<p>并非所有三项要素的重视程度相同。</p>
-<h3 id="扩展的安全要素"><a href="#扩展的安全要素" class="headerlink" title="扩展的安全要素"></a>扩展的安全要素</h3><p>除了 CIA：</p>
-<p><strong>真实性</strong>：确保文件或数据真实，来自所声明的来源，防止伪造。<br><strong>不可抵赖性</strong>：确保信息的原始提供者无法否认自己是数据的来源。</p>
-<p>真实性和不可抵赖性密切相关。确保信息真实、可靠，同时也使信息的来源无法否认其责任，有助于提高系统的整体安全性。</p>
-<h3 id="帕克六元组："><a href="#帕克六元组：" class="headerlink" title="帕克六元组："></a>帕克六元组：</h3><p>1998 年，Donn Parker 提出了“帕克六元组”包括：</p>
-<p>可用性<br>实用性<br>完整性<br>真实性<br>机密性<br>占有性</p>
-<p>实用性：关注信息是否能有效使用。</p>
-<p>占有性：指保护信息不被未经授权获取、复制或控制。<br><br></p>
-<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>系统的安全性可能通过多种方式遭受攻击，包括机密数据的泄露、数据的篡改或破坏。</p>
-<p>泄露：即机密性的对立面，指机密数据的泄露是对机密性的直接威胁。<br>篡改：即完整性的对立面<br>破坏&#x2F;拒绝服务：即可用性的对立面，是对系统可用性的攻击。</p>
-<p>DAD 三角模型，即泄露（Disclosure）、篡改（Alteration）和破坏（Destruction），代表了 CIA 三角模型的对立面。防止数据泄露、篡改和破坏等同于努力维护机密性、完整性和可用性。</p>
-<p>极端保护机密性和完整性可能会限制系统的可用性，极端地提高可用性可能导致机密性和完整性的受损。有效的安全措施应在这三者之间找到最佳平衡。<br><br></p>
-<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>在安全领域，为确保系统能实现一种或多种安全功能，可以借助安全模型</p>
-<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型通过以下三条规则来实现<strong>机密性</strong>：</p>
-<p><strong>简单安全属性</strong>（no read up）：较低安全级别的主体无法读取较高安全级别的客体，从而防止未授权的访问。<br><strong>星号安全属性</strong>（no write down）：较高安全级别的主体不能向较低安全级别的客体写入信息，防止敏感信息向下泄露。<br><strong>自主安全属性</strong>：通过访问矩阵实现读写控制，与前两条属性结合应用。</p>
-<p>前两条规则可总结为“向上写入，向下读取”（write up, read down），允许向权限较高的人共享信息、从权限较低的人接收信息。Bell-LaPadula 模型主要针对机密性设计，无法有效支持文件共享。</p>
-<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型旨在通过以下规则实现<strong>完整性</strong>：</p>
-<p><strong>简单完整性属性</strong>（no read down）：较高完整性的主体不应读取来自较低完整性的客体的信息，避免从不可信源读取数据。<br><strong>星号完整性属性</strong>（no write up）：较低完整性的主体不能向较高完整性的客体写入信息，防止不可信信息污染更高完整性的数据。</p>
-<p>这些规则可总结为“向上读取，向下写入”（read up, write down），与 Bell-LaPadula 模型相反，前者关注完整性，而后者关注机密性。Biba 模型的局限性在于它难以防范内部人员威胁。</p>
-<h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型使用以下概念来实现<strong>完整性</strong>：</p>
-<p>受约束数据项 (CDI)：需保持完整性的数据。<br>非受约束数据项 (UDI)：不受完整性约束。<br>转换程序 (TPs)：编程的操作，用于维护 CDI 的完整性。<br>完整性验证程序 (IVPs)：用于检查并确保 CDI 的有效性。</p>
-<p>此模型有效维护数据的完整性，尤其适用于企业环境。<br><br></p>
-<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是一种通过构建多层次的安全机制来保护系统的安全策略，也被称为“多层次安全”。在纵深防御体系中，不依赖单一的防护手段，而是通过多重安全控制层层防护，以降低攻击成功的可能性。每一层安全措施都承担特定的防御任务，各层协同作用，形成一个完整的安全保护网。</p>
-<p>通过多层次的防护，即使攻击者突破某一层防御，仍会面临其他层的阻碍，从而有效提升整体系统的安全性。<br><br></p>
-<h2 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h2><p>ISO&#x2F;IEC 19249:2017《信息技术——安全技术——安全产品、系统和应用的架构和设计原则目录》为理解安全原则提供了指导。该标准包含五项架构原则和五项设计原则：</p>
-<p>架构原则<br><strong>域分离</strong>：将相关组件划分为独立的域，分配特定安全属性。</p>
-<p><strong>分层</strong>：将系统划分为多个抽象层，以便在不同层次实施安全策略。分层与纵深防御密切相关。</p>
-<p><strong>封装</strong>：隐藏低层实现并限制数据直接操作，常用于面向对象编程（OOP）和设计应用程序接口（API）</p>
-<p><strong>冗余</strong>：用于确保系统的可用性和完整性</p>
-<p><strong>虚拟化</strong>：允许多操作系统共享硬件资源，通过沙箱隔离提供安全边界，有助于观察恶意程序行为。</p>
-<p>设计原则<br><strong>最小权限</strong>：用户仅拥有完成任务所需的最低权限。</p>
-<p><strong>攻击面最小化</strong>：尽可能减少系统可能被利用的漏洞。</p>
-<p><strong>集中化参数验证</strong>：所有输入参数需集中验证，以防止无效输入带来的系统威胁</p>
-<p><strong>集中化通用安全服务</strong>：集中化安全服务，确保安全措施集中统一，同时注意防止单点故障。</p>
-<p><strong>错误与异常处理的准备</strong>：系统设计时需考虑错误情境，确保在故障时系统保持安全状态。防火墙崩溃时应阻止所有流量，避免泄露机密信息。<br><br></p>
-<h2 id="零信任与信任但验证"><a href="#零信任与信任但验证" class="headerlink" title="零信任与信任但验证"></a>零信任与信任但验证</h2><p>在安全管理中，信任需要严格的原则来支撑。关于信任的安全原则主要有：</p>
-<p><strong>信任但验证</strong>原则强调即使信任某一实体或行为，也应始终进行验证。这一原则适用于用户或系统。验证通常通过日志记录机制实现，检查日志确保操作符合安全规范。虽然全面验证并不实际，因为审核所有活动需耗费大量资源，但可借助自动化的安全工具支持</p>
-<p><strong>零信任</strong>原则将信任视为潜在的漏洞，特别关注内部威胁。零信任提出“永不信任，总是验证”的理念，认为所有实体在证明安全前皆被视为潜在威胁。它与传统模型不同，不会基于设备位置或所有权授予信任，而是要求对所有资源的访问进行认证和授权。零信任在发生安全事件时，可将影响控制在最小范围内。</p>
-<p>微分段是实现零信任的一种方式。通过将网络划分为细小的安全区域，甚至小到单个主机，每个分段的通信均需身份验证和安全检查。</p>
-<p>尽管零信任在安全上优势明显，但过度实施可能影响业务效率。需权衡安全与业务需求，在可行范围内尽量应用零信任原则。<br><br></p>
-<h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p>为了避免混淆，需要明确以下三个术语：</p>
-<p><strong>漏洞</strong>：指系统中的弱点，使其容易受到攻击或损害。<br><strong>威胁</strong>：与漏洞相关的潜在危险，可能导致安全事件。<br><strong>风险</strong>：威胁利用漏洞的可能性及其对业务的潜在影响。<br><br></p>
-<!-- https://tryhackme.com/r/room/securityprinciples -->
-<!-- AI 翻译 ✔，AI 优化 ✔，手工检查（删除例子，主语，括号，链接）✔ -->
-<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
+    <title>博客模板</title>
+    <url>/2024/11/06/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+
+
+
+<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+<!-- 网站地址 -->
+<!-- AI 翻译 ✔? ✖?，AI 优化 ✔? ✖?，手工检查（删除例子，主语，括号，链接）✔? ✖? -->
+<!-- 通读文章（句子母语化，删除无意义句）✔? ✖?，对比原文（文章格式，添加工具）✔? ✖? -->]]></content>
       <categories>
-        <category>网络安全基础</category>
+        <category>模板</category>
       </categories>
   </entry>
   <entry>
@@ -194,15 +140,69 @@
       </categories>
   </entry>
   <entry>
+    <title>安全原则</title>
+    <url>/2024/11/06/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/</url>
+    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在称某物为“安全”之前，必须更好地理解安全的组成部分。评估系统的安全性时，通常从安全三要素：机密性、完整性和可用性（CIA）的角度进行分析。</p>
+<p><strong>机密性</strong>：确保只有授权人员或接收方能够访问数据。<br><strong>完整性</strong>：确保数据不会被篡改，若发生篡改，系统应能够检测到。<br><em><strong>可用性</strong></em>：确保系统或服务在需要时能够正常使用。</p>
+<p>并非所有三项要素的重视程度相同。</p>
+<h3 id="扩展的安全要素"><a href="#扩展的安全要素" class="headerlink" title="扩展的安全要素"></a>扩展的安全要素</h3><p>除了 CIA：</p>
+<p><strong>真实性</strong>：确保文件或数据真实，来自所声明的来源，防止伪造。<br><strong>不可抵赖性</strong>：确保信息的原始提供者无法否认自己是数据的来源。</p>
+<p>真实性和不可抵赖性密切相关。确保信息真实、可靠，同时也使信息的来源无法否认其责任，有助于提高系统的整体安全性。</p>
+<h3 id="帕克六元组："><a href="#帕克六元组：" class="headerlink" title="帕克六元组："></a>帕克六元组：</h3><p>1998 年，Donn Parker 提出了“帕克六元组”包括：</p>
+<p>可用性<br>实用性<br>完整性<br>真实性<br>机密性<br>占有性</p>
+<p>实用性：关注信息是否能有效使用。</p>
+<p>占有性：指保护信息不被未经授权获取、复制或控制。<br><br></p>
+<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>系统的安全性可能通过多种方式遭受攻击，包括机密数据的泄露、数据的篡改或破坏。</p>
+<p>泄露：即机密性的对立面，指机密数据的泄露是对机密性的直接威胁。<br>篡改：即完整性的对立面<br>破坏&#x2F;拒绝服务：即可用性的对立面，是对系统可用性的攻击。</p>
+<p>DAD 三角模型，即泄露（Disclosure）、篡改（Alteration）和破坏（Destruction），代表了 CIA 三角模型的对立面。防止数据泄露、篡改和破坏等同于努力维护机密性、完整性和可用性。</p>
+<p>极端保护机密性和完整性可能会限制系统的可用性，极端地提高可用性可能导致机密性和完整性的受损。有效的安全措施应在这三者之间找到最佳平衡。<br><br></p>
+<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>在安全领域，为确保系统能实现一种或多种安全功能，可以借助安全模型</p>
+<h3 id="Bell-LaPadula-模型"><a href="#Bell-LaPadula-模型" class="headerlink" title="Bell-LaPadula 模型"></a>Bell-LaPadula 模型</h3><p>Bell-LaPadula 模型通过以下三条规则来实现<strong>机密性</strong>：</p>
+<p><strong>简单安全属性</strong>（no read up）：较低安全级别的主体无法读取较高安全级别的客体，从而防止未授权的访问。<br><strong>星号安全属性</strong>（no write down）：较高安全级别的主体不能向较低安全级别的客体写入信息，防止敏感信息向下泄露。<br><strong>自主安全属性</strong>：通过访问矩阵实现读写控制，与前两条属性结合应用。</p>
+<p>前两条规则可总结为“向上写入，向下读取”（write up, read down），允许向权限较高的人共享信息、从权限较低的人接收信息。Bell-LaPadula 模型主要针对机密性设计，无法有效支持文件共享。</p>
+<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型旨在通过以下规则实现<strong>完整性</strong>：</p>
+<p><strong>简单完整性属性</strong>（no read down）：较高完整性的主体不应读取来自较低完整性的客体的信息，避免从不可信源读取数据。<br><strong>星号完整性属性</strong>（no write up）：较低完整性的主体不能向较高完整性的客体写入信息，防止不可信信息污染更高完整性的数据。</p>
+<p>这些规则可总结为“向上读取，向下写入”（read up, write down），与 Bell-LaPadula 模型相反，前者关注完整性，而后者关注机密性。Biba 模型的局限性在于它难以防范内部人员威胁。</p>
+<h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型使用以下概念来实现<strong>完整性</strong>：</p>
+<p>受约束数据项 (CDI)：需保持完整性的数据。<br>非受约束数据项 (UDI)：不受完整性约束。<br>转换程序 (TPs)：编程的操作，用于维护 CDI 的完整性。<br>完整性验证程序 (IVPs)：用于检查并确保 CDI 的有效性。</p>
+<p>此模型有效维护数据的完整性，尤其适用于企业环境。<br><br></p>
+<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是一种通过构建多层次的安全机制来保护系统的安全策略，也被称为“多层次安全”。在纵深防御体系中，不依赖单一的防护手段，而是通过多重安全控制层层防护，以降低攻击成功的可能性。每一层安全措施都承担特定的防御任务，各层协同作用，形成一个完整的安全保护网。</p>
+<p>通过多层次的防护，即使攻击者突破某一层防御，仍会面临其他层的阻碍，从而有效提升整体系统的安全性。<br><br></p>
+<h2 id="ISO-IEC-19249"><a href="#ISO-IEC-19249" class="headerlink" title="ISO&#x2F;IEC 19249"></a>ISO&#x2F;IEC 19249</h2><p>ISO&#x2F;IEC 19249:2017《信息技术——安全技术——安全产品、系统和应用的架构和设计原则目录》为理解安全原则提供了指导。该标准包含五项架构原则和五项设计原则：</p>
+<p>架构原则<br><strong>域分离</strong>：将相关组件划分为独立的域，分配特定安全属性。</p>
+<p><strong>分层</strong>：将系统划分为多个抽象层，以便在不同层次实施安全策略。分层与纵深防御密切相关。</p>
+<p><strong>封装</strong>：隐藏低层实现并限制数据直接操作，常用于面向对象编程（OOP）和设计应用程序接口（API）</p>
+<p><strong>冗余</strong>：用于确保系统的可用性和完整性</p>
+<p><strong>虚拟化</strong>：允许多操作系统共享硬件资源，通过沙箱隔离提供安全边界，有助于观察恶意程序行为。</p>
+<p>设计原则<br><strong>最小权限</strong>：用户仅拥有完成任务所需的最低权限。</p>
+<p><strong>攻击面最小化</strong>：尽可能减少系统可能被利用的漏洞。</p>
+<p><strong>集中化参数验证</strong>：所有输入参数需集中验证，以防止无效输入带来的系统威胁</p>
+<p><strong>集中化通用安全服务</strong>：集中化安全服务，确保安全措施集中统一，同时注意防止单点故障。</p>
+<p><strong>错误与异常处理的准备</strong>：系统设计时需考虑错误情境，确保在故障时系统保持安全状态。防火墙崩溃时应阻止所有流量，避免泄露机密信息。<br><br></p>
+<h2 id="零信任与信任但验证"><a href="#零信任与信任但验证" class="headerlink" title="零信任与信任但验证"></a>零信任与信任但验证</h2><p>在安全管理中，信任需要严格的原则来支撑。关于信任的安全原则主要有：</p>
+<p><strong>信任但验证</strong>原则强调即使信任某一实体或行为，也应始终进行验证。这一原则适用于用户或系统。验证通常通过日志记录机制实现，检查日志确保操作符合安全规范。虽然全面验证并不实际，因为审核所有活动需耗费大量资源，但可借助自动化的安全工具支持</p>
+<p><strong>零信任</strong>原则将信任视为潜在的漏洞，特别关注内部威胁。零信任提出“永不信任，总是验证”的理念，认为所有实体在证明安全前皆被视为潜在威胁。它与传统模型不同，不会基于设备位置或所有权授予信任，而是要求对所有资源的访问进行认证和授权。零信任在发生安全事件时，可将影响控制在最小范围内。</p>
+<p>微分段是实现零信任的一种方式。通过将网络划分为细小的安全区域，甚至小到单个主机，每个分段的通信均需身份验证和安全检查。</p>
+<p>尽管零信任在安全上优势明显，但过度实施可能影响业务效率。需权衡安全与业务需求，在可行范围内尽量应用零信任原则。<br><br></p>
+<h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p>为了避免混淆，需要明确以下三个术语：</p>
+<p><strong>漏洞</strong>：指系统中的弱点，使其容易受到攻击或损害。<br><strong>威胁</strong>：与漏洞相关的潜在危险，可能导致安全事件。<br><strong>风险</strong>：威胁利用漏洞的可能性及其对业务的潜在影响。<br><br></p>
+<!-- https://tryhackme.com/r/room/securityprinciples -->
+<!-- AI 翻译 ✔，AI 优化 ✔，手工检查（删除例子，主语，括号，链接）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
     <title>网络攻击杀伤链</title>
     <url>/2024/11/07/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/</url>
     <content><![CDATA[<h2 id="侦察"><a href="#侦察" class="headerlink" title="侦察"></a>侦察</h2><p>从攻击者的角度来看，侦察是收集有关系统和目标的基础信息的过程，是攻击者在进行进一步攻击前的规划阶段。</p>
-<p>开源情报（OSINT） 是侦察的重要组成部分，也是攻击的第一步。攻击者利用 OSINT 收集公司及其员工的公开信息，帮助锁定最佳攻击目标。</p>
-<p><strong>电子邮件收集</strong> 是常用的 OSINT 技术之一。攻击者通过公开、付费或免费的资源获取目标的电子邮件地址，可利用这些信息实施网络钓鱼攻击，窃取敏感数据。以下是常用的侦察工具：</p>
+<p>开源情报（OSINT） 是侦察的重要组成部分，也是攻击的第一步。攻击者利用 OSINT 收集公司及其员工的公开信息，锁定最佳攻击目标。</p>
+<p><strong>电子邮件收集</strong> 是常用的 OSINT 技术之一。攻击者通过公开、付费或免费的资源获取目标的电子邮件地址，可利用这些信息实施网络钓鱼攻击，窃取敏感数据：</p>
 <p><strong>theHarvester</strong>：收集电子邮件、姓名、子域、IP地址和 URL 等信息。<br><strong>Hunter.io</strong>：查找与特定域名相关的联系信息。<br><strong>OSINT Framework</strong>：提供各种 OSINT 工具集合，按类别组织。</p>
-<p>攻击者还利用社交媒体收集个人和公司信息。这些信息为定向网络钓鱼等社交工程攻击提供了支持。<br><br></p>
-<h2 id="武器化"><a href="#武器化" class="headerlink" title="武器化"></a>武器化</h2><p>在完成侦察后，攻击者进入武器化阶段，武器生成器将恶意软件和漏洞利用组合成一个可交付的有效负载。大多数攻击者使用自动化工具生成恶意软件，或通过暗网购买。而更高级的攻击者或国家支持的高级持续性威胁（APT）组织则可能编写定制的恶意软件，以逃避检测。</p>
-<p>在分析武器化阶段前，定义几个关键术语：</p>
+<p>攻击者利用社交媒体收集个人和公司信息。这些信息为定向网络钓鱼等社交工程攻击提供了支持。<br><br></p>
+<h2 id="武器化"><a href="#武器化" class="headerlink" title="武器化"></a>武器化</h2><p>在完成侦察后，攻击者进入武器化阶段，武器生成器将恶意软件和漏洞利用组合成一个可交付的有效负载。大多数攻击者使用自动化工具生成恶意软件或通过暗网购买。而更高级的攻击者或国家支持的高级持续性威胁（APT）组织则可能编写定制的恶意软件，以逃避检测。</p>
+<p>关键术语：</p>
 <p><strong>恶意软件</strong>（Malware）：旨在破坏、干扰或未经授权访问计算机的程序。<br><strong>漏洞利用程序</strong>（Exploit）：利用系统或应用漏洞的程序或代码。<br><strong>有效负载</strong>（Payload）：在目标系统上执行的恶意代码。</p>
 <p>在武器化阶段，攻击者可能采取的策略包括：</p>
 <p>创建包含恶意宏或 VBA（Visual Basic for Applications）脚本的感染性 Office 文档。</p>
@@ -211,14 +211,8 @@
 <p>后门植入，绕过安全机制，获得对系统的持续访问。<br><br></p>
 <h2 id="投递"><a href="#投递" class="headerlink" title="投递"></a>投递</h2><p>在投递阶段，攻击者选择一种方式将有效负载或恶意软件传送给目标：</p>
 <p><strong>钓鱼邮件</strong>：经过侦察确定目标后，攻击者精心编写恶意邮件，针对特定个人或公司内部的多人，邮件中包含有效负载或恶意软件。</p>
-<p><strong>分发感染的 USB 驱动器</strong>：攻击者可能在咖啡馆、停车场或街道上投放感染的 USB 驱动器，甚至将带有公司标志的恶意 USB 邮寄给目标公司，伪装成客户赠品。</p>
-<p><strong>水坑攻击</strong>：攻击者入侵目标群体常访问的网站，将访问者重定向到恶意网站。为提高成功率，攻击者可能会发送带有恶意网址链接的邮件，诱使受害者点击。一旦受害者访问该网站，可能会无意间下载恶意软件或应用程序。这种“驱动式下载”攻击可能包括伪装成浏览器扩展的恶意弹出窗口，引导受害者下载。</p>
-<br>
-
-
-
-
-
+<p><strong>分发感染的 USB 驱动器</strong>：攻击者可能在咖啡馆、停车场或街道上投放感染的 USB 驱动器，或将带有公司标志的恶意 USB 邮寄给目标公司，伪装成客户赠品。</p>
+<p><strong>水坑攻击</strong>：攻击者入侵目标群体常访问的网站，将访问者重定向到恶意网站。攻击者可能会发送带有恶意网址链接的邮件，诱使受害者点击。一旦受害者访问该网站，可能会无意间下载恶意软件或应用程序。这种“驱动式下载”攻击可能包括伪装成浏览器扩展的恶意弹出窗口，引导受害者下载。<br><br></p>
 <h2 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h2><p>在获得系统访问权限后，攻击者会利用系统中的漏洞来提升权限或在网络中横向移动，即在获得初始访问权限后进一步进入网络，以获取敏感数据。</p>
 <p>攻击者可能使用零日漏洞进行攻击。零日漏洞是指尚未公开的漏洞，暴露了软件或硬件中的安全问题，通常难以在初期检测到，可能导致复杂的安全风险。</p>
 <p>以下是攻击者进行漏洞利用的示例：</p>
@@ -226,22 +220,21 @@
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在武器化阶段，后门允许攻击者绕过安全措施并隐藏其访问权限，也称为访问点。</p>
 <p>一旦获得系统访问权限，攻击者可能希望在连接丢失、初始访问被移除、或系统被修补后仍能重新进入系统。攻击者会安装持久性后门，确保未来能再次访问已攻陷的系统。</p>
 <p>持久性后门的实现方式包括：</p>
-<p><strong>安装 Web Shell</strong>：攻击者在Web服务器上植入恶意脚本以维持访问。由于Web Shell的简单性和常见的文件格式，它们通常难以被检测，可被误认为正常文件。更多信息可参考微软关于Web Shell攻击的文章。</p>
+<p><strong>安装 Web Shell</strong>：攻击者在 Web 服务器上植入恶意脚本以维持访问。由于 Web Shell 的简单性和常见的文件格式，它们通常难以被检测，可能被误认为正常文件。</p>
 <p><strong>在受害者机器上安装后门</strong></p>
-<p><strong>创建或修改 Windows 服务</strong>：此技术在MITRE ATT&amp;CK中标记为T1543.003。攻击者通过创建或修改Windows服务，使恶意负载定期执行，确保持久性。工具可用于配置服务，攻击者还可伪装恶意负载为系统或合法软件相关服务名称。</p>
-<p><strong>在注册表运行键或启动文件夹中添加恶意负载</strong>：这使得恶意负载在每次用户登录时自动执行。根据MITRE ATT&amp;CK，注册表和启动文件夹包含单用户和系统范围的选项，系统范围的启动文件夹在任何用户登录时都会被检查。</p>
-<p>攻击者可能使用时间戳篡改技术修改文件的时间戳（创建、访问、修改等），使恶意软件看似合法，从而避开取证调查。<br><br></p>
+<p><strong>创建或修改 Windows 服务</strong>：攻击者通过创建或修改 Windows 服务，使恶意负载定期执行，确保持久性。工具可用于配置服务，攻击者还可伪装恶意负载为系统或合法软件相关服务名称。</p>
+<p><strong>在注册表运行键或启动文件夹中添加恶意负载</strong>：这使得恶意负载在每次用户登录时自动执行。注册表和启动文件夹包含单用户和系统范围的选项，系统范围的启动文件夹在任何用户登录时都会被检查。</p>
+<p>攻击者还可能使用时间戳篡改技术修改文件的时间戳，使恶意软件看似合法，从而避开检查。<br><br></p>
 <h2 id="指挥与控制"><a href="#指挥与控制" class="headerlink" title="指挥与控制"></a>指挥与控制</h2><p>在获得持久性并在受害者的机器上成功执行恶意软件后，攻击者通过该恶意软件建立指挥与控制（C2）通道，以远程控制和操作受害者的设备。这种通信方式也称为 C&amp;C 或 C2 信标，是 C2 服务器与被感染主机上的恶意软件之间的持续通信。被感染主机会不断向 C2 服务器发送信号，这种行为称为“信标”。</p>
-<p>一旦受害者设备与攻击者设置的外部服务器建立通信，攻击者便能完全控制受害者的机器。</p>
-<p>常用的 C2 通道包括：</p>
+<p>一旦受害者设备与攻击者设置的外部服务器建立通信，攻击者便能完全控制受害者的机器。C2 通道包括：</p>
 <p><strong>HTTP（端口80）和 HTTPS（端口443）</strong>：将恶意流量与正常流量混合，使攻击者更易绕过防火墙。</p>
-<p><strong>域名服务器</strong>（DNS）：被感染的主机会向攻击者的 DNS 服务器发送 DNS 请求，这种 C2 通信方式称为DNS隧道。</p>
+<p><strong>域名服务器</strong>（DNS）：被感染的主机会向攻击者的 DNS 服务器发送 DNS 请求，这种 C2 通信方式称为 DNS 隧道。</p>
 <p>C2 基础设施的控制者可能是攻击者或另一个被攻陷的主机。<br><br></p>
 <h2 id="达成目标（数据窃取）"><a href="#达成目标（数据窃取）" class="headerlink" title="达成目标（数据窃取）"></a>达成目标（数据窃取）</h2><p>经过前六个攻击阶段，最终实现了初始任务，攻击者可以进行以下操作：</p>
 <p><strong>收集用户凭证</strong><br><strong>权限提升</strong>：利用配置错误获取更高级的权限<br><strong>内部侦察</strong>：与内部软件交互，寻找系统漏洞<br><strong>横向移动</strong>：在公司网络中扩展控制范围<br><strong>收集并窃取敏感数据</strong><br><strong>删除备份和影子副本</strong>：影子副本是微软的一项技术，用于创建文件或卷的快照<br><strong>覆盖或破坏数据</strong><br><br></p>
 <!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
-<!-- AI 翻译 ✔，AI 优化 ✔，手工检查（删除例子，主语，括号，链接）✔? ✖? -->
-<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔? ✖? -->]]></content>
+<!-- AI 翻译 ✔，AI 优化 ✔，手工检查（删除例子，主语，括号，链接）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
       <categories>
         <category>网络安全基础</category>
       </categories>
@@ -262,29 +255,23 @@
       </categories>
   </entry>
   <entry>
-    <title>hunter</title>
-    <url>/2024/11/07/%E7%BD%91%E7%AB%99hunter/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>查找与特定域名相关的联系信息<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+    <title>OSINT Framework</title>
+    <url>/2024/11/07/%E7%BD%91%E7%AB%99OSINT_Framework/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>提供各种 OSINT 工具集合，按类别组织<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>点击<br><br></p>
 <!-- 成功使用✔ -->]]></content>
       <categories>
         <category>网站</category>
       </categories>
   </entry>
   <entry>
-    <title>OSINT Framework</title>
-    <url>/2024/11/07/%E7%BD%91%E7%AB%99OSINT_Framework/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
+    <title>hunter</title>
+    <url>/2024/11/07/%E7%BD%91%E7%AB%99hunter/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>查找与特定域名相关的联系信息<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+<!-- 成功使用✔ -->]]></content>
       <categories>
         <category>网站</category>
       </categories>
