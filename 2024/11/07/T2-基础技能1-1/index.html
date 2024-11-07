@@ -7,16 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CypherSun">
-<meta property="og:url" content="https://cyphersun.github.io/index.html">
+<meta name="description" content="Linux 背景简介Linux 的应用领域相比 Windows 等操作系统（OS），Linux 的轻量化特性广泛应用于许多系统和设备。 Linux 的各种版本Linux 是一个统称，包含基于 UNIX 的多个操作系统。由于 Linux 的开源特性，衍生出许多适用于不同需求的版本。 运行命令Ubuntu 等轻量操作系统的优点是轻量化，这意味着通常没有图形用户界面（GUI）或桌面环境。大部分操作都通过">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux 基础知识：第一部分">
+<meta property="og:url" content="https://cyphersun.github.io/2024/11/07/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-1/index.html">
 <meta property="og:site_name" content="CypherSun">
+<meta property="og:description" content="Linux 背景简介Linux 的应用领域相比 Windows 等操作系统（OS），Linux 的轻量化特性广泛应用于许多系统和设备。 Linux 的各种版本Linux 是一个统称，包含基于 UNIX 的多个操作系统。由于 Linux 的开源特性，衍生出许多适用于不同需求的版本。 运行命令Ubuntu 等轻量操作系统的优点是轻量化，这意味着通常没有图形用户界面（GUI）或桌面环境。大部分操作都通过">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-11-07T20:07:09.000Z">
+<meta property="article:modified_time" content="2024-11-07T21:53:29.462Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >CypherSun</title>
+<title >Linux 基础知识：第一部分</title>
 
 <!-- Favicon -->
 
@@ -53,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":true,"postUpdate":"2024-11-07 22:53:37"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-07 22:53:29"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -131,7 +135,7 @@
     <nav>
         <ul>
             
-            <li class="menu-item-has-children current-menu-item">
+            <li class="menu-item-has-children ">
                 <a  href="/" target="">
                     首页
                 </a>
@@ -198,16 +202,14 @@
             <!-- top bar end -->
 
             <!-- body -->
-            <div class="trm-content-start">
+            
+<div class="trm-content-start">
     <!-- banner -->
     <div class="trm-banner">
     
-    <!-- banner video cover -->
-    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover">
-        <source src="https://cdn.moji.com/websrc/video/video621.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        Your browser does not support HTML5 video.
-    </video>
-    <!-- banner video cover end -->
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
     
 
     <!-- banner content -->
@@ -222,10 +224,10 @@
                     <!-- banner title -->
                     <div class="trm-banner-text ">
                         <div class="trm-label trm-mb-20">
-                            Welcome to my blog!
+                            NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            吾日百省，<br>知行合一。
+                            Linux 基础知识：第一部分
                         </h1>
 
                         
@@ -235,7 +237,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        index.html
+                                        2024
                                     </span>
                                 </li>
                             </ul>
@@ -354,96 +356,186 @@
             
             <div class="trm-page-content col-lg-8">
                 <div id="trm-content" class="trm-content">
-                    <!-- categories -->
-
-    <div class="row hidden-sm">
-        
-        
-        <div class="col-lg-6">
-            <!-- categories card -->
-<div class="trm-blog-categories trm-scroll-animation">
-    <h6>
-        网络安全基础
-        <span class="trm-number">
-            4
-        </span>
-    </h6>
-    <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-    <a href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/." class="trm-label">
-        查看分类 
-        <i class="iconfont fas fa-arrow-right arrow-right"></i>
-    </a>
-</div>
-<!-- categories card end -->
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            11/07
         </div>
-        
-        <div class="col-lg-6">
-            <!-- categories card -->
-<div class="trm-blog-categories trm-scroll-animation">
-    <h6>
-        模板
-        <span class="trm-number">
-            3
-        </span>
-    </h6>
-    <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-    <a href="/categories/%E6%A8%A1%E6%9D%BF/." class="trm-label">
-        查看分类 
-        <i class="iconfont fas fa-arrow-right arrow-right"></i>
-    </a>
-</div>
-<!-- categories card end -->
-        </div>
-        
     </div>
-
-<!-- categories end -->
-
-<!-- newest publications -->
-<div class="row">
-    
-        <div class="col-lg-12">
-            <!-- title -->
-            <h5 class="trm-title-with-divider">
-                最近发布 
-                <span data-number="01"></span>
-            </h5>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            21:07
         </div>
-    
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/11/07/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-1/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">07</div>
-                    <div class="trm-cover-month">2024/11</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD/">
-                    基础技能
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/11/07/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-1/" class="trm-anima-link">
-                    Linux 基础知识：第一部分
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/11/07</li>
-                <li>21:07</li>
-                
-                
-            </ul>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            CypherSun
         </div>
     </div>
 </div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="Linux-背景简介"><a href="#Linux-背景简介" class="headerlink" title="Linux 背景简介"></a>Linux 背景简介</h2><h3 id="Linux-的应用领域"><a href="#Linux-的应用领域" class="headerlink" title="Linux 的应用领域"></a>Linux 的应用领域</h3><p>相比 Windows 等操作系统（OS），Linux 的轻量化特性广泛应用于许多系统和设备。</p>
+<h3 id="Linux-的各种版本"><a href="#Linux-的各种版本" class="headerlink" title="Linux 的各种版本"></a>Linux 的各种版本</h3><p>Linux 是一个统称，包含基于 UNIX 的多个操作系统。由于 Linux 的开源特性，衍生出许多适用于不同需求的版本。<br><br></p>
+<h2 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h2><p>Ubuntu 等轻量操作系统的优点是轻量化，这意味着通常没有图形用户界面（GUI）或桌面环境。大部分操作都通过终端纯文本界面完成</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Kali@Kali:~$ 在这里输入命令</span><br></pre></td></tr></table></figure>
+
+
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>echo</td>
+<td>输出指定文本</td>
+</tr>
+<tr>
+<td>whoami</td>
+<td>查看当前登录的用户</td>
+</tr>
+</tbody></table>
+<h3 id="echo-命令"><a href="#echo-命令" class="headerlink" title="echo 命令"></a>echo 命令</h3><p>使用 echo 命令在终端输出内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello Friend!&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="whoami-命令"><a href="#whoami-命令" class="headerlink" title="whoami 命令"></a>whoami 命令</h3><p>使用 whoami 命令查找当前登录用户</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">whoami</span></span><br></pre></td></tr></table></figure>
+<br>
+
+
+
+
+
+<h2 id="操作文件系统"><a href="#操作文件系统" class="headerlink" title="操作文件系统"></a>操作文件系统</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>全称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ls</td>
+<td>列出目录内容（listing）</td>
+</tr>
+<tr>
+<td>cd</td>
+<td>更改目录（change directory）</td>
+</tr>
+<tr>
+<td>cat</td>
+<td>拼接并显示内容（concatenate）</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>显示当前目录（print working directory）</td>
+</tr>
+</tbody></table>
+<h3 id="ls-命令"><a href="#ls-命令" class="headerlink" title="ls 命令"></a>ls 命令</h3><p>使用 ls 命令列出当前目录下的所有内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
+
+<p>可以直接使用 ls 和目录名称查看某个目录内容，而不必进入该目录</p>
+<h3 id="cd-命令"><a href="#cd-命令" class="headerlink" title="cd 命令"></a>cd 命令</h3><p>使用 cd 命令切换到其他目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Pictures</span><br><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="cat-命令"><a href="#cat-命令" class="headerlink" title="cat 命令"></a>cat 命令</h3><p>使用 cat 命令查看文件的内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="built_in">cat</span> text1.txt</span><br></pre></td></tr></table></figure>
+
+<p>可以用 cat 命令直接输出指定路径文件的内容，而不必进入该目录</p>
+<h3 id="pwd-命令"><a href="#pwd-命令" class="headerlink" title="pwd 命令"></a>pwd 命令</h3><p>使用pwd 命令找到完整路径</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="搜索文件"><a href="#搜索文件" class="headerlink" title="搜索文件"></a>搜索文件</h2><h3 id="find-命令"><a href="#find-命令" class="headerlink" title="find 命令"></a>find 命令</h3><p>使用 find 命令进行简单和复杂搜索</p>
+<p>如果知道文件名，可以使用以下命令来查找</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tryhackme@linux1:~$ find -name text1.txt</span><br></pre></td></tr></table></figure>
+
+
+
+<p>如果不记得文件名，可使用通配符 * 查找所有扩展名的文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tryhackme@linux1:~$ find -name *.txt</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="grep-命令"><a href="#grep-命令" class="headerlink" title="grep 命令"></a>grep 命令</h3><p>使用 grep 命令用于在文件内容中搜索特定的值</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep <span class="string">&quot;12345&quot;</span> text1.txt</span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="Shell-操作符简介"><a href="#Shell-操作符简介" class="headerlink" title="Shell 操作符简介"></a>Shell 操作符简介</h2><table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td>在后台运行命令</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>串联多个命令，仅在前一个命令成功时执行下一个命令</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>输出重定向，将命令输出覆盖写入文件</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>输出重定向，将命令输出追加到文件末尾</td>
+</tr>
+</tbody></table>
+<h3 id="操作符"><a href="#操作符" class="headerlink" title="&amp; 操作符"></a>&amp; 操作符</h3><p>使用 &amp; 操作符在后台执行命令，从而继续执行其他操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://example.com/file.zip &amp;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="操作符-1"><a href="#操作符-1" class="headerlink" title="&amp;&amp; 操作符"></a>&amp;&amp; 操作符</h3><p>使用 &amp; 操作符串联多个命令，只有成功运行第一个命令时，第二个命令才会运行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> folder1 &amp;&amp; <span class="built_in">cd</span> folder1</span><br></pre></td></tr></table></figure>
+
+<h3 id="操作符-2"><a href="#操作符-2" class="headerlink" title="&gt; 操作符"></a>&gt; 操作符</h3><p>使用 &gt; 操作符输出重定向，将命令输出重定向至文件。如果文件已存在，则会覆盖文件内容。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> 123 &gt; folder1</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="操作符-3"><a href="#操作符-3" class="headerlink" title="&gt;&gt; 操作符"></a>&gt;&gt; 操作符</h3><p>使用 &gt;&gt; 操作符输出重定向符，与 &gt; 类似，但会将内容追加到文件末尾，而不覆盖现有内容。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> 123 &gt;&gt; folder1</span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+<!-- https://tryhackme.com/r/room/linuxfundamentalspart1 -->
+<!-- AI 翻译 ✔，AI 优化 ✔，手工检查（删除例子，主语，括号，链接）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
@@ -479,285 +571,10 @@
     </div>
 </div>
     
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/11/07/%E7%BD%91%E7%AB%99hunter/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">07</div>
-                    <div class="trm-cover-month">2024/11</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E7%BD%91%E7%AB%99/">
-                    网站
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/11/07/%E7%BD%91%E7%AB%99hunter/" class="trm-anima-link">
-                    hunter
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/11/07</li>
-                <li>15:39</li>
-                
-                
-            </ul>
-        </div>
-    </div>
 </div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/11/07/%E5%B7%A5%E5%85%B7theHarvester/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">07</div>
-                    <div class="trm-cover-month">2024/11</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E5%B7%A5%E5%85%B7/">
-                    工具
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/11/07/%E5%B7%A5%E5%85%B7theHarvester/" class="trm-anima-link">
-                    theHarvester
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/11/07</li>
-                <li>14:48</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/11/07/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">07</div>
-                    <div class="trm-cover-month">2024/11</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/">
-                    网络安全基础
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/11/07/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/" class="trm-anima-link">
-                    网络攻击杀伤链
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/11/07</li>
-                <li>14:19</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/11/07/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">07</div>
-                    <div class="trm-cover-month">2024/11</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/">
-                    网络安全基础
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/11/07/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/" class="trm-anima-link">
-                    治理与监管
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/11/07</li>
-                <li>13:22</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/11/06/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">06</div>
-                    <div class="trm-cover-month">2024/11</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/">
-                    网络安全基础
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/11/06/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/" class="trm-anima-link">
-                    安全原则
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/11/06</li>
-                <li>22:14</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/11/06/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">06</div>
-                    <div class="trm-cover-month">2024/11</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/">
-                    网络安全基础
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/11/06/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/" class="trm-anima-link">
-                    网络安全职业
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/11/06</li>
-                <li>21:55</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/11/06/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">06</div>
-                    <div class="trm-cover-month">2024/11</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E6%A8%A1%E6%9D%BF/">
-                    模板
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/11/06/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                    博客模板
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/11/06</li>
-                <li>21:52</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/11/06/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">06</div>
-                    <div class="trm-cover-month">2024/11</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E6%A8%A1%E6%9D%BF/">
-                    模板
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/11/06/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                    网站模板
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/11/06</li>
-                <li>21:52</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-</div>
-<!-- newest publications end -->
 
+    
 
-    <div class="trm-pagination">
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a>
-    </div>
 
 
                     <div class="trm-divider footer-divider"></div>
@@ -797,6 +614,10 @@
             
 <div class="trm-fixed-container">
     
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
     
     
         <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
@@ -879,6 +700,10 @@
     
 
     <!-- 评论插件 -->
+    
+        
+
+        
     
 
 		
