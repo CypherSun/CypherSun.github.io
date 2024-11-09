@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="CIA在评估某个事物的安全性之前，需要深入理解其组成要素。通常，在评估系统安全性时，从机密性、完整性和可用性这三个方面出发，即 CIA 三角模型 CIA 三角模型：机密性（Confidentiality）：确保只有授权人员或指定接收者能够访问数据，防止未经授权的泄露。完整性（Integrity）：确保数据不会在传输或存储过程中被篡改，同时能检测出任何篡改的痕迹。可用性（Availability）：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安全原则">
+<meta property="og:url" content="https://cyphersun.github.io/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/index.html">
+<meta property="og:site_name" content="CypherSun">
+<meta property="og:description" content="CIA在评估某个事物的安全性之前，需要深入理解其组成要素。通常，在评估系统安全性时，从机密性、完整性和可用性这三个方面出发，即 CIA 三角模型 CIA 三角模型：机密性（Confidentiality）：确保只有授权人员或指定接收者能够访问数据，防止未经授权的泄露。完整性（Integrity）：确保数据不会在传输或存储过程中被篡改，同时能检测出任何篡改的痕迹。可用性（Availability）：">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-11-09T18:43:01.000Z">
+<meta property="article:modified_time" content="2024-11-09T19:15:41.387Z">
+<meta property="article:author" content="CypherSun">
+<meta name="twitter:card" content="summary">
+
+
+<title >安全原则</title>
+
+<!-- Favicon -->
+
+
+    <link href='/favicon.ico?v=2.2.3' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="https://unpkg.com/hexo-theme-async@2.2.3/source/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-09 20:15:41"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+
+ 
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/tags/" target="">
+                    标签
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/categories/" target="">
+                    分类
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    关于
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+    
+    <div id="trm-search-btn" class="trm-search-btn">
+        <i class="iconfont fas fa-search"></i>
+    </div>
+     
+
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            安全原则
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        2024
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="trm-page-sidebar col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card"> 
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img alt="Avatar" class="trm-avatar" src="https://avatars.githubusercontent.com/u/80212458?v=4">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        CypherSun
+    </h5>
+    
+        <div class="trm-label">
+            I`m
+            <span class="trm-typed-text">
+                <!-- Words for theme.user.typedText -->
+            </span>
+        </div>
+    
+</div>
+<!-- card header end -->
+        <!-- sidebar social -->
+
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<div class="trm-social">
+    
+        <a href="https://github.com/CypherSun" title="Github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+        <a href="/wechat.jpg" title="Wechat" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-weixin"></i>
+        </a>
+    
+        <a href="/qq.jpg" title="QQ" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-qq"></i>
+        </a>
+    
+</div>
+
+<!-- sidebar social end -->
+        <!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                地址:
+            </div>
+            <div class="trm-label trm-label-light">
+                银河系
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                年龄:
+            </div>
+            <div class="trm-label trm-label-light">
+                不清楚
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                实力:
+            </div>
+            <div class="trm-label trm-label-light">
+                上升期
+            </div>
+        </li>
+    
+</ul>
+<!-- info end -->
+
+        
+    <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+    <!-- action button -->
+    <div class="text-center">
+        <a href="mailto:84860748@qq.com" class="trm-btn">
+            联系我
+            <i class="iconfont far fa-envelope"></i>
+        </a>
+    </div>
+    <!-- action button end -->
+
+    </div>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="trm-page-content col-lg-8">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            11/09
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            19:43
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            CypherSun
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在评估某个事物的安全性之前，需要深入理解其组成要素。通常，在评估系统安全性时，从机密性、完整性和可用性这三个方面出发，即 CIA 三角模型</p>
+<p>CIA 三角模型：<br><strong>机密性</strong>（Confidentiality）：确保只有授权人员或指定接收者能够访问数据，防止未经授权的泄露。<br><strong>完整性</strong>（Integrity）：确保数据不会在传输或存储过程中被篡改，同时能检测出任何篡改的痕迹。<br><strong>可用性</strong>（Availability）：确保系统或服务在需要时可供使用，防止因系统宕机或其他故障导致的不可用情况。</p>
+<p>不同的系统侧重点不同</p>
+<h3 id="CIA-之外的安全要素"><a href="#CIA-之外的安全要素" class="headerlink" title="CIA 之外的安全要素"></a>CIA 之外的安全要素</h3><p>在 CIA 模型之外，包括真实性和不可抵赖性：<br><strong>真实性</strong>：确保数据非伪造，数据确实来自声称的来源<br><strong>不可抵赖性</strong>：确保信息来源无法否认自己是数据的提供者</p>
+<h3 id="Parker-六元组："><a href="#Parker-六元组：" class="headerlink" title="Parker 六元组："></a>Parker 六元组：</h3><p>1998 年，Donn Parker 提出了 Parker 六元组，将安全性扩展为六个要素：</p>
+<p>可用性<br>实用性：关注信息的有效可用性。<br>完整性<br>真实性<br>机密性<br>拥有性：即信息的控制权。</p>
+<br>
+
+
+
+
+
+<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>系统的安全性可能通过多种方式受到攻击，主要表现为：机密数据的泄露、数据的篡改或数据的破坏。这些威胁对应于 CIA三要素的对立面，被称为 DAD 三要素。</p>
+<p><strong>泄露</strong>（Disclosure）：即机密性的对立面，指未经授权的数据访问或泄露。<br><strong>篡改</strong>（Alteration）：即完整性的对立面，指数据被非法修改或操控。<br><strong>破坏&#x2F;拒绝服务</strong>（Destruction&#x2F;Denial）：即可用性的对立面，指数据或系统因攻击或故障而不可用或被破坏。</p>
+<p>DAD 三要素即 CIA 三要素的对立面，防止数据的泄露、篡改和破坏（拒绝服务）是确保机密性、完整性和可用性的核心目标。良好的安全实践需要在三者之间找到平衡，因为过度强调机密性和完整性可能会妨碍系统的可用性，而一味增加可用性可能会降低机密性和完整性。平衡 CIA 三要素有助于构建安全、稳定的系统。<br><br></p>
+<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>安全三要素包括机密性、完整性和可用性（CIA）。为了创建能够确保一种或多种安全功能的系统，使用不同的安全模型。</p>
+<h3 id="Bell-LaPadula模型"><a href="#Bell-LaPadula模型" class="headerlink" title="Bell-LaPadula模型"></a>Bell-LaPadula模型</h3><p>Bell-LaPadula模型主要通过以下三条规则来确保系统的<strong>机密性</strong>：</p>
+<p><strong>简单安全属性</strong>（Simple Security Property）：“不可向上读取”（no read up），即低安全级别的主体不能读取高安全级别的对象，从而防止未授权主体访问敏感信息。</p>
+<p><strong>星安全属性</strong>（Star Security Property）：“不可向下写入”（no write down），即高安全级别的主体不能向低安全级别的对象写入数据，避免敏感信息泄露。</p>
+<p><strong>自由裁量安全属性</strong>（Discretionary Security Property）：通过访问矩阵控制读写操作：</p>
+<table>
+<thead>
+<tr>
+<th>主体</th>
+<th>对象A</th>
+<th>对象B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主体1</td>
+<td>写</td>
+<td>无访问</td>
+</tr>
+<tr>
+<td>主体2</td>
+<td>读&#x2F;写</td>
+<td>读</td>
+</tr>
+</tbody></table>
+<p>前两条规则也可以总结为“向上写入，向下读取”（write up, read down）：可以将机密信息与更高安全级别的人共享（向上写入），并从较低安全级别的人接收信息（向下读取）。</p>
+<p>Bell-LaPadula 模型在处理文件共享存在局限性</p>
+<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型旨在通过以下两条规则确保系统的<strong>完整性</strong>：</p>
+<p><strong>简单完整性属性</strong>（Simple Integrity Property）：“不可向下读取”（no read down），即高完整性主体不应从低完整性对象中读取信息，以避免受到低完整性数据的污染。</p>
+<p><strong>星完整性属性</strong>（Star Integrity Property）：“不可向上写入”（no write up），即低完整性主体不应向高完整性对象写入信息，以防止污染高完整性数据。</p>
+<p>这两条规则总结为“向上读取，向下写入”（read up, write down），与 Bell-LaPadula 模型的“向上写入，向下读取”相反。Biba 模型侧重于完整性，而 Bell-LaPadula 模型则侧重于机密性。</p>
+<p>Biba 模型在防范内部人员威胁方面存在局限性</p>
+<h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型同样通过以下概念实现<strong>完整性</strong>：</p>
+<p>受限数据项（CDI）：需要保持完整性的数据类型<br>非受限数据项（UDI）：不要求完整性约束的其他数据类型<br>转换过程（TPs）：用于维护 CDI 完整性的操作过程<br>完整性验证过程（IVPs）：用于检查和验证 CDI 的有效性，确保其未被篡改</p>
+<br>
+
+
+
+
+
+<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是一种通过多层次保护措施来提升系统安全性的策略，也称为<strong>多层次安全</strong>（Multi-Level Security）。这种方法通过多重防御层抵御不同的威胁，使攻击者无法通过单一层次的安全缺口进入系统。每一层都设计有不同的控制措施，以最大限度地提高整体安全性。纵深防御的核心理念是，即使一层安全防护被突破，后续的层级仍能为系统提供进一步保护。<br><br></p>
+<h2 id="ISO-IEC-19249-标准"><a href="#ISO-IEC-19249-标准" class="headerlink" title="ISO&#x2F;IEC 19249 标准"></a>ISO&#x2F;IEC 19249 标准</h2><p>ISO&#x2F;IEC 19249标准由国际标准化组织（ISO）和国际电工委员会（IEC）制定，名称为“信息技术 - 安全技术 - 安全产品、系统和应用的架构和设计原则目录”。其目的是为安全架构提供指导性建议，以帮助实现更高的系统安全性。</p>
+<p>ISO&#x2F;IEC 19249列出以下五项架构原则：</p>
+<p><strong>域分离</strong>（Domain Separation）：将相关组件分组为独立实体，每个域拥有一组统一的安全属性</p>
+<p><strong>分层</strong>（Layering）：系统划分为多个抽象层，使安全策略可在不同层级实施并便于验证。分层通常与纵深防御原则有关。</p>
+<p><strong>封装</strong>（Encapsulation）：通过特定方法隐藏底层实现，防止不当访问。在面向对象编程中，封装确保对象通过预定义的接口操作数据。</p>
+<p><strong>冗余</strong>（Redundancy）：保障可用性和完整性。</p>
+<p><strong>虚拟化</strong>（Virtualization）：将硬件资源分配给多个操作系统，使其隔离运行，提供沙盒功能。虚拟化不仅支持云环境，还可用于安全观察恶意程序，增强安全边界。</p>
+<p>ISO&#x2F;IEC 19249的五项设计原则</p>
+<p><strong>最小权限</strong>：“基于需要”或“知情需要”原则，最小权限原则要求只授予完成任务所需的最低权限，避免多余权限。</p>
+<p><strong>攻击面最小化</strong>：系统存在已知和未知漏洞，这些漏洞构成潜在风险。为减少风险，应尽可能缩小攻击面。</p>
+<p><strong>集中化参数验证</strong>：许多威胁来自于无效输入的利用，可能导致拒绝服务或远程代码执行等风险。参数验证是系统安全的关键步骤，为简化管理和提高效率，应将参数验证集中在一个库或系统中进行。</p>
+<p><strong>集中化通用安全服务</strong>：集中化管理安全服务可提高安全性与效率。</p>
+<p><strong>准备错误和异常处理</strong>：系统应为错误和异常事件做好准备。安全设计应包括安全失败模式，同时确保错误信息不泄露敏感信息</p>
+<br>
+
+
+
+
+
+<h2 id="零信任与信任但验证"><a href="#零信任与信任但验证" class="headerlink" title="零信任与信任但验证"></a>零信任与信任但验证</h2><p>在信任方面，两条安全原则值得关注：</p>
+<p><strong>信任但验证</strong><br>该原则强调，即便信任某个实体，也应始终进行验证。验证通常通过日志机制完成，定期检查日志确保操作正常。由于手动验证难以实现全面监控，因此需要自动化的安全机制，以便及时检测异常行为。</p>
+<p><strong>零信任</strong><br>零信任原则将信任视为一种潜在脆弱性，特别注重防范内部威胁。零信任的核心理念是“永不信任，始终验证”，将所有实体视为潜在威胁，只有在经过验证后才授予信任。与传统模式不同，零信任不会因设备位置或归属而授予信任，而是在每次访问资源前均需进行身份验证和授权。通过这种方式，即使出现安全漏洞，零信任架构也能有效将损害控制在最小范围。</p>
+<p>零信任架构的一种实现方式是微分段（Microsegmentation）。微分段将网络划分为极小的单元，甚至小到单一主机。各分段之间的通信均需身份验证、访问控制检查等多重安全措施，以确保高安全性。</p>
+<p>尽管零信任的实施需确保不对业务产生负面影响，但在可行的情况下，零信任原则应尽可能应用。<br><br></p>
+<h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p><strong>漏洞</strong>（Vulnerability）：指系统或资产的弱点或易受攻击的特性，可能被利用而导致损害。<br><strong>威胁</strong>（Threat）：指可能利用漏洞的潜在危险，包含攻击者行为或自然事件等。<br><strong>风险</strong>（Risk）：指威胁利用漏洞的可能性及其对业务产生的潜在影响。</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/securityprinciples -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除例子，主语，括号，链接）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">09</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/">
+                    网络安全基础
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/" class="trm-anima-link">
+                    治理与监管
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/09</li>
+                <li>20:15</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">09</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80/">
+                    网络安全基础
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/" class="trm-anima-link">
+                    网络安全职业
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/09</li>
+                <li>19:28</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-footer-card trm-scroll-animation">
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2024 - 2024</span>
+            <span class="footer-separator"data-separator=" · "></span>
+            <span class="trm-accent-color">CypherSun</span>
+        </div>
+    
+
+      
+
+    
+        <div class="trm-footer-item blog-run-long"></div>
+     
+
+     
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
+    
+        <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
+            <i class="iconfont fas fa-arrows-alt-h"></i>
+        </div>
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+    <div class="trm-search-popup">
+        <div class="trm-search-wrapper">
+            <div class="form trm-search-form">
+                <div class="trm-search-input-icon">
+                    <i class="iconfont fas fa-search"></i>
+                </div>
+                <input class="trm-search-input" type="text" placeholder="搜索文章...">
+                <div class="trm-search-btn-close">
+                    <i class="iconfont fas fa-times"></i>
+                </div>
+            </div>
+            <div class="trm-search-result-container">
+                <div class="trm-search-empty">
+                    请输入关键词进行搜索
+                </div>
+            </div>
+            <div class="trm-search-footer">
+                <div class="trm-search-stats"></div>
+                <ul class="trm-search-commands">
+                    <li>
+                        <kbd class="command-palette-commands-key">
+                            <svg width="15" height="15" aria-label="Escape key" role="img">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.2">
+                                    <path
+                                        d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956">
+                                    </path>
+                                </g>
+                            </svg>
+                        </kbd>
+                        <span class="command-palette-Label">to close</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  <!-- Plugin -->
+
+
+
+
+    
+<script src="https://unpkg.com/swup@2.0.19/dist/swup.min.js"></script>
+
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+        <script src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/plugins/typing.js?v=2.2.3"></script>
+    
+
+    
+        
+<script src="https://unpkg.com/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+
+        <script src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/plugins/local_search.js?v=2.2.3"></script>
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+		
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+    <script data-swup-reload-script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+
+<script id="async-script" src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/main.js?v=2.2.3"></script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+<script src="https://unpkg.com/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>

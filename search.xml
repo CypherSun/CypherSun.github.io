@@ -1,3 +1,289 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title>博客模板</title>
+    <url>/2024/11/09/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+
+
+
+<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+
+
+<!-- 网站地址 -->
+<!-- AI 翻译 ✔? ✖?，AI 优化 + 手工优化（删除例子，主语，括号，链接）✔? ✖? -->
+<!-- 通读文章（句子母语化，删除无意义句）✔? ✖?，对比原文（文章格式，添加工具）✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>安全原则</title>
+    <url>/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/</url>
+    <content><![CDATA[<h2 id="CIA"><a href="#CIA" class="headerlink" title="CIA"></a>CIA</h2><p>在评估某个事物的安全性之前，需要深入理解其组成要素。通常，在评估系统安全性时，从机密性、完整性和可用性这三个方面出发，即 CIA 三角模型</p>
+<p>CIA 三角模型：<br><strong>机密性</strong>（Confidentiality）：确保只有授权人员或指定接收者能够访问数据，防止未经授权的泄露。<br><strong>完整性</strong>（Integrity）：确保数据不会在传输或存储过程中被篡改，同时能检测出任何篡改的痕迹。<br><strong>可用性</strong>（Availability）：确保系统或服务在需要时可供使用，防止因系统宕机或其他故障导致的不可用情况。</p>
+<p>不同的系统侧重点不同</p>
+<h3 id="CIA-之外的安全要素"><a href="#CIA-之外的安全要素" class="headerlink" title="CIA 之外的安全要素"></a>CIA 之外的安全要素</h3><p>在 CIA 模型之外，包括真实性和不可抵赖性：<br><strong>真实性</strong>：确保数据非伪造，数据确实来自声称的来源<br><strong>不可抵赖性</strong>：确保信息来源无法否认自己是数据的提供者</p>
+<h3 id="Parker-六元组："><a href="#Parker-六元组：" class="headerlink" title="Parker 六元组："></a>Parker 六元组：</h3><p>1998 年，Donn Parker 提出了 Parker 六元组，将安全性扩展为六个要素：</p>
+<p>可用性<br>实用性：关注信息的有效可用性。<br>完整性<br>真实性<br>机密性<br>拥有性：即信息的控制权。</p>
+<br>
+
+
+
+
+
+<h2 id="DAD"><a href="#DAD" class="headerlink" title="DAD"></a>DAD</h2><p>系统的安全性可能通过多种方式受到攻击，主要表现为：机密数据的泄露、数据的篡改或数据的破坏。这些威胁对应于 CIA三要素的对立面，被称为 DAD 三要素。</p>
+<p><strong>泄露</strong>（Disclosure）：即机密性的对立面，指未经授权的数据访问或泄露。<br><strong>篡改</strong>（Alteration）：即完整性的对立面，指数据被非法修改或操控。<br><strong>破坏&#x2F;拒绝服务</strong>（Destruction&#x2F;Denial）：即可用性的对立面，指数据或系统因攻击或故障而不可用或被破坏。</p>
+<p>DAD 三要素即 CIA 三要素的对立面，防止数据的泄露、篡改和破坏（拒绝服务）是确保机密性、完整性和可用性的核心目标。良好的安全实践需要在三者之间找到平衡，因为过度强调机密性和完整性可能会妨碍系统的可用性，而一味增加可用性可能会降低机密性和完整性。平衡 CIA 三要素有助于构建安全、稳定的系统。<br><br></p>
+<h2 id="安全模型的基本概念"><a href="#安全模型的基本概念" class="headerlink" title="安全模型的基本概念"></a>安全模型的基本概念</h2><p>安全三要素包括机密性、完整性和可用性（CIA）。为了创建能够确保一种或多种安全功能的系统，使用不同的安全模型。</p>
+<h3 id="Bell-LaPadula模型"><a href="#Bell-LaPadula模型" class="headerlink" title="Bell-LaPadula模型"></a>Bell-LaPadula模型</h3><p>Bell-LaPadula模型主要通过以下三条规则来确保系统的<strong>机密性</strong>：</p>
+<p><strong>简单安全属性</strong>（Simple Security Property）：“不可向上读取”（no read up），即低安全级别的主体不能读取高安全级别的对象，从而防止未授权主体访问敏感信息。</p>
+<p><strong>星安全属性</strong>（Star Security Property）：“不可向下写入”（no write down），即高安全级别的主体不能向低安全级别的对象写入数据，避免敏感信息泄露。</p>
+<p><strong>自由裁量安全属性</strong>（Discretionary Security Property）：通过访问矩阵控制读写操作：</p>
+<table>
+<thead>
+<tr>
+<th>主体</th>
+<th>对象A</th>
+<th>对象B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主体1</td>
+<td>写</td>
+<td>无访问</td>
+</tr>
+<tr>
+<td>主体2</td>
+<td>读&#x2F;写</td>
+<td>读</td>
+</tr>
+</tbody></table>
+<p>前两条规则也可以总结为“向上写入，向下读取”（write up, read down）：可以将机密信息与更高安全级别的人共享（向上写入），并从较低安全级别的人接收信息（向下读取）。</p>
+<p>Bell-LaPadula 模型在处理文件共享存在局限性</p>
+<h3 id="Biba-模型"><a href="#Biba-模型" class="headerlink" title="Biba 模型"></a>Biba 模型</h3><p>Biba 模型旨在通过以下两条规则确保系统的<strong>完整性</strong>：</p>
+<p><strong>简单完整性属性</strong>（Simple Integrity Property）：“不可向下读取”（no read down），即高完整性主体不应从低完整性对象中读取信息，以避免受到低完整性数据的污染。</p>
+<p><strong>星完整性属性</strong>（Star Integrity Property）：“不可向上写入”（no write up），即低完整性主体不应向高完整性对象写入信息，以防止污染高完整性数据。</p>
+<p>这两条规则总结为“向上读取，向下写入”（read up, write down），与 Bell-LaPadula 模型的“向上写入，向下读取”相反。Biba 模型侧重于完整性，而 Bell-LaPadula 模型则侧重于机密性。</p>
+<p>Biba 模型在防范内部人员威胁方面存在局限性</p>
+<h3 id="Clark-Wilson-模型"><a href="#Clark-Wilson-模型" class="headerlink" title="Clark-Wilson 模型"></a>Clark-Wilson 模型</h3><p>Clark-Wilson 模型同样通过以下概念实现<strong>完整性</strong>：</p>
+<p>受限数据项（CDI）：需要保持完整性的数据类型<br>非受限数据项（UDI）：不要求完整性约束的其他数据类型<br>转换过程（TPs）：用于维护 CDI 完整性的操作过程<br>完整性验证过程（IVPs）：用于检查和验证 CDI 的有效性，确保其未被篡改</p>
+<br>
+
+
+
+
+
+<h2 id="纵深防御"><a href="#纵深防御" class="headerlink" title="纵深防御"></a>纵深防御</h2><p>纵深防御是一种通过多层次保护措施来提升系统安全性的策略，也称为<strong>多层次安全</strong>（Multi-Level Security）。这种方法通过多重防御层抵御不同的威胁，使攻击者无法通过单一层次的安全缺口进入系统。每一层都设计有不同的控制措施，以最大限度地提高整体安全性。纵深防御的核心理念是，即使一层安全防护被突破，后续的层级仍能为系统提供进一步保护。<br><br></p>
+<h2 id="ISO-IEC-19249-标准"><a href="#ISO-IEC-19249-标准" class="headerlink" title="ISO&#x2F;IEC 19249 标准"></a>ISO&#x2F;IEC 19249 标准</h2><p>ISO&#x2F;IEC 19249标准由国际标准化组织（ISO）和国际电工委员会（IEC）制定，名称为“信息技术 - 安全技术 - 安全产品、系统和应用的架构和设计原则目录”。其目的是为安全架构提供指导性建议，以帮助实现更高的系统安全性。</p>
+<p>ISO&#x2F;IEC 19249列出以下五项架构原则：</p>
+<p><strong>域分离</strong>（Domain Separation）：将相关组件分组为独立实体，每个域拥有一组统一的安全属性</p>
+<p><strong>分层</strong>（Layering）：系统划分为多个抽象层，使安全策略可在不同层级实施并便于验证。分层通常与纵深防御原则有关。</p>
+<p><strong>封装</strong>（Encapsulation）：通过特定方法隐藏底层实现，防止不当访问。在面向对象编程中，封装确保对象通过预定义的接口操作数据。</p>
+<p><strong>冗余</strong>（Redundancy）：保障可用性和完整性。</p>
+<p><strong>虚拟化</strong>（Virtualization）：将硬件资源分配给多个操作系统，使其隔离运行，提供沙盒功能。虚拟化不仅支持云环境，还可用于安全观察恶意程序，增强安全边界。</p>
+<p>ISO&#x2F;IEC 19249的五项设计原则</p>
+<p><strong>最小权限</strong>：“基于需要”或“知情需要”原则，最小权限原则要求只授予完成任务所需的最低权限，避免多余权限。</p>
+<p><strong>攻击面最小化</strong>：系统存在已知和未知漏洞，这些漏洞构成潜在风险。为减少风险，应尽可能缩小攻击面。</p>
+<p><strong>集中化参数验证</strong>：许多威胁来自于无效输入的利用，可能导致拒绝服务或远程代码执行等风险。参数验证是系统安全的关键步骤，为简化管理和提高效率，应将参数验证集中在一个库或系统中进行。</p>
+<p><strong>集中化通用安全服务</strong>：集中化管理安全服务可提高安全性与效率。</p>
+<p><strong>准备错误和异常处理</strong>：系统应为错误和异常事件做好准备。安全设计应包括安全失败模式，同时确保错误信息不泄露敏感信息</p>
+<br>
+
+
+
+
+
+<h2 id="零信任与信任但验证"><a href="#零信任与信任但验证" class="headerlink" title="零信任与信任但验证"></a>零信任与信任但验证</h2><p>在信任方面，两条安全原则值得关注：</p>
+<p><strong>信任但验证</strong><br>该原则强调，即便信任某个实体，也应始终进行验证。验证通常通过日志机制完成，定期检查日志确保操作正常。由于手动验证难以实现全面监控，因此需要自动化的安全机制，以便及时检测异常行为。</p>
+<p><strong>零信任</strong><br>零信任原则将信任视为一种潜在脆弱性，特别注重防范内部威胁。零信任的核心理念是“永不信任，始终验证”，将所有实体视为潜在威胁，只有在经过验证后才授予信任。与传统模式不同，零信任不会因设备位置或归属而授予信任，而是在每次访问资源前均需进行身份验证和授权。通过这种方式，即使出现安全漏洞，零信任架构也能有效将损害控制在最小范围。</p>
+<p>零信任架构的一种实现方式是微分段（Microsegmentation）。微分段将网络划分为极小的单元，甚至小到单一主机。各分段之间的通信均需身份验证、访问控制检查等多重安全措施，以确保高安全性。</p>
+<p>尽管零信任的实施需确保不对业务产生负面影响，但在可行的情况下，零信任原则应尽可能应用。<br><br></p>
+<h2 id="威胁与风险"><a href="#威胁与风险" class="headerlink" title="威胁与风险"></a>威胁与风险</h2><p><strong>漏洞</strong>（Vulnerability）：指系统或资产的弱点或易受攻击的特性，可能被利用而导致损害。<br><strong>威胁</strong>（Threat）：指可能利用漏洞的潜在危险，包含攻击者行为或自然事件等。<br><strong>风险</strong>（Risk）：指威胁利用漏洞的可能性及其对业务产生的潜在影响。</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/securityprinciples -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除例子，主语，括号，链接）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>治理与监管</title>
+    <url>/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/</url>
+    <content><![CDATA[<h2 id="为什么它很重要？"><a href="#为什么它很重要？" class="headerlink" title="为什么它很重要？"></a>为什么它很重要？</h2><h3 id="重要术语"><a href="#重要术语" class="headerlink" title="重要术语"></a>重要术语</h3><p><strong>治理</strong>：指管理和引导一个组织或系统，以实现目标并确保遵循相关法律、法规和标准。<br><strong>监管</strong>：由管理机构强制执行的规则或法律，旨在确保合规并防止可能的危害。<br><strong>合规</strong>：指组织或系统遵循相关法律、法规和标准的状态。</p>
+<h3 id="信息安全治理"><a href="#信息安全治理" class="headerlink" title="信息安全治理"></a>信息安全治理</h3><p>信息安全治理代表了一个组织制定的结构、政策、方法和指导方针，目的是保障信息资产的机密性、完整性和可用性。信息安全治理在风险管理中帮助保护敏感数据，确保符合相关法规。信息安全治理是高层管理的职责，主要流程包括：</p>
+<p><strong>战略</strong>：制定符合组织业务目标的信息安全战略。<br><strong>政策与程序</strong>：编写保护信息资产的政策和程序。<br><strong>风险管理</strong>：进行风险评估，识别潜在威胁并采取缓解措施。<br><strong>绩效测量</strong>：建立关键绩效指标（KPIs）衡量治理效果。<br><strong>合规</strong>：确保遵守法规和行业最佳实践。</p>
+<h3 id="信息安全监管"><a href="#信息安全监管" class="headerlink" title="信息安全监管"></a>信息安全监管</h3><p>信息安全监管涉及管理信息资产的法律和监管框架，旨在防止数据遭到未经授权的访问或滥用。遵守这些法规通常是强制性的，由政府或其他监管机构监督执行。</p>
+<h3 id="治理与监管的关键收益"><a href="#治理与监管的关键收益" class="headerlink" title="治理与监管的关键收益"></a>治理与监管的关键收益</h3><p><strong>更强健的安全态势</strong>：全面的安全治理与法规遵循有助于降低风险，保护敏感信息。<br><strong>提升利益相关者信心</strong>：展示组织对网络安全的重视，增强利益相关者信任。<br><strong>合规性</strong>：遵守法规，避免不合规带来的处罚和声誉损失。<br><strong>与业务目标一致</strong>：安全治理框架支持信息安全与业务目标一致，提升安全措施的成本效益。<br><strong>知情决策</strong>：提供决策者所需的风险信息，确保安全措施落在最关键的地方。<br><strong>竞争优势</strong>：展示对数据保护的承诺，提升组织的竞争力和信任度。</p>
+<h3 id="相关法律和法规"><a href="#相关法律和法规" class="headerlink" title="相关法律和法规"></a>相关法律和法规</h3><p>法律和法规为安全治理和监管提供结构化框架，建立最低合规标准，推动责任感和信任，鼓励创新的数据保护方法。通过提供明确的规则，这些法规为组织提供了衡量安全态势的共同语言，确保合规。<br><br></p>
+<h2 id="信息安全框架"><a href="#信息安全框架" class="headerlink" title="信息安全框架"></a>信息安全框架</h2><h3 id="信息安全框架-1"><a href="#信息安全框架-1" class="headerlink" title="信息安全框架"></a>信息安全框架</h3><p>信息安全框架提供了一份完整的文档，用于概述组织的信息安全策略，并指导安全措施在组织内的实施、管理和执行。主要内容包括：</p>
+<p><strong>政策</strong>：正式声明，描述实现特定安全目标的宗旨、原则和指导方针。<br><strong>标准</strong>：确立特定流程、产品或服务的具体要求或规范。<br><strong>指南</strong>：提供建议和最佳实践，帮助实现特定安全目标。<br><strong>程序</strong>：说明完成特定任务或流程的具体步骤。<br><strong>基线</strong>：组织或系统必须达到的最低安全标准。</p>
+<h3 id="制定治理文档的步骤"><a href="#制定治理文档的步骤" class="headerlink" title="制定治理文档的步骤"></a>制定治理文档的步骤</h3><p><strong>确定范围和目的</strong>：明确文档的覆盖范围及必要性，基线用于设定最低安全标准。<br><strong>研究与审查</strong>：研究法律、法规、行业标准和最佳实践，审查现有政策和程序，确保文档全面性与一致性。<br><strong>起草文档</strong>：根据组织的目标和价值观，起草清晰、具体且可执行的政策、标准、指南、程序和基线。<br><strong>审查与批准</strong>：邀请主题专家、法律与合规团队和管理层审阅文档，结合反馈意见，并获得最终批准。<br><strong>实施与沟通</strong>：传达文档内容，确保员工理解角色与职责，并通过培训和宣传确保正确执行。<br><strong>审查与更新</strong>：定期更新文档，监控合规情况，基于反馈和变化的威胁环境进行必要调整。</p>
+<p>组织并不总需自行制定标准、框架或基线，可选用行业内已有的标准。标准的选择取决于法规要求、范围、目标和可用资源等因素。<br><br></p>
+<h2 id="治理、风险与合规（GRC）"><a href="#治理、风险与合规（GRC）" class="headerlink" title="治理、风险与合规（GRC）"></a>治理、风险与合规（GRC）</h2><p>GRC 框架通过整合治理、风险管理和合规性管理，以全方位的方法保障组织的安全态势，与组织的战略目标保持一致，确保其在相关法规和行业标准下运行。GRC 框架包含以下三个核心组成部分：</p>
+<p><strong>治理</strong>：通过信息安全战略引导组织方向，并建立监控机制以衡量和评估绩效。<br><strong>风险管理</strong>：识别、评估和优先处理组织面临的风险，实施相应的控制和缓解措施，以有效管理这些风险，同时进行持续监控和报告。<br><strong>合规</strong>：确保组织活动符合相关法律、法规及行业标准，并通过合规计划、定期审计和利益相关者沟通，验证合规性。</p>
+<h3 id="制定-GRC-计划的步骤"><a href="#制定-GRC-计划的步骤" class="headerlink" title="制定 GRC 计划的步骤"></a>制定 GRC 计划的步骤</h3><p>创建完善的 GRC 计划可为网络安全管理提供一个集成框架，有助于风险管理、法规遵从和增强组织安全视角。以下是 GRC 框架开发和实施的关键步骤：</p>
+<p><strong>定义范围和目标</strong>：确定 GRC 计划的适用范围并定义具体目标。</p>
+<p><strong>进行风险评估</strong>：识别并评估组织的网络风险，优先处理关键风险并制定相应的管理策略。</p>
+<p><strong>制定政策和程序</strong>：制定政策和程序指导安全实践。</p>
+<p><strong>建立治理流程</strong>：通过安全指导委员会等机制管理 GRC 计划，定期审查安全风险并决策安全优先事项，明确角色和职责。</p>
+<p><strong>实施控制措施</strong>：部署防火墙、入侵防御系统（IPS）、入侵检测系统（IDS）等控制措施，并进行员工培训，减轻网络风险并提高安全意识。</p>
+<p><strong>监控和衡量绩效</strong>：建立流程以监控 GRC 计划的执行效果，跟踪指标并调整计划，以优化安全措施。</p>
+<p><strong>持续改进</strong>：依据绩效指标、风险变化和反馈，定期评估和改进GRC计划。<br><br></p>
+<h2 id="隐私与数据保护"><a href="#隐私与数据保护" class="headerlink" title="隐私与数据保护"></a>隐私与数据保护</h2><p>在金融、医疗、政府和工业等领域，隐私和数据保护法规涉及公民的个人身份信息（PII）。隐私法规确保个人信息得到负责任且合乎道德的处理与存储，帮助建立信任，保护个人隐私，并确保组织符合法律要求。<br><br></p>
+<h2 id="NIST特别出版物"><a href="#NIST特别出版物" class="headerlink" title="NIST特别出版物"></a>NIST特别出版物</h2><h3 id="NIST-800-53"><a href="#NIST-800-53" class="headerlink" title="NIST 800-53"></a>NIST 800-53</h3><p>NIST 800-53 是美国国家标准与技术研究院（NIST）发布的出版物《信息系统和组织的安全与隐私控制》，提供了一套安全控制目录，用于保护信息系统的机密性、完整性和可用性。该出版物为组织提供了评估和增强信息系统安全性与隐私性的框架，帮助其遵守法律、法规和政策。它融合了多个来源的最佳实践，包括行业标准、指南和国际框架。</p>
+<h3 id="关键要点"><a href="#关键要点" class="headerlink" title="关键要点"></a>关键要点</h3><p>NIST 800-53 提供了一套全面的安全和隐私控制，帮助组织保护其运营、资产、人员及合作方免受多种威胁。第五版将控制措施分为二十组，每组涵盖一个特定的安全关注领域。</p>
+<h3 id="NIST-800-53-的控制措施与实施"><a href="#NIST-800-53-的控制措施与实施" class="headerlink" title="NIST 800-53 的控制措施与实施"></a>NIST 800-53 的控制措施与实施</h3><p>在 NIST 800-53 框架中，项目管理控制是关键控制之一，要求在组织范围内建立、实施并监控信息安全与隐私保护计划，以保障系统中的数据安全。</p>
+<h3 id="合规最佳实践"><a href="#合规最佳实践" class="headerlink" title="合规最佳实践"></a>合规最佳实践</h3><p>为实现 NIST 800-53 合规性，组织需按以下步骤操作：<br>识别并记录数据资产、信息系统和相关威胁，整理数据流、系统依赖关系和漏洞。<br>映射控制家族至识别的资产和风险，构建与组织需求相符的结构化控制框架。<br>建立治理结构，分配职责，明确控制实施和维护流程，有效管理实施过程。<br>定期监控与评估所有措施，确保持续合规。<br>改进监控系统，定期评估、审计，并不断改进控制措施。</p>
+<p>通过这些实践，组织可以有效实施 NIST 800-53，增强安全态势并降低风险。</p>
+<h3 id="NIST-800-63B"><a href="#NIST-800-63B" class="headerlink" title="NIST 800-63B"></a>NIST 800-63B</h3><p>NIST 特别出版物 800-63B 是 NIST 制定的指南，帮助组织建立数字身份管理的有效实践。它关注数字服务、系统和网络的个人身份认证和验证，提供从基础到高级的不同级别身份保证的建议。指南涵盖认证因素的使用及用户凭证的安全管理和存储。<br><br></p>
+<h2 id="信息安全管理与合规"><a href="#信息安全管理与合规" class="headerlink" title="信息安全管理与合规"></a>信息安全管理与合规</h2><p>信息安全管理包括战略规划、实施和持续管理，旨在保护信息资产免受未经授权的访问、使用、披露、中断、篡改和破坏。其主要内容包括风险评估与识别、安全控制和程序的制定、事件响应规划以及安全意识培训。合规则是确保组织遵守信息安全相关的法律、法规、合同和行业标准。在信息安全管理和合规方面，两个关键标准尤其重要。</p>
+<h3 id="ISO-IEC-27001"><a href="#ISO-IEC-27001" class="headerlink" title="ISO&#x2F;IEC 27001"></a>ISO&#x2F;IEC 27001</h3><p>ISO&#x2F;IEC 27001是国际公认的标准，规定了组织建立和维护信息安全管理体系（ISMS）的要求。该标准由 ISO 和 IEC 制定，并涵盖以下核心要素：</p>
+<p><strong>范围</strong>：定义 ISMS 的边界，明确涵盖的资产和流程。<br><strong>信息安全政策</strong>：高层次文件，概述组织的信息安全方针。<br><strong>风险评估</strong>：识别并评估信息在机密性、完整性和可用性方面的风险。<br><strong>风险处理</strong>：选择和实施控制措施，将风险降至可接受水平。<br><strong>适用性声明</strong>（SoA）：记录适用和不适用的控制措施。<br><strong>内部审计</strong>：定期审查 ISMS，确保其有效运行。<br><strong>管理评审</strong>：定期评估 ISMS 的绩效和适应性。</p>
+<p>基于 ISO 27001 建立的 ISMS 需要精心设计和有效执行。它要求对组织的安全流程进行全面评估，识别不足并开展风险评估。通过制定明确的控制措施，并确保其符合 ISO 27001 的标准，组织可以提升整体安全水平。领导支持和资源合理分配对 ISMS 的成功实施至关重要，且定期监控、测量和持续改进有助于确保 ISMS 的有效性和与组织目标的一致。</p>
+<h3 id="服务组织控制2（SOC-2）"><a href="#服务组织控制2（SOC-2）" class="headerlink" title="服务组织控制2（SOC 2）"></a>服务组织控制2（SOC 2）</h3><p>SOC 2 由美国注册会计师协会（AICPA）制定，是一个合规&#x2F;审计框架，专注于公司基于 CIA 三要素进行的数据安全性。SOC 2 使客户、利益相关者和业务合作伙伴确信，服务组织已实施足够的控制措施以保障系统和敏感数据的安全。</p>
+<p>SOC 2 框架对于处理客户数据或存储、传输敏感数据的服务提供商至关重要。通过 SOC 2 认证，企业展示其对高隐私和安全标准的承诺。SOC 2 报告是客户考量服务提供商安全性和隐私保护能力的重要因素。</p>
+<h3 id="重要要点"><a href="#重要要点" class="headerlink" title="重要要点"></a>重要要点</h3><p>SOC 2 是一项审计标准，评估服务组织在保密性、可用性、完整性和隐私方面的控制措施有效性。<br>SOC 2 审计由独立审计员进行，确认安全控制是否符合相关标准。<br>SOC 2 报告为客户、利益相关者和监管机构提供信息，证明服务组织具备足够的控制措施以保护处理客户数据的系统。</p>
+<h3 id="SOC-2-的安全保护"><a href="#SOC-2-的安全保护" class="headerlink" title="SOC 2 的安全保护"></a>SOC 2 的安全保护</h3><p>SOC 2 审计的核心目的是确保第三方服务提供商安全存储和处理敏感信息。</p>
+<p>在审计前和审计期间，组织的管理团队可采取以下步骤：<br><strong>确定范围</strong>：包括客户数据安全和隐私相关的系统、流程或地点。<br><strong>选择审计员</strong>：选择具 备SOC 2 审计经验的合格审计员，并考虑其声誉、经验和可用性。<br><strong>规划审计</strong>：与审计员制定审计计划，包括时间表、范围和标准。<br><strong>准备审计</strong>：检查安全和隐私控制措施，识别缺陷并制定补救措施。<br><strong>执行审计</strong>：审计员通过讨论、文件审查和控制测试评估控制措施的有效性。<br><strong>接收审计报告</strong>：审计员提供详细报告，包括控制措施的描述、发现的缺陷和改进建议。</p>
+<p>SOC 2审计期间，通常检查金融公司的常规控制措施，还包括数据传输加密、网络安全和事件管理等技术性和具体控制措施。<br><br></p>
+<!-- https://tryhackme.com/r/room/cybergovernanceregulation -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除例子，主语，括号，链接）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔? ✖? -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网站模板</title>
+    <url>/2024/11/09/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网络安全职业</title>
+    <url>/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/</url>
+    <content><![CDATA[<h2 id="安全分析师"><a href="#安全分析师" class="headerlink" title="安全分析师"></a>安全分析师</h2><p>安全分析师负责维护组织的数据安全，保护公司免受各类网络攻击的威胁。安全分析师在构建和优化安全措施中需通过深入分析和评估公司的网络安全状况，发现潜在风险并提出具体建议，协助工程师团队制定有效的预防措施。该职位需要与多方利益相关者合作，以全面理解并满足组织的安全需求。</p>
+<h3 id="职责："><a href="#职责：" class="headerlink" title="职责："></a>职责：</h3><p>与各类利益相关者合作，分析和评估公司网络的安全状况<br>编写安全报告，记录安全问题及所应对措施<br>制定并优化安全计划，包括研究新兴攻击工具和安全趋势，以及各团队所需的措施，以保障数据安全<br><br></p>
+<h2 id="安全工程师"><a href="#安全工程师" class="headerlink" title="安全工程师"></a>安全工程师</h2><p>安全工程师负责设计、监控和维护安全控制、网络和系统，以有效预防网络攻击。安全工程师利用由安全团队成员提供威胁情报和漏洞数据开发和实施针对性安全解决方案，致力于防御各类攻击，包括网页应用攻击、网络威胁及新兴的攻击手段。持续优化安全措施，安全工程师的核心目标是降低攻击和数据丢失的风险。</p>
+<h3 id="职责：-1"><a href="#职责：-1" class="headerlink" title="职责："></a>职责：</h3><p>测试并评估软件中的安全功能，以确保其有效性<br>监控网络，生成安全报告，及时更新系统以降低漏洞风险<br>识别并部署必要的安全系统，以实现最佳安全<br><br></p>
+<h2 id="渗透测试工程师"><a href="#渗透测试工程师" class="headerlink" title="渗透测试工程师"></a>渗透测试工程师</h2><p>渗透测试工程师负责检测技术产品中的安全漏洞，通常被称为“渗透测试（pentesting）”或“道德黑客”。渗透测试工程师通过模拟真实攻击的方式系统化地测试公司系统和软件的安全性，目的是发现潜在的缺陷和漏洞。渗透测试工程师利用这些漏洞进行风险评估，并据此提供修复建议，帮助公司预防现实网络攻击。</p>
+<h3 id="职责：-2"><a href="#职责：-2" class="headerlink" title="职责："></a>职责：</h3><p>测试计算机系统、网络和基于网络的应用程序的安全性<br>执行全面的安全评估、审计，并分析相关安全政策的有效性<br>评估并报告测试结果，提出预防攻击的行动建议<br><br></p>
+<!-- https://tryhackme.com/r/room/careersincyber -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除例子，主语，括号，链接）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网络攻击链</title>
+    <url>/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/</url>
+    <content><![CDATA[<h2 id="侦察"><a href="#侦察" class="headerlink" title="侦察"></a>侦察</h2><p>从攻击者的角度看，侦察是发现并收集目标系统及受害者信息的过程，是攻击规划的首要阶段。攻击者通过侦察来了解目标系统的细节，识别潜在的攻击点。</p>
+<p><strong>公开来源情报</strong>（OSINT）是侦察的一部分，攻击者通常首先通过 OSINT 收集公司及员工的公开信息，此信息帮助攻击者确定最佳攻击目标。对于不知道要攻击哪个公司的攻击者来说，OSINT 使他们能够筛选和分析潜在目标。</p>
+<p><strong>电子邮件收集</strong>是攻击者在侦察阶段的常用方法之一，从公共、付费或免费服务中获取电子邮件地址。攻击者使用这些地址开展网络钓鱼攻击，窃取敏感数据。常见的侦察工具包括：</p>
+<p><strong>theHarvester</strong>：可收集电子邮件、姓名、子域名、IP 地址和 URL 等信息。<br><strong>Hunter.io</strong>：获取与特定域名相关的联系信息。<br><strong>OSINT Framework</strong>：提供基于不同类别的 OSINT 工具集合，支持多种侦察需求。</p>
+<p>攻击者还利用社交媒体平台，收集目标公司或特定受害者的信息。<br><br></p>
+<h2 id="武器化"><a href="#武器化" class="headerlink" title="武器化"></a>武器化</h2><p>在完成侦察阶段后，攻击者会进入武器化阶段，创建一个用于投递的恶意有效载荷。通常，攻击者会选择不直接与受害者互动，而是利用武器生成器将恶意软件与漏洞利用结合生成有效载荷。大多数攻击者会使用自动化工具生成恶意软件，或从暗网获取现成的恶意代码；而更高级的攻击者或国家支持的 APT 组织则编写定制化恶意软件，使其具备规避检测的能力。</p>
+<p><strong>恶意软件</strong>（Malware）：设计用于损害、破坏或未经授权访问计算机的程序或软件。<br><strong>漏洞利用</strong>（Exploit）：利用应用程序或系统漏洞的程序或代码。<br><strong>有效载荷</strong>（Payload）：攻击者在系统上运行的恶意代码。</p>
+<p>在武器化阶段，攻击者可能采取以下方式：<br><strong>创建恶意 Office 文档</strong>：生成包含恶意宏或 VBA 脚本的 Microsoft Office 文档。<br><strong>制作感染载体</strong>：生成复杂的恶意载荷或蠕虫病毒，植入 USB 驱动器并在公共场合分发。<br><strong>选择指挥与控制</strong>（C2）：在受害者计算机上执行命令或传递更多有效载荷。<br><strong>植入后门</strong>（Backdoor）：绕过安全机制，获取目标系统的持续访问权限。<br><br></p>
+<h2 id="投递"><a href="#投递" class="headerlink" title="投递"></a>投递</h2><p>投递阶段是选择传递有效载荷或恶意软件的方法。常见的投递选项包括：</p>
+<p><strong>钓鱼邮件</strong>：在完成侦察并确定目标后，攻击者会向特定个人或公司多位员工发送带有恶意代码的邮件。邮件中包含有效载荷或恶意软件。</p>
+<p><strong>感染型 USB 驱动器分发</strong>：在公共场所分发带有恶意软件的 USB 驱动器，攻击者可能通过伪装成客户，将印有公司 Logo 的 USB 设备作为礼物寄送给公司，以实现 USB 投放攻击。</p>
+<p><strong>水坑攻击</strong>：有针对性的攻击针对特定人群。攻击者破坏受害者常访问的合法网站，将其重定向到恶意网站。通常会通过发送“无害”邮件，引导受害者点击恶意链接，从而达到攻击目的。受害者访问该网站时，可能会不经意间下载恶意软件或应用程序，这种攻击被称为“驱动下载”（Drive-by Download）。<br><br></p>
+<h2 id="漏洞利用"><a href="#漏洞利用" class="headerlink" title="漏洞利用"></a>漏洞利用</h2><p>为了获得系统访问权限，攻击者通常利用系统的漏洞。在成功访问系统后，攻击者可以通过利用软件、系统或服务器的漏洞来提升权限，或在网络中横向移动。横向移动是指攻击者在初始入侵后进一步深入网络，以获取敏感数据的技术。</p>
+<p>在此阶段，攻击者还可能使用零 day 漏洞利用。零 day 漏洞是尚未被公开或修补的漏洞，暴露了软件或硬件的弱点，可能在问题被发现前造成严重影响，且初期难以检测。</p>
+<p>常见的漏洞利用方式:<br>受害者打开恶意电子邮件附件或点击恶意链接，触发漏洞利用<br>利用零 day 漏洞<br>利用软件、硬件漏洞，或利用人性弱点<br>触发服务器端的漏洞利用<br><br></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在成功获得系统访问权限后，攻击者通常会希望在连接中断、初始访问被移除或系统更新后，仍能保持对系统的访问。这时，攻击者需要安装持久性后门，以便持续访问被攻陷的系统。</p>
+<p>实现持久性后门的方法:<br><strong>在 Web 服务器上安装 Web Shell</strong>：Web Shell 是一种恶意脚本，使用 ASP、PHP 或 JSP 等语言编写，允许攻击者持续访问系统。Web Shell 因简单且文件格式不易检测，可能被误认为是正常文件。</p>
+<p><strong>在受害者机器上安装后门</strong>：攻击者可以使用工具在目标计算机上安装后门。</p>
+<p><strong>创建或修改 Windows 服务</strong>：攻击者可以创建或修改 Windows 服务，使恶意脚本或载荷定期执行，作为持久性的一部分。攻击者可使用 sc.exe 和 Reg 工具修改服务配置，并伪装服务名称，看似合法。</p>
+<p><strong>在注册表“运行键”或启动文件夹中添加恶意载荷</strong>：通过在这些位置添加条目，恶意载荷会在每次用户登录时自动执行。启动文件夹分为用户级和系统级，无论谁登录，系统级启动文件夹中的内容都会运行。</p>
+<p>攻击者还可能使用时间戳篡改（Timestomping）技术来规避取证检测，使恶意软件的时间戳看起来与合法程序一致。<br><br></p>
+<h2 id="指挥与控制"><a href="#指挥与控制" class="headerlink" title="指挥与控制"></a>指挥与控制</h2><p>在获得持久性并成功执行恶意软件后，攻击者通过指挥与控制（C2）通道实现对受害者计算机的远程控制。这种恶意通信方式也称为 C&amp;C 或 C2 信标（C2 Beaconing），即受感染主机与 C2 服务器持续通信，定期向攻击者“信标”位置。</p>
+<p>一旦被攻陷的终端与外部 C2 服务器建立连接，攻击者即可完全控制受害者计算机。</p>
+<p>现代常见的C2通道:<br><strong>HTTP（端口80）和 HTTPS（端口443）</strong>：恶意流量混入正常流量中，使攻击者更易绕过防火墙检测<br><strong>域名服务器</strong>（DNS）：受感染的机器持续向攻击者控制的 DNS 服务器发送请求，这种通信方式称为 DNS 隧道（DNS Tunneling）</p>
+<p>C2 基础设施的拥有者可以是攻击者自己，也可以是另一个被攻陷的主机。<br><br></p>
+<h2 id="目标行动（数据外泄）"><a href="#目标行动（数据外泄）" class="headerlink" title="目标行动（数据外泄）"></a>目标行动（数据外泄）</h2><p>在经历前六个攻击阶段后，攻击者最终可以直接控制系统并实现攻击目标，可能采取以下行动：</p>
+<p>收集用户的登录凭证<br>执行权限提升<br>进行内部侦察<br>横向移动至公司网络的其他系统<br>收集并外泄敏感数据<br>删除备份和影子副本<br>覆盖或破坏数据<br><br></p>
+<!-- https://tryhackme.com/r/room/cyberkillchainzmt -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除例子，主语，括号，链接）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>工具模板</title>
+    <url>/2024/11/09/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
+
+
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>OSINT Framework</title>
+    <url>/2024/11/09/%E7%BD%91%E7%AB%99OSINT_Framework/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://osintframework.com/">OSINT Framework</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>提供了基于各种类别的OSINT工具集合<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>点击即用<br><br></p>
+<!-- 成功使用✔ -->]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>theHarvester</title>
+    <url>/2024/11/09/%E5%B7%A5%E5%85%B7theHarvester/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>theHarvester 是一款简单易用但功能强大的工具，旨在用于红队评估或渗透测试的侦察阶段。它执行开源情报 (OSINT) 收集，以帮助确定域的外部威胁状况。该工具使用多种公共资源收集名称、电子邮件、IP、子域和 URL<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>Kali 自带，部分模块需要填写 API 密钥才可使用<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">theHarvester -h</span><br></pre></td></tr></table></figure>
+<br>
+
+
+<!-- 成功搭建✔，成功使用✔ -->]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hunter</title>
+    <url>/2024/11/09/%E7%BD%91%E7%AB%99hunter/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hunter.io/">hunter</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>电子邮件搜索工具，可让您获取与域名相关的联系信息<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>登录搜索即可<br><br></p>
+<!-- 成功使用✔ -->]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
 </search>
