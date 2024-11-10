@@ -7,16 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CypherSun">
-<meta property="og:url" content="https://cyphersun.github.io/archives/2024/11/index.html">
+<meta name="description" content="什么是渗透测试？渗透测试的目标是在客户的应用程序或系统中发现潜在的漏洞，以帮助客户提升防御能力。 渗透测试（pentest）是一种遵循道德准则的安全评估方式，其核心是测试和分析防御机制的有效性，目标在于提升整体的安全性。 在渗透测试过程中，测试人员会使用与恶意攻击者类似的工具、技术和方法，以一种类似审计的方式来评估系统的弱点。 渗透测试的伦理规范渗透测试是一项经过系统所有者授权的安全评估工作，其目">
+<meta property="og:type" content="article">
+<meta property="og:title" content="渗透测试基础">
+<meta property="og:url" content="https://cyphersun.github.io/2024/11/06/T3-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%881/index.html">
 <meta property="og:site_name" content="CypherSun">
+<meta property="og:description" content="什么是渗透测试？渗透测试的目标是在客户的应用程序或系统中发现潜在的漏洞，以帮助客户提升防御能力。 渗透测试（pentest）是一种遵循道德准则的安全评估方式，其核心是测试和分析防御机制的有效性，目标在于提升整体的安全性。 在渗透测试过程中，测试人员会使用与恶意攻击者类似的工具、技术和方法，以一种类似审计的方式来评估系统的弱点。 渗透测试的伦理规范渗透测试是一项经过系统所有者授权的安全评估工作，其目">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-11-06T12:47:18.000Z">
+<meta property="article:modified_time" content="2024-11-10T08:21:09.551Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >CypherSun</title>
+<title >渗透测试基础</title>
 
 <!-- Favicon -->
 
@@ -53,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":false,"postUpdate":"2024-11-10 09:21:44"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-10 09:21:09"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -203,12 +207,9 @@
     <!-- banner -->
     <div class="trm-banner">
     
-    <!-- banner video cover -->
-    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover">
-        <source src="https://cdn.moji.com/websrc/video/summer20190515.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        Your browser does not support HTML5 video.
-    </video>
-    <!-- banner video cover end -->
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
     
 
     <!-- banner content -->
@@ -223,10 +224,10 @@
                     <!-- banner title -->
                     <div class="trm-banner-text ">
                         <div class="trm-label trm-mb-20">
-                            The article archive
+                            NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            江碧鸟逾白，<br>山青花欲燃。
+                            渗透测试基础
                         </h1>
 
                         
@@ -236,7 +237,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        archives
+                                        2024
                                     </span>
                                 </li>
                             </ul>
@@ -355,207 +356,310 @@
             
             <div class="trm-page-content col-lg-8">
                 <div id="trm-content" class="trm-content">
-                    <div class="row">
-    <div class="col-lg-12">
-        <div class="trm-card">
-            <div style="padding: 0 20px;">
-                
-                    <ul class="trm-tag-list"><li class="trm-tag-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">（29）</span></li></ul>
-                
-            </div>
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            11/06
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            13:47
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            CypherSun
         </div>
     </div>
 </div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="什么是渗透测试？"><a href="#什么是渗透测试？" class="headerlink" title="什么是渗透测试？"></a>什么是渗透测试？</h2><p>渗透测试的目标是在客户的应用程序或系统中发现潜在的漏洞，以帮助客户提升防御能力。</p>
+<p>渗透测试（pentest）是一种遵循道德准则的安全评估方式，其核心是测试和分析防御机制的有效性，目标在于提升整体的安全性。</p>
+<p>在渗透测试过程中，测试人员会使用与恶意攻击者类似的工具、技术和方法，以一种类似审计的方式来评估系统的弱点。<br><br></p>
+<h2 id="渗透测试的伦理规范"><a href="#渗透测试的伦理规范" class="headerlink" title="渗透测试的伦理规范"></a>渗透测试的伦理规范</h2><p>渗透测试是一项经过系统所有者授权的安全评估工作，其目标是审查系统的安全防御机制。渗透测试的合法性较为明确，任何超出协议范围的行为都被视为未经授权的行为，可能构成违法。</p>
+<p>在渗透测试正式开始之前，渗透测试员和系统所有者会进行讨论，明确测试工具、技术及测试范围。这一讨论形成了渗透测试协议的基础，定义了测试的具体流程和边界。</p>
+<p>提供渗透测试服务的公司必须遵守相关法律框架和行业认证要求</p>
+<p>黑客通常被分为三种类别，其行为动机和道德观决定了他们的类别：</p>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>白帽</td>
+<td>遵守法律，并利用技能为他人谋福利的黑客。</td>
+</tr>
+<tr>
+<td>灰帽</td>
+<td>这些黑客有时为公益而行动，但不总是遵守法律或道德标准。</td>
+</tr>
+<tr>
+<td>黑帽</td>
+<td>犯罪分子，通常以损害他人为代价谋取私利。</td>
+</tr>
+</tbody></table>
+<h3 id="交战规则（ROE）"><a href="#交战规则（ROE）" class="headerlink" title="交战规则（ROE）"></a>交战规则（ROE）</h3><p>ROE 文件在渗透测试初期制定，包含了三个主要部分，决定了测试的具体执行方式：</p>
+<table>
+<thead>
+<tr>
+<th>部分</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>许可</td>
+<td>明确授权进行测试活动，确保测试人员和公司的法律保护。</td>
+</tr>
+<tr>
+<td>测试范围</td>
+<td>标明测试适用的目标系统或应用程序。</td>
+</tr>
+<tr>
+<td>规则</td>
+<td>规定允许的技术手段。</td>
+</tr>
+</tbody></table>
+<br>
 
-<!-- history -->
 
-<div class="row">
+
+
+
+<h2 id="渗透测试的方法论"><a href="#渗透测试的方法论" class="headerlink" title="渗透测试的方法论"></a>渗透测试的方法论</h2><p>渗透测试的目标和范围多种多样，因此每次测试都可能有所不同，无法用一种通用方案来规范所有测试步骤。渗透测试员在测试中的步骤被称为方法论，一个有效的方法论应具备灵活性，适应不同的情境。</p>
+<p>渗透测试中的通用阶段：</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>信息收集</td>
+<td>通过公开来源情报（OSINT）和研究，收集尽可能多的公开信息。此阶段不涉及系统扫描。</td>
+</tr>
+<tr>
+<td>枚举&#x2F;扫描</td>
+<td>识别系统上运行的应用程序和服务。</td>
+</tr>
+<tr>
+<td>漏洞利用</td>
+<td>利用系统或应用程序中发现的漏洞，可能涉及公开漏洞利用工具或应用逻辑漏洞。</td>
+</tr>
+<tr>
+<td>权限提升</td>
+<td>成功利用系统或应用程序后，尝试扩大权限，可横向访问同权限组的其他账户或纵向获得更高权限。</td>
+</tr>
+<tr>
+<td>后渗透阶段</td>
+<td>包括以下阶段：横向移动寻找其他可攻击的主机、在更高权限下收集更多信息、隐匿行踪以及撰写报告。</td>
+</tr>
+</tbody></table>
+<h3 id="OSSTMM"><a href="#OSSTMM" class="headerlink" title="OSSTMM"></a>OSSTMM</h3><p>《开放源代码安全测试方法手册》（OSSTMM）提供了一个系统、软件、应用程序、通信和网络安全的人因测试策略框架。该方法论主要关注系统与应用程序间的通信：</p>
+<p>电信<br>有线网络<br>无线通信</p>
+<table>
+<thead>
+<tr>
+<th>优势</th>
+<th>劣势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>提供广泛覆盖的测试策略。</td>
+<td>框架复杂，细节繁多且术语独特。</td>
+</tr>
+<tr>
+<td>包含特定目标的方法论。</td>
+<td>无法快速上手，学习成本较高。</td>
+</tr>
+<tr>
+<td>可根据组织需求灵活调整。</td>
+<td>对新手来说不易理解。</td>
+</tr>
+<tr>
+<td>为系统和应用设定了通用的安全标准。</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="OWASP"><a href="#OWASP" class="headerlink" title="OWASP"></a>OWASP</h3><p>开放 Web 应用安全项目（OWASP）是一个由社区推动并定期更新的框架，专门用于 Web 应用程序和服务的安全性测试。OWASP 会定期发布报告，列出 Web 应用程序的十大安全漏洞、测试方法和补救措施。</p>
+<table>
+<thead>
+<tr>
+<th>优势</th>
+<th>劣势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>易于理解，适合入门。</td>
+<td>未必能够清晰分类所有 Web 应用的漏洞类型。</td>
+</tr>
+<tr>
+<td>维护活跃，更新频繁。</td>
+<td>未针对特定的软件开发生命周期提出建议。</td>
+</tr>
+<tr>
+<td>覆盖测试、报告和补救的各个阶段。</td>
+<td>缺乏认证。</td>
+</tr>
+<tr>
+<td>专注于 Web 应用程序和服务。</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="NIST-网络安全框架1-1"><a href="#NIST-网络安全框架1-1" class="headerlink" title="NIST 网络安全框架1.1"></a>NIST 网络安全框架1.1</h3><p>NIST 网络安全框架用于帮助组织提高网络安全标准并管理网络威胁风险。该框架提供了安全控制和成功基准指导，适用于关键基础设施和商业组织。虽然该框架未直接为渗透测试提供标准化的操作指南，但它包含部分指导原则。</p>
+<table>
+<thead>
+<tr>
+<th>优势</th>
+<th>劣势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>广泛使用</td>
+<td>多个版本，难以确定最适合的版本。</td>
+</tr>
+<tr>
+<td>有助于设定标准，减轻网络威胁。</td>
+<td>审计政策较弱，难以确定违规事件。</td>
+</tr>
+<tr>
+<td>更新频繁。</td>
+<td>对云计算考虑不足。</td>
+</tr>
+<tr>
+<td>提供认证支持。</td>
+<td></td>
+</tr>
+<tr>
+<td>可与其他框架协同实施。</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="NCSC-网络评估框架（CAF）"><a href="#NCSC-网络评估框架（CAF）" class="headerlink" title="NCSC 网络评估框架（CAF）"></a>NCSC 网络评估框架（CAF）</h3><p>网络评估框架（CAF）由 NCSC 发布，包含十四项原则，用于评估和管理网络威胁的风险。该框架适用于执行关键服务和活动的组织，重点关注数据安全、系统安全、身份和访问控制、弹性、监控、响应和恢复计划等方面。</p>
+<table>
+<thead>
+<tr>
+<th>优势</th>
+<th>劣势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>由政府机构支持，权威性高。</td>
+<td>较新，许多组织尚未完全适应。</td>
+</tr>
+<tr>
+<td>提供认证支持。</td>
+<td>基于原则和理念，缺乏操作性指导。</td>
+</tr>
+<tr>
+<td>涵盖十四项原则，从安全到应急响应。</td>
+<td></td>
+</tr>
+</tbody></table>
+<br>
+
+
+
+
+
+<h2 id="黑盒、白盒和灰盒渗透测试"><a href="#黑盒、白盒和灰盒渗透测试" class="headerlink" title="黑盒、白盒和灰盒渗透测试"></a>黑盒、白盒和灰盒渗透测试</h2><p>在测试应用程序或服务时，主要有三种测试范围。测试员对目标的了解程度决定了渗透测试的深度。</p>
+<h3 id="黑盒测试"><a href="#黑盒测试" class="headerlink" title="黑盒测试"></a>黑盒测试</h3><p>黑盒测试测试员在此过程中没有应用程序或服务的内部运作信息。测试员以普通用户的身份测试应用程序的功能和交互性，常见的操作包括与界面交互，以测试预期结果的实现。由于缺乏内部信息，黑盒测试增加了信息收集和枚举阶段的时间，因为测试员需自行识别目标的攻击面。</p>
+<h3 id="灰盒测试"><a href="#灰盒测试" class="headerlink" title="灰盒测试"></a>灰盒测试</h3><p>灰盒测试结合了黑盒和白盒测试的特点。测试员对应用程序或软件的内部组件有一些有限了解，但仍主要通过黑盒测试的方式与应用程序交互，利用已有知识来解决遇到的问题。这种有限的内部信息可以节省测试时间，尤其适用于已高度强化的攻击面。</p>
+<h3 id="白盒测试"><a href="#白盒测试" class="headerlink" title="白盒测试"></a>白盒测试</h3><p>白盒测试通常由具备编程和应用逻辑知识的软件开发人员执行。测试员将深入测试应用程序的内部组件，以确保特定功能正常工作并且响应时间合理。白盒测试提供了对应用程序及其预期行为的全面了解，虽然更耗时，但这种全面的知识保障了对整个攻击面的完整验证。<br><br></p>
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
     <div class="col-lg-12">
         <!-- title -->
         <h5 class="trm-title-with-divider">
-            
-                2024 年的归档
-            
-            <span data-number="01"></span>
+            其他文章
+            <span data-number="02"></span>
         </h5>
     </div>
-    <div class="col-lg-12">
-        <!-- timeline -->
-        <div class="trm-timeline">
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/06/T3-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%882/" class="trm-cover-frame trm-anima-link">
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/09/%E7%BD%91%E7%AB%99OSINT_Framework/" class="trm-anima-link">
-                                    OSINT Framework
-                                </a>
-                            </h6>
-                        </div>
-                    
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">06</div>
+                    <div class="trm-cover-month">2024/11</div>
                 </div>
-            </div>
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/09/%E7%BD%91%E7%AB%99hunter/" class="trm-anima-link">
-                                    hunter
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88/">
+                    渗透测试工程师
+                </a>
             </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/09/%E5%B7%A5%E5%85%B7theHarvester/" class="trm-anima-link">
-                                    theHarvester
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%804/" class="trm-anima-link">
-                                    网络攻击链
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/" class="trm-anima-link">
-                                    治理与监管
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%802/" class="trm-anima-link">
-                                    安全原则
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/09/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%801/" class="trm-anima-link">
-                                    网络安全职业
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/09/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                                    博客模板
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/09/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                                    网站模板
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/09/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                                    工具模板
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
+            <h5>
+                <a href="/2024/11/06/T3-%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%882/" class="trm-anima-link">
+                    T3-2
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/06</li>
+                <li>18:57</li>
+                
+                
+            </ul>
         </div>
-        <!-- timeline end -->
     </div>
 </div>
-
-<!-- history end -->
-
-
-    <div class="trm-pagination">
-        <span class="page-number current">1</span><a class="page-number" href="/archives/2024/11/page/2/">2</a>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD10/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">04</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD/">
+                    基础技能
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD10/" class="trm-anima-link">
+                    整合全部内容
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/04</li>
+                <li>10:42</li>
+                
+                
+            </ul>
+        </div>
     </div>
+</div>
+    
+</div>
 
-
+    
 
 
 
@@ -596,6 +700,10 @@
             
 <div class="trm-fixed-container">
     
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
     
     
         <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
@@ -678,6 +786,10 @@
     
 
     <!-- 评论插件 -->
+    
+        
+
+        
     
 
 		
