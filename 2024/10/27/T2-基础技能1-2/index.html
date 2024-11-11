@@ -7,20 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="局域网（LAN）拓扑结构介绍拓扑指网络的设计或布局，描述网络中各设备如何相互连接和组织 星型拓扑星型拓扑的核心概念是每个网络设备都独立地连接到一个中央网络设备上。由于所有设备的通信都需要通过中央设备，这种拓扑具备良好的可靠性和扩展性，但也需要更多的布线和专用网络设备，成本比其他拓扑结构更高 尽管星型拓扑的可靠性相对较高，但中央设备仍然存在故障风险 总线型拓扑总线型拓扑依赖于一根称为主干电缆的连接，">
+<meta name="description" content="SSH 访问 Linux什么是 SSH 及其工作原理？Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式 SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密 使用 SSH 需要两个信息：远程机器的 IP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="局域网简介">
-<meta property="og:url" content="https://cyphersun.github.io/2024/10/30/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-2/index.html">
+<meta property="og:title" content="Linux 基础知识 第二部分">
+<meta property="og:url" content="https://cyphersun.github.io/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-2/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="局域网（LAN）拓扑结构介绍拓扑指网络的设计或布局，描述网络中各设备如何相互连接和组织 星型拓扑星型拓扑的核心概念是每个网络设备都独立地连接到一个中央网络设备上。由于所有设备的通信都需要通过中央设备，这种拓扑具备良好的可靠性和扩展性，但也需要更多的布线和专用网络设备，成本比其他拓扑结构更高 尽管星型拓扑的可靠性相对较高，但中央设备仍然存在故障风险 总线型拓扑总线型拓扑依赖于一根称为主干电缆的连接，">
+<meta property="og:description" content="SSH 访问 Linux什么是 SSH 及其工作原理？Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式 SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密 使用 SSH 需要两个信息：远程机器的 IP">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-10-30T21:54:23.000Z">
-<meta property="article:modified_time" content="2024-11-10T18:52:25.882Z">
+<meta property="article:published_time" content="2024-10-27T16:39:09.000Z">
+<meta property="article:modified_time" content="2024-11-11T10:16:57.580Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >局域网简介</title>
+<title >Linux 基础知识 第二部分</title>
 
 <!-- Favicon -->
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-10 19:52:25"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-11 11:16:57"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -227,7 +227,7 @@
                             NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            局域网简介
+                            Linux 基础知识 第二部分
                         </h1>
 
                         
@@ -360,13 +360,13 @@
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
-            10/30
+            10/27
         </div>
     </div>
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-clock trm-icon"></i><br>
-            22:54
+            17:39
         </div>
     </div>
     <div class="col-sm-4">
@@ -378,72 +378,97 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="局域网（LAN）拓扑结构介绍"><a href="#局域网（LAN）拓扑结构介绍" class="headerlink" title="局域网（LAN）拓扑结构介绍"></a>局域网（LAN）拓扑结构介绍</h2><p><strong>拓扑</strong>指网络的设计或布局，描述网络中各设备如何相互连接和组织</p>
-<h3 id="星型拓扑"><a href="#星型拓扑" class="headerlink" title="星型拓扑"></a>星型拓扑</h3><p>星型拓扑的核心概念是每个网络设备都独立地连接到一个中央网络设备上。由于所有设备的通信都需要通过中央设备，这种拓扑具备良好的可靠性和扩展性，但也需要更多的布线和专用网络设备，成本比其他拓扑结构更高</p>
-<p>尽管星型拓扑的可靠性相对较高，但中央设备仍然存在故障风险</p>
-<h3 id="总线型拓扑"><a href="#总线型拓扑" class="headerlink" title="总线型拓扑"></a>总线型拓扑</h3><p>总线型拓扑依赖于一根称为主干电缆的连接，各设备通过分支连接到这条主干电缆上。由于所有设备共享同一条通信路径，若多个设备同时请求数据，会导致网络速度下降和瓶颈问题。这种单一数据路径会导致故障排查非常困难，很难确定哪个设备出现了问题</p>
-<p>总线型拓扑具有成本优势，结构简单且经济。但缺乏冗余来应对故障，缺点是因为主干电缆上有一个单点故障，一旦电缆损坏，所有设备都无法通信</p>
-<h3 id="环形拓扑"><a href="#环形拓扑" class="headerlink" title="环形拓扑"></a>环形拓扑</h3><p>环形拓扑&#x2F;令牌拓扑是一种闭环结构，所有设备直接连接成一个环，所需布线较少，不依赖中央设备或专用硬件。在环形拓扑中，数据沿着环路依次传输，直到到达目标设备。每台设备在没有数据要发送时会转发接收到的数据，如果有数据要发送，则优先发送自己的数据，再转发其他设备的数据。</p>
-<p>这种结构只能单向传输，因此故障排查相对容易。数据需要经过多个设备才能到达目标设备，传输效率较低。</p>
-<p>环形拓扑不容易出现网络瓶颈，因为不会同时传输大量数据。其设计意味着任何设备或连接出现故障都会中断整个环路，使网络中断</p>
-<h3 id="什么是交换机（Switch）？"><a href="#什么是交换机（Switch）？" class="headerlink" title="什么是交换机（Switch）？"></a>什么是交换机（Switch）？</h3><p>交换机是用于网络中的专用设备，通过以太网端口聚合多个设备，常用于需要连接大量设备的大型网络。交换机有多种规格，通常提供4、8、16、24、32或64个端口，以便于连接多个设备</p>
-<p>与集线器相比，交换机更高效，它能记录每个设备连接的端口。当接收到数据包时，交换机会将数据包直接发送到目标设备的端口，而非广播到所有端口，有效减少网络流量</p>
-<p>交换机和路由器可以互相连接，这种连接增加了网络的冗余性，因为为数据提供了多条传输路径。一旦某条路径故障，流量可转向备用路径，减少网络停机风险，但会带来些许性能损耗。</p>
-<h3 id="什么是路由器？"><a href="#什么是路由器？" class="headerlink" title="什么是路由器？"></a>什么是路由器？</h3><p>路由器的任务是连接不同的网络并在它们之间传输数据。它通过路由技术选择最佳路径，以便数据能有效地在网络间传输</p>
-<p>路由是指数据在网络间传输的路径选择过程。当存在多条连接路径时，它确保数据沿最佳路径传送，提高传输效率和网络可靠性</p>
-<br>
+    <h2 id="SSH-访问-Linux"><a href="#SSH-访问-Linux" class="headerlink" title="SSH 访问 Linux"></a>SSH 访问 Linux</h2><h3 id="什么是-SSH-及其工作原理？"><a href="#什么是-SSH-及其工作原理？" class="headerlink" title="什么是 SSH 及其工作原理？"></a>什么是 SSH 及其工作原理？</h3><p>Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式</p>
+<p>SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密</p>
+<p>使用 SSH 需要两个信息：<br>远程机器的 IP 地址<br>远程机器上有效账户的登录凭证</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh username@1.1.1.1</span><br><span class="line"><span class="comment"># ssh [用户名]@[IP地址]</span></span><br></pre></td></tr></table></figure>
 
+<p>输入 yes 信任主机，输入账户的密码。连接成功后，任何执行的命令将会在远程机器上运行</p>
+<p>在 SSH 登录中输入密码时，不会看到任何文本或符号不会有任何反馈，只需输入密码后回车登录</p>
+<p>输入exit断开连接<br><br></p>
+<h2 id="标志和开关简介（flags-and-switches）"><a href="#标志和开关简介（flags-and-switches）" class="headerlink" title="标志和开关简介（flags and switches）"></a>标志和开关简介（flags and switches）</h2><p>大多数命令都允许使用参数，这些参数由连字符和一个特定的关键字标识，这些关键字被称为标志或开关。在使用命令时，除非另有指定，否则它将执行默认行为。</p>
+<p>使用 ls -a 命令查看所有文件和文件夹，包括以 . 开头的隐藏文件和文件夹<br>使用 ls –help 命令列出 ls 命令列出提供简短的描述和使用示例的使用参数选项</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br><span class="line"><span class="comment"># 列出当前目录中的所有文件和目录，包括隐藏文件（以 . 开头的文件）</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> --<span class="built_in">help</span></span><br><span class="line"><span class="comment"># 显示 ls 命令的帮助信息，包括可用选项及其说明</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="使用-man-命令"><a href="#使用-man-命令" class="headerlink" title="使用 man 命令"></a>使用 man 命令</h3><p>手册页（man page）包含 Linux 系统命令和应用程序的信息，可直接在 Linux 上或网站访问</p>
+<p>使用 man 命令来查看手册页，可搭配其他命令一起使用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">man <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 查看 ls 命令的手册页，获取详细信息和选项说明</span></span><br></pre></td></tr></table></figure>
 
-
-
-<h2 id="子网划分基础知识"><a href="#子网划分基础知识" class="headerlink" title="子网划分基础知识"></a>子网划分基础知识</h2><p>网络的规模从小型到大型不等。子网划分（Subnetting）是将一个网络分成多个更小的子网络的过程，网络管理员通过子网划分来将网络的特定部分分配给不同部门，以便更好地管理和分类。</p>
-<p>子网划分通过限制主机数量来实现，划分的数量由“子网掩码”决定。IP 地址和子网掩码由 . 区分包含4个字节或部分，每个字节或部分为 8 bit，总共 32 bit，每个部分的取值范围是0到255。</p>
-<p>子网通过以下三种方式使用 IP 地址：</p>
-<p>标识网络地址<br>标识主机地址<br>标识默认网关</p>
-<p>将这三种用途分开理解，并通过下表来进行说明：</p>
-<table>
+<p>man 命令搭配其他命令可以查看 Linux 上几乎所有的命令，使用上下箭头阅读，q 退出<br><br></p>
+<h2 id="文件系统交互命令"><a href="#文件系统交互命令" class="headerlink" title="文件系统交互命令"></a>文件系统交互命令</h2><table>
 <thead>
 <tr>
-<th>类型</th>
-<th>目的</th>
-<th>解释</th>
+<th>命令</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>网络地址</td>
-<td>标识网络的起始位置，标识网络的存在</td>
-<td>IP 地址为 192.168.1.100 的设备将位于 192.168.1.0 标识的网络上</td>
+<td>touch</td>
+<td>创建新文件</td>
 </tr>
 <tr>
-<td>主机地址</td>
-<td>用于标识子网中的设备</td>
-<td>192.168.1.0网络中的设备可以被分配IP地址192.168.1.80</td>
+<td>mkdir</td>
+<td>创建新文件夹&#x2F;目录（make directory）</td>
 </tr>
 <tr>
-<td>默认网关</td>
-<td>网络中设备的特殊地址，用于将信息发送到其他网络</td>
-<td>需要发送到不同网络的数据会被转发至默认网关。网关地址通常使用网络中的第一个或最后一个主机地址192.168.1.1或192.168.1.254</td>
+<td>cp</td>
+<td>复制文件或文件夹（copy）</td>
+</tr>
+<tr>
+<td>mv</td>
+<td>移动文件或文件夹或重命名（move）</td>
+</tr>
+<tr>
+<td>rm</td>
+<td>删除文件或文件夹（remove）</td>
+</tr>
+<tr>
+<td>file</td>
+<td>确定文件的类型</td>
 </tr>
 </tbody></table>
-<p>在小型网络中常只使用一个子网，因为连接的设备数量不会超过254个 IP 地址</p>
-<p>子网划分提供好处：</p>
-<p>提高效率<br>提升安全性<br>实现控制性</p>
+<p>以上所有命令都可搭配使用完整的文件路径</p>
+<h3 id="使用-touch-和-mkdir-命令"><a href="#使用-touch-和-mkdir-命令" class="headerlink" title="使用 touch 和 mkdir 命令"></a>使用 touch 和 mkdir 命令</h3><p>使用 touch 命令创建创建新文件<br>使用 mkdir 命令创建新文件夹&#x2F;目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
+
+<p>使用 echo 命令或 nano 等文本编辑器在文件中添加内容</p>
+<h3 id="使用-rm-命令"><a href="#使用-rm-命令" class="headerlink" title="使用 rm 命令"></a>使用 rm 命令</h3><p>使用 rm 命令删除文件<br>使用 rm -R 命令删除文件夹</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -R folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-cp-和-mv-命令"><a href="#使用-cp-和-mv-命令" class="headerlink" title="使用 cp 和 mv 命令"></a>使用 cp 和 mv 命令</h3><p>使用 cp 命令将文件内容复制到新的文件中，第一个参数为已存在文件的名称，第二个参数为复制新文件指定的名称。如果目标文件不存在，将自动创建新文件<br>使用 cp -r 命令将文件夹及其内容复制到新的文件夹中，第一个参数为已存在文件夹的名称，第二个参数为复制新文件夹指定的名称。如果目标文件夹不存在，将自动创建新文件夹</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 file2</span><br><span class="line"><span class="comment"># 将 file1 的内容复制到 file2，如果 file2 不存在会自动创建</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> -r folder1 folder2</span><br><span class="line"><span class="comment"># 将 folder1 文件夹及其内容复制到 folder2，如果 folder2 不存在会自动创建</span></span><br></pre></td></tr></table></figure>
+
+
+<p>使用 mv 命令将文件或文件夹移动到新文件夹，或者对第二个参数提供的文件或文件夹名称进行重命名，不会创建新文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mv</span> file1 file2</span><br><span class="line"><span class="comment"># 如果 file2 是一个新名称，会将 file1 重命名为 file2</span></span><br><span class="line"><span class="comment"># 如果 file2 是一个已存在的目录，会将 file1 移动到该目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mv</span> folder1 folder2</span><br><span class="line"><span class="comment"># 如果 folder2 是一个新名称，会将 folder1 重命名为 folder2</span></span><br><span class="line"><span class="comment"># 如果 folder2 是一个已存在的目录，会将 folder1 移动到该目录</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="使用-file-命令"><a href="#使用-file-命令" class="headerlink" title="使用 file 命令"></a>使用 file 命令</h3><p>使用 file 命令确定文件或文件夹的类型，返回文件的类型描述</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">file file1</span><br><span class="line"><span class="comment"># 查看 file1 的文件类型，并显示类型信息</span></span><br><span class="line"></span><br><span class="line">file folder1</span><br><span class="line"><span class="comment"># 查看 folder1 的文件类型，如果为文件夹，将显示为 &quot;directory&quot;</span></span><br></pre></td></tr></table></figure>
+
 <br>
 
 
 
 
+<h2 id="权限基础知识"><a href="#权限基础知识" class="headerlink" title="权限基础知识"></a>权限基础知识</h2><p>使用 ls -lh 命令列出目录中所有文件的详细信息，包括文件权限、大小、所有者、修改时间等</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -lh</span><br><span class="line"><span class="comment"># 以详细格式列出当前目录中的所有文件信息，包括权限、大小和修改时间</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="地址解析协议（ARP）"><a href="#地址解析协议（ARP）" class="headerlink" title="地址解析协议（ARP）"></a>地址解析协议（ARP）</h2><p>每个网络设备都有两个标识符：MAC地址和IP地址。地址解析协议（Address Resolution Protocol，ARP）用于将设备的IP地址与其MAC地址关联的协议，以在网络中识别和定位设备</p>
-<p>当设备需要与另一设备通信时，会使用ARP协议通过广播方式，询问目标IP地址的MAC地址。目标设备接收到请求后，将其MAC地址发送回请求设备。设备会将此IP地址与MAC地址的关联信息记录在其ARP缓存中，避免以后通信需要重复广播</p>
-<h3 id="ARP如何工作？"><a href="#ARP如何工作？" class="headerlink" title="ARP如何工作？"></a>ARP如何工作？</h3><p>每个设备都有一个用于存储信息的缓存，该缓存用于存储其他网络设备的IP地址和MAC地址的关联信息</p>
-<p>为了建立IP地址与MAC地址的关联，ARP协议发送两种类型的消息：</p>
-<p>ARP请求：设备会向网络广播一条请求，询问拥有这个 IP 地址的 MAC 地址是什么<br>ARP回复：只有拥有该IP地址的设备会回应，发送包含其MAC地址的ARP回复。发送请求的设备随后会将这个IP-MAC地址映射记录在ARP缓存中将来使用</p>
-<p>这种机制使得设备能够快速查找和联系目标设备，而无需重复广播查询<br><br></p>
-<h2 id="动态主机配置协议（DHCP）"><a href="#动态主机配置协议（DHCP）" class="headerlink" title="动态主机配置协议（DHCP）"></a>动态主机配置协议（DHCP）</h2><p>IP 地址可通过手动分配或动态主机配置协议（DHCP）服务器自动分配。当设备连接到网络时，如果没手动分配IP地址，它会发送 DHCP 发现（DHCP Discover）请求，询问网络上是否有可用的DHCP服务器。</p>
-<p>DHCP服务器接收到该请求后，会回复DHCP提供（DHCP Offer）消息，提供可用的IP地址。设备随后发送DHCP请求（DHCP Request）消息，表示它希望使用这个IP地址。最后，DHCP服务器发送DHCP确认（DHCP ACK）消息，设备便可以使用该IP地址来进行通信</p>
-<p>这四个步骤（Discover、Offer、Request、ACK）完成后，设备即可使用分配到的IP地址，无需手动配置<br><br></p>
+<p>文件或文件夹有几种特性，特性决定了允许执行哪些操作，以及哪个用户或用户组有权限执行操作：</p>
+<p>读取 (Read)<br>写入 (Write)<br>执行 (Execute)</p>
+<h3 id="用户和用户组之间的区别"><a href="#用户和用户组之间的区别" class="headerlink" title="用户和用户组之间的区别"></a>用户和用户组之间的区别</h3><p>Linux 的优点在于权限非常细化，通过设置权限，一组用户可以对同一个文件拥有相同或不同的权限，而不会影响文件的所有者</p>
+<h3 id="使用-su-命令"><a href="#使用-su-命令" class="headerlink" title="使用 su 命令"></a>使用 su 命令</h3><p>通过目标用户的用户名和密码进行切换账户</p>
+<p>使用 su 命令需要输入用户的密码来切换到指定的用户账户，默认情况下不会加载该用户的完整环境变量<br>使用 su -l 命令需要输入用户的密码，它会完全切换到指定用户的实际登录环境，加载所有新用户的属性等</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">su user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，不会加载该用户的完整环境变量</span></span><br><span class="line"></span><br><span class="line">su -l user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，加载该用户的完整环境变量和配置</span></span><br></pre></td></tr></table></figure>
+
+<p>如果没有指定用户，默认情况下会切换到 root 用户。<br><br></p>
+<h2 id="常见目录"><a href="#常见目录" class="headerlink" title="常见目录"></a>常见目录</h2><h3 id="etc"><a href="#etc" class="headerlink" title="&#x2F;etc"></a>&#x2F;etc</h3><p>&#x2F;etc 目录（“etc” 代表 etcetera）是存放操作系统使用的配置和系统文件位置</p>
+<p>在 &#x2F;etc 文件夹中包含 passwd 和 shadow 文件，&#x2F;etc&#x2F;passwd 文件存储了用户账户的信息，&#x2F;etc&#x2F;shadow 文件存储了每个用户的加密哈希密码。系统常使 SHA-512 或其他哈希算法对密码进行加密</p>
+<h3 id="var"><a href="#var" class="headerlink" title="&#x2F;var"></a>&#x2F;var</h3><p>&#x2F;var 目录（“var” 代表 variable data）是存放由系统上运行的服务或应用程序访问、修改或生成的数据</p>
+<h3 id="root"><a href="#root" class="headerlink" title="&#x2F;root"></a>&#x2F;root</h3><p>&#x2F;root 目录是 root 用户系统管理员的主目录，它与普通用户的主目录 &#x2F;home 不同，&#x2F;root 是专门为 root 用户保留的</p>
+<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录（“tmp” 代表 temporary）是用于存放仅需临时访问的文件和数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除。&#x2F;tmp 目录在默认情况下任何用户都有写入权限，&#x2F;tmp 是存放枚举脚本和其他工具的好位置<br><br></p>
 
 </article>
     
@@ -461,11 +486,11 @@
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/10/31/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-3/" class="trm-cover-frame trm-anima-link">
+        <a href="/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-3/" class="trm-cover-frame trm-anima-link">
             
             
                 <div class="trm-cover-date">
-                    <div class="trm-cover-day">31</div>
+                    <div class="trm-cover-day">27</div>
                     <div class="trm-cover-month">2024/10</div>
                 </div>
             
@@ -473,19 +498,19 @@
         
         <div class="trm-card-descr">
             <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD/">
-                    基本技能
+                <a href=" /categories/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD/">
+                    基础技能
                 </a>
             </div>
             <h5>
-                <a href="/2024/10/31/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-3/" class="trm-anima-link">
-                    OSI 模型
+                <a href="/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-3/" class="trm-anima-link">
+                    Linux 基础知识 第三部分
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
-                <li>24/10/31</li>
-                <li>11:05</li>
+                <li>24/10/27</li>
+                <li>22:03</li>
                 
                 
             </ul>
@@ -496,11 +521,11 @@
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/10/30/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-1/" class="trm-cover-frame trm-anima-link">
+        <a href="/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-1/" class="trm-cover-frame trm-anima-link">
             
             
                 <div class="trm-cover-date">
-                    <div class="trm-cover-day">30</div>
+                    <div class="trm-cover-day">27</div>
                     <div class="trm-cover-month">2024/10</div>
                 </div>
             
@@ -508,19 +533,19 @@
         
         <div class="trm-card-descr">
             <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD/">
-                    基本技能
+                <a href=" /categories/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD/">
+                    基础技能
                 </a>
             </div>
             <h5>
-                <a href="/2024/10/30/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD4-1/" class="trm-anima-link">
-                    什么是网络？
+                <a href="/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-1/" class="trm-anima-link">
+                    Linux 基础知识 第一部分
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
-                <li>24/10/30</li>
-                <li>12:59</li>
+                <li>24/10/27</li>
+                <li>15:47</li>
                 
                 
             </ul>

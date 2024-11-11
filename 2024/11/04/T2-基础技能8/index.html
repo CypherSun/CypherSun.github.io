@@ -7,20 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="什么是 DNS？什么是 DNS？DNS（域名系统）为我们提供了一种简单的方式，让我们在互联网上与设备通信时无需记住复杂的数字。就像每个房屋都有一个唯一的地址用于接收邮件一样，互联网上的每台计算机也有一个用于通信的唯一地址，称为 IP 地址。IP 地址的格式类似于 104.26.10.229，由 0 到 255 之间的四组数字组成，每组数字之间用句号分隔。当访问一个网站时，记住这组复杂的数字显然不方">
+<meta name="description" content="什么是 DNS？域名系统（DNS）提供了一种能够在互联网上与设备通信，而无需记住复杂的数字 IP 地址的方法。互联网上的每台计算机都有一个独特的 IP 地址用于通信。IP 地址的格式通常是类似于 1.1.1.1 的数字组合，由四组数字构成，每组范围在 0 到 255 之间，并用点分隔。当访问一个网站时，通过 DNS，只需记住类似 baidu.com 的域名，而不必记住数字 IP 地址。 域名层次结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DNS 详解">
+<meta property="og:title" content="DNS 详细解析">
 <meta property="og:url" content="https://cyphersun.github.io/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD8/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="什么是 DNS？什么是 DNS？DNS（域名系统）为我们提供了一种简单的方式，让我们在互联网上与设备通信时无需记住复杂的数字。就像每个房屋都有一个唯一的地址用于接收邮件一样，互联网上的每台计算机也有一个用于通信的唯一地址，称为 IP 地址。IP 地址的格式类似于 104.26.10.229，由 0 到 255 之间的四组数字组成，每组数字之间用句号分隔。当访问一个网站时，记住这组复杂的数字显然不方">
+<meta property="og:description" content="什么是 DNS？域名系统（DNS）提供了一种能够在互联网上与设备通信，而无需记住复杂的数字 IP 地址的方法。互联网上的每台计算机都有一个独特的 IP 地址用于通信。IP 地址的格式通常是类似于 1.1.1.1 的数字组合，由四组数字构成，每组范围在 0 到 255 之间，并用点分隔。当访问一个网站时，通过 DNS，只需记住类似 baidu.com 的域名，而不必记住数字 IP 地址。 域名层次结">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-11-04T09:18:36.000Z">
-<meta property="article:modified_time" content="2024-11-11T09:14:56.798Z">
+<meta property="article:modified_time" content="2024-11-11T10:17:05.216Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >DNS 详解</title>
+<title >DNS 详细解析</title>
 
 <!-- Favicon -->
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-11 10:14:56"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-11 11:17:05"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -227,7 +227,7 @@
                             NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            DNS 详解
+                            DNS 详细解析
                         </h1>
 
                         
@@ -378,30 +378,35 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="什么是-DNS？"><a href="#什么是-DNS？" class="headerlink" title="什么是 DNS？"></a>什么是 DNS？</h2><p>什么是 DNS？<br>DNS（域名系统）为我们提供了一种简单的方式，让我们在互联网上与设备通信时无需记住复杂的数字。就像每个房屋都有一个唯一的地址用于接收邮件一样，互联网上的每台计算机也有一个用于通信的唯一地址，称为 IP 地址。IP 地址的格式类似于 104.26.10.229，由 0 到 255 之间的四组数字组成，每组数字之间用句号分隔。当访问一个网站时，记住这组复杂的数字显然不方便，而这就是 DNS 的作用。通过 DNS，只需记住 tryhackme.com，而不必记住 104.26.10.229。<br><br></p>
-<h2 id="域名层级结构"><a href="#域名层级结构" class="headerlink" title="域名层级结构"></a>域名层级结构</h2><p>域名层级结构<br>一张域名层级结构的示意图，最顶端是根域，向下分支为多个顶级域名，再进一步分支为二级域名。</p>
-<p>顶级域名（TLD，Top-Level Domain）<br>顶级域名是域名的最右侧部分。例如，在 tryhackme.com 中，顶级域名是 .com。顶级域名分为两种：gTLD（通用顶级域名）和 ccTLD（国家代码顶级域名）。历史上，gTLD 用于指明域名的用途，例如 .com 表示商业用途，.org 表示组织机构，.edu 表示教育用途，.gov 表示政府机构；而 ccTLD 用于地理定位，例如 .ca 表示加拿大，.co.uk 表示英国等。由于需求激增，越来越多的 gTLD 被引入，包括 .online、.club、.website、.biz 等。点击此处可查看超过 2000 个 TLD 的完整列表。</p>
-<p>二级域名<br>以 tryhackme.com 为例，.com 是顶级域名，而 tryhackme 是二级域名。在注册域名时，二级域名加上顶级域名的字符总数限制为 63 个字符，并且只能使用 a-z、0-9 和短横线（短横线不能出现在开头或结尾，且不能连续出现）。</p>
-<p>子域名<br>子域名位于二级域名的左侧，并用句号分隔。例如，在 admin.tryhackme.com 中，admin 是子域名。子域名的命名限制与二级域名相同，最多为 63 个字符，只能使用 a-z、0-9 和短横线（短横线不能出现在开头或结尾，且不能连续出现）。可以使用多个句号分隔来创建更长的名称，例如 jupiter.servers.tryhackme.com。但总长度必须在 253 个字符以内。对于域名，可以创建的子域名数量没有限制。</p>
+    <h2 id="什么是-DNS？"><a href="#什么是-DNS？" class="headerlink" title="什么是 DNS？"></a>什么是 DNS？</h2><p>域名系统（DNS）提供了一种能够在互联网上与设备通信，而无需记住复杂的数字 IP 地址的方法。互联网上的每台计算机都有一个独特的 IP 地址用于通信。IP 地址的格式通常是类似于 1.1.1.1 的数字组合，由四组数字构成，每组范围在 0 到 255 之间，并用点分隔。当访问一个网站时，通过 DNS，只需记住类似 baidu.com 的域名，而不必记住数字 IP 地址。<br><br></p>
+<h2 id="域名层次结构"><a href="#域名层次结构" class="headerlink" title="域名层次结构"></a>域名层次结构</h2><p>域名层次结构中根域名位于最上方，向下分支为多个顶级域名（TLD），再进一步分支为二级域名。</p>
+<h3 id="顶级域名（TLD）"><a href="#顶级域名（TLD）" class="headerlink" title="顶级域名（TLD）"></a>顶级域名（TLD）</h3><p>顶级域名（TLD）是域名最右侧的部分。例如，在 baidu.com 中，TLD 是 .com。顶级域名分为两种类型：通用顶级域名（gTLD）和国家代码顶级域名（ccTLD）。</p>
+<p>gTLD 指示域名的用途，如 .com 表示商业用途，.org 表示组织机构，.edu 表示教育机构，.gov 表示政府机构。也新增了许多 gTLD，例如 .news、.store、.blog、.fun 等。<br>ccTLD 用于地理位置区分，如 .cn 表示中国，.us 表示美国。</p>
+<h3 id="二级域名"><a href="#二级域名" class="headerlink" title="二级域名"></a>二级域名</h3><p>在 baidu.com 中，.com 是 TLD，而 baidu 是二级域名。注册域名时，二级域名的长度限制为 63 个字符，字符仅支持 a-z、0-9 和连字符。</p>
+<h3 id="子域名"><a href="#子域名" class="headerlink" title="子域名"></a>子域名</h3><p>子域名位于二级域名的左侧，通过句点分隔。例如，在 tieba.baidu.com 中，tieba 是子域名。子域名的创建规则与二级域名相同，长度限制为 63 个字符，仅支持 a-z、0-9 和连字符。但可以通过多个点分隔子域名来创建更长的名称，如 c.tieba.baidu.com，但域名的总长度必须控制在 253 个字符以内，且子域名的数量没有限制。</p>
 <br>
 
 
 
 
 
-<h2 id="记录类型"><a href="#记录类型" class="headerlink" title="记录类型"></a>记录类型</h2><p>DNS 记录类型<br>DNS 不仅仅用于网站解析，它还包含多种类型的 DNS 记录。以下是一些最常见的记录类型。</p>
-<p>A 记录<br>该记录解析为 IPv4 地址，例如 104.26.10.229。</p>
-<p>AAAA 记录<br>该记录解析为 IPv6 地址，例如 2606:4700:20::681a:be5。</p>
-<p>CNAME 记录<br>该记录解析为另一个域名。例如，TryHackMe 的在线商店子域名 store.tryhackme.com 返回一个 CNAME 记录 shops.shopify.com。随后会对 shops.shopify.com 发起另一个 DNS 请求，以确定其 IP 地址。</p>
-<p>MX 记录<br>该记录解析为处理邮件的服务器地址。例如，tryhackme.com 的 MX 记录可能会返回 alt1.aspmx.l.google.com。MX 记录还包含优先级标记，用于告知客户端按照顺序尝试连接服务器，以便在主服务器不可用时将邮件发送到备用服务器。</p>
-<p>TXT 记录<br>TXT 记录是自由文本字段，可以存储任意文本数据。TXT 记录用途广泛，常见用途包括列出有权代表该域名发送邮件的服务器（这有助于防止垃圾邮件和邮件伪造）。它们还可用于在注册第三方服务时验证域名的所有权。<br><br></p>
-<h2 id="发起请求"><a href="#发起请求" class="headerlink" title="发起请求"></a>发起请求</h2><p>当发起一个 DNS 请求时会发生什么<br>一张示意图展示了文本中描述的流程。</p>
-<p>当请求一个域名时，电脑首先会检查本地缓存，查看是否近期已查询过该地址；如果没有缓存，则会向递归 DNS 服务器发起请求。</p>
-<p>递归 DNS 服务器通常由互联网服务提供商（ISP）提供，但也可以选择自己的 DNS 服务器。该服务器也有一个本地缓存，保存了近期查询的域名记录。如果本地找到结果，服务器会将其返回给电脑，查询过程在此结束（这种情况在 Google、Facebook、Twitter 等热门服务中很常见）。如果请求在本地找不到，接下来的查询将从互联网的根 DNS 服务器开始。</p>
-<p>根服务器作为互联网 DNS 的主干网络，其任务是将请求重定向到合适的顶级域名（TLD）服务器。例如，如果请求 <a target="_blank" rel="noopener" href="http://www.tryhackme.com,根服务器会识别出/">www.tryhackme.com，根服务器会识别出</a> .com 顶级域名，并将请求指向处理 .com 地址的 TLD 服务器。</p>
-<p>TLD 服务器保存关于如何找到权威服务器的记录，而权威服务器会对 DNS 请求做出最终响应。权威服务器通常也称为该域的名称服务器。例如，tryhackme.com 的名称服务器是 kip.ns.cloudflare.com 和 uma.ns.cloudflare.com。通常一个域名会有多个名称服务器，以便在其中一个故障时提供备份。</p>
-<p>权威 DNS 服务器负责存储特定域名的 DNS 记录，并且是更新域名 DNS 记录的地方。根据记录类型，DNS 记录会返回到递归 DNS 服务器，递归服务器会缓存该记录以供将来使用，并将结果传回最初发起请求的客户端。所有 DNS 记录都有一个 TTL（生存时间）值。该值以秒为单位，表示本地应保存响应的时间，过期后需要重新查询。缓存可以减少每次与服务器通信时发起 DNS 请求的频率。<br><br></p>
+<h2 id="记录类型"><a href="#记录类型" class="headerlink" title="记录类型"></a>记录类型</h2><h3 id="DNS-记录类型"><a href="#DNS-记录类型" class="headerlink" title="DNS 记录类型"></a>DNS 记录类型</h3><p>DNS 还包括多种记录类型。以下是一些常见的 DNS 记录类型：</p>
+<p><strong>A 记录</strong><br>A 记录解析域名为 IPv4 地址，例如 1.1.1.1</p>
+<p><strong>AAAA 记录</strong><br>AAAA 记录解析域名为 IPv6 地址，例如 2024:1104:10::22ab</p>
+<p><strong>CNAME 记录</strong><br>CNAME 记录将域名指向另一个域名。例如，baidu 贴吧使用子域名 <a target="_blank" rel="noopener" href="http://www.tieba.com,它的/">www.tieba.com，它的</a> CNAME 记录可能指向 tieba.baidu.com。然后对 tieba.baidu.com 发起另一个 DNS 请求以获取实际 IP 地址。</p>
+<p><strong>MX 记录</strong><br>MX 记录用于指定负责处理邮件的服务器地址。例如，google.com 的 MX 记录可能返回 aspmx.l.google.com。MX 记录还包含优先级标记，指示客户端按照优先级顺序选择邮件服务器，这在主服务器故障时可将邮件重定向到备用服务器。</p>
+<p><strong>TXT 记录</strong><br>TXT 记录是自由文本字段，可存储任意文本信息，常用于列出有权代表该域发送邮件的服务器，帮助防止垃圾邮件和伪造邮件。TXT 记录也用于域名所有权验证，例如在注册第三方服务时。<br><br></p>
+<h2 id="发起请求"><a href="#发起请求" class="headerlink" title="发起请求"></a>发起请求</h2><h3 id="当发起-DNS-请求时会发生什么"><a href="#当发起-DNS-请求时会发生什么" class="headerlink" title="当发起 DNS 请求时会发生什么"></a>当发起 DNS 请求时会发生什么</h3><p>当请求一个域名时，计算机会先检查本地缓存，查看是否近期查询过该地址。如果有缓存，直接使用缓存记录；否则，会向递归 DNS 服务器发起请求。</p>
+<p>递归 DNS 服务器通常由互联网服务提供商（ISP）提供，但用户也可以选择其他递归服务器。该服务器也有一个本地缓存。如果缓存中存在结果，则直接返回给计算机，结束查询。若未找到结果，递归服务器会开始查询过程，从互联网的根 DNS 服务器开始。</p>
+<p>根服务器是 DNS 的核心，将请求引导至正确的顶级域名（TLD）服务器。例如，查询 <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 时，根服务器识别顶级域名 .com，并将请求引导至管理 .com 的 TLD 服务器。</p>
+<p>TLD 服务器保存指向权威服务器的记录。权威服务器&#x2F;名称服务器是负责特定域名的服务器，例如 baidu.com 的名称服务器为 ns1.baidu.com 到 ns6.baidu.com。域名会有多个名称服务器，确保主服务器故障时有备选。</p>
+<p>权威 DNS 服务器存储并维护特定域名的 DNS 记录。根据请求的记录类型，权威服务器将结果传回递归 DNS 服务器，递归服务器缓存结果以备将来使用，并最终将结果返回给最初发起请求的客户端。所有 DNS 记录都有一个生存时间（TTL）值，表示该记录在缓存中保存以秒为单位的时间。TTL 到期后，需重新发起查询。缓存机制减少了重复请求，提高了通信效率。</p>
+<br>
 
+
+<!-- https://tryhackme.com/r/room/dnsindetail -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除主语，括号，链接，优化例子）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->
 </article>
     
     

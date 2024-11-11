@@ -7,20 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="SSH 访问 Linux什么是 SSH 及其工作原理？Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式 SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密 使用 SSH 需要两个信息：远程机器的 IP">
+<meta name="description" content="Linux 背景知识与 Windows 等其他操作系统（OS）相比，各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 是开源的，因此有许多不同的 Linux 发行版 基础命令   命令 描述    echo 输出提供的任何文本   whoami 查看当前登录的用户身份   使用 echo 命令使用 echo 命令输出字符串 12echo &quot;Hello Worl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux 基础知识 第二部分">
-<meta property="og:url" content="https://cyphersun.github.io/2024/10/27/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-2/index.html">
+<meta property="og:title" content="Linux 基础知识 第一部分">
+<meta property="og:url" content="https://cyphersun.github.io/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-1/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="SSH 访问 Linux什么是 SSH 及其工作原理？Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式 SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密 使用 SSH 需要两个信息：远程机器的 IP">
+<meta property="og:description" content="Linux 背景知识与 Windows 等其他操作系统（OS）相比，各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 是开源的，因此有许多不同的 Linux 发行版 基础命令   命令 描述    echo 输出提供的任何文本   whoami 查看当前登录的用户身份   使用 echo 命令使用 echo 命令输出字符串 12echo &quot;Hello Worl">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-10-27T16:39:09.000Z">
-<meta property="article:modified_time" content="2024-11-10T07:50:05.567Z">
+<meta property="article:published_time" content="2024-10-27T14:47:48.000Z">
+<meta property="article:modified_time" content="2024-11-11T10:16:56.573Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >Linux 基础知识 第二部分</title>
+<title >Linux 基础知识 第一部分</title>
 
 <!-- Favicon -->
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-10 08:50:05"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-11 11:16:56"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -227,7 +227,7 @@
                             NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            Linux 基础知识 第二部分
+                            Linux 基础知识 第一部分
                         </h1>
 
                         
@@ -366,7 +366,7 @@
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-clock trm-icon"></i><br>
-            17:39
+            15:47
         </div>
     </div>
     <div class="col-sm-4">
@@ -378,24 +378,8 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="SSH-访问-Linux"><a href="#SSH-访问-Linux" class="headerlink" title="SSH 访问 Linux"></a>SSH 访问 Linux</h2><h3 id="什么是-SSH-及其工作原理？"><a href="#什么是-SSH-及其工作原理？" class="headerlink" title="什么是 SSH 及其工作原理？"></a>什么是 SSH 及其工作原理？</h3><p>Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式</p>
-<p>SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密</p>
-<p>使用 SSH 需要两个信息：<br>远程机器的 IP 地址<br>远程机器上有效账户的登录凭证</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh username@1.1.1.1</span><br><span class="line"><span class="comment"># ssh [用户名]@[IP地址]</span></span><br></pre></td></tr></table></figure>
-
-<p>输入 yes 信任主机，输入账户的密码。连接成功后，任何执行的命令将会在远程机器上运行</p>
-<p>在 SSH 登录中输入密码时，不会看到任何文本或符号不会有任何反馈，只需输入密码后回车登录</p>
-<p>输入exit断开连接<br><br></p>
-<h2 id="标志和开关简介（flags-and-switches）"><a href="#标志和开关简介（flags-and-switches）" class="headerlink" title="标志和开关简介（flags and switches）"></a>标志和开关简介（flags and switches）</h2><p>大多数命令都允许使用参数，这些参数由连字符和一个特定的关键字标识，这些关键字被称为标志或开关。在使用命令时，除非另有指定，否则它将执行默认行为。</p>
-<p>使用 ls -a 命令查看所有文件和文件夹，包括以 . 开头的隐藏文件和文件夹<br>使用 ls –help 命令列出 ls 命令列出提供简短的描述和使用示例的使用参数选项</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br><span class="line"><span class="comment"># 列出当前目录中的所有文件和目录，包括隐藏文件（以 . 开头的文件）</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> --<span class="built_in">help</span></span><br><span class="line"><span class="comment"># 显示 ls 命令的帮助信息，包括可用选项及其说明</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="使用-man-命令"><a href="#使用-man-命令" class="headerlink" title="使用 man 命令"></a>使用 man 命令</h3><p>手册页（man page）包含 Linux 系统命令和应用程序的信息，可直接在 Linux 上或网站访问</p>
-<p>使用 man 命令来查看手册页，可搭配其他命令一起使用</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">man <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 查看 ls 命令的手册页，获取详细信息和选项说明</span></span><br></pre></td></tr></table></figure>
-
-<p>man 命令搭配其他命令可以查看 Linux 上几乎所有的命令，使用上下箭头阅读，q 退出<br><br></p>
-<h2 id="文件系统交互命令"><a href="#文件系统交互命令" class="headerlink" title="文件系统交互命令"></a>文件系统交互命令</h2><table>
+    <h2 id="Linux-背景知识"><a href="#Linux-背景知识" class="headerlink" title="Linux 背景知识"></a>Linux 背景知识</h2><p>与 Windows 等其他操作系统（OS）相比，各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 是开源的，因此有许多不同的 Linux 发行版<br><br></p>
+<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><table>
 <thead>
 <tr>
 <th>命令</th>
@@ -403,72 +387,141 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>touch</td>
-<td>创建新文件</td>
+<td>echo</td>
+<td>输出提供的任何文本</td>
 </tr>
 <tr>
-<td>mkdir</td>
-<td>创建新文件夹&#x2F;目录（make directory）</td>
-</tr>
-<tr>
-<td>cp</td>
-<td>复制文件或文件夹（copy）</td>
-</tr>
-<tr>
-<td>mv</td>
-<td>移动文件或文件夹或重命名（move）</td>
-</tr>
-<tr>
-<td>rm</td>
-<td>删除文件或文件夹（remove）</td>
-</tr>
-<tr>
-<td>file</td>
-<td>确定文件的类型</td>
+<td>whoami</td>
+<td>查看当前登录的用户身份</td>
 </tr>
 </tbody></table>
-<p>以上所有命令都可搭配使用完整的文件路径</p>
-<h3 id="使用-touch-和-mkdir-命令"><a href="#使用-touch-和-mkdir-命令" class="headerlink" title="使用 touch 和 mkdir 命令"></a>使用 touch 和 mkdir 命令</h3><p>使用 touch 命令创建创建新文件<br>使用 mkdir 命令创建新文件夹&#x2F;目录</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
-
-<p>使用 echo 命令或 nano 等文本编辑器在文件中添加内容</p>
-<h3 id="使用-rm-命令"><a href="#使用-rm-命令" class="headerlink" title="使用 rm 命令"></a>使用 rm 命令</h3><p>使用 rm 命令删除文件<br>使用 rm -R 命令删除文件夹</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -R folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用-echo-命令"><a href="#使用-echo-命令" class="headerlink" title="使用 echo 命令"></a>使用 echo 命令</h3><p>使用 echo 命令输出字符串</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span></span><br><span class="line"><span class="comment"># 输出 Hello World!</span></span><br></pre></td></tr></table></figure>
 
 
-<h3 id="使用-cp-和-mv-命令"><a href="#使用-cp-和-mv-命令" class="headerlink" title="使用 cp 和 mv 命令"></a>使用 cp 和 mv 命令</h3><p>使用 cp 命令将文件内容复制到新的文件中，第一个参数为已存在文件的名称，第二个参数为复制新文件指定的名称。如果目标文件不存在，将自动创建新文件<br>使用 cp -r 命令将文件夹及其内容复制到新的文件夹中，第一个参数为已存在文件夹的名称，第二个参数为复制新文件夹指定的名称。如果目标文件夹不存在，将自动创建新文件夹</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 file2</span><br><span class="line"><span class="comment"># 将 file1 的内容复制到 file2，如果 file2 不存在会自动创建</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> -r folder1 folder2</span><br><span class="line"><span class="comment"># 将 folder1 文件夹及其内容复制到 folder2，如果 folder2 不存在会自动创建</span></span><br></pre></td></tr></table></figure>
-
-
-<p>使用 mv 命令将文件或文件夹移动到新文件夹，或者对第二个参数提供的文件或文件夹名称进行重命名，不会创建新文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mv</span> file1 file2</span><br><span class="line"><span class="comment"># 如果 file2 是一个新名称，会将 file1 重命名为 file2</span></span><br><span class="line"><span class="comment"># 如果 file2 是一个已存在的目录，会将 file1 移动到该目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mv</span> folder1 folder2</span><br><span class="line"><span class="comment"># 如果 folder2 是一个新名称，会将 folder1 重命名为 folder2</span></span><br><span class="line"><span class="comment"># 如果 folder2 是一个已存在的目录，会将 folder1 移动到该目录</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="使用-file-命令"><a href="#使用-file-命令" class="headerlink" title="使用 file 命令"></a>使用 file 命令</h3><p>使用 file 命令确定文件或文件夹的类型，返回文件的类型描述</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">file file1</span><br><span class="line"><span class="comment"># 查看 file1 的文件类型，并显示类型信息</span></span><br><span class="line"></span><br><span class="line">file folder1</span><br><span class="line"><span class="comment"># 查看 folder1 的文件类型，如果为文件夹，将显示为 &quot;directory&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用-whoami-命令"><a href="#使用-whoami-命令" class="headerlink" title="使用 whoami 命令"></a>使用 whoami 命令</h3><p>使用 whoami 命令查看当前登录的用户身份 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">whoami</span></span><br><span class="line"><span class="comment"># 查询当前用户</span></span><br></pre></td></tr></table></figure>
 
 <br>
 
 
 
 
-<h2 id="权限基础知识"><a href="#权限基础知识" class="headerlink" title="权限基础知识"></a>权限基础知识</h2><p>使用 ls -lh 命令列出目录中所有文件的详细信息，包括文件权限、大小、所有者、修改时间等</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -lh</span><br><span class="line"><span class="comment"># 以详细格式列出当前目录中的所有文件信息，包括权限、大小和修改时间</span></span><br></pre></td></tr></table></figure>
 
-<p>文件或文件夹有几种特性，特性决定了允许执行哪些操作，以及哪个用户或用户组有权限执行操作：</p>
-<p>读取 (Read)<br>写入 (Write)<br>执行 (Execute)</p>
-<h3 id="用户和用户组之间的区别"><a href="#用户和用户组之间的区别" class="headerlink" title="用户和用户组之间的区别"></a>用户和用户组之间的区别</h3><p>Linux 的优点在于权限非常细化，通过设置权限，一组用户可以对同一个文件拥有相同或不同的权限，而不会影响文件的所有者</p>
-<h3 id="使用-su-命令"><a href="#使用-su-命令" class="headerlink" title="使用 su 命令"></a>使用 su 命令</h3><p>通过目标用户的用户名和密码进行切换账户</p>
-<p>使用 su 命令需要输入用户的密码来切换到指定的用户账户，默认情况下不会加载该用户的完整环境变量<br>使用 su -l 命令需要输入用户的密码，它会完全切换到指定用户的实际登录环境，加载所有新用户的属性等</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">su user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，不会加载该用户的完整环境变量</span></span><br><span class="line"></span><br><span class="line">su -l user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，加载该用户的完整环境变量和配置</span></span><br></pre></td></tr></table></figure>
+<h2 id="与文件系统的交互命令"><a href="#与文件系统的交互命令" class="headerlink" title="与文件系统的交互命令"></a>与文件系统的交互命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ls</td>
+<td>列出当前目录中的文件（listing）</td>
+</tr>
+<tr>
+<td>cd</td>
+<td>更改当前目录（change directory）</td>
+</tr>
+<tr>
+<td>cat</td>
+<td>输出文件内容（concatenate）</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>显示当前工作目录的完整路径（print working directory）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-ls-命令"><a href="#使用-ls-命令" class="headerlink" title="使用 ls 命令"></a>使用 ls 命令</h3><p>使用 ls 命令来列出当前目录的文件<br>使用 ls 命令和目录名称不进入该目录列出目录的文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 列出当前目录下的所有文件和文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> folder1</span><br><span class="line"><span class="comment"># 列出 folder1 目录下的所有文件和文件夹</span></span><br></pre></td></tr></table></figure>
 
-<p>如果没有指定用户，默认情况下会切换到 root 用户。<br><br></p>
-<h2 id="常见目录"><a href="#常见目录" class="headerlink" title="常见目录"></a>常见目录</h2><h3 id="etc"><a href="#etc" class="headerlink" title="&#x2F;etc"></a>&#x2F;etc</h3><p>&#x2F;etc 目录（“etc” 代表 etcetera）是存放操作系统使用的配置和系统文件位置</p>
-<p>在 &#x2F;etc 文件夹中包含 passwd 和 shadow 文件，&#x2F;etc&#x2F;passwd 文件存储了用户账户的信息，&#x2F;etc&#x2F;shadow 文件存储了每个用户的加密哈希密码。系统常使 SHA-512 或其他哈希算法对密码进行加密</p>
-<h3 id="var"><a href="#var" class="headerlink" title="&#x2F;var"></a>&#x2F;var</h3><p>&#x2F;var 目录（“var” 代表 variable data）是存放由系统上运行的服务或应用程序访问、修改或生成的数据</p>
-<h3 id="root"><a href="#root" class="headerlink" title="&#x2F;root"></a>&#x2F;root</h3><p>&#x2F;root 目录是 root 用户系统管理员的主目录，它与普通用户的主目录 &#x2F;home 不同，&#x2F;root 是专门为 root 用户保留的</p>
-<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录（“tmp” 代表 temporary）是用于存放仅需临时访问的文件和数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除。&#x2F;tmp 目录在默认情况下任何用户都有写入权限，&#x2F;tmp 是存放枚举脚本和其他工具的好位置<br><br></p>
+
+
+<h3 id="使用-cd-命令"><a href="#使用-cd-命令" class="headerlink" title="使用 cd 命令"></a>使用 cd 命令</h3><p>使用 cd 命令更改当前目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 进入 folder1 目录</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-cat-命令"><a href="#使用-cat-命令" class="headerlink" title="使用 cat 命令"></a>使用 cat 命令</h3><p>使用 cat 命令来输出文件内容<br>使用 cat 命令和目录路径不进入该目录输出目录中文件内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> text1.txt</span><br><span class="line"><span class="comment"># 显示当前目录 text1.txt 文件的内容</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /home/folder1/text1.txt</span><br><span class="line"><span class="comment"># 显示 /home/folder1/text1.txt 文件的内容</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-pwd-命令"><a href="#使用-pwd-命令" class="headerlink" title="使用 pwd 命令"></a>使用 pwd 命令</h3><p>使用 pwd 命令显示当前工作目录的完整路径</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="comment"># 显示当前工作目录的完整路径</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="查找文件命令"><a href="#查找文件命令" class="headerlink" title="查找文件命令"></a>查找文件命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>find</td>
+<td>在当前目录所有子目录中搜索文件</td>
+</tr>
+<tr>
+<td>grep</td>
+<td>搜索整个文件中包含特定值的行（Global Regular Expression Print）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-find-命令"><a href="#使用-find-命令" class="headerlink" title="使用 find 命令"></a>使用 find 命令</h3><p>如果记得文件名，使用 find -name 命令在当前目录所有子目录中搜索文件<br>如果不记得文件名，可搜索所有具有特定扩展名的文件，使用 find -name 命令和通配符（*）来搜索所有以特定扩展名结尾的文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">find -name txt1.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找名为 txt1.txt 的文件</span></span><br><span class="line"></span><br><span class="line">find -name *.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找所有以 .txt 结尾的文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-grep-命令"><a href="#使用-grep-命令" class="headerlink" title="使用 grep 命令"></a>使用 grep 命令</h3><p>使用 grep 命令搜索整个文件内容来查找包含特定值的行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">grep <span class="string">&quot;Hello World!&quot;</span> txt1.txt</span><br><span class="line"><span class="comment"># 在 txt1.txt 文件中搜索包含 &quot;Hello World!&quot;</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p>字符串内注意需要完全符合大小写</p>
+<h2 id="Shell-操作符"><a href="#Shell-操作符" class="headerlink" title="Shell 操作符"></a>Shell 操作符</h2><table>
+<thead>
+<tr>
+<th>符号&#x2F;操作符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td>执行命令并在后台运行</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>将多个命令结合在一行中执行（仅前一命令成功执行才能继续）</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>一个重定向符，可以将某个命令的输出重定向到其他地方（覆盖原有内容）</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>功能类似于 &gt;，但会将输出追加而不是替换（不会覆盖原有内容）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-操作符"><a href="#使用-操作符" class="headerlink" title="使用 &amp; 操作符"></a>使用 &amp; 操作符</h3><p>使用 &amp; 操作符执行命令并在后台运行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget http://example.com/txt1.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/txt1.txt 文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-操作符-1"><a href="#使用-操作符-1" class="headerlink" title="使用 &amp;&amp; 操作符"></a>使用 &amp;&amp; 操作符</h3><p>使用 &amp;&amp; 操作符创建命令链，只有第一个命令成功执行后，第二个命令才会执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> folder1 &amp;&amp; <span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 创建 folder1 文件夹，并进入该文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-操作符-2"><a href="#使用-操作符-2" class="headerlink" title="使用 &gt; 操作符"></a>使用 &gt; 操作符</h3><p>使用 &gt; 操作符输出重定向，可以将命令的输出保存到指定的文件或其他地方</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
+
+<p>如果文件已存在，内容会被替换<br>如果文件不存在，会创建该文件，并将输出写入其中</p>
+<h3 id="使用-操作符-3"><a href="#使用-操作符-3" class="headerlink" title="使用 &gt;&gt; 操作符"></a>使用 &gt;&gt; 操作符</h3><p>使用 &gt;&gt; 操作符输出重定向，并会将内容追加到文件末尾，而不会覆盖文件原有的内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt;&gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（不会覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
 
 </article>
     
@@ -486,7 +539,7 @@
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/10/27/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-3/" class="trm-cover-frame trm-anima-link">
+        <a href="/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-2/" class="trm-cover-frame trm-anima-link">
             
             
                 <div class="trm-cover-date">
@@ -498,19 +551,19 @@
         
         <div class="trm-card-descr">
             <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD/">
-                    基本技能
+                <a href=" /categories/%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD/">
+                    基础技能
                 </a>
             </div>
             <h5>
-                <a href="/2024/10/27/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-3/" class="trm-anima-link">
-                    Linux 基础知识 第三部分
+                <a href="/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-2/" class="trm-anima-link">
+                    Linux 基础知识 第二部分
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
                 <li>24/10/27</li>
-                <li>22:03</li>
+                <li>17:39</li>
                 
                 
             </ul>
@@ -521,11 +574,11 @@
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/10/27/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-1/" class="trm-cover-frame trm-anima-link">
+        <a href="/2024/10/26/%E7%BD%91%E7%AB%99OSINT_Framework/" class="trm-cover-frame trm-anima-link">
             
             
                 <div class="trm-cover-date">
-                    <div class="trm-cover-day">27</div>
+                    <div class="trm-cover-day">26</div>
                     <div class="trm-cover-month">2024/10</div>
                 </div>
             
@@ -533,19 +586,19 @@
         
         <div class="trm-card-descr">
             <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD/">
-                    基本技能
+                <a href=" /categories/%E7%BD%91%E7%AB%99/">
+                    网站
                 </a>
             </div>
             <h5>
-                <a href="/2024/10/27/T2-%E5%9F%BA%E6%9C%AC%E6%8A%80%E8%83%BD1-1/" class="trm-anima-link">
-                    Linux 基础知识 第一部分
+                <a href="/2024/10/26/%E7%BD%91%E7%AB%99OSINT_Framework/" class="trm-anima-link">
+                    OSINT Framework
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
-                <li>24/10/27</li>
-                <li>15:47</li>
+                <li>24/10/26</li>
+                <li>15:46</li>
                 
                 
             </ul>
