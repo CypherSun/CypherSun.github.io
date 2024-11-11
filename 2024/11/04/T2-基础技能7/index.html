@@ -7,15 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="什么是 HTTP(S)？什么是 HTTP？（超文本传输协议） HTTP 是浏览网站时使用的协议，由蒂姆·伯纳斯-李及其团队在 1989 到 1991 年间开发。HTTP 定义了与网页服务器进行通信的规则，用于传输网页数据，比如 HTML、图片、视频等内容。 什么是 HTTPS？（安全超文本传输协议） HTTPS 是 HTTP 的安全版本。HTTPS 数据是加密的，这不仅可以防止他人查看您接收和发送">
+<meta name="description" content="什么是 HTTP(S)？什么是超文本传输协议（HTTP）？HTTP 是浏览网站时使用的通信协议，由蒂姆·伯纳斯-李及其团队在 1989 至 1991 年间研发。它定义了 Web 客户端，如浏览器与服务器之间交换网页数据的规则，用于传输 HTML、图片、视频等内容。 什么是超文本传输安全协议（HTTPS）？HTTPS 是 HTTP 的安全版本，通过加密保护数据传输，防止他人查看发送和接收的数据。HT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTTP 详解">
 <meta property="og:url" content="https://cyphersun.github.io/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD7/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="什么是 HTTP(S)？什么是 HTTP？（超文本传输协议） HTTP 是浏览网站时使用的协议，由蒂姆·伯纳斯-李及其团队在 1989 到 1991 年间开发。HTTP 定义了与网页服务器进行通信的规则，用于传输网页数据，比如 HTML、图片、视频等内容。 什么是 HTTPS？（安全超文本传输协议） HTTPS 是 HTTP 的安全版本。HTTPS 数据是加密的，这不仅可以防止他人查看您接收和发送">
+<meta property="og:description" content="什么是 HTTP(S)？什么是超文本传输协议（HTTP）？HTTP 是浏览网站时使用的通信协议，由蒂姆·伯纳斯-李及其团队在 1989 至 1991 年间研发。它定义了 Web 客户端，如浏览器与服务器之间交换网页数据的规则，用于传输 HTML、图片、视频等内容。 什么是超文本传输安全协议（HTTPS）？HTTPS 是 HTTP 的安全版本，通过加密保护数据传输，防止他人查看发送和接收的数据。HT">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-11-04T08:37:19.000Z">
-<meta property="article:modified_time" content="2024-11-06T12:43:23.647Z">
+<meta property="article:modified_time" content="2024-11-11T14:33:00.236Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-06 13:43:23"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-11 15:33:00"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -378,76 +378,56 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="什么是-HTTP-S-？"><a href="#什么是-HTTP-S-？" class="headerlink" title="什么是 HTTP(S)？"></a>什么是 HTTP(S)？</h2><p>什么是 HTTP？（超文本传输协议）</p>
-<p>HTTP 是浏览网站时使用的协议，由蒂姆·伯纳斯-李及其团队在 1989 到 1991 年间开发。HTTP 定义了与网页服务器进行通信的规则，用于传输网页数据，比如 HTML、图片、视频等内容。</p>
-<p>什么是 HTTPS？（安全超文本传输协议）</p>
-<p>HTTPS 是 HTTP 的安全版本。HTTPS 数据是加密的，这不仅可以防止他人查看您接收和发送的数据，还能确保您连接的是真正的网页服务器，而不是冒充的服务器。<br><br></p>
-<h2 id="请求和响应"><a href="#请求和响应" class="headerlink" title="请求和响应"></a>请求和响应</h2><p>当我们访问网站时，浏览器需要向网页服务器请求诸如 HTML、图片等资源，并下载相应的响应。在此之前，需要明确告诉浏览器如何以及从哪里获取这些资源，这就是 URL 的作用。</p>
-<p>什么是 URL？（统一资源定位符）<br>如果你使用过互联网，就一定用过 URL。URL 主要是关于如何在互联网上访问资源的指令。下面的图片展示了 URL 的不同部分及其作用（每次请求时不一定会用到所有部分）。</p>
-<p>一个示例 URL 的结构图，其中 http 是协议（Scheme），user:password 是用户信息，tryhackme.com 是域名或主机，80 是端口，view-room 是路径，?id&#x3D;1 是查询字符串，#task3 是片段。完整地址是 <a target="_blank" rel="noopener" href="http://user:password@tryhackme.com/view-room?id=1#task3%E3%80%82">http://user:password@tryhackme.com:80/view-room?id=1#task3。</a></p>
-<p>协议（Scheme）： 指示用于访问资源的协议，如 HTTP、HTTPS、FTP（文件传输协议）。<br>用户（User）： 某些服务需要认证登录，可以在 URL 中加入用户名和密码进行登录。<br>主机（Host）： 要访问的服务器的域名或 IP 地址。<br>端口（Port）： 连接的端口，通常 HTTP 为 80，HTTPS 为 443，但可以是 1 - 65535 范围内的任意端口。<br>路径（Path）： 要访问的资源的文件名或位置。<br>查询字符串（Query String）： 可以传递给请求路径的额外信息。例如 &#x2F;blog?id&#x3D;1 表示请求 ID 为 1 的博客文章。<br>片段（Fragment）： 对请求页面中某个具体位置的引用。常用于长页面，用户可以通过直接链接到该部分以便立即查看。<br>发起请求<br>仅需一行即可向网页服务器发起请求，例如 GET &#x2F; HTTP&#x2F;1.1。</p>
-<p>然而，为了获得更丰富的网页体验，还需要发送其他数据。这些数据通过头部信息（headers）来传递，头部包含了传递给通信服务器的附加信息，我们将在“头部”任务中详细介绍。</p>
-<p>请求示例：<br>makefile<br>复制代码<br>GET &#x2F; HTTP&#x2F;1.1<br>Host: tryhackme.com<br>User-Agent: Mozilla&#x2F;5.0 Firefox&#x2F;87.0<br>Referer: <a target="_blank" rel="noopener" href="https://tryhackme.com/">https://tryhackme.com/</a><br>对每行的说明：</p>
-<p>第 1 行： 发送 GET 方法（详情请参见 HTTP 方法任务），请求主页 &#x2F;，并告知服务器我们使用的是 HTTP 1.1 协议版本。<br>第 2 行： 告诉服务器请求的是 tryhackme.com 网站。<br>第 3 行： 告诉服务器我们使用的是 Firefox 87 浏览器。<br>第 4 行： 告诉服务器推荐我们到这个页面的来源是 <a target="_blank" rel="noopener" href="https://tryhackme.com./">https://tryhackme.com。</a><br>第 5 行： HTTP 请求总是以空行结束，以告知服务器请求已完成。<br>响应示例：<br>php<br>复制代码<br>HTTP&#x2F;1.1 200 OK<br>Server: nginx&#x2F;1.15.8<br>Date: Fri, 09 Apr 2021 13:34:03 GMT<br>Content-Type: text&#x2F;html<br>Content-Length: 98  </p>
-<html>  
-<head>  
-    <title>TryHackMe</title>  
-</head>  
-<body>  
-    Welcome To TryHackMe.com  
-</body>  
-</html>  
+    <h2 id="什么是-HTTP-S-？"><a href="#什么是-HTTP-S-？" class="headerlink" title="什么是 HTTP(S)？"></a>什么是 HTTP(S)？</h2><h3 id="什么是超文本传输协议（HTTP）？"><a href="#什么是超文本传输协议（HTTP）？" class="headerlink" title="什么是超文本传输协议（HTTP）？"></a>什么是超文本传输协议（HTTP）？</h3><p>HTTP 是浏览网站时使用的通信协议，由蒂姆·伯纳斯-李及其团队在 1989 至 1991 年间研发。它定义了 Web 客户端，如浏览器与服务器之间交换网页数据的规则，用于传输 HTML、图片、视频等内容。</p>
+<h3 id="什么是超文本传输安全协议（HTTPS）？"><a href="#什么是超文本传输安全协议（HTTPS）？" class="headerlink" title="什么是超文本传输安全协议（HTTPS）？"></a>什么是超文本传输安全协议（HTTPS）？</h3><p>HTTPS 是 HTTP 的安全版本，通过加密保护数据传输，防止他人查看发送和接收的数据。HTTPS 能确保与合法的 Web 服务器连接，而不是被伪装的服务器。<br><br></p>
+<h2 id="请求和响应"><a href="#请求和响应" class="headerlink" title="请求和响应"></a>请求和响应</h2><p>当访问一个网站时，浏览器向 Web 服务器发送请求，以获取 HTML、图片等资源，并接收服务器返回的响应。浏览器需要通过 URL 知道如何及从何处获取资源。</p>
+<h3 id="什么是统一资源定位符（URL）？"><a href="#什么是统一资源定位符（URL）？" class="headerlink" title="什么是统一资源定位符（URL）？"></a>什么是统一资源定位符（URL）？</h3><p>URL 是一组指令，用于指定如何在互联网上访问特定资源。每次请求的 URL 可能包含不同的组成部分。</p>
+<p>URL 的各个部分如下所示，不一定每次请求都包含所有部分：</p>
+<p>完整的 URL 示例：<a target="_blank" rel="noopener" href="http://user:password@cyphersun.com/blog?id=1#tag3">http://user:password@cyphersun.com:80/blog?id=1#tag3</a></p>
+<p>http 是<strong>协议</strong>（scheme）<br>user 是<strong>用户信息</strong>（user）<br>cyphersun.com 是<strong>域名或主机</strong>（host）<br>80 是<strong>端口</strong>（port）<br>blog 是<strong>路径</strong>（path）<br>?id&#x3D;1 是<strong>查询字符串</strong>（query string）<br>#tag3 是<strong>片段</strong>（fragment）</p>
+<p>协议（Scheme）：用于指定访问资源的协议，例如 HTTP、HTTPS、文件传输协议（FTP）。<br>用户信息（User）：某些服务需要身份验证，可以在 URL 中包含用户名和密码。<br>主机（Host）：表示服务器的域名或 IP 地址，即希望访问的资源所在的位置。<br>端口（Port）：连接时使用的端口号，HTTP 默认端口为 80，HTTPS 为 443，也可以是 1 至 65535 之间的其他端口。<br>路径（Path）：表示要访问的资源的文件名或所在位置。<br>查询字符串（Query String）：向请求路径传递的附加信息，例如 &#x2F;blog?id&#x3D;1 表示请求 ID 为 1 的博客文章。<br>片段（Fragment）：引用页面内的特定位置，通常用于帮助用户直接跳转到较长内容页面的某一部分。</p>
+<h3 id="发起请求"><a href="#发起请求" class="headerlink" title="发起请求"></a>发起请求</h3><p>可以用一行代码向 Web 服务器发起请求：GET &#x2F; HTTP&#x2F;1.1。为了实现更好的 Web 体验，需要附加一些额外数据，这些数据通过头部发送。头部包含了额外的信息供 Web 服务器使用。</p>
+<p><strong>请求示例</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">GET / HTTP/1.1</span><br><span class="line">Host: cyphersun.github.io</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36</span><br><span class="line">Referer: https://www.google.com/search?q=cyphersun+blog</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>对每行的说明：</p>
-<p>第 1 行： HTTP&#x2F;1.1 是服务器使用的 HTTP 协议版本，后接 HTTP 状态码 “200 OK”，表示请求成功。<br>第 2 行： 服务器的软件类型及版本号。<br>第 3 行： 服务器的当前日期、时间和时区。<br>第 4 行： Content-Type 告知客户端即将发送的数据类型。<br>第 5 行： Content-Length 告知客户端响应数据长度，以确认数据无缺失。<br>第 6 行： HTTP 响应包含一个空行，表示响应结束。<br>第 7-14 行： 所请求的内容，本例中是主页。<br><br></p>
-<h2 id="HTTP-方法"><a href="#HTTP-方法" class="headerlink" title="HTTP 方法"></a>HTTP 方法</h2><p>HTTP 方法是客户端在发起 HTTP 请求时用来表示其预期操作的一种方式。HTTP 方法有很多种，但我们将介绍最常用的几种，尤其是 GET 和 POST 方法。</p>
-<p>GET 请求<br>用于从网页服务器获取信息。</p>
-<p>POST 请求<br>用于向网页服务器提交数据，并可能创建新的记录。</p>
-<p>PUT 请求<br>用于向网页服务器提交数据以更新信息。</p>
-<p>DELETE 请求<br>用于从网页服务器删除信息或记录。</p>
+<p>逐行解析该请求：</p>
+<p>第 1 行：使用 GET 方法，请求路径为 &#x2F;，即主页，并指定使用 HTTP 1.1 版本协议。<br>第 2 行：通过 Host 头部告知 Web 服务器，目标站点是 cyphersun.github.io。<br>第 3 行：通过 User-Agent 头部告知 Web 服务器，使用的是 Chrome 浏览器的 130.0.0.0 版本。<br>第 4 行：通过 Referer 头部告知 Web 服务器，是从 <a target="_blank" rel="noopener" href="https://www.google.com/search?q=cyphersun+blog">https://www.google.com/search?q=cyphersun+blog</a> 页面访问的。<br>第 5 行：HTTP 请求以空行结尾，表明请求内容已结束。</p>
+<p><strong>响应示例</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Server: GitHub.com</span><br><span class="line">Date: Mon, 11 Nov 2024 12:19:48 GMT</span><br><span class="line">Content-Type: text/html</span><br><span class="line">Content-Length: 10827</span><br><span class="line"></span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;<span class="built_in">head</span>&gt;</span><br><span class="line">    &lt;title&gt;CypherSun&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    I`m a cybersecurity engineer</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>逐行解析该响应：</p>
+<p>第 1 行：HTTP&#x2F;1.1 表示服务器使用的 HTTP 协议版本，状态码 200 OK 表明请求成功。<br>第 2 行：Server 头部告知客户端，Web 服务器使用的是来自 GitHub 的服务器。<br>第 3 行：Date 头部表示服务器当前的日期、时间和时区。<br>第 4 行：Content-Type 头部告知客户端发送的数据类型，例如 HTML、图片、视频、PDF 等。<br>第 5 行：Content-Length 头部告诉客户端响应内容的长度，方便确认数据完整。<br>第 6 行：HTTP 响应以空行结束，表示头部已结束，下面开始为内容。<br>第 7-14 行：请求的资源内容，示例中为简单的 HTML 内容。<br><br></p>
+<h2 id="HTTP-方法"><a href="#HTTP-方法" class="headerlink" title="HTTP 方法"></a>HTTP 方法</h2><p>HTTP 方法是客户端在发起 HTTP 请求时，用来表示其预期操作的一种方式。HTTP 最常用的方法主要包括 GET 和 POST</p>
+<p><strong>GET 请求</strong><br>用于从 Web 服务器获取信息，通常用于请求数据，而不对服务器上的数据进行任何修改。GET 请求一般不包含请求体，所有参数都包含在 URL 中。</p>
+<p><strong>POST 请求</strong><br>用于向 Web 服务器提交数据，通常用于创建新资源或提交表单信息。POST 请求的参数通常放在请求体中，使其适合发送较大的数据量。</p>
+<p><strong>PUT 请求</strong><br>用于向 Web 服务器提交数据以更新已有资源。PUT 请求通常用于完整替换目标资源，如果资源不存在，部分服务器可能会创建新资源。</p>
+<p><strong>DELETE 请求</strong><br>用于从 Web 服务器删除指定资源或记录。DELETE 请求一般会直接从服务器上移除资源，无法撤销，需谨慎使用。<br><br></p>
+<h2 id="HTTP-状态码"><a href="#HTTP-状态码" class="headerlink" title="HTTP 状态码"></a>HTTP 状态码</h2><p>当 HTTP 服务器响应请求时，第一行通常包含状态码，用于告知客户端请求的结果及后续处理方式。</p>
+<p>状态码分为以下 5 个范围：</p>
+<p>100-199 - 信息响应：表示请求的初步信息已被接受，客户端应继续发送剩余请求，现已较少使用。<br>200-299 - 成功：表示请求已成功完成。<br>300-399 - 重定向：将客户端的请求重定向至其他资源，可能是不同页面或不同网站。<br>400-499 - 客户端错误：表示客户端请求有误。<br>500-599 - 服务器错误：表示服务器在处理请求时遇到问题。</p>
+<h3 id="常见-HTTP-状态码"><a href="#常见-HTTP-状态码" class="headerlink" title="常见 HTTP 状态码"></a>常见 HTTP 状态码</h3><p>应用程序可以定义自定义 HTTP 状态码</p>
+<p>以下是常见的 HTTP 响应：</p>
+<p>200 OK：请求成功。<br>201 Created：新资源已创建，如新用户或新文章。<br>301 Moved Permanently：永久重定向，通常用于页面永久迁移。<br>302 Found：临时重定向，资源可能会再次变更位置。<br>400 Bad Request：请求格式有误，可能缺少必要信息。<br>401 Unauthorized：未授权访问，需要登录认证。<br>403 Forbidden：禁止访问该资源，授权也无效。<br>404 Not Found：资源不存在或路径错误。<br>405 Method Not Allowed：请求方法不被允许，例如对只支持 POST 的路径发送了 GET 请求。<br>500 Internal Server Error：服务器遇到意外错误，无法处理请求。<br>503 Service Unavailable：服务器当前无法处理请求，可能由于过载或维护中。</p>
 <br>
 
 
 
 
 
-<h2 id="HTTP-状态码"><a href="#HTTP-状态码" class="headerlink" title="HTTP 状态码"></a>HTTP 状态码</h2><p>HTTP 状态码<br>在上一个任务中，你了解到当 HTTP 服务器响应时，第一行总是包含一个状态码，用于告知客户端其请求的结果以及如何处理。这些状态码可以分为五个不同的范围：</p>
-<p>100-199 - 信息响应<br>告知客户端请求的第一部分已被接受，客户端应继续发送其余请求。这类状态码如今已不常见。</p>
-<p>200-299 - 成功<br>表示客户端的请求已成功完成。</p>
-<p>300-399 - 重定向<br>用于将客户端请求重定向到其他资源，可能是不同网页或不同网站。</p>
-<p>400-499 - 客户端错误<br>用于告知客户端请求中存在错误。</p>
-<p>500-599 - 服务器错误<br>表示服务器端出现问题，通常是服务器在处理请求时遇到较严重的问题。</p>
-<p>常见的 HTTP 状态码<br>HTTP 状态码种类繁多，且应用程序可以自定义状态码。以下是一些常见的 HTTP 响应状态码：</p>
-<p>200 - OK<br>请求成功完成。</p>
-<p>201 - Created（已创建）<br>已创建一个资源，例如新用户或新博客文章。</p>
-<p>301 - Moved Permanently（永久移动）<br>将客户端浏览器重定向到新页面，或通知搜索引擎页面已移动到其他位置。</p>
-<p>302 - Found（临时移动）<br>类似于永久重定向，但这是一个临时更改，可能会在不久的将来再次更改。</p>
-<p>400 - Bad Request（错误请求）<br>告知浏览器请求中存在错误或缺少内容，有时用于指示服务器资源需要某个特定参数，而客户端未发送。</p>
-<p>401 - Not Authorized（未授权）<br>您无权查看此资源，直到您通过用户名和密码进行授权。</p>
-<p>403 - Forbidden（禁止访问）<br>无论是否登录，您都没有权限访问该资源。</p>
-<p>405 - Method Not Allowed（方法不允许）<br>资源不允许使用此方法，例如发送 GET 请求到 &#x2F;create-account 路径，而该路径需要的是 POST 请求。</p>
-<p>404 - Page Not Found（页面未找到）<br>请求的页面或资源不存在。</p>
-<p>500 - Internal Service Error（服务器内部错误）<br>服务器遇到未知的错误，无法正常处理请求。</p>
-<p>503 - Service Unavailable（服务不可用）<br>服务器无法处理请求，可能是因为过载或正在维护。</p>
-<p>点击右侧的“查看网站”按钮，可以在浏览器中查看部分 HTTP 状态消息的示例。<br><br></p>
-<h2 id="请求头"><a href="#请求头" class="headerlink" title="请求头"></a>请求头</h2><p>请求头部信息（Headers）<br>请求头部信息是您在发起请求时可以发送给网页服务器的附加数据。</p>
-<p>虽然发起 HTTP 请求时并不需要强制发送任何头部信息，但如果没有它们，您会发现很难正常查看一个网站。</p>
-<p>常见的请求头<br>以下是客户端（通常是您的浏览器）发送给服务器的一些常见请求头。</p>
-<p>Host（主机）： 一些服务器托管多个网站，通过提供 Host 头部信息，您可以告诉服务器您需要访问哪个网站，否则将收到服务器的默认网站。</p>
-<p>User-Agent（用户代理）： 这是您的浏览器软件及其版本号，告知服务器浏览器信息可以帮助其更好地为您的浏览器格式化网站内容。此外，某些 HTML、JavaScript 和 CSS 元素仅在特定浏览器中可用。</p>
-<p>Content-Length（内容长度）： 当您向网页服务器发送数据（例如表单数据）时，Content-Length 告诉服务器请求中包含的数据量，确保数据完整无缺。</p>
-<p>Accept-Encoding（接受编码）： 告知服务器浏览器支持的压缩方法，以便数据可以被压缩，从而减少网络传输的数据量。</p>
-<p>Cookie（Cookie）： 发送到服务器的数据，用于帮助记住您的信息（详细信息见 cookies 任务）。</p>
-<p>常见的响应头<br>以下是服务器在响应请求时返回给客户端的一些常见响应头。</p>
-<p>Set-Cookie（设置 Cookie）： 存储信息，每次请求时都会将其发送回服务器（详细信息见 cookies 任务）。</p>
-<p>Cache-Control（缓存控制）： 指定在浏览器缓存中存储响应内容的时长，到期后浏览器会再次请求内容。</p>
-<p>Content-Type（内容类型）： 告知客户端返回的数据类型，例如 HTML、CSS、JavaScript、图片、PDF、视频等。通过 Content-Type 头部信息，浏览器可以正确处理数据。</p>
-<p>Content-Encoding（内容编码）： 指定用于压缩数据的方法，以便在网络传输时减少数据量。<br><br></p>
-<h2 id="Cookies（客户端存储）"><a href="#Cookies（客户端存储）" class="headerlink" title="Cookies（客户端存储）"></a>Cookies（客户端存储）</h2><p>可能听说过 cookies，它们是一小段存储在电脑上的数据。当从网页服务器收到一个“Set-Cookie”头部时，cookies 就会被保存下来。之后，每当再次发出请求时，cookie 数据会回传给服务器。由于 HTTP 是无状态的（不会记住的上一次请求），cookies 可以用于帮助服务器识别身份、记录网站的个性化设置，或判断是否曾访问过该网站。以下是一个包含 cookies 的 HTTP 请求示例：</p>
-<p>一张图示展示了如何在 HTTP 请求中使用 cookies 来存储用户信息。</p>
-<p>Cookies 有许多用途，但最常用于网站认证。通常，cookie 的值不会是明文的密码，而是一个令牌（即一种难以被人猜到的独特代码）。</p>
-<p>查看 Cookies<br>可以通过浏览器的开发者工具轻松查看浏览器发送到网站的 cookies。如果不确定如何打开开发者工具，请点击本任务顶部的“查看网站”按钮，获取相关指南。</p>
-<p>打开开发者工具后，点击“Network”（网络）选项卡。此选项卡将显示浏览器请求的所有资源列表。可以点击任意一项，查看请求和响应的详细信息。如果浏览器发送了 cookie，可以在请求的“Cookies”选项卡中看到这些内容。<br><br></p>
+<h2 id="HTTP-头部"><a href="#HTTP-头部" class="headerlink" title="HTTP 头部"></a>HTTP 头部</h2><p>头部信息是在发起请求时可以发送给 Web 服务器的附加数据。虽然在 HTTP 请求中不强制包含头部信息，但缺少这些信息可能导致网页显示不正常。</p>
+<h3 id="常见的请求头部"><a href="#常见的请求头部" class="headerlink" title="常见的请求头部"></a>常见的请求头部</h3><p>请求头部是客户端浏览器发送给服务器的附加信息，帮助服务器正确理解和处理请求。</p>
+<p><strong>Host</strong>：指定要访问的具体网站，有些 Web 服务器托管了多个网站，Host 头部用于告知服务器具体的访问目标，否则会默认返回服务器的主站点。<br><strong>User-Agent</strong>：提供浏览器软件及版本信息，便于服务器适配网页，以兼容特定浏览器的 HTML、JavaScript 和 CSS 特性。<br><strong>Content-Length</strong>：当提交表单等数据时，Content-Length 头部用于告知服务器请求中的数据长度，以便确保数据完整传输。<br><strong>Accept-Encoding</strong>：指定浏览器支持的压缩方式，使数据在网络上传输时更加高效。<br><strong>Cookie</strong>：包含客户端的用户信息，用于帮助服务器记住用户偏好和会话数据。</p>
+<h3 id="常见的响应头部"><a href="#常见的响应头部" class="headerlink" title="常见的响应头部"></a>常见的响应头部</h3><p>响应头部是服务器在回应客户端请求时提供的额外信息，帮助客户端处理返回的数据。</p>
+<p><strong>Set-Cookie</strong>：用于存储信息，客户端在后续请求中会带上这些数据。<br><strong>Cache-Control</strong>：指定浏览器缓存响应内容的时间，以减少频繁请求，提升性能。<br><strong>Content-Type</strong>：告知客户端返回数据的类型，例如 HTML、CSS、JavaScript、图片、PDF、视频等，以便浏览器正确处理这些内容。<br><strong>Content-Encoding</strong>：告知客户端数据的压缩方法，使传输更为高效。<br><br></p>
+<h2 id="Cookies"><a href="#Cookies" class="headerlink" title="Cookies"></a>Cookies</h2><p>Cookie 是一小块存储在计算机上的数据。当 Web 服务器在响应中发送 Set-Cookie 头部时，Cookie 会被保存。之后每次请求该服务器时，浏览器会自动发送这些 Cookie 数据回给服务器。由于 HTTP 是无状态的，不会记住之前的请求，Cookie 可以帮助 Web 服务器识别用户、记住个性化设置，或确认用户是否曾访问过该网站。</p>
+<p>Cookie 最常见的是用于网站身份验证。通常 Cookie 值不会直接包含密码，而是使用一个唯一的令牌来标识用户。</p>
+<h3 id="查看-Cookies"><a href="#查看-Cookies" class="headerlink" title="查看 Cookies"></a>查看 Cookies</h3><p>可以通过浏览器的开发者工具查看浏览器向网站发送的 Cookie。F12 打开开发者工具后，点击网络标签，这会显示浏览器请求的所有资源列表。点击任一资源可以查看请求和响应的详细信息。如果请求中包含 Cookie，可以在请求的 Cookies 标签中找到这些数据。</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/httpindetail -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除主语，括号，链接，优化例子）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->
 
 </article>
     
@@ -483,7 +463,7 @@
             </div>
             <h5>
                 <a href="/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD8/" class="trm-anima-link">
-                    DNS 详细解析
+                    DNS 详解
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
