@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>工具模板</title>
-    <url>/2024/10/26/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
-
-
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
-      </categories>
-  </entry>
-  <entry>
     <title>博客模板</title>
     <url>/2024/10/26/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
@@ -56,61 +36,20 @@
       </categories>
   </entry>
   <entry>
-    <title>治理与监管</title>
-    <url>/2024/10/26/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/</url>
-    <content><![CDATA[<h2 id="为什么重要？"><a href="#为什么重要？" class="headerlink" title="为什么重要？"></a>为什么重要？</h2><p><strong>治理</strong>：对组织或系统进行管理和指导，以实现遵循法律、法规和标准<br><strong>监管</strong>：由管理机构执行的规则或法律，旨在确保合规并防范风险<br><strong>合规</strong>：指组织或系统遵守相关法律、法规和标准的状态</p>
-<h3 id="信息安全治理"><a href="#信息安全治理" class="headerlink" title="信息安全治理"></a>信息安全治理</h3><p>信息安全治理是组织用来确保其信息资产的保密性、完整性和可用性的结构、政策、方法和指南的综合体系。信息安全治理通常由高层管理层主导。</p>
-<p>信息安全治理的核心流程：<br><strong>战略制定</strong>：设计并执行符合组织整体业务目标的信息安全战略<br><strong>政策与程序</strong>：制定相关政策和程序，以管理信息资产的使用与保护<br><strong>风险管理</strong>：通过风险评估识别潜在威胁，并实施相应的风险缓解措施<br><strong>绩效评估</strong>：通过设立指标和关键绩效指标（KPIs），衡量信息安全治理计划的有效性<br><strong>法规合规</strong>：确保符合相关法律法规及行业最佳实践</p>
-<h3 id="信息安全监管"><a href="#信息安全监管" class="headerlink" title="信息安全监管"></a>信息安全监管</h3><p>在信息安全领域，治理与监管含义不同。信息安全监管是指用于管理和保护信息资产的法律和监管框架。这些法规旨在防止敏感数据被非法访问、盗窃或滥用。遵守这些法规通常是强制性的，由政府或监管机构监督执行。</p>
-<h3 id="关键点"><a href="#关键点" class="headerlink" title="关键点"></a>关键点</h3><p><strong>更好的安全状态</strong>：通过实施全面的信息安全治理计划并遵守相关法规，组织可以显著降低漏洞的风险，保护敏感信息经未经授权的访问、盗窃和滥用</p>
-<p><strong>提升利益相关者信任</strong>：良好的信息安全治理和监管可以展示组织对网络安全的高度重视，从而增强利益相关者的信心</p>
-<p><strong>法规合规性</strong>：遵循法规，可以帮助组织避免因不合规导致的法律诉讼、财务损失和声誉损害</p>
-<p><strong>与业务目标保持一致</strong>：信息安全治理框架可以帮助组织将信息安全战略与业务目标结合，确保安全措施具成本效益</p>
-<p><strong>明智决策</strong>：安全治理计划为决策者提供了关于信息安全风险的知识，确保在最关键的领域实施安全措施</p>
-<p><strong>竞争优势</strong>：有效的安全治理和遵守相关法规可以为组织提供竞争优势，表明对保护敏感数据的承诺，从而赢得利益相关者的信任</p>
-<h3 id="相关法律和法规"><a href="#相关法律和法规" class="headerlink" title="相关法律和法规"></a>相关法律和法规</h3><p>具体的法律法规支撑着信息安全治理和监管的系统。它们为最低合规标准提供了结构化的框架，促进了问责制和信任，促进保护关键系统和数据的创新方法。通过清晰简洁的规则，这些法规减少了歧义，为组织提供了通用标准来评估其安全状态并确保遵守法规要求。<br><br></p>
-<h2 id="信息安全框架"><a href="#信息安全框架" class="headerlink" title="信息安全框架"></a>信息安全框架</h2><p>信息安全框架是一份完整的文档，旨在概述组织在信息安全领域的战略方向，并规范安全措施在组织内部的实施、管理和执行。</p>
-<p>这些文件主要包括：<br><strong>政策</strong>：正式的声明，阐明组织为实现特定目标而设定的原则和指导方针<br><strong>标准</strong>：规定特定过程、产品或服务的详细要求或技术规范的文件<br><strong>指南</strong>：为实现特定目标或目的提供建议和最佳实践的文件<br><strong>程序</strong>：制定的详细步骤，用于执行特定任务或流程<br><strong>基准</strong>：组织或系统必须遵守的一套最低安全标准或要求</p>
-<h3 id="制定治理文件"><a href="#制定治理文件" class="headerlink" title="制定治理文件"></a>制定治理文件</h3><p>创建政策、标准、指南等治理文件的一般步骤：<br><strong>明确范围和目标</strong>：明确文件的覆盖范围及其重要性</p>
-<p><strong>进行研究和审查</strong>：研究相关法律法规、行业标准及最佳实践，确保文件内容的全面性和时效性。审查现有文件，避免重复编写或与现有指导相冲突。</p>
-<p><strong>起草文件</strong>：制定框架并编写初稿，遵循清晰、简洁的最佳实践，确保文件具体、可操作，并符合组织的目标与价值观</p>
-<p><strong>审查与批准</strong>：邀请相关专家、法律和合规团队及高级管理层审阅文件。根据他们的反馈调整内容，以确保文件符合组织目标。获得适当利益相关者的最终批准</p>
-<p><strong>执行与沟通</strong>：将文件分发给所有相关人员，确保他们清楚理解自己在实施过程中的职责。制定相应的培训计划，确保理解和遵守文件</p>
-<p><strong>定期审查与更新</strong>：定期审核和更新文件，确保仍然有效。监控执行情况，并根据反馈和威胁形势或监管环境进行调整<br><br></p>
-<h2 id="治理、风险与合规（GRC）"><a href="#治理、风险与合规（GRC）" class="headerlink" title="治理、风险与合规（GRC）"></a>治理、风险与合规（GRC）</h2><p>GRC框架旨在以集成的方式管理组织的整体治理、风险管理和合规性。这是一种全面的信息安全方法，确保组织的运作与其战略目标保持一致，同时符合相关法规和行业标准的要求</p>
-<p>GRC框架由以下三个核心组成部分：<br><strong>治理组件</strong>：通过信息安全战略为组织设定明确的方向，包括制定政策、标准、基准和框架等内容，同时采用有效的监测方法，评估组织的表现并分析结果</p>
-<p><strong>风险管理组件</strong>：识别、评估和优先处理对组织构成威胁的风险，并采取适当的控制和缓解措施来有效管理这些风险。这包括对风险进行持续的监控和报告，并定期优化风险管理方案，以确保其持续有效性</p>
-<p><strong>合规组件</strong>：确保组织符合法律、法规及行业标准，确保活动符合既定的政策和程序。这包括制定和执行合规计划，定期开展审计和评估，并向利益相关方报告合规情况</p>
-<h3 id="如何构建GRC计划——通用指南"><a href="#如何构建GRC计划——通用指南" class="headerlink" title="如何构建GRC计划——通用指南"></a>如何构建GRC计划——通用指南</h3><p>一个完善且实施良好的网络安全GRC计划，为风险管理、法规遵守和提升整体安全状况提供了一个综合框架。它能够有效地进行治理、风险管理和合规活动，减少网络攻击的风险，并确保业务的可持续性。</p>
-<p>开发和实施GRC框架的关键步骤：<br><strong>确定范围和目标</strong>：明确GRC程序的实施范围及其目标</p>
-<p><strong>进行风险评估</strong>：识别和评估潜在的网络风险</p>
-<p><strong>制定政策和程序</strong>：为网络安全操作制定政策和程序</p>
-<p><strong>建立治理流程</strong>：确保GRC计划的有效管理和监督</p>
-<p><strong>实施控制措施</strong>：部署技术和非技术措施，以降低已识别的风险</p>
-<p><strong>监控和评估绩效</strong>：建立流程来监控和衡量 GRC 计划的有效性</p>
-<p><strong>持续改进</strong>：基于绩效数据、风险的动态变化和利益相关者的反馈，不断优化GRC计划<br><br></p>
-<h2 id="隐私与数据保护"><a href="#隐私与数据保护" class="headerlink" title="隐私与数据保护"></a>隐私与数据保护</h2><p>在金融、医疗保健、政府和工业等各个领域都涉及到处理公民的个人身份信息（PII）。隐私法规的制定，旨在确保个人信息得到妥善、负责任且符合伦理地处理和存储。同时，这些法规有助于建立公众信任、有效保护个人信息，并确保遵守相关法规。<br><br></p>
-<h2 id="NIST-特别出版物"><a href="#NIST-特别出版物" class="headerlink" title="NIST 特别出版物"></a>NIST 特别出版物</h2><p>NIST 800-53是由美国国家标准与技术研究院（NIST）发布的名为《信息系统与组织的安全与隐私控制》的指南。该指南提供了一个详尽的安全控制目录，用以保护信息系统中的保密性、完整性和可用性（CIA）。作为一个框架，它帮助组织评估和提升信息系统的安全性和隐私性，以确保符合各类法律、法规和政策要求。该指南整合了多个来源的最佳实践，包括行业标准、指南以及国际框架。</p>
-<h3 id="关键要点"><a href="#关键要点" class="headerlink" title="关键要点"></a>关键要点</h3><p>NIST 800-53提供了一个全面的安全与隐私控制体系，帮助组织从多种威胁和风险中保护其业务运营、资产、人员及其他利益相关方。这些威胁包括有意攻击、无意错误、自然灾害、基础设施中断、外国情报活动和隐私风险。NIST 800-53将安全控制分为20个不同类别，每个类别都聚焦于特定的安全领域。</p>
-<h3 id="基于NIST-800-53的信息安全计划的开发和实施"><a href="#基于NIST-800-53的信息安全计划的开发和实施" class="headerlink" title="基于NIST 800-53的信息安全计划的开发和实施"></a>基于NIST 800-53的信息安全计划的开发和实施</h3><p>在所有控制类别中，“程序管理”是NIST 800-53框架中的一个关键控制点。程序管理要求建立、实施和监控组织范围内的信息安全和隐私计划，确保通过系统处理、存储或传输的数据得到保护。</p>
-<h3 id="合规性最佳实践"><a href="#合规性最佳实践" class="headerlink" title="合规性最佳实践"></a>合规性最佳实践</h3><p>组织应开展全面的数据资产、信息系统和相关威胁的识别和分类。这包括理解数据流、系统依赖关系以及潜在的安全漏洞。NIST 800-53的控制类别应当与已识别的资产和风险进行映射，以便根据组织的需求制定结构化的控制方案。还需要建立完善的治理架构，明确分工职责，并详细规划控制措施的实施和维护步骤，确保实施过程的有效管理。所有控制措施应当定期监控和评估，以确保符合规定要求。此外，组织应建立有效的监控系统，以迅速识别和处理安全问题，定期进行审查和审计，并改进控制的执行。通过遵循这些最佳实践，组织能够成功实施NIST 800-53框架，提升安全态势，有效降低风险。</p>
-<h3 id="NIST-800-63B"><a href="#NIST-800-63B" class="headerlink" title="NIST 800-63B"></a>NIST 800-63B</h3><p>NIST特别出版物800-63B是一套由NIST制定的数字身份验证指南，旨在帮助组织建立有效的数字身份管理实践。其核心关注点是认证和验证访问数字服务、系统和网络的个人身份。这些指南涵盖了从基础到高级的不同身份验证级别，提供了关于使用密码、生物识别技术和令牌等身份验证要素的建议，同时还指导如何安全管理和存储用户凭证。<br><br></p>
-<h2 id="信息安全管理与合规"><a href="#信息安全管理与合规" class="headerlink" title="信息安全管理与合规"></a>信息安全管理与合规</h2><p>信息安全管理涵盖了安全措施的战略规划、执行及管理，旨在保护信息资产免受未经授权的访问、使用、披露、中断、篡改及销毁。这包括风险评估与识别、安全控制和程序的制定、事件响应规划以及安全意识培训。另一方面，合规性则强调遵守与信息安全相关的法律、法规、合同及行业特定标准。</p>
-<h3 id="ISO-IEC-27001"><a href="#ISO-IEC-27001" class="headerlink" title="ISO&#x2F;IEC 27001"></a>ISO&#x2F;IEC 27001</h3><p>ISO 27001是一项国际上公认的信息安全管理体系（ISMS）标准，用于规划、开发、运行及更新组织的ISMS。该标准由国际标准化组织（ISO）和国际电工委员会（IEC）联合制定</p>
-<p><strong>范围</strong>：指定了信息安全管理体系的范围，包括涵盖的资产和流程<br><strong>信息安全政策</strong>：定义组织信息安全策略的高级文件<br><strong>风险评估</strong>：识别并评估威胁组织信息机密性、完整性和可用性的风险<br><strong>风险处理</strong>：选择并实施控制措施，以将已识别的风险降至可接受水平<br><strong>适用性声明</strong>（SoA）：列出标准中适用和不适用的控制文件<br><strong>内部审计</strong>：定期对ISMS进行审核，以确保其有效运行<br><strong>管理评审</strong>：定期评估ISMS的绩效，确保其符合组织的目标</p>
-<p>基于ISO 27001标准建立的ISMS需要经过设计与实施。这包括对组织的安全措施进行全面评估，发现潜在漏洞并进行详细的风险评估。在访问控制、事件响应等方面制定明确的规则和流程，确保符合ISO 27001标准要求。定期的监控、测量和持续改进，确保ISMS的有效性和与组织目标的一致性。</p>
-<h3 id="服务组织控制2（SOC-2）"><a href="#服务组织控制2（SOC-2）" class="headerlink" title="服务组织控制2（SOC 2）"></a>服务组织控制2（SOC 2）</h3><p>SOC 2是由美国注册会计师协会（AICPA）制定的一个合规性和审计框架。它以CIA（机密性、完整性和可用性）为基础，评估企业的数据安全性。SOC 2能够向客户、利益相关者及合作伙伴展示公司在安全和隐私方面的承诺。</p>
-<h3 id="关键要点-1"><a href="#关键要点-1" class="headerlink" title="关键要点"></a>关键要点</h3><p>SOC 2是一项审计标准，用于评估服务组织在数据安全和隐私方面的控制措施有效性。<br>由独立审计师进行SOC 2审计，以验证安全控制是否满足相关标准要求。<br>SOC 2报告为客户、利益相关者和监管机构提供关于服务组织安全和隐私措施信息。<br>SOC 2审计报告将评估云计算公司所采取的控制措施，并提出发现或改进建议。此信息可供客户及其他利益相关者参考，以确保公司采取了合适的措施来保护数据和系统。</p>
-<h3 id="SOC-2提供哪些信息安全保护？"><a href="#SOC-2提供哪些信息安全保护？" class="headerlink" title="SOC 2提供哪些信息安全保护？"></a>SOC 2提供哪些信息安全保护？</h3><p>SOC 2审计的主要目的是确保第三方服务提供商安全地存储和处理敏感信息</p>
-<h3 id="规划和进行SOC-2审计"><a href="#规划和进行SOC-2审计" class="headerlink" title="规划和进行SOC 2审计"></a>规划和进行SOC 2审计</h3><p>组织的管理团队可以采取步骤：<br><strong>确定审计范围</strong>：选择涉及客户数据安全性和隐私性的重要系统、流程或位置</p>
-<p><strong>选择合适的审计师</strong>：选择具有审计经验的专业审计师，应考虑审计师的声誉和专业经验等因素</p>
-<p><strong>制定审计计划</strong>：与审计师合作，确定审计时间表、审计范围和具体标准</p>
-<p><strong>准备审计</strong>：通过审核安全与隐私控制、政策及流程，为审计做好准备。识别并修正出现的差距</p>
-<p><strong>进行审计</strong>：审计师将检查控制措施，并进行测试以评估其有效性。可能包括与关键人员访谈、文件审查及控制测试</p>
-<p><strong>获取审计报告</strong>：当审计完成，审计师将提供一份详细的审计报告。报告内容可能包括控制措施实施方案、识别出的差距及改进建议<br><br></p>
-]]></content>
+    <title>网站模板</title>
+    <url>/2024/10/26/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+<!-- 成功使用✔? ✖? -->]]></content>
       <categories>
-        <category>网络安全基础</category>
+        <category>模板</category>
       </categories>
   </entry>
   <entry>
@@ -153,23 +92,6 @@
 ]]></content>
       <categories>
         <category>网络安全基础</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网站模板</title>
-    <url>/2024/10/26/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-<!-- 成功使用✔? ✖? -->]]></content>
-      <categories>
-        <category>模板</category>
       </categories>
   </entry>
   <entry>
@@ -240,254 +162,23 @@
       </categories>
   </entry>
   <entry>
-    <title>Linux 基础知识 第一部分</title>
-    <url>/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-1/</url>
-    <content><![CDATA[<h2 id="Linux-背景知识"><a href="#Linux-背景知识" class="headerlink" title="Linux 背景知识"></a>Linux 背景知识</h2><p>与 Windows 等其他操作系统（OS）相比，各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 是开源的，因此有许多不同的 Linux 发行版<br><br></p>
-<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>echo</td>
-<td>输出提供的任何文本</td>
-</tr>
-<tr>
-<td>whoami</td>
-<td>查看当前登录的用户身份</td>
-</tr>
-</tbody></table>
-<h3 id="使用-echo-命令"><a href="#使用-echo-命令" class="headerlink" title="使用 echo 命令"></a>使用 echo 命令</h3><p>使用 echo 命令输出字符串</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span></span><br><span class="line"><span class="comment"># 输出 Hello World!</span></span><br></pre></td></tr></table></figure>
+    <title>工具模板</title>
+    <url>/2024/10/26/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
 
 
-<h3 id="使用-whoami-命令"><a href="#使用-whoami-命令" class="headerlink" title="使用 whoami 命令"></a>使用 whoami 命令</h3><p>使用 whoami 命令查看当前登录的用户身份 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">whoami</span></span><br><span class="line"><span class="comment"># 查询当前用户</span></span><br></pre></td></tr></table></figure>
-
-<br>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
 
 
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
-
-<h2 id="与文件系统的交互命令"><a href="#与文件系统的交互命令" class="headerlink" title="与文件系统的交互命令"></a>与文件系统的交互命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ls</td>
-<td>列出当前目录中的文件（listing）</td>
-</tr>
-<tr>
-<td>cd</td>
-<td>更改当前目录（change directory）</td>
-</tr>
-<tr>
-<td>cat</td>
-<td>输出文件内容（concatenate）</td>
-</tr>
-<tr>
-<td>pwd</td>
-<td>显示当前工作目录的完整路径（print working directory）</td>
-</tr>
-</tbody></table>
-<h3 id="使用-ls-命令"><a href="#使用-ls-命令" class="headerlink" title="使用 ls 命令"></a>使用 ls 命令</h3><p>使用 ls 命令来列出当前目录的文件<br>使用 ls 命令和目录名称不进入该目录列出目录的文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 列出当前目录下的所有文件和文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> folder1</span><br><span class="line"><span class="comment"># 列出 folder1 目录下的所有文件和文件夹</span></span><br></pre></td></tr></table></figure>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 
 
-
-<h3 id="使用-cd-命令"><a href="#使用-cd-命令" class="headerlink" title="使用 cd 命令"></a>使用 cd 命令</h3><p>使用 cd 命令更改当前目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 进入 folder1 目录</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-cat-命令"><a href="#使用-cat-命令" class="headerlink" title="使用 cat 命令"></a>使用 cat 命令</h3><p>使用 cat 命令来输出文件内容<br>使用 cat 命令和目录路径不进入该目录输出目录中文件内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> text1.txt</span><br><span class="line"><span class="comment"># 显示当前目录 text1.txt 文件的内容</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /home/folder1/text1.txt</span><br><span class="line"><span class="comment"># 显示 /home/folder1/text1.txt 文件的内容</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-pwd-命令"><a href="#使用-pwd-命令" class="headerlink" title="使用 pwd 命令"></a>使用 pwd 命令</h3><p>使用 pwd 命令显示当前工作目录的完整路径</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="comment"># 显示当前工作目录的完整路径</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-
-<h2 id="查找文件命令"><a href="#查找文件命令" class="headerlink" title="查找文件命令"></a>查找文件命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>find</td>
-<td>在当前目录所有子目录中搜索文件</td>
-</tr>
-<tr>
-<td>grep</td>
-<td>搜索整个文件中包含特定值的行（Global Regular Expression Print）</td>
-</tr>
-</tbody></table>
-<h3 id="使用-find-命令"><a href="#使用-find-命令" class="headerlink" title="使用 find 命令"></a>使用 find 命令</h3><p>如果记得文件名，使用 find -name 命令在当前目录所有子目录中搜索文件<br>如果不记得文件名，可搜索所有具有特定扩展名的文件，使用 find -name 命令和通配符（*）来搜索所有以特定扩展名结尾的文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">find -name txt1.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找名为 txt1.txt 的文件</span></span><br><span class="line"></span><br><span class="line">find -name *.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找所有以 .txt 结尾的文件</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-grep-命令"><a href="#使用-grep-命令" class="headerlink" title="使用 grep 命令"></a>使用 grep 命令</h3><p>使用 grep 命令搜索整个文件内容来查找包含特定值的行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;Hello World!&quot;</span> txt1.txt</span><br><span class="line"><span class="comment"># 在 txt1.txt 文件中搜索包含 &quot;Hello World!&quot;</span></span><br></pre></td></tr></table></figure>
-<br>
-
-<p>字符串内注意需要完全符合大小写</p>
-<h2 id="Shell-操作符"><a href="#Shell-操作符" class="headerlink" title="Shell 操作符"></a>Shell 操作符</h2><table>
-<thead>
-<tr>
-<th>符号&#x2F;操作符</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>&amp;</td>
-<td>执行命令并在后台运行</td>
-</tr>
-<tr>
-<td>&amp;&amp;</td>
-<td>将多个命令结合在一行中执行（仅前一命令成功执行才能继续）</td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>一个重定向符，可以将某个命令的输出重定向到其他地方（覆盖原有内容）</td>
-</tr>
-<tr>
-<td>&gt;&gt;</td>
-<td>功能类似于 &gt;，但会将输出追加而不是替换（不会覆盖原有内容）</td>
-</tr>
-</tbody></table>
-<h3 id="使用-操作符"><a href="#使用-操作符" class="headerlink" title="使用 &amp; 操作符"></a>使用 &amp; 操作符</h3><p>使用 &amp; 操作符执行命令并在后台运行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://example.com/txt1.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/txt1.txt 文件</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-操作符-1"><a href="#使用-操作符-1" class="headerlink" title="使用 &amp;&amp; 操作符"></a>使用 &amp;&amp; 操作符</h3><p>使用 &amp;&amp; 操作符创建命令链，只有第一个命令成功执行后，第二个命令才会执行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> folder1 &amp;&amp; <span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 创建 folder1 文件夹，并进入该文件夹</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-操作符-2"><a href="#使用-操作符-2" class="headerlink" title="使用 &gt; 操作符"></a>使用 &gt; 操作符</h3><p>使用 &gt; 操作符输出重定向，可以将命令的输出保存到指定的文件或其他地方</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
-
-<p>如果文件已存在，内容会被替换<br>如果文件不存在，会创建该文件，并将输出写入其中</p>
-<h3 id="使用-操作符-3"><a href="#使用-操作符-3" class="headerlink" title="使用 &gt;&gt; 操作符"></a>使用 &gt;&gt; 操作符</h3><p>使用 &gt;&gt; 操作符输出重定向，并会将内容追加到文件末尾，而不会覆盖文件原有的内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt;&gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（不会覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-]]></content>
+<!-- 成功搭建✔? ✖?，成功使用✔? ✖? -->]]></content>
       <categories>
-        <category>基础技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Linux 基础知识 第二部分</title>
-    <url>/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-2/</url>
-    <content><![CDATA[<h2 id="SSH-访问-Linux"><a href="#SSH-访问-Linux" class="headerlink" title="SSH 访问 Linux"></a>SSH 访问 Linux</h2><h3 id="什么是-SSH-及其工作原理？"><a href="#什么是-SSH-及其工作原理？" class="headerlink" title="什么是 SSH 及其工作原理？"></a>什么是 SSH 及其工作原理？</h3><p>Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式</p>
-<p>SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密</p>
-<p>使用 SSH 需要两个信息：<br>远程机器的 IP 地址<br>远程机器上有效账户的登录凭证</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh username@1.1.1.1</span><br><span class="line"><span class="comment"># ssh [用户名]@[IP地址]</span></span><br></pre></td></tr></table></figure>
-
-<p>输入 yes 信任主机，输入账户的密码。连接成功后，任何执行的命令将会在远程机器上运行</p>
-<p>在 SSH 登录中输入密码时，不会看到任何文本或符号不会有任何反馈，只需输入密码后回车登录</p>
-<p>输入exit断开连接<br><br></p>
-<h2 id="标志和开关简介（flags-and-switches）"><a href="#标志和开关简介（flags-and-switches）" class="headerlink" title="标志和开关简介（flags and switches）"></a>标志和开关简介（flags and switches）</h2><p>大多数命令都允许使用参数，这些参数由连字符和一个特定的关键字标识，这些关键字被称为标志或开关。在使用命令时，除非另有指定，否则它将执行默认行为。</p>
-<p>使用 ls -a 命令查看所有文件和文件夹，包括以 . 开头的隐藏文件和文件夹<br>使用 ls –help 命令列出 ls 命令列出提供简短的描述和使用示例的使用参数选项</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br><span class="line"><span class="comment"># 列出当前目录中的所有文件和目录，包括隐藏文件（以 . 开头的文件）</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> --<span class="built_in">help</span></span><br><span class="line"><span class="comment"># 显示 ls 命令的帮助信息，包括可用选项及其说明</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="使用-man-命令"><a href="#使用-man-命令" class="headerlink" title="使用 man 命令"></a>使用 man 命令</h3><p>手册页（man page）包含 Linux 系统命令和应用程序的信息，可直接在 Linux 上或网站访问</p>
-<p>使用 man 命令来查看手册页，可搭配其他命令一起使用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">man <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 查看 ls 命令的手册页，获取详细信息和选项说明</span></span><br></pre></td></tr></table></figure>
-
-<p>man 命令搭配其他命令可以查看 Linux 上几乎所有的命令，使用上下箭头阅读，q 退出<br><br></p>
-<h2 id="文件系统交互命令"><a href="#文件系统交互命令" class="headerlink" title="文件系统交互命令"></a>文件系统交互命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>touch</td>
-<td>创建新文件</td>
-</tr>
-<tr>
-<td>mkdir</td>
-<td>创建新文件夹&#x2F;目录（make directory）</td>
-</tr>
-<tr>
-<td>cp</td>
-<td>复制文件或文件夹（copy）</td>
-</tr>
-<tr>
-<td>mv</td>
-<td>移动文件或文件夹或重命名（move）</td>
-</tr>
-<tr>
-<td>rm</td>
-<td>删除文件或文件夹（remove）</td>
-</tr>
-<tr>
-<td>file</td>
-<td>确定文件的类型</td>
-</tr>
-</tbody></table>
-<p>以上所有命令都可搭配使用完整的文件路径</p>
-<h3 id="使用-touch-和-mkdir-命令"><a href="#使用-touch-和-mkdir-命令" class="headerlink" title="使用 touch 和 mkdir 命令"></a>使用 touch 和 mkdir 命令</h3><p>使用 touch 命令创建创建新文件<br>使用 mkdir 命令创建新文件夹&#x2F;目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">touch</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
-
-<p>使用 echo 命令或 nano 等文本编辑器在文件中添加内容</p>
-<h3 id="使用-rm-命令"><a href="#使用-rm-命令" class="headerlink" title="使用 rm 命令"></a>使用 rm 命令</h3><p>使用 rm 命令删除文件<br>使用 rm -R 命令删除文件夹</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">rm</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -R folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="使用-cp-和-mv-命令"><a href="#使用-cp-和-mv-命令" class="headerlink" title="使用 cp 和 mv 命令"></a>使用 cp 和 mv 命令</h3><p>使用 cp 命令将文件内容复制到新的文件中，第一个参数为已存在文件的名称，第二个参数为复制新文件指定的名称。如果目标文件不存在，将自动创建新文件<br>使用 cp -r 命令将文件夹及其内容复制到新的文件夹中，第一个参数为已存在文件夹的名称，第二个参数为复制新文件夹指定的名称。如果目标文件夹不存在，将自动创建新文件夹</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 file2</span><br><span class="line"><span class="comment"># 将 file1 的内容复制到 file2，如果 file2 不存在会自动创建</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> -r folder1 folder2</span><br><span class="line"><span class="comment"># 将 folder1 文件夹及其内容复制到 folder2，如果 folder2 不存在会自动创建</span></span><br></pre></td></tr></table></figure>
-
-
-<p>使用 mv 命令将文件或文件夹移动到新文件夹，或者对第二个参数提供的文件或文件夹名称进行重命名，不会创建新文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mv</span> file1 file2</span><br><span class="line"><span class="comment"># 如果 file2 是一个新名称，会将 file1 重命名为 file2</span></span><br><span class="line"><span class="comment"># 如果 file2 是一个已存在的目录，会将 file1 移动到该目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mv</span> folder1 folder2</span><br><span class="line"><span class="comment"># 如果 folder2 是一个新名称，会将 folder1 重命名为 folder2</span></span><br><span class="line"><span class="comment"># 如果 folder2 是一个已存在的目录，会将 folder1 移动到该目录</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="使用-file-命令"><a href="#使用-file-命令" class="headerlink" title="使用 file 命令"></a>使用 file 命令</h3><p>使用 file 命令确定文件或文件夹的类型，返回文件的类型描述</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">file file1</span><br><span class="line"><span class="comment"># 查看 file1 的文件类型，并显示类型信息</span></span><br><span class="line"></span><br><span class="line">file folder1</span><br><span class="line"><span class="comment"># 查看 folder1 的文件类型，如果为文件夹，将显示为 &quot;directory&quot;</span></span><br></pre></td></tr></table></figure>
-
-<br>
-
-
-
-
-<h2 id="权限基础知识"><a href="#权限基础知识" class="headerlink" title="权限基础知识"></a>权限基础知识</h2><p>使用 ls -lh 命令列出目录中所有文件的详细信息，包括文件权限、大小、所有者、修改时间等</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -lh</span><br><span class="line"><span class="comment"># 以详细格式列出当前目录中的所有文件信息，包括权限、大小和修改时间</span></span><br></pre></td></tr></table></figure>
-
-<p>文件或文件夹有几种特性，特性决定了允许执行哪些操作，以及哪个用户或用户组有权限执行操作：</p>
-<p>读取 (Read)<br>写入 (Write)<br>执行 (Execute)</p>
-<h3 id="用户和用户组之间的区别"><a href="#用户和用户组之间的区别" class="headerlink" title="用户和用户组之间的区别"></a>用户和用户组之间的区别</h3><p>Linux 的优点在于权限非常细化，通过设置权限，一组用户可以对同一个文件拥有相同或不同的权限，而不会影响文件的所有者</p>
-<h3 id="使用-su-命令"><a href="#使用-su-命令" class="headerlink" title="使用 su 命令"></a>使用 su 命令</h3><p>通过目标用户的用户名和密码进行切换账户</p>
-<p>使用 su 命令需要输入用户的密码来切换到指定的用户账户，默认情况下不会加载该用户的完整环境变量<br>使用 su -l 命令需要输入用户的密码，它会完全切换到指定用户的实际登录环境，加载所有新用户的属性等</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">su user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，不会加载该用户的完整环境变量</span></span><br><span class="line"></span><br><span class="line">su -l user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，加载该用户的完整环境变量和配置</span></span><br></pre></td></tr></table></figure>
-
-<p>如果没有指定用户，默认情况下会切换到 root 用户。<br><br></p>
-<h2 id="常见目录"><a href="#常见目录" class="headerlink" title="常见目录"></a>常见目录</h2><h3 id="etc"><a href="#etc" class="headerlink" title="&#x2F;etc"></a>&#x2F;etc</h3><p>&#x2F;etc 目录（“etc” 代表 etcetera）是存放操作系统使用的配置和系统文件位置</p>
-<p>在 &#x2F;etc 文件夹中包含 passwd 和 shadow 文件，&#x2F;etc&#x2F;passwd 文件存储了用户账户的信息，&#x2F;etc&#x2F;shadow 文件存储了每个用户的加密哈希密码。系统常使 SHA-512 或其他哈希算法对密码进行加密</p>
-<h3 id="var"><a href="#var" class="headerlink" title="&#x2F;var"></a>&#x2F;var</h3><p>&#x2F;var 目录（“var” 代表 variable data）是存放由系统上运行的服务或应用程序访问、修改或生成的数据</p>
-<h3 id="root"><a href="#root" class="headerlink" title="&#x2F;root"></a>&#x2F;root</h3><p>&#x2F;root 目录是 root 用户系统管理员的主目录，它与普通用户的主目录 &#x2F;home 不同，&#x2F;root 是专门为 root 用户保留的</p>
-<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录（“tmp” 代表 temporary）是用于存放仅需临时访问的文件和数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除。&#x2F;tmp 目录在默认情况下任何用户都有写入权限，&#x2F;tmp 是存放枚举脚本和其他工具的好位置<br><br></p>
-]]></content>
-      <categories>
-        <category>基础技能</category>
+        <category>模板</category>
       </categories>
   </entry>
   <entry>
@@ -648,35 +339,100 @@
       </categories>
   </entry>
   <entry>
-    <title>综合整理</title>
-    <url>/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD10/</url>
-    <content><![CDATA[<h2 id="综合整理"><a href="#综合整理" class="headerlink" title="综合整理"></a>综合整理</h2><p>当在浏览器中请求网页时，后台会进行一系列操作。首先计算机需要通过 DNS 系统获取目标服务器的 IP 地址。然后通过 HTTP 协议与该服务器建立通信，服务器会返回网页所需的内容，包括 HTML、JavaScript、CSS、图片等。浏览器接收到内容后，将其格式化并展示为网站。</p>
-<p>例如缓存、内容分发网络（CDN）等组件可以提高网络效率并提供额外的功能，从而确保页面加载更快、体验更流畅。<br><br></p>
-<h2 id="其他组件"><a href="#其他组件" class="headerlink" title="其他组件"></a>其他组件</h2><h3 id="负载均衡器"><a href="#负载均衡器" class="headerlink" title="负载均衡器"></a>负载均衡器</h3><p>当一个网站流量增大或需要高可用性支持时，单一的 Web 服务器可能无法满足需求。负载均衡器为高流量网站提供了两个关键功能：负载分担和故障转移。请求进入带有负载均衡器的网站时，负载均衡器会先接收请求，然后根据算法将其转发到最合适的服务器。常见的算法包括轮询法进行依次分配请求和加权法将请求分配给最空闲的服务器。负载均衡器会定期对每台服务器进行健康检查，若服务器无响应，则暂停向该服务器发送流量，直到其恢复。</p>
-<h3 id="内容分发网络（CDN）"><a href="#内容分发网络（CDN）" class="headerlink" title="内容分发网络（CDN）"></a>内容分发网络（CDN）</h3><p>CDN 是减轻繁忙网站流量的有效方法。它通过全球多个服务器托管网站的静态文件，如 JavaScript、CSS、图片、视频等，当用户请求这些资源时，CDN 会将请求定向至离用户最近的服务器，从而减少延迟并加速加载。</p>
-<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>网站通常需要数据库来存储用户信息和内容。Web 服务器通过数据库进行数据存储和检索，数据库类型多样，从简单的文本文件到多台服务器的集群，能够提供快速且可靠的数据管理。常用的数据库系统包括 MySQL、MSSQL、MongoDB、Postgres 等，每种数据库系统具有独特的特性和用途。</p>
-<h3 id="Web-应用防火墙（WAF）"><a href="#Web-应用防火墙（WAF）" class="headerlink" title="Web 应用防火墙（WAF）"></a>Web 应用防火墙（WAF）</h3><p>WAF 位于 Web 请求和 Web 服务器之间，保护服务器免受攻击或恶意流量的影响。WAF 通过分析请求内容，检测常见的攻击模式，如 SQL 注入、XSS 攻击等，并通过速率限制控制请求频率，避免异常流量对服务器造成冲击。如果检测到可疑请求，WAF 会将其拦截，防止其到达 Web 服务器。</p>
+    <title>Linux 基础知识 第二部分</title>
+    <url>/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-2/</url>
+    <content><![CDATA[<h2 id="SSH-访问-Linux"><a href="#SSH-访问-Linux" class="headerlink" title="SSH 访问 Linux"></a>SSH 访问 Linux</h2><h3 id="什么是-SSH-及其工作原理？"><a href="#什么是-SSH-及其工作原理？" class="headerlink" title="什么是 SSH 及其工作原理？"></a>什么是 SSH 及其工作原理？</h3><p>Secure Shell（SSH）是一种设备间的加密协议。通过使用加密技术，以人类可读的格式发送的任何输入会在网络传输过程中加密 —— 当到达远程机器时再进行解密，是连接和操作远程 Linux 机器命令行的常用方式</p>
+<p>SSH 允许远程在另一台设备上执行命令，任何在设备间发送的数据在通过网络时都会被加密</p>
+<p>使用 SSH 需要两个信息：<br>远程机器的 IP 地址<br>远程机器上有效账户的登录凭证</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh username@1.1.1.1</span><br><span class="line"><span class="comment"># ssh [用户名]@[IP地址]</span></span><br></pre></td></tr></table></figure>
+
+<p>输入 yes 信任主机，输入账户的密码。连接成功后，任何执行的命令将会在远程机器上运行</p>
+<p>在 SSH 登录中输入密码时，不会看到任何文本或符号不会有任何反馈，只需输入密码后回车登录</p>
+<p>输入exit断开连接<br><br></p>
+<h2 id="标志和开关简介（flags-and-switches）"><a href="#标志和开关简介（flags-and-switches）" class="headerlink" title="标志和开关简介（flags and switches）"></a>标志和开关简介（flags and switches）</h2><p>大多数命令都允许使用参数，这些参数由连字符和一个特定的关键字标识，这些关键字被称为标志或开关。在使用命令时，除非另有指定，否则它将执行默认行为。</p>
+<p>使用 ls -a 命令查看所有文件和文件夹，包括以 . 开头的隐藏文件和文件夹<br>使用 ls –help 命令列出 ls 命令列出提供简短的描述和使用示例的使用参数选项</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br><span class="line"><span class="comment"># 列出当前目录中的所有文件和目录，包括隐藏文件（以 . 开头的文件）</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> --<span class="built_in">help</span></span><br><span class="line"><span class="comment"># 显示 ls 命令的帮助信息，包括可用选项及其说明</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="使用-man-命令"><a href="#使用-man-命令" class="headerlink" title="使用 man 命令"></a>使用 man 命令</h3><p>手册页（man page）包含 Linux 系统命令和应用程序的信息，可直接在 Linux 上或网站访问</p>
+<p>使用 man 命令来查看手册页，可搭配其他命令一起使用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">man <span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 查看 ls 命令的手册页，获取详细信息和选项说明</span></span><br></pre></td></tr></table></figure>
+
+<p>man 命令搭配其他命令可以查看 Linux 上几乎所有的命令，使用上下箭头阅读，q 退出<br><br></p>
+<h2 id="文件系统交互命令"><a href="#文件系统交互命令" class="headerlink" title="文件系统交互命令"></a>文件系统交互命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>touch</td>
+<td>创建新文件</td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>创建新文件夹&#x2F;目录（make directory）</td>
+</tr>
+<tr>
+<td>cp</td>
+<td>复制文件或文件夹（copy）</td>
+</tr>
+<tr>
+<td>mv</td>
+<td>移动文件或文件夹或重命名（move）</td>
+</tr>
+<tr>
+<td>rm</td>
+<td>删除文件或文件夹（remove）</td>
+</tr>
+<tr>
+<td>file</td>
+<td>确定文件的类型</td>
+</tr>
+</tbody></table>
+<p>以上所有命令都可搭配使用完整的文件路径</p>
+<h3 id="使用-touch-和-mkdir-命令"><a href="#使用-touch-和-mkdir-命令" class="headerlink" title="使用 touch 和 mkdir 命令"></a>使用 touch 和 mkdir 命令</h3><p>使用 touch 命令创建创建新文件<br>使用 mkdir 命令创建新文件夹&#x2F;目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">touch</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mkdir</span> folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
+
+<p>使用 echo 命令或 nano 等文本编辑器在文件中添加内容</p>
+<h3 id="使用-rm-命令"><a href="#使用-rm-命令" class="headerlink" title="使用 rm 命令"></a>使用 rm 命令</h3><p>使用 rm 命令删除文件<br>使用 rm -R 命令删除文件夹</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">rm</span> file1</span><br><span class="line"><span class="comment"># 创建一个名为 file1 的空文件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">rm</span> -R folder1</span><br><span class="line"><span class="comment"># 创建一个名为 folder1 的文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-cp-和-mv-命令"><a href="#使用-cp-和-mv-命令" class="headerlink" title="使用 cp 和 mv 命令"></a>使用 cp 和 mv 命令</h3><p>使用 cp 命令将文件内容复制到新的文件中，第一个参数为已存在文件的名称，第二个参数为复制新文件指定的名称。如果目标文件不存在，将自动创建新文件<br>使用 cp -r 命令将文件夹及其内容复制到新的文件夹中，第一个参数为已存在文件夹的名称，第二个参数为复制新文件夹指定的名称。如果目标文件夹不存在，将自动创建新文件夹</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 file2</span><br><span class="line"><span class="comment"># 将 file1 的内容复制到 file2，如果 file2 不存在会自动创建</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cp</span> -r folder1 folder2</span><br><span class="line"><span class="comment"># 将 folder1 文件夹及其内容复制到 folder2，如果 folder2 不存在会自动创建</span></span><br></pre></td></tr></table></figure>
+
+
+<p>使用 mv 命令将文件或文件夹移动到新文件夹，或者对第二个参数提供的文件或文件夹名称进行重命名，不会创建新文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mv</span> file1 file2</span><br><span class="line"><span class="comment"># 如果 file2 是一个新名称，会将 file1 重命名为 file2</span></span><br><span class="line"><span class="comment"># 如果 file2 是一个已存在的目录，会将 file1 移动到该目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">mv</span> folder1 folder2</span><br><span class="line"><span class="comment"># 如果 folder2 是一个新名称，会将 folder1 重命名为 folder2</span></span><br><span class="line"><span class="comment"># 如果 folder2 是一个已存在的目录，会将 folder1 移动到该目录</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="使用-file-命令"><a href="#使用-file-命令" class="headerlink" title="使用 file 命令"></a>使用 file 命令</h3><p>使用 file 命令确定文件或文件夹的类型，返回文件的类型描述</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">file file1</span><br><span class="line"><span class="comment"># 查看 file1 的文件类型，并显示类型信息</span></span><br><span class="line"></span><br><span class="line">file folder1</span><br><span class="line"><span class="comment"># 查看 folder1 的文件类型，如果为文件夹，将显示为 &quot;directory&quot;</span></span><br></pre></td></tr></table></figure>
+
 <br>
 
 
 
 
+<h2 id="权限基础知识"><a href="#权限基础知识" class="headerlink" title="权限基础知识"></a>权限基础知识</h2><p>使用 ls -lh 命令列出目录中所有文件的详细信息，包括文件权限、大小、所有者、修改时间等</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span> -lh</span><br><span class="line"><span class="comment"># 以详细格式列出当前目录中的所有文件信息，包括权限、大小和修改时间</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="Web-服务器的工作原理"><a href="#Web-服务器的工作原理" class="headerlink" title="Web 服务器的工作原理"></a>Web 服务器的工作原理</h2><h2 id="Web-服务器"><a href="#Web-服务器" class="headerlink" title="Web 服务器"></a>Web 服务器</h2><p>Web 服务器是一种软件，用于监听传入的连接请求并通过 HTTP 协议向客户端传送网页内容。常见的 Web 服务器软件包括 Apache、Nginx、IIS 和 NodeJS。Web 服务器会从根目录提供文件，该目录的位置在服务器设置中定义。例如，在 Linux 系统，Nginx 和 Apache 的默认根目录是 &#x2F;var&#x2F;www&#x2F;html。在 Windows 系统，IIS 的默认根目录是 C:\inetpub\wwwroot。当请求 <a href="http://www.example.com/wechat.jpg">http://www.example.com/wechat.jpg</a> 时，服务器会从本地路径 &#x2F;var&#x2F;www&#x2F;html&#x2F;wechat.jpg 提供该文件。</p>
-<h3 id="虚拟主机"><a href="#虚拟主机" class="headerlink" title="虚拟主机"></a>虚拟主机</h3><p>Web 服务器能够托管多个不同域名的网站，这种功能称为虚拟主机。服务器会检查 HTTP 请求头中的主机名并与虚拟主机配置匹配，找到匹配项后，返回对应的网站。没有匹配项则返回默认网站。虚拟主机的根目录可以指向硬盘上的不同位置，例如 cyphersun.com 可以映射到 &#x2F;var&#x2F;www&#x2F;cypher1，而 cyphersun.fun 映射到 &#x2F;var&#x2F;www&#x2F;cypher2。理论上 Web 服务器可以托管无限个网站。</p>
-<h3 id="静态内容与动态内容"><a href="#静态内容与动态内容" class="headerlink" title="静态内容与动态内容"></a>静态内容与动态内容</h3><p>静态内容指的是不会随请求改变的内容，例如图片、JavaScript、CSS 文件，或固定的 HTML 文件。这些文件直接由 Web 服务器提供，无需进一步处理。动态内容则会根据请求而改变，例如博客主页会随着新文章发布而更新，或搜索页面会根据关键词返回不同结果。动态内容的生成在后端完成，使用脚本语言或编程语言生成用户不可见的 HTML。</p>
-<h3 id="脚本语言与后端语言"><a href="#脚本语言与后端语言" class="headerlink" title="脚本语言与后端语言"></a>脚本语言与后端语言</h3><p>后端语言用于处理服务器端的交互和逻辑，实现与用户的互动。常见的后端语言包括 PHP、Python、Ruby、NodeJS、Perl 等。后端代码可以与数据库交互、调用外部服务、处理用户数据等。例如访问 <a href="http://example.com/index.php?name=cyphersun">http://example.com/index.php?name=cyphersun</a></p>
-<p>index.php 的代码为：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">Hello &lt;?php <span class="built_in">echo</span> <span class="variable">$_GET</span>[<span class="string">&quot;name&quot;</span>]; ?&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>文件或文件夹有几种特性，特性决定了允许执行哪些操作，以及哪个用户或用户组有权限执行操作：</p>
+<p>读取 (Read)<br>写入 (Write)<br>执行 (Execute)</p>
+<h3 id="用户和用户组之间的区别"><a href="#用户和用户组之间的区别" class="headerlink" title="用户和用户组之间的区别"></a>用户和用户组之间的区别</h3><p>Linux 的优点在于权限非常细化，通过设置权限，一组用户可以对同一个文件拥有相同或不同的权限，而不会影响文件的所有者</p>
+<h3 id="使用-su-命令"><a href="#使用-su-命令" class="headerlink" title="使用 su 命令"></a>使用 su 命令</h3><p>通过目标用户的用户名和密码进行切换账户</p>
+<p>使用 su 命令需要输入用户的密码来切换到指定的用户账户，默认情况下不会加载该用户的完整环境变量<br>使用 su -l 命令需要输入用户的密码，它会完全切换到指定用户的实际登录环境，加载所有新用户的属性等</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">su user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，不会加载该用户的完整环境变量</span></span><br><span class="line"></span><br><span class="line">su -l user2</span><br><span class="line"><span class="comment"># 切换到 user2 用户，加载该用户的完整环境变量和配置</span></span><br></pre></td></tr></table></figure>
 
-
-<p>服务器会输出：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">Hello CypherSun</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<p>客户端无法看到 PHP 代码，因为这些代码在后端执行。这种交互带来了更多的功能，但也可能引入安全风险。<br><br></p>
-<!-- https://tryhackme.com/r/room/puttingitalltogether -->
-<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除主语，括号，链接，优化例子）✔ -->
-<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
+<p>如果没有指定用户，默认情况下会切换到 root 用户。<br><br></p>
+<h2 id="常见目录"><a href="#常见目录" class="headerlink" title="常见目录"></a>常见目录</h2><h3 id="etc"><a href="#etc" class="headerlink" title="&#x2F;etc"></a>&#x2F;etc</h3><p>&#x2F;etc 目录（“etc” 代表 etcetera）是存放操作系统使用的配置和系统文件位置</p>
+<p>在 &#x2F;etc 文件夹中包含 passwd 和 shadow 文件，&#x2F;etc&#x2F;passwd 文件存储了用户账户的信息，&#x2F;etc&#x2F;shadow 文件存储了每个用户的加密哈希密码。系统常使 SHA-512 或其他哈希算法对密码进行加密</p>
+<h3 id="var"><a href="#var" class="headerlink" title="&#x2F;var"></a>&#x2F;var</h3><p>&#x2F;var 目录（“var” 代表 variable data）是存放由系统上运行的服务或应用程序访问、修改或生成的数据</p>
+<h3 id="root"><a href="#root" class="headerlink" title="&#x2F;root"></a>&#x2F;root</h3><p>&#x2F;root 目录是 root 用户系统管理员的主目录，它与普通用户的主目录 &#x2F;home 不同，&#x2F;root 是专门为 root 用户保留的</p>
+<h3 id="tmp"><a href="#tmp" class="headerlink" title="&#x2F;tmp"></a>&#x2F;tmp</h3><p>&#x2F;tmp 目录（“tmp” 代表 temporary）是用于存放仅需临时访问的文件和数据。一旦系统重启，&#x2F;tmp 目录中的内容会被清除。&#x2F;tmp 目录在默认情况下任何用户都有写入权限，&#x2F;tmp 是存放枚举脚本和其他工具的好位置<br><br></p>
+]]></content>
       <categories>
         <category>基础技能</category>
       </categories>
@@ -840,6 +596,192 @@
       </categories>
   </entry>
   <entry>
+    <title>Linux 基础知识 第一部分</title>
+    <url>/2024/10/27/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD1-1/</url>
+    <content><![CDATA[<h2 id="Linux-背景知识"><a href="#Linux-背景知识" class="headerlink" title="Linux 背景知识"></a>Linux 背景知识</h2><p>与 Windows 等其他操作系统（OS）相比，各有优缺点。Linux 是多个类 UNIX 操作系统的统称。由于 Linux 是开源的，因此有许多不同的 Linux 发行版<br><br></p>
+<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>echo</td>
+<td>输出提供的任何文本</td>
+</tr>
+<tr>
+<td>whoami</td>
+<td>查看当前登录的用户身份</td>
+</tr>
+</tbody></table>
+<h3 id="使用-echo-命令"><a href="#使用-echo-命令" class="headerlink" title="使用 echo 命令"></a>使用 echo 命令</h3><p>使用 echo 命令输出字符串</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span></span><br><span class="line"><span class="comment"># 输出 Hello World!</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-whoami-命令"><a href="#使用-whoami-命令" class="headerlink" title="使用 whoami 命令"></a>使用 whoami 命令</h3><p>使用 whoami 命令查看当前登录的用户身份 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">whoami</span></span><br><span class="line"><span class="comment"># 查询当前用户</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="与文件系统的交互命令"><a href="#与文件系统的交互命令" class="headerlink" title="与文件系统的交互命令"></a>与文件系统的交互命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ls</td>
+<td>列出当前目录中的文件（listing）</td>
+</tr>
+<tr>
+<td>cd</td>
+<td>更改当前目录（change directory）</td>
+</tr>
+<tr>
+<td>cat</td>
+<td>输出文件内容（concatenate）</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>显示当前工作目录的完整路径（print working directory）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-ls-命令"><a href="#使用-ls-命令" class="headerlink" title="使用 ls 命令"></a>使用 ls 命令</h3><p>使用 ls 命令来列出当前目录的文件<br>使用 ls 命令和目录名称不进入该目录列出目录的文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"><span class="comment"># 列出当前目录下的所有文件和文件夹</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">ls</span> folder1</span><br><span class="line"><span class="comment"># 列出 folder1 目录下的所有文件和文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="使用-cd-命令"><a href="#使用-cd-命令" class="headerlink" title="使用 cd 命令"></a>使用 cd 命令</h3><p>使用 cd 命令更改当前目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 进入 folder1 目录</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-cat-命令"><a href="#使用-cat-命令" class="headerlink" title="使用 cat 命令"></a>使用 cat 命令</h3><p>使用 cat 命令来输出文件内容<br>使用 cat 命令和目录路径不进入该目录输出目录中文件内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> text1.txt</span><br><span class="line"><span class="comment"># 显示当前目录 text1.txt 文件的内容</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /home/folder1/text1.txt</span><br><span class="line"><span class="comment"># 显示 /home/folder1/text1.txt 文件的内容</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-pwd-命令"><a href="#使用-pwd-命令" class="headerlink" title="使用 pwd 命令"></a>使用 pwd 命令</h3><p>使用 pwd 命令显示当前工作目录的完整路径</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br><span class="line"><span class="comment"># 显示当前工作目录的完整路径</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+
+
+<h2 id="查找文件命令"><a href="#查找文件命令" class="headerlink" title="查找文件命令"></a>查找文件命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>find</td>
+<td>在当前目录所有子目录中搜索文件</td>
+</tr>
+<tr>
+<td>grep</td>
+<td>搜索整个文件中包含特定值的行（Global Regular Expression Print）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-find-命令"><a href="#使用-find-命令" class="headerlink" title="使用 find 命令"></a>使用 find 命令</h3><p>如果记得文件名，使用 find -name 命令在当前目录所有子目录中搜索文件<br>如果不记得文件名，可搜索所有具有特定扩展名的文件，使用 find -name 命令和通配符（*）来搜索所有以特定扩展名结尾的文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">find -name txt1.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找名为 txt1.txt 的文件</span></span><br><span class="line"></span><br><span class="line">find -name *.txt</span><br><span class="line"><span class="comment"># 在当前目录及其子目录中查找所有以 .txt 结尾的文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-grep-命令"><a href="#使用-grep-命令" class="headerlink" title="使用 grep 命令"></a>使用 grep 命令</h3><p>使用 grep 命令搜索整个文件内容来查找包含特定值的行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">grep <span class="string">&quot;Hello World!&quot;</span> txt1.txt</span><br><span class="line"><span class="comment"># 在 txt1.txt 文件中搜索包含 &quot;Hello World!&quot;</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p>字符串内注意需要完全符合大小写</p>
+<h2 id="Shell-操作符"><a href="#Shell-操作符" class="headerlink" title="Shell 操作符"></a>Shell 操作符</h2><table>
+<thead>
+<tr>
+<th>符号&#x2F;操作符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td>执行命令并在后台运行</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>将多个命令结合在一行中执行（仅前一命令成功执行才能继续）</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>一个重定向符，可以将某个命令的输出重定向到其他地方（覆盖原有内容）</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>功能类似于 &gt;，但会将输出追加而不是替换（不会覆盖原有内容）</td>
+</tr>
+</tbody></table>
+<h3 id="使用-操作符"><a href="#使用-操作符" class="headerlink" title="使用 &amp; 操作符"></a>使用 &amp; 操作符</h3><p>使用 &amp; 操作符执行命令并在后台运行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget http://example.com/txt1.txt &amp;</span><br><span class="line"><span class="comment"># 在后台下载 http://example.com/txt1.txt 文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-操作符-1"><a href="#使用-操作符-1" class="headerlink" title="使用 &amp;&amp; 操作符"></a>使用 &amp;&amp; 操作符</h3><p>使用 &amp;&amp; 操作符创建命令链，只有第一个命令成功执行后，第二个命令才会执行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> folder1 &amp;&amp; <span class="built_in">cd</span> folder1</span><br><span class="line"><span class="comment"># 创建 folder1 文件夹，并进入该文件夹</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用-操作符-2"><a href="#使用-操作符-2" class="headerlink" title="使用 &gt; 操作符"></a>使用 &gt; 操作符</h3><p>使用 &gt; 操作符输出重定向，可以将命令的输出保存到指定的文件或其他地方</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
+
+<p>如果文件已存在，内容会被替换<br>如果文件不存在，会创建该文件，并将输出写入其中</p>
+<h3 id="使用-操作符-3"><a href="#使用-操作符-3" class="headerlink" title="使用 &gt;&gt; 操作符"></a>使用 &gt;&gt; 操作符</h3><p>使用 &gt;&gt; 操作符输出重定向，并会将内容追加到文件末尾，而不会覆盖文件原有的内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;Hello World!&quot;</span> &gt;&gt; txt1.txt</span><br><span class="line"><span class="comment"># 将 &quot;Hello World!&quot; 写入 txt1.txt 文件（不会覆盖文件内容）</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+
+
+]]></content>
+      <categories>
+        <category>基础技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>综合整理</title>
+    <url>/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD10/</url>
+    <content><![CDATA[<h2 id="综合整理"><a href="#综合整理" class="headerlink" title="综合整理"></a>综合整理</h2><p>当在浏览器中请求网页时，后台会进行一系列操作。首先计算机需要通过 DNS 系统获取目标服务器的 IP 地址。然后通过 HTTP 协议与该服务器建立通信，服务器会返回网页所需的内容，包括 HTML、JavaScript、CSS、图片等。浏览器接收到内容后，将其格式化并展示为网站。</p>
+<p>例如缓存、内容分发网络（CDN）等组件可以提高网络效率并提供额外的功能，从而确保页面加载更快、体验更流畅。<br><br></p>
+<h2 id="其他组件"><a href="#其他组件" class="headerlink" title="其他组件"></a>其他组件</h2><h3 id="负载均衡器"><a href="#负载均衡器" class="headerlink" title="负载均衡器"></a>负载均衡器</h3><p>当一个网站流量增大或需要高可用性支持时，单一的 Web 服务器可能无法满足需求。负载均衡器为高流量网站提供了两个关键功能：负载分担和故障转移。请求进入带有负载均衡器的网站时，负载均衡器会先接收请求，然后根据算法将其转发到最合适的服务器。常见的算法包括轮询法进行依次分配请求和加权法将请求分配给最空闲的服务器。负载均衡器会定期对每台服务器进行健康检查，若服务器无响应，则暂停向该服务器发送流量，直到其恢复。</p>
+<h3 id="内容分发网络（CDN）"><a href="#内容分发网络（CDN）" class="headerlink" title="内容分发网络（CDN）"></a>内容分发网络（CDN）</h3><p>CDN 是减轻繁忙网站流量的有效方法。它通过全球多个服务器托管网站的静态文件，如 JavaScript、CSS、图片、视频等，当用户请求这些资源时，CDN 会将请求定向至离用户最近的服务器，从而减少延迟并加速加载。</p>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p>网站通常需要数据库来存储用户信息和内容。Web 服务器通过数据库进行数据存储和检索，数据库类型多样，从简单的文本文件到多台服务器的集群，能够提供快速且可靠的数据管理。常用的数据库系统包括 MySQL、MSSQL、MongoDB、Postgres 等，每种数据库系统具有独特的特性和用途。</p>
+<h3 id="Web-应用防火墙（WAF）"><a href="#Web-应用防火墙（WAF）" class="headerlink" title="Web 应用防火墙（WAF）"></a>Web 应用防火墙（WAF）</h3><p>WAF 位于 Web 请求和 Web 服务器之间，保护服务器免受攻击或恶意流量的影响。WAF 通过分析请求内容，检测常见的攻击模式，如 SQL 注入、XSS 攻击等，并通过速率限制控制请求频率，避免异常流量对服务器造成冲击。如果检测到可疑请求，WAF 会将其拦截，防止其到达 Web 服务器。</p>
+<br>
+
+
+
+
+
+<h2 id="Web-服务器的工作原理"><a href="#Web-服务器的工作原理" class="headerlink" title="Web 服务器的工作原理"></a>Web 服务器的工作原理</h2><h2 id="Web-服务器"><a href="#Web-服务器" class="headerlink" title="Web 服务器"></a>Web 服务器</h2><p>Web 服务器是一种软件，用于监听传入的连接请求并通过 HTTP 协议向客户端传送网页内容。常见的 Web 服务器软件包括 Apache、Nginx、IIS 和 NodeJS。Web 服务器会从根目录提供文件，该目录的位置在服务器设置中定义。例如，在 Linux 系统，Nginx 和 Apache 的默认根目录是 &#x2F;var&#x2F;www&#x2F;html。在 Windows 系统，IIS 的默认根目录是 C:\inetpub\wwwroot。当请求 <a href="http://www.example.com/wechat.jpg">http://www.example.com/wechat.jpg</a> 时，服务器会从本地路径 &#x2F;var&#x2F;www&#x2F;html&#x2F;wechat.jpg 提供该文件。</p>
+<h3 id="虚拟主机"><a href="#虚拟主机" class="headerlink" title="虚拟主机"></a>虚拟主机</h3><p>Web 服务器能够托管多个不同域名的网站，这种功能称为虚拟主机。服务器会检查 HTTP 请求头中的主机名并与虚拟主机配置匹配，找到匹配项后，返回对应的网站。没有匹配项则返回默认网站。虚拟主机的根目录可以指向硬盘上的不同位置，例如 cyphersun.com 可以映射到 &#x2F;var&#x2F;www&#x2F;cypher1，而 cyphersun.fun 映射到 &#x2F;var&#x2F;www&#x2F;cypher2。理论上 Web 服务器可以托管无限个网站。</p>
+<h3 id="静态内容与动态内容"><a href="#静态内容与动态内容" class="headerlink" title="静态内容与动态内容"></a>静态内容与动态内容</h3><p>静态内容指的是不会随请求改变的内容，例如图片、JavaScript、CSS 文件，或固定的 HTML 文件。这些文件直接由 Web 服务器提供，无需进一步处理。动态内容则会根据请求而改变，例如博客主页会随着新文章发布而更新，或搜索页面会根据关键词返回不同结果。动态内容的生成在后端完成，使用脚本语言或编程语言生成用户不可见的 HTML。</p>
+<h3 id="脚本语言与后端语言"><a href="#脚本语言与后端语言" class="headerlink" title="脚本语言与后端语言"></a>脚本语言与后端语言</h3><p>后端语言用于处理服务器端的交互和逻辑，实现与用户的互动。常见的后端语言包括 PHP、Python、Ruby、NodeJS、Perl 等。后端代码可以与数据库交互、调用外部服务、处理用户数据等。例如访问 <a href="http://example.com/index.php?name=cyphersun">http://example.com/index.php?name=cyphersun</a></p>
+<p>index.php 的代码为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">Hello &lt;?php <span class="built_in">echo</span> <span class="variable">$_GET</span>[<span class="string">&quot;name&quot;</span>]; ?&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+
+<p>服务器会输出：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">Hello CypherSun</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>客户端无法看到 PHP 代码，因为这些代码在后端执行。这种交互带来了更多的功能，但也可能引入安全风险。<br><br></p>
+<!-- https://tryhackme.com/r/room/puttingitalltogether -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除主语，括号，链接，优化例子）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
+      <categories>
+        <category>基础技能</category>
+      </categories>
+  </entry>
+  <entry>
     <title>常见攻击</title>
     <url>/2024/10/29/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD3/</url>
     <content><![CDATA[<h2 id="社会工程学"><a href="#社会工程学" class="headerlink" title="社会工程学"></a>社会工程学</h2><h3 id="什么是社会工程学？"><a href="#什么是社会工程学？" class="headerlink" title="什么是社会工程学？"></a>什么是社会工程学？</h3><p><strong>社会工程学</strong>：用来描述任何以人为目标的网络攻击的术语，会导致攻击者对目标的生活进行重大控制。社会工程学攻击是多层次的，并随着“滚雪球效应”逐步升级</p>
@@ -963,42 +905,108 @@
       </categories>
   </entry>
   <entry>
+    <title>治理与监管</title>
+    <url>/2024/10/26/T1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%803/</url>
+    <content><![CDATA[<h2 id="为什么重要？"><a href="#为什么重要？" class="headerlink" title="为什么重要？"></a>为什么重要？</h2><p><strong>治理</strong>：对组织或系统进行管理和指导，以实现遵循法律、法规和标准<br><strong>监管</strong>：由管理机构执行的规则或法律，旨在确保合规并防范风险<br><strong>合规</strong>：指组织或系统遵守相关法律、法规和标准的状态</p>
+<h3 id="信息安全治理"><a href="#信息安全治理" class="headerlink" title="信息安全治理"></a>信息安全治理</h3><p>信息安全治理是组织用来确保其信息资产的保密性、完整性和可用性的结构、政策、方法和指南的综合体系。信息安全治理通常由高层管理层主导。</p>
+<p>信息安全治理的核心流程：<br><strong>战略制定</strong>：设计并执行符合组织整体业务目标的信息安全战略<br><strong>政策与程序</strong>：制定相关政策和程序，以管理信息资产的使用与保护<br><strong>风险管理</strong>：通过风险评估识别潜在威胁，并实施相应的风险缓解措施<br><strong>绩效评估</strong>：通过设立指标和关键绩效指标（KPIs），衡量信息安全治理计划的有效性<br><strong>法规合规</strong>：确保符合相关法律法规及行业最佳实践</p>
+<h3 id="信息安全监管"><a href="#信息安全监管" class="headerlink" title="信息安全监管"></a>信息安全监管</h3><p>在信息安全领域，治理与监管含义不同。信息安全监管是指用于管理和保护信息资产的法律和监管框架。这些法规旨在防止敏感数据被非法访问、盗窃或滥用。遵守这些法规通常是强制性的，由政府或监管机构监督执行。</p>
+<h3 id="关键点"><a href="#关键点" class="headerlink" title="关键点"></a>关键点</h3><p><strong>更好的安全状态</strong>：通过实施全面的信息安全治理计划并遵守相关法规，组织可以显著降低漏洞的风险，保护敏感信息经未经授权的访问、盗窃和滥用</p>
+<p><strong>提升利益相关者信任</strong>：良好的信息安全治理和监管可以展示组织对网络安全的高度重视，从而增强利益相关者的信心</p>
+<p><strong>法规合规性</strong>：遵循法规，可以帮助组织避免因不合规导致的法律诉讼、财务损失和声誉损害</p>
+<p><strong>与业务目标保持一致</strong>：信息安全治理框架可以帮助组织将信息安全战略与业务目标结合，确保安全措施具成本效益</p>
+<p><strong>明智决策</strong>：安全治理计划为决策者提供了关于信息安全风险的知识，确保在最关键的领域实施安全措施</p>
+<p><strong>竞争优势</strong>：有效的安全治理和遵守相关法规可以为组织提供竞争优势，表明对保护敏感数据的承诺，从而赢得利益相关者的信任</p>
+<h3 id="相关法律和法规"><a href="#相关法律和法规" class="headerlink" title="相关法律和法规"></a>相关法律和法规</h3><p>具体的法律法规支撑着信息安全治理和监管的系统。它们为最低合规标准提供了结构化的框架，促进了问责制和信任，促进保护关键系统和数据的创新方法。通过清晰简洁的规则，这些法规减少了歧义，为组织提供了通用标准来评估其安全状态并确保遵守法规要求。<br><br></p>
+<h2 id="信息安全框架"><a href="#信息安全框架" class="headerlink" title="信息安全框架"></a>信息安全框架</h2><p>信息安全框架是一份完整的文档，旨在概述组织在信息安全领域的战略方向，并规范安全措施在组织内部的实施、管理和执行。</p>
+<p>这些文件主要包括：<br><strong>政策</strong>：正式的声明，阐明组织为实现特定目标而设定的原则和指导方针<br><strong>标准</strong>：规定特定过程、产品或服务的详细要求或技术规范的文件<br><strong>指南</strong>：为实现特定目标或目的提供建议和最佳实践的文件<br><strong>程序</strong>：制定的详细步骤，用于执行特定任务或流程<br><strong>基准</strong>：组织或系统必须遵守的一套最低安全标准或要求</p>
+<h3 id="制定治理文件"><a href="#制定治理文件" class="headerlink" title="制定治理文件"></a>制定治理文件</h3><p>创建政策、标准、指南等治理文件的一般步骤：<br><strong>明确范围和目标</strong>：明确文件的覆盖范围及其重要性</p>
+<p><strong>进行研究和审查</strong>：研究相关法律法规、行业标准及最佳实践，确保文件内容的全面性和时效性。审查现有文件，避免重复编写或与现有指导相冲突。</p>
+<p><strong>起草文件</strong>：制定框架并编写初稿，遵循清晰、简洁的最佳实践，确保文件具体、可操作，并符合组织的目标与价值观</p>
+<p><strong>审查与批准</strong>：邀请相关专家、法律和合规团队及高级管理层审阅文件。根据他们的反馈调整内容，以确保文件符合组织目标。获得适当利益相关者的最终批准</p>
+<p><strong>执行与沟通</strong>：将文件分发给所有相关人员，确保他们清楚理解自己在实施过程中的职责。制定相应的培训计划，确保理解和遵守文件</p>
+<p><strong>定期审查与更新</strong>：定期审核和更新文件，确保仍然有效。监控执行情况，并根据反馈和威胁形势或监管环境进行调整<br><br></p>
+<h2 id="治理、风险与合规（GRC）"><a href="#治理、风险与合规（GRC）" class="headerlink" title="治理、风险与合规（GRC）"></a>治理、风险与合规（GRC）</h2><p>GRC框架旨在以集成的方式管理组织的整体治理、风险管理和合规性。这是一种全面的信息安全方法，确保组织的运作与其战略目标保持一致，同时符合相关法规和行业标准的要求</p>
+<p>GRC框架由以下三个核心组成部分：<br><strong>治理组件</strong>：通过信息安全战略为组织设定明确的方向，包括制定政策、标准、基准和框架等内容，同时采用有效的监测方法，评估组织的表现并分析结果</p>
+<p><strong>风险管理组件</strong>：识别、评估和优先处理对组织构成威胁的风险，并采取适当的控制和缓解措施来有效管理这些风险。这包括对风险进行持续的监控和报告，并定期优化风险管理方案，以确保其持续有效性</p>
+<p><strong>合规组件</strong>：确保组织符合法律、法规及行业标准，确保活动符合既定的政策和程序。这包括制定和执行合规计划，定期开展审计和评估，并向利益相关方报告合规情况</p>
+<h3 id="如何构建GRC计划——通用指南"><a href="#如何构建GRC计划——通用指南" class="headerlink" title="如何构建GRC计划——通用指南"></a>如何构建GRC计划——通用指南</h3><p>一个完善且实施良好的网络安全GRC计划，为风险管理、法规遵守和提升整体安全状况提供了一个综合框架。它能够有效地进行治理、风险管理和合规活动，减少网络攻击的风险，并确保业务的可持续性。</p>
+<p>开发和实施GRC框架的关键步骤：<br><strong>确定范围和目标</strong>：明确GRC程序的实施范围及其目标</p>
+<p><strong>进行风险评估</strong>：识别和评估潜在的网络风险</p>
+<p><strong>制定政策和程序</strong>：为网络安全操作制定政策和程序</p>
+<p><strong>建立治理流程</strong>：确保GRC计划的有效管理和监督</p>
+<p><strong>实施控制措施</strong>：部署技术和非技术措施，以降低已识别的风险</p>
+<p><strong>监控和评估绩效</strong>：建立流程来监控和衡量 GRC 计划的有效性</p>
+<p><strong>持续改进</strong>：基于绩效数据、风险的动态变化和利益相关者的反馈，不断优化GRC计划<br><br></p>
+<h2 id="隐私与数据保护"><a href="#隐私与数据保护" class="headerlink" title="隐私与数据保护"></a>隐私与数据保护</h2><p>在金融、医疗保健、政府和工业等各个领域都涉及到处理公民的个人身份信息（PII）。隐私法规的制定，旨在确保个人信息得到妥善、负责任且符合伦理地处理和存储。同时，这些法规有助于建立公众信任、有效保护个人信息，并确保遵守相关法规。<br><br></p>
+<h2 id="NIST-特别出版物"><a href="#NIST-特别出版物" class="headerlink" title="NIST 特别出版物"></a>NIST 特别出版物</h2><p>NIST 800-53是由美国国家标准与技术研究院（NIST）发布的名为《信息系统与组织的安全与隐私控制》的指南。该指南提供了一个详尽的安全控制目录，用以保护信息系统中的保密性、完整性和可用性（CIA）。作为一个框架，它帮助组织评估和提升信息系统的安全性和隐私性，以确保符合各类法律、法规和政策要求。该指南整合了多个来源的最佳实践，包括行业标准、指南以及国际框架。</p>
+<h3 id="关键要点"><a href="#关键要点" class="headerlink" title="关键要点"></a>关键要点</h3><p>NIST 800-53提供了一个全面的安全与隐私控制体系，帮助组织从多种威胁和风险中保护其业务运营、资产、人员及其他利益相关方。这些威胁包括有意攻击、无意错误、自然灾害、基础设施中断、外国情报活动和隐私风险。NIST 800-53将安全控制分为20个不同类别，每个类别都聚焦于特定的安全领域。</p>
+<h3 id="基于NIST-800-53的信息安全计划的开发和实施"><a href="#基于NIST-800-53的信息安全计划的开发和实施" class="headerlink" title="基于NIST 800-53的信息安全计划的开发和实施"></a>基于NIST 800-53的信息安全计划的开发和实施</h3><p>在所有控制类别中，“程序管理”是NIST 800-53框架中的一个关键控制点。程序管理要求建立、实施和监控组织范围内的信息安全和隐私计划，确保通过系统处理、存储或传输的数据得到保护。</p>
+<h3 id="合规性最佳实践"><a href="#合规性最佳实践" class="headerlink" title="合规性最佳实践"></a>合规性最佳实践</h3><p>组织应开展全面的数据资产、信息系统和相关威胁的识别和分类。这包括理解数据流、系统依赖关系以及潜在的安全漏洞。NIST 800-53的控制类别应当与已识别的资产和风险进行映射，以便根据组织的需求制定结构化的控制方案。还需要建立完善的治理架构，明确分工职责，并详细规划控制措施的实施和维护步骤，确保实施过程的有效管理。所有控制措施应当定期监控和评估，以确保符合规定要求。此外，组织应建立有效的监控系统，以迅速识别和处理安全问题，定期进行审查和审计，并改进控制的执行。通过遵循这些最佳实践，组织能够成功实施NIST 800-53框架，提升安全态势，有效降低风险。</p>
+<h3 id="NIST-800-63B"><a href="#NIST-800-63B" class="headerlink" title="NIST 800-63B"></a>NIST 800-63B</h3><p>NIST特别出版物800-63B是一套由NIST制定的数字身份验证指南，旨在帮助组织建立有效的数字身份管理实践。其核心关注点是认证和验证访问数字服务、系统和网络的个人身份。这些指南涵盖了从基础到高级的不同身份验证级别，提供了关于使用密码、生物识别技术和令牌等身份验证要素的建议，同时还指导如何安全管理和存储用户凭证。<br><br></p>
+<h2 id="信息安全管理与合规"><a href="#信息安全管理与合规" class="headerlink" title="信息安全管理与合规"></a>信息安全管理与合规</h2><p>信息安全管理涵盖了安全措施的战略规划、执行及管理，旨在保护信息资产免受未经授权的访问、使用、披露、中断、篡改及销毁。这包括风险评估与识别、安全控制和程序的制定、事件响应规划以及安全意识培训。另一方面，合规性则强调遵守与信息安全相关的法律、法规、合同及行业特定标准。</p>
+<h3 id="ISO-IEC-27001"><a href="#ISO-IEC-27001" class="headerlink" title="ISO&#x2F;IEC 27001"></a>ISO&#x2F;IEC 27001</h3><p>ISO 27001是一项国际上公认的信息安全管理体系（ISMS）标准，用于规划、开发、运行及更新组织的ISMS。该标准由国际标准化组织（ISO）和国际电工委员会（IEC）联合制定</p>
+<p><strong>范围</strong>：指定了信息安全管理体系的范围，包括涵盖的资产和流程<br><strong>信息安全政策</strong>：定义组织信息安全策略的高级文件<br><strong>风险评估</strong>：识别并评估威胁组织信息机密性、完整性和可用性的风险<br><strong>风险处理</strong>：选择并实施控制措施，以将已识别的风险降至可接受水平<br><strong>适用性声明</strong>（SoA）：列出标准中适用和不适用的控制文件<br><strong>内部审计</strong>：定期对ISMS进行审核，以确保其有效运行<br><strong>管理评审</strong>：定期评估ISMS的绩效，确保其符合组织的目标</p>
+<p>基于ISO 27001标准建立的ISMS需要经过设计与实施。这包括对组织的安全措施进行全面评估，发现潜在漏洞并进行详细的风险评估。在访问控制、事件响应等方面制定明确的规则和流程，确保符合ISO 27001标准要求。定期的监控、测量和持续改进，确保ISMS的有效性和与组织目标的一致性。</p>
+<h3 id="服务组织控制2（SOC-2）"><a href="#服务组织控制2（SOC-2）" class="headerlink" title="服务组织控制2（SOC 2）"></a>服务组织控制2（SOC 2）</h3><p>SOC 2是由美国注册会计师协会（AICPA）制定的一个合规性和审计框架。它以CIA（机密性、完整性和可用性）为基础，评估企业的数据安全性。SOC 2能够向客户、利益相关者及合作伙伴展示公司在安全和隐私方面的承诺。</p>
+<h3 id="关键要点-1"><a href="#关键要点-1" class="headerlink" title="关键要点"></a>关键要点</h3><p>SOC 2是一项审计标准，用于评估服务组织在数据安全和隐私方面的控制措施有效性。<br>由独立审计师进行SOC 2审计，以验证安全控制是否满足相关标准要求。<br>SOC 2报告为客户、利益相关者和监管机构提供关于服务组织安全和隐私措施信息。<br>SOC 2审计报告将评估云计算公司所采取的控制措施，并提出发现或改进建议。此信息可供客户及其他利益相关者参考，以确保公司采取了合适的措施来保护数据和系统。</p>
+<h3 id="SOC-2提供哪些信息安全保护？"><a href="#SOC-2提供哪些信息安全保护？" class="headerlink" title="SOC 2提供哪些信息安全保护？"></a>SOC 2提供哪些信息安全保护？</h3><p>SOC 2审计的主要目的是确保第三方服务提供商安全地存储和处理敏感信息</p>
+<h3 id="规划和进行SOC-2审计"><a href="#规划和进行SOC-2审计" class="headerlink" title="规划和进行SOC 2审计"></a>规划和进行SOC 2审计</h3><p>组织的管理团队可以采取步骤：<br><strong>确定审计范围</strong>：选择涉及客户数据安全性和隐私性的重要系统、流程或位置</p>
+<p><strong>选择合适的审计师</strong>：选择具有审计经验的专业审计师，应考虑审计师的声誉和专业经验等因素</p>
+<p><strong>制定审计计划</strong>：与审计师合作，确定审计时间表、审计范围和具体标准</p>
+<p><strong>准备审计</strong>：通过审核安全与隐私控制、政策及流程，为审计做好准备。识别并修正出现的差距</p>
+<p><strong>进行审计</strong>：审计师将检查控制措施，并进行测试以评估其有效性。可能包括与关键人员访谈、文件审查及控制测试</p>
+<p><strong>获取审计报告</strong>：当审计完成，审计师将提供一份详细的审计报告。报告内容可能包括控制措施实施方案、识别出的差距及改进建议<br><br></p>
+]]></content>
+      <categories>
+        <category>网络安全基础</category>
+      </categories>
+  </entry>
+  <entry>
     <title>什么是网络？</title>
     <url>/2024/10/30/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD4-1/</url>
-    <content><![CDATA[<h2 id="什么是网络？"><a href="#什么是网络？" class="headerlink" title="什么是网络？"></a>什么是网络？</h2><p><strong>网络</strong>就是连接在一起的事物。在计算机领域，网络的概念相同，连接的是各种技术设备，网络可以由2台设备到数十亿台设备组成<br><br></p>
-<h2 id="什么是互联网？"><a href="#什么是互联网？" class="headerlink" title="什么是互联网？"></a>什么是互联网？</h2><p><strong>互联网</strong>是一个巨大的网络，由许许多多的小型网络组成。</p>
-<p>互联网的首次雏形出现在1960年代末的ARPANET项目中。该项目由美国国防部资助，是首个实际应用的网络。直到1989年，由Tim Berners-Lee发明了万维网（World Wide Web，WWW），互联网开始被用作存储和共享信息的存储库。</p>
-<p>互联网是由许多小型网络相互连接而成的。这些小型网络称为私有网络，而连接这些小网络的网络称为公共网络，也就是互联网。</p>
-<p>网络可以分为两种类型：<br><strong>私有网络</strong><br><strong>公共网络</strong></p>
+    <content><![CDATA[<h2 id="什么是网络？"><a href="#什么是网络？" class="headerlink" title="什么是网络？"></a>什么是网络？</h2><p>网络本质上是事物之间的连接关系。例如，因共同的兴趣、爱好或技能而相互连接的朋友圈，这也构成了一种网络。</p>
+<p>网络无处不在，各个领域都能看到它的影子：</p>
+<p>城市公共交通系统<br>国家电网等基础设施<br>与朋友的日常互动<br>快递的邮政系统</p>
+<p>在计算机领域，网络的概念相似，只不过对象是技术设备。以手机为例，它能连接外界、获取信息。这些设备之间的通信有特定的规则和协议，网络技术就在于研究这些连接如何实现、通信如何进行，并且网络还有不同的形态和规模。</p>
+<p>在计算机网络中，网络可以简单到仅由两台设备组成，也可以复杂到包含数十亿台设备。这些设备包括笔记本电脑、手机、监控摄像头、交通信号灯，或其他设备。</p>
 <br>
 
 
 
 
 
-<h2 id="识别网络中的设备"><a href="#识别网络中的设备" class="headerlink" title="识别网络中的设备"></a>识别网络中的设备</h2><p>网络中的设备和人类非常相似，有两种识别方式：<br><strong>名字</strong><br><strong>指纹</strong></p>
-<p>设备有两种身份识别方式，其中一种是可更改的：</p>
-<p><strong>IP地址</strong><br><strong>媒体访问控制</strong>（MAC）地址设备的序列号</p>
-<h3 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h3><p><strong>IP 地址</strong> (Internet Protocol) 可在一段时间内用作识别网络上主机的一种方式，该 IP 地址可与另一台设备关联，而无需更改 IP 地址</p>
-<p>IP 地址是一组分为四个八位字节的数字，每个八位字节的值将汇总为网络上设备的 IP 地址。该数字是通过称为 IP 寻址和子网划分的技术生成，IP 地址可以在不同设备之间更改，但不能在同一网络中同时处于活动状态多次</p>
-<p>IP 地址遵循一组协议的标准。这些协议是网络的基础，使得多个设备可交流。设备可处于私有网络或公共网络中，而其所处的网络类型决定了它拥有的 IP 地址类型：公共 IP 地址或私有 IP 地址</p>
-<p>公共地址用于在互联网上识别设备，而私有地址则用于在设备间的相互识别。</p>
-<p>这两个设备将能够使用其私有 IP 地址相互通信。任何从这些设备发送到互联网的数据都会通过相同的公共IP地址进行标识。公共 IP 地址是由互联网服务提供商（ISP）分配的，按月收费。</p>
-<p><strong>IPv4</strong> 是互联网协议，它使用2^32个 IP 地址（42.9亿）</p>
-<p><strong>IPv6</strong> 是互联网协议寻址方案的新版本，它使用2^128个IP地址（超过340万亿个），解决了 IPv4 IP 地址不够分配的问题</p>
-<h3 id="MAC地址"><a href="#MAC地址" class="headerlink" title="MAC地址"></a>MAC地址</h3><p>网络上的所有设备都具有物理网络接口，设备主板上的微芯片板。该网络接口在出厂时被分配了一个唯一的地址，称为 MAC（媒体访问控制）地址。MAC 地址是一个十二字符的十六进制数字，每两个字符一组，用冒号分隔。前六个字符代表制造该网络接口的公司，后六个字符是唯一编号。</p>
-<p>MAC 地址是可伪造或欺骗的，这一过程称为伪装（spoofed）。当网络设备使用其他设备的 MAC 地址假装自己是另一个设备时，就会发生伪装。</p>
-<p>咖啡馆、酒店等场所的访客或公共 Wi-Fi 使用 MAC 地址控制。这种配置可以提供更好的服务</p>
+<h2 id="什么是互联网？"><a href="#什么是互联网？" class="headerlink" title="什么是互联网？"></a>什么是互联网？</h2><p>互联网是一个庞大的网络系统，由无数小型网络组成。</p>
+<p>互联网的最初雏形可以追溯到 20 世纪 60 年代后期的 ARPANET 项目。该项目由美国国防部资助，是第一个实际运行的计算机网络。直到 1989 年蒂姆·伯纳斯-李发明了万维网（WWW），互联网才逐渐演变成今天。从那时起，互联网成为一个用于存储和共享信息的巨大存储库。</p>
+<p>可以将朋友圈类比为小型网络，而互联网则是这些小型网络的集合体。互联网由许多私有网络构成，这些私有网络通过公共网络相互连接，形成一个全球性网络。</p>
+<p>网络可以分为两种类型：<br>私有网络<br>公共网络</p>
+<p>设备通过一组独特的标识在网络中识别自己。<br><br></p>
+<h2 id="识别网络中的设备"><a href="#识别网络中的设备" class="headerlink" title="识别网络中的设备"></a>识别网络中的设备</h2><p>在网络上进行通信并保持秩序，设备必须既能识别他人，也能被他人识别。否则，如果无法确认交流对象，通信将变得毫无意义。</p>
+<p>设备在识别上类似于人类，有两种识别方式：名字和指纹。虽然名字可以通过法律程序更改，但每个人的指纹却是独一无二且不可更改的，即使名字变了，身份仍任可以通过指纹确认。设备也有类似的识别方式：IP 地址和媒体访问控制（MAC）地址</p>
+<h3 id="IP-地址"><a href="#IP-地址" class="headerlink" title="IP 地址"></a>IP 地址</h3><p>IP 地址是互联网协议地址，用于在网络上识别设备，并可以在一定时间内关联到特定设备。它由四组数字组成，每组数字称为一个“八位组”，最终组合成一个设备的独特 IP 地址。地址分配遵循 IP 地址分配和子网划分的技术，确保在同一网络中每台设备拥有唯一的 IP 地址，防止地址冲突。</p>
+<p>IP 地址分为公共 IP 地址和私有 IP 地址，具体取决于设备所在的网络类型。公共 IP 地址用于互联网上的识别，而私有 IP 地址通常在局域网内使用。分配这些地址并使用一套协议作为标准规范，协议是网络的核心，使得不同设备能够以统一的语言进行通信。MAC 地址则是设备的物理地址，通常不可更改，可以将其理解为设备的指纹或序列号。与 IP 地址不同，MAC 地址通常不变且独一无二，用于在同一网络的设备之间建立稳定的物理连接。</p>
+<p>公共 IP 地址与私有 IP 地址</p>
+<p>公共 IP 地址用于在互联网上识别设备，而私有 IP 地址用于在局域网内识别设备。例如两个设备能够在私有网络中各自拥有私有 IP 地址，同时并共享一个公共 IP 地址。这两个设备可以使用各自的私有 IP 地址在局域网内相互通信。然而，当它们中的任意一个设备向互联网发送数据时，都会通过同一个公共 IP 地址识别。这个公共 IP 地址是由互联网服务提供商（ISP）分配的，通常按月收费。</p>
+<p>全球已有约 500 亿个设备连接到互联网，分配一个独特的公共 IP 地址变得越来越困难。因此不同版本的 IP 地址方案被提出以解决这一问题。目前常用的 IP 地址版本是 IPv4，它使用约 42.9 亿个地址。这一限制使得 IPv4 地址资源短缺。</p>
+<p>IPv6 是一种新的互联网协议地址方案，旨在缓解 IPv4 地址分配的问题。IPv6 使用超过 340 万亿个，极大地增加了可用的 IP 地址数量。此外 IPv6 还引入了更高效的技术，使得数据传输和路由更优化。</p>
+<h3 id="MAC-地址"><a href="#MAC-地址" class="headerlink" title="MAC 地址"></a>MAC 地址</h3><p>每个网络设备都具有一个物理网络接口，该接口包含一个出厂时分配的唯一地址，称为 MAC 地址。MAC 地址由 12 个十六进制字符组成，通常每两位一组，用冒号分隔，例如：a4:c3:f0:85:ac:2d。前六位代表制造商，后六位为设备的唯一序列号。</p>
+<p>MAC 地址的一个特点是它可以被伪造，这种技术称为 MAC 地址欺骗。MAC 地址欺骗是指某设备通过模仿另一个设备的 MAC 地址来伪装身份。这种情况可能会破坏某些设计不完善的安全机制，例如，如果防火墙允许特定 MAC 地址的通信，攻击者可以通过 MAC 地址欺骗绕过该防火墙规则。</p>
+<p>在一些公共场所，如咖啡馆、酒店等，Wi-Fi 网络通常使用 MAC 地址来管理访客接入，通过 MAC 地址识别和限制设备，以便控制网络访问或提供特定的连接服务。</p>
 <br>
 
 
 
 
 
-<h2 id="Ping（ICMP）"><a href="#Ping（ICMP）" class="headerlink" title="Ping（ICMP）"></a>Ping（ICMP）</h2><p><strong>Ping</strong> 是可用的最基础的网络工具之一。Ping 使用互联网控制消息协议（Internet Control Message Protocol，ICMP）数据包来确定设备之间的连接性能</p>
-<p>Ping 测量 ICMP 数据包在设备之间的往返时间来评估连接的表现</p>
-<p>Ping 可用于测试网络中的设备或网站等资源。Ping 在 Linux 和 Windows 等操作系统中预装。<br><br></p>
-]]></content>
+<h2 id="Ping（ICMP）"><a href="#Ping（ICMP）" class="headerlink" title="Ping（ICMP）"></a>Ping（ICMP）</h2><p>Ping 是网络中的基本工具，用于检测设备之间的连接情况。它使用 ICMP（互联网控制消息协议）数据包来测试连接是否存在以及连接质量是否可靠。</p>
+<p>Ping 的工作原理是通过测量 ICMP 数据包在设备之间的往返时间。Ping 发送一个 ICMP 的回显请求数据包给目标设备，目标设备收到后会回复一个回显回复数据包。通过这种往返过程，Ping 会测量从发送到接收的延迟时间。</p>
+<p>Ping 可以对网络中的任何设备，如家庭网络中的电脑或互联网上的网站资源执行 Ping 操作。Ping 命令预装在 Linux 和 Windows 等操作系统中。基本语法是 ping IP地址 或 ping 网站 URL。</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/whatisnetworking -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除主语，括号，链接，优化例子）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
       <categories>
         <category>基础技能</category>
       </categories>
@@ -1158,6 +1166,108 @@
 <h2 id="第-7-层-应用层"><a href="#第-7-层-应用层" class="headerlink" title="第 7 层 - 应用层"></a>第 7 层 - 应用层</h2><p>第7层（应用层）是最接近用户的一层，应用层是制定协议和规则的层，用于确定用户应如何与发送或接收的数据进行交互</p>
 <p>日常应用程序提供图形用户界面（GUI），以便用户与发送或接收的数据进行交互。应用层协议也包括 DNS（域名系统），负责将网站地址转换为 IP 地址，使访问网络资源更加便捷，这层是用户直接接触的数据交互层<br><br></p>
 ]]></content>
+      <categories>
+        <category>基础技能</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>拓展网络</title>
+    <url>/2024/11/01/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD4-5/</url>
+    <content><![CDATA[<h2 id="端口转发简介"><a href="#端口转发简介" class="headerlink" title="端口转发简介"></a>端口转发简介</h2><p>端口转发是将应用程序和服务连接到互联网。如果没有端口转发，像 Web 服务器的应用程序和服务只能被位于同一内网&#x2F;局域网的设备访问。</p>
+<p>例如，在一个内网中，IP 地址为 1.1.1.1 的服务器在端口 80 上运行 Web 服务器，只有同一内网中的其他计算机能够访问它。为了使外部互联网用户也能访问该 Web 服务器，网络管理员可以配置端口转发</p>
+<p>通过配置端口转发，位于其他网络的用户可以通过访问公共 IP 地址来访问该 Web 服务器。这使得外部设备能够通过路由器的公共 IP 地址连接到内部服务。</p>
+<p>端口转发和防火墙的行为容易混淆。端口转发的作用是打开特定端口，以便数据流能够传递到指定的内部设备。而防火墙的作用则是根据设定的安全规则，决定是否允许或拒绝这些数据流，即使端口已通过端口转发打开。</p>
+<p>端口转发通常在路由器上进行配置。<br><br></p>
+<h2 id="防火墙基础知识"><a href="#防火墙基础知识" class="headerlink" title="防火墙基础知识"></a>防火墙基础知识</h2><p>防火墙是一种网络安全设备，用于管理进出网络的流量，可以将其看作网络的边境安全。管理员可以基于多种因素配置防火墙，以允许或拒绝流量的进出。</p>
+<p>防火墙通过数据包检查来判断是否满足这些条件：<br>流量的来源（防火墙是否允许&#x2F;拒绝来自特定网络的流量？）<br>流量的目的地（防火墙是否允许&#x2F;拒绝发往特定网络的流量？）<br>流量的端口（防火墙是否允许&#x2F;拒绝通过特定端口，如端口 80 的流量？）<br>流量的协议（防火墙是否允许&#x2F;拒绝基于 UDP、TCP 等协议的流量？）</p>
+<p>防火墙既有企业级的大型硬件设备，可以处理大量数据流量，也有适用于家庭网络的家用路由器内置的简单防火墙，或者基于软件的防火墙，如 Snort。根据功能和配置方式的不同，防火墙最常见的包括以下两类：</p>
+<table>
+<thead>
+<tr>
+<th>防火墙类别</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>有状态防火墙（Stateful）</td>
+<td>这种防火墙基于整个连接的状态来进行检查和决策。与逐包检查的方式不同，有状态防火墙可以动态判断流量的合法性。例如，它会允许一个 TCP 连接的初始握手，但如果发现后续握手失败，可能会屏蔽整个连接。尽管有状态防火墙可以提供更智能的流量管理，但它消耗更多的系统资源。</td>
+</tr>
+<tr>
+<td>无状态防火墙（Stateless）</td>
+<td>这种防火墙使用一组静态规则来判断每个独立的数据包是否符合要求。即使某个数据包不合规，也不会直接屏蔽整个设备。无状态防火墙消耗的资源较少，但依赖预先定义的规则来运作，对于复杂的流量可能反应不灵敏。但它在面对来自大量主机的简单、规则化的攻击，如分布式拒绝服务攻击时仍然十分有效。</td>
+</tr>
+</tbody></table>
+<br>
+
+
+
+
+
+
+<h2 id="VPN-基础知识"><a href="#VPN-基础知识" class="headerlink" title="VPN 基础知识"></a>VPN 基础知识</h2><p>虚拟专用网络（VPN）是一种通过互联网创建专用通道&#x2F;隧道来确保不同网络中的设备可以安全通信的技术。连接在 VPN 隧道内的设备组成了一个独立的私有网络。</p>
+<p>通常情况下，只有在同一网络中的设备才能直接通信，例如公司内部设备，而 VPN 可以将位于不同地点的两个网络连接起来。</p>
+<p>网络#1<br>网络#2<br>网络#3（由 VPN 连接的两个设备）</p>
+<p>即使网络#3的设备分别属于网络#1和网络#2，但通过 VPN 它们还是能组成了一个仅供 VPN 设备访问的私有网络。</p>
+<p>下表总结了 VPN 的一些主要优势：</p>
+<table>
+<thead>
+<tr>
+<th>优势</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>允许不同地理位置的网络连接</td>
+<td>企业可以使用 VPN 将不同地点的办公室连接起来，允许其他办公室的员工访问如服务器或基础设施等资源。</td>
+</tr>
+<tr>
+<td>提供隐私保护</td>
+<td>VPN 使用加密来保护数据，确保数据只能在发送方和接收方之间理解，防止窃听。特别适用于公共 WiFi，避免流量被窥探。</td>
+</tr>
+<tr>
+<td>提供匿名性</td>
+<td>VPN 帮助国家机密研究人员之间安全通信，确保敏感数据不被第三方窃取或监视。VPN 的匿名性取决于提供商的隐私政策，某些 VPN 提供商可能会记录用户数据。</td>
+</tr>
+</tbody></table>
+<p>以下是几种常见的 VPN 技术：</p>
+<table>
+<thead>
+<tr>
+<th>VPN 技术</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PPP</td>
+<td>PPP 是一种用于数据加密和身份验证的协议，通常与其他技术，如 PPTP一起使用，使用私钥和公钥证书进行身份验证。</td>
+</tr>
+<tr>
+<td>PPTP</td>
+<td>点对点隧道协议（PPTP）使 PPP 数据可以跨网络传输。该技术设置简单，广泛兼容，但加密强度相对较低。</td>
+</tr>
+<tr>
+<td>IPSec</td>
+<td>IPSec 是一种基于互联网协议框架的加密方式。虽然设置相对复杂，但加密强度高，支持范围广泛。</td>
+</tr>
+</tbody></table>
+<br>
+
+
+
+
+
+<h2 id="局域网网络设备"><a href="#局域网网络设备" class="headerlink" title="局域网网络设备"></a>局域网网络设备</h2><h3 id="什么是路由器？"><a href="#什么是路由器？" class="headerlink" title="什么是路由器？"></a>什么是路由器？</h3><p>路由器是一种连接不同网络并在其间传输数据的设备。它的主要职责是路由，即通过网络找到最佳路径，以确保数据能够成功传递。路由器运行在 OSI 模型的第 3 层，通常带有交互界面，如网页或控制台，供管理员配置规则，如端口转发或防火墙设置。</p>
+<p>当设备之间有多条路径可供选择时，路由器可以根据各种协议选择最佳路径，例如最短路径、最可靠路径或传输介质更快的路径，如光纤传输优于铜线传输。</p>
+<h3 id="什么是交换机？"><a href="#什么是交换机？" class="headerlink" title="什么是交换机？"></a>什么是交换机？</h3><p>交换机是一种用于在同一网络中连接多个设备的网络设备，通常通过以太网电缆连接，支持 3 台到数十台设备。交换机可以在 OSI 模型的第 2 层或第 3 层运行。</p>
+<p>第 2 层交换机：这类交换机通过设备的 MAC 地址转发数据帧，仅在局域网内传输数据。第 2 层交换机不具备 第 3 层IP 层的功能，因此无法跨网络路由数据。</p>
+<p>第 3 层交换机：这种交换机既具备第 2 层交换功能，也可以执行部分路由器的功能。第 3 层交换机能够使用 IP 地址对数据包进行路由，从而实现跨网段的数据传输。</p>
+<p>此外，交换机支持虚拟局域网（VLAN）技术，能够将同一物理网络中的设备逻辑分隔为不同的子网，从而提升安全性。通过 VLAN，即使设备共享资源，如互联网连接，它们之间的通信仍可以被隔离和控制。</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/extendingyournetwork -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除主语，括号，链接，优化例子）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
       <categories>
         <category>基础技能</category>
       </categories>
@@ -1574,100 +1684,6 @@
       </categories>
   </entry>
   <entry>
-    <title>HTTP 详解</title>
-    <url>/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD7/</url>
-    <content><![CDATA[<h2 id="什么是-HTTP-S-？"><a href="#什么是-HTTP-S-？" class="headerlink" title="什么是 HTTP(S)？"></a>什么是 HTTP(S)？</h2><h3 id="什么是超文本传输协议（HTTP）？"><a href="#什么是超文本传输协议（HTTP）？" class="headerlink" title="什么是超文本传输协议（HTTP）？"></a>什么是超文本传输协议（HTTP）？</h3><p>HTTP 是浏览网站时使用的通信协议，由蒂姆·伯纳斯-李及其团队在 1989 至 1991 年间研发。它定义了 Web 客户端，如浏览器与服务器之间交换网页数据的规则，用于传输 HTML、图片、视频等内容。</p>
-<h3 id="什么是超文本传输安全协议（HTTPS）？"><a href="#什么是超文本传输安全协议（HTTPS）？" class="headerlink" title="什么是超文本传输安全协议（HTTPS）？"></a>什么是超文本传输安全协议（HTTPS）？</h3><p>HTTPS 是 HTTP 的安全版本，通过加密保护数据传输，防止他人查看发送和接收的数据。HTTPS 能确保与合法的 Web 服务器连接，而不是被伪装的服务器。<br><br></p>
-<h2 id="请求和响应"><a href="#请求和响应" class="headerlink" title="请求和响应"></a>请求和响应</h2><p>当访问一个网站时，浏览器向 Web 服务器发送请求，以获取 HTML、图片等资源，并接收服务器返回的响应。浏览器需要通过 URL 知道如何及从何处获取资源。</p>
-<h3 id="什么是统一资源定位符（URL）？"><a href="#什么是统一资源定位符（URL）？" class="headerlink" title="什么是统一资源定位符（URL）？"></a>什么是统一资源定位符（URL）？</h3><p>URL 是一组指令，用于指定如何在互联网上访问特定资源。每次请求的 URL 可能包含不同的组成部分。</p>
-<p>URL 的各个部分如下所示，不一定每次请求都包含所有部分：</p>
-<p>完整的 URL 示例：<a href="http://user:password@cyphersun.com/blog?id=1#tag3">http://user:password@cyphersun.com:80/blog?id=1#tag3</a></p>
-<p>http 是<strong>协议</strong>（scheme）<br>user 是<strong>用户信息</strong>（user）<br>cyphersun.com 是<strong>域名或主机</strong>（host）<br>80 是<strong>端口</strong>（port）<br>blog 是<strong>路径</strong>（path）<br>?id&#x3D;1 是<strong>查询字符串</strong>（query string）<br>#tag3 是<strong>片段</strong>（fragment）</p>
-<p>协议（Scheme）：用于指定访问资源的协议，例如 HTTP、HTTPS、文件传输协议（FTP）。<br>用户信息（User）：某些服务需要身份验证，可以在 URL 中包含用户名和密码。<br>主机（Host）：表示服务器的域名或 IP 地址，即希望访问的资源所在的位置。<br>端口（Port）：连接时使用的端口号，HTTP 默认端口为 80，HTTPS 为 443，也可以是 1 至 65535 之间的其他端口。<br>路径（Path）：表示要访问的资源的文件名或所在位置。<br>查询字符串（Query String）：向请求路径传递的附加信息，例如 &#x2F;blog?id&#x3D;1 表示请求 ID 为 1 的博客文章。<br>片段（Fragment）：引用页面内的特定位置，通常用于帮助用户直接跳转到较长内容页面的某一部分。</p>
-<h3 id="发起请求"><a href="#发起请求" class="headerlink" title="发起请求"></a>发起请求</h3><p>可以用一行代码向 Web 服务器发起请求：GET &#x2F; HTTP&#x2F;1.1。为了实现更好的 Web 体验，需要附加一些额外数据，这些数据通过头部发送。头部包含了额外的信息供 Web 服务器使用。</p>
-<p><strong>请求示例</strong>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">GET / HTTP/1.1</span><br><span class="line">Host: cyphersun.github.io</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36</span><br><span class="line">Referer: https://www.google.com/search?q=cyphersun+blog</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>逐行解析该请求：</p>
-<p>第 1 行：使用 GET 方法，请求路径为 &#x2F;，即主页，并指定使用 HTTP 1.1 版本协议。<br>第 2 行：通过 Host 头部告知 Web 服务器，目标站点是 cyphersun.github.io。<br>第 3 行：通过 User-Agent 头部告知 Web 服务器，使用的是 Chrome 浏览器的 130.0.0.0 版本。<br>第 4 行：通过 Referer 头部告知 Web 服务器，是从 <a href="https://www.google.com/search?q=cyphersun+blog">https://www.google.com/search?q=cyphersun+blog</a> 页面访问的。<br>第 5 行：HTTP 请求以空行结尾，表明请求内容已结束。</p>
-<p><strong>响应示例</strong>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Server: GitHub.com</span><br><span class="line">Date: Mon, 11 Nov 2024 12:19:48 GMT</span><br><span class="line">Content-Type: text/html</span><br><span class="line">Content-Length: 10827</span><br><span class="line"></span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;<span class="built_in">head</span>&gt;</span><br><span class="line">    &lt;title&gt;CypherSun&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    I`m a cybersecurity engineer</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<p>逐行解析该响应：</p>
-<p>第 1 行：HTTP&#x2F;1.1 表示服务器使用的 HTTP 协议版本，状态码 200 OK 表明请求成功。<br>第 2 行：Server 头部告知客户端，Web 服务器使用的是来自 GitHub 的服务器。<br>第 3 行：Date 头部表示服务器当前的日期、时间和时区。<br>第 4 行：Content-Type 头部告知客户端发送的数据类型，例如 HTML、图片、视频、PDF 等。<br>第 5 行：Content-Length 头部告诉客户端响应内容的长度，方便确认数据完整。<br>第 6 行：HTTP 响应以空行结束，表示头部已结束，下面开始为内容。<br>第 7-14 行：请求的资源内容，示例中为简单的 HTML 内容。<br><br></p>
-<h2 id="HTTP-方法"><a href="#HTTP-方法" class="headerlink" title="HTTP 方法"></a>HTTP 方法</h2><p>HTTP 方法是客户端在发起 HTTP 请求时，用来表示其预期操作的一种方式。HTTP 最常用的方法主要包括 GET 和 POST</p>
-<p><strong>GET 请求</strong><br>用于从 Web 服务器获取信息，通常用于请求数据，而不对服务器上的数据进行任何修改。GET 请求一般不包含请求体，所有参数都包含在 URL 中。</p>
-<p><strong>POST 请求</strong><br>用于向 Web 服务器提交数据，通常用于创建新资源或提交表单信息。POST 请求的参数通常放在请求体中，使其适合发送较大的数据量。</p>
-<p><strong>PUT 请求</strong><br>用于向 Web 服务器提交数据以更新已有资源。PUT 请求通常用于完整替换目标资源，如果资源不存在，部分服务器可能会创建新资源。</p>
-<p><strong>DELETE 请求</strong><br>用于从 Web 服务器删除指定资源或记录。DELETE 请求一般会直接从服务器上移除资源，无法撤销，需谨慎使用。<br><br></p>
-<h2 id="HTTP-状态码"><a href="#HTTP-状态码" class="headerlink" title="HTTP 状态码"></a>HTTP 状态码</h2><p>当 HTTP 服务器响应请求时，第一行通常包含状态码，用于告知客户端请求的结果及后续处理方式。</p>
-<p>状态码分为以下 5 个范围：</p>
-<p>100-199 - 信息响应：表示请求的初步信息已被接受，客户端应继续发送剩余请求，现已较少使用。<br>200-299 - 成功：表示请求已成功完成。<br>300-399 - 重定向：将客户端的请求重定向至其他资源，可能是不同页面或不同网站。<br>400-499 - 客户端错误：表示客户端请求有误。<br>500-599 - 服务器错误：表示服务器在处理请求时遇到问题。</p>
-<h3 id="常见-HTTP-状态码"><a href="#常见-HTTP-状态码" class="headerlink" title="常见 HTTP 状态码"></a>常见 HTTP 状态码</h3><p>应用程序可以定义自定义 HTTP 状态码</p>
-<p>以下是常见的 HTTP 响应：</p>
-<p>200 OK：请求成功。<br>201 Created：新资源已创建，如新用户或新文章。<br>301 Moved Permanently：永久重定向，通常用于页面永久迁移。<br>302 Found：临时重定向，资源可能会再次变更位置。<br>400 Bad Request：请求格式有误，可能缺少必要信息。<br>401 Unauthorized：未授权访问，需要登录认证。<br>403 Forbidden：禁止访问该资源，授权也无效。<br>404 Not Found：资源不存在或路径错误。<br>405 Method Not Allowed：请求方法不被允许，例如对只支持 POST 的路径发送了 GET 请求。<br>500 Internal Server Error：服务器遇到意外错误，无法处理请求。<br>503 Service Unavailable：服务器当前无法处理请求，可能由于过载或维护中。</p>
-<br>
-
-
-
-
-
-<h2 id="HTTP-头部"><a href="#HTTP-头部" class="headerlink" title="HTTP 头部"></a>HTTP 头部</h2><p>头部信息是在发起请求时可以发送给 Web 服务器的附加数据。虽然在 HTTP 请求中不强制包含头部信息，但缺少这些信息可能导致网页显示不正常。</p>
-<h3 id="常见的请求头部"><a href="#常见的请求头部" class="headerlink" title="常见的请求头部"></a>常见的请求头部</h3><p>请求头部是客户端浏览器发送给服务器的附加信息，帮助服务器正确理解和处理请求。</p>
-<p><strong>Host</strong>：指定要访问的具体网站，有些 Web 服务器托管了多个网站，Host 头部用于告知服务器具体的访问目标，否则会默认返回服务器的主站点。<br><strong>User-Agent</strong>：提供浏览器软件及版本信息，便于服务器适配网页，以兼容特定浏览器的 HTML、JavaScript 和 CSS 特性。<br><strong>Content-Length</strong>：当提交表单等数据时，Content-Length 头部用于告知服务器请求中的数据长度，以便确保数据完整传输。<br><strong>Accept-Encoding</strong>：指定浏览器支持的压缩方式，使数据在网络上传输时更加高效。<br><strong>Cookie</strong>：包含客户端的用户信息，用于帮助服务器记住用户偏好和会话数据。</p>
-<h3 id="常见的响应头部"><a href="#常见的响应头部" class="headerlink" title="常见的响应头部"></a>常见的响应头部</h3><p>响应头部是服务器在回应客户端请求时提供的额外信息，帮助客户端处理返回的数据。</p>
-<p><strong>Set-Cookie</strong>：用于存储信息，客户端在后续请求中会带上这些数据。<br><strong>Cache-Control</strong>：指定浏览器缓存响应内容的时间，以减少频繁请求，提升性能。<br><strong>Content-Type</strong>：告知客户端返回数据的类型，例如 HTML、CSS、JavaScript、图片、PDF、视频等，以便浏览器正确处理这些内容。<br><strong>Content-Encoding</strong>：告知客户端数据的压缩方法，使传输更为高效。<br><br></p>
-<h2 id="Cookies"><a href="#Cookies" class="headerlink" title="Cookies"></a>Cookies</h2><p>Cookie 是一小块存储在计算机上的数据。当 Web 服务器在响应中发送 Set-Cookie 头部时，Cookie 会被保存。之后每次请求该服务器时，浏览器会自动发送这些 Cookie 数据回给服务器。由于 HTTP 是无状态的，不会记住之前的请求，Cookie 可以帮助 Web 服务器识别用户、记住个性化设置，或确认用户是否曾访问过该网站。</p>
-<p>Cookie 最常见的是用于网站身份验证。通常 Cookie 值不会直接包含密码，而是使用一个唯一的令牌来标识用户。</p>
-<h3 id="查看-Cookies"><a href="#查看-Cookies" class="headerlink" title="查看 Cookies"></a>查看 Cookies</h3><p>可以通过浏览器的开发者工具查看浏览器向网站发送的 Cookie。F12 打开开发者工具后，点击网络标签，这会显示浏览器请求的所有资源列表。点击任一资源可以查看请求和响应的详细信息。如果请求中包含 Cookie，可以在请求的 Cookies 标签中找到这些数据。</p>
-<br>
-
-
-<!-- https://tryhackme.com/r/room/httpindetail -->
-<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除主语，括号，链接，优化例子）✔ -->
-<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->
-]]></content>
-      <categories>
-        <category>基础技能</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>DNS 详解</title>
-    <url>/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD8/</url>
-    <content><![CDATA[<h2 id="什么是-DNS？"><a href="#什么是-DNS？" class="headerlink" title="什么是 DNS？"></a>什么是 DNS？</h2><p>域名系统（DNS）提供了一种能够在互联网上与设备通信，而无需记住复杂的数字 IP 地址的方法。互联网上的每台计算机都有一个独特的 IP 地址用于通信。IP 地址的格式通常是类似于 1.1.1.1 的数字组合，由四组数字构成，每组范围在 0 到 255 之间，并用点分隔。当访问一个网站时，通过 DNS，只需记住类似 baidu.com 的域名，而不必记住数字 IP 地址。<br><br></p>
-<h2 id="域名层次结构"><a href="#域名层次结构" class="headerlink" title="域名层次结构"></a>域名层次结构</h2><p>域名层次结构中根域名位于最上方，向下分支为多个顶级域名（TLD），再进一步分支为二级域名。</p>
-<h3 id="顶级域名（TLD）"><a href="#顶级域名（TLD）" class="headerlink" title="顶级域名（TLD）"></a>顶级域名（TLD）</h3><p>顶级域名（TLD）是域名最右侧的部分。例如，在 baidu.com 中，TLD 是 .com。顶级域名分为两种类型：通用顶级域名（gTLD）和国家代码顶级域名（ccTLD）。</p>
-<p>gTLD 指示域名的用途，如 .com 表示商业用途，.org 表示组织机构，.edu 表示教育机构，.gov 表示政府机构。也新增了许多 gTLD，例如 .news、.store、.blog、.fun 等。<br>ccTLD 用于地理位置区分，如 .cn 表示中国，.us 表示美国。</p>
-<h3 id="二级域名"><a href="#二级域名" class="headerlink" title="二级域名"></a>二级域名</h3><p>在 baidu.com 中，.com 是 TLD，而 baidu 是二级域名。注册域名时，二级域名的长度限制为 63 个字符，字符仅支持 a-z、0-9 和连字符。</p>
-<h3 id="子域名"><a href="#子域名" class="headerlink" title="子域名"></a>子域名</h3><p>子域名位于二级域名的左侧，通过句点分隔。例如，在 tieba.baidu.com 中，tieba 是子域名。子域名的创建规则与二级域名相同，长度限制为 63 个字符，仅支持 a-z、0-9 和连字符。但可以通过多个点分隔子域名来创建更长的名称，如 c.tieba.baidu.com，但域名的总长度必须控制在 253 个字符以内，且子域名的数量没有限制。</p>
-<br>
-
-
-
-
-
-<h2 id="记录类型"><a href="#记录类型" class="headerlink" title="记录类型"></a>记录类型</h2><h3 id="DNS-记录类型"><a href="#DNS-记录类型" class="headerlink" title="DNS 记录类型"></a>DNS 记录类型</h3><p>DNS 还包括多种记录类型。以下是一些常见的 DNS 记录类型：</p>
-<p><strong>A 记录</strong><br>A 记录解析域名为 IPv4 地址，例如 1.1.1.1</p>
-<p><strong>AAAA 记录</strong><br>AAAA 记录解析域名为 IPv6 地址，例如 2024:1104:10::22ab</p>
-<p><strong>CNAME 记录</strong><br>CNAME 记录将域名指向另一个域名。例如，baidu 贴吧使用子域名 <a href="http://www.tieba.com,它的/">www.tieba.com，它的</a> CNAME 记录可能指向 tieba.baidu.com。然后对 tieba.baidu.com 发起另一个 DNS 请求以获取实际 IP 地址。</p>
-<p><strong>MX 记录</strong><br>MX 记录用于指定负责处理邮件的服务器地址。例如，google.com 的 MX 记录可能返回 aspmx.l.google.com。MX 记录还包含优先级标记，指示客户端按照优先级顺序选择邮件服务器，这在主服务器故障时可将邮件重定向到备用服务器。</p>
-<p><strong>TXT 记录</strong><br>TXT 记录是自由文本字段，可存储任意文本信息，常用于列出有权代表该域发送邮件的服务器，帮助防止垃圾邮件和伪造邮件。TXT 记录也用于域名所有权验证，例如在注册第三方服务时。<br><br></p>
-<h2 id="发起请求"><a href="#发起请求" class="headerlink" title="发起请求"></a>发起请求</h2><h3 id="当发起-DNS-请求时会发生什么"><a href="#当发起-DNS-请求时会发生什么" class="headerlink" title="当发起 DNS 请求时会发生什么"></a>当发起 DNS 请求时会发生什么</h3><p>当请求一个域名时，计算机会先检查本地缓存，查看是否近期查询过该地址。如果有缓存，直接使用缓存记录；否则，会向递归 DNS 服务器发起请求。</p>
-<p>递归 DNS 服务器通常由互联网服务提供商（ISP）提供，但用户也可以选择其他递归服务器。该服务器也有一个本地缓存。如果缓存中存在结果，则直接返回给计算机，结束查询。若未找到结果，递归服务器会开始查询过程，从互联网的根 DNS 服务器开始。</p>
-<p>根服务器是 DNS 的核心，将请求引导至正确的顶级域名（TLD）服务器。例如，查询 <a href="http://www.baidu.com/">www.baidu.com</a> 时，根服务器识别顶级域名 .com，并将请求引导至管理 .com 的 TLD 服务器。</p>
-<p>TLD 服务器保存指向权威服务器的记录。权威服务器&#x2F;名称服务器是负责特定域名的服务器，例如 baidu.com 的名称服务器为 ns1.baidu.com 到 ns6.baidu.com。域名会有多个名称服务器，确保主服务器故障时有备选。</p>
-<p>权威 DNS 服务器存储并维护特定域名的 DNS 记录。根据请求的记录类型，权威服务器将结果传回递归 DNS 服务器，递归服务器缓存结果以备将来使用，并最终将结果返回给最初发起请求的客户端。所有 DNS 记录都有一个生存时间（TTL）值，表示该记录在缓存中保存以秒为单位的时间。TTL 到期后，需重新发起查询。缓存机制减少了重复请求，提高了通信效率。</p>
-<br>
-
-
-<!-- https://tryhackme.com/r/room/dnsindetail -->
-<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除主语，括号，链接，优化例子）✔ -->
-<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
-      <categories>
-        <category>基础技能</category>
-      </categories>
-  </entry>
-  <entry>
     <title>网络服务 2</title>
     <url>/2024/11/02/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD6/</url>
     <content><![CDATA[<h2 id="网络文件系统（NFS）"><a href="#网络文件系统（NFS）" class="headerlink" title="网络文件系统（NFS）"></a>网络文件系统（NFS）</h2><h3 id="什么是-NFS？"><a href="#什么是-NFS？" class="headerlink" title="什么是 NFS？"></a>什么是 NFS？</h3><p>网络文件系统（Network File System，NFS）允许系统通过网络与其他系统共享目录和文件。借助 NFS，用户和程序可以像访问本地文件一样访问远程系统上的文件。通过将服务器上的整个或部分文件系统挂载到客户端系统上来实现。被挂载的文件系统部分可以由客户端访问，并按照分配给每个文件的权限进行访问。</p>
@@ -2047,106 +2063,40 @@
       </categories>
   </entry>
   <entry>
-    <title>拓展网络</title>
-    <url>/2024/11/01/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD4-5/</url>
-    <content><![CDATA[<h2 id="端口转发简介"><a href="#端口转发简介" class="headerlink" title="端口转发简介"></a>端口转发简介</h2><p>端口转发是将应用程序和服务连接到互联网。如果没有端口转发，像 Web 服务器的应用程序和服务只能被位于同一内网&#x2F;局域网的设备访问。</p>
-<p>例如，在一个内网中，IP 地址为 1.1.1.1 的服务器在端口 80 上运行 Web 服务器，只有同一内网中的其他计算机能够访问它。为了使外部互联网用户也能访问该 Web 服务器，网络管理员可以配置端口转发</p>
-<p>通过配置端口转发，位于其他网络的用户可以通过访问公共 IP 地址来访问该 Web 服务器。这使得外部设备能够通过路由器的公共 IP 地址连接到内部服务。</p>
-<p>端口转发和防火墙的行为容易混淆。端口转发的作用是打开特定端口，以便数据流能够传递到指定的内部设备。而防火墙的作用则是根据设定的安全规则，决定是否允许或拒绝这些数据流，即使端口已通过端口转发打开。</p>
-<p>端口转发通常在路由器上进行配置。<br><br></p>
-<h2 id="防火墙基础知识"><a href="#防火墙基础知识" class="headerlink" title="防火墙基础知识"></a>防火墙基础知识</h2><p>防火墙是一种网络安全设备，用于管理进出网络的流量，可以将其看作网络的边境安全。管理员可以基于多种因素配置防火墙，以允许或拒绝流量的进出。</p>
-<p>防火墙通过数据包检查来判断是否满足这些条件：<br>流量的来源（防火墙是否允许&#x2F;拒绝来自特定网络的流量？）<br>流量的目的地（防火墙是否允许&#x2F;拒绝发往特定网络的流量？）<br>流量的端口（防火墙是否允许&#x2F;拒绝通过特定端口，如端口 80 的流量？）<br>流量的协议（防火墙是否允许&#x2F;拒绝基于 UDP、TCP 等协议的流量？）</p>
-<p>防火墙既有企业级的大型硬件设备，可以处理大量数据流量，也有适用于家庭网络的家用路由器内置的简单防火墙，或者基于软件的防火墙，如 Snort。根据功能和配置方式的不同，防火墙最常见的包括以下两类：</p>
-<table>
-<thead>
-<tr>
-<th>防火墙类别</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>有状态防火墙（Stateful）</td>
-<td>这种防火墙基于整个连接的状态来进行检查和决策。与逐包检查的方式不同，有状态防火墙可以动态判断流量的合法性。例如，它会允许一个 TCP 连接的初始握手，但如果发现后续握手失败，可能会屏蔽整个连接。尽管有状态防火墙可以提供更智能的流量管理，但它消耗更多的系统资源。</td>
-</tr>
-<tr>
-<td>无状态防火墙（Stateless）</td>
-<td>这种防火墙使用一组静态规则来判断每个独立的数据包是否符合要求。即使某个数据包不合规，也不会直接屏蔽整个设备。无状态防火墙消耗的资源较少，但依赖预先定义的规则来运作，对于复杂的流量可能反应不灵敏。但它在面对来自大量主机的简单、规则化的攻击，如分布式拒绝服务攻击时仍然十分有效。</td>
-</tr>
-</tbody></table>
+    <title>Snort</title>
+    <url>/2024/11/11/%E5%B7%A5%E5%85%B7Snort/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/snort3/snort3">Snort</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Snort 3 是下一代 Snort IPS（入侵防御系统）<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>Kali Linux 安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install snort</span><br></pre></td></tr></table></figure>
 <br>
 
 
-
-
-
-
-<h2 id="VPN-基础知识"><a href="#VPN-基础知识" class="headerlink" title="VPN 基础知识"></a>VPN 基础知识</h2><p>虚拟专用网络（VPN）是一种通过互联网创建专用通道&#x2F;隧道来确保不同网络中的设备可以安全通信的技术。连接在 VPN 隧道内的设备组成了一个独立的私有网络。</p>
-<p>通常情况下，只有在同一网络中的设备才能直接通信，例如公司内部设备，而 VPN 可以将位于不同地点的两个网络连接起来。</p>
-<p>网络#1<br>网络#2<br>网络#3（由 VPN 连接的两个设备）</p>
-<p>即使网络#3的设备分别属于网络#1和网络#2，但通过 VPN 它们还是能组成了一个仅供 VPN 设备访问的私有网络。</p>
-<p>下表总结了 VPN 的一些主要优势：</p>
-<table>
-<thead>
-<tr>
-<th>优势</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>允许不同地理位置的网络连接</td>
-<td>企业可以使用 VPN 将不同地点的办公室连接起来，允许其他办公室的员工访问如服务器或基础设施等资源。</td>
-</tr>
-<tr>
-<td>提供隐私保护</td>
-<td>VPN 使用加密来保护数据，确保数据只能在发送方和接收方之间理解，防止窃听。特别适用于公共 WiFi，避免流量被窥探。</td>
-</tr>
-<tr>
-<td>提供匿名性</td>
-<td>VPN 帮助国家机密研究人员之间安全通信，确保敏感数据不被第三方窃取或监视。VPN 的匿名性取决于提供商的隐私政策，某些 VPN 提供商可能会记录用户数据。</td>
-</tr>
-</tbody></table>
-<p>以下是几种常见的 VPN 技术：</p>
-<table>
-<thead>
-<tr>
-<th>VPN 技术</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>PPP</td>
-<td>PPP 是一种用于数据加密和身份验证的协议，通常与其他技术，如 PPTP一起使用，使用私钥和公钥证书进行身份验证。</td>
-</tr>
-<tr>
-<td>PPTP</td>
-<td>点对点隧道协议（PPTP）使 PPP 数据可以跨网络传输。该技术设置简单，广泛兼容，但加密强度相对较低。</td>
-</tr>
-<tr>
-<td>IPSec</td>
-<td>IPSec 是一种基于互联网协议框架的加密方式。虽然设置相对复杂，但加密强度高，支持范围广泛。</td>
-</tr>
-</tbody></table>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">snort -h</span><br></pre></td></tr></table></figure>
 <br>
 
 
-
-
-
-<h2 id="局域网网络设备"><a href="#局域网网络设备" class="headerlink" title="局域网网络设备"></a>局域网网络设备</h2><h3 id="什么是路由器？"><a href="#什么是路由器？" class="headerlink" title="什么是路由器？"></a>什么是路由器？</h3><p>路由器是一种连接不同网络并在其间传输数据的设备。它的主要职责是路由，即通过网络找到最佳路径，以确保数据能够成功传递。路由器运行在 OSI 模型的第 3 层，通常带有交互界面，如网页或控制台，供管理员配置规则，如端口转发或防火墙设置。</p>
-<p>当设备之间有多条路径可供选择时，路由器可以根据各种协议选择最佳路径，例如最短路径、最可靠路径或传输介质更快的路径，如光纤传输优于铜线传输。</p>
-<h3 id="什么是交换机？"><a href="#什么是交换机？" class="headerlink" title="什么是交换机？"></a>什么是交换机？</h3><p>交换机是一种用于在同一网络中连接多个设备的网络设备，通常通过以太网电缆连接，支持 3 台到数十台设备。交换机可以在 OSI 模型的第 2 层或第 3 层运行。</p>
-<p>第 2 层交换机：这类交换机通过设备的 MAC 地址转发数据帧，仅在局域网内传输数据。第 2 层交换机不具备 第 3 层IP 层的功能，因此无法跨网络路由数据。</p>
-<p>第 3 层交换机：这种交换机既具备第 2 层交换功能，也可以执行部分路由器的功能。第 3 层交换机能够使用 IP 地址对数据包进行路由，从而实现跨网段的数据传输。</p>
-<p>此外，交换机支持虚拟局域网（VLAN）技术，能够将同一物理网络中的设备逻辑分隔为不同的子网，从而提升安全性。通过 VLAN，即使设备共享资源，如互联网连接，它们之间的通信仍可以被隔离和控制。</p>
-<br>
-
-
-<!-- https://tryhackme.com/r/room/extendingyournetwork -->
-<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除主语，括号，链接，优化例子）✔ -->
-<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
+<!-- 成功搭建✔，成功使用✔ -->]]></content>
       <categories>
-        <category>基础技能</category>
+        <category>工具</category>
       </categories>
+  </entry>
+  <entry>
+    <title>theHarvester</title>
+    <url>/2024/10/26/%E5%B7%A5%E5%85%B7theHarvester/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>theHarvester 是一款简单易用但功能强大的工具，旨在用于红队评估或渗透测试的侦察阶段。它执行开源情报 (OSINT) 收集，以帮助确定域的外部威胁状况。该工具使用多种公共资源收集名称、电子邮件、IP、子域和 URL<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>侦察</tag>
+      </tags>
   </entry>
   <entry>
     <title>红队基础</title>
@@ -2193,39 +2143,39 @@
       </categories>
   </entry>
   <entry>
-    <title>theHarvester</title>
-    <url>/2024/10/26/%E5%B7%A5%E5%85%B7theHarvester/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/laramies/theHarvester">theHarvester</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>theHarvester 是一款简单易用但功能强大的工具，旨在用于红队评估或渗透测试的侦察阶段。它执行开源情报 (OSINT) 收集，以帮助确定域的外部威胁状况。该工具使用多种公共资源收集名称、电子邮件、IP、子域和 URL<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>侦察</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Snort</title>
-    <url>/2024/11/11/%E5%B7%A5%E5%85%B7Snort/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/snort3/snort3">Snort</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Snort 3 是下一代 Snort IPS（入侵防御系统）<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>Kali Linux 安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install snort</span><br></pre></td></tr></table></figure>
+    <title>DNS 详解</title>
+    <url>/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD8/</url>
+    <content><![CDATA[<h2 id="什么是-DNS？"><a href="#什么是-DNS？" class="headerlink" title="什么是 DNS？"></a>什么是 DNS？</h2><p>域名系统（DNS）提供了一种能够在互联网上与设备通信，而无需记住复杂的数字 IP 地址的方法。互联网上的每台计算机都有一个独特的 IP 地址用于通信。IP 地址的格式通常是类似于 1.1.1.1 的数字组合，由四组数字构成，每组范围在 0 到 255 之间，并用点分隔。当访问一个网站时，通过 DNS，只需记住类似 baidu.com 的域名，而不必记住数字 IP 地址。<br><br></p>
+<h2 id="域名层次结构"><a href="#域名层次结构" class="headerlink" title="域名层次结构"></a>域名层次结构</h2><p>域名层次结构中根域名位于最上方，向下分支为多个顶级域名（TLD），再进一步分支为二级域名。</p>
+<h3 id="顶级域名（TLD）"><a href="#顶级域名（TLD）" class="headerlink" title="顶级域名（TLD）"></a>顶级域名（TLD）</h3><p>顶级域名（TLD）是域名最右侧的部分。例如，在 baidu.com 中，TLD 是 .com。顶级域名分为两种类型：通用顶级域名（gTLD）和国家代码顶级域名（ccTLD）。</p>
+<p>gTLD 指示域名的用途，如 .com 表示商业用途，.org 表示组织机构，.edu 表示教育机构，.gov 表示政府机构。也新增了许多 gTLD，例如 .news、.store、.blog、.fun 等。<br>ccTLD 用于地理位置区分，如 .cn 表示中国，.us 表示美国。</p>
+<h3 id="二级域名"><a href="#二级域名" class="headerlink" title="二级域名"></a>二级域名</h3><p>在 baidu.com 中，.com 是 TLD，而 baidu 是二级域名。注册域名时，二级域名的长度限制为 63 个字符，字符仅支持 a-z、0-9 和连字符。</p>
+<h3 id="子域名"><a href="#子域名" class="headerlink" title="子域名"></a>子域名</h3><p>子域名位于二级域名的左侧，通过句点分隔。例如，在 tieba.baidu.com 中，tieba 是子域名。子域名的创建规则与二级域名相同，长度限制为 63 个字符，仅支持 a-z、0-9 和连字符。但可以通过多个点分隔子域名来创建更长的名称，如 c.tieba.baidu.com，但域名的总长度必须控制在 253 个字符以内，且子域名的数量没有限制。</p>
 <br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">snort -h</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="记录类型"><a href="#记录类型" class="headerlink" title="记录类型"></a>记录类型</h2><h3 id="DNS-记录类型"><a href="#DNS-记录类型" class="headerlink" title="DNS 记录类型"></a>DNS 记录类型</h3><p>DNS 还包括多种记录类型。以下是一些常见的 DNS 记录类型：</p>
+<p><strong>A 记录</strong><br>A 记录解析域名为 IPv4 地址，例如 1.1.1.1</p>
+<p><strong>AAAA 记录</strong><br>AAAA 记录解析域名为 IPv6 地址，例如 2024:1104:10::22ab</p>
+<p><strong>CNAME 记录</strong><br>CNAME 记录将域名指向另一个域名。例如，baidu 贴吧使用子域名 <a href="http://www.tieba.com,它的/">www.tieba.com，它的</a> CNAME 记录可能指向 tieba.baidu.com。然后对 tieba.baidu.com 发起另一个 DNS 请求以获取实际 IP 地址。</p>
+<p><strong>MX 记录</strong><br>MX 记录用于指定负责处理邮件的服务器地址。例如，google.com 的 MX 记录可能返回 aspmx.l.google.com。MX 记录还包含优先级标记，指示客户端按照优先级顺序选择邮件服务器，这在主服务器故障时可将邮件重定向到备用服务器。</p>
+<p><strong>TXT 记录</strong><br>TXT 记录是自由文本字段，可存储任意文本信息，常用于列出有权代表该域发送邮件的服务器，帮助防止垃圾邮件和伪造邮件。TXT 记录也用于域名所有权验证，例如在注册第三方服务时。<br><br></p>
+<h2 id="发起请求"><a href="#发起请求" class="headerlink" title="发起请求"></a>发起请求</h2><h3 id="当发起-DNS-请求时会发生什么"><a href="#当发起-DNS-请求时会发生什么" class="headerlink" title="当发起 DNS 请求时会发生什么"></a>当发起 DNS 请求时会发生什么</h3><p>当请求一个域名时，计算机会先检查本地缓存，查看是否近期查询过该地址。如果有缓存，直接使用缓存记录；否则，会向递归 DNS 服务器发起请求。</p>
+<p>递归 DNS 服务器通常由互联网服务提供商（ISP）提供，但用户也可以选择其他递归服务器。该服务器也有一个本地缓存。如果缓存中存在结果，则直接返回给计算机，结束查询。若未找到结果，递归服务器会开始查询过程，从互联网的根 DNS 服务器开始。</p>
+<p>根服务器是 DNS 的核心，将请求引导至正确的顶级域名（TLD）服务器。例如，查询 <a href="http://www.baidu.com/">www.baidu.com</a> 时，根服务器识别顶级域名 .com，并将请求引导至管理 .com 的 TLD 服务器。</p>
+<p>TLD 服务器保存指向权威服务器的记录。权威服务器&#x2F;名称服务器是负责特定域名的服务器，例如 baidu.com 的名称服务器为 ns1.baidu.com 到 ns6.baidu.com。域名会有多个名称服务器，确保主服务器故障时有备选。</p>
+<p>权威 DNS 服务器存储并维护特定域名的 DNS 记录。根据请求的记录类型，权威服务器将结果传回递归 DNS 服务器，递归服务器缓存结果以备将来使用，并最终将结果返回给最初发起请求的客户端。所有 DNS 记录都有一个生存时间（TTL）值，表示该记录在缓存中保存以秒为单位的时间。TTL 到期后，需重新发起查询。缓存机制减少了重复请求，提高了通信效率。</p>
 <br>
 
 
-<!-- 成功搭建✔，成功使用✔ -->]]></content>
+<!-- https://tryhackme.com/r/room/dnsindetail -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除主语，括号，链接，优化例子）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->]]></content>
       <categories>
-        <category>工具</category>
+        <category>基础技能</category>
       </categories>
   </entry>
   <entry>
@@ -2255,5 +2205,63 @@
       <tags>
         <tag>侦察</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>HTTP 详解</title>
+    <url>/2024/11/04/T2-%E5%9F%BA%E7%A1%80%E6%8A%80%E8%83%BD7/</url>
+    <content><![CDATA[<h2 id="什么是-HTTP-S-？"><a href="#什么是-HTTP-S-？" class="headerlink" title="什么是 HTTP(S)？"></a>什么是 HTTP(S)？</h2><h3 id="什么是超文本传输协议（HTTP）？"><a href="#什么是超文本传输协议（HTTP）？" class="headerlink" title="什么是超文本传输协议（HTTP）？"></a>什么是超文本传输协议（HTTP）？</h3><p>HTTP 是浏览网站时使用的通信协议，由蒂姆·伯纳斯-李及其团队在 1989 至 1991 年间研发。它定义了 Web 客户端，如浏览器与服务器之间交换网页数据的规则，用于传输 HTML、图片、视频等内容。</p>
+<h3 id="什么是超文本传输安全协议（HTTPS）？"><a href="#什么是超文本传输安全协议（HTTPS）？" class="headerlink" title="什么是超文本传输安全协议（HTTPS）？"></a>什么是超文本传输安全协议（HTTPS）？</h3><p>HTTPS 是 HTTP 的安全版本，通过加密保护数据传输，防止他人查看发送和接收的数据。HTTPS 能确保与合法的 Web 服务器连接，而不是被伪装的服务器。<br><br></p>
+<h2 id="请求和响应"><a href="#请求和响应" class="headerlink" title="请求和响应"></a>请求和响应</h2><p>当访问一个网站时，浏览器向 Web 服务器发送请求，以获取 HTML、图片等资源，并接收服务器返回的响应。浏览器需要通过 URL 知道如何及从何处获取资源。</p>
+<h3 id="什么是统一资源定位符（URL）？"><a href="#什么是统一资源定位符（URL）？" class="headerlink" title="什么是统一资源定位符（URL）？"></a>什么是统一资源定位符（URL）？</h3><p>URL 是一组指令，用于指定如何在互联网上访问特定资源。每次请求的 URL 可能包含不同的组成部分。</p>
+<p>URL 的各个部分如下所示，不一定每次请求都包含所有部分：</p>
+<p>完整的 URL 示例：<a href="http://user:password@cyphersun.com/blog?id=1#tag3">http://user:password@cyphersun.com:80/blog?id=1#tag3</a></p>
+<p>http 是<strong>协议</strong>（scheme）<br>user 是<strong>用户信息</strong>（user）<br>cyphersun.com 是<strong>域名或主机</strong>（host）<br>80 是<strong>端口</strong>（port）<br>blog 是<strong>路径</strong>（path）<br>?id&#x3D;1 是<strong>查询字符串</strong>（query string）<br>#tag3 是<strong>片段</strong>（fragment）</p>
+<p>协议（Scheme）：用于指定访问资源的协议，例如 HTTP、HTTPS、文件传输协议（FTP）。<br>用户信息（User）：某些服务需要身份验证，可以在 URL 中包含用户名和密码。<br>主机（Host）：表示服务器的域名或 IP 地址，即希望访问的资源所在的位置。<br>端口（Port）：连接时使用的端口号，HTTP 默认端口为 80，HTTPS 为 443，也可以是 1 至 65535 之间的其他端口。<br>路径（Path）：表示要访问的资源的文件名或所在位置。<br>查询字符串（Query String）：向请求路径传递的附加信息，例如 &#x2F;blog?id&#x3D;1 表示请求 ID 为 1 的博客文章。<br>片段（Fragment）：引用页面内的特定位置，通常用于帮助用户直接跳转到较长内容页面的某一部分。</p>
+<h3 id="发起请求"><a href="#发起请求" class="headerlink" title="发起请求"></a>发起请求</h3><p>可以用一行代码向 Web 服务器发起请求：GET &#x2F; HTTP&#x2F;1.1。为了实现更好的 Web 体验，需要附加一些额外数据，这些数据通过头部发送。头部包含了额外的信息供 Web 服务器使用。</p>
+<p><strong>请求示例</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">GET / HTTP/1.1</span><br><span class="line">Host: cyphersun.github.io</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36</span><br><span class="line">Referer: https://www.google.com/search?q=cyphersun+blog</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>逐行解析该请求：</p>
+<p>第 1 行：使用 GET 方法，请求路径为 &#x2F;，即主页，并指定使用 HTTP 1.1 版本协议。<br>第 2 行：通过 Host 头部告知 Web 服务器，目标站点是 cyphersun.github.io。<br>第 3 行：通过 User-Agent 头部告知 Web 服务器，使用的是 Chrome 浏览器的 130.0.0.0 版本。<br>第 4 行：通过 Referer 头部告知 Web 服务器，是从 <a href="https://www.google.com/search?q=cyphersun+blog">https://www.google.com/search?q=cyphersun+blog</a> 页面访问的。<br>第 5 行：HTTP 请求以空行结尾，表明请求内容已结束。</p>
+<p><strong>响应示例</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">HTTP/1.1 200 OK</span><br><span class="line">Server: GitHub.com</span><br><span class="line">Date: Mon, 11 Nov 2024 12:19:48 GMT</span><br><span class="line">Content-Type: text/html</span><br><span class="line">Content-Length: 10827</span><br><span class="line"></span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;<span class="built_in">head</span>&gt;</span><br><span class="line">    &lt;title&gt;CypherSun&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    I`m a cybersecurity engineer</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>逐行解析该响应：</p>
+<p>第 1 行：HTTP&#x2F;1.1 表示服务器使用的 HTTP 协议版本，状态码 200 OK 表明请求成功。<br>第 2 行：Server 头部告知客户端，Web 服务器使用的是来自 GitHub 的服务器。<br>第 3 行：Date 头部表示服务器当前的日期、时间和时区。<br>第 4 行：Content-Type 头部告知客户端发送的数据类型，例如 HTML、图片、视频、PDF 等。<br>第 5 行：Content-Length 头部告诉客户端响应内容的长度，方便确认数据完整。<br>第 6 行：HTTP 响应以空行结束，表示头部已结束，下面开始为内容。<br>第 7-14 行：请求的资源内容，示例中为简单的 HTML 内容。<br><br></p>
+<h2 id="HTTP-方法"><a href="#HTTP-方法" class="headerlink" title="HTTP 方法"></a>HTTP 方法</h2><p>HTTP 方法是客户端在发起 HTTP 请求时，用来表示其预期操作的一种方式。HTTP 最常用的方法主要包括 GET 和 POST</p>
+<p><strong>GET 请求</strong><br>用于从 Web 服务器获取信息，通常用于请求数据，而不对服务器上的数据进行任何修改。GET 请求一般不包含请求体，所有参数都包含在 URL 中。</p>
+<p><strong>POST 请求</strong><br>用于向 Web 服务器提交数据，通常用于创建新资源或提交表单信息。POST 请求的参数通常放在请求体中，使其适合发送较大的数据量。</p>
+<p><strong>PUT 请求</strong><br>用于向 Web 服务器提交数据以更新已有资源。PUT 请求通常用于完整替换目标资源，如果资源不存在，部分服务器可能会创建新资源。</p>
+<p><strong>DELETE 请求</strong><br>用于从 Web 服务器删除指定资源或记录。DELETE 请求一般会直接从服务器上移除资源，无法撤销，需谨慎使用。<br><br></p>
+<h2 id="HTTP-状态码"><a href="#HTTP-状态码" class="headerlink" title="HTTP 状态码"></a>HTTP 状态码</h2><p>当 HTTP 服务器响应请求时，第一行通常包含状态码，用于告知客户端请求的结果及后续处理方式。</p>
+<p>状态码分为以下 5 个范围：</p>
+<p>100-199 - 信息响应：表示请求的初步信息已被接受，客户端应继续发送剩余请求，现已较少使用。<br>200-299 - 成功：表示请求已成功完成。<br>300-399 - 重定向：将客户端的请求重定向至其他资源，可能是不同页面或不同网站。<br>400-499 - 客户端错误：表示客户端请求有误。<br>500-599 - 服务器错误：表示服务器在处理请求时遇到问题。</p>
+<h3 id="常见-HTTP-状态码"><a href="#常见-HTTP-状态码" class="headerlink" title="常见 HTTP 状态码"></a>常见 HTTP 状态码</h3><p>应用程序可以定义自定义 HTTP 状态码</p>
+<p>以下是常见的 HTTP 响应：</p>
+<p>200 OK：请求成功。<br>201 Created：新资源已创建，如新用户或新文章。<br>301 Moved Permanently：永久重定向，通常用于页面永久迁移。<br>302 Found：临时重定向，资源可能会再次变更位置。<br>400 Bad Request：请求格式有误，可能缺少必要信息。<br>401 Unauthorized：未授权访问，需要登录认证。<br>403 Forbidden：禁止访问该资源，授权也无效。<br>404 Not Found：资源不存在或路径错误。<br>405 Method Not Allowed：请求方法不被允许，例如对只支持 POST 的路径发送了 GET 请求。<br>500 Internal Server Error：服务器遇到意外错误，无法处理请求。<br>503 Service Unavailable：服务器当前无法处理请求，可能由于过载或维护中。</p>
+<br>
+
+
+
+
+
+<h2 id="HTTP-头部"><a href="#HTTP-头部" class="headerlink" title="HTTP 头部"></a>HTTP 头部</h2><p>头部信息是在发起请求时可以发送给 Web 服务器的附加数据。虽然在 HTTP 请求中不强制包含头部信息，但缺少这些信息可能导致网页显示不正常。</p>
+<h3 id="常见的请求头部"><a href="#常见的请求头部" class="headerlink" title="常见的请求头部"></a>常见的请求头部</h3><p>请求头部是客户端浏览器发送给服务器的附加信息，帮助服务器正确理解和处理请求。</p>
+<p><strong>Host</strong>：指定要访问的具体网站，有些 Web 服务器托管了多个网站，Host 头部用于告知服务器具体的访问目标，否则会默认返回服务器的主站点。<br><strong>User-Agent</strong>：提供浏览器软件及版本信息，便于服务器适配网页，以兼容特定浏览器的 HTML、JavaScript 和 CSS 特性。<br><strong>Content-Length</strong>：当提交表单等数据时，Content-Length 头部用于告知服务器请求中的数据长度，以便确保数据完整传输。<br><strong>Accept-Encoding</strong>：指定浏览器支持的压缩方式，使数据在网络上传输时更加高效。<br><strong>Cookie</strong>：包含客户端的用户信息，用于帮助服务器记住用户偏好和会话数据。</p>
+<h3 id="常见的响应头部"><a href="#常见的响应头部" class="headerlink" title="常见的响应头部"></a>常见的响应头部</h3><p>响应头部是服务器在回应客户端请求时提供的额外信息，帮助客户端处理返回的数据。</p>
+<p><strong>Set-Cookie</strong>：用于存储信息，客户端在后续请求中会带上这些数据。<br><strong>Cache-Control</strong>：指定浏览器缓存响应内容的时间，以减少频繁请求，提升性能。<br><strong>Content-Type</strong>：告知客户端返回数据的类型，例如 HTML、CSS、JavaScript、图片、PDF、视频等，以便浏览器正确处理这些内容。<br><strong>Content-Encoding</strong>：告知客户端数据的压缩方法，使传输更为高效。<br><br></p>
+<h2 id="Cookies"><a href="#Cookies" class="headerlink" title="Cookies"></a>Cookies</h2><p>Cookie 是一小块存储在计算机上的数据。当 Web 服务器在响应中发送 Set-Cookie 头部时，Cookie 会被保存。之后每次请求该服务器时，浏览器会自动发送这些 Cookie 数据回给服务器。由于 HTTP 是无状态的，不会记住之前的请求，Cookie 可以帮助 Web 服务器识别用户、记住个性化设置，或确认用户是否曾访问过该网站。</p>
+<p>Cookie 最常见的是用于网站身份验证。通常 Cookie 值不会直接包含密码，而是使用一个唯一的令牌来标识用户。</p>
+<h3 id="查看-Cookies"><a href="#查看-Cookies" class="headerlink" title="查看 Cookies"></a>查看 Cookies</h3><p>可以通过浏览器的开发者工具查看浏览器向网站发送的 Cookie。F12 打开开发者工具后，点击网络标签，这会显示浏览器请求的所有资源列表。点击任一资源可以查看请求和响应的详细信息。如果请求中包含 Cookie，可以在请求的 Cookies 标签中找到这些数据。</p>
+<br>
+
+
+<!-- https://tryhackme.com/r/room/httpindetail -->
+<!-- AI 翻译 ✔，AI 优化 + 手工优化（删除主语，括号，链接，优化例子）✔ -->
+<!-- 通读文章（句子母语化，删除无意义句）✔，对比原文（文章格式，添加工具）✔ -->
+]]></content>
+      <categories>
+        <category>基础技能</category>
+      </categories>
   </entry>
 </search>
