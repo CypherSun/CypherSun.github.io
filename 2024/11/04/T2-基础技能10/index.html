@@ -15,7 +15,7 @@
 <meta property="og:description" content="综合整理当在浏览器中请求网页时，后台会进行一系列操作。首先计算机需要通过 DNS 系统获取目标服务器的 IP 地址。然后通过 HTTP 协议与该服务器建立通信，服务器会返回网页所需的内容，包括 HTML、JavaScript、CSS、图片等。浏览器接收到内容后，将其格式化并展示为网站。 例如缓存、内容分发网络（CDN）等组件可以提高网络效率并提供额外的功能，从而确保页面加载更快、体验更流畅。 其他">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-11-04T09:42:29.000Z">
-<meta property="article:modified_time" content="2024-11-13T13:16:27.118Z">
+<meta property="article:modified_time" content="2024-11-13T13:17:21.586Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-13 14:16:27"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-13 14:17:21"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -528,8 +528,24 @@
 
             
 
+    <div id="post-toc" class="trm-post-toc">
+      <div class="trm-post-toc-header">
+        目录导航
+				<span id="post-toc-top">
+					置顶
+				</span>
+      </div>
+      <div class="trm-post-toc-content">
+        <ol class="trm-toc"><li class="trm-toc-item trm-toc-level-2" title="综合整理"><a rel="nofollow" class="trm-toc-link" href="#综合整理"><span class="trm-toc-number">1.</span> <span class="trm-toc-text">综合整理</span></a></li><li class="trm-toc-item trm-toc-level-2" title="其他组件"><a rel="nofollow" class="trm-toc-link" href="#其他组件"><span class="trm-toc-number">2.</span> <span class="trm-toc-text">其他组件</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="负载均衡器"><a rel="nofollow" class="trm-toc-link" href="#负载均衡器"><span class="trm-toc-number">2.1.</span> <span class="trm-toc-text">负载均衡器</span></a></li><li class="trm-toc-item trm-toc-level-3" title="内容分发网络（CDN）"><a rel="nofollow" class="trm-toc-link" href="#内容分发网络（CDN）"><span class="trm-toc-number">2.2.</span> <span class="trm-toc-text">内容分发网络（CDN）</span></a></li><li class="trm-toc-item trm-toc-level-3" title="数据库"><a rel="nofollow" class="trm-toc-link" href="#数据库"><span class="trm-toc-number">2.3.</span> <span class="trm-toc-text">数据库</span></a></li><li class="trm-toc-item trm-toc-level-3" title="Web 应用防火墙（WAF）"><a rel="nofollow" class="trm-toc-link" href="#Web-应用防火墙（WAF）"><span class="trm-toc-number">2.4.</span> <span class="trm-toc-text">Web 应用防火墙（WAF）</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="Web 服务器的工作原理"><a rel="nofollow" class="trm-toc-link" href="#Web-服务器的工作原理"><span class="trm-toc-number">3.</span> <span class="trm-toc-text">Web 服务器的工作原理</span></a></li><li class="trm-toc-item trm-toc-level-2" title="Web 服务器"><a rel="nofollow" class="trm-toc-link" href="#Web-服务器"><span class="trm-toc-number">4.</span> <span class="trm-toc-text">Web 服务器</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="虚拟主机"><a rel="nofollow" class="trm-toc-link" href="#虚拟主机"><span class="trm-toc-number">4.1.</span> <span class="trm-toc-text">虚拟主机</span></a></li><li class="trm-toc-item trm-toc-level-3" title="静态内容与动态内容"><a rel="nofollow" class="trm-toc-link" href="#静态内容与动态内容"><span class="trm-toc-number">4.2.</span> <span class="trm-toc-text">静态内容与动态内容</span></a></li><li class="trm-toc-item trm-toc-level-3" title="脚本语言与后端语言"><a rel="nofollow" class="trm-toc-link" href="#脚本语言与后端语言"><span class="trm-toc-number">4.3.</span> <span class="trm-toc-text">脚本语言与后端语言</span></a></li></ol></li></ol>
+      </div>
+    </div>
+
             
 <div class="trm-fixed-container">
+    
+        <div class="trm-fixed-btn post-toc-btn" data-title="目录">
+            <i class="iconfont fas fa-th-list"></i>
+        </div>
     
     
         <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
