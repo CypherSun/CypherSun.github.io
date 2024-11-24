@@ -7,16 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CypherSun">
-<meta property="og:url" content="https://cyphersun.github.io/categories/%E6%A8%A1%E6%9D%BF/index.html">
+<meta name="description" content="端口转发简介端口转发是将应用程序和服务连接到互联网的重要组件。如果没有端口转发，应用程序和服务，例如 Web 服务器只能供同一直接网络内的设备使用。 在这个网络中，IP 地址为“192.168.1.10”的服务器在端口 80 上运行一个 Web 服务器。只有该网络上的另外两台计算机才能访问它，这称为内部网。 如果管理员希望公众通过互联网可以访问该网站，他们就必须实施端口转发 端口转发很容易与防火墙">
+<meta property="og:type" content="article">
+<meta property="og:title" content="扩展网络">
+<meta property="og:url" content="https://cyphersun.github.io/2024/11/24/T1-%E9%A2%84%E5%AE%89%E5%85%A82-5/index.html">
 <meta property="og:site_name" content="CypherSun">
+<meta property="og:description" content="端口转发简介端口转发是将应用程序和服务连接到互联网的重要组件。如果没有端口转发，应用程序和服务，例如 Web 服务器只能供同一直接网络内的设备使用。 在这个网络中，IP 地址为“192.168.1.10”的服务器在端口 80 上运行一个 Web 服务器。只有该网络上的另外两台计算机才能访问它，这称为内部网。 如果管理员希望公众通过互联网可以访问该网站，他们就必须实施端口转发 端口转发很容易与防火墙">
 <meta property="og:locale">
+<meta property="article:published_time" content="2024-11-24T10:06:01.000Z">
+<meta property="article:modified_time" content="2024-11-24T10:16:28.861Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >CypherSun</title>
+<title >扩展网络</title>
 
 <!-- Favicon -->
 
@@ -53,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":false,"isHome":false,"postUpdate":"2024-11-24 11:16:47"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-24 11:16:28"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -203,12 +207,9 @@
     <!-- banner -->
     <div class="trm-banner">
     
-    <!-- banner video cover -->
-    <video autoplay="autoplay" loop muted playsinline webkit-playinginline class="trm-banner-cover">
-        <source src="https://cdn.moji.com/websrc/video/summer20190515.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        Your browser does not support HTML5 video.
-    </video>
-    <!-- banner video cover end -->
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
     
 
     <!-- banner content -->
@@ -223,10 +224,10 @@
                     <!-- banner title -->
                     <div class="trm-banner-text ">
                         <div class="trm-label trm-mb-20">
-                            The article archive
+                            NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            江碧鸟逾白，<br>山青花欲燃。
+                            扩展网络
                         </h1>
 
                         
@@ -236,7 +237,7 @@
                                 </li>
                                 <li>
                                     <span>
-                                        categories
+                                        2024
                                     </span>
                                 </li>
                             </ul>
@@ -355,95 +356,251 @@
             
             <div class="trm-page-content col-lg-8">
                 <div id="trm-content" class="trm-content">
-                    <div class="row">
-    <div class="col-lg-12">
-        <div class="trm-card">
-            <div style="padding: 0 20px;">
-                
-                    <ul class="trm-tag-list"><li class="trm-tag-list-item "><a class="category-list-link" href="/categories/%E6%A8%A1%E6%9D%BF/">模板</a><span class="category-list-count">（3）</span></li><li class="trm-tag-list-item "><a class="category-list-link" href="/categories/%E7%BD%91%E7%AB%99/">网站</a><span class="category-list-count">（1）</span></li><li class="trm-tag-list-item "><a class="category-list-link" href="/categories/%E9%A2%84%E5%AE%89%E5%85%A8/">预安全</a><span class="category-list-count">（8）</span></li></ul>
-                
-            </div>
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            11/24
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            11:06
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            CypherSun
         </div>
     </div>
 </div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="端口转发简介"><a href="#端口转发简介" class="headerlink" title="端口转发简介"></a>端口转发简介</h2><p>端口转发是将应用程序和服务连接到互联网的重要组件。如果没有端口转发，应用程序和服务，例如 Web 服务器只能供同一直接网络内的设备使用。</p>
+<p>在这个网络中，IP 地址为“192.168.1.10”的服务器在端口 80 上运行一个 Web 服务器。只有该网络上的另外两台计算机才能访问它，这称为内部网。</p>
+<p>如果管理员希望公众通过互联网可以访问该网站，他们就必须实施端口转发</p>
+<p>端口转发很容易与防火墙的行为相混淆。端口转发会打开特定端口。相比之下，防火墙会确定流量是否可以通过这些端口传输，即使这些端口是通过端口转发打开的。</p>
+<p>端口转发是在网络路由器上配置的。<br><br></p>
+<h2 id="防火墙-101"><a href="#防火墙-101" class="headerlink" title="防火墙 101"></a>防火墙 101</h2><p>防火墙是网络内的一种设备，负责确定哪些流量可以进出。防火墙可以视为网络的边界安全。管理员可以根据多种因素配置防火墙，以允许或拒绝流量进出网络，例如：</p>
+<p>流量来自哪里？防火墙是否被告知接受&#x2F;拒绝来自特定网络的流量？<br>流量要流向哪里？防火墙是否已被告知接受&#x2F;拒绝发往特定网络的流量？<br>流量发往哪个端口？防火墙是否已被告知仅接受&#x2F;拒绝发往端口 80 的流量？<br>流量使用什么协议？防火墙是否已被告知接受&#x2F;拒绝UDP、TCP或两者的流量？<br>防火墙执行数据包检查来确定这些问题的答案。</p>
+<p>防火墙有各种形状和大小。从可以处理大量数据的专用硬件，通常在大型网络中，如企业到家用路由器。或 Snort 等软件，防火墙可分为 2 到 5 个类别。</p>
+<p>将在下表中介绍两种主要类别的防火墙：</p>
+<table>
+<thead>
+<tr>
+<th>防火墙类别</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>有状态的</td>
+<td>这种类型的防火墙使用来自连接的全部信息；而不是检查单个数据包，而是基于整个连接来确定设备的行为。</td>
+</tr>
+<tr>
+<td></td>
+<td>与无状态防火墙相比，这种防火墙类型消耗大量资源，因为决策是动态的。例如，防火墙可能会允许 TCP 握手的前几部分，但之后可能会失败。</td>
+</tr>
+<tr>
+<td></td>
+<td>如果来自主机的连接不好，它将阻塞整个设备。</td>
+</tr>
+<tr>
+<td>无状态</td>
+<td>这种防火墙类型使用一组静态规则来确定单个数据包是否可以接受。例如，设备发送坏数据包并不一定意味着整个设备都会被阻止。</td>
+</tr>
+<tr>
+<td></td>
+<td>虽然这些防火墙比其他防火墙占用的资源少得多，但它们却很笨。例如，这些防火墙只有在其内部定义的规则下才有效。如果规则不完全匹配，它实际上就毫无用处。</td>
+</tr>
+<tr>
+<td></td>
+<td>然而，这些防火墙在接收来自一组主机的大量流量时非常有用，例如分布式拒绝服务攻击。</td>
+</tr>
+</tbody></table>
+<br>
 
-<!-- history -->
 
-<div class="row">
+
+
+
+<h2 id="VPN-基础知识"><a href="#VPN-基础知识" class="headerlink" title="VPN 基础知识"></a>VPN 基础知识</h2><p>虚拟专用网络 (VPN) 是一种技术，允许不同网络上的设备通过互联网在彼此之间创建专用路径或隧道来安全通信。连接在此隧道内的设备形成自己的专用网络 。 </p>
+<p>例如，例如企业内部只有同一网络内的设备才能直接通信。但是 VPN 允许两个办公室连接。</p>
+<p>网络 #1（办公室 #1）<br>网络 #2（办公室 #2）<br>网络 #3（两台设备通过VPN连接）</p>
+<p>连接在网络 #3 上的设备仍然是网络 #1 和网络 #2 的一部分，但也共同形成一个私有网络 #3，只有通过此 VPN 连接的设备才能通过该网络进行通信。</p>
+<p>下表中来介绍一下VPN提供的一些其他好处：</p>
+<table>
+<thead>
+<tr>
+<th>好处</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>允许不同地理位置的网络连接</td>
+<td>例如，拥有多个办事处的企业会发现 VPN 很有用，因为这意味着可以从另一个办事处访问服务器&#x2F;基础设施等资源。</td>
+</tr>
+<tr>
+<td>提供隐私</td>
+<td>VPN 技术使用加密来保护数据。这意味着只有发送方和接收方的设备才能理解数据，这意味着数据不容易被嗅探。</td>
+</tr>
+<tr>
+<td></td>
+<td>这种加密在公共 WiFi 的地方很有用，因为网络不提供加密。可以使用 VPN 来保护流量不被其他人查看。</td>
+</tr>
+<tr>
+<td>提供匿名性</td>
+<td>记者和活动家依靠 VPN 在言论自由受到控制的国家安全地报道全球问题。</td>
+</tr>
+<tr>
+<td></td>
+<td>通常，ISP 和其他中介机构可以查看流量，从而对其进行跟踪。</td>
+</tr>
+<tr>
+<td></td>
+<td>VPN 提供的匿名程度取决于网络上其他设备对隐私的尊重程度。例如，记录所有数据&#x2F;历史记录的 VPN 与不使用 VPN 在这方面本质上是一样的。</td>
+</tr>
+</tbody></table>
+<p>多年来，VPN 技术不断改进。下面让探讨一些现有的VPN技术：</p>
+<table>
+<thead>
+<tr>
+<th>VPN技术</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>公共部门伙伴关系</td>
+<td>PPTP使用此技术进行身份验证并提供数据加密。VPN 通过使用私钥和公共证书（类似于 SSH）来工作。私钥和证书必须匹配才能连接。</td>
+</tr>
+<tr>
+<td></td>
+<td>该技术无法自行脱离网络，不可路由。</td>
+</tr>
+<tr>
+<td>点对点隧道协议</td>
+<td>点对点隧道协议 (PPTP) 是允许数据从 PPP 传输并离开网络的技术。</td>
+</tr>
+<tr>
+<td></td>
+<td>PPTP 设置起来非常简单，大多数设备都支持。但是，与其他协议相比，它的加密性较弱。</td>
+</tr>
+<tr>
+<td>IPSec</td>
+<td>互联网协议安全 (IPsec) 使用现有的互联网协议 (IP) 框架对数据进行加密。</td>
+</tr>
+<tr>
+<td></td>
+<td>与其他方案相比，IPSec 的设置比较困难。但是，如果成功，它将拥有强大的加密功能，并且在许多设备上也受到支持。</td>
+</tr>
+</tbody></table>
+<br>
+
+
+
+
+
+<h2 id="LAN-网络设备"><a href="#LAN-网络设备" class="headerlink" title="LAN 网络设备"></a>LAN 网络设备</h2><h3 id="什么是路由器？"><a href="#什么是路由器？" class="headerlink" title="什么是路由器？"></a>什么是路由器？</h3><p>路由器的作用是连接网络并在网络间传递数据。它通过路由来实现这一点，因此得名路由器。</p>
+<p>路由是数据在网络中传输的过程的标签。路由涉及在网络之间创建路径，以便成功传输数据。路由器在 OSI 模型的第 3 层运行。它们通常具有交互式界面，例如网站或控制台，允许管理员配置各种规则，例如端口转发或防火墙。</p>
+<p>当设备通过多条路径连接时，路由很有用，例如在下面的示例图中，其中采用最优路径：</p>
+<p>路由器是专用设备，不执行与交换机相同的功能。</p>
+<p>可以看到，计算机 A 的网络通过中间的两个路由器连接到计算机 B 的网络。问题是：将采取什么路径？不同的协议将决定应采取什么路径，但因素包括：</p>
+<p>哪条路径最短？<br>哪条路径最可靠？<br>哪条路径具有更快的介质（例如铜或光纤）？</p>
+<h3 id="什么是-Switch？"><a href="#什么是-Switch？" class="headerlink" title="什么是 Switch？"></a>什么是 Switch？</h3><p>交换机是一种专用网络设备，负责提供连接多台设备的方法。交换机可以使用以太网电缆连接多台设备，从 3 台到 63 台。</p>
+<p>交换机可以在 OSI 模型的第 2 层和第 3 层运行。但是，它们是互斥的，因为第 2 层交换机不能在第 3 层运行。</p>
+<p>交换机将使用 MAC 地址将帧转发到连接的设备上，这些帧不再是数据包，因为 IP 协议已被剥离。</p>
+<p>这些交换机仅负责将帧发送到正确的设备。</p>
+<p>第 3 层交换机比第 2 层交换机更复杂，因为它们可以执行路由器的一些职责。也就是说，这些交换机将向设备发送帧，如第 2 层所做的那样并使用 IP 协议将数据包路由到其他设备。 </p>
+<p>有两个 IP 地址：<br>192.168.1.1<br>192.168.2.1</p>
+<p>虚拟局域网 (VLAN) 技术允许将网络中的特定设备虚拟地分开。这种分离意味着它们都可以从诸如互联网连接之类的事物中受益，但会被分开处理。这种网络分离提供了安全性，因为这意味着现有的规则决定了特定设备如何相互通信。<br><br></p>
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
     <div class="col-lg-12">
         <!-- title -->
         <h5 class="trm-title-with-divider">
-            
-                模板
-            
-            <span data-number="01"></span>
+            其他文章
+            <span data-number="02"></span>
         </h5>
     </div>
-    <div class="col-lg-12">
-        <!-- timeline -->
-        <div class="trm-timeline">
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/24/%E7%BD%91%E7%AB%99Snort/" class="trm-cover-frame trm-anima-link">
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/22/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                                    工具模板
-                                </a>
-                            </h6>
-                        </div>
-                    
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">24</div>
+                    <div class="trm-cover-month">2024/11</div>
                 </div>
-            </div>
             
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/22/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                                    网站模板
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    未分类
+                </a>
             </div>
-            
-            <div class="trm-timeline-item trm-scroll-animation">
-                <div class="trm-timeline-mark-light"></div>
-                <div class="trm-timeline-mark"></div>
-                <div class="trm-timeline-content less">
-                    
-                        <div class="trm-card-header">
-                            <h6>
-                                <a href="/2024/11/22/#%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/" class="trm-anima-link">
-                                    博客模板
-                                </a>
-                            </h6>
-                        </div>
-                    
-                </div>
-            </div>
-            
+            <h5>
+                <a href="/2024/11/24/%E7%BD%91%E7%AB%99Snort/" class="trm-anima-link">
+                    网站Snort
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/24</li>
+                <li>11:09</li>
+                
+                
+            </ul>
         </div>
-        <!-- timeline end -->
     </div>
 </div>
-
-<!-- history end -->
-
-
-    <div class="trm-pagination">
-        <span class="page-number current">1</span>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/24/%E7%BD%91%E7%AB%991024%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">24</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E7%BD%91%E7%AB%99/">
+                    网站
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/24/%E7%BD%91%E7%AB%991024%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3/" class="trm-anima-link">
+                    1024 个常用端口
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/24</li>
+                <li>10:47</li>
+                
+                
+            </ul>
+        </div>
     </div>
+</div>
+    
+</div>
 
-
+    
 
 
 
@@ -481,9 +638,29 @@
 
             
 
+    <div id="post-toc" class="trm-post-toc">
+      <div class="trm-post-toc-header">
+        目录导航
+				<span id="post-toc-top">
+					置顶
+				</span>
+      </div>
+      <div class="trm-post-toc-content">
+        <ol class="trm-toc"><li class="trm-toc-item trm-toc-level-2" title="端口转发简介"><a rel="nofollow" class="trm-toc-link" href="#端口转发简介"><span class="trm-toc-number">1.</span> <span class="trm-toc-text">端口转发简介</span></a></li><li class="trm-toc-item trm-toc-level-2" title="防火墙 101"><a rel="nofollow" class="trm-toc-link" href="#防火墙-101"><span class="trm-toc-number">2.</span> <span class="trm-toc-text">防火墙 101</span></a></li><li class="trm-toc-item trm-toc-level-2" title="VPN 基础知识"><a rel="nofollow" class="trm-toc-link" href="#VPN-基础知识"><span class="trm-toc-number">3.</span> <span class="trm-toc-text">VPN 基础知识</span></a></li><li class="trm-toc-item trm-toc-level-2" title="LAN 网络设备"><a rel="nofollow" class="trm-toc-link" href="#LAN-网络设备"><span class="trm-toc-number">4.</span> <span class="trm-toc-text">LAN 网络设备</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="什么是路由器？"><a rel="nofollow" class="trm-toc-link" href="#什么是路由器？"><span class="trm-toc-number">4.1.</span> <span class="trm-toc-text">什么是路由器？</span></a></li><li class="trm-toc-item trm-toc-level-3" title="什么是 Switch？"><a rel="nofollow" class="trm-toc-link" href="#什么是-Switch？"><span class="trm-toc-number">4.2.</span> <span class="trm-toc-text">什么是 Switch？</span></a></li></ol></li></ol>
+      </div>
+    </div>
+
             
 <div class="trm-fixed-container">
     
+        <div class="trm-fixed-btn post-toc-btn" data-title="目录">
+            <i class="iconfont fas fa-th-list"></i>
+        </div>
+    
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
     
     
         <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
@@ -566,6 +743,10 @@
     
 
     <!-- 评论插件 -->
+    
+        
+
+        
     
 
 		
