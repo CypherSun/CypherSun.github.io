@@ -7,20 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="网站地址https:&#x2F;&#x2F;www.snort.org&#x2F; 网站介绍   使用方法">
+<meta name="description" content="什么是 HTTP(S)？什么是HTTP？（超文本传输​​协议）HTTP是浏览网站时使用的协议，由 Tim Berners-Lee 及其团队在 1989 年至 1991 年间开发。HTTP是用于与 Web 服务器通信以传输网页数据的一组规则，无论是 HTML、图像、视频等。 什么是 HTTPS？（超文本传输​​协议安全）HTTPS 是 HTTP 的安全版本。HTTPS 数据经过加密，因此不仅可以阻止">
 <meta property="og:type" content="article">
-<meta property="og:title" content="网站Snort">
-<meta property="og:url" content="https://cyphersun.github.io/2024/11/24/%E7%BD%91%E7%AB%99Snort/index.html">
+<meta property="og:title" content="HTTP 详解">
+<meta property="og:url" content="https://cyphersun.github.io/2024/11/25/T1-%E9%A2%84%E5%AE%89%E5%85%A83-2/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="网站地址https:&#x2F;&#x2F;www.snort.org&#x2F; 网站介绍   使用方法">
+<meta property="og:description" content="什么是 HTTP(S)？什么是HTTP？（超文本传输​​协议）HTTP是浏览网站时使用的协议，由 Tim Berners-Lee 及其团队在 1989 年至 1991 年间开发。HTTP是用于与 Web 服务器通信以传输网页数据的一组规则，无论是 HTML、图像、视频等。 什么是 HTTPS？（超文本传输​​协议安全）HTTPS 是 HTTP 的安全版本。HTTPS 数据经过加密，因此不仅可以阻止">
 <meta property="og:locale">
-<meta property="article:published_time" content="2024-11-24T10:09:40.000Z">
-<meta property="article:modified_time" content="2024-11-24T10:09:50.561Z">
+<meta property="article:published_time" content="2024-11-25T08:49:18.000Z">
+<meta property="article:modified_time" content="2024-11-25T09:12:51.180Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >网站Snort</title>
+<title >HTTP 详解</title>
 
 <!-- Favicon -->
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-24 11:09:50"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-25 10:12:51"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -227,7 +227,7 @@
                             NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            网站Snort
+                            HTTP 详解
                         </h1>
 
                         
@@ -360,13 +360,13 @@
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
-            11/24
+            11/25
         </div>
     </div>
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-clock trm-icon"></i><br>
-            11:09
+            09:49
         </div>
     </div>
     <div class="col-sm-4">
@@ -378,11 +378,81 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a target="_blank" rel="noopener" href="https://www.snort.org/">https://www.snort.org/</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+    <h2 id="什么是-HTTP-S-？"><a href="#什么是-HTTP-S-？" class="headerlink" title="什么是 HTTP(S)？"></a>什么是 HTTP(S)？</h2><h3 id="什么是HTTP？（超文本传输​​协议）"><a href="#什么是HTTP？（超文本传输​​协议）" class="headerlink" title="什么是HTTP？（超文本传输​​协议）"></a>什么是HTTP？（超文本传输​​协议）</h3><p>HTTP是浏览网站时使用的协议，由 Tim Berners-Lee 及其团队在 1989 年至 1991 年间开发。HTTP是用于与 Web 服务器通信以传输网页数据的一组规则，无论是 HTML、图像、视频等。</p>
+<h3 id="什么是-HTTPS？（超文本传输​​协议安全）"><a href="#什么是-HTTPS？（超文本传输​​协议安全）" class="headerlink" title="什么是 HTTPS？（超文本传输​​协议安全）"></a>什么是 HTTPS？（超文本传输​​协议安全）</h3><p>HTTPS 是 HTTP 的安全版本。HTTPS 数据经过加密，因此不仅可以阻止他人查看接收和发送的数据，还可以确保正在与正确的 Web 服务器通信，而不是与冒充它的服务器通信。<br><br></p>
+<h2 id="请求和响应"><a href="#请求和响应" class="headerlink" title="请求和响应"></a>请求和响应</h2><p>当访问网站时，浏览器需要向 Web 服务器请求 HTML、图片等资源，并下载响应。在此之前，需要明确告诉浏览器如何以及在何处访问这些资源，这时 URL 就可以派上用场了。</p>
+<h3 id="什么是-URL？（统一资源定位器）"><a href="#什么是-URL？（统一资源定位器）" class="headerlink" title="什么是 URL？（统一资源定位器）"></a>什么是 URL？（统一资源定位器）</h3><p>如果使用过互联网，那么以前就使用过 URL。URL 主要是有关如何访问互联网上的资源的说明。下图显示了 URL 及其所有功能的样子（它不会在每个请求中使用所有功能）。</p>
+<p>示例上显示 URL 不同部分的图表，其中 http 是方案，user:password 是用户，cyphersun.com 是域或主机，80 是端口，view-room 是路径，?id&#x3D;1 是查询字符串，#task3 是片段。完整地址为 <a target="_blank" rel="noopener" href="http://user:password@cyphersun.com/view-room?id=1#task3%E3%80%82">http://user:password@cyphersun.com:80/view-room?id=1#task3。</a></p>
+<p>方案：这指示使用什么协议来访问资源，例如 HTTP、HTTPS、FTP（文件传输协议）。</p>
+<p>用户：有些服务需要认证才能登录，可以将用户名和密码放入URL中登录。</p>
+<p>主机：要访问的服务器的域名或 IP 地址。</p>
+<p>端口：要连接的端口，通常HTTP为 80 ，HTTPS 为 443，但可以托管在 1 - 65535 之间的任何端口上。</p>
+<p>路径：尝试访问的资源的文件名或位置。</p>
+<p>查询字符串：可以发送到请求路径的额外信息。例如，&#x2F;blog? id&#x3D;1会告诉博客路径希望接收 id 为 1 的博客文章。</p>
+<p>片段：这是对实际请求的页面上某个位置的引用。这通常用于内容较长的页面，并且可以将页面的某个部分直接链接到它，这样用户一访问该页面就可以立即看到它。</p>
+<p>提出请求</p>
+<p>只需一行“ GET &#x2F; HTTP &#x2F;1.1 ”即可向 Web 服务器发出请求</p>
+<p>但为了获得更丰富的网络体验，还需要发送其他数据。这些其他数据以所谓的标头形式发送，标头包含要提供给正在通信的网络服务器的额外信息，但将在标头任务中对此进行更深入的介绍。</p>
+<p>示例请求：</p>
+<p>GET &#x2F; HTTP&#x2F;1.1<br>Host: cyphersun.com<br>User-Agent: Mozilla&#x2F;5.0 Firefox&#x2F;87.0<br>Referer: <a target="_blank" rel="noopener" href="https://cyphersun.com/">https://cyphersun.com/</a></p>
+<p>细分此请求的每一行：</p>
+<p>第 1 行：此请求发送 GET 方法（有关更多信息，请参阅HTTP方法任务），使用 &#x2F; 请求主页，并告知 Web 服务器正在使用HTTP协议版本 1.1。</p>
+<p>第 2 行：告诉 Web 服务器想要访问网站 cyphersun.com</p>
+<p>第 3 行：告诉 Web 服务器正在使用 Firefox 87 版浏览器</p>
+<p>第 4 行：告诉 Web 服务器，引导访问此网站的网页是<a target="_blank" rel="noopener" href="https://cyphersun.com/">https://cyphersun.com</a></p>
+<p>第 5 行：HTTP请求总是以一个空白行结束，以通知 Web 服务器请求已完成。</p>
+<p>响应示例：</p>
+<p>HTTP&#x2F;1.1 200 OK<br>Server: nginx&#x2F;1.15.8<br>Date: Fri, 09 Apr 2021 13:34:03 GMT<br>Content-Type: text&#x2F;html<br>Content-Length: 98</p>
+<html>
+<head>
+    <title>cyphersun</title>
+</head>
+<body>
+    Welcome To cyphersun.com
+</body>
+</html>
+分解响应的每一行：
+
+<p>第 1 行： HTTP 1.1 是服务器正在使用的 HTTP 协议的版本，后面跟着 HTTP 状态代码（在本例中为“200 Ok”），这告诉请求已成功完成。</p>
+<p>第 2 行：这告诉 Web 服务器软件和版本号。</p>
+<p>第 3 行： Web 服务器的当前日期、时间和时区。</p>
+<p>第 4 行： Content-Type 标头告诉客户端要发送什么类型的信息，例如 HTML、图像、视频、pdf、XML。</p>
+<p>第 5 行： Content-Length 告诉客户端响应有多长，这样就可以确认没有丢失任何数据。</p>
+<p>第 6 行： HTTP响应包含一个空白行，以确认HTTP响应的结束。</p>
+<p>第 7-14 行：已请求的信息，在本例中为主页。<br><br></p>
+<h2 id="HTTP-方法"><a href="#HTTP-方法" class="headerlink" title="HTTP 方法"></a>HTTP 方法</h2><p>HTTP 方法是客户端在发出 HTTP 请求时显示其预期操作的一种方式。HTTP 方法有很多，但将介绍最常见的方法，尽管主要会处理 GET 和 POST 方法。</p>
+<h3 id="GET请求"><a href="#GET请求" class="headerlink" title="GET请求"></a>GET请求</h3><p>这用于从网络服务器获取信息。</p>
+<h3 id="POST请求"><a href="#POST请求" class="headerlink" title="POST请求"></a>POST请求</h3><p>这用于向 Web 服务器提交数据并可能创建新记录</p>
+<h3 id="PUT请求"><a href="#PUT请求" class="headerlink" title="PUT请求"></a>PUT请求</h3><p>用于向网络服务器提交数据以更新信息</p>
+<h3 id="Delete请求"><a href="#Delete请求" class="headerlink" title="Delete请求"></a>Delete请求</h3><p>这用于从网络服务器删除信息&#x2F;记录。<br><br></p>
+<h2 id="HTTP-状态代码"><a href="#HTTP-状态代码" class="headerlink" title="HTTP 状态代码"></a>HTTP 状态代码</h2><h3 id="HTTP-状态代码："><a href="#HTTP-状态代码：" class="headerlink" title="HTTP 状态代码："></a>HTTP 状态代码：</h3><p>在上一个任务中，了解到，当 HTTP 服务器响应时，第一行始终包含一个状态代码，用于通知客户端其请求的结果以及可能的处理方式。这些状态代码可分为 5 个不同的范围：</p>
+<p>100-199 - 信息响应	这些代码用于告知客户端其请求的第一部分已被接受，客户端应继续发送其请求的其余部分。这些代码不再很常见。<br>200-299 - 成功	这一系列的状态代码用于告知客户端他们的请求已成功。<br>300-399 - 重定向	这些用于将客户端的请求重定向到另一个资源。这可以是不同的网页，也可以是完全不同的网站。<br>400-499 - 客户端错误	用于通知客户他们的请求有错误。<br>500-599 - 服务器错误	这是为服务器端发生的错误而保留的，通常表示服务器处理请求时存在相当大的问题。</p>
+<h3 id="常见的HTTP状态代码："><a href="#常见的HTTP状态代码：" class="headerlink" title="常见的HTTP状态代码："></a>常见的HTTP状态代码：</h3><p>有很多不同的 HTTP 状态代码，而且应用程序甚至可以定义自己的状态代码，将介绍可能遇到的最常见的HTTP响应：</p>
+<p>200——确定	请求已成功完成。<br>201——已创建	已创建资源（例如新用户或新博客文章）。<br>301 - 永久移动	这会将客户端的浏览器重定向到新的网页或告诉搜索引擎该页面已移动到其他地方并改为在那里查看。<br>302 - 已找到	与上面的永久重定向类似，但顾名思义，这只是暂时的改变，在不久的将来可能会再次改变。<br>400 - 错误请求	这告诉浏览器他们的请求中存在错误或缺失。如果正在请求的 Web 服务器资源需要客户端未发送的某个参数，则有时可以使用此功能。<br>401-未授权	目前，不被允许查看此资源，除非获得 Web 应用程序的授权（通常是用户名和密码）。<br>403 - 禁止访问	无论是否登录，都没有权限查看此资源。<br>405 - 方法不允许	资源不允许此方法请求，例如，向资源 &#x2F;create-account 发送了一个 GET 请求，而它原本期望一个 POST 请求。<br>404 - 页面未找到	请求的页面&#x2F;资源不存在。<br>500 - 内部服务错误	服务器在处理的请求时遇到某种错误，不知道如何正确处理。<br>503 - 服务不可用	<br>该服务器无法处理的请求，因为它超载或正在维护。</p>
+<br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+
+<h2 id="标头"><a href="#标头" class="headerlink" title="标头"></a>标头</h2><p>标头是在发出请求时可以发送到 Web 服务器的附加数据位。</p>
+<p>尽管在发出HTTP请求时没有严格要求标头，但会发现很难正确查看网站。</p>
+<h3 id="通用请求标头"><a href="#通用请求标头" class="headerlink" title="通用请求标头"></a>通用请求标头</h3><p>这些是从客户端（通常是的浏览器）发送到服务器的标头。</p>
+<p>主机：一些网络服务器托管多个网站，因此通过提供主机标头，可以告诉它需要哪一个网站，否则只会收到服务器的默认网站。</p>
+<p>用户代理：这是的浏览器软件和版本号，告诉网络服务器的浏览器软件有助于它为的浏览器正确格式化网站，并且 HTML、JavaScript 和 CSS 的某些元素仅在某些浏览器中可用。</p>
+<p>Content-Length：当以表单等形式向 Web 服务器发送数据时，内容长度会告知 Web 服务器在 Web 请求中需要多少数据。这样，服务器就可以确保不会丢失任何数据。</p>
+<p>Accept-Encoding：告诉网络服务器浏览器支持哪些类型的压缩方法，以便数据可以变得更小，以便在互联网上传输。</p>
+<p>Cookie：发送到服务器以帮助记住的信息的数据（有关更多信息，请参阅 cookies 任务）。<br>常见响应标头</p>
+<p>这些是请求后从服务器返回给客户端的标头。</p>
+<p>Set-Cookie：存储每次请求时发送回 Web 服务器的信息（有关更多信息，请参阅 cookies 任务）。</p>
+<p>Cache-Control：在浏览器再次请求之前，将响应内容存储在浏览器缓存中多长时间。</p>
+<p>Content-Type：这告诉客户端返回的数据类型，即 HTML、CSS、JavaScript、图像、PDF、视频等。使用 content-type 标头，浏览器就知道如何处理数据。</p>
+<p>内容编码：在互联网上发送数据时，使用了什么方法压缩数据以使其更小。<br><br></p>
+<h2 id="曲奇饼"><a href="#曲奇饼" class="headerlink" title="曲奇饼"></a>曲奇饼</h2><p>Cookie 只是存储在计算机上的一小段数据。当从 Web 服务器收到“Set-Cookie”标头时，Cookie 就会保存。然后，发出的每一个后续请求都会将 Cookie 数据发送回 Web 服务器。由于 HTTP 是无状态的（不会跟踪之前的请求），因此 Cookie 可用于提醒 Web 服务器是谁、网站的一些个人设置或是否曾经访问过该网站。以HTTP请求为例来看一下：</p>
+<p>Cookie 有多种用途，但最常用于网站身份验证。Cookie 值通常不是可以看到密码的明文字符串，而是一个令牌（人类无法轻易猜出的唯一密码）。</p>
+<h3 id="查看的-Cookie"><a href="#查看的-Cookie" class="headerlink" title="查看的 Cookie"></a>查看的 Cookie</h3><p>可以使用浏览器中的开发人员工具轻松查看浏览器向网站发送的 cookie。如果不确定如何在浏览器中访问开发人员工具，请单击此任务顶部的“查看网站”按钮以获取操作指南。</p>
+<p>打开开发者工具后，点击“网络”选项卡。此选项卡将显示浏览器请求的所有资源列表。可以点击每个资源以查看请求和响应的详细分类。如果的浏览器发送了 Cookie，将在请求的“Cookie”选项卡上看到这些 Cookie。<br><br></p>
+
 </article>
     
     
@@ -396,6 +466,41 @@
             <span data-number="02"></span>
         </h5>
     </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/25/T1-%E9%A2%84%E5%AE%89%E5%85%A83-3/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">25</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E9%A2%84%E5%AE%89%E5%85%A8/">
+                    预安全
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/25/T1-%E9%A2%84%E5%AE%89%E5%85%A83-3/" class="trm-anima-link">
+                    网站如何运作
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/25</li>
+                <li>10:12</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
@@ -424,41 +529,6 @@
             <ul class="trm-card-data trm-label">
                 <li>24/11/24</li>
                 <li>11:16</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2024/11/24/T1-%E9%A2%84%E5%AE%89%E5%85%A82-5/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">24</div>
-                    <div class="trm-cover-month">2024/11</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E9%A2%84%E5%AE%89%E5%85%A8/">
-                    预安全
-                </a>
-            </div>
-            <h5>
-                <a href="/2024/11/24/T1-%E9%A2%84%E5%AE%89%E5%85%A82-5/" class="trm-anima-link">
-                    扩展网络
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>24/11/24</li>
-                <li>11:06</li>
                 
                 
             </ul>
@@ -514,7 +584,7 @@
 				</span>
       </div>
       <div class="trm-post-toc-content">
-        <ol class="trm-toc"><li class="trm-toc-item trm-toc-level-2" title="网站地址"><a rel="nofollow" class="trm-toc-link" href="#网站地址"><span class="trm-toc-number">1.</span> <span class="trm-toc-text">网站地址</span></a></li><li class="trm-toc-item trm-toc-level-2" title="网站介绍"><a rel="nofollow" class="trm-toc-link" href="#网站介绍"><span class="trm-toc-number">2.</span> <span class="trm-toc-text">网站介绍</span></a></li><li class="trm-toc-item trm-toc-level-2" title="使用方法"><a rel="nofollow" class="trm-toc-link" href="#使用方法"><span class="trm-toc-number">3.</span> <span class="trm-toc-text">使用方法</span></a></li></ol>
+        <ol class="trm-toc"><li class="trm-toc-item trm-toc-level-2" title="什么是 HTTP(S)？"><a rel="nofollow" class="trm-toc-link" href="#什么是-HTTP-S-？"><span class="trm-toc-number">1.</span> <span class="trm-toc-text">什么是 HTTP(S)？</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="什么是HTTP？（超文本传输​​协议）"><a rel="nofollow" class="trm-toc-link" href="#什么是HTTP？（超文本传输​​协议）"><span class="trm-toc-number">1.1.</span> <span class="trm-toc-text">什么是HTTP？（超文本传输​​协议）</span></a></li><li class="trm-toc-item trm-toc-level-3" title="什么是 HTTPS？（超文本传输​​协议安全）"><a rel="nofollow" class="trm-toc-link" href="#什么是-HTTPS？（超文本传输​​协议安全）"><span class="trm-toc-number">1.2.</span> <span class="trm-toc-text">什么是 HTTPS？（超文本传输​​协议安全）</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="请求和响应"><a rel="nofollow" class="trm-toc-link" href="#请求和响应"><span class="trm-toc-number">2.</span> <span class="trm-toc-text">请求和响应</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="什么是 URL？（统一资源定位器）"><a rel="nofollow" class="trm-toc-link" href="#什么是-URL？（统一资源定位器）"><span class="trm-toc-number">2.1.</span> <span class="trm-toc-text">什么是 URL？（统一资源定位器）</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="HTTP 方法"><a rel="nofollow" class="trm-toc-link" href="#HTTP-方法"><span class="trm-toc-number">3.</span> <span class="trm-toc-text">HTTP 方法</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="GET请求"><a rel="nofollow" class="trm-toc-link" href="#GET请求"><span class="trm-toc-number">3.1.</span> <span class="trm-toc-text">GET请求</span></a></li><li class="trm-toc-item trm-toc-level-3" title="POST请求"><a rel="nofollow" class="trm-toc-link" href="#POST请求"><span class="trm-toc-number">3.2.</span> <span class="trm-toc-text">POST请求</span></a></li><li class="trm-toc-item trm-toc-level-3" title="PUT请求"><a rel="nofollow" class="trm-toc-link" href="#PUT请求"><span class="trm-toc-number">3.3.</span> <span class="trm-toc-text">PUT请求</span></a></li><li class="trm-toc-item trm-toc-level-3" title="Delete请求"><a rel="nofollow" class="trm-toc-link" href="#Delete请求"><span class="trm-toc-number">3.4.</span> <span class="trm-toc-text">Delete请求</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="HTTP 状态代码"><a rel="nofollow" class="trm-toc-link" href="#HTTP-状态代码"><span class="trm-toc-number">4.</span> <span class="trm-toc-text">HTTP 状态代码</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="HTTP 状态代码："><a rel="nofollow" class="trm-toc-link" href="#HTTP-状态代码："><span class="trm-toc-number">4.1.</span> <span class="trm-toc-text">HTTP 状态代码：</span></a></li><li class="trm-toc-item trm-toc-level-3" title="常见的HTTP状态代码："><a rel="nofollow" class="trm-toc-link" href="#常见的HTTP状态代码："><span class="trm-toc-number">4.2.</span> <span class="trm-toc-text">常见的HTTP状态代码：</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="标头"><a rel="nofollow" class="trm-toc-link" href="#标头"><span class="trm-toc-number">5.</span> <span class="trm-toc-text">标头</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="通用请求标头"><a rel="nofollow" class="trm-toc-link" href="#通用请求标头"><span class="trm-toc-number">5.1.</span> <span class="trm-toc-text">通用请求标头</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="曲奇饼"><a rel="nofollow" class="trm-toc-link" href="#曲奇饼"><span class="trm-toc-number">6.</span> <span class="trm-toc-text">曲奇饼</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="查看的 Cookie"><a rel="nofollow" class="trm-toc-link" href="#查看的-Cookie"><span class="trm-toc-number">6.1.</span> <span class="trm-toc-text">查看的 Cookie</span></a></li></ol></li></ol>
       </div>
     </div>
 

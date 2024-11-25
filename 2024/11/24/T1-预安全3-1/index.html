@@ -7,20 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="主题1副主题1副主题2      主题2副主题1副主题2">
+<meta name="description" content="什么是 DNS？什么是DNS？域名系统（DNS）提供了一种简单的方式，无需记住复杂的数字即可与互联网上的设备进行通信。就像每栋房子都有一个唯一的地址用于直接向其发送邮件一样，互联网上的每台计算机都有自己唯一的地址来与其进行通信，称为 IP 地址。IP 地址看起来像下面的 104.26.10.229，4 组数字，范围从 0 - 255，中间用句点分隔。当想要访问一个网站时，记住复杂的数字并不方便，这">
 <meta property="og:type" content="article">
-<meta property="og:title" content="T1-预安全3-1">
+<meta property="og:title" content="DNS 详细信息">
 <meta property="og:url" content="https://cyphersun.github.io/2024/11/24/T1-%E9%A2%84%E5%AE%89%E5%85%A83-1/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="主题1副主题1副主题2      主题2副主题1副主题2">
+<meta property="og:description" content="什么是 DNS？什么是DNS？域名系统（DNS）提供了一种简单的方式，无需记住复杂的数字即可与互联网上的设备进行通信。就像每栋房子都有一个唯一的地址用于直接向其发送邮件一样，互联网上的每台计算机都有自己唯一的地址来与其进行通信，称为 IP 地址。IP 地址看起来像下面的 104.26.10.229，4 组数字，范围从 0 - 255，中间用句点分隔。当想要访问一个网站时，记住复杂的数字并不方便，这">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-11-24T10:16:35.000Z">
-<meta property="article:modified_time" content="2024-11-24T10:16:40.587Z">
+<meta property="article:modified_time" content="2024-11-24T14:24:21.927Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >T1-预安全3-1</title>
+<title >DNS 详细信息</title>
 
 <!-- Favicon -->
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-24 11:16:40"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-24 15:24:21"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
@@ -227,7 +227,7 @@
                             NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            T1-预安全3-1
+                            DNS 详细信息
                         </h1>
 
                         
@@ -378,13 +378,38 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="主题1"><a href="#主题1" class="headerlink" title="主题1"></a>主题1</h2><h3 id="副主题1"><a href="#副主题1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2"><a href="#副主题2" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+    <h2 id="什么是-DNS？"><a href="#什么是-DNS？" class="headerlink" title="什么是 DNS？"></a>什么是 DNS？</h2><h3 id="什么是DNS？"><a href="#什么是DNS？" class="headerlink" title="什么是DNS？"></a>什么是DNS？</h3><p>域名系统（DNS）提供了一种简单的方式，无需记住复杂的数字即可与互联网上的设备进行通信。就像每栋房子都有一个唯一的地址用于直接向其发送邮件一样，互联网上的每台计算机都有自己唯一的地址来与其进行通信，称为 IP 地址。IP 地址看起来像下面的 104.26.10.229，4 组数字，范围从 0 - 255，中间用句点分隔。当想要访问一个网站时，记住复杂的数字并不方便，这时 DNS 就可以派上用场了。因此，无需记住 104.26.10.229，只需记住cyphersun.com即可。</p>
+<br>
 
 
 
 
 
-<h2 id="主题2"><a href="#主题2" class="headerlink" title="主题2"></a>主题2</h2><h3 id="副主题1-1"><a href="#副主题1-1" class="headerlink" title="副主题1"></a>副主题1</h3><h3 id="副主题2-1"><a href="#副主题2-1" class="headerlink" title="副主题2"></a>副主题2</h3><br>
+<h2 id="域层次结构"><a href="#域层次结构" class="headerlink" title="域层次结构"></a>域层次结构</h2><h3 id="域层次结构-1"><a href="#域层次结构-1" class="headerlink" title="域层次结构"></a>域层次结构</h3><p>域层次结构图，根域位于顶部，分为几个顶级域，顶级域又分为二级域</p>
+<p>顶级域名（TLD）</p>
+<p>TLD 是域名最右边的部分。例如，cyphersun.com 的TLD 是 .com。TLD 有两种类型，即通用顶级域名 （gTLD）和 国家代码顶级域名（ccTLD）。从历史上看，gTLD 旨在告诉用户域名的用途；例如，.com 用于商业用途，.org 用于组织，.edu 用于教育，.gov 用于政府。而 ccTLD 用于地理用途，例如，.ca 用于加拿大的网站，.co.uk 用于英国的网站等等。由于这种需求，出现了大量新的 gTLD，包括 .online 、 .club 、 .website 、 .biz 等等。要查看超过 2000 个 TLD 的完整列表， 请单击此处。</p>
+<p>二级域名</p>
+<p>以cyphersun.com为例，.com部分为TLD，cyphersun为二级域名，注册域名时二级域名限制为63个字符+TLD，且只能使用az 0-9和连字符（不能以连字符开头或结尾，也不能有连续的连字符）。</p>
+<p>子域名</p>
+<p>子域名位于二级域名的左侧，以句点分隔；例如，在名称admin.cyphersun.com中，管理部分为子域名。子域名的创建限制与二级域名相同，限制为 63 个字符，并且只能使用 az 0-9 和连字符（不能以连字符开头或结尾，也不能有连续的连字符）。可以使用用句点分隔的多个子域名来创建更长的名称，例如jupiter.servers.cyphersun.com。但长度必须保持在 253 个字符或更少。可以为域名创建的子域名数量没有限制。<br><br></p>
+<h2 id="记录类型"><a href="#记录类型" class="headerlink" title="记录类型"></a>记录类型</h2><p>DNS记录类型<br>DNS 不仅仅适用于网站，还存在多种类型的 DNS 记录。将介绍一些可能遇到的最常见的 DNS 记录。</p>
+<p>记录</p>
+<p>这些记录解析为 IPv4 地址，例如 104.26.10.229</p>
+<p>AAAA 记录</p>
+<p>这些记录解析为 IPv6 地址，例如 2606:4700:20::681a:be5</p>
+<p>CNAME 记录</p>
+<p>这些记录解析为另一个域名，例如，cyphersun 的在线商店有子域名store.cyphersun.com，它返回一个 CNAME 记录stores.shopify.com。然后将向stores.shopify.com发出另一个 DNS 请求以找出 IP 地址。</p>
+<p>MX 记录</p>
+<p>这些记录解析为处理查询的域的电子邮件的服务器的地址，例如cyphersun.com的 MX 记录响应将类似于 alt1.aspmx.l.google.com。这些记录还带有优先级标志。这告诉客户端以何种顺序尝试服务器，这非常适合在主服务器发生故障并且需要将电子邮件发送到备份服务器时使用。</p>
+<p>TXT 记录</p>
+<p>TXT 记录是自由文本字段，可以存储任何基于文本的数据。TXT 记录有多种用途，但一些常见用途是列出有权代表域发送电子邮件的服务器（这有助于打击垃圾邮件和欺诈电子邮件）。它们还可用于在注册第三方服务时验证域名所有权。<br><br></p>
+<h2 id="提出请求"><a href="#提出请求" class="headerlink" title="提出请求"></a>提出请求</h2><p>发出DNS请求时会发生什么<br>文中描述的流程的可视化图表</p>
+<p>当请求域名时，的计算机首先检查其本地缓存，查看是否最近查找过该地址；如果没有，则会向的递归DNS服务器发出请求。</p>
+<p>递归 DNS 服务器通常由的 ISP 提供，但也可以自行选择。此服务器还具有最近查找的域名的本地缓存。如果在本地找到结果，则会将其发送回的计算机，的请求就此结束（这对于 Google、Facebook、Twitter 等热门且请求量很大的服务很常见）。如果在本地找不到请求，则会开始寻找正确答案的旅程，从互联网的根DNS服务器开始。</p>
+<p>根服务器充当互联网的 DNS 骨干；它们的工作是根据的请求将重定向到正确的顶级域名服务器。例如，如果请求<a target="_blank" rel="noopener" href="http://www.cyphersun.com,根服务器将识别/">www.cyphersun.com，根服务器将识别</a> .com 顶级域名，并将引导到处理 .com 地址的正确 TLD 服务器。</p>
+<p>TLD 服务器保存着在哪里可以找到权威服务器来响应 DNS 请求的记录。权威服务器通常也称为域的名称服务器。例如，cyphersun.com的名称服务器是kip.ns.cloudflare.com和uma.ns.cloudflare.com。通常会发现一个域名有多个名称服务器，以防其中一个服务器出现故障，从而充当备份。</p>
+<p>权威DNS服务器是负责存储特定域名的DNS记录的服务器，也是对的域名DNS记录进行任何更新的地方。根据记录类型，DNS记录随后被发送回递归DNS服务器，其中将缓存本地副本以供将来的请求，然后将其转发回发出请求的原始客户端。所有DNS记录都带有 TTL（生存时间）值。此值是一个以秒为单位的数字，响应应保存在本地，直到再次查找它。缓存可让无需在每次与服务器通信时发出DNS请求。<br><br></p>
+
 </article>
     
     
@@ -398,6 +423,40 @@
             <span data-number="02"></span>
         </h5>
     </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/25/T1-%E9%A2%84%E5%AE%89%E5%85%A83-2/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">25</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E9%A2%84%E5%AE%89%E5%85%A8/">
+                    预安全
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/25/T1-%E9%A2%84%E5%AE%89%E5%85%A83-2/" class="trm-anima-link">
+                    HTTP 详解
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/25</li>
+                <li>09:49</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
     
     
         <div class="col-lg-6">
@@ -482,7 +541,7 @@
 				</span>
       </div>
       <div class="trm-post-toc-content">
-        <ol class="trm-toc"><li class="trm-toc-item trm-toc-level-2" title="主题1"><a rel="nofollow" class="trm-toc-link" href="#主题1"><span class="trm-toc-number">1.</span> <span class="trm-toc-text">主题1</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="副主题1"><a rel="nofollow" class="trm-toc-link" href="#副主题1"><span class="trm-toc-number">1.1.</span> <span class="trm-toc-text">副主题1</span></a></li><li class="trm-toc-item trm-toc-level-3" title="副主题2"><a rel="nofollow" class="trm-toc-link" href="#副主题2"><span class="trm-toc-number">1.2.</span> <span class="trm-toc-text">副主题2</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="主题2"><a rel="nofollow" class="trm-toc-link" href="#主题2"><span class="trm-toc-number">2.</span> <span class="trm-toc-text">主题2</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="副主题1"><a rel="nofollow" class="trm-toc-link" href="#副主题1-1"><span class="trm-toc-number">2.1.</span> <span class="trm-toc-text">副主题1</span></a></li><li class="trm-toc-item trm-toc-level-3" title="副主题2"><a rel="nofollow" class="trm-toc-link" href="#副主题2-1"><span class="trm-toc-number">2.2.</span> <span class="trm-toc-text">副主题2</span></a></li></ol></li></ol>
+        <ol class="trm-toc"><li class="trm-toc-item trm-toc-level-2" title="什么是 DNS？"><a rel="nofollow" class="trm-toc-link" href="#什么是-DNS？"><span class="trm-toc-number">1.</span> <span class="trm-toc-text">什么是 DNS？</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="什么是DNS？"><a rel="nofollow" class="trm-toc-link" href="#什么是DNS？"><span class="trm-toc-number">1.1.</span> <span class="trm-toc-text">什么是DNS？</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="域层次结构"><a rel="nofollow" class="trm-toc-link" href="#域层次结构"><span class="trm-toc-number">2.</span> <span class="trm-toc-text">域层次结构</span></a><ol class="trm-toc-child"><li class="trm-toc-item trm-toc-level-3" title="域层次结构"><a rel="nofollow" class="trm-toc-link" href="#域层次结构-1"><span class="trm-toc-number">2.1.</span> <span class="trm-toc-text">域层次结构</span></a></li></ol></li><li class="trm-toc-item trm-toc-level-2" title="记录类型"><a rel="nofollow" class="trm-toc-link" href="#记录类型"><span class="trm-toc-number">3.</span> <span class="trm-toc-text">记录类型</span></a></li><li class="trm-toc-item trm-toc-level-2" title="提出请求"><a rel="nofollow" class="trm-toc-link" href="#提出请求"><span class="trm-toc-number">4.</span> <span class="trm-toc-text">提出请求</span></a></li></ol>
       </div>
     </div>
 
