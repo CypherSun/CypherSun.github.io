@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="终端文本编辑器到目前为止，在整个系列中，我们仅使用echo命令和管道运算符（&gt;和&gt;&gt;）的组合将文本存储在文件中。当您处理包含多行和排序的文件时，这不是一种处理数据的有效方法！ 终端文本编辑器简介 您可以使用几个选项，它们都具有各种友好性和实用性。此任务将向您介绍nano并向您展示一个名为的替代方案VIM（TryHackMe 有一个专门的房间！） 纳米 使用 Nano 非常简单！要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux 基础知识（第 3 部分）">
+<meta property="og:url" content="https://cyphersun.github.io/2024/11/25/#T1-%E9%A2%84%E5%AE%89%E5%85%A8-4-3/index.html">
+<meta property="og:site_name" content="CypherSun">
+<meta property="og:description" content="终端文本编辑器到目前为止，在整个系列中，我们仅使用echo命令和管道运算符（&gt;和&gt;&gt;）的组合将文本存储在文件中。当您处理包含多行和排序的文件时，这不是一种处理数据的有效方法！ 终端文本编辑器简介 您可以使用几个选项，它们都具有各种友好性和实用性。此任务将向您介绍nano并向您展示一个名为的替代方案VIM（TryHackMe 有一个专门的房间！） 纳米 使用 Nano 非常简单！要">
+<meta property="og:locale">
+<meta property="article:published_time" content="2024-11-25T12:22:01.000Z">
+<meta property="article:modified_time" content="2024-11-25T13:40:38.941Z">
+<meta property="article:author" content="CypherSun">
+<meta name="twitter:card" content="summary">
+
+
+<title >Linux 基础知识（第 3 部分）</title>
+
+<!-- Favicon -->
+
+
+    <link href='/favicon.ico?v=2.2.3' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="https://unpkg.com/hexo-theme-async@2.2.3/source/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.3","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-11-25 14:40:38"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.3" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+
+ 
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/tags/" target="">
+                    标签
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/categories/" target="">
+                    分类
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    关于
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+    
+    <div id="trm-search-btn" class="trm-search-btn">
+        <i class="iconfont fas fa-search"></i>
+    </div>
+     
+
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/null">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            Linux 基础知识（第 3 部分）
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        2024
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="trm-page-sidebar col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card"> 
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img alt="Avatar" class="trm-avatar" src="https://avatars.githubusercontent.com/u/80212458?v=4">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        CypherSun
+    </h5>
+    
+        <div class="trm-label">
+            I`m
+            <span class="trm-typed-text">
+                <!-- Words for theme.user.typedText -->
+            </span>
+        </div>
+    
+</div>
+<!-- card header end -->
+        <!-- sidebar social -->
+
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<div class="trm-social">
+    
+        <a href="https://github.com/CypherSun" title="Github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+        <a href="/wechat.jpg" title="Wechat" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-weixin"></i>
+        </a>
+    
+        <a href="/qq.jpg" title="QQ" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-qq"></i>
+        </a>
+    
+</div>
+
+<!-- sidebar social end -->
+        <!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                地址:
+            </div>
+            <div class="trm-label trm-label-light">
+                银河系
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                年龄:
+            </div>
+            <div class="trm-label trm-label-light">
+                不清楚
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                实力:
+            </div>
+            <div class="trm-label trm-label-light">
+                上升期
+            </div>
+        </li>
+    
+</ul>
+<!-- info end -->
+
+        
+    <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+    <!-- action button -->
+    <div class="text-center">
+        <a href="mailto:84860748@qq.com" class="trm-btn">
+            联系我
+            <i class="iconfont far fa-envelope"></i>
+        </a>
+    </div>
+    <!-- action button end -->
+
+    </div>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="trm-page-content col-lg-8">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            11/25
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            13:22
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            CypherSun
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h2 id="终端文本编辑器"><a href="#终端文本编辑器" class="headerlink" title="终端文本编辑器"></a>终端文本编辑器</h2><p>到目前为止，在整个系列中，我们仅使用echo命令和管道运算符（&gt;和&gt;&gt;）的组合将文本存储在文件中。当您处理包含多行和排序的文件时，这不是一种处理数据的有效方法！</p>
+<p>终端文本编辑器简介</p>
+<p>您可以使用几个选项，它们都具有各种友好性和实用性。此任务将向您介绍nano并向您展示一个名为的替代方案VIM（TryHackMe 有一个专门的房间！）</p>
+<p>纳米</p>
+<p>使用 Nano 非常简单！要使用 nano 创建或编辑文件，我们只需使用nano filename– 将“filename”替换为您要编辑的文件的名称。</p>
+<p>Nano 简介<br>tryhackme@linux3:&#x2F;tmp# nano myfile<br>  GNU nano 4.8                                             myfile                                                       </p>
+<p>^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     M-U Undo       M-A Mark Text<br>^X Exit        ^R Read File   ^\ Replace     ^U Paste Text  ^T To Spell    ^_ Go To Line  M-E Redo       M-6 Copy Text<br>一旦我们按下 Enter 执行命令，nano就会启动！我们可以开始输入或修改文本。您可以使用“向上”和“向下”箭头键浏览每一行，或使用键盘上的“Enter”键开始新行。</p>
+<p>使用 Nano 编写文本<br>tryhackme@linux3:&#x2F;tmp# nano myfile<br>  GNU nano 4.8                                             myfile                                             Modified  </p>
+<p>Hello TryHackMe<br>I can write things into “myfile”</p>
+<p>^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     M-U Undo       M-A Mark Text<br>^X Exit        ^R Read File   ^\ Replace     ^U Paste Text  ^T To Spell    ^_ Go To Line  M-E Redo       M-6 Copy Text<br>Nano 具有一些易于记忆的功能，涵盖了您希望从文本编辑器中获得的最常规的功能，包括：</p>
+<p>搜索文本<br>复制和粘贴<br>跳至行号<br>找出您所在的线路号<br>您可以通过按下“ Ctrl ”键（在 Linux 上表示为^）和相应的字母来使用 nano 的这些功能。例如，要退出，我们需要按“ Ctrl ”和“ X ”退出 Nano。</p>
+<p>VIM</p>
+<p>VIM 是一款更高级的文本编辑器。虽然你不需要了解所有高级功能，但了解它有助于提高你的Linux技能。</p>
+<p>尽管需要花较长的时间才能熟悉 VIM，但它的一些优点包括：</p>
+<p>可定制 - 您可以修改 您选择的键盘快捷键<br>语法突出显示-如果您正在编写或维护代码，这很有用，这使其成为软件开发人员的热门选择。<br>VIM 可以在所有无法安装 nano 的终端上运行<br>有很多资源可供您使用，例如备忘单、教程和种类。<br>如果您想了解有关此编辑器的更多信息，TryHackMe 有一个展示 VIM 的房间！<br><br></p>
+<h2 id="通用-实用工具"><a href="#通用-实用工具" class="headerlink" title="通用&#x2F;实用工具"></a>通用&#x2F;实用工具</h2><p>下载文件（Wget）</p>
+<p>计算的一个非常基本的功能是传输文件的能力。例如，您可能想要下载程序、脚本甚至图片。幸运的是，我们可以通过多种方式检索这些文件。</p>
+<p> 我们将介绍 的使用wget 。此命令允许我们通过 HTTP 从 Web 下载文件——就像您在浏览器中访问文件一样。我们只需提供要下载的资源的地址即可。例如，如果我想将名为“myfile.txt”的文件下载到我的机器上，假设我知道它的网址——它将如下所示：</p>
+<p>wget <a target="_blank" rel="noopener" href="https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt">https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt</a></p>
+<p>从主机传输文件 - SCP（SSH）</p>
+<p>安全复制（SCP）就是安全复制文件的一种方式。与常规 cp 命令不同，此命令允许您使用SSH协议在两台计算机之间传输文件，以提供身份验证和加密。</p>
+<p>通过基于源和目标模型，SCP 允许您：</p>
+<p>将文件和目录从当前系统复制到远程系统<br>将文件和目录从远程系统复制到当前系统<br>假设我们知道当前系统上的用户和远程系统上的用户的用户名和密码。例如，让我们将示例文件从我们的机器复制到远程机器，我在下表中整齐地列出了这些文件：</p>
+<p>多变的	价值<br>远程系统的 IP 地址 	192.168.1.30<br>远程系统上的用户	Ubuntu<br>本地系统上的文件名称	重要.txt<br>我们希望在远程系统上存储文件的名称	已转移.txt<br>有了这些信息，我们就可以编写scp命令了（记住 SCP 的格式只是 SOURCE 和 DESTINATION）</p>
+<p>scp important.txt <a href="mailto:&#117;&#x62;&#117;&#110;&#x74;&#117;&#x40;&#49;&#57;&#x32;&#x2e;&#49;&#54;&#x38;&#46;&#49;&#46;&#51;&#48;">&#117;&#x62;&#117;&#110;&#x74;&#117;&#x40;&#49;&#57;&#x32;&#x2e;&#49;&#54;&#x38;&#46;&#49;&#46;&#51;&#48;</a>:&#x2F;home&#x2F;ubuntu&#x2F;transferred.txt</p>
+<p>现在让我们反转一下，并布局一下用于scp 从未登录的远程计算机复制文件 的语法</p>
+<p>多变的	价值<br>远程系统的 IP 地址	192.168.1.30<br>远程系统上的用户	Ubuntu<br>远程系统上的文件名称	文档.txt<br>我们希望在系统上存储文件的名称	注释.txt<br>该命令现在如下所示：scp <a href="mailto:&#x75;&#98;&#117;&#x6e;&#x74;&#117;&#x40;&#x31;&#57;&#x32;&#46;&#x31;&#54;&#x38;&#46;&#49;&#x2e;&#51;&#x30;">&#x75;&#98;&#117;&#x6e;&#x74;&#117;&#x40;&#x31;&#57;&#x32;&#46;&#x31;&#54;&#x38;&#46;&#49;&#x2e;&#51;&#x30;</a>:&#x2F;home&#x2F;ubuntu&#x2F;documents.txt notes.txt </p>
+<p>从您的主机提供文件服务 - WEB</p>
+<p>Ubuntu 机器预装了 python3。Python 提供了一个轻量级且易于使用的模块，名为“HTTPServer”。此模块将您的计算机变成一个快速简便的 Web 服务器，您可以使用它来提供您自己的文件，然后另一台计算机可以使用诸如curl 和 之类的命令下载它们wget。 </p>
+<p>Python3 的“HTTPServer”将提供您运行命令的目录中的文件，但可以通过提供手册页中提供的选项来更改这一点。简单来说，我们需要做的就是python3 -m  http.server 在终端中运行以启动模块！在下面的代码片段中，我们从名为“webserver”的目录中提供服务，该目录有一个名为“file”。</p>
+<p>使用 Python 启动 Web 服务器<br>tryhackme@linux3:&#x2F;webserver# python3 -m http.server<br>Serving HTTP on 0.0.0.0 port 8000 (<a target="_blank" rel="noopener" href="http://0.0.0.0:8000/">http://0.0.0.0:8000/</a>) …<br>现在，让我们wget 使用 MACHINE_IP 地址和文件名称下载文件。请记住，由于 python3 服务器正在运行端口 8000，因此您需要在 wget 命令中指定此端口。例如：</p>
+<p>在端口 8000 上运行的 Web 服务器的 wget 命令示例<br>tryhackme@mymachine:~# wget <a target="_blank" rel="noopener" href="http://machine_ip:8000/myfile">http://MACHINE_IP:8000/myfile</a><br>请注意，您需要打开一个新终端wget并保留启动 Python3 Web 服务器的终端。这是因为，一旦启动 Python3 Web 服务器，它将在该终端中运行，直到您取消它。</p>
+<p>我们以下面的代码片段为例：<br>使用 wget 从我们的网络服务器下载文件<br>tryhackme@linux3:&#x2F;tmp# wget <a target="_blank" rel="noopener" href="http://machine_ip:8000/file">http://MACHINE_IP:8000/file</a></p>
+<p>2021-05-04 14:26:16  <a target="_blank" rel="noopener" href="http://127.0.0.1:8000/file">http://127.0.0.1:8000/file</a><br>Connecting to <a target="_blank" rel="noopener" href="http://127.0.0.1:8000/">http://127.0.0.1:8000</a>… connected.<br>HTTP request sent, awaiting response… 200 OK<br>Length: 51095 (50K) [text]<br>Saving to: ‘file’</p>
+<p>file                    100%[&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt;]  49.90K  –.-KB&#x2F;s    in 0.04s</p>
+<p>2021-05-04 14:26:16 (1.31 MB&#x2F;s) - ‘file’ saved [51095&#x2F;51095]<br>请记住，您需要在另一个终端中运行 wget 命令（同时保持运行 Python3 服务器的终端处于活动状态）。TryHackMe AttackBox 上的一个示例如下：</p>
+<p>此模块的一个缺陷是无法索引，因此您必须知道要使用的文件的确切名称和位置。这就是我更喜欢使用 Updog 的原因。什么是 Updog ？更先进但更轻量级的 Web 服务器。但现在，让我们继续使用 Python 的“HTTP 服务器”。<br><br></p>
+<h2 id="流程-101"><a href="#流程-101" class="headerlink" title="流程 101"></a>流程 101</h2><p>进程是计算机上运行的程序。它们由内核管理，每个进程都有一个与之关联的 ID，也称为其PID。PID按进程启动的顺序递增。例如，第 60 个进程的PID为60。</p>
+<p>查看进程</p>
+<p>我们可以使用友好ps命令来提供正在运行的进程列表作为我们的用户会话以及一些附加信息，例如它的状态代码、正在运行它的会话、它使用的CPU使用时间，以及正在执行的实际程序或命令的名称：</p>
+<p>请注意，在上面的屏幕截图中，第二个进程 ps 的PID为 204，然后在其下面的命令中，该 PID 增加到 205。</p>
+<p>要查看其他用户运行的进程以及未从会话运行的进程（即系统进程），我们需要向命令提供auxps，如下所示：ps aux</p>
+<p>请注意，我们总共可以看到 5 个进程 - 请注意我们现在有“root”和“cmnatic”</p>
+<p>另一个非常有用的命令是 top 命令；top 为您提供有关系统上运行的进程的实时统计信息，而不是一次性视图。这些统计信息每 10 秒刷新一次，但当您使用箭头键浏览各行时也会刷新。另一个深入了解系统的好命令是通过top命令</p>
+<p>管理流程</p>
+<p>您可以发送信号来终止进程；有多种类型的信号与内核处理进程的“干净程度”相关。要终止命令，我们可以使用适当命名的kill 命令和我们希望终止的相关 PID。例如，要终止 PID 1337，我们将使用kill 1337。</p>
+<p>下面是进程被终止时我们可以向其发送的一些信号：</p>
+<p>SIGTERM——终止进程，但允许它事先做一些清理任务<br>SIGKILL-终止进程-事后不做任何清理<br>SIGSTOP——停止&#x2F;暂停进程</p>
+<p>进程如何启动？</p>
+<p>我们先来谈谈命名空间。操作系统 ( OS )使用命名空间将计算机上可用的资源（如CPU、RAM和优先级）最终分配给进程。可以将其想象为将计算机分成几块——类似于蛋糕。该块中的进程将有权使用一定数量的计算能力，但这只是每个进程实际可用资源的一小部分。</p>
+<p>命名空间对于安全性非常有用，因为它是一种将进程与其他进程隔离的方式——只有位于同一命名空间中的进程才能互相看到。</p>
+<p>我们之前讨论过 PID 的工作原理，这里就介绍一下它的作用。ID 为 0 的进程是系统启动时启动的进程。此进程是 Ubuntu 上的系统 init，例如systemd，用于提供一种管理用户进程的方法，位于操作系统和用户之间。 </p>
+<p>例如，系统启动并初始化后，systemd是第一个启动的进程之一。我们想要启动的任何程序或软件都将作为systemd的子进程启动。这意味着它由systemd控制，但将作为自己的进程运行（尽管共享来自systemd的资源），以便我们更容易识别等等。</p>
+<p> 让进程&#x2F;服务在启动时启动</p>
+<p>有些应用程序可以在我们拥有的系统启动时启动。例如，Web 服务器、数据库服务器或文件传输服务器。这些软件通常至关重要，并且管理员通常会要求它们在系统启动时启动。</p>
+<p>在这个例子中，我们将告诉 apache 网络服务器手动启动 apache，然后告诉系统在启动时启动 apache2。</p>
+<p>输入使用——此命令允许我们与systemdsystemctl进程&#x2F;守护进程进行交互。继续我们的示例，systemctl 是一个易于使用的命令，采用以下格式：systemctl [option] [service]</p>
+<p>例如，要告诉 Apache 启动，我们将使用systemctl start apache2。看起来很简单，对吧？同样，如果我们想停止 Apache，我们只需将 替换[option]为 stop（而不是像我们提供的那样 start）</p>
+<p>我们可以通过以下四种方式实现systemctl：</p>
+<p>开始<br>停止<br>使能够<br>禁用<br>Linux中的后台和前台 简介 </p>
+<p>进程可以以两种状态运行：在后台和在前台。例如，您在终端中运行的命令（如“echo”）或类似命令将在终端的前台运行，因为它是唯一未被告知在后台运行的命令。“echo”就是一个很好的例子，因为 echo 的输出将在前台返回给您，但不会在后台返回 - 例如，请看下面的屏幕截图。</p>
+<p>这里我们正在运行echo “Hi THM” ，我们期望输出像开始时一样返回给我们。但是在将&amp;运算符添加到命令后，我们只获得了 echo 进程的 ID，而不是实际的输出——因为它在后台运行。</p>
+<p>这对于复制文件等命令非常有用，因为这意味着我们可以在后台运行该命令并继续执行我们想要执行的任何其他命令（而不必等待文件复制完成）</p>
+<p>在执行脚本等操作时，我们可以做同样的事情——我们可以使用Ctrl + Z键盘上的 &amp; 运算符来让进程进入后台，而不是依赖它。这也是一种“暂停”脚本或命令执行的有效方法，如下例所示：</p>
+<p>此脚本将不断重复“这将不断循环，直到我停止！”，直到我停止或暂停该过程。通过使用（如T^ZCtrl + Z所示）。现在我们的终端不再充满消息——直到我们将其置于前台，我们将在下面讨论。</p>
+<p>突出进程</p>
+<p>现在我们有一个在后台运行的进程，例如我们的脚本“background.sh”，可以使用ps aux 命令进行确认，我们可以后退并将该进程带回前台进行交互。</p>
+<p>通过使用Ctrl + Z或&amp;运算符将我们的进程置于后台，我们可以使用fg将其重新带回焦点，如下所示，我们可以看到该fg命令被用于在终端上将后台进程重新投入使用，其中脚本的输出现在返回给我们。</p>
+<br>
+
+
+
+
+
+<h2 id="维护您的系统：自动化"><a href="#维护您的系统：自动化" class="headerlink" title="维护您的系统：自动化"></a>维护您的系统：自动化</h2><p>用户可能希望安排在系统启动后执行某个操作或任务。例如，运行命令、备份文件或启动您最喜欢的程序（如 Spotify 或 Google Chrome）。</p>
+<p>我们将讨论该cron进程，但更具体地说，我们如何通过使用与它进行交互crontabs。 Crontab 是在启动期间启动的进程之一，负责促进和管理 cron 作业。</p>
+<p>crontab 只是一个特殊的文件，其格式可被进程识别cron，并可逐步执行每行。crontab 需要 6 个特定值：</p>
+<p>价值	描述<br>分钟	在什么时候执行<br>小时	在什么时间执行<br>DOM	在每月的哪一天执行<br>星期一	在一年中的哪个月执行<br>陶氏	在星期几执行<br>命令	将要执行的实际命令。</p>
+<p>让我们以备份文件为例。您可能希望每 12 小时备份一次“cmnatic”的“文档”。我们将使用以下格式： </p>
+<p>0 *&#x2F;12 * * * cp -R &#x2F;home&#x2F;cmnatic&#x2F;Documents &#x2F;var&#x2F;backups&#x2F;</p>
+<p>crontabs 的一个有趣特性是它们还支持通配符或星号 ( *)。如果我们不想为该特定字段提供值，即我们不关心它在哪月、哪日或哪年执行 — — 只关心它每 12 小时执行一次，我们只需放置一个星号即可。</p>
+<p>一开始这可能会让人感到困惑，这就是为什么有一些很棒的资源，例如在线“ Crontab Generator ”，它允许您使用友好的应用程序为您生成格式！以及网站“ Cron Guru ”！</p>
+<p>可以使用 来编辑 Crontabs crontab -e，您可以选择一个编辑器（例如 Nano）来编辑您的 crontab。</p>
+<br>
+
+
+
+
+
+<h2 id="维护你的系统：包管理"><a href="#维护你的系统：包管理" class="headerlink" title="维护你的系统：包管理"></a>维护你的系统：包管理</h2><p>介绍软件包和软件仓库</p>
+<p>当开发人员希望向社区提交软件时，他们会将其提交到“apt”存储库。如果获得批准，他们的程序和工具将被发布。Linux 的两个最可取之处在这里凸显出来：用户可访问性和开源工具的优点。</p>
+<p>在 Ubuntu 20.04 Linux ls 机器上使用该命令时，这些文件充当网关&#x2F;注册表。 </p>
+<p>虽然操作系统供应商会维护自己的存储库，但您也可以将社区存储库添加到列表中！这允许您扩展操作系统的功能。可以使用 add-apt-repository命令或列出其他提供商来添加其他存储库！例如，一些供应商会有一个更接近其地理位置的存储库。</p>
+<p>管理您的存储库（添加和删除）</p>
+<p>通常我们使用 apt 命令将软件安装到我们的 Ubuntu 系统上。该apt命令是包管理软件（也称为 apt）的一部分。Apt 包含一整套工具，可让我们管理软件的包和源，并同时安装或删除软件。</p>
+<p>添加存储库的一种方法是使用 add-apt-repository我们上面说明的命令，但我们将 逐步介绍如何手动添加和删除存储库。虽然您可以通过使用诸如 之类的软件包安装程序来安装软件dpkg，但 apt 的好处在于，每当我们更新系统时，包含我们添加的软件的存储库也会被检查是否有更新。 </p>
+<p>在这个例子中，我们将把文本编辑器 Sublime Text 作为存储库添加到我们的 Ubuntu 机器中，因为它不是默认 Ubuntu 存储库的一部分。添加软件时，我们下载的完整性由所谓的 GPG（Gnu Privacy Guard）密钥保证。这些密钥本质上是开发人员的安全检查，表示“这是我们的软件”。如果密钥与您的系统信任的密钥和开发人员使用的密钥不匹配，则不会下载该软件。</p>
+<p>因此，首先，我们需要为 Sublime Text 3 的开发人员添加 GPG 密钥。（请注意，TryHackMe 实例无法访问互联网，因此我们不希望您将其添加到您部署的机器上，因为它会失败。）</p>
+<p>1.让我们下载GPG密钥并使用 apt-key 来信任它：  wget -qO - <a target="_blank" rel="noopener" href="https://download.sublimetext.com/sublimehq-pub.gpg">https://download.sublimetext.com/sublimehq-pub.gpg</a> | sudo apt-key add -</p>
+<p>2.现在我们已将此密钥添加到我们的信任列表中，我们现在可以将 Sublime Text 3 的存储库添加到我们的 apt 源列表中。一个好的做法是为我们添加的每个不同的社区&#x2F;第三方存储库创建一个单独的文件。</p>
+<p>2.1.让我们在&#x2F;etc&#x2F;apt&#x2F;sources.list.d中创建一个名为sublime-text.list的文件，并输入存储库信息，如下所示：</p>
+<p>2.2.现在使用 Nano 或您选择的文本编辑器将 Sublime Text 3 存储库添加并保存到这个新创建的文件中：</p>
+<p>2.3.添加此条目后，我们需要更新 apt 以识别此新条目——这是使用以下apt update命令完成的</p>
+<p>2.4.成功更新后，我们现在可以继续安装我们信任并添加到 apt 的软件，使用 apt install sublime-text</p>
+<p>删除软件包就像逆向操作一样简单。这个过程可以通过使用add-apt-repository –remove ppa:PPA_Name&#x2F;ppa命令或手动删除我们之前添加的文件来完成。删除后，我们只需使用apt remove [software-name-here]ieapt remove sublime-text<br><br></p>
+<h2 id="维护您的系统：日志"><a href="#维护您的系统：日志" class="headerlink" title="维护您的系统：日志"></a>维护您的系统：日志</h2><p>我们在《Linux 基础知识》第 1 部分中简要介绍了日志文件及其位置。不过，让我们快速回顾一下。这些文件和文件夹位于 &#x2F;var&#x2F;log 目录中，包含系统上运行的应用程序和服务的日志信息。操作系统 (OS) 已经非常擅长通过称为“轮换”的过程自动管理这些日志。</p>
+<p>我重点介绍了 Ubuntu 机器上运行的三个服务的一些日志：</p>
+<p>Apache2 Web 服务器<br>用于监控暴力破解尝试的 fail2ban 服务的日志，例如<br>用作防火墙的 UFW 服务</p>
+<p>这些服务和日志是监控系统运行状况和保护系统的绝佳方式。不仅如此，Web 服务器等服务的日志还包含有关每个请求的信息 - 允许开发人员或管理员诊断性能问题或调查入侵者的活动。例如，以下两种类型的日志文件值得关注：</p>
+<p>访问日志<br>错误日志</p>
+<p>当然，日志存储了有关操作系统如何运行以及用户执行的操作（例如身份验证尝试）的信息。<br><br></p>
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/25/#T1-%E9%A2%84%E5%AE%89%E5%85%A8-5-1/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">25</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E9%A2%84%E5%AE%89%E5%85%A8/">
+                    预安全
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/25/#T1-%E9%A2%84%E5%AE%89%E5%85%A8-5-1/" class="trm-anima-link">
+                    Windows 基础知识 1
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/25</li>
+                <li>15:18</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2024/11/25/#T1-%E9%A2%84%E5%AE%89%E5%85%A8-4-2/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">25</div>
+                    <div class="trm-cover-month">2024/11</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E9%A2%84%E5%AE%89%E5%85%A8/">
+                    预安全
+                </a>
+            </div>
+            <h5>
+                <a href="/2024/11/25/#T1-%E9%A2%84%E5%AE%89%E5%85%A8-4-2/" class="trm-anima-link">
+                    Linux 基础知识（第二部分）
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>24/11/25</li>
+                <li>11:27</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-footer-card trm-scroll-animation">
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>© 2024 - 2024</span>
+            <span class="footer-separator"data-separator=" · "></span>
+            <span class="trm-accent-color">CypherSun</span>
+        </div>
+    
+
+      
+
+    
+        <div class="trm-footer-item blog-run-long"></div>
+     
+
+     
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+    <div id="post-toc" class="trm-post-toc">
+      <div class="trm-post-toc-header">
+        目录导航
+				<span id="post-toc-top">
+					置顶
+				</span>
+      </div>
+      <div class="trm-post-toc-content">
+        <ol class="trm-toc"><li class="trm-toc-item trm-toc-level-2" title="终端文本编辑器"><a rel="nofollow" class="trm-toc-link" href="#终端文本编辑器"><span class="trm-toc-number">1.</span> <span class="trm-toc-text">终端文本编辑器</span></a></li><li class="trm-toc-item trm-toc-level-2" title="通用&#x2F;实用工具"><a rel="nofollow" class="trm-toc-link" href="#通用-实用工具"><span class="trm-toc-number">2.</span> <span class="trm-toc-text">通用&#x2F;实用工具</span></a></li><li class="trm-toc-item trm-toc-level-2" title="流程 101"><a rel="nofollow" class="trm-toc-link" href="#流程-101"><span class="trm-toc-number">3.</span> <span class="trm-toc-text">流程 101</span></a></li><li class="trm-toc-item trm-toc-level-2" title="维护您的系统：自动化"><a rel="nofollow" class="trm-toc-link" href="#维护您的系统：自动化"><span class="trm-toc-number">4.</span> <span class="trm-toc-text">维护您的系统：自动化</span></a></li><li class="trm-toc-item trm-toc-level-2" title="维护你的系统：包管理"><a rel="nofollow" class="trm-toc-link" href="#维护你的系统：包管理"><span class="trm-toc-number">5.</span> <span class="trm-toc-text">维护你的系统：包管理</span></a></li><li class="trm-toc-item trm-toc-level-2" title="维护您的系统：日志"><a rel="nofollow" class="trm-toc-link" href="#维护您的系统：日志"><span class="trm-toc-number">6.</span> <span class="trm-toc-text">维护您的系统：日志</span></a></li></ol>
+      </div>
+    </div>
+
+            
+<div class="trm-fixed-container">
+    
+        <div class="trm-fixed-btn post-toc-btn" data-title="目录">
+            <i class="iconfont fas fa-th-list"></i>
+        </div>
+    
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
+    
+        <div class="trm-fixed-btn hidden-md" data-title="单栏和双栏切换" onclick="asyncFun.switchSingleColumn()">
+            <i class="iconfont fas fa-arrows-alt-h"></i>
+        </div>
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+    <div class="trm-search-popup">
+        <div class="trm-search-wrapper">
+            <div class="form trm-search-form">
+                <div class="trm-search-input-icon">
+                    <i class="iconfont fas fa-search"></i>
+                </div>
+                <input class="trm-search-input" type="text" placeholder="搜索文章...">
+                <div class="trm-search-btn-close">
+                    <i class="iconfont fas fa-times"></i>
+                </div>
+            </div>
+            <div class="trm-search-result-container">
+                <div class="trm-search-empty">
+                    请输入关键词进行搜索
+                </div>
+            </div>
+            <div class="trm-search-footer">
+                <div class="trm-search-stats"></div>
+                <ul class="trm-search-commands">
+                    <li>
+                        <kbd class="command-palette-commands-key">
+                            <svg width="15" height="15" aria-label="Escape key" role="img">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.2">
+                                    <path
+                                        d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956">
+                                    </path>
+                                </g>
+                            </svg>
+                        </kbd>
+                        <span class="command-palette-Label">to close</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  <!-- Plugin -->
+
+
+
+
+    
+<script src="https://unpkg.com/swup@2.0.19/dist/swup.min.js"></script>
+
+    
+<script src="https://unpkg.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+
+    
+        <script src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/plugins/typing.js?v=2.2.3"></script>
+    
+
+    
+        
+<script src="https://unpkg.com/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+
+        <script src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/plugins/local_search.js?v=2.2.3"></script>
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+		
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+    <script data-swup-reload-script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+
+<script id="async-script" src="https://unpkg.com/hexo-theme-async@2.2.3/source/js/main.js?v=2.2.3"></script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+<script src="https://unpkg.com/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+
+</html>
