@@ -1,3 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title>网站模板</title>
+    <url>/2024/11/27/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Cisco Talos Intelligence</title>
+    <url>/2024/11/27/%E7%BD%91%E7%AB%99Cisco_Talos_Intelligence/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://talosintelligence.com/">Cisco Talos Intelligence</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>IP 信誉查询</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AbuseIPDB</title>
+    <url>/2024/11/27/%E7%BD%91%E7%AB%99AbuseIPDB/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.abuseipdb.com/">AbuseIPDB</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>AbuseIPDB 是一个致力于帮助打击黑客、垃圾邮件发送者以及互联网上滥用行为的项目。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+  </entry>
+  <entry>
+    <title>Gobuster</title>
+    <url>/2024/11/27/%E5%B7%A5%E5%85%B7Gobuster/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/OJ/gobuster">Gobuster</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Gobuster 是一个用于暴力破解的工具：</p>
+<p>网站中的 URI（目录和文件）。<br>DNS 子域名（支持通配符）。<br>目标 Web 服务器上的虚拟主机名。<br>打开 Amazon S3 存储桶<br>打开 Google Cloud 存储桶<br>TFTP 服务器<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install gobuster</span><br><span class="line"><span class="comment"># Kali 安装</span></span><br></pre></td></tr></table></figure>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gobuster -u http://example.com -w wordlist.txt <span class="built_in">dir</span></span><br><span class="line"><span class="comment"># gobuster -u [网址] -w [字典文件路径] dir</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># dir - 经典目录暴力破解模式</span></span><br></pre></td></tr></table></figure>
+<br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>目录暴力破解</tag>
+        <tag>DNS 枚举</tag>
+        <tag>信息收集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>工具模板</title>
+    <url>/2024/11/27/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><br>
+
+
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>模板</category>
+      </categories>
+  </entry>
 </search>
