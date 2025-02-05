@@ -36,6 +36,42 @@
       </tags>
   </entry>
   <entry>
+    <title>C99Shell</title>
+    <url>/2025/01/21/%E5%B7%A5%E5%85%B7C99Shell/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://www.r57shell.net/single.php?id=13">C99Shell</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Web Shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CyberChef</title>
+    <url>/2025/01/26/%E5%B7%A5%E5%85%B7CyberChef/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://gchq.github.io/CyberChef/">CyberChef</a><br><a href="https://github.com/gchq/CyberChef/releases">CyberChef下载</a><br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>解密工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Burp Suite</title>
     <url>/2025/01/17/%E5%B7%A5%E5%85%B7Burp-Suite/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://portswigger.net/burp/releases">Burp Suite</a><br><br></p>
@@ -65,10 +101,10 @@
       </categories>
   </entry>
   <entry>
-    <title>C99Shell</title>
-    <url>/2025/01/21/%E5%B7%A5%E5%85%B7C99Shell/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://www.r57shell.net/single.php?id=13">C99Shell</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+    <title>CAPA</title>
+    <url>/2025/01/29/%E5%B7%A5%E5%85%B7CAPA/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/mandiant/capa">CAPA</a><br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
 
 
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
@@ -78,8 +114,25 @@
       <categories>
         <category>工具</category>
       </categories>
+  </entry>
+  <entry>
+    <title>GnuPG</title>
+    <url>/2025/01/11/%E5%B7%A5%E5%85%B7GnuPG/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://gnupg.org/">GnuPG</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
       <tags>
-        <tag>Web Shell</tag>
+        <tag>文件加密</tag>
       </tags>
   </entry>
   <entry>
@@ -99,67 +152,6 @@
       <tags>
         <tag>内存映像</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>CyberChef</title>
-    <url>/2025/01/26/%E5%B7%A5%E5%85%B7CyberChef/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://gchq.github.io/CyberChef/">CyberChef</a><br><a href="https://github.com/gchq/CyberChef/releases">CyberChef下载</a><br><br></p>
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>解密工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>FlareVM</title>
-    <url>/2025/01/31/%E5%B7%A5%E5%85%B7FlareVM/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p>PEStudio、CFF Explorer、Process Monitor 和 Process Explorer<br><br></p>
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>工具库<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>CAPA</title>
-    <url>/2025/01/29/%E5%B7%A5%E5%85%B7CAPA/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/mandiant/capa">CAPA</a><br><br></p>
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hydra</title>
-    <url>/2025/01/19/%E5%B7%A5%E5%85%B7Hydra/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/vanhauser-thc/thc-hydra">Hydra</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
   </entry>
   <entry>
     <title>Gobuster</title>
@@ -332,6 +324,34 @@
       </tags>
   </entry>
   <entry>
+    <title>Hydra</title>
+    <url>/2025/01/19/%E5%B7%A5%E5%85%B7Hydra/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/vanhauser-thc/thc-hydra">Hydra</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>FlareVM</title>
+    <url>/2025/01/31/%E5%B7%A5%E5%85%B7FlareVM/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p>PEStudio、CFF Explorer、Process Monitor 和 Process Explorer<br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>工具库<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>John the Ripper</title>
     <url>/2025/01/11/%E5%B7%A5%E5%85%B7John-the-Ripper/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.openwall.com/john/">John the Ripper</a><br><a href="https://www.openwall.com/john/doc/RULES.shtml">自定义规则</a><br><br></p>
@@ -344,23 +364,21 @@
       </categories>
   </entry>
   <entry>
-    <title>GnuPG</title>
-    <url>/2025/01/11/%E5%B7%A5%E5%85%B7GnuPG/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://gnupg.org/">GnuPG</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+    <title>Nexpose</title>
+    <url>/2025/01/26/%E5%B7%A5%E5%85%B7Nexpose/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.rapid7.com/products/nexpose/">Nexpose</a><br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
 
 
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
       </categories>
       <tags>
-        <tag>文件加密</tag>
+        <tag>漏洞扫描</tag>
       </tags>
   </entry>
   <entry>
@@ -386,24 +404,6 @@
     <url>/2025/01/26/%E5%B7%A5%E5%85%B7Nessus/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://www.tenable.com/products/nessus">Nessus</a><br><br></p>
 <h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>漏洞扫描</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Nexpose</title>
-    <url>/2025/01/26/%E5%B7%A5%E5%85%B7Nexpose/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.rapid7.com/products/nexpose/">Nexpose</a><br><br></p>
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
 
 
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
@@ -579,24 +579,6 @@
       </tags>
   </entry>
   <entry>
-    <title>OpenVAS</title>
-    <url>/2025/01/26/%E5%B7%A5%E5%85%B7OpenVAS/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.openvas.org/">OpenVAS</a><br><br></p>
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>漏洞扫描</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Obfuscator.io Deobfuscator</title>
     <url>/2025/01/16/%E5%B7%A5%E5%85%B7Obfuscator-io-Deobfuscator/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://obf-io.deobfuscate.io/">Obfuscator.io Deobfuscator</a><br><br></p>
@@ -612,6 +594,24 @@
       </categories>
       <tags>
         <tag>JS反混淆</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>OpenVAS</title>
+    <url>/2025/01/26/%E5%B7%A5%E5%85%B7OpenVAS/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.openvas.org/">OpenVAS</a><br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>漏洞扫描</tag>
       </tags>
   </entry>
   <entry>
@@ -633,12 +633,10 @@
       </tags>
   </entry>
   <entry>
-    <title>REMnux</title>
-    <url>/2025/01/31/%E5%B7%A5%E5%85%B7REMnux/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+    <title>SecLists</title>
+    <url>/2025/01/11/%E5%B7%A5%E5%85%B7SecLists/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/danielmiessler/SecLists">SecLists</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
 
 
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
@@ -648,6 +646,9 @@
       <categories>
         <category>工具</category>
       </categories>
+      <tags>
+        <tag>字典</tag>
+      </tags>
   </entry>
   <entry>
     <title>RsaCtfTool</title>
@@ -667,9 +668,43 @@
       </tags>
   </entry>
   <entry>
-    <title>SecLists</title>
-    <url>/2025/01/11/%E5%B7%A5%E5%85%B7SecLists/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/danielmiessler/SecLists">SecLists</a><br><br></p>
+    <title>REMnux</title>
+    <url>/2025/01/31/%E5%B7%A5%E5%85%B7REMnux/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Snort</title>
+    <url>/2024/12/18/%E5%B7%A5%E5%85%B7Snort/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://www.snort.org/">Snort</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Snort 是全球领先的开源入侵防御系统 (IPS)。Snort IPS 使用一系列规则来帮助定义恶意网络活动，并使用这些规则查找与之匹配的数据包并为用户生成警报。</p>
+<p>Snort 也可以内联部署以阻止这些数据包。Snort 有三个主要用途：作为像 tcpdump 这样的数据包嗅探器，作为数据包记录器（可用于网络流量调试），或者可以用作成熟的网络入侵预防系统。Snort 可以下载并配置为个人和企业用途。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>入侵检测系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WPScan</title>
+    <url>/2025/01/18/%E5%B7%A5%E5%85%B7WPScan/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://wpscan.com/">WPScan</a><br><br></p>
 <h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
 
 
@@ -681,7 +716,7 @@
         <category>工具</category>
       </categories>
       <tags>
-        <tag>字典</tag>
+        <tag>WordPress扫描</tag>
       </tags>
   </entry>
   <entry>
@@ -719,24 +754,6 @@
       </categories>
   </entry>
   <entry>
-    <title>WPScan</title>
-    <url>/2025/01/18/%E5%B7%A5%E5%85%B7WPScan/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://wpscan.com/">WPScan</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>WordPress扫描</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Wireshark</title>
     <url>/2025/01/01/%E5%B7%A5%E5%85%B7Wireshark/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/wireshark/wireshark">Wireshark</a></p>
@@ -757,6 +774,21 @@
       <tags>
         <tag>抓包工具</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Wappalyzer</title>
+    <url>/2025/02/06/%E5%B7%A5%E5%85%B7Wappalyzer/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.wappalyzer.com/">Wappalyzer</a><br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
   </entry>
   <entry>
     <title>hash-identifier</title>
@@ -792,24 +824,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hashcat</title>
-    <url>/2025/01/11/%E5%B7%A5%E5%85%B7hashcat/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://hashcat.net/hashcat/">hashcat</a><br><a href="https://hashcat.net/wiki/doku.php?id=example_hashes">hashcat表</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>hash类型</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>b374k</title>
     <url>/2025/01/21/%E5%B7%A5%E5%85%B7b374k/</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/b374k/b374k">b374k</a><br><br></p>
@@ -825,11 +839,12 @@
       </categories>
   </entry>
   <entry>
-    <title>rsatool</title>
-    <url>/2025/01/11/%E5%B7%A5%E5%85%B7rsatool/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/ius/rsatool">rsatool</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>rsatool 根据给定两个素数（p、q）或模数和私有指数（n、d）计算 RSA（p、q、n、d、e）和 RSA-CRT（dP、dQ、qInv）参数。</p>
-<p>显示结果参数，并可以选择将其写为 OpenSSL 兼容 DER 或 PEM 编码的 RSA 私钥。<br><br></p>
+    <title>hashcat</title>
+    <url>/2025/01/11/%E5%B7%A5%E5%85%B7hashcat/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://hashcat.net/hashcat/">hashcat</a><br><a href="https://hashcat.net/wiki/doku.php?id=example_hashes">hashcat表</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><br>
+
+
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
@@ -838,44 +853,7 @@
         <category>工具</category>
       </categories>
       <tags>
-        <tag>解密工具</tag>
-        <tag>RSA解密</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AbuseIPDB</title>
-    <url>/2024/12/17/%E7%BD%91%E7%AB%99AbuseIPDB/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.abuseipdb.com/">AbuseIPDB</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>AbuseIPDB 是一个致力于帮助打击黑客、垃圾邮件发送者以及互联网上滥用行为的项目。</p>
-<p>我们的使命是为网站管理员、系统管理员和其他相关方提供一个中央黑名单，以便报告和查找与在线恶意活动相关的 IP 地址，从而帮助使网络更安全。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索</p>
-<br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>恶意IP检测</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Bing高级搜索</title>
-    <url>/2024/12/23/%E7%BD%91%E7%AB%99Bing%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Bing高级搜索</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>高级搜索</tag>
+        <tag>hash类型</tag>
       </tags>
   </entry>
   <entry>
@@ -897,6 +875,24 @@
       </tags>
   </entry>
   <entry>
+    <title>rsatool</title>
+    <url>/2025/01/11/%E5%B7%A5%E5%85%B7rsatool/</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://github.com/ius/rsatool">rsatool</a><br><br></p>
+<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>rsatool 根据给定两个素数（p、q）或模数和私有指数（n、d）计算 RSA（p、q、n、d、e）和 RSA-CRT（dP、dQ、qInv）参数。</p>
+<p>显示结果参数，并可以选择将其写为 OpenSSL 兼容 DER 或 PEM 编码的 RSA 私钥。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>解密工具</tag>
+        <tag>RSA解密</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AppDevTools</title>
     <url>/2025/01/18/%E7%BD%91%E7%AB%99AppDevTools/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://appdevtools.com/">AppDevTools</a><br><br></p>
@@ -912,9 +908,9 @@
       </tags>
   </entry>
   <entry>
-    <title>CVE Program</title>
-    <url>/2024/12/23/%E7%BD%91%E7%AB%99CVE-Program/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.cve.org/">CVE Program</a><br><br></p>
+    <title>Bing高级搜索</title>
+    <url>/2024/12/23/%E7%BD%91%E7%AB%99Bing%E9%AB%98%E7%BA%A7%E6%90%9C%E7%B4%A2/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Bing高级搜索</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
@@ -923,17 +919,19 @@
         <category>网站</category>
       </categories>
       <tags>
-        <tag>CVE</tag>
+        <tag>高级搜索</tag>
       </tags>
   </entry>
   <entry>
-    <title>Cisco Talos Intelligence</title>
-    <url>/2024/12/17/%E7%BD%91%E7%AB%99Cisco-Talos-Intelligence/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://talosintelligence.com/">Cisco Talos Intelligence</a></p>
+    <title>AbuseIPDB</title>
+    <url>/2024/12/17/%E7%BD%91%E7%AB%99AbuseIPDB/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.abuseipdb.com/">AbuseIPDB</a></p>
 <br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>AbuseIPDB 是一个致力于帮助打击黑客、垃圾邮件发送者以及互联网上滥用行为的项目。</p>
+<p>我们的使命是为网站管理员、系统管理员和其他相关方提供一个中央黑名单，以便报告和查找与在线恶意活动相关的 IP 地址，从而帮助使网络更安全。</p>
+<br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索</p>
@@ -960,6 +958,25 @@
       </tags>
   </entry>
   <entry>
+    <title>Cisco Talos Intelligence</title>
+    <url>/2024/12/17/%E7%BD%91%E7%AB%99Cisco-Talos-Intelligence/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://talosintelligence.com/">Cisco Talos Intelligence</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索</p>
+<br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>恶意IP检测</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cronitor</title>
     <url>/2024/12/20/%E7%BD%91%E7%AB%99Cronitor/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://crontab.guru/">Cronitor</a></p>
@@ -976,22 +993,6 @@
       </categories>
       <tags>
         <tag>Crontab生成器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CrackStation</title>
-    <url>/2025/01/11/%E7%BD%91%E7%AB%99CrackStation/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://crackstation.net/">CrackStation</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>解密工具</tag>
-        <tag>hash解密</tag>
       </tags>
   </entry>
   <entry>
@@ -1013,6 +1014,21 @@
       </tags>
   </entry>
   <entry>
+    <title>CVE Program</title>
+    <url>/2024/12/23/%E7%BD%91%E7%AB%99CVE-Program/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.cve.org/">CVE Program</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>CVE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Exploit Database</title>
     <url>/2024/12/23/%E7%BD%91%E7%AB%99Exploit-Database/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.exploit-db.com/">Exploit Database</a><br><br></p>
@@ -1026,6 +1042,22 @@
       <tags>
         <tag>CVE</tag>
         <tag>CVE利用</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CrackStation</title>
+    <url>/2025/01/11/%E7%BD%91%E7%AB%99CrackStation/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://crackstation.net/">CrackStation</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>解密工具</tag>
+        <tag>hash解密</tag>
       </tags>
   </entry>
   <entry>
@@ -1044,39 +1076,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Hashes.com</title>
-    <url>/2025/01/11/%E7%BD%91%E7%AB%99Hashes-com/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hashes.com/en/decrypt/hash">Hashes.com</a><br><a href="https://hashes.com/en/tools/hash_identifier">Hashes.com识别hash</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>解密</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Google Hacking/Dorking</title>
     <url>/2024/12/23/%E7%BD%91%E7%AB%99Google-Dorking/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.google.com/advanced_search">Google高级搜索</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>高级搜索</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DuckDuckGo</title>
-    <url>/2024/12/23/%E7%BD%91%E7%AB%99DuckDuckGo/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax/">DuckDuckGo</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
@@ -1114,9 +1116,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Let&#39;s Encrypt</title>
-    <url>/2024/12/29/%E7%BD%91%E7%AB%99Let-s-Encrypt/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://letsencrypt.org/">Let’s Encrypt</a><br><br></p>
+    <title>Hashes.com</title>
+    <url>/2025/01/11/%E7%BD%91%E7%AB%99Hashes-com/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://hashes.com/en/decrypt/hash">Hashes.com</a><br><a href="https://hashes.com/en/tools/hash_identifier">Hashes.com识别hash</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
@@ -1125,7 +1127,7 @@
         <category>网站</category>
       </categories>
       <tags>
-        <tag>免费TLS/SSL签名证书</tag>
+        <tag>解密</tag>
       </tags>
   </entry>
   <entry>
@@ -1144,9 +1146,9 @@
       </tags>
   </entry>
   <entry>
-    <title>OWASP favicon database</title>
-    <url>/2025/02/06/%E7%BD%91%E7%AB%99OWASP-favicon-database/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://wiki.owasp.org/index.php/OWASP_favicon_database">OWASP favicon database</a><br><br></p>
+    <title>Let&#39;s Encrypt</title>
+    <url>/2024/12/29/%E7%BD%91%E7%AB%99Let-s-Encrypt/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://letsencrypt.org/">Let’s Encrypt</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
@@ -1154,6 +1156,9 @@
       <categories>
         <category>网站</category>
       </categories>
+      <tags>
+        <tag>免费TLS/SSL签名证书</tag>
+      </tags>
   </entry>
   <entry>
     <title>SOURCEFORGE</title>
@@ -1186,9 +1191,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Security Headers</title>
-    <url>/2025/01/15/%E7%BD%91%E7%AB%99Security-Headers/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://securityheaders.com/">Security Headers</a><br><br></p>
+    <title>DuckDuckGo</title>
+    <url>/2024/12/23/%E7%BD%91%E7%AB%99DuckDuckGo/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax/">DuckDuckGo</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
@@ -1197,21 +1202,20 @@
         <category>网站</category>
       </categories>
       <tags>
-        <tag>分析标头</tag>
+        <tag>高级搜索</tag>
       </tags>
   </entry>
   <entry>
-    <title>Shodan</title>
-    <url>/2024/12/23/%E7%BD%91%E7%AB%99Shodan/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://tryhackme.com/r/room/searchskills">Shodan</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>这是一个用于搜索连接到互联网的设备的网站。它允许您搜索特定类型和版本的服务器、网络设备、工业控制系统和物联网设备。<br><br></p>
+    <title>OWASP favicon database</title>
+    <url>/2025/02/06/%E7%BD%91%E7%AB%99OWASP-favicon-database/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://wiki.owasp.org/index.php/OWASP_favicon_database">OWASP favicon database</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
-      <tags>
-        <tag>专业搜索引擎</tag>
-      </tags>
   </entry>
   <entry>
     <title>TLD顶级域名表</title>
@@ -1229,9 +1233,9 @@
       </tags>
   </entry>
   <entry>
-    <title>VMaxx</title>
-    <url>/2024/12/18/%E7%BD%91%E7%AB%99VMaxx/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.vmaxx.net/techinfo/ports.htm">1024端口表</a><br><br></p>
+    <title>Security Headers</title>
+    <url>/2025/01/15/%E7%BD%91%E7%AB%99Security-Headers/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://securityheaders.com/">Security Headers</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
@@ -1240,7 +1244,7 @@
         <category>网站</category>
       </categories>
       <tags>
-        <tag>1024端口表</tag>
+        <tag>分析标头</tag>
       </tags>
   </entry>
   <entry>
@@ -1272,6 +1276,19 @@
       </tags>
   </entry>
   <entry>
+    <title>Shodan</title>
+    <url>/2024/12/23/%E7%BD%91%E7%AB%99Shodan/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://tryhackme.com/r/room/searchskills">Shodan</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>这是一个用于搜索连接到互联网的设备的网站。它允许您搜索特定类型和版本的服务器、网络设备、工业控制系统和物联网设备。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>专业搜索引擎</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows CMD命令</title>
     <url>/2024/12/22/%E7%BD%91%E7%AB%99Windows-CMD%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://ss64.com/nt/">Windows CMD命令</a><br><br></p>
@@ -1284,9 +1301,9 @@
       </tags>
   </entry>
   <entry>
-    <title>WolframAlpha</title>
-    <url>/2025/01/10/%E7%BD%91%E7%AB%99WolframAlpha/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.wolframalpha.com/">WolframAlpha</a><br><br></p>
+    <title>VMaxx</title>
+    <url>/2024/12/18/%E7%BD%91%E7%AB%99VMaxx/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.vmaxx.net/techinfo/ports.htm">1024端口表</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
@@ -1295,7 +1312,7 @@
         <category>网站</category>
       </categories>
       <tags>
-        <tag>数学计算</tag>
+        <tag>1024端口表</tag>
       </tags>
   </entry>
   <entry>
@@ -1325,9 +1342,21 @@
       </tags>
   </entry>
   <entry>
-    <title>die.net</title>
-    <url>/2024/12/20/%E7%BD%91%E7%AB%99die.net/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://linux.die.net/">die.net</a><br><br></p>
+    <title>Wayback Machine</title>
+    <url>/2025/02/06/%E7%BD%91%E7%AB%99Wayback-Machine/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://web.archive.org/">Wayback Machine</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>WolframAlpha</title>
+    <url>/2025/01/10/%E7%BD%91%E7%AB%99WolframAlpha/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.wolframalpha.com/">WolframAlpha</a><br><br></p>
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
@@ -1336,7 +1365,7 @@
         <category>网站</category>
       </categories>
       <tags>
-        <tag>Linux手册页</tag>
+        <tag>数学计算</tag>
       </tags>
   </entry>
   <entry>
@@ -1370,20 +1399,18 @@
       </tags>
   </entry>
   <entry>
-    <title>Snort</title>
-    <url>/2024/12/18/%E5%B7%A5%E5%85%B7Snort/</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a href="https://www.snort.org/">Snort</a><br><br></p>
-<h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>Snort 是全球领先的开源入侵防御系统 (IPS)。Snort IPS 使用一系列规则来帮助定义恶意网络活动，并使用这些规则查找与之匹配的数据包并为用户生成警报。</p>
-<p>Snort 也可以内联部署以阻止这些数据包。Snort 有三个主要用途：作为像 tcpdump 这样的数据包嗅探器，作为数据包记录器（可用于网络流量调试），或者可以用作成熟的网络入侵预防系统。Snort 可以下载并配置为个人和企业用途。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+    <title>die.net</title>
+    <url>/2024/12/20/%E7%BD%91%E7%AB%99die.net/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://linux.die.net/">die.net</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>工具</category>
+        <category>网站</category>
       </categories>
       <tags>
-        <tag>入侵检测系统</tag>
+        <tag>Linux手册页</tag>
       </tags>
   </entry>
 </search>
