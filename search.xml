@@ -54,23 +54,6 @@
       </categories>
   </entry>
   <entry>
-    <title>1024 端口表</title>
-    <url>/2025/05/02/T-1024%E7%AB%AF%E5%8F%A3%E8%A1%A8/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.vmaxx.net/techinfo/ports.htm">1024 端口表</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>常用的 1024 个端口，协议，关键字，说明</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索</p>
-<br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>工具模板</title>
     <url>/2025/05/01/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
@@ -88,6 +71,55 @@
       </categories>
   </entry>
   <entry>
+    <title>网站模板</title>
+    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>1024 Ports</title>
+    <url>/2025/05/02/T-1024-Ports/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.vmaxx.net/techinfo/ports.htm">1024 Ports</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>常用的 1024 个端口，协议，关键字，说明</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索</p>
+<br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>AbuseIPDB</title>
+    <url>/2025/05/01/T-AbuseIPDB/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.abuseipdb.com/">AbuseIPDB</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>AbuseIPDB 是一个致力于帮助打击互联网上黑客、垃圾邮件发送者和滥用活动的项目。</p>
+<p>我们的使命是为网站管理员、系统管理员和其他相关方提供一个中央黑名单，以便报告和查找与在线恶意活动相关的 IP 地址，从而帮助提高网络的安全性。</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索</p>
+<br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Cisco Talos Intelligence</title>
     <url>/2025/05/01/T-Cisco-Talos-Intelligence/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://talosintelligence.com/">Cisco Talos Intelligence</a></p>
@@ -102,20 +134,6 @@
 <br>]]></content>
       <categories>
         <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网站模板</title>
-    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>重要</category>
       </categories>
   </entry>
   <entry>
@@ -141,14 +159,13 @@
       </categories>
   </entry>
   <entry>
-    <title>AbuseIPDB</title>
-    <url>/2025/05/01/T-AbuseIPDB/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.abuseipdb.com/">AbuseIPDB</a></p>
+    <title>IANA TLDS</title>
+    <url>/2025/05/05/T-IANA-TLDS/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">IANA TLDS</a></p>
 <br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>AbuseIPDB 是一个致力于帮助打击互联网上黑客、垃圾邮件发送者和滥用活动的项目。</p>
-<p>我们的使命是为网站管理员、系统管理员和其他相关方提供一个中央黑名单，以便报告和查找与在线恶意活动相关的 IP 地址，从而帮助提高网络的安全性。</p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>顶级域名字母表</p>
 <br>
 
 
@@ -179,34 +196,18 @@
       </categories>
   </entry>
   <entry>
-    <title>Linux 手册页</title>
-    <url>/2025/05/10/T-Linux%E6%89%8B%E5%86%8C%E9%A1%B5/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://linux.die.net/man/">Linux 手册页</a></p>
+    <title>Vim Cheat Sheet</title>
+    <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></p>
 <br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 部分 用户命令（介绍）<br>第 2 节 系统调用（介绍）<br>第 3 节 库函数（介绍）<br>第 4 节 特殊文件（介绍）<br>第 5 节 文件格式（介绍）<br>第 6 节 游戏（介绍）<br>第 7 节 惯例与杂项（引言）<br>第 8 节 管理和特权命令（介绍）<br>L 区 数学库函数<br>第N部分 tcl函数</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-  </entry>
-  <entry>
-    <title>TLD表</title>
-    <url>/2025/05/05/T-TLD%E8%A1%A8/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD表</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>超过 2000 个 TLD 表</p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该项目旨在成为最易用的 Vim 指南之一。我们确保支持移动设备、桌面设备以及其他 语言。</p>
 <br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索</p>
 <br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
   </entry>
   <entry>
     <title>网络杀伤链</title>
@@ -248,5 +249,18 @@
       <categories>
         <category>重要</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Linux man pages</title>
+    <url>/2025/05/10/T-Linux-man-pages/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://linux.die.net/man/">Linux man pages</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 部分 用户命令（介绍）<br>第 2 节 系统调用（介绍）<br>第 3 节 库函数（介绍）<br>第 4 节 特殊文件（介绍）<br>第 5 节 文件格式（介绍）<br>第 6 节 游戏（介绍）<br>第 7 节 惯例与杂项（引言）<br>第 8 节 管理和特权命令（介绍）<br>L 区 数学库函数<br>第N部分 tcl函数</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
   </entry>
 </search>
