@@ -71,36 +71,21 @@
       </categories>
   </entry>
   <entry>
-    <title>网络杀伤链</title>
-    <url>/2077/07/07/#%E7%BD%91%E7%BB%9C%E6%9D%80%E4%BC%A4%E9%93%BE/</url>
-    <content><![CDATA[<h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><p>检查页面源代码</p>
-<p>Ping</p>
-<p><a href="https://cyphersun.github.io/2025/05/01/Gobuster/">Gobuster</a></p>
-<ul>
-<li>扫描 URI 目录和文件，DNS 子域，Web 服务器上的虚拟主机名，打开 Amazon S3 存储桶，Google Cloud 存储桶，TFTP 服务器</li>
-</ul>
+    <title>Apache</title>
+    <url>/2025/05/14/T-Apache/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></p>
 <br>
 
 
-<h2 id="武器化（Weaponization）"><a href="#武器化（Weaponization）" class="headerlink" title="武器化（Weaponization）"></a>武器化（Weaponization）</h2><br>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
 
 
-<h2 id="投送（Delivery）"><a href="#投送（Delivery）" class="headerlink" title="投送（Delivery）"></a>投送（Delivery）</h2><br>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
-<h2 id="利用（Exploitation）"><a href="#利用（Exploitation）" class="headerlink" title="利用（Exploitation）"></a>利用（Exploitation）</h2><br>
-
-
-<h2 id="安装（Installation）"><a href="#安装（Installation）" class="headerlink" title="安装（Installation）"></a>安装（Installation）</h2><br>
-
-
-<h2 id="命令与控制（Command-and-Control，C2）"><a href="#命令与控制（Command-and-Control，C2）" class="headerlink" title="命令与控制（Command and Control，C2）"></a>命令与控制（Command and Control，C2）</h2><br>
-
-
-<h2 id="行动目标（Actions-on-Objectives）"><a href="#行动目标（Actions-on-Objectives）" class="headerlink" title="行动目标（Actions on Objectives）"></a>行动目标（Actions on Objectives）</h2><br>
-]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>重要</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -118,21 +103,55 @@
       </categories>
   </entry>
   <entry>
-    <title>Apache</title>
-    <url>/2025/05/14/T-Apache/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></p>
+    <title>Bing</title>
+    <url>/2025/05/13/T-Bing/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Advanced search options</a></p>
 <br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索选项<br>更快速地找到所需内容。</p>
+<br>
 
 
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
       <categories>
-        <category>工具</category>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Crontab Generator</title>
+    <url>/2025/05/11/T-Crontab-Generator/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://crontab-generator.org/">Crontab Generator</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>如果您想在指定的时间和日期定期执行某项任务（例如发送电子邮件、备份数据库、进行定期维护等），有两种方法可以设置计划任务：</p>
+<p>方法 1：使用我们的在线 cron 作业服务，它将为您省去很多麻烦。<br>方法 2：使用 Unix&#x2F;Linux 系统中可用的 Cron。<br>如果您选择方法 2，以下生成器可以帮助您生成一个 crontab 语法，您可以将其复制并粘贴到您的 crontab 文件中（您可以使用命令打开该文件crontab –e）。在生成的 crontab 语法下方，还会显示一个运行时间列表。预测功能将帮助您确保设置正确的时间和日期。</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>DuckDuckGo</title>
+    <url>/2025/05/13/T-DuckDuckGo/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>DuckDuckGo 支持您可以用来微调查询的搜索语法</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
+      <categories>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -152,90 +171,20 @@
       </categories>
   </entry>
   <entry>
-    <title>Crontab Generator</title>
-    <url>/2025/05/11/T-Crontab-Generator/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://crontab-generator.org/">Crontab Generator</a><br><br></p>
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>如果您想在指定的时间和日期定期执行某项任务（例如发送电子邮件、备份数据库、进行定期维护等），有两种方法可以设置计划任务：</p>
-<p>方法 1：使用我们的在线 cron 作业服务，它将为您省去很多麻烦。<br>方法 2：使用 Unix&#x2F;Linux 系统中可用的 Cron。<br>如果您选择方法 2，以下生成器可以帮助您生成一个 crontab 语法，您可以将其复制并粘贴到您的 crontab 文件中（您可以使用命令打开该文件crontab –e）。在生成的 crontab 语法下方，还会显示一个运行时间列表。预测功能将帮助您确保设置正确的时间和日期。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>DuckDuckGo</title>
-    <url>/2025/05/13/T-DuckDuckGo/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a></p>
-<br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>DuckDuckGo 支持您可以用来微调查询的搜索语法</p>
-<br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Advanced search operators list</title>
-    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索运算符列表</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Censys</title>
     <url>/2025/05/13/T-Censys/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://search.censys.io/">Censys</a><br><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></p>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://search.censys.io/">Censys</a><br><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></p>
 <br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Censys Legacy Search 为用户提供最全面、最准确、最新的互联网地图，以便进行大规模的主动和被动安全分析。</p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Censys Legacy Search 为用户提供最全面、最准确、最新的互联网地图，以便进行大规模的主动和被动安全分析。</p>
 <br>
 
 
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
       <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Bing</title>
-    <url>/2025/05/13/T-Bing/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Advanced search options</a></p>
-<br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>高级搜索选项<br>更快速地找到所需内容。</p>
-<br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -251,6 +200,9 @@
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
   </entry>
   <entry>
     <title>GitHub</title>
@@ -287,18 +239,64 @@
   <entry>
     <title>Google</title>
     <url>/2025/05/13/T-Google/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.google.com/advanced_search">Advanced Search</a></p>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.google.com/advanced_search">Advanced Search</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索</p>
 <br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>高级搜索</p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Have I Been Pwned</title>
+    <url>/2025/05/13/T-Have-I-Been-Pwned/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>LOLBAS</title>
+    <url>/2025/05/13/T-LOLBAS/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://lolbas-project.github.io/">LOLBAS</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>LOLBAS 项目的目标是记录可用于 Living Off The Land 技术的每个二进制文件、脚本和库。</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Gobuster</title>
+    <url>/2025/05/01/T-Gobuster/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/OJ/gobuster">Gobuster</a></p>
+<br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Gobuster 是一种用于暴力破解的工具：</p>
+<p>网站中的 URI（目录和文件）。<br>DNS 子域（支持通配符）。<br>目标 Web 服务器上的虚拟主机名。<br>打开 Amazon S3 存储桶<br>打开 Google Cloud 存储桶<br>TFTP 服务器</p>
 <br>
 
 
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gobuster -u http://example.com -w wordlist.txt <span class="built_in">dir</span></span><br><span class="line"><span class="comment"># -u 网址</span></span><br><span class="line"><span class="comment"># -w 字典</span></span><br></pre></td></tr></table></figure>
+
+<br>]]></content>
       <categories>
         <category>工具</category>
       </categories>
@@ -315,50 +313,18 @@
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-  </entry>
-  <entry>
-    <title>Linux man pages</title>
-    <url>/2025/05/10/T-Linux-man-pages/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://linux.die.net/man/">Linux man pages</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 节 用户命令（介绍）<br>第 2 节 系统调用（介绍）<br>第 3 节 库函数（介绍）<br>第 4 节 特殊文件（介绍）<br>第 5 节 文件格式（介绍）<br>第 6 节 游戏（介绍）<br>第 7 节 惯例与杂项（引言）<br>第 8 节 管理和特权命令（介绍）<br>第 L 节 数学库函数<br>第 N 节 tcl函数</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
   </entry>
   <entry>
-    <title>Have I Been Pwned</title>
-    <url>/2025/05/13/T-Have-I-Been-Pwned/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></p>
+    <title>Advanced search operators list</title>
+    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></p>
 <br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露</p>
-<br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>LOLBAS</title>
-    <url>/2025/05/13/T-LOLBAS/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://lolbas-project.github.io/">LOLBAS</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>LOLBAS 项目的目标是记录可用于 Living Off The Land 技术的每个二进制文件、脚本和库。</p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索运算符列表</p>
 <br>
 
 
@@ -402,6 +368,38 @@
       </categories>
   </entry>
   <entry>
+    <title>Ports 1 - 1024</title>
+    <url>/2025/05/02/T-Ports%201-1024/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.vmaxx.net/techinfo/ports.htm">Ports 1 - 1024</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>前 1024 个端口，协议，关键字，描述</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Linux man pages</title>
+    <url>/2025/05/10/T-Linux-man-pages/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://linux.die.net/man/">Linux man pages</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 节 用户命令（介绍）<br>第 2 节 系统调用（介绍）<br>第 3 节 库函数（介绍）<br>第 4 节 特殊文件（介绍）<br>第 5 节 文件格式（介绍）<br>第 6 节 游戏（介绍）<br>第 7 节 惯例与杂项（引言）<br>第 8 节 管理和特权命令（介绍）<br>第 L 节 数学库函数<br>第 N 节 tcl函数</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>PHP</title>
     <url>/2025/05/14/T-PHP/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></p>
@@ -420,80 +418,36 @@
       </categories>
   </entry>
   <entry>
-    <title>Gobuster</title>
-    <url>/2025/05/01/T-Gobuster/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/OJ/gobuster">Gobuster</a></p>
+    <title>网络杀伤链</title>
+    <url>/2077/07/07/#%E7%BD%91%E7%BB%9C%E6%9D%80%E4%BC%A4%E9%93%BE/</url>
+    <content><![CDATA[<h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><p>检查页面源代码</p>
+<p>Ping</p>
+<p><a href="https://cyphersun.github.io/2025/05/01/Gobuster/">Gobuster</a></p>
+<ul>
+<li>扫描 URI 目录和文件，DNS 子域，Web 服务器上的虚拟主机名，打开 Amazon S3 存储桶，Google Cloud 存储桶，TFTP 服务器</li>
+</ul>
 <br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Gobuster 是一种用于暴力破解的工具：</p>
-<p>网站中的 URI（目录和文件）。<br>DNS 子域（支持通配符）。<br>目标 Web 服务器上的虚拟主机名。<br>打开 Amazon S3 存储桶<br>打开 Google Cloud 存储桶<br>TFTP 服务器</p>
-<br>
+<h2 id="武器化（Weaponization）"><a href="#武器化（Weaponization）" class="headerlink" title="武器化（Weaponization）"></a>武器化（Weaponization）</h2><br>
 
 
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+<h2 id="投送（Delivery）"><a href="#投送（Delivery）" class="headerlink" title="投送（Delivery）"></a>投送（Delivery）</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gobuster -u http://example.com -w wordlist.txt <span class="built_in">dir</span></span><br><span class="line"><span class="comment"># -u 网址</span></span><br><span class="line"><span class="comment"># -w 字典</span></span><br></pre></td></tr></table></figure>
+<h2 id="利用（Exploitation）"><a href="#利用（Exploitation）" class="headerlink" title="利用（Exploitation）"></a>利用（Exploitation）</h2><br>
 
-<br>]]></content>
+
+<h2 id="安装（Installation）"><a href="#安装（Installation）" class="headerlink" title="安装（Installation）"></a>安装（Installation）</h2><br>
+
+
+<h2 id="命令与控制（Command-and-Control，C2）"><a href="#命令与控制（Command-and-Control，C2）" class="headerlink" title="命令与控制（Command and Control，C2）"></a>命令与控制（Command and Control，C2）</h2><br>
+
+
+<h2 id="行动目标（Actions-on-Objectives）"><a href="#行动目标（Actions-on-Objectives）" class="headerlink" title="行动目标（Actions on Objectives）"></a>行动目标（Actions on Objectives）</h2><br>
+]]></content>
       <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Ports 1 - 1024</title>
-    <url>/2025/05/02/T-Ports%201-1024/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.vmaxx.net/techinfo/ports.htm">Ports 1 - 1024</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>前 1024 个端口，协议，关键字，描述</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Shodan</title>
-    <url>/2025/05/13/T-Shodan/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.shodan.io/">Shodan</a><br><a href="https://www.shodan.io/search/examples">Search Query Examples</a><br><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></p>
-<br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Shodan 是全球首个面向联网设备的搜索引擎。探索互联网智能如何助您做出更明智的决策。</p>
-<br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Snort</title>
-    <url>/2025/05/04/T-Snort/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.snort.org/">Snort</a><br><a href="https://www.snort.org/documents">Documents</a></p>
-<br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Snort 是全球领先的开源入侵防御系统 (IPS)。Snort IPS 使用一系列规则来定义恶意网络活动，并使用这些规则查找与这些活动匹配的数据包，然后向用户生成警报。</p>
-<p>Snort 也可以内联部署来阻止这些数据包。Snort 主要有三种用途：像 tcpdump 一样作为数据包嗅探器；作为数据包记录器（可用于网络流量调试）；或者，可以用作功能齐全的网络入侵防御系统。Snort 可供个人和企业下载和配置。</p>
-<br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
+        <category>重要</category>
       </categories>
   </entry>
   <entry>
@@ -508,6 +462,20 @@
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Shodan</title>
+    <url>/2025/05/13/T-Shodan/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.shodan.io/">Shodan</a><br><a href="https://www.shodan.io/search/examples">Search Query Examples</a><br><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Shodan 是全球首个面向联网设备的搜索引擎。探索互联网智能如何助您做出更明智的决策。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -545,6 +513,19 @@
       </categories>
   </entry>
   <entry>
+    <title>VirusTotal</title>
+    <url>/2025/05/13/T-VirusTotal/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>分析可疑文件、域、IP 和 URL 以检测恶意软件和其他漏洞，并自动与安全社区共享。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Windows CMD commands</title>
     <url>/2025/05/13/T-Windows-CMD-commands/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://ss64.com/nt/">Windows CMD commands</a><br><a href="https://learn.microsoft.com/zh-cn/">Microsoft Learn</a></p>
@@ -561,13 +542,14 @@
       </categories>
   </entry>
   <entry>
-    <title>VirusTotal</title>
-    <url>/2025/05/13/T-VirusTotal/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a></p>
+    <title>Snort</title>
+    <url>/2025/05/04/T-Snort/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.snort.org/">Snort</a><br><a href="https://www.snort.org/documents">Documents</a></p>
 <br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>分析可疑文件、域、IP 和 URL 以检测恶意软件和其他漏洞，并自动与安全社区共享。</p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Snort 是全球领先的开源入侵防御系统 (IPS)。Snort IPS 使用一系列规则来定义恶意网络活动，并使用这些规则查找与这些活动匹配的数据包，然后向用户生成警报。</p>
+<p>Snort 也可以内联部署来阻止这些数据包。Snort 主要有三种用途：像 tcpdump 一样作为数据包嗅探器；作为数据包记录器（可用于网络流量调试）；或者，可以用作功能齐全的网络入侵防御系统。Snort 可供个人和企业下载和配置。</p>
 <br>
 
 
@@ -575,31 +557,6 @@
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>crontab guru</title>
-    <url>/2025/05/11/T-crontab-guru/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://crontab.guru/">crontab guru</a></p>
-<br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Cronitor 的 cron 计划表达式快速简便的编辑器</p>
-<br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-
-
-
-]]></content>
       <categories>
         <category>工具</category>
       </categories>
@@ -617,5 +574,31 @@
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>crontab guru</title>
+    <url>/2025/05/11/T-crontab-guru/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://crontab.guru/">crontab guru</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Cronitor 的 cron 计划表达式快速简便的编辑器</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
   </entry>
 </search>
