@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>网站模板</title>
+    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hexo搭建</title>
     <url>/2025/05/01/#Hexo%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h2 id="Hexo搭建步骤："><a href="#Hexo搭建步骤：" class="headerlink" title="Hexo搭建步骤："></a>Hexo搭建步骤：</h2><p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></p>
@@ -54,6 +68,39 @@
       </categories>
   </entry>
   <entry>
+    <title>Advanced search operators list</title>
+    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索运算符列表</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Bing</title>
+    <url>/2025/05/13/T-Bing/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Advanced search options</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索选项<br>更快速地找到所需内容。</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>工具模板</title>
     <url>/2025/05/01/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
@@ -68,6 +115,23 @@
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Censys</title>
+    <url>/2025/05/13/T-Censys/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://search.censys.io/">Censys</a><br><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Censys Legacy Search 为用户提供最全面、最准确、最新的互联网地图，以便进行大规模的主动和被动安全分析。</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
+      <categories>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -89,32 +153,17 @@
       </categories>
   </entry>
   <entry>
-    <title>网站模板</title>
-    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+    <title>CVE</title>
+    <url>/2025/05/13/T-CVE/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.cve.org/">CVE</a></p>
+<br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过278,000 条CVE 记录可通过上面的下载或关键字搜索访问。</p>
+<br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Bing</title>
-    <url>/2025/05/13/T-Bing/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Advanced search options</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索选项<br>更快速地找到所需内容。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -138,6 +187,39 @@
       </categories>
   </entry>
   <entry>
+    <title>网络杀伤链</title>
+    <url>/2077/07/07/#%E7%BD%91%E7%BB%9C%E6%9D%80%E4%BC%A4%E9%93%BE/</url>
+    <content><![CDATA[<h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><p>检查页面源代码</p>
+<p>Ping<br>nslookup<br>whois</p>
+<p><a href="https://cyphersun.github.io/2025/05/01/Gobuster/">Gobuster</a></p>
+<ul>
+<li>扫描 URI 目录和文件，DNS 子域，Web 服务器上的虚拟主机名，打开 Amazon S3 存储桶，Google Cloud 存储桶，TFTP 服务器</li>
+</ul>
+<br>
+
+
+<h2 id="武器化（Weaponization）"><a href="#武器化（Weaponization）" class="headerlink" title="武器化（Weaponization）"></a>武器化（Weaponization）</h2><br>
+
+
+<h2 id="投送（Delivery）"><a href="#投送（Delivery）" class="headerlink" title="投送（Delivery）"></a>投送（Delivery）</h2><br>
+
+
+<h2 id="利用（Exploitation）"><a href="#利用（Exploitation）" class="headerlink" title="利用（Exploitation）"></a>利用（Exploitation）</h2><br>
+
+
+<h2 id="安装（Installation）"><a href="#安装（Installation）" class="headerlink" title="安装（Installation）"></a>安装（Installation）</h2><br>
+
+
+<h2 id="命令与控制（Command-and-Control，C2）"><a href="#命令与控制（Command-and-Control，C2）" class="headerlink" title="命令与控制（Command and Control，C2）"></a>命令与控制（Command and Control，C2）</h2><br>
+
+
+<h2 id="行动目标（Actions-on-Objectives）"><a href="#行动目标（Actions-on-Objectives）" class="headerlink" title="行动目标（Actions on Objectives）"></a>行动目标（Actions on Objectives）</h2><br>
+]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
     <title>DuckDuckGo</title>
     <url>/2025/05/13/T-DuckDuckGo/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a></p>
@@ -145,39 +227,6 @@
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>DuckDuckGo 支持您可以用来微调查询的搜索语法</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>CVE</title>
-    <url>/2025/05/13/T-CVE/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.cve.org/">CVE</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过278,000 条CVE 记录可通过上面的下载或关键字搜索访问。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Censys</title>
-    <url>/2025/05/13/T-Censys/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://search.censys.io/">Censys</a><br><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Censys Legacy Search 为用户提供最全面、最准确、最新的互联网地图，以便进行大规模的主动和被动安全分析。</p>
 <br>
 
 
@@ -205,22 +254,6 @@
       </categories>
   </entry>
   <entry>
-    <title>GitHub</title>
-    <url>/2025/05/13/T-GitHub/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://github.com/">GitHub</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>GitHub 助力开发者和企业安全地协作、创新和构建。它凭借 AI 驱动的工具、内置的安全测试和无缝集成，为团队从首次提交到企业开发的全过程提供支持。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Facebook</title>
     <url>/2025/05/14/T-Facebook/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.facebook.com/">Facebook</a></p>
@@ -237,10 +270,13 @@
       </categories>
   </entry>
   <entry>
-    <title>Google</title>
-    <url>/2025/05/13/T-Google/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.google.com/advanced_search">Advanced Search</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索</p>
+    <title>GitHub</title>
+    <url>/2025/05/13/T-GitHub/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://github.com/">GitHub</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>GitHub 助力开发者和企业安全地协作、创新和构建。它凭借 AI 驱动的工具、内置的安全测试和无缝集成，为团队从首次提交到企业开发的全过程提供支持。</p>
 <br>
 
 
@@ -259,22 +295,6 @@
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 ]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>LOLBAS</title>
-    <url>/2025/05/13/T-LOLBAS/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://lolbas-project.github.io/">LOLBAS</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>LOLBAS 项目的目标是记录可用于 Living Off The Land 技术的每个二进制文件、脚本和库。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -302,6 +322,19 @@
       </categories>
   </entry>
   <entry>
+    <title>Google</title>
+    <url>/2025/05/13/T-Google/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.google.com/advanced_search">Advanced Search</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>LinkedIn</title>
     <url>/2025/05/14/T-LinkedIn/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.linkedin.com/feed/">LinkedIn</a></p>
@@ -318,29 +351,13 @@
       </categories>
   </entry>
   <entry>
-    <title>Advanced search operators list</title>
-    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></p>
+    <title>Let&#39;s Encrypt</title>
+    <url>/2025/05/28/T-Let-s-Encrypt/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://letsencrypt.org/">Let’s Encrypt</a></p>
 <br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索运算符列表</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>NVD</title>
-    <url>/2025/05/13/T-NVD/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://nvd.nist.gov/">NVD</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。</p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。</p>
 <br>
 
 
@@ -350,9 +367,41 @@
       </categories>
   </entry>
   <entry>
-    <title>Node.js</title>
-    <url>/2025/05/14/T-Node-js/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://nodejs.org/docs/latest/api/">Node.js v24.0.1 documentation</a></p>
+    <title>Linux man pages</title>
+    <url>/2025/05/10/T-Linux-man-pages/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://linux.die.net/man/">Linux man pages</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 节 用户命令（介绍）<br>第 2 节 系统调用（介绍）<br>第 3 节 库函数（介绍）<br>第 4 节 特殊文件（介绍）<br>第 5 节 文件格式（介绍）<br>第 6 节 游戏（介绍）<br>第 7 节 惯例与杂项（引言）<br>第 8 节 管理和特权命令（介绍）<br>第 L 节 数学库函数<br>第 N 节 tcl函数</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>LOLBAS</title>
+    <url>/2025/05/13/T-LOLBAS/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://lolbas-project.github.io/">LOLBAS</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>LOLBAS 项目的目标是记录可用于 Living Off The Land 技术的每个二进制文件、脚本和库。</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>PHP</title>
+    <url>/2025/05/14/T-PHP/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></p>
 <br>
 
 
@@ -384,155 +433,13 @@
       </categories>
   </entry>
   <entry>
-    <title>Linux man pages</title>
-    <url>/2025/05/10/T-Linux-man-pages/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://linux.die.net/man/">Linux man pages</a></p>
+    <title>NVD</title>
+    <url>/2025/05/13/T-NVD/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://nvd.nist.gov/">NVD</a></p>
 <br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 节 用户命令（介绍）<br>第 2 节 系统调用（介绍）<br>第 3 节 库函数（介绍）<br>第 4 节 特殊文件（介绍）<br>第 5 节 文件格式（介绍）<br>第 6 节 游戏（介绍）<br>第 7 节 惯例与杂项（引言）<br>第 8 节 管理和特权命令（介绍）<br>第 L 节 数学库函数<br>第 N 节 tcl函数</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>PHP</title>
-    <url>/2025/05/14/T-PHP/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></p>
-<br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网络杀伤链</title>
-    <url>/2077/07/07/#%E7%BD%91%E7%BB%9C%E6%9D%80%E4%BC%A4%E9%93%BE/</url>
-    <content><![CDATA[<h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><p>检查页面源代码</p>
-<p>Ping</p>
-<p><a href="https://cyphersun.github.io/2025/05/01/Gobuster/">Gobuster</a></p>
-<ul>
-<li>扫描 URI 目录和文件，DNS 子域，Web 服务器上的虚拟主机名，打开 Amazon S3 存储桶，Google Cloud 存储桶，TFTP 服务器</li>
-</ul>
-<br>
-
-
-<h2 id="武器化（Weaponization）"><a href="#武器化（Weaponization）" class="headerlink" title="武器化（Weaponization）"></a>武器化（Weaponization）</h2><br>
-
-
-<h2 id="投送（Delivery）"><a href="#投送（Delivery）" class="headerlink" title="投送（Delivery）"></a>投送（Delivery）</h2><br>
-
-
-<h2 id="利用（Exploitation）"><a href="#利用（Exploitation）" class="headerlink" title="利用（Exploitation）"></a>利用（Exploitation）</h2><br>
-
-
-<h2 id="安装（Installation）"><a href="#安装（Installation）" class="headerlink" title="安装（Installation）"></a>安装（Installation）</h2><br>
-
-
-<h2 id="命令与控制（Command-and-Control，C2）"><a href="#命令与控制（Command-and-Control，C2）" class="headerlink" title="命令与控制（Command and Control，C2）"></a>命令与控制（Command and Control，C2）</h2><br>
-
-
-<h2 id="行动目标（Actions-on-Objectives）"><a href="#行动目标（Actions-on-Objectives）" class="headerlink" title="行动目标（Actions on Objectives）"></a>行动目标（Actions on Objectives）</h2><br>
-]]></content>
-      <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>TLD</title>
-    <url>/2025/05/05/T-TLD/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>顶级域名列表</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Shodan</title>
-    <url>/2025/05/13/T-Shodan/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.shodan.io/">Shodan</a><br><a href="https://www.shodan.io/search/examples">Search Query Examples</a><br><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Shodan 是全球首个面向联网设备的搜索引擎。探索互联网智能如何助您做出更明智的决策。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Updog</title>
-    <url>/2025/05/11/T-Updog/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/sc0tfree/updog">Updog</a></p>
-<br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Updog 是 Python 的替代品 SimpleHTTPServer。它允许通过 HTTP&#x2F;S 上传和下载，可以设置临时 SSL 证书并使用 HTTP 基本身份验证。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Vim Cheat Sheet</title>
-    <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该项目旨在成为最易用的 Vim 指南之一。我们确保支持移动设备、桌面设备以及其他语言。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>VirusTotal</title>
-    <url>/2025/05/13/T-VirusTotal/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>分析可疑文件、域、IP 和 URL 以检测恶意软件和其他漏洞，并自动与安全社区共享。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Windows CMD commands</title>
-    <url>/2025/05/13/T-Windows-CMD-commands/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://ss64.com/nt/">Windows CMD commands</a><br><a href="https://learn.microsoft.com/zh-cn/">Microsoft Learn</a></p>
-<br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Windows CMD 命令的 A-Z 索引。</p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。</p>
 <br>
 
 
@@ -562,20 +469,227 @@
       </categories>
   </entry>
   <entry>
-    <title>X</title>
-    <url>/2025/05/14/T-X/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://x.com/">X</a></p>
+    <title>TLD</title>
+    <url>/2025/05/05/T-TLD/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD</a></p>
 <br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>我们正在建设世界上最值得信赖的公共城镇广场——我们为在法律范围内保护言论自由的承诺而感到自豪。</p>
-<p>除此之外，我们的目标是增加平台上不后悔的用户使用时间，并使其成为互联网上创作者分享内容和赚钱的最佳场所。</p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>顶级域名列表</p>
 <br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Vim Cheat Sheet</title>
+    <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该项目旨在成为最易用的 Vim 指南之一。我们确保支持移动设备、桌面设备以及其他语言。</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Node.js</title>
+    <url>/2025/05/14/T-Node-js/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://nodejs.org/docs/latest/api/">Node.js v24.0.1 documentation</a></p>
+<br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Shodan</title>
+    <url>/2025/05/13/T-Shodan/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.shodan.io/">Shodan</a><br><a href="https://www.shodan.io/search/examples">Search Query Examples</a><br><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Shodan 是全球首个面向联网设备的搜索引擎。探索互联网智能如何助您做出更明智的决策。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>VirusTotal</title>
+    <url>/2025/05/13/T-VirusTotal/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>分析可疑文件、域、IP 和 URL 以检测恶意软件和其他漏洞，并自动与安全社区共享。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Updog</title>
+    <url>/2025/05/11/T-Updog/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/sc0tfree/updog">Updog</a></p>
+<br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Updog 是 Python 的替代品 SimpleHTTPServer。它允许通过 HTTP&#x2F;S 上传和下载，可以设置临时 SSL 证书并使用 HTTP 基本身份验证。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Windows CMD commands</title>
+    <url>/2025/05/13/T-Windows-CMD-commands/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://ss64.com/nt/">Windows CMD commands</a><br><a href="https://learn.microsoft.com/zh-cn/">Microsoft Learn</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Windows CMD 命令的 A-Z 索引。</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Wireshark</title>
+    <url>/2025/06/01/T-Wireshark/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://www.wireshark.org/">Wireshark</a><br><a href="https://github.com/boundary/wireshark/tree/master">GitHub</a></p>
+<br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>全面的网络分析。Wireshark是一款功能强大的开源网络协议分析器，允许用户捕获并以交互方式浏览计算机网络上运行的流量，从而对数百种协议进行深入检查。</p>
+<p>永久开源且免费。作为一款开源工具，Wireshark 可免费使用和分发，其源代码可根据 GNU 通用公共许可证 (GPL) 访问。</p>
+<p>活跃社区的支持。Wireshark项目由一个充满活力的开发者和用户社区提供支持，他们为项目的持续开发和增强做出了贡献。</p>
+<br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="启动-Wireshark"><a href="#启动-Wireshark" class="headerlink" title="启动 Wireshark"></a>启动 Wireshark</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 蓝色鲨鱼按钮启动网络嗅探（捕获流量）</span></span><br><span class="line"><span class="comment"># 红色按钮将停止嗅探</span></span><br><span class="line"><span class="comment"># 绿色按钮重新启动嗅探过程</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="时间显示格式"><a href="#时间显示格式" class="headerlink" title="时间显示格式"></a>时间显示格式</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">View --&gt; Time Display Format --&gt; UTC Date and Time of Day...</span><br><span class="line"><span class="comment"># 使用UTC时间显示格式，快捷键 Ctrl + Alt + 7</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="着色规则"><a href="#着色规则" class="headerlink" title="着色规则"></a>着色规则</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">View --&gt; Colourise Packet List</span><br><span class="line"><span class="comment"># 着色激活/停用</span></span><br><span class="line"></span><br><span class="line">View --&gt; Coloring Rules</span><br><span class="line"><span class="comment"># 着色设置</span></span><br><span class="line"><span class="comment"># 永久规则（保存在首选项文件（配置文件）下，可用于下一个程序会话</span></span><br><span class="line"></span><br><span class="line">选中数据包 --&gt; View --&gt; Colorize Conversation --&gt; Color 1/2/3...</span><br><span class="line">右键 --&gt; Colorize Conversation --&gt; TCP/IPV4... --&gt; Color 1/2/3...</span><br><span class="line"><span class="comment"># 匹配选中着色，快捷键 Ctrl + 1/2/3...</span></span><br><span class="line"><span class="comment"># 临时规则（仅在程序会话期间可用）</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="查看文件详细信息"><a href="#查看文件详细信息" class="headerlink" title="查看文件详细信息"></a>查看文件详细信息</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Statistics --&gt; Capture File Properties</span><br><span class="line">点击 --&gt; 窗口左下角的 pcap 图标</span><br><span class="line"><span class="comment"># 调用文件详细信息（文件哈希值、捕获时间、捕获文件注释、接口和统计信息），快捷键 Ctrl + Alt + Shift + C</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="前往-查找数据包"><a href="#前往-查找数据包" class="headerlink" title="前往 &amp; 查找数据包"></a>前往 &amp; 查找数据包</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Go --&gt; Go to Packet</span><br><span class="line"><span class="comment"># 查找/调查特定数据包，快捷键 Ctrl + G</span></span><br><span class="line"></span><br><span class="line">Edit --&gt; Find Packet</span><br><span class="line"><span class="comment"># 通过数据包内容查找数据包，快捷键 Ctrl + F</span></span><br><span class="line"><span class="comment"># 四种类型的输入（显示过滤器、十六进制、字符串和正则表达式）</span></span><br><span class="line"><span class="comment"># 三个窗格（数据包列表、数据包详细信息和数据包字节）</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="标记-注释数据包"><a href="#标记-注释数据包" class="headerlink" title="标记 &amp; 注释数据包"></a>标记 &amp; 注释数据包</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Edit --&gt; Mark/Unmark Packet(s)</span><br><span class="line">右键 --&gt; Mark/Unmark Packet(s)</span><br><span class="line"><span class="comment"># 标记的数据包显示为黑色，快捷键 Ctrl + M</span></span><br><span class="line"></span><br><span class="line">Edit --&gt; Packet Comment</span><br><span class="line">右键 --&gt; Packet Comment</span><br><span class="line"><span class="comment"># 为数据包添加注释，快捷键 Ctrl + Alt + C</span></span><br><span class="line"><span class="comment"># 数据包所有注释也可在文件详细信息和专家信息中看到</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="导出数据包-文件"><a href="#导出数据包-文件" class="headerlink" title="导出数据包 &amp; 文件"></a>导出数据包 &amp; 文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">File --&gt; Export Specified Packets...</span><br><span class="line"><span class="comment"># 根据不同的范围，从文件中分离出特定的数据包</span></span><br><span class="line"></span><br><span class="line">File --&gt; Export Objects --&gt; HTTP/SMB...</span><br><span class="line"><span class="comment"># 提取通过网络传输的文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="合并-PCAP-文件"><a href="#合并-PCAP-文件" class="headerlink" title="合并 PCAP 文件"></a>合并 PCAP 文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">File --&gt; Merge</span><br><span class="line"><span class="comment"># 两个pcap文件合并为一个文件</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="专家信息"><a href="#专家信息" class="headerlink" title="专家信息"></a>专家信息</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Analyse --&gt; Expert Information</span><br><span class="line">点击 --&gt; 左下角的分析图标</span><br><span class="line"><span class="comment"># 两个pcap文件合并为一个文件</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>严重程度</th>
+<th>颜色</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>聊天 (Chat)</td>
+<td>蓝色</td>
+<td>有关通常工作流程的信息。</td>
+</tr>
+<tr>
+<td>笔记 (Note)</td>
+<td>青色</td>
+<td>值得注意的事件，例如应用程序错误代码。</td>
+</tr>
+<tr>
+<td>警告 (Warn)</td>
+<td>黄色</td>
+<td>警告，例如不寻常的错误代码或问题陈述。</td>
+</tr>
+<tr>
+<td>错误 (Error)</td>
+<td>红色</td>
+<td>诸如数据包格式错误之类的问题。</td>
+</tr>
+<tr>
+<td>注释 (Comment)</td>
+<td>绿色</td>
+<td>数据包注释检测。</td>
+</tr>
+</tbody></table>
+<br>
+
+<table>
+<thead>
+<tr>
+<th>组</th>
+<th>信息</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>校验和 (Checksum)</td>
+<td>校验和错误。</td>
+</tr>
+<tr>
+<td>评论 (Comment)</td>
+<td>数据包注释检测。</td>
+</tr>
+<tr>
+<td>已弃用 (Deprecated)</td>
+<td>弃用协议用法。</td>
+</tr>
+<tr>
+<td>格式错误 (Malformed)</td>
+<td>畸形数据包检测。</td>
+</tr>
+</tbody></table>
+<h3 id="字段-对话-准备过滤器"><a href="#字段-对话-准备过滤器" class="headerlink" title="字段 &amp; 对话 &amp; 准备过滤器"></a>字段 &amp; 对话 &amp; 准备过滤器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">点击要过滤的字段 --&gt; 右键 --&gt; Apply as Filter --&gt; Selected</span><br><span class="line"><span class="comment"># 过滤流量的基本方法  </span></span><br><span class="line"></span><br><span class="line">Analyse --&gt; Conversation Filter --&gt; TCP</span><br><span class="line">点击要过滤的字段 --&gt; 右键 --&gt; Conversation Filter --&gt; TCP</span><br><span class="line"><span class="comment"># 调查所有关联的数据包</span></span><br><span class="line"></span><br><span class="line">点击要过滤的字段 --&gt; 右键 --&gt; Prepare as Filter --&gt; Selected</span><br><span class="line">点击要过滤的字段 --&gt; 右键 --&gt; Prepare as Filter --&gt; ...and Selected/...or Selected...</span><br><span class="line"><span class="comment"># 将所需的查询添加到窗格，并等待执行命令（输入）  </span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="用作列-关注流"><a href="#用作列-关注流" class="headerlink" title="用作列 &amp; 关注流"></a>用作列 &amp; 关注流</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">数据包列表窗格 --&gt; Analyse --&gt; Apply as Column</span><br><span class="line">数据包列表窗格 --&gt; 右键 --&gt; Apply as Column</span><br><span class="line"><span class="comment"># 添加某个值并将其应用为列，快捷键 Ctrl + Shift + I</span></span><br><span class="line"></span><br><span class="line">点击要关注的数据包 --&gt; Analyse --&gt; Follow --&gt; TCP Stream/UDP Stream...</span><br><span class="line">点击要关注的数据包 --&gt; 右键 --&gt; Follow --&gt; TCP Stream/UDP Stream...</span><br><span class="line"><span class="comment"># 添加某个值并将其应用为列，快捷键 Ctrl + Shift + I</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+<br>]]></content>
+      <categories>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -597,6 +711,84 @@
 
 
 ]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>tcpdump</title>
+    <url>/2025/06/02/T-tcpdump/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="tcpdump-官网"><a href="#tcpdump-官网" class="headerlink" title="tcpdump 官网"></a><a href="https://www.tcpdump.org/index.html">tcpdump 官网</a></h3><h3 id="tcpdump-GitHub"><a href="#tcpdump-GitHub" class="headerlink" title="tcpdump GitHub"></a><a href="https://github.com/the-tcpdump-group/tcpdump">tcpdump GitHub</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>tcpdump（一个强大的命令行数据包分析器）和 libpcap（一个用于网络流量捕获的可移植 C&#x2F;C++ 库）。</p>
+<br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tcpdump -i [INTERFACE]</td>
+<td>捕获特定网络接口上的数据包</td>
+</tr>
+<tr>
+<td>tcpdump -w [FILE]</td>
+<td>将捕获的数据包写入文件</td>
+</tr>
+<tr>
+<td>tcpdump -r [FILE]</td>
+<td>从文件读取捕获的数据包</td>
+</tr>
+<tr>
+<td>tcpdump -c [COUNT]</td>
+<td>捕获特定数量的数据包</td>
+</tr>
+<tr>
+<td>tcpdump -n</td>
+<td>不解析 IP 地址</td>
+</tr>
+<tr>
+<td>tcpdump -nn</td>
+<td>不解析 IP 地址，也不解析协议号</td>
+</tr>
+<tr>
+<td>tcpdump -v</td>
+<td>详细显示；详细程度可以通过 -vv 和 -vvv</td>
+</tr>
+</tbody></table>
+<br>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tcpdump -i [INTERFACE]</span><br><span class="line"><span class="comment"># eth0, wlo1, any</span></span><br><span class="line"></span><br><span class="line">tcpdump -w [FILE]</span><br><span class="line"><span class="comment"># .pcap文件</span></span><br><span class="line"></span><br><span class="line">tcpdump -r [FILE]</span><br><span class="line"><span class="comment"># .pcap文件</span></span><br><span class="line"></span><br><span class="line">tcpdump -c [COUNT]</span><br><span class="line"><span class="comment"># 1/2/3...</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tcpdump -i eth0 -c 50 -v</span><br><span class="line"><span class="comment"># 通过监听接口 eth0（有线以太网）捕获并显示 50 个数据包，以详细方式显示。</span></span><br><span class="line">tcpdump -i wlo1 -w data.pcap</span><br><span class="line"><span class="comment"># 通过监听接口 wlo1（WiFi 接口）捕获数据包，并将数据包写入 data.pcap。它会一直运行，直到按下 Ctrl + C 中断捕获。</span></span><br><span class="line">tcpdump -i any -nn</span><br><span class="line"><span class="comment"># 捕获所有接口上的数据包并将其显示在屏幕上，不转换域名，不解析协议。</span></span><br></pre></td></tr></table></figure>
+
+<br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>X</title>
+    <url>/2025/05/14/T-X/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://x.com/">X</a></p>
+<br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>我们正在建设世界上最值得信赖的公共城镇广场——我们为在法律范围内保护言论自由的承诺而感到自豪。</p>
+<p>除此之外，我们的目标是增加平台上不后悔的用户使用时间，并使其成为互联网上创作者分享内容和赚钱的最佳场所。</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
