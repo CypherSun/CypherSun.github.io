@@ -136,16 +136,27 @@
       </categories>
   </entry>
   <entry>
+    <title>Advanced search operators list</title>
+    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>CVE</title>
     <url>/2025/05/13/T-CVE/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过278,000 条CVE 记录可通过上面的下载或关键字搜索访问。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -153,94 +164,16 @@
   <entry>
     <title>Apache</title>
     <url>/2025/05/14/T-Apache/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Apache-HTTP-Server-Documentation"><a href="#Apache-HTTP-Server-Documentation" class="headerlink" title="Apache HTTP Server Documentation"></a><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></h3><br>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a><a href="https://httpd.apache.org/">Apache</a></h3><h3 id="Apache-HTTP-Server-Documentation"><a href="#Apache-HTTP-Server-Documentation" class="headerlink" title="Apache HTTP Server Documentation"></a><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
-
-
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Apache HTTP 服务器项目致力于开发和维护一个适用于现代操作系统（包括 UNIX 和 Windows）的开源 HTTP 服务器。该项目的目标是提供一个安全、高效且可扩展的服务器，并提供与当前 HTTP 标准同步的 HTTP 服务。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Chrome Root Store</title>
-    <url>/2025/06/03/T-Chrome-Root-Store/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Chrome-Root-Store"><a href="#Chrome-Root-Store" class="headerlink" title="Chrome Root Store"></a><a href="https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/root_store.md">Chrome Root Store</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>内容<br>可信根<br>约束根<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Advanced search operators list</title>
-    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索运算符列表</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Censys</title>
-    <url>/2025/05/13/T-Censys/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Censys-官网"><a href="#Censys-官网" class="headerlink" title="Censys 官网"></a><a href="https://search.censys.io/">Censys 官网</a></h3><h3 id="Introductory-Use-Cases"><a href="#Introductory-Use-Cases" class="headerlink" title="Introductory Use Cases"></a><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Censys Legacy Search 为用户提供最全面、最准确、最新的互联网地图，以便进行大规模的主动和被动安全分析。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Bing</title>
-    <url>/2025/05/13/T-Bing/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-options"><a href="#Advanced-search-options" class="headerlink" title="Advanced search options"></a><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Advanced search options</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索选项<br>更快速地找到所需内容。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Crontab Generator</title>
-    <url>/2025/05/11/T-Crontab-Generator/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Crontab-Generator"><a href="#Crontab-Generator" class="headerlink" title="Crontab Generator"></a><a href="https://crontab-generator.org/">Crontab Generator</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>如果您想在指定的时间和日期定期执行某项任务（例如发送电子邮件、备份数据库、进行定期维护等），有两种方法可以设置计划任务：</p>
-<p>方法 1：使用我们的在线 cron 作业服务，它将为您省去很多麻烦。<br>方法 2：使用 Unix&#x2F;Linux 系统中可用的 Cron。<br>如果您选择方法 2，以下生成器可以帮助您生成一个 crontab 语法，您可以将其复制并粘贴到您的 crontab 文件中（您可以使用命令打开该文件crontab –e）。在生成的 crontab 语法下方，还会显示一个运行时间列表。预测功能将帮助您确保设置正确的时间和日期。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-]]></content>
-      <categories>
-        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -254,19 +187,62 @@
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
         <category>工具</category>
       </categories>
   </entry>
   <entry>
+    <title>Bing</title>
+    <url>/2025/05/13/T-Bing/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Bing"><a href="#Bing" class="headerlink" title="Bing"></a><a href="https://www.bing.com/">Bing</a></h3><h3 id="Advanced-search-options"><a href="#Advanced-search-options" class="headerlink" title="Advanced search options"></a><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Advanced search options</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Censys</title>
+    <url>/2025/05/13/T-Censys/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Censys"><a href="#Censys" class="headerlink" title="Censys"></a><a href="https://search.censys.io/">Censys</a></h3><h3 id="Introductory-Use-Cases"><a href="#Introductory-Use-Cases" class="headerlink" title="Introductory Use Cases"></a><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Chrome Root Store</title>
+    <url>/2025/06/03/T-Chrome-Root-Store/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Chrome-Root-Store"><a href="#Chrome-Root-Store" class="headerlink" title="Chrome Root Store"></a><a href="https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/root_store.md">Chrome Root Store</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>可信根<br>约束根<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>DuckDuckGo</title>
     <url>/2025/05/13/T-DuckDuckGo/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a><br><br></p>
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>DuckDuckGo 支持您可以用来微调查询的搜索语法</p>
-<br>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="DuckDuckGo"><a href="#DuckDuckGo" class="headerlink" title="DuckDuckGo"></a><a href="https://duckduckgo.com/">DuckDuckGo</a></h3><h3 id="Advanced-Search-Syntax"><a href="#Advanced-Search-Syntax" class="headerlink" title="Advanced Search Syntax"></a><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a></h3><br>
 
 
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>改用 DuckDuckGo，私密且免费！<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 ]]></content>
       <categories>
@@ -279,12 +255,11 @@
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Exploit-Database"><a href="#Exploit-Database" class="headerlink" title="Exploit Database"></a><a href="https://www.exploit-db.com/">Exploit Database</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>漏洞数据库由 OffSec 维护， OffSec是一家信息安全培训公司，提供各种信息安全认证以及高端渗透测试服务。漏洞数据库是一个非营利项目，由 OffSec 提供公共服务。</p>
-<p>漏洞数据库 (Exploit Database) 是一个符合 CVE 标准的公共漏洞及相应易受攻击软件的存档，专为渗透测试人员和漏洞研究人员开发。我们的目标是提供最全面的漏洞收集服务，这些漏洞来自直接提交、邮件列表以及其他公共来源，并将其呈现在一个免费且易于浏览的数据库中。漏洞数据库是一个漏洞利用和概念验证 (POC) 的存储库，而非公告，因此对于需要立即获取可操作数据的人员来说，它是一个宝贵的资源。</p>
-<br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -295,11 +270,11 @@
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a><a href="https://github.com/">GitHub</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>GitHub 助力开发者和企业安全地协作、创新和构建。它凭借 AI 驱动的工具、内置的安全测试和无缝集成，为团队从首次提交到企业开发的全过程提供支持。</p>
-<br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -310,19 +285,48 @@
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Facebook"><a href="#Facebook" class="headerlink" title="Facebook"></a><a href="https://www.facebook.com/">Facebook</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Facebook 业务公共主页是商家、品牌、名人、公益事业和组织触达受众的一种免费方式。Facebook 个人主页可以设为私密，而公共主页却是公开的。Google 可能会收录您的公共主页，以便用户能够轻松地找到您。</p>
-<br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
         <category>网站</category>
       </categories>
   </entry>
   <entry>
+    <title>Crontab Generator</title>
+    <url>/2025/05/11/T-Crontab-Generator/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Crontab-Generator"><a href="#Crontab-Generator" class="headerlink" title="Crontab Generator"></a><a href="https://crontab-generator.org/">Crontab Generator</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>生成器可以帮助您生成一个 crontab 语法，您可以将其复制并粘贴到您的 crontab 文件中（您可以使用命令打开该文件crontab –e）。在生成的 crontab 语法下方，还会显示一个运行时间列表。预测功能将帮助您确保设置正确的时间和日期。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Gobuster</title>
+    <url>/2025/05/01/T-Gobuster/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Gobuster"><a href="#Gobuster" class="headerlink" title="Gobuster"></a><a href="https://github.com/OJ/gobuster">Gobuster</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Gobuster 是一种用于暴力破解的工具：</p>
+<p>网站中的 URI（目录和文件）。<br>DNS 子域（支持通配符）。<br>目标 Web 服务器上的虚拟主机名。<br>打开 Amazon S3 存储桶<br>打开 Google Cloud 存储桶<br>TFTP 服务器<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gobuster -u http://example.com -w wordlist.txt <span class="built_in">dir</span></span><br><span class="line"><span class="comment"># -u 网址</span></span><br><span class="line"><span class="comment"># -w 字典</span></span><br></pre></td></tr></table></figure>
+
+<br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>GnuPG</title>
     <url>/2025/06/03/T-GnuPG/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="GnuPG"><a href="#GnuPG" class="headerlink" title="GnuPG"></a><a href="https://gnupg.org/">GnuPG</a></h3><h3 id="GnuPG-手册页"><a href="#GnuPG-手册页" class="headerlink" title="GnuPG 手册页"></a><a href="https://www.gnupg.org/gph/de/manual/r1023.html">GnuPG 手册页</a></h3><br>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="GnuPG"><a href="#GnuPG" class="headerlink" title="GnuPG"></a><a href="https://gnupg.org/">GnuPG</a></h3><h3 id="gpg-manpage"><a href="#gpg-manpage" class="headerlink" title="gpg manpage"></a><a href="https://www.gnupg.org/gph/de/manual/r1023.html">gpg manpage</a></h3><br>
 
 
 <h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>GnuPG 是RFC4880 定义的 OpenPGP 标准（也称为PGP）的完整且免费的实现。GnuPG 允许您加密和签名数据及通信；它具有多功能密钥管理系统，以及用于各种公钥目录的访问模块。GnuPG（也称为GPG）是一个命令行工具，具有易于与其他应用程序集成的功能。它提供了丰富的 前端应用程序和库。GnuPG 还支持 S&#x2F;MIME 和安全 Shell (ssh)。<br><br></p>
@@ -335,37 +339,14 @@
       </categories>
   </entry>
   <entry>
-    <title>Gobuster</title>
-    <url>/2025/05/01/T-Gobuster/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Gobuster"><a href="#Gobuster" class="headerlink" title="Gobuster"></a><a href="https://github.com/OJ/gobuster">Gobuster</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Gobuster 是一种用于暴力破解的工具：</p>
-<p>网站中的 URI（目录和文件）。<br>DNS 子域（支持通配符）。<br>目标 Web 服务器上的虚拟主机名。<br>打开 Amazon S3 存储桶<br>打开 Google Cloud 存储桶<br>TFTP 服务器</p>
-<br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gobuster -u http://example.com -w wordlist.txt <span class="built_in">dir</span></span><br><span class="line"><span class="comment"># -u 网址</span></span><br><span class="line"><span class="comment"># -w 字典</span></span><br></pre></td></tr></table></figure>
-
-<br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Google</title>
     <url>/2025/05/13/T-Google/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-Search"><a href="#Advanced-Search" class="headerlink" title="Advanced Search"></a><a href="https://www.google.com/advanced_search">Advanced Search</a></h3><br>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Google"><a href="#Google" class="headerlink" title="Google"></a><a href="https://www.google.com/">Google</a></h3><h3 id="Advanced-Search"><a href="#Advanced-Search" class="headerlink" title="Advanced Search"></a><a href="https://www.google.com/advanced_search">Advanced Search</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -377,10 +358,26 @@
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
         <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hashes.com</title>
+    <url>/2025/06/04/T-Hashes-com/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Hashes-com"><a href="#Hashes-com" class="headerlink" title="Hashes.com"></a><a href="https://hashes.com/en/decrypt/hash">Hashes.com</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>解密 MD5、SHA1、MySQL、NTLM、SHA256、MD5 电子邮件、SHA256 电子邮件、SHA512 哈希<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -399,36 +396,41 @@
       </categories>
   </entry>
   <entry>
-    <title>Hashes.com</title>
-    <url>/2025/06/04/T-Hashes-com/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Hashes-com"><a href="#Hashes-com" class="headerlink" title="Hashes.com"></a><a href="https://hashes.com/en/decrypt/hash">Hashes.com</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Hashes.com 是一个哈希查找服务。您可以输入 MD5、SHA-1、Vbulletin、Invision Power Board、MyBB、Bcrypt、Wordpress、SHA-256、SHA-512、MYSQL5 等哈希值，然后在我们已破解的哈希数据库中搜索其对应的明文（“找到”）。</p>
-<p>这就像拥有自己的大规模哈希破解集群一样 - 但可以立即获得结果！</p>
-<p>我们从 2007 年 8 月开始构建我们的哈希数据库。</p>
-<p>我们不会实时破解您的哈希值 - 我们只是缓存了多年来许多破解爱好者的辛勤劳动成果。</p>
-<p>MD5 消息摘要算法是一种广泛使用的哈希函数，其哈希值为 128 位。尽管 MD5 最初设计为加密哈希函数，但已发现其存在大量漏洞。它仍然可以用作校验和来验证数据完整性，但只能防止意外损坏。它仍然适用于其他非加密用途，例如用于确定分区数据库中特定键的分区。MD5 的弱点已被实际利用，其中最臭名昭著的是 2012 年的 Flame 恶意软件。卡内基梅隆大学软件工程研究所认为 MD5 本质上已被破解，不适合进一步使用。MD5 解密。</p>
-<p>在密码学中，SHA-1（安全散列算法 1）是一种加密散列函数，它接受输入并生成一个 160 位（20 字节）的散列值，称为消息摘要——通常以 40 位十六进制数的形式呈现。它由美国国家安全局 (NSA) 设计，是美国联邦信息处理标准。自 2005 年以来，SHA-1 一直被认为无法抵御资金雄厚的对手的攻击。自 2010 年以来，许多组织建议用 SHA-2 或 SHA-3 取代它。微软、谷歌、苹果和 Mozilla 均已宣布，其各自的浏览器将在 2017 年之前停止接受 SHA-1 SSL 证书。SHA1 解密。</p>
-<p>MySQL5 哈希算法对用户密码实现了双二进制 SHA-1 哈希算法。MySQL 解密。</p>
-<p>NT（新技术）局域网管理器 (NTLM) 是一套微软安全协议，为用户提供身份验证、完整性和保密性。NTLM 是微软老产品——局域网管理器 (LANMAN) 中身份验证协议的后继者。NTLM 协议套件由安全支持提供程序实现，该程序将局域网管理器身份验证协议、NTLMv1、NTLMv2 和 NTLM2 会话协议整合在一个包中。这些协议是否可用或能否在系统上使用由组策略设置控制，不同版本的 Windows 对此设置有不同的默认设置。NTLM 密码被认为是弱密码，因为它们很容易被现代硬件暴力破解。NTLM 解密。</p>
-<p>SHA-2（安全散列算法 2）是由美国国家安全局 (NSA) 设计的一组加密散列函数。它们基于 Merkle-Damgård 结构构建，该结构基于一个单向压缩函数，而单向压缩函数本身则基于一个（机密的）专用分组密码算法的 Davies-Meyer 结构构建。SHA-2 与其前身 SHA-1 相比有显著变化。SHA-2 系列包含六个散列函数，其摘要（散列值）分别为 224、256、384 或 512 位：SHA-224、SHA-256、SHA-384、SHA-512、SHA-512&#x2F;224、SHA-512&#x2F;256。SHA256 解密。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
     <title>LOLBAS</title>
     <url>/2025/05/13/T-LOLBAS/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LOLBAS"><a href="#LOLBAS" class="headerlink" title="LOLBAS"></a><a href="https://lolbas-project.github.io/">LOLBAS</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>LOLBAS 项目的目标是记录可用于 Living Off The Land 技术的每个二进制文件、脚本和库。<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Let&#39;s Encrypt</title>
+    <url>/2025/05/28/T-Let-s-Encrypt/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Linux man pages</title>
+    <url>/2025/05/10/T-Linux-man-pages/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Linux-man-pages"><a href="#Linux-man-pages" class="headerlink" title="Linux man pages"></a><a href="https://linux.die.net/man/">Linux man pages</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 部分<br>用户命令（介绍）<br>第 2 节<br>系统调用（介绍）<br>第 3 节<br>库函数（介绍）<br>第 4 节<br>特殊文件（介绍）<br>第 5 节<br>文件格式（介绍）<br>第 6 节<br>游戏（介绍）<br>第 7 节<br>惯例与杂项（引言）<br>第 8 节<br>管理和特权命令（介绍）<br>L 区<br>数学库函数<br>第N部分<br>tcl函数<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -440,7 +442,8 @@
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>欢迎来到 LinkedIn，全球最大的职业网络，在全球 200 多个国家和地区拥有超过 10 亿会员。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -451,8 +454,9 @@
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Mozilla-Included-CA-Certificate-List"><a href="#Mozilla-Included-CA-Certificate-List" class="headerlink" title="Mozilla Included CA Certificate List"></a><a href="https://wiki.mozilla.org/CA/Included_Certificates">Mozilla Included CA Certificate List</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Mozilla CA 证书程序包含的根证书列表存储在 Mozilla 源代码管理系统中 名为certdata.txt的文件中。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Mozilla 包含的 CA 证书列表<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -470,30 +474,29 @@
       </categories>
   </entry>
   <entry>
-    <title>Linux man pages</title>
-    <url>/2025/05/10/T-Linux-man-pages/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Linux-man-pages"><a href="#Linux-man-pages" class="headerlink" title="Linux man pages"></a><a href="https://linux.die.net/man/">Linux man pages</a></h3><br>
+    <title>Node.js</title>
+    <url>/2025/05/14/T-Node-js/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a><a href="https://nodejs.org/en">Node.js</a></h3><h3 id="Node-js-v24-0-1-documentation"><a href="#Node-js-v24-0-1-documentation" class="headerlink" title="Node.js v24.0.1 documentation"></a><a href="https://nodejs.org/docs/latest/api/">Node.js v24.0.1 documentation</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 节 用户命令（介绍）<br>第 2 节 系统调用（介绍）<br>第 3 节 库函数（介绍）<br>第 4 节 特殊文件（介绍）<br>第 5 节 文件格式（介绍）<br>第 6 节 游戏（介绍）<br>第 7 节 惯例与杂项（引言）<br>第 8 节 管理和特权命令（介绍）<br>第 L 节 数学库函数<br>第 N 节 tcl函数<br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Node.js® 是一个免费、开源、跨平台的 JavaScript 运行时环境，可让开发人员创建服务器、Web 应用程序、命令行工具和脚本。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>网站</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
-    <title>Let&#39;s Encrypt</title>
-    <url>/2025/05/28/T-Let-s-Encrypt/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
+    <title>PHP</title>
+    <url>/2025/05/14/T-PHP/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a><a href="https://www.php.net/">PHP</a></h3><h3 id="PHP-Manual"><a href="#PHP-Manual" class="headerlink" title="PHP Manual"></a><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。</p>
-<br>
-
-
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>PHP 是一种流行的通用脚本语言，尤其适合 Web 开发。<br>它快速、灵活、实用，能够支持从博客到全球热门网站的所有内容。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>网站</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -503,9 +506,7 @@
 
 
 <h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Nmap（“网络映射器”）是一款 用于网络发现和安全审计的免费开源实用程序。许多系统和网络管理员还发现它对于网络清单、管理服务升级计划以及监控主机或服务正常运行时间等任务非常有用。Nmap 以新颖的方式使用原始 IP 数据包来确定网络上可用的主机、这些主机提供的服务（应用程序名称和版本）、它们运行的​​操作系统（及其版本）、正在使用的数据包过滤器&#x2F;防火墙类型以及其他数十种特性。它旨在快速扫描大型网络，但对单个主机也能正常工作。Nmap 可在所有主流计算机操作系统上运行，并且官方二进制软件包适用于 Linux、Windows 和 Mac OS X。除了经典的命令行 Nmap 可执行文件外，Nmap 套件还包含一个高级 GUI 和结果查看器 ( Zenmap )、一个灵活的数据传输、重定向和调试工具 ( Ncat )、一个用于比较扫描结果的实用程序 ( Ndiff ) 以及一个数据包生成和响应分析工具 ( Nping )。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><table>
 <thead>
 <tr>
@@ -619,38 +620,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Node.js</title>
-    <url>/2025/05/14/T-Node-js/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://nodejs.org/docs/latest/api/">Node.js v24.0.1 documentation</a><br><br></p>
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>PHP</title>
-    <url>/2025/05/14/T-PHP/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="PHP-Manual"><a href="#PHP-Manual" class="headerlink" title="PHP Manual"></a><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Ports 1 - 1024</title>
     <url>/2025/05/02/T-Ports%201-1024/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Ports-1-1024"><a href="#Ports-1-1024" class="headerlink" title="Ports 1 - 1024"></a><a href="https://www.vmaxx.net/techinfo/ports.htm">Ports 1 - 1024</a></h3><br>
@@ -671,34 +640,13 @@
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="RsaCtfTool"><a href="#RsaCtfTool" class="headerlink" title="RsaCtfTool"></a><a href="https://github.com/RsaCtfTool/RsaCtfTool">RsaCtfTool</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>此工具旨在解密弱公钥数据并尝试恢复相应的私钥。此外，该工具还提供全面的攻击选项，使用户能够应用各种策略来破解加密。RSA 安全性的核心依赖于整数分解问题的复杂性。该项目通过结合多种整数分解算法，有效地增强了整体解密能力，使其成为一项宝贵的资源。请注意，此工具主要用于教育目的。请务必控制您的期望，因为并非所有密钥都能在合理的时间内被破解。加密算法的复杂性可能带来重大挑战。需要强调的是，该工具仅支持 RSA 教科书规定的半素数复合模数，而非复合多素数。此约束嵌入在 pycrypto 库的上游（参见 TODO）。尽管存在此限制，但该工具仍然提供了一组强大的功能，可用于攻击具有半素数复合模数的 RSA 密钥。</p>
-<p>对于高级整数分解工具，请使用msieve、yafu或cado-nfs。</p>
-<p>此工具仅供教学使用。参加 CTF 比赛的同学，请先完成以下事项：</p>
-<p>学习 RSA 数学的基础知识并了解数论、模运算、整数分解和算术基本定理。<br>阅读此存储库中的代码以了解其功能和工作原理，并通过发送拉取请求提出改进建议。<br>避免在不了解底层数学的情况下复制粘贴并运行该工具，因为了解数学比了解如何运行该工具更有价值。<br>我们希望此工具能够加深您对 RSA 加密的理解，并成为探索整数分解复杂性的宝贵资源。请负责任地使用它，并遵守适用的法律法规。<br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>此工具旨在解密弱公钥数据并尝试恢复相应的私钥。此外，该工具还提供全面的攻击选项，使用户能够应用各种策略来破解加密。RSA 安全性的核心依赖于整数分解问题的复杂性。该项目通过结合多种整数分解算法，有效地增强了整体解密能力，使其成为一项宝贵的资源。请注意，此工具主要用于教育目的。请务必控制您的期望，因为并非所有密钥都能在合理的时间内被破解。加密算法的复杂性可能带来重大挑战。需要强调的是，该工具仅支持 RSA 教科书规定的半素数复合模数，而非复合多素数。此约束嵌入在 pycrypto 库的上游（参见 TODO）。尽管存在此限制，但该工具仍然提供了一组强大的功能，可用于攻击具有半素数复合模数的 RSA 密钥。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Shodan</title>
-    <url>/2025/05/13/T-Shodan/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Shodan"><a href="#Shodan" class="headerlink" title="Shodan"></a><a href="https://www.shodan.io/">Shodan</a></h3><h3 id="Search-Query-Examples"><a href="#Search-Query-Examples" class="headerlink" title="Search Query Examples"></a><a href="https://www.shodan.io/search/examples">Search Query Examples</a></h3><h3 id="Discover-Trends-on-the-Internet"><a href="#Discover-Trends-on-the-Internet" class="headerlink" title="Discover Trends on the Internet"></a><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>互联网智能企业平台。<br>完全访问 Shodan 数据和基础设施。为您的组织提供有关整个互联网的实时信息。</p>
-<p>Shodan 平台不仅能帮助您监控自身网络，还能监控整个互联网。它可以检测云端数据泄露、钓鱼网站、数据库被入侵等情况。企业数据许可证为您提供监控互联网上所有连接设备的工具。</p>
-<p>利用从 Shodan 数据流中获得的洞察，增强您的产品，并利用我们在互联网爬虫方面的专业知识来收集您所需的信息。企业数据许可证授予您无需署名即可进行商业使用的权利。</p>
-<p>使用 Shodan 平台，了解互联网上哪些产品最受欢迎，以及市场如何随时间变化。哪些地区拥有最多的家庭自动化系统？最新款智能电视有多受欢迎？购买企业数据许可证，了解现代互联世界。</p>
-<p>你上次看到冰箱买电脑是什么时候？使用 Shodan 检测购买行为是否来自物联网设备、被入侵的数据库、VPN、Tor 或任何类型的异常设备。</p>
-<p>抢先体验 Shodan 平台的所有最新功能，包括实验数据集。企业数据许可证助您领先一步，掌控互联网情报。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -718,32 +666,14 @@
       </categories>
   </entry>
   <entry>
-    <title>TLD</title>
-    <url>/2025/05/05/T-TLD/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="TLD"><a href="#TLD" class="headerlink" title="TLD"></a><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD</a></h3><br>
+    <title>Shodan</title>
+    <url>/2025/05/13/T-Shodan/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Shodan"><a href="#Shodan" class="headerlink" title="Shodan"></a><a href="https://www.shodan.io/">Shodan</a></h3><h3 id="Search-Query-Examples"><a href="#Search-Query-Examples" class="headerlink" title="Search Query Examples"></a><a href="https://www.shodan.io/search/examples">Search Query Examples</a></h3><h3 id="Discover-Trends-on-the-Internet"><a href="#Discover-Trends-on-the-Internet" class="headerlink" title="Discover Trends on the Internet"></a><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>我们负责协调一些关键要素，确保互联网平稳运行。虽然互联网以其无中心协调的全球网络而闻名，但互联网的一些关键部分在技术上需要全球协调，而我们承担着这一协调角色。</p>
-<p>具体来说，我们分配并维护用于驱动互联网的技术标准（“协议”）的唯一代码和编号系统。</p>
-<p>我们的各项活动大致可分为三类：</p>
-<p>DNS 根、.int 和 .arpa 域的域名<br>管理以及 IDN 实践资源。</p>
-<p>号码资源<br>协调全球 IP 和 AS 号码池，主要将其提供给区域互联网注册机构 (RIR)。</p>
-<p>协议分配<br>互联网协议的编号系统与标准机构联合管理。</p>
-<p>我们是互联网历史最悠久的机构之一，IANA 的职能可追溯至 20 世纪 70 年代。如今，这些服务由公共技术标识符 ( PTI) 提供，该组织专门为向社群提供 IANA 职能。公共技术标识符 (PTI) 是互联网名称与数字地址分配机构(ICANN)的附属机构，ICANN 是由互联网社群设立的国际非营利组织，旨在协调我们的职责范围。<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Shodan 是全球首个面向联网设备的搜索引擎。探索互联网智能如何助您做出更明智的决策。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Vim Cheat Sheet</title>
-    <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Vim-Cheat-Sheet"><a href="#Vim-Cheat-Sheet" class="headerlink" title="Vim Cheat Sheet"></a><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该项目旨在成为最易用的 Vim 指南之一。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -754,13 +684,28 @@
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Updog"><a href="#Updog" class="headerlink" title="Updog"></a><a href="https://github.com/sc0tfree/updog">Updog</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Updog 是 Python 的替代品 SimpleHTTPServer。它允许通过 HTTP&#x2F;S 上传和下载，可以设置临时 SSL 证书并使用 HTTP 基本身份验证。<br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Updog 是 Python 的替代品SimpleHTTPServer。它允许通过 HTTP&#x2F;S 上传和下载，可以设置临时 SSL 证书并使用 HTTP 基本身份验证。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>TLD</title>
+    <url>/2025/05/05/T-TLD/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="TLD"><a href="#TLD" class="headerlink" title="TLD"></a><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -782,7 +727,7 @@
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Windows-CMD-commands"><a href="#Windows-CMD-commands" class="headerlink" title="Windows CMD commands"></a><a href="https://ss64.com/nt/">Windows CMD commands</a></h3><h3 id="Microsoft-Learn"><a href="#Microsoft-Learn" class="headerlink" title="Microsoft Learn"></a><a href="https://learn.microsoft.com/zh-cn/">Microsoft Learn</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Windows CMD 命令的 AZ 索引。<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Windows CMD命令的 AZ 索引 。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -795,8 +740,7 @@
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Wireshark"><a href="#Wireshark" class="headerlink" title="Wireshark"></a><a href="https://www.wireshark.org/">Wireshark</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>全球领先的网络协议分析仪<br>Wireshark 让您深入了解您的网络流量 - 免费且开源。</p>
-<p>全面的网络分析。Wireshark 是一款功能强大的开源网络协议分析器，允许用户捕获并以交互方式浏览计算机网络上运行的流量，从而对数百种协议进行深入检查。<br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>全面的网络分析。Wireshark是一款功能强大的开源网络协议分析器，允许用户捕获并以交互方式浏览计算机网络上运行的流量，从而对数百种协议进行深入检查。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="启动-Wireshark"><a href="#启动-Wireshark" class="headerlink" title="启动 Wireshark"></a>启动 Wireshark</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 蓝色鲨鱼按钮启动网络嗅探（捕获流量）</span></span><br><span class="line"><span class="comment"># 红色按钮将停止嗅探</span></span><br><span class="line"><span class="comment"># 绿色按钮重新启动嗅探过程</span></span><br></pre></td></tr></table></figure>
 
@@ -885,6 +829,18 @@
       </categories>
   </entry>
   <entry>
+    <title>Vim Cheat Sheet</title>
+    <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Vim-Cheat-Sheet"><a href="#Vim-Cheat-Sheet" class="headerlink" title="Vim Cheat Sheet"></a><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该项目旨在成为最易用的 Vim 指南之一。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>WolframAlpha</title>
     <url>/2025/06/03/T-WolframAlpha/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="WolframAlpha"><a href="#WolframAlpha" class="headerlink" title="WolframAlpha"></a><a href="https://www.wolframalpha.com/">WolframAlpha</a></h3><br>
@@ -892,6 +848,19 @@
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>使用 Wolfram 的突破性算法、知识和 AI 技术给出专家级答案<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>crontab guru</title>
+    <url>/2025/05/11/T-crontab-guru/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="crontab-guru"><a href="#crontab-guru" class="headerlink" title="crontab guru"></a><a href="https://crontab.guru/">crontab guru</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Cronitor的 cron 计划表达式快速简便的编辑器<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
 ]]></content>
       <categories>
         <category>网站</category>
@@ -913,37 +882,13 @@
       </categories>
   </entry>
   <entry>
-    <title>crontab guru</title>
-    <url>/2025/05/11/T-crontab-guru/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="crontab-guru"><a href="#crontab-guru" class="headerlink" title="crontab guru"></a><a href="https://crontab.guru/">crontab guru</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Cronitor 的 cron 计划表达式快速简便的编辑器</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>hashID</title>
     <url>/2025/06/04/T-hashID/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/psypanda/hashid">hashID</a><br><br></p>
 <h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>识别用于加密数据（尤其是密码）的不同类型的哈希。</p>
 <p>这取代了过时的hash-identifier ！</p>
 <p>hashID 是一个用 Python 3 编写的工具，它支持使用正则表达式识别超过 220 种独特的哈希类型。支持的哈希类型详细列表可 在此处找到。</p>
-<p>它能够识别单个哈希、解析文件或读取目录中的多个文件并识别其中的哈希。hashID 还能够在其输出中包含相应的 hashcat模式和&#x2F;或 JohnTheRipper格式。</p>
-<p>hashID 可在任何平台上与 Python 2 ≥ 2.7.x 或 Python 3 ≥ 3.3 配合使用。</p>
-<p>注意：在 *nix 操作系统上识别哈希时使用单引号来防止插值。<br><br></p>
+<p>它能够识别单个哈希、解析文件或读取目录中的多个文件并识别其中的哈希。hashID 还能够在其输出中包含相应的 hashcat模式和&#x2F;或 JohnTheRipper格式。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
@@ -958,10 +903,8 @@
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="hashcat"><a href="#hashcat" class="headerlink" title="hashcat"></a><a href="https://hashcat.net/hashcat/">hashcat</a></h3><h3 id="Example-hashes"><a href="#Example-hashes" class="headerlink" title="Example hashes"></a><a href="https://hashcat.net/wiki/doku.php?id=example_hashes">Example hashes</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>世界上最快的密码破解器<br>世界上第一个也是唯一一个内核规则引擎<br>自由的<br>开源（MIT 许可证）<br>多操作系统（Linux、Windows 和 macOS）<br>多平台（CPU、GPU、APU 等，所有带有 OpenCL 运行时的功能）<br>多重哈希（同时破解多个哈希）<br>多设备（在同一系统中使用多个设备）<br>多设备类型（在同一系统中使用混合设备类型）<br>支持密码候选大脑功能<br>支持分布式破解网络（使用覆盖）<br>支持交互式暂停&#x2F;恢复<br>支持会话<br>支持恢复<br>支持从文件和标准输入读取密码候选<br>支持十六进制盐和十六进制字符集<br>支持自动性能调整<br>支持自动键空间排序马尔可夫链<br>内置基准测试系统<br>集成热监控器<br>350 多种哈希类型，在实现时充分考虑了性能<br>…以及更多<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>世界上最快的密码破解器<br>世界上第一个也是唯一一个内核规则引擎<br>自由的<br>开源（MIT 许可证）<br>多操作系统（Linux、Windows 和 macOS）<br>多平台（CPU、GPU、APU 等，所有带有 OpenCL 运行时的功能）<br>多重哈希（同时破解多个哈希）<br>多设备（在同一系统中使用多个设备）<br>多设备类型（在同一系统中使用混合设备类型）<br>支持密码候选大脑功能<br>支持分布式破解网络（使用覆盖）<br>支持交互式暂停&#x2F;恢复<br>支持会话<br>支持恢复<br>支持从文件和标准输入读取密码候选<br>支持十六进制盐和十六进制字符集<br>支持自动性能调整<br>支持自动键空间排序马尔可夫链<br>内置基准测试系统<br>集成热监控器<br>350 多种哈希类型，在实现时充分考虑了性能<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hashcat -m &lt;hash_type&gt; -a &lt;attack_mode&gt; &lt;hashfile&gt; &lt;wordlist&gt;</span><br><span class="line"><span class="comment"># &lt;hash_type&gt;: 1000，以数字格式指定哈希类型。1000 代表 NTLM。查看官方文档 (man hashcat) 和示例页面，找到要使用的哈希类型代码。</span></span><br><span class="line"><span class="comment"># &lt;attack_mode&gt;: 0，指定攻击模式。0 表示直接攻击，依次尝试单词表中的密码。</span></span><br><span class="line"><span class="comment"># &lt;hashfile&gt;: hash.txt，包含想要破解的哈希的文件。</span></span><br><span class="line"><span class="comment"># &lt;wordlist&gt;: /usr/share/wordlists/rockyou.txt，在攻击中使用的安全词列表。</span></span><br></pre></td></tr></table></figure>
 
 
@@ -993,8 +936,7 @@
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="tcpdump"><a href="#tcpdump" class="headerlink" title="tcpdump"></a><a href="https://www.tcpdump.org/index.html">tcpdump</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>这是tcpdump（一个强大的命令行数据包分析器）和 libpcap（一个用于网络流量捕获的可移植 C&#x2F;C++ 库） 的主页。</p>
-<p>在这里您可以找到tcpdump和libpcap 的最新稳定版本，以及当前的开发版本、完整的文档以及有关如何报告错误或贡献补丁的信息。<br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>这是tcpdump（一个强大的命令行数据包分析器）和 libpcap（一个用于网络流量捕获的可移植 C&#x2F;C++ 库） 的主页。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><table>
 <thead>
