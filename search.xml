@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Advanced search operators list</title>
+    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索运算符列表</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hexo搭建</title>
     <url>/2025/05/01/#Hexo%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h2 id="Hexo搭建步骤："><a href="#Hexo搭建步骤：" class="headerlink" title="Hexo搭建步骤："></a>Hexo搭建步骤：</h2><p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></p>
@@ -49,6 +64,23 @@
 </li>
 </ol>
 ]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>工具模板</title>
+    <url>/2025/05/01/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>重要</category>
       </categories>
@@ -119,23 +151,6 @@
       </categories>
   </entry>
   <entry>
-    <title>工具模板</title>
-    <url>/2025/05/01/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Apache</title>
     <url>/2025/05/14/T-Apache/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Apache-HTTP-Server-Documentation"><a href="#Apache-HTTP-Server-Documentation" class="headerlink" title="Apache HTTP Server Documentation"></a><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></h3><br>
@@ -150,21 +165,6 @@
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Advanced search operators list</title>
-    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索运算符列表</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -258,6 +258,22 @@
       </categories>
   </entry>
   <entry>
+    <title>CrackStation</title>
+    <url>/2025/06/04/T-CrackStation/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="CrackStation"><a href="#CrackStation" class="headerlink" title="CrackStation"></a><a href="https://crackstation.net/">CrackStation</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>CrackStation 使用大量预先计算的查找表来破解密码哈希值。这些表存储了密码哈希值与其正确密码之间的映射。哈希值已编入索引，以便快速在数据库中搜索给定的哈希值。如果数据库中存在该哈希值，则可以在几分之一秒内恢复密码。这仅适用于“无盐”哈希值。有关不易受预先计算的查找表攻击的密码哈希系统的信息，请参阅我们的哈希安全页面。</p>
+<p>Crackstation 的查找表是通过从维基百科数据库中提取每个单词，并将其添加到我们能找到的所有密码列表来创建的。我们还对单词表进行了智能词重整（暴力破解混合），使其更加高效。对于 MD5 和 SHA1 哈希值，我们有一个 190GB、包含 150 亿个条目的查找表；对于其他哈希值，我们有一个 19GB、包含 15 亿个条目的查找表。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Exploit Database</title>
     <url>/2025/05/13/T-Exploit-Database/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Exploit-Database"><a href="#Exploit-Database" class="headerlink" title="Exploit Database"></a><a href="https://www.exploit-db.com/">Exploit Database</a></h3><br>
@@ -265,21 +281,6 @@
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>漏洞数据库由 OffSec 维护， OffSec是一家信息安全培训公司，提供各种信息安全认证以及高端渗透测试服务。漏洞数据库是一个非营利项目，由 OffSec 提供公共服务。</p>
 <p>漏洞数据库 (Exploit Database) 是一个符合 CVE 标准的公共漏洞及相应易受攻击软件的存档，专为渗透测试人员和漏洞研究人员开发。我们的目标是提供最全面的漏洞收集服务，这些漏洞来自直接提交、邮件列表以及其他公共来源，并将其呈现在一个免费且易于浏览的数据库中。漏洞数据库是一个漏洞利用和概念验证 (POC) 的存储库，而非公告，因此对于需要立即获取可操作数据的人员来说，它是一个宝贵的资源。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Facebook</title>
-    <url>/2025/05/14/T-Facebook/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Facebook"><a href="#Facebook" class="headerlink" title="Facebook"></a><a href="https://www.facebook.com/">Facebook</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Facebook 业务公共主页是商家、品牌、名人、公益事业和组织触达受众的一种免费方式。Facebook 个人主页可以设为私密，而公共主页却是公开的。Google 可能会收录您的公共主页，以便用户能够轻松地找到您。</p>
 <br>
 
 
@@ -304,6 +305,21 @@
       </categories>
   </entry>
   <entry>
+    <title>Facebook</title>
+    <url>/2025/05/14/T-Facebook/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Facebook"><a href="#Facebook" class="headerlink" title="Facebook"></a><a href="https://www.facebook.com/">Facebook</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Facebook 业务公共主页是商家、品牌、名人、公益事业和组织触达受众的一种免费方式。Facebook 个人主页可以设为私密，而公共主页却是公开的。Google 可能会收录您的公共主页，以便用户能够轻松地找到您。</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>GnuPG</title>
     <url>/2025/06/03/T-GnuPG/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="GnuPG"><a href="#GnuPG" class="headerlink" title="GnuPG"></a><a href="https://gnupg.org/">GnuPG</a></h3><h3 id="GnuPG-手册页"><a href="#GnuPG-手册页" class="headerlink" title="GnuPG 手册页"></a><a href="https://www.gnupg.org/gph/de/manual/r1023.html">GnuPG 手册页</a></h3><br>
@@ -316,34 +332,6 @@
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Google</title>
-    <url>/2025/05/13/T-Google/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-Search"><a href="#Advanced-Search" class="headerlink" title="Advanced Search"></a><a href="https://www.google.com/advanced_search">Advanced Search</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Have I Been Pwned</title>
-    <url>/2025/05/13/T-Have-I-Been-Pwned/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Have-I-Been-Pwned"><a href="#Have-I-Been-Pwned" class="headerlink" title="Have I Been Pwned"></a><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-]]></content>
-      <categories>
-        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -368,6 +356,44 @@
       </categories>
   </entry>
   <entry>
+    <title>Google</title>
+    <url>/2025/05/13/T-Google/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-Search"><a href="#Advanced-Search" class="headerlink" title="Advanced Search"></a><a href="https://www.google.com/advanced_search">Advanced Search</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hashes.com</title>
+    <url>/2025/06/04/T-Hashes-com/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Hashes-com"><a href="#Hashes-com" class="headerlink" title="Hashes.com"></a><a href="https://hashes.com/en/decrypt/hash">Hashes.com</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Hashes.com 是一个哈希查找服务。您可以输入 MD5、SHA-1、Vbulletin、Invision Power Board、MyBB、Bcrypt、Wordpress、SHA-256、SHA-512、MYSQL5 等哈希值，然后在我们已破解的哈希数据库中搜索其对应的明文（“找到”）。</p>
+<p>这就像拥有自己的大规模哈希破解集群一样 - 但可以立即获得结果！</p>
+<p>我们从 2007 年 8 月开始构建我们的哈希数据库。</p>
+<p>我们不会实时破解您的哈希值 - 我们只是缓存了多年来许多破解爱好者的辛勤劳动成果。</p>
+<p>MD5 消息摘要算法是一种广泛使用的哈希函数，其哈希值为 128 位。尽管 MD5 最初设计为加密哈希函数，但已发现其存在大量漏洞。它仍然可以用作校验和来验证数据完整性，但只能防止意外损坏。它仍然适用于其他非加密用途，例如用于确定分区数据库中特定键的分区。MD5 的弱点已被实际利用，其中最臭名昭著的是 2012 年的 Flame 恶意软件。卡内基梅隆大学软件工程研究所认为 MD5 本质上已被破解，不适合进一步使用。MD5 解密。</p>
+<p>在密码学中，SHA-1（安全散列算法 1）是一种加密散列函数，它接受输入并生成一个 160 位（20 字节）的散列值，称为消息摘要——通常以 40 位十六进制数的形式呈现。它由美国国家安全局 (NSA) 设计，是美国联邦信息处理标准。自 2005 年以来，SHA-1 一直被认为无法抵御资金雄厚的对手的攻击。自 2010 年以来，许多组织建议用 SHA-2 或 SHA-3 取代它。微软、谷歌、苹果和 Mozilla 均已宣布，其各自的浏览器将在 2017 年之前停止接受 SHA-1 SSL 证书。SHA1 解密。</p>
+<p>MySQL5 哈希算法对用户密码实现了双二进制 SHA-1 哈希算法。MySQL 解密。</p>
+<p>NT（新技术）局域网管理器 (NTLM) 是一套微软安全协议，为用户提供身份验证、完整性和保密性。NTLM 是微软老产品——局域网管理器 (LANMAN) 中身份验证协议的后继者。NTLM 协议套件由安全支持提供程序实现，该程序将局域网管理器身份验证协议、NTLMv1、NTLMv2 和 NTLM2 会话协议整合在一个包中。这些协议是否可用或能否在系统上使用由组策略设置控制，不同版本的 Windows 对此设置有不同的默认设置。NTLM 密码被认为是弱密码，因为它们很容易被现代硬件暴力破解。NTLM 解密。</p>
+<p>SHA-2（安全散列算法 2）是由美国国家安全局 (NSA) 设计的一组加密散列函数。它们基于 Merkle-Damgård 结构构建，该结构基于一个单向压缩函数，而单向压缩函数本身则基于一个（机密的）专用分组密码算法的 Davies-Meyer 结构构建。SHA-2 与其前身 SHA-1 相比有显著变化。SHA-2 系列包含六个散列函数，其摘要（散列值）分别为 224、256、384 或 512 位：SHA-224、SHA-256、SHA-384、SHA-512、SHA-512&#x2F;224、SHA-512&#x2F;256。SHA256 解密。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>LOLBAS</title>
     <url>/2025/05/13/T-LOLBAS/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LOLBAS"><a href="#LOLBAS" class="headerlink" title="LOLBAS"></a><a href="https://lolbas-project.github.io/">LOLBAS</a></h3><br>
@@ -383,16 +409,14 @@
       </categories>
   </entry>
   <entry>
-    <title>Let&#39;s Encrypt</title>
-    <url>/2025/05/28/T-Let-s-Encrypt/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
+    <title>Have I Been Pwned</title>
+    <url>/2025/05/13/T-Have-I-Been-Pwned/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Have-I-Been-Pwned"><a href="#Have-I-Been-Pwned" class="headerlink" title="Have I Been Pwned"></a><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。</p>
-<br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -422,6 +446,33 @@
 <br>
 
 
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Let&#39;s Encrypt</title>
+    <url>/2025/05/28/T-Let-s-Encrypt/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。</p>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Mozilla Included CA Certificate List</title>
+    <url>/2025/06/03/T-Mozilla-Included-CA-Certificate-List/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Mozilla-Included-CA-Certificate-List"><a href="#Mozilla-Included-CA-Certificate-List" class="headerlink" title="Mozilla Included CA Certificate List"></a><a href="https://wiki.mozilla.org/CA/Included_Certificates">Mozilla Included CA Certificate List</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Mozilla CA 证书程序包含的根证书列表存储在 Mozilla 源代码管理系统中 名为certdata.txt的文件中。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
@@ -564,18 +615,6 @@
 ]]></content>
       <categories>
         <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Mozilla Included CA Certificate List</title>
-    <url>/2025/06/03/T-Mozilla-Included-CA-Certificate-List/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Mozilla-Included-CA-Certificate-List"><a href="#Mozilla-Included-CA-Certificate-List" class="headerlink" title="Mozilla Included CA Certificate List"></a><a href="https://wiki.mozilla.org/CA/Included_Certificates">Mozilla Included CA Certificate List</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Mozilla CA 证书程序包含的根证书列表存储在 Mozilla 源代码管理系统中 名为certdata.txt的文件中。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -893,22 +932,6 @@
       </categories>
   </entry>
   <entry>
-    <title>rsatool</title>
-    <url>/2025/06/03/T-rsatool/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="rsatool"><a href="#rsatool" class="headerlink" title="rsatool"></a><a href="https://github.com/ius/rsatool">rsatool</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>rsatool 根据给定的两个素数 (p、q) 或模数和私有指数 (n、d) 计算 RSA (p、q、n、d、e) 和 RSA-CRT (dP、dQ、qInv) 参数。</p>
-<p>显示结果参数，并可以选择将其写为与 OpenSSL 兼容的 DER 或 PEM 编码的 RSA 私钥。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
     <title>tcpdump</title>
     <url>/2025/06/02/T-tcpdump/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="tcpdump"><a href="#tcpdump" class="headerlink" title="tcpdump"></a><a href="https://www.tcpdump.org/index.html">tcpdump</a></h3><br>
@@ -1066,6 +1089,22 @@
 <br>
 
 ]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>rsatool</title>
+    <url>/2025/06/03/T-rsatool/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="rsatool"><a href="#rsatool" class="headerlink" title="rsatool"></a><a href="https://github.com/ius/rsatool">rsatool</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>rsatool 根据给定的两个素数 (p、q) 或模数和私有指数 (n、d) 计算 RSA (p、q、n、d、e) 和 RSA-CRT (dP、dQ、qInv) 参数。</p>
+<p>显示结果参数，并可以选择将其写为与 OpenSSL 兼容的 DER 或 PEM 编码的 RSA 私钥。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
       </categories>
