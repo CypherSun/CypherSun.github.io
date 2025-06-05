@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>工具模板</title>
+    <url>/2025/05/01/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hexo搭建</title>
     <url>/2025/05/01/#Hexo%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h2 id="Hexo搭建步骤："><a href="#Hexo搭建步骤：" class="headerlink" title="Hexo搭建步骤："></a>Hexo搭建步骤：</h2><p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></p>
@@ -49,6 +66,20 @@
 </li>
 </ol>
 ]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网站模板</title>
+    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>重要</category>
       </categories>
@@ -105,17 +136,16 @@
       </categories>
   </entry>
   <entry>
-    <title>网站模板</title>
-    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+    <title>Advanced search operators list</title>
+    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
-        <category>重要</category>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -134,29 +164,12 @@
       </categories>
   </entry>
   <entry>
-    <title>工具模板</title>
-    <url>/2025/05/01/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
+    <title>CVE</title>
+    <url>/2025/05/13/T-CVE/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Advanced search operators list</title>
-    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -194,19 +207,6 @@
       </categories>
   </entry>
   <entry>
-    <title>CVE</title>
-    <url>/2025/05/13/T-CVE/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>CrackStation</title>
     <url>/2025/06/04/T-CrackStation/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="CrackStation"><a href="#CrackStation" class="headerlink" title="CrackStation"></a><a href="https://crackstation.net/">CrackStation</a></h3><br>
@@ -237,6 +237,19 @@
       </categories>
   </entry>
   <entry>
+    <title>Crontab Generator</title>
+    <url>/2025/05/11/T-Crontab-Generator/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Crontab-Generator"><a href="#Crontab-Generator" class="headerlink" title="Crontab Generator"></a><a href="https://crontab-generator.org/">Crontab Generator</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>生成器可以帮助您生成一个 crontab 语法，您可以将其复制并粘贴到您的 crontab 文件中（您可以使用命令打开该文件crontab –e）。在生成的 crontab 语法下方，还会显示一个运行时间列表。预测功能将帮助您确保设置正确的时间和日期。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>DuckDuckGo</title>
     <url>/2025/05/13/T-DuckDuckGo/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="DuckDuckGo"><a href="#DuckDuckGo" class="headerlink" title="DuckDuckGo"></a><a href="https://duckduckgo.com/">DuckDuckGo</a></h3><h3 id="Advanced-Search-Syntax"><a href="#Advanced-Search-Syntax" class="headerlink" title="Advanced Search Syntax"></a><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a></h3><br>
@@ -250,28 +263,15 @@
       </categories>
   </entry>
   <entry>
-    <title>GitHub</title>
-    <url>/2025/05/13/T-GitHub/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a><a href="https://github.com/">GitHub</a></h3><br>
+    <title>Exploit Database</title>
+    <url>/2025/05/13/T-Exploit-Database/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Exploit-Database"><a href="#Exploit-Database" class="headerlink" title="Exploit Database"></a><a href="https://www.exploit-db.com/">Exploit Database</a></h3><br>
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Crontab Generator</title>
-    <url>/2025/05/11/T-Crontab-Generator/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Crontab-Generator"><a href="#Crontab-Generator" class="headerlink" title="Crontab Generator"></a><a href="https://crontab-generator.org/">Crontab Generator</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>生成器可以帮助您生成一个 crontab 语法，您可以将其复制并粘贴到您的 crontab 文件中（您可以使用命令打开该文件crontab –e）。在生成的 crontab 语法下方，还会显示一个运行时间列表。预测功能将帮助您确保设置正确的时间和日期。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
 ]]></content>
       <categories>
         <category>网站</category>
@@ -293,9 +293,9 @@
       </categories>
   </entry>
   <entry>
-    <title>Exploit Database</title>
-    <url>/2025/05/13/T-Exploit-Database/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Exploit-Database"><a href="#Exploit-Database" class="headerlink" title="Exploit Database"></a><a href="https://www.exploit-db.com/">Exploit Database</a></h3><br>
+    <title>GitHub</title>
+    <url>/2025/05/13/T-GitHub/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a><a href="https://github.com/">GitHub</a></h3><br>
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
@@ -323,6 +323,19 @@
       </categories>
   </entry>
   <entry>
+    <title>Google</title>
+    <url>/2025/05/13/T-Google/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Google"><a href="#Google" class="headerlink" title="Google"></a><a href="https://www.google.com/">Google</a></h3><h3 id="Advanced-Search"><a href="#Advanced-Search" class="headerlink" title="Advanced Search"></a><a href="https://www.google.com/advanced_search">Advanced Search</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Gobuster</title>
     <url>/2025/05/01/T-Gobuster/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Gobuster"><a href="#Gobuster" class="headerlink" title="Gobuster"></a><a href="https://github.com/OJ/gobuster">Gobuster</a></h3><br>
@@ -336,19 +349,6 @@
 <br>]]></content>
       <categories>
         <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Have I Been Pwned</title>
-    <url>/2025/05/13/T-Have-I-Been-Pwned/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Have-I-Been-Pwned"><a href="#Have-I-Been-Pwned" class="headerlink" title="Have I Been Pwned"></a><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -386,10 +386,6 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><code>john &lt;OPTIONS&gt; &lt;FILE_PATH&gt;</code></td>
-<td>John the Ripper命令的基本语法</td>
-</tr>
-<tr>
 <td><code>john --wordlist=&lt;WORDLIST_PATH&gt; &lt;FILE_PATH&gt;</code></td>
 <td>自动破解（可能不太可靠）</td>
 </tr>
@@ -403,36 +399,33 @@
 </tr>
 <tr>
 <td><code>john --single --format=&lt;FORMAT&gt; &lt;FILE_PATH&gt;</code></td>
-<td>使用单一破解模式</td>
+<td>单一破解模式</td>
 </tr>
 <tr>
 <td><code>john --wordlist=&lt;WORDLIST_PATH&gt; --rule=&lt;RULES&gt; &lt;FILE_PATH&gt;</code></td>
 <td>使用自定义规则</td>
 </tr>
 <tr>
-<td><code>unshadow &lt;PASSWD_PATH&gt; &lt;SHADOW_PATH&gt; &gt; &lt;FILE&gt;</code></td>
-<td>解除阴影 Linux 计算机上的文件</td>
+<td><code>unshadow &lt;PASSWD_PATH&gt; &lt;SHADOW_PATH&gt; &gt; &lt;OUTPUT_FILE&gt;</code></td>
+<td>转换 passwd 和 shadow 文件</td>
 </tr>
 <tr>
 <td><code>zip2john &lt;OPTIONS&gt; &lt;ZIP_PATH&gt; &gt; &lt;OUTPUT_FILE&gt;</code></td>
-<td>破解 Zip 文件</td>
+<td>转换 Zip 文件</td>
 </tr>
 <tr>
 <td><code>rar2john &lt;RAR_PATH&gt; &gt; &lt;OUTPUT_FILE&gt;</code></td>
-<td>破解 RAR 文件</td>
+<td>转换 RAR 文件</td>
 </tr>
 <tr>
 <td><code>ssh2john &lt;ID_RSA_PATH&gt; &gt; &lt;OUTPUT_FILE&gt;</code></td>
-<td>破解 SSH 的 id_rsa 文件</td>
+<td>转换 id_rsa 文件</td>
 </tr>
 </tbody></table>
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">john &lt;OPTIONS&gt; &lt;FILE_PATH&gt;</span><br><span class="line"><span class="comment"># &lt;OPTIONS&gt;: --wordlist=&lt;WORDLIST_PATH&gt;，指定要使用的选项</span></span><br><span class="line"><span class="comment"># &lt;FILE_PATH&gt;: hash.txt，包含要破解的哈希的文件，如果位于同一目录中，无需命名路径，只需命名文件即可。</span></span><br><span class="line"></span><br><span class="line">john --format=&lt;FORMAT&gt; --wordlist=&lt;WORDLIST_PATH&gt; &lt;FILE_PATH&gt;</span><br><span class="line"><span class="comment"># &lt;FORMAT&gt;: raw-md5，哈希的格式，如果处理标准哈希类型，必须要加上raw-，建议搭配 hash-identifier，hashID 或者 Hashes.com</span></span><br><span class="line"><span class="comment"># &lt;WORDLIST_PATH&gt;: /usr/share/wordlists/rockyou.txt，使用的单词表的路径，建议搭配 SecLists</span></span><br><span class="line"></span><br><span class="line">unshadow &lt;PASSWD_PATH&gt; &lt;SHADOW_PATH&gt; &gt; &lt;FILE&gt;</span><br><span class="line"><span class="comment"># &lt;PASSWD_PATH&gt;: /etc/passwd，包含从目标机器获取的文件副本的文件，也可以使用文件中的相关行</span></span><br><span class="line"><span class="comment"># &lt;SHADOW_PATH&gt;: /etc/shadow，包含从目标机器获取的文件副本的文件，也可以使用文件中的相关行</span></span><br><span class="line"><span class="comment"># &lt;FILE&gt;: unshadowed.txt，输出为 txt 文件</span></span><br><span class="line"><span class="comment"># 然后可以 john --wordlist=&lt;WORDLIST_PATH&gt; &lt;FILE_PATH&gt; 直接破解，一般不需要指定 --format=，少数需要</span></span><br><span class="line"></span><br><span class="line">zip2john &lt;OPTIONS&gt; &lt;ZIP_PATH&gt; &gt; &lt;OUTPUT_FILE&gt;</span><br><span class="line"><span class="comment"># &lt;OPTIONS&gt;: 将特定的校验和选项传递给 zip2john，通常不用</span></span><br><span class="line"><span class="comment"># &lt;ZIPFILE_PATH&gt;: zipfile.zip，希望获取哈希值的 Zip 文件的路径</span></span><br><span class="line"><span class="comment"># &lt;OUTPUT_FILE&gt;: zip_hash.txt，存储输出为 txt 文件</span></span><br><span class="line"></span><br><span class="line">rar2john &lt;RAR_PATH&gt; &gt; &lt;OUTPUT_FILE&gt;</span><br><span class="line"><span class="comment"># &lt;RAR_PATH&gt;: rarfile.rar，希望获取哈希值的 RAR 文件的路径</span></span><br><span class="line"></span><br><span class="line">ssh2john &lt;ID_RSA_FILE&gt; &gt; &lt;OUTPUT_FILE&gt;</span><br><span class="line"><span class="comment"># &lt;ID_RSA_FILE&gt;: id_rsa，希望获取哈希值的 id_rsa 文件的路径</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">john --wordlist=&lt;WORDLIST_PATH&gt; --rule=&lt;RULES&gt; &lt;FILE_PATH&gt;</span><br><span class="line"><span class="comment"># &lt;RULES&gt;: PasswordRules，设置规则，通常位于 /opt/john/john.conf 或者 /etc/john/john.conf，可以在文件中定义 john.conf</span></span><br><span class="line"><span class="comment"># 第一行必须以 [List.Rules:PasswordRules] 开头用于定义规则的名称</span></span><br><span class="line"><span class="comment"># 必须定义哪些字符应该被附加、添加或包含。通过在 [] 中添加字符集，遵循 &quot;&quot; 的修饰符模式，查看例子</span></span><br><span class="line"><span class="comment"># Az：获取单词并将其附加到定义的字符</span></span><br><span class="line"><span class="comment"># A0：获取单词并在其前面添加定义的字符</span></span><br><span class="line"><span class="comment"># c：按位置将字符大写</span></span><br><span class="line"><span class="comment"># [0-9]：将包括数字 0-9</span></span><br><span class="line"><span class="comment"># [0]：仅包含数字 0</span></span><br><span class="line"><span class="comment"># [A-z]：将包含大写和小写</span></span><br><span class="line"><span class="comment"># [A-Z]：仅包含大写字母</span></span><br><span class="line"><span class="comment"># [a-z]：仅包含小写字母</span></span><br><span class="line"><span class="comment"># 这些可以组合使用来定义想修改的单词的位置和内容</span></span><br></pre></td></tr></table></figure>
+<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">john --format=&lt;FORMAT&gt; --wordlist=&lt;WORDLIST_PATH&gt; &lt;FILE_PATH&gt;</span><br><span class="line"><span class="comment"># &lt;FORMAT&gt;: raw-md5，哈希的格式，如果处理标准哈希类型，要加上raw-，推荐搭配 hash-identifier，hashID 或者 Hashes.com 来先识别哈希类型</span></span><br><span class="line"><span class="comment"># &lt;WORDLIST_PATH&gt;: /usr/share/wordlists/rockyou.txt，使用的单词表的路径，建议搭配 SecLists</span></span><br><span class="line"><span class="comment"># &lt;FILE_PATH&gt;: hash.txt，包含要破解的哈希的文件，如果位于同一目录中，无需路径，只需文件名即可。</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">john --wordlist=&lt;WORDLIST_PATH&gt; --rule=&lt;RULES&gt; &lt;FILE_PATH&gt;</span><br><span class="line"><span class="comment"># &lt;RULES&gt;: PasswordRules，设置规则，通常位于 /opt/john/john.conf 或者 /etc/john/john.conf，可在 john.conf 文件中定义。</span></span><br><span class="line"><span class="comment"># 第一行以 [List.Rules:PasswordRules] 开头来定义规则的名称</span></span><br><span class="line"><span class="comment"># 必须定义哪些字符被附加、添加或包含。通过在 [] 中添加字符集，遵循 &quot;&quot; 的修饰符模式，具体查看例子</span></span><br><span class="line"><span class="comment"># c：按位置将字符大写</span></span><br><span class="line"><span class="comment"># [0-9]：包括数字 0-9</span></span><br><span class="line"><span class="comment"># [0]：仅包含数字 0</span></span><br><span class="line"><span class="comment"># [A-z]：包含大写和小写</span></span><br><span class="line"><span class="comment"># [A-Z]：仅包含大写字母</span></span><br><span class="line"><span class="comment"># [a-z]：仅包含小写字母...</span></span><br><span class="line"><span class="comment"># 可以组合使用定义想修改的单词的位置和内容</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">unshadow &lt;PASSWD_PATH&gt; &lt;SHADOW_PATH&gt; &gt; &lt;OUTPUT_FILE&gt;</span><br><span class="line"><span class="comment"># &lt;PASSWD_PATH&gt;: /etc/passwd，从目标机器获取的文件副本，也可用文件中的相关行</span></span><br><span class="line"><span class="comment"># &lt;SHADOW_PATH&gt;: /etc/shadow，从目标机器获取的文件副本，也可用文件中的相关行</span></span><br><span class="line"><span class="comment"># &lt;OUTPUT_FILE&gt;: unshadowed.txt，输出为 txt 文件</span></span><br><span class="line"></span><br><span class="line">zip2john &lt;OPTIONS&gt; &lt;ZIP_PATH&gt; &gt; &lt;OUTPUT_FILE&gt;</span><br><span class="line"><span class="comment"># &lt;OPTIONS&gt;: 将特定的校验和选项传递给 zip2john，通常不用</span></span><br><span class="line"><span class="comment"># &lt;ZIP_PATH&gt;: zipfile.zip，输入 Zip 文件的路径</span></span><br><span class="line"></span><br><span class="line">rar2john &lt;RAR_PATH&gt; &gt; &lt;OUTPUT_FILE&gt;</span><br><span class="line"><span class="comment"># &lt;RAR_PATH&gt;: rarfile.rar，输入 RAR 文件的路径</span></span><br><span class="line"></span><br><span class="line">ssh2john &lt;ID_RSA_FILE&gt; &gt; &lt;OUTPUT_FILE&gt;</span><br><span class="line"><span class="comment"># &lt;ID_RSA_FILE&gt;: id_rsa，输入 id_rsa 文件的路径</span></span><br></pre></td></tr></table></figure>
 
 
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</span><br><span class="line"><span class="comment"># </span></span><br><span class="line"></span><br><span class="line">john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash1.txt</span><br><span class="line"><span class="comment"># </span></span><br><span class="line"></span><br><span class="line">john --format=raw-SHA1 --wordlist=/usr/share/wordlists/rockyou.txt hash2.txt</span><br><span class="line"><span class="comment"># </span></span><br><span class="line"></span><br><span class="line">john --format=raw-SHA256 --wordlist=/usr/share/wordlists/rockyou.txt hash3.txt</span><br><span class="line"><span class="comment"># </span></span><br><span class="line"></span><br><span class="line">john --format=Whirlpool --wordlist=/usr/share/wordlists/rockyou.txt hash4.txt</span><br><span class="line"><span class="comment"># </span></span><br><span class="line"></span><br><span class="line">john --format=nt --wordlist=/usr/share/wordlists/rockyou.txt ntlm.txt</span><br><span class="line"><span class="comment"># </span></span><br><span class="line"></span><br><span class="line">john --list=formats | grep -iF <span class="string">&quot;md5&quot;</span></span><br><span class="line"><span class="comment"># </span></span><br><span class="line"></span><br><span class="line">john --single --format=raw-md5 hash07.txt</span><br><span class="line"><span class="comment"># 需要更改提供给 John 的文件格式，以便能够理解要从哪些数据创建单词表</span></span><br><span class="line"><span class="comment"># 更改 hash07.txt，例如，原文件为 1efee03cdcb96d90ad48ccc7b8666033，需要再加上加名字和冒号，mike:1efee03cdcb96d90ad48ccc7b8666033，John 会通过单一攻击模式自动创建与 mike 相关的字典进行攻击</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">unshadow local_passwd local_shadow &gt; unshadowed.txt</span><br><span class="line"><span class="comment"># 结合 passwd 文件和 shadow 文件，一般不需要指定 --format=，少数需要</span></span><br><span class="line"></span><br><span class="line">john --wordlist=/usr/share/wordlists/rockyou.txt unshadowed.txt</span><br><span class="line"><span class="comment"># 和 unshadow local_passwd local_shadow &gt; unshadowed.txt 搭配使用进行破解</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">zip2john zipfile.zip &gt; zip_hash.txt</span><br><span class="line"><span class="comment"># 将 zipfile.zip 转化为 zip_hash.txt 文件，一般不需要指定 [options]，少数需要</span></span><br><span class="line"></span><br><span class="line">john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt</span><br><span class="line"><span class="comment"># 和 zip2john zipfile.zip &gt; zip_hash.txt 搭配使用进行破解，然后 unzip zipfile.zip 解压</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">/opt/john/rar2john rarfile.rar &gt; rar_hash.txt</span><br><span class="line"><span class="comment"># 将 rarfile.rar 转化为 rar_hash.txt 文件</span></span><br><span class="line"></span><br><span class="line">john --wordlist=/usr/share/wordlists/rockyou.txt rar_hash.txt</span><br><span class="line"><span class="comment"># 和 /opt/john/rar2john rarfile.rar &gt; rar_hash.txt 搭配使用进行破解，然后 unrar -e rarfile.rar 解压</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">/opt/john/ssh2john.py id_rsa &gt; id_rsa_hash.txt</span><br><span class="line"><span class="comment"># 将 id_rsa 转化为 id_rsa_hash.txt 文件</span></span><br><span class="line"></span><br><span class="line">john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa_hash.txt</span><br><span class="line"><span class="comment"># 和 /opt/john/ssh2john.py id_rsa &gt; id_rsa_hash.txt 搭配使用进行破解</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cAz<span class="string">&quot;[0-9] [!£$%@]&quot;</span></span><br><span class="line"><span class="comment"># c：将首字母大写</span></span><br><span class="line"><span class="comment"># Az：附加到单词的末尾</span></span><br><span class="line"><span class="comment"># [0-9]：0-9 范围内的数字</span></span><br><span class="line"><span class="comment"># [!£$%@]：密码后跟以下符号之一</span></span><br><span class="line"><span class="comment"># [a]：仅包括 a</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="自定义规则"><a href="#自定义规则" class="headerlink" title="自定义规则"></a>自定义规则</h3><p>[List.Rules:Rules]用于定义规则的名称；这是自定义规则称为 John 参数的方式</p>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典，来尝试自动破解 hash.txt</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">john --list=formats | grep -iF <span class="string">&quot;md5&quot;</span></span><br><span class="line"><span class="comment"># 查询与 md5 相关，可指定的哈希函数</span></span><br><span class="line"></span><br><span class="line">john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash1.txt</span><br><span class="line"><span class="comment"># 指定 raw-md5 哈希函数，使用 rockyou.txt 字典，来尝试破解 hash1.txt</span></span><br><span class="line"></span><br><span class="line">john --format=raw-SHA1 --wordlist=/usr/share/wordlists/rockyou.txt hash2.txt</span><br><span class="line"><span class="comment"># 指定 raw-SHA1 哈希函数，使用 rockyou.txt 字典，来尝试破解 hash2.txt</span></span><br><span class="line"></span><br><span class="line">john --format=raw-SHA256 --wordlist=/usr/share/wordlists/rockyou.txt hash3.txt</span><br><span class="line"><span class="comment"># 指定 raw-SHA256 哈希函数，使用 rockyou.txt 字典，来尝试破解 hash3.txt</span></span><br><span class="line"></span><br><span class="line">john --format=Whirlpool --wordlist=/usr/share/wordlists/rockyou.txt hash4.txt</span><br><span class="line"><span class="comment"># 指定 Whirlpool 哈希函数，使用 rockyou.txt 字典，来尝试破解 hash4.txt</span></span><br><span class="line"></span><br><span class="line">john --format=nt --wordlist=/usr/share/wordlists/rockyou.txt ntlm.txt</span><br><span class="line"><span class="comment"># 指定 nt 哈希函数，使用 rockyou.txt 字典，来尝试破解 ntlm.txt</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">john --single --format=raw-md5 hash07.txt</span><br><span class="line"><span class="comment"># 指定单一破解模式，通过 John 自带重整规则来新建用户名单词表，指定 raw-md5 哈希函数，来尝试破解 hash07.txt</span></span><br><span class="line"><span class="comment"># 需要进行更改准备，以便 John 知道从哪个用户名进行创建单词表</span></span><br><span class="line"><span class="comment"># 更改 hash07.txt，例如原文件为 1efee03cdcb96d90ad48ccc7b8666033，需要自己再加上用户名和冒号，mike:1efee03cdcb96d90ad48ccc7b8666033，John 会通过单一攻击模式自动创建与 mike 相关的字典进行破解</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">unshadow local_passwd local_shadow &gt; unshadowed.txt</span><br><span class="line"><span class="comment"># 将 passwd 和 shadow 文件一起转化为 unshadowed.txt，一般不需要指定 --format=，少数需要</span></span><br><span class="line"></span><br><span class="line">john --wordlist=/usr/share/wordlists/rockyou.txt unshadowed.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典，指定 unshadowed.txt 文件尝试破解</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">zip2john zipfile.zip &gt; zip_hash.txt</span><br><span class="line"><span class="comment"># 将 zipfile.zip 文件转化为 zip_hash.txt，一般不需要指定 &lt;options&gt;，少数需要</span></span><br><span class="line"></span><br><span class="line">john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典，指定 zip_hash.txt 文件尝试破解，然后 unzip zipfile.zip 输入解压密码解压</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">/opt/john/rar2john rarfile.rar &gt; rar_hash.txt</span><br><span class="line"><span class="comment"># 将 rarfile.rar 文件转化为 rar_hash.txt</span></span><br><span class="line"></span><br><span class="line">john --wordlist=/usr/share/wordlists/rockyou.txt rar_hash.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典，指定 rar_hash.txt 文件尝试破解，然后 unrar -e rarfile.rar 输入解压密码解压</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">/opt/john/ssh2john.py id_rsa &gt; id_rsa_hash.txt</span><br><span class="line"><span class="comment"># 将 id_rsa 文件转化为 id_rsa_hash.txt</span></span><br><span class="line"></span><br><span class="line">john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa_hash.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典，指定 id_rsa_hash.txt 文件尝试破解</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cAz<span class="string">&quot;[0-9] [!£$%@]&quot;</span></span><br><span class="line"><span class="comment"># c：将首字母大写</span></span><br><span class="line"><span class="comment"># Az：附加到单词的末尾</span></span><br><span class="line"><span class="comment"># [0-9]：0-9 范围内的数字</span></span><br><span class="line"><span class="comment"># [!£$%@]：密码后跟以下符号之一</span></span><br><span class="line"><span class="comment"># [a]：仅包括 a</span></span><br></pre></td></tr></table></figure>
 <br>]]></content>
       <categories>
         <category>工具</category>
@@ -454,26 +447,14 @@
       </categories>
   </entry>
   <entry>
-    <title>Google</title>
-    <url>/2025/05/13/T-Google/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Google"><a href="#Google" class="headerlink" title="Google"></a><a href="https://www.google.com/">Google</a></h3><h3 id="Advanced-Search"><a href="#Advanced-Search" class="headerlink" title="Advanced Search"></a><a href="https://www.google.com/advanced_search">Advanced Search</a></h3><br>
+    <title>Have I Been Pwned</title>
+    <url>/2025/05/13/T-Have-I-Been-Pwned/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Have-I-Been-Pwned"><a href="#Have-I-Been-Pwned" class="headerlink" title="Have I Been Pwned"></a><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>高级搜索<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Let&#39;s Encrypt</title>
-    <url>/2025/05/28/T-Let-s-Encrypt/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -492,6 +473,18 @@
       </categories>
   </entry>
   <entry>
+    <title>NVD</title>
+    <url>/2025/05/13/T-NVD/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="NVD"><a href="#NVD" class="headerlink" title="NVD"></a><a href="https://nvd.nist.gov/">NVD</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Linux man pages</title>
     <url>/2025/05/10/T-Linux-man-pages/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Linux-man-pages"><a href="#Linux-man-pages" class="headerlink" title="Linux man pages"></a><a href="https://linux.die.net/man/">Linux man pages</a></h3><br>
@@ -505,25 +498,12 @@
       </categories>
   </entry>
   <entry>
-    <title>Mozilla Included CA Certificate List</title>
-    <url>/2025/06/03/T-Mozilla-Included-CA-Certificate-List/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Mozilla-Included-CA-Certificate-List"><a href="#Mozilla-Included-CA-Certificate-List" class="headerlink" title="Mozilla Included CA Certificate List"></a><a href="https://wiki.mozilla.org/CA/Included_Certificates">Mozilla Included CA Certificate List</a></h3><br>
+    <title>Let&#39;s Encrypt</title>
+    <url>/2025/05/28/T-Let-s-Encrypt/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Mozilla 包含的 CA 证书列表<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>NVD</title>
-    <url>/2025/05/13/T-NVD/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="NVD"><a href="#NVD" class="headerlink" title="NVD"></a><a href="https://nvd.nist.gov/">NVD</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
@@ -650,19 +630,6 @@
       </categories>
   </entry>
   <entry>
-    <title>PHP</title>
-    <url>/2025/05/14/T-PHP/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a><a href="https://www.php.net/">PHP</a></h3><h3 id="PHP-Manual"><a href="#PHP-Manual" class="headerlink" title="PHP Manual"></a><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>PHP 是一种流行的通用脚本语言，尤其适合 Web 开发。<br>它快速、灵活、实用，能够支持从博客到全球热门网站的所有内容。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Node.js</title>
     <url>/2025/05/14/T-Node-js/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a><a href="https://nodejs.org/en">Node.js</a></h3><h3 id="Node-js-v24-0-1-documentation"><a href="#Node-js-v24-0-1-documentation" class="headerlink" title="Node.js v24.0.1 documentation"></a><a href="https://nodejs.org/docs/latest/api/">Node.js v24.0.1 documentation</a></h3><br>
@@ -676,6 +643,19 @@
       </categories>
   </entry>
   <entry>
+    <title>Mozilla Included CA Certificate List</title>
+    <url>/2025/06/03/T-Mozilla-Included-CA-Certificate-List/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Mozilla-Included-CA-Certificate-List"><a href="#Mozilla-Included-CA-Certificate-List" class="headerlink" title="Mozilla Included CA Certificate List"></a><a href="https://wiki.mozilla.org/CA/Included_Certificates">Mozilla Included CA Certificate List</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Mozilla 包含的 CA 证书列表<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>RsaCtfTool</title>
     <url>/2025/06/03/T-RsaCtfTool/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="RsaCtfTool"><a href="#RsaCtfTool" class="headerlink" title="RsaCtfTool"></a><a href="https://github.com/RsaCtfTool/RsaCtfTool">RsaCtfTool</a></h3><br>
@@ -683,21 +663,6 @@
 
 <h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>此工具旨在解密弱公钥数据并尝试恢复相应的私钥。此外，该工具还提供全面的攻击选项，使用户能够应用各种策略来破解加密。RSA 安全性的核心依赖于整数分解问题的复杂性。该项目通过结合多种整数分解算法，有效地增强了整体解密能力，使其成为一项宝贵的资源。请注意，此工具主要用于教育目的。请务必控制您的期望，因为并非所有密钥都能在合理的时间内被破解。加密算法的复杂性可能带来重大挑战。需要强调的是，该工具仅支持 RSA 教科书规定的半素数复合模数，而非复合多素数。此约束嵌入在 pycrypto 库的上游（参见 TODO）。尽管存在此限制，但该工具仍然提供了一组强大的功能，可用于攻击具有半素数复合模数的 RSA 密钥。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>SecLists</title>
-    <url>/2025/06/05/T-SecLists/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="SecLists"><a href="#SecLists" class="headerlink" title="SecLists"></a><a href="https://github.com/danielmiessler/SecLists">SecLists</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>SecLists 是安全测试人员的得力助手。它汇集了安全评估过程中使用的多种类型的列表，并将它们集中到一起。列表类型包括用户名、密码、URL、敏感数据模式、模糊测试载荷、Web Shell 等等。其目标是使安全测试人员能够将此存储库拉取到新的测试环境中，并访问可能需要的每种类型的列表。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/seclists/">Kali</a></h3><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
@@ -721,27 +686,26 @@
       </categories>
   </entry>
   <entry>
-    <title>Shodan</title>
-    <url>/2025/05/13/T-Shodan/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Shodan"><a href="#Shodan" class="headerlink" title="Shodan"></a><a href="https://www.shodan.io/">Shodan</a></h3><h3 id="Search-Query-Examples"><a href="#Search-Query-Examples" class="headerlink" title="Search Query Examples"></a><a href="https://www.shodan.io/search/examples">Search Query Examples</a></h3><h3 id="Discover-Trends-on-the-Internet"><a href="#Discover-Trends-on-the-Internet" class="headerlink" title="Discover Trends on the Internet"></a><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></h3><br>
+    <title>PHP</title>
+    <url>/2025/05/14/T-PHP/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a><a href="https://www.php.net/">PHP</a></h3><h3 id="PHP-Manual"><a href="#PHP-Manual" class="headerlink" title="PHP Manual"></a><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Shodan 是全球首个面向联网设备的搜索引擎。探索互联网智能如何助您做出更明智的决策。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>PHP 是一种流行的通用脚本语言，尤其适合 Web 开发。<br>它快速、灵活、实用，能够支持从博客到全球热门网站的所有内容。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>网站</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
-    <title>Snort</title>
-    <url>/2025/05/04/T-Snort/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Snort"><a href="#Snort" class="headerlink" title="Snort"></a><a href="https://www.snort.org/">Snort</a></h3><h3 id="Documents"><a href="#Documents" class="headerlink" title="Documents"></a><a href="https://www.snort.org/documents">Documents</a></h3><br>
+    <title>SecLists</title>
+    <url>/2025/06/05/T-SecLists/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="SecLists"><a href="#SecLists" class="headerlink" title="SecLists"></a><a href="https://github.com/danielmiessler/SecLists">SecLists</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Snort 是全球领先的开源入侵防御系统 (IPS)。Snort IPS 使用一系列规则来定义恶意网络活动，并使用这些规则查找与这些活动匹配的数据包，然后向用户生成警报。</p>
-<p>Snort 也可以内联部署来阻止这些数据包。Snort 主要有三种用途：像 tcpdump 一样作为数据包嗅探器；作为数据包记录器（可用于网络流量调试）；或者，可以用作功能齐全的网络入侵防御系统。Snort 可供个人和企业下载和配置。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>SecLists 是安全测试人员的得力助手。它汇集了安全评估过程中使用的多种类型的列表，并将它们集中到一起。列表类型包括用户名、密码、URL、敏感数据模式、模糊测试载荷、Web Shell 等等。其目标是使安全测试人员能够将此存储库拉取到新的测试环境中，并访问可能需要的每种类型的列表。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/seclists/">Kali</a></h3><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
@@ -750,14 +714,12 @@
       </categories>
   </entry>
   <entry>
-    <title>TLD</title>
-    <url>/2025/05/05/T-TLD/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="TLD"><a href="#TLD" class="headerlink" title="TLD"></a><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD</a></h3><br>
+    <title>Shodan</title>
+    <url>/2025/05/13/T-Shodan/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Shodan"><a href="#Shodan" class="headerlink" title="Shodan"></a><a href="https://www.shodan.io/">Shodan</a></h3><h3 id="Search-Query-Examples"><a href="#Search-Query-Examples" class="headerlink" title="Search Query Examples"></a><a href="https://www.shodan.io/search/examples">Search Query Examples</a></h3><h3 id="Discover-Trends-on-the-Internet"><a href="#Discover-Trends-on-the-Internet" class="headerlink" title="Discover Trends on the Internet"></a><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Shodan 是全球首个面向联网设备的搜索引擎。探索互联网智能如何助您做出更明智的决策。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -780,15 +742,19 @@
       </categories>
   </entry>
   <entry>
-    <title>Vim Cheat Sheet</title>
-    <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Vim-Cheat-Sheet"><a href="#Vim-Cheat-Sheet" class="headerlink" title="Vim Cheat Sheet"></a><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></h3><br>
+    <title>Snort</title>
+    <url>/2025/05/04/T-Snort/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Snort"><a href="#Snort" class="headerlink" title="Snort"></a><a href="https://www.snort.org/">Snort</a></h3><h3 id="Documents"><a href="#Documents" class="headerlink" title="Documents"></a><a href="https://www.snort.org/documents">Documents</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该项目旨在成为最易用的 Vim 指南之一。<br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Snort 是全球领先的开源入侵防御系统 (IPS)。Snort IPS 使用一系列规则来定义恶意网络活动，并使用这些规则查找与这些活动匹配的数据包，然后向用户生成警报。</p>
+<p>Snort 也可以内联部署来阻止这些数据包。Snort 主要有三种用途：像 tcpdump 一样作为数据包嗅探器；作为数据包记录器（可用于网络流量调试）；或者，可以用作功能齐全的网络入侵防御系统。Snort 可供个人和企业下载和配置。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>网站</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -805,12 +771,14 @@
       </categories>
   </entry>
   <entry>
-    <title>WolframAlpha</title>
-    <url>/2025/06/03/T-WolframAlpha/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="WolframAlpha"><a href="#WolframAlpha" class="headerlink" title="WolframAlpha"></a><a href="https://www.wolframalpha.com/">WolframAlpha</a></h3><br>
+    <title>TLD</title>
+    <url>/2025/05/05/T-TLD/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="TLD"><a href="#TLD" class="headerlink" title="TLD"></a><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>使用 Wolfram 的突破性算法、知识和 AI 技术给出专家级答案<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -831,16 +799,13 @@
       </categories>
   </entry>
   <entry>
-    <title>X</title>
-    <url>/2025/05/14/T-X/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="X"><a href="#X" class="headerlink" title="X"></a><a href="https://x.com/">X</a></h3><br>
+    <title>Vim Cheat Sheet</title>
+    <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Vim-Cheat-Sheet"><a href="#Vim-Cheat-Sheet" class="headerlink" title="Vim Cheat Sheet"></a><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该项目旨在成为最易用的 Vim 指南之一。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -951,6 +916,34 @@
       </categories>
   </entry>
   <entry>
+    <title>WolframAlpha</title>
+    <url>/2025/06/03/T-WolframAlpha/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="WolframAlpha"><a href="#WolframAlpha" class="headerlink" title="WolframAlpha"></a><a href="https://www.wolframalpha.com/">WolframAlpha</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>使用 Wolfram 的突破性算法、知识和 AI 技术给出专家级答案<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>X</title>
+    <url>/2025/05/14/T-X/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="X"><a href="#X" class="headerlink" title="X"></a><a href="https://x.com/">X</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>hashID</title>
     <url>/2025/06/04/T-hashID/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/psypanda/hashid">hashID</a><br><br></p>
@@ -977,6 +970,23 @@
 ]]></content>
       <categories>
         <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hash-identifier</title>
+    <url>/2025/06/05/T-hash-identifier/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="hash-identifier"><a href="#hash-identifier" class="headerlink" title="hash-identifier"></a><a href="https://github.com/blackploit/hash-identifier">hash-identifier</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>用于识别用于加密数据（尤其是密码）的不同类型哈希的软件。</p>
+<p>支持的加密格式：</p>
+<p>ADLER-32<br>CRC-32<br>CRC-32B<br>CRC-16<br>CRC-16-CCITT<br>DES（Unix）<br>FCS-16<br>GHash-32-3<br>GHash-32-5<br>国家标准 R 34.11-94<br>哈弗-160<br>哈弗-192 110080 ,哈弗-224 114080 ,哈弗-256<br>天堂 II C4<br>域缓存凭证<br>XOR-32<br>MD5(半)<br>MD5(中)<br>MySQL<br>MD5（phpBB3）<br>MD5（Unix）<br>MD5（WordPress）<br>MD5（APR）<br>哈弗-128<br>MD2<br>MD4<br>MD5<br>MD5（HMAC（Wordpress））<br>NTLM<br>RAdmin v2.x<br>RipeMD-128<br>SNEFRU-128<br>虎-128<br>MySQL5 - SHA-1(SHA-1($pass))<br>MySQL 160 位 - SHA-1(SHA-1($pass))<br>RipeMD-160<br>SHA-1<br>SHA-1（MaNGOS）<br>虎-160<br>虎-192<br>md5($pass.$salt) - Joomla<br>SHA-1（Django）<br>SHA-224<br>RipeMD-256<br>SNEFRU-256<br>md5($pass.$salt) - Joomla<br>SAM-（LM_hash：NT_hash）<br>SHA-256（Django）<br>RipeMD-320<br>SHA-384<br>SHA-256<br>SHA-384（Django）<br>SHA-512<br>惠而浦<br>还有更多……<br>加密算法除非被解密否则无法区分，因此软件的效率也取决于用户的标准。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/hash-identifier/">Kali</a></h3><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -1008,23 +1018,6 @@
 
 <h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hashcat -m 3200 -a 0 hash1.txt /usr/share/wordlists/rockyou.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典破解 bcrypt $2*$, Blowfish (Unix) 的 hash1.txt 文件</span></span><br><span class="line"></span><br><span class="line">hashcat -m 1400 -a 0 hash2.txt /usr/share/wordlists/rockyou.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典破解 SHA2-256 的 hash2.txt 文件</span></span><br><span class="line"></span><br><span class="line">hashcat -m 1800 -a 0 hash3.txt /usr/share/wordlists/rockyou.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典破解 sha512crypt $6$, SHA512 (Unix) 2 的 hash3.txt 文件</span></span><br></pre></td></tr></table></figure>
 <br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>hash-identifier</title>
-    <url>/2025/06/05/T-hash-identifier/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="hash-identifier"><a href="#hash-identifier" class="headerlink" title="hash-identifier"></a><a href="https://github.com/blackploit/hash-identifier">hash-identifier</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>用于识别用于加密数据（尤其是密码）的不同类型哈希的软件。</p>
-<p>支持的加密格式：</p>
-<p>ADLER-32<br>CRC-32<br>CRC-32B<br>CRC-16<br>CRC-16-CCITT<br>DES（Unix）<br>FCS-16<br>GHash-32-3<br>GHash-32-5<br>国家标准 R 34.11-94<br>哈弗-160<br>哈弗-192 110080 ,哈弗-224 114080 ,哈弗-256<br>天堂 II C4<br>域缓存凭证<br>XOR-32<br>MD5(半)<br>MD5(中)<br>MySQL<br>MD5（phpBB3）<br>MD5（Unix）<br>MD5（WordPress）<br>MD5（APR）<br>哈弗-128<br>MD2<br>MD4<br>MD5<br>MD5（HMAC（Wordpress））<br>NTLM<br>RAdmin v2.x<br>RipeMD-128<br>SNEFRU-128<br>虎-128<br>MySQL5 - SHA-1(SHA-1($pass))<br>MySQL 160 位 - SHA-1(SHA-1($pass))<br>RipeMD-160<br>SHA-1<br>SHA-1（MaNGOS）<br>虎-160<br>虎-192<br>md5($pass.$salt) - Joomla<br>SHA-1（Django）<br>SHA-224<br>RipeMD-256<br>SNEFRU-256<br>md5($pass.$salt) - Joomla<br>SAM-（LM_hash：NT_hash）<br>SHA-256（Django）<br>RipeMD-320<br>SHA-384<br>SHA-256<br>SHA-384（Django）<br>SHA-512<br>惠而浦<br>还有更多……<br>加密算法除非被解密否则无法区分，因此软件的效率也取决于用户的标准。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/hash-identifier/">Kali</a></h3><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
       </categories>
