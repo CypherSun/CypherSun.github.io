@@ -15,7 +15,7 @@
 <meta property="og:description" content="工具地址Metasploit Framework利用漏洞排名 工具介绍世界上使用最广泛的渗透测试框架知识就是力量，尤其是在共享知识的时候。Metasploit 是开源社区与 Rapid7 合作的成果，它不仅能帮助安全团队验证漏洞、管理安全评估和提升安全意识，还能赋能并武装防御者，让他们始终领先一步（甚至两步）。 搭建流程Kail 使用方法命令   命令 解释    msfconsole 主命令行界">
 <meta property="og:locale">
 <meta property="article:published_time" content="2025-06-12T11:16:11.000Z">
-<meta property="article:modified_time" content="2025-06-14T12:58:07.388Z">
+<meta property="article:modified_time" content="2025-06-15T08:26:44.569Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.4","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.xml"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-06-14 14:58:07"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-06-15 10:26:44"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.4" id="trm-switch-style">
@@ -397,23 +397,19 @@
 <td>列出文件夹的内容</td>
 </tr>
 <tr>
-<td><code>ping</code></td>
-<td>ping 命令</td>
-</tr>
-<tr>
 <td><code>clear</code></td>
 <td>清除终端屏幕</td>
 </tr>
 <tr>
-<td><code>help</code></td>
-<td>命令的帮助菜单</td>
+<td><code>help &lt;COMMAND&gt;</code></td>
+<td>命令的帮助菜单，可单独使用</td>
 </tr>
 <tr>
 <td><code>history</code></td>
 <td>查看之前输入的命令</td>
 </tr>
 <tr>
-<td><code>use &lt;module&gt;/&lt;NUMBER&gt;</code></td>
+<td><code>use &lt;MODULE_PATH&gt;/&lt;NUMBER&gt;</code></td>
 <td>选择要使用的模块</td>
 </tr>
 <tr>
@@ -421,11 +417,7 @@
 <td>列出所有可用的参数</td>
 </tr>
 <tr>
-<td><code>RPORT</code></td>
-<td>查</td>
-</tr>
-<tr>
-<td><code>show &lt;module type&gt;</code></td>
+<td><code>show &lt;MODULE_TYPE&gt;</code></td>
 <td>列出可用模块类型</td>
 </tr>
 <tr>
@@ -433,28 +425,75 @@
 <td>离开上下文</td>
 </tr>
 <tr>
-<td><code>info &lt;module path&gt;</code></td>
+<td><code>info &lt;MODULE_PATH&gt;</code></td>
 <td>获取有关任何模块的更多信息</td>
 </tr>
 <tr>
-<td><code>search &lt;module path&gt;</code></td>
-<td>搜索与给定搜索参数相关的模块，使用CVE编号、漏洞名称或目标系统进行搜索。</td>
+<td><code>search &lt;MODULE_PATH&gt;</code></td>
+<td>搜索与给定搜索参数相关的模块，使用CVE编号、漏洞名称或目标系统进行搜索</td>
 </tr>
 <tr>
-<td><code>search type:&lt;module type&gt; &lt;KEYwords&gt;</code></td>
-<td>搜</td>
+<td><code>search type:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</code></td>
+<td>搜索特定类型的模块</td>
 </tr>
 <tr>
 <td><code>set &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</code></td>
-<td>单词命令语法设置，可再次设置不同的值来覆盖</td>
+<td>设置模块参数的值，可多次修改</td>
 </tr>
 <tr>
 <td><code>setg &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</code></td>
-<td>全局值命令语法设置，可再次设置不同的值来覆盖</td>
+<td>设置全局参数值，适用于所有模块，可多次修改</td>
+</tr>
+<tr>
+<td><code>unset &lt;PARAMETER_NAME&gt;/all</code></td>
+<td>清除指定模块中设置的参数或使用 all 清除全部参数</td>
+</tr>
+<tr>
+<td><code>unsetg &lt;PARAMETER_NAME&gt;/all</code></td>
+<td>清除全局参数或使用 all 清除所有全局设置</td>
+</tr>
+<tr>
+<td><code>RHOSTS</code></td>
+<td>目标系统的 IP 地址，包括单个 IP 地址或网络范围，或使用文件列出目标</td>
+</tr>
+<tr>
+<td><code>RPORT</code></td>
+<td>目标系统上运行的端口</td>
+</tr>
+<tr>
+<td><code>PAYLOAD</code></td>
+<td>与漏洞一起使用的有效载荷</td>
+</tr>
+<tr>
+<td><code>LHOST</code></td>
+<td>攻击机器的 IP 地址</td>
+</tr>
+<tr>
+<td><code>LPORT</code></td>
+<td>攻击机器上的端口</td>
+</tr>
+<tr>
+<td><code>SESSION</code></td>
+<td>与目标系统建立的会话 ID</td>
+</tr>
+<tr>
+<td><code>exploit/run -z</code></td>
+<td>启动漏洞模块，-z 参数会在会话建立后自动将其置于后台，不会进入交互模式</td>
+</tr>
+<tr>
+<td><code>check</code></td>
+<td>检查目标系统是否存在漏洞</td>
+</tr>
+<tr>
+<td><code>background</code></td>
+<td>将当前会话移至后台并返回 msfconsole 提示符（也可使用 Ctrl+Z）</td>
+</tr>
+<tr>
+<td><code>sessions -i &lt;NUMBER&gt;</code></td>
+<td>与指定编号的会话进行交互，使用前可通过 sessions 查看所有会话</td>
 </tr>
 </tbody></table>
-<p>| <code>RHOSTS</code>            | 目标系统的 IP 地址，包括单个 IP 地址或网络范围，或使用文件列出目标  |<br>| <code>RPORT</code>            | 目标系统上运行的端口                |<br>| <code>PAYLOAD</code>            | 与漏洞一起使用的有效载荷                |<br>| <code>LHOST</code>            | 攻击机器的 IP 地址                |<br>| <code>LPORT</code>            | 攻击机器上的端口                |<br>| <code>SESSION</code>            | 与目标系统建立的会话 ID                |<br>| <code>unset &lt;PARAMETER_NAME&gt;/all</code>            | 清除该模块已设置的参数               |<br>| <code>unsetg &lt;PARAMETER_NAME&gt;/all</code>            | 清除所有已设置的参数               |<br>| <code>exploit/run -z</code>            | 启动模块，-z 命令将在会话打开后立即运行漏洞并进入后台               |<br>| <code>check</code>            | 检查目标系统是否存在漏洞               |</p>
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">use &lt;module&gt;</span><br><span class="line"><span class="comment"># : exploit/windows/smb/ms17_010_eternalblue</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">help</span> &lt;COMMAND&gt;</span><br><span class="line"><span class="comment"># &lt;COMMAND&gt;: set，查看 set 命令的帮助菜单</span></span><br><span class="line"></span><br><span class="line">use &lt;MODULE_PATH&gt;/&lt;NUMBER&gt;</span><br><span class="line"><span class="comment"># &lt;MODULE_PATH&gt;: exploit/windows/smb/ms17_010_eternalblue，选择要使用的模块路径</span></span><br><span class="line"><span class="comment"># &lt;NUMBER&gt;: 0，选择要使用的模块对应数字</span></span><br><span class="line"></span><br><span class="line">show &lt;MODULE_TYPE&gt; </span><br><span class="line"><span class="comment"># &lt;MODULE_TYPE&gt;: payloads，在任何上下文中使用，后跟模块类型（辅助模块、有效载荷、漏洞利用等）列出可用模块</span></span><br><span class="line"></span><br><span class="line">search <span class="built_in">type</span>:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</span><br><span class="line"><span class="comment"># &lt;MODULE_TYPE&gt;: auxiliary，将类型设置为辅助</span></span><br><span class="line"><span class="comment"># &lt;KEYWORDS&gt;: telnet，搜索 telnet 的辅助模块</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</span><br><span class="line"><span class="comment"># &lt;PARAMETER_NAME&gt;: rhosts，在该模块中设置目标系统的 IP 地址</span></span><br><span class="line"><span class="comment"># &lt;VALUE&gt;: 192.0.2.1</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <br>
