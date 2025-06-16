@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo搭建</title>
+    <url>/2025/05/01/#Hexo%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="Hexo搭建步骤："><a href="#Hexo搭建步骤：" class="headerlink" title="Hexo搭建步骤："></a>Hexo搭建步骤：</h2><p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></p>
+<ol>
+<li>下载安装Git和Node.js后，D 盘创建WWW，WWW目录下cmd</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g </span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+
+<ol start="2">
+<li><p>创建GitHub仓库: <a href="https://cyphersun.github.io/">https://cyphersun.github.io/</a></p>
+</li>
+<li><p>链接GitHub，然后确认</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;CypherSun&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;84860748@qq.com&quot;</span></span><br><span class="line"></span><br><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+
+
+<ol start="4">
+<li>创建SSH文件，一直回车就行</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;84860748@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+
+<ol start="5">
+<li><p>在GitHub的Setting中，找到SSH keys，点击New SSH key，输入在本地生成的id_rsa.pub，不是id_rsa，两个别弄错了</p>
+</li>
+<li><p>输入yes，确定链接GitHub</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+
+<ol start="7">
+<li>Blog目录下cmd</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+
+
+<ol start="8">
+<li><p>复制备份的scaffolds，source，_config.yml，_config.async.yml，package.json到Blog目录下</p>
+</li>
+<li><p>访问本地：<br>hexo clean<br>hexo g<br>hexo s<br>访问本地 <a href="http://localhost:4000/">4000 端口</a></p>
+</li>
+<li><p>上传Github：<br>hexo clean<br>hexo g<br>hexo d<br>npm run a<br>访问 <a href="https://cyphersun.github.io/">Github 网址</a></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>工具模板</title>
+    <url>/2025/05/01/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网站模板</title>
+    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
     <title>博客示例</title>
     <url>/2077/07/07/#%E5%8D%9A%E5%AE%A2%E7%A4%BA%E4%BE%8B/</url>
     <content><![CDATA[<h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><h1 id="192-0-2-1-example-com"><a href="#192-0-2-1-example-com" class="headerlink" title="&#x2F;: 192.0.2.1&#x2F;example.com"></a><IP>&#x2F;<HOSTNAME>: 192.0.2.1&#x2F;example.com</h1><p>简单密码 admin、administrator、root、toor </p>
@@ -55,56 +139,16 @@
       </categories>
   </entry>
   <entry>
-    <title>Hexo搭建</title>
-    <url>/2025/05/01/#Hexo%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h2 id="Hexo搭建步骤："><a href="#Hexo搭建步骤：" class="headerlink" title="Hexo搭建步骤："></a>Hexo搭建步骤：</h2><p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></p>
-<ol>
-<li>下载安装Git和Node.js后，D 盘创建WWW，WWW目录下cmd</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g </span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+    <title>Advanced search operators list</title>
+    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
 
 
-<ol start="2">
-<li><p>创建GitHub仓库: <a href="https://cyphersun.github.io/">https://cyphersun.github.io/</a></p>
-</li>
-<li><p>链接GitHub，然后确认</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;CypherSun&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;84860748@qq.com&quot;</span></span><br><span class="line"></span><br><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
-
-
-<ol start="4">
-<li>创建SSH文件，一直回车就行</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;84860748@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
-
-
-<ol start="5">
-<li><p>在GitHub的Setting中，找到SSH keys，点击New SSH key，输入在本地生成的id_rsa.pub，不是id_rsa，两个别弄错了</p>
-</li>
-<li><p>输入yes，确定链接GitHub</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-
-<ol start="7">
-<li>Blog目录下cmd</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
-
-
-<ol start="8">
-<li><p>复制备份的scaffolds，source，_config.yml，_config.async.yml，package.json到Blog目录下</p>
-</li>
-<li><p>访问本地：<br>hexo clean<br>hexo g<br>hexo s<br>访问本地 <a href="http://localhost:4000/">4000 端口</a></p>
-</li>
-<li><p>上传Github：<br>hexo clean<br>hexo g<br>hexo d<br>npm run a<br>访问 <a href="https://cyphersun.github.io/">Github 网址</a></p>
-</li>
-</ol>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
-        <category>重要</category>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -123,49 +167,16 @@
       </categories>
   </entry>
   <entry>
-    <title>工具模板</title>
-    <url>/2025/05/01/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
+    <title>CVE</title>
+    <url>/2025/05/13/T-CVE/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网站模板</title>
-    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Apache</title>
-    <url>/2025/05/14/T-Apache/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a><a href="https://httpd.apache.org/">Apache</a></h3><h3 id="Apache-HTTP-Server-Documentation"><a href="#Apache-HTTP-Server-Documentation" class="headerlink" title="Apache HTTP Server Documentation"></a><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Apache HTTP 服务器项目致力于开发和维护一个适用于现代操作系统（包括 UNIX 和 Windows）的开源 HTTP 服务器。该项目的目标是提供一个安全、高效且可扩展的服务器，并提供与当前 HTTP 标准同步的 HTTP 服务。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -177,19 +188,6 @@
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Advanced search operators list</title>
-    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -210,29 +208,18 @@
       </categories>
   </entry>
   <entry>
-    <title>Crontab Generator</title>
-    <url>/2025/05/11/T-Crontab-Generator/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Crontab-Generator"><a href="#Crontab-Generator" class="headerlink" title="Crontab Generator"></a><a href="https://crontab-generator.org/">Crontab Generator</a></h3><br>
+    <title>Apache</title>
+    <url>/2025/05/14/T-Apache/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a><a href="https://httpd.apache.org/">Apache</a></h3><h3 id="Apache-HTTP-Server-Documentation"><a href="#Apache-HTTP-Server-Documentation" class="headerlink" title="Apache HTTP Server Documentation"></a><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>生成器可以帮助您生成一个 crontab 语法，您可以将其复制并粘贴到您的 crontab 文件中（您可以使用命令打开该文件crontab –e）。在生成的 crontab 语法下方，还会显示一个运行时间列表。预测功能将帮助您确保设置正确的时间和日期。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
-]]></content>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Apache HTTP 服务器项目致力于开发和维护一个适用于现代操作系统（包括 UNIX 和 Windows）的开源 HTTP 服务器。该项目的目标是提供一个安全、高效且可扩展的服务器，并提供与当前 HTTP 标准同步的 HTTP 服务。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>CVE</title>
-    <url>/2025/05/13/T-CVE/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -268,15 +255,13 @@
       </categories>
   </entry>
   <entry>
-    <title>Facebook</title>
-    <url>/2025/05/14/T-Facebook/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Facebook"><a href="#Facebook" class="headerlink" title="Facebook"></a><a href="https://www.facebook.com/">Facebook</a></h3><br>
+    <title>DuckDuckGo</title>
+    <url>/2025/05/13/T-DuckDuckGo/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="DuckDuckGo"><a href="#DuckDuckGo" class="headerlink" title="DuckDuckGo"></a><a href="https://duckduckgo.com/">DuckDuckGo</a></h3><h3 id="Advanced-Search-Syntax"><a href="#Advanced-Search-Syntax" class="headerlink" title="Advanced Search Syntax"></a><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>改用 DuckDuckGo，私密且免费！<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 ]]></content>
       <categories>
         <category>网站</category>
@@ -298,13 +283,15 @@
       </categories>
   </entry>
   <entry>
-    <title>DuckDuckGo</title>
-    <url>/2025/05/13/T-DuckDuckGo/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="DuckDuckGo"><a href="#DuckDuckGo" class="headerlink" title="DuckDuckGo"></a><a href="https://duckduckgo.com/">DuckDuckGo</a></h3><h3 id="Advanced-Search-Syntax"><a href="#Advanced-Search-Syntax" class="headerlink" title="Advanced Search Syntax"></a><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a></h3><br>
+    <title>Facebook</title>
+    <url>/2025/05/14/T-Facebook/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Facebook"><a href="#Facebook" class="headerlink" title="Facebook"></a><a href="https://www.facebook.com/">Facebook</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>改用 DuckDuckGo，私密且免费！<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
         <category>网站</category>
@@ -323,6 +310,19 @@
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Crontab Generator</title>
+    <url>/2025/05/11/T-Crontab-Generator/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Crontab-Generator"><a href="#Crontab-Generator" class="headerlink" title="Crontab Generator"></a><a href="https://crontab-generator.org/">Crontab Generator</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>生成器可以帮助您生成一个 crontab 语法，您可以将其复制并粘贴到您的 crontab 文件中（您可以使用命令打开该文件crontab –e）。在生成的 crontab 语法下方，还会显示一个运行时间列表。预测功能将帮助您确保设置正确的时间和日期。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -380,46 +380,6 @@
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>LinkedIn</title>
-    <url>/2025/05/14/T-LinkedIn/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LinkedIn"><a href="#LinkedIn" class="headerlink" title="LinkedIn"></a><a href="https://www.linkedin.com/feed/">LinkedIn</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>欢迎来到 LinkedIn，全球最大的职业网络，在全球 200 多个国家和地区拥有超过 10 亿会员。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>LOLBAS</title>
-    <url>/2025/05/13/T-LOLBAS/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LOLBAS"><a href="#LOLBAS" class="headerlink" title="LOLBAS"></a><a href="https://lolbas-project.github.io/">LOLBAS</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Let&#39;s Encrypt</title>
-    <url>/2025/05/28/T-Let-s-Encrypt/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -485,6 +445,46 @@
 <br>]]></content>
       <categories>
         <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>LOLBAS</title>
+    <url>/2025/05/13/T-LOLBAS/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LOLBAS"><a href="#LOLBAS" class="headerlink" title="LOLBAS"></a><a href="https://lolbas-project.github.io/">LOLBAS</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Let&#39;s Encrypt</title>
+    <url>/2025/05/28/T-Let-s-Encrypt/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>LinkedIn</title>
+    <url>/2025/05/14/T-LinkedIn/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LinkedIn"><a href="#LinkedIn" class="headerlink" title="LinkedIn"></a><a href="https://www.linkedin.com/feed/">LinkedIn</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>欢迎来到 LinkedIn，全球最大的职业网络，在全球 200 多个国家和地区拥有超过 10 亿会员。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -563,9 +563,12 @@
 <td>启动时位于默认工作区，-a 添加工作区，-d 删除工作区</td>
 </tr>
 </tbody></table>
-<p>| <code>ls</code>                                   | 列出文件夹的内容                              |<br>| <code>clear</code>                                | 清除终端屏幕                                  |<br>| <code>help &lt;COMMAND&gt;</code>                       | 帮助菜单，可单独使用或命令搭配 -help&#x2F;-h 使用    |<br>| <code>history</code>                              | 查看之前输入的命令                            |<br>| <code>db_nmap</code>                              | 查看之前输入的命令                            |</p>
-<p>| <code>info &lt;MODULE_PATH&gt;</code>                   | 获取有关任何模块的更多信息                     |<br>| <code>search &lt;MODULE_PATH&gt;/&lt;KEYWORDS&gt;</code>      | 搜索与给定搜索参数相关的模块，使用 CVE 编号、漏洞名称或目标系统进行搜索 |<br>| <code>search type:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</code> | 搜索特定类型的模块                            |<br>| <code>use &lt;MODULE_PATH&gt;/&lt;NUMBER&gt;</code>           | 选择要使用的模块                              |<br>| <code>show options</code>                         | 列出所有可用的参数                            |<br>| <code>show &lt;MODULE_TYPE&gt;</code>                   | 列出可用模块类型                              |<br>| <code>back</code>                                 | 离开上下文                                   |</p>
-<p>| <code>set &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</code>         | 设置模块参数的值，可多次修改                   |<br>| <code>setg &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</code>        | 设置全局参数值，适用于所有模块，可多次修改       |<br>| <code>unset &lt;PARAMETER_NAME&gt;/all</code>           | 清除指定模块中设置的参数或使用 all 清除全部参数  |<br>| <code>unsetg &lt;PARAMETER_NAME&gt;/all</code>          | 清除全局参数或使用 all 清除所有全局设置         |<br>| <code>RHOSTS</code>                               | 目标系统的 IP 地址，包括单个 IP 地址或网络范围，或使用文件列出目标 |<br>| <code>RPORT</code>                                | 目标系统上运行的端口                           |<br>| <code>PAYLOAD</code>                              | 与漏洞一起使用的有效载荷                       |<br>| <code>LHOST</code>                                | 攻击机器的 IP 地址                            |<br>| <code>LPORT</code>                                | 攻击机器上的端口                               |<br>| <code>SESSION</code>                              | 与目标系统建立的会话 ID                        |<br>| <code>exploit/run -z</code>                       | 启动漏洞模块，-z 参数会在会话建立后自动将其置于后台，不会进入交互模式 |<br>| <code>check</code>                                | 检查目标系统是否存在漏洞                       |<br>| <code>sessions -i &lt;NUMBER&gt;</code>                 | 与指定编号的会话进行交互，使用前可通过 sessions 查看所有会话 |</p>
+<p>| <code>ls</code>                                   | 列出文件夹的内容                              |<br>| <code>clear</code>                                | 清除终端屏幕                                  |<br>| <code>help &lt;COMMAND&gt;</code>                       | 帮助菜单，可单独使用或命令搭配 -help&#x2F;-h 使用    |<br>| <code>history</code>                              | 查看之前输入的命令                             |<br>| <code>payload</code>                              | 与漏洞一起使用的有效载荷                       |</p>
+<p>| <code>db_nmap</code>                              | 所有结果都将保存到数据库中                      |<br>| <code>hosts</code>                                | 获取数据库中与目标系统上运行的主机相关的信息      |<br>| <code>services</code>                             | 获取数据库中与目标系统上运行的服务相关的信息      |<br>| <code>hosts -R</code>                             | 将数据库中此值添加到 rhosts 参数                |<br>| <code>services -S</code>                          | 搜索数据库中在环境中特定的服务      |</p>
+<p>| <code>search &lt;MODULE_PATH&gt;/&lt;KEYWORDS&gt;</code>      | 搜索与给定搜索参数相关的模块，使用 CVE 编号、漏洞名称或目标系统进行搜索 |<br>| <code>search type:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</code> | 搜索特定类型的模块                            |<br>| <code>use &lt;MODULE_PATH&gt;/&lt;NUMBER&gt;</code>           | 选择要使用的模块                              |<br>| <code>info &lt;MODULE_PATH&gt;</code>                   | 获取有关任何模块的更多信息，可在模块中直接使用   |<br>| <code>show payloads</code>                         | 列出可用于该特定漏洞利用程序的其他命令  |<br>| <code>set payload &lt;NUMBER&gt;</code>                 | 进行设置有效载荷，可能需要反复实验找到能用 payload  |<br>| <code>show options</code>                         | 列出所有可用的参数                            |<br>| <code>show &lt;MODULE_TYPE&gt;</code>                   | 列出可用模块类型                              |</p>
+<p>| <code>set &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</code>         | 设置模块参数的值，可多次修改                   |<br>| <code>setg &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</code>        | 设置全局参数值，适用于所有模块，可多次修改       |<br>| <code>unset &lt;PARAMETER_NAME&gt;/all</code>           | 清除指定模块中设置的参数或使用 all 清除全部参数  |<br>| <code>unsetg &lt;PARAMETER_NAME&gt;/all</code>          | 清除全局参数或使用 all 清除所有全局设置         |<br>| <code>rhosts</code>                               | 目标系统的单个 IP 地址或网络范围，可使用数据库导入目标 |<br>| <code>rport</code>                                | 目标系统上运行的端口                           |<br>| <code>lhost</code>                                | 攻击机器的 IP 地址                            |<br>| <code>lport</code>                                | 攻击机器上的端口                               |</p>
+<p>| <code>exploit/run -z</code>                       | 启动漏洞模块，-z 参数会在会话建立后自动将其置于后台，不会进入交互模式 |<br>| <code>session</code>                              | 与目标系统建立的会话 ID                        |<br>| <code>back</code>                                 | 离开上下文                                   |</p>
+<p>| <code>check</code>                                | 检查目标系统是否存在漏洞                       |<br>| <code>sessions -i &lt;NUMBER&gt;</code>                 | 与指定编号的会话进行交互，使用前可通过 sessions 查看所有会话 |<br>| <code>sessions -u &lt;NUMBER&gt;</code>                 | 与指定编号的会话升级为 meterpreter |</p>
 <h3 id="meterpreter-命令"><a href="#meterpreter-命令" class="headerlink" title="meterpreter 命令"></a>meterpreter 命令</h3><table>
 <thead>
 <tr>
@@ -574,8 +577,16 @@
 </tr>
 </thead>
 <tbody><tr>
-<td><code>background</code></td>
-<td>将当前会话移至后台并返回 msfconsole 提示符（也可使用 Ctrl+Z）</td>
+<td><code>shell</code></td>
+<td>将当前会话移至shell</td>
+</tr>
+<tr>
+<td><code>background/Ctrl + Z</code></td>
+<td>将当前会话移至后台并返回 meterpreter</td>
+</tr>
+<tr>
+<td><code>hashdump</code></td>
+<td>将当前会话移至后台并返回 meterpreter</td>
 </tr>
 </tbody></table>
 <h3 id="msfvenom-命令"><a href="#msfvenom-命令" class="headerlink" title="msfvenom 命令"></a>msfvenom 命令</h3><table>
@@ -590,7 +601,7 @@
 <td>主命令行界面</td>
 </tr>
 </tbody></table>
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">help</span> &lt;COMMAND&gt;</span><br><span class="line"><span class="comment"># &lt;COMMAND&gt;: set，查看 set 命令的帮助菜单</span></span><br><span class="line"></span><br><span class="line">use &lt;MODULE_PATH&gt;/&lt;NUMBER&gt;</span><br><span class="line">use exploit/windows/smb/ms17_010_eternalblue</span><br><span class="line">use 2</span><br><span class="line"><span class="comment"># &lt;MODULE_PATH&gt;: exploit/windows/smb/ms17_010_eternalblue，选择要使用的模块路径</span></span><br><span class="line"><span class="comment"># &lt;NUMBER&gt;: 0，选择要使用的模块对应数字</span></span><br><span class="line"></span><br><span class="line">show &lt;MODULE_TYPE&gt; </span><br><span class="line">show payloads</span><br><span class="line"><span class="comment"># &lt;MODULE_TYPE&gt;: payloads，在任何上下文中使用，后跟模块类型（辅助模块、有效载荷、漏洞利用等）列出可用模块</span></span><br><span class="line"></span><br><span class="line">search <span class="built_in">type</span>:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</span><br><span class="line">search <span class="built_in">type</span>:auxiliary udp</span><br><span class="line"><span class="comment"># 将类型设置为辅助，搜索 udp 关键词</span></span><br><span class="line"><span class="comment"># &lt;MODULE_TYPE&gt;: auxiliary, payload...</span></span><br><span class="line"><span class="comment"># &lt;KEYWORDS&gt;: udp, smb, tcp, NetBIOS...</span></span><br><span class="line"></span><br><span class="line">search &lt;KEYWORDS&gt;</span><br><span class="line">search NetBIOS</span><br><span class="line"><span class="comment"># &lt;KEYWORDS&gt;: udp, smb, tcp, NetBIOS...</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</span><br><span class="line"><span class="comment"># &lt;PARAMETER_NAME&gt;: rhosts，在该模块中设置目标系统的 IP 地址</span></span><br><span class="line"><span class="comment"># &lt;VALUE&gt;: 192.0.2.1</span></span><br></pre></td></tr></table></figure>
+<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">help</span> &lt;COMMAND&gt;</span><br><span class="line"><span class="comment"># &lt;COMMAND&gt;: set，查看 set 命令的帮助菜单</span></span><br><span class="line"></span><br><span class="line">use &lt;MODULE_PATH&gt;/&lt;NUMBER&gt;</span><br><span class="line">use exploit/windows/smb/ms17_010_eternalblue</span><br><span class="line">use 2</span><br><span class="line"><span class="comment"># &lt;MODULE_PATH&gt;: exploit/windows/smb/ms17_010_eternalblue，选择要使用的模块路径</span></span><br><span class="line"><span class="comment"># &lt;NUMBER&gt;: 0，选择要使用的模块对应数字</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">show &lt;MODULE_TYPE&gt; </span><br><span class="line">show payloads</span><br><span class="line"><span class="comment"># 在任何上下文中使用，后跟模块类型（辅助模块、有效载荷、漏洞利用等）列出可用模块</span></span><br><span class="line"><span class="comment"># &lt;MODULE_TYPE&gt;: exploits, auxiliary, post, payloads, encoders, nops, evasion...</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">search <span class="built_in">type</span>:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</span><br><span class="line">search <span class="built_in">type</span>:auxiliary udp</span><br><span class="line"><span class="comment"># 将类型设置为辅助，搜索 udp 关键词</span></span><br><span class="line"><span class="comment"># &lt;MODULE_TYPE&gt;: auxiliary, payload...</span></span><br><span class="line"><span class="comment"># &lt;KEYWORDS&gt;: udp, smb, tcp, NetBIOS...</span></span><br><span class="line"></span><br><span class="line">search &lt;MODULE_PATH&gt;/&lt;KEYWORDS&gt;</span><br><span class="line">search auxiliary/scanner/smtp/smtp_relay</span><br><span class="line">search SMTP open relay</span><br><span class="line"><span class="comment"># &lt;MODULE_PATH&gt;: auxiliary/scanner/smtp/smtp_relay...</span></span><br><span class="line"><span class="comment"># &lt;KEYWORDS&gt;: udp, smb, tcp, NetBIOS...</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</span><br><span class="line"><span class="comment"># &lt;PARAMETER_NAME&gt;: rhosts，在该模块中设置目标系统的 IP 地址</span></span><br><span class="line"><span class="comment"># &lt;VALUE&gt;: 192.0.2.1</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">search portscan</span><br><span class="line"><span class="comment"># 列出潜在的可用端口扫描模块</span></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/portscan/tcp</span><br><span class="line"><span class="comment"># 并发：同时扫描的目标数量。</span></span><br><span class="line"><span class="comment"># PORTS：要扫描的端口范围。请注意，此处的 1-1000与使用默认配置的Nmap不同。Nmap将扫描最常用的 1000 个端口，而Metasploit将扫描 1 到 10000 之间的端口号。</span></span><br><span class="line"><span class="comment"># RHOSTS：要扫描的目标或目标网络。</span></span><br><span class="line"><span class="comment"># 线程数：同时使用的线程数。线程数越多，扫描速度越快。</span></span><br><span class="line"></span><br><span class="line">nmap -sS 192.0.2.1</span><br><span class="line"><span class="comment"># 可以直接在 msfconsole 里面执行 nmap 扫描</span></span><br><span class="line"></span><br><span class="line">search NetBIOS</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/netbios/nbname</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">show options</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhosts 192.0.2.1</span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"></span><br><span class="line">back</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -613,6 +624,18 @@
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Mozilla 包含的 CA 证书列表<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>NVD</title>
+    <url>/2025/05/13/T-NVD/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="NVD"><a href="#NVD" class="headerlink" title="NVD"></a><a href="https://nvd.nist.gov/">NVD</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -751,15 +774,16 @@
       </categories>
   </entry>
   <entry>
-    <title>NVD</title>
-    <url>/2025/05/13/T-NVD/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="NVD"><a href="#NVD" class="headerlink" title="NVD"></a><a href="https://nvd.nist.gov/">NVD</a></h3><br>
+    <title>PHP</title>
+    <url>/2025/05/14/T-PHP/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a><a href="https://www.php.net/">PHP</a></h3><h3 id="PHP-Manual"><a href="#PHP-Manual" class="headerlink" title="PHP Manual"></a><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。<br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>PHP 是一种流行的通用脚本语言，尤其适合 Web 开发。<br>它快速、灵活、实用，能够支持从博客到全球热门网站的所有内容。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>网站</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -775,19 +799,6 @@
 ]]></content>
       <categories>
         <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>PHP</title>
-    <url>/2025/05/14/T-PHP/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a><a href="https://www.php.net/">PHP</a></h3><h3 id="PHP-Manual"><a href="#PHP-Manual" class="headerlink" title="PHP Manual"></a><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>PHP 是一种流行的通用脚本语言，尤其适合 Web 开发。<br>它快速、灵活、实用，能够支持从博客到全球热门网站的所有内容。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -861,34 +872,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Updog</title>
-    <url>/2025/05/11/T-Updog/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Updog"><a href="#Updog" class="headerlink" title="Updog"></a><a href="https://github.com/sc0tfree/updog">Updog</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Updog 是 Python 的替代品SimpleHTTPServer。它允许通过 HTTP&#x2F;S 上传和下载，可以设置临时 SSL 证书并使用 HTTP 基本身份验证。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>VirusTotal</title>
-    <url>/2025/05/13/T-VirusTotal/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="VirusTotal"><a href="#VirusTotal" class="headerlink" title="VirusTotal"></a><a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>分析可疑文件、域、IP 和 URL 以检测恶意软件和其他漏洞，并自动与安全社区共享。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>TLD</title>
     <url>/2025/05/05/T-TLD/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="TLD"><a href="#TLD" class="headerlink" title="TLD"></a><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD</a></h3><br>
@@ -904,16 +887,18 @@
       </categories>
   </entry>
   <entry>
-    <title>WolframAlpha</title>
-    <url>/2025/06/03/T-WolframAlpha/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="WolframAlpha"><a href="#WolframAlpha" class="headerlink" title="WolframAlpha"></a><a href="https://www.wolframalpha.com/">WolframAlpha</a></h3><br>
+    <title>Updog</title>
+    <url>/2025/05/11/T-Updog/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Updog"><a href="#Updog" class="headerlink" title="Updog"></a><a href="https://github.com/sc0tfree/updog">Updog</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>使用 Wolfram 的突破性算法、知识和 AI 技术给出专家级答案<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Updog 是 Python 的替代品SimpleHTTPServer。它允许通过 HTTP&#x2F;S 上传和下载，可以设置临时 SSL 证书并使用 HTTP 基本身份验证。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>网站</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -942,14 +927,25 @@
       </categories>
   </entry>
   <entry>
-    <title>X</title>
-    <url>/2025/05/14/T-X/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="X"><a href="#X" class="headerlink" title="X"></a><a href="https://x.com/">X</a></h3><br>
+    <title>VirusTotal</title>
+    <url>/2025/05/13/T-VirusTotal/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="VirusTotal"><a href="#VirusTotal" class="headerlink" title="VirusTotal"></a><a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>分析可疑文件、域、IP 和 URL 以检测恶意软件和其他漏洞，并自动与安全社区共享。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>WolframAlpha</title>
+    <url>/2025/06/03/T-WolframAlpha/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="WolframAlpha"><a href="#WolframAlpha" class="headerlink" title="WolframAlpha"></a><a href="https://www.wolframalpha.com/">WolframAlpha</a></h3><br>
 
 
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>使用 Wolfram 的突破性算法、知识和 AI 技术给出专家级答案<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -1062,6 +1058,21 @@
       </categories>
   </entry>
   <entry>
+    <title>X</title>
+    <url>/2025/05/14/T-X/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="X"><a href="#X" class="headerlink" title="X"></a><a href="https://x.com/">X</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>crontab guru</title>
     <url>/2025/05/11/T-crontab-guru/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="crontab-guru"><a href="#crontab-guru" class="headerlink" title="crontab guru"></a><a href="https://crontab.guru/">crontab guru</a></h3><br>
@@ -1075,22 +1086,6 @@
       </categories>
   </entry>
   <entry>
-    <title>hashID</title>
-    <url>/2025/06/04/T-hashID/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/psypanda/hashid">hashID</a><br><br></p>
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>识别用于加密数据（尤其是密码）的不同类型的哈希。</p>
-<p>这取代了过时的hash-identifier ！</p>
-<p>hashID 是一个用 Python 3 编写的工具，它支持使用正则表达式识别超过 220 种独特的哈希类型。支持的哈希类型详细列表可 在此处找到。</p>
-<p>它能够识别单个哈希、解析文件或读取目录中的多个文件并识别其中的哈希。hashID 还能够在其输出中包含相应的 hashcat模式和&#x2F;或 JohnTheRipper格式。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
     <title>hash-identifier</title>
     <url>/2025/06/05/T-hash-identifier/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="hash-identifier"><a href="#hash-identifier" class="headerlink" title="hash-identifier"></a><a href="https://github.com/blackploit/hash-identifier">hash-identifier</a></h3><br>
@@ -1100,6 +1095,22 @@
 <p>支持的加密格式：</p>
 <p>ADLER-32<br>CRC-32<br>CRC-32B<br>CRC-16<br>CRC-16-CCITT<br>DES（Unix）<br>FCS-16<br>GHash-32-3<br>GHash-32-5<br>国家标准 R 34.11-94<br>哈弗-160<br>哈弗-192 110080 ,哈弗-224 114080 ,哈弗-256<br>天堂 II C4<br>域缓存凭证<br>XOR-32<br>MD5(半)<br>MD5(中)<br>MySQL<br>MD5（phpBB3）<br>MD5（Unix）<br>MD5（WordPress）<br>MD5（APR）<br>哈弗-128<br>MD2<br>MD4<br>MD5<br>MD5（HMAC（Wordpress））<br>NTLM<br>RAdmin v2.x<br>RipeMD-128<br>SNEFRU-128<br>虎-128<br>MySQL5 - SHA-1(SHA-1($pass))<br>MySQL 160 位 - SHA-1(SHA-1($pass))<br>RipeMD-160<br>SHA-1<br>SHA-1（MaNGOS）<br>虎-160<br>虎-192<br>md5($pass.$salt) - Joomla<br>SHA-1（Django）<br>SHA-224<br>RipeMD-256<br>SNEFRU-256<br>md5($pass.$salt) - Joomla<br>SAM-（LM_hash：NT_hash）<br>SHA-256（Django）<br>RipeMD-320<br>SHA-384<br>SHA-256<br>SHA-384（Django）<br>SHA-512<br>惠而浦<br>还有更多……<br>加密算法除非被解密否则无法区分，因此软件的效率也取决于用户的标准。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/hash-identifier/">Kali</a></h3><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hashID</title>
+    <url>/2025/06/04/T-hashID/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/psypanda/hashid">hashID</a><br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>识别用于加密数据（尤其是密码）的不同类型的哈希。</p>
+<p>这取代了过时的hash-identifier ！</p>
+<p>hashID 是一个用 Python 3 编写的工具，它支持使用正则表达式识别超过 220 种独特的哈希类型。支持的哈希类型详细列表可 在此处找到。</p>
+<p>它能够识别单个哈希、解析文件或读取目录中的多个文件并识别其中的哈希。hashID 还能够在其输出中包含相应的 hashcat模式和&#x2F;或 JohnTheRipper格式。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
