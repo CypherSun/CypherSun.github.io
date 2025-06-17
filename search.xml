@@ -73,6 +73,20 @@
       </categories>
   </entry>
   <entry>
+    <title>网站模板</title>
+    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hexo搭建</title>
     <url>/2025/05/01/#Hexo%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h2 id="Hexo搭建步骤："><a href="#Hexo搭建步骤：" class="headerlink" title="Hexo搭建步骤："></a>Hexo搭建步骤：</h2><p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></p>
@@ -126,61 +140,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Advanced search operators list</title>
-    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网站模板</title>
-    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Chrome Root Store</title>
-    <url>/2025/06/03/T-Chrome-Root-Store/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Chrome-Root-Store"><a href="#Chrome-Root-Store" class="headerlink" title="Chrome Root Store"></a><a href="https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/root_store.md">Chrome Root Store</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>可信根<br>约束根<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Censys</title>
-    <url>/2025/05/13/T-Censys/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Censys"><a href="#Censys" class="headerlink" title="Censys"></a><a href="https://search.censys.io/">Censys</a></h3><h3 id="Introductory-Use-Cases"><a href="#Introductory-Use-Cases" class="headerlink" title="Introductory Use Cases"></a><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Apache</title>
     <url>/2025/05/14/T-Apache/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a><a href="https://httpd.apache.org/">Apache</a></h3><h3 id="Apache-HTTP-Server-Documentation"><a href="#Apache-HTTP-Server-Documentation" class="headerlink" title="Apache HTTP Server Documentation"></a><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></h3><br>
@@ -196,6 +155,19 @@
       </categories>
   </entry>
   <entry>
+    <title>Advanced search operators list</title>
+    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Bing</title>
     <url>/2025/05/13/T-Bing/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Bing"><a href="#Bing" class="headerlink" title="Bing"></a><a href="https://www.bing.com/">Bing</a></h3><h3 id="Advanced-search-options"><a href="#Advanced-search-options" class="headerlink" title="Advanced search options"></a><a href="https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930">Advanced search options</a></h3><br>
@@ -204,6 +176,19 @@
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>CVE</title>
+    <url>/2025/05/13/T-CVE/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -228,12 +213,12 @@
       </categories>
   </entry>
   <entry>
-    <title>CVE</title>
-    <url>/2025/05/13/T-CVE/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
+    <title>Chrome Root Store</title>
+    <url>/2025/06/03/T-Chrome-Root-Store/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Chrome-Root-Store"><a href="#Chrome-Root-Store" class="headerlink" title="Chrome Root Store"></a><a href="https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/root_store.md">Chrome Root Store</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>可信根<br>约束根<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -254,9 +239,9 @@
       </categories>
   </entry>
   <entry>
-    <title>Exploit Database</title>
-    <url>/2025/05/13/T-Exploit-Database/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Exploit-Database"><a href="#Exploit-Database" class="headerlink" title="Exploit Database"></a><a href="https://www.exploit-db.com/">Exploit Database</a></h3><br>
+    <title>Facebook</title>
+    <url>/2025/05/14/T-Facebook/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Facebook"><a href="#Facebook" class="headerlink" title="Facebook"></a><a href="https://www.facebook.com/">Facebook</a></h3><br>
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
@@ -269,9 +254,24 @@
       </categories>
   </entry>
   <entry>
-    <title>Facebook</title>
-    <url>/2025/05/14/T-Facebook/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Facebook"><a href="#Facebook" class="headerlink" title="Facebook"></a><a href="https://www.facebook.com/">Facebook</a></h3><br>
+    <title>Censys</title>
+    <url>/2025/05/13/T-Censys/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Censys"><a href="#Censys" class="headerlink" title="Censys"></a><a href="https://search.censys.io/">Censys</a></h3><h3 id="Introductory-Use-Cases"><a href="#Introductory-Use-Cases" class="headerlink" title="Introductory Use Cases"></a><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>GitHub</title>
+    <url>/2025/05/13/T-GitHub/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a><a href="https://github.com/">GitHub</a></h3><br>
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
@@ -297,9 +297,9 @@
       </categories>
   </entry>
   <entry>
-    <title>GitHub</title>
-    <url>/2025/05/13/T-GitHub/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a><a href="https://github.com/">GitHub</a></h3><br>
+    <title>Exploit Database</title>
+    <url>/2025/05/13/T-Exploit-Database/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Exploit-Database"><a href="#Exploit-Database" class="headerlink" title="Exploit Database"></a><a href="https://www.exploit-db.com/">Exploit Database</a></h3><br>
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
@@ -356,19 +356,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Have I Been Pwned</title>
-    <url>/2025/05/13/T-Have-I-Been-Pwned/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Have-I-Been-Pwned"><a href="#Have-I-Been-Pwned" class="headerlink" title="Have I Been Pwned"></a><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hashes.com</title>
     <url>/2025/06/04/T-Hashes-com/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Hashes-com"><a href="#Hashes-com" class="headerlink" title="Hashes.com"></a><a href="https://hashes.com/en/decrypt/hash">Hashes.com</a></h3><h3 id="hash-identifier"><a href="#hash-identifier" class="headerlink" title="hash_identifier"></a><a href="https://hashes.com/en/tools/hash_identifier">hash_identifier</a></h3><br>
@@ -383,6 +370,19 @@
 ]]></content>
       <categories>
         <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Have I Been Pwned</title>
+    <url>/2025/05/13/T-Have-I-Been-Pwned/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Have-I-Been-Pwned"><a href="#Have-I-Been-Pwned" class="headerlink" title="Have I Been Pwned"></a><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -449,6 +449,19 @@
       </categories>
   </entry>
   <entry>
+    <title>LinkedIn</title>
+    <url>/2025/05/14/T-LinkedIn/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LinkedIn"><a href="#LinkedIn" class="headerlink" title="LinkedIn"></a><a href="https://www.linkedin.com/feed/">LinkedIn</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>欢迎来到 LinkedIn，全球最大的职业网络，在全球 200 多个国家和地区拥有超过 10 亿会员。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>LOLBAS</title>
     <url>/2025/05/13/T-LOLBAS/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LOLBAS"><a href="#LOLBAS" class="headerlink" title="LOLBAS"></a><a href="https://lolbas-project.github.io/">LOLBAS</a></h3><br>
@@ -457,19 +470,6 @@
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>LinkedIn</title>
-    <url>/2025/05/14/T-LinkedIn/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LinkedIn"><a href="#LinkedIn" class="headerlink" title="LinkedIn"></a><a href="https://www.linkedin.com/feed/">LinkedIn</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>欢迎来到 LinkedIn，全球最大的职业网络，在全球 200 多个国家和地区拥有超过 10 亿会员。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -489,19 +489,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Linux man pages</title>
-    <url>/2025/05/10/T-Linux-man-pages/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Linux-man-pages"><a href="#Linux-man-pages" class="headerlink" title="Linux man pages"></a><a href="https://linux.die.net/man/">Linux man pages</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 部分<br>用户命令（介绍）<br>第 2 节<br>系统调用（介绍）<br>第 3 节<br>库函数（介绍）<br>第 4 节<br>特殊文件（介绍）<br>第 5 节<br>文件格式（介绍）<br>第 6 节<br>游戏（介绍）<br>第 7 节<br>惯例与杂项（引言）<br>第 8 节<br>管理和特权命令（介绍）<br>L 区<br>数学库函数<br>第N部分<br>tcl函数<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Microsoft Security Response Center</title>
     <url>/2025/06/12/T-Microsoft-Security-Response-Center/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Microsoft-Security-Response-Center"><a href="#Microsoft-Security-Response-Center" class="headerlink" title="Microsoft Security Response Center"></a><a href="https://msrc.microsoft.com/update-guide/vulnerability">Microsoft Security Response Center</a></h3><h3 id="Microsoft®-更新目录"><a href="#Microsoft®-更新目录" class="headerlink" title="Microsoft® 更新目录"></a><a href="https://www.catalog.update.microsoft.com/Home.aspx">Microsoft® 更新目录</a></h3><br>
@@ -515,26 +502,14 @@
       </categories>
   </entry>
   <entry>
-    <title>Mozilla Included CA Certificate List</title>
-    <url>/2025/06/03/T-Mozilla-Included-CA-Certificate-List/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Mozilla-Included-CA-Certificate-List"><a href="#Mozilla-Included-CA-Certificate-List" class="headerlink" title="Mozilla Included CA Certificate List"></a><a href="https://wiki.mozilla.org/CA/Included_Certificates">Mozilla Included CA Certificate List</a></h3><br>
+    <title>Linux man pages</title>
+    <url>/2025/05/10/T-Linux-man-pages/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Linux-man-pages"><a href="#Linux-man-pages" class="headerlink" title="Linux man pages"></a><a href="https://linux.die.net/man/">Linux man pages</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Mozilla 包含的 CA 证书列表<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 部分<br>用户命令（介绍）<br>第 2 节<br>系统调用（介绍）<br>第 3 节<br>库函数（介绍）<br>第 4 节<br>特殊文件（介绍）<br>第 5 节<br>文件格式（介绍）<br>第 6 节<br>游戏（介绍）<br>第 7 节<br>惯例与杂项（引言）<br>第 8 节<br>管理和特权命令（介绍）<br>L 区<br>数学库函数<br>第N部分<br>tcl函数<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>NVD</title>
-    <url>/2025/05/13/T-NVD/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="NVD"><a href="#NVD" class="headerlink" title="NVD"></a><a href="https://nvd.nist.gov/">NVD</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -549,7 +524,7 @@
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kail"><a href="#Kail" class="headerlink" title="Kail"></a><a href="https://www.kali.org/tools/metasploit-framework/">Kail</a></h3><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="预备命令"><a href="#预备命令" class="headerlink" title="预备命令"></a>预备命令</h3><table>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="初始化数据库命令"><a href="#初始化数据库命令" class="headerlink" title="初始化数据库命令"></a>初始化数据库命令</h3><table>
 <thead>
 <tr>
 <th>命令</th>
@@ -592,13 +567,135 @@
 <td><code>workspace -a/-d &lt;WORKSPACE_NAME&gt;</code></td>
 <td>启动时位于默认工作区，-a 添加工作区，-d 删除工作区</td>
 </tr>
+<tr>
+<td><code>ls</code></td>
+<td>列出文件夹的内容</td>
+</tr>
+<tr>
+<td><code>clear</code></td>
+<td>清除终端屏幕</td>
+</tr>
+<tr>
+<td><code>help &lt;COMMAND&gt;</code></td>
+<td>帮助菜单，可单独使用或命令搭配 -help&#x2F;-h 使用</td>
+</tr>
+<tr>
+<td><code>history</code></td>
+<td>查看之前输入的命令</td>
+</tr>
+<tr>
+<td><code>payload</code></td>
+<td>与漏洞一起使用的有效载荷</td>
+</tr>
+<tr>
+<td><code>db_nmap</code></td>
+<td>所有结果都将保存到数据库中</td>
+</tr>
+<tr>
+<td><code>hosts</code></td>
+<td>获取数据库中与目标系统上运行的主机相关的信息</td>
+</tr>
+<tr>
+<td><code>services</code></td>
+<td>获取数据库中与目标系统上运行的服务相关的信息</td>
+</tr>
+<tr>
+<td><code>hosts -R</code></td>
+<td>将数据库中此值添加到 rhosts 参数</td>
+</tr>
+<tr>
+<td><code>services -S</code></td>
+<td>搜索数据库中在环境中特定的服务</td>
+</tr>
+<tr>
+<td><code>search &lt;MODULE_PATH&gt;/&lt;KEYWORDS&gt;</code></td>
+<td>搜索与给定搜索参数相关的模块，使用 CVE 编号、漏洞名称或目标系统进行搜索</td>
+</tr>
+<tr>
+<td><code>search type:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</code></td>
+<td>搜索特定类型的模块</td>
+</tr>
+<tr>
+<td><code>use &lt;MODULE_PATH&gt;/&lt;NUMBER&gt;</code></td>
+<td>选择要使用的模块</td>
+</tr>
+<tr>
+<td><code>info &lt;MODULE_PATH&gt;</code></td>
+<td>获取有关任何模块的更多信息，可在模块中直接使用</td>
+</tr>
+<tr>
+<td><code>show payloads</code></td>
+<td>列出可用于该特定漏洞利用程序的其他命令</td>
+</tr>
+<tr>
+<td><code>set payload &lt;NUMBER&gt;</code></td>
+<td>进行设置有效载荷，可能需要反复实验找到能用 payload</td>
+</tr>
+<tr>
+<td><code>show options</code></td>
+<td>列出所有可用的参数</td>
+</tr>
+<tr>
+<td><code>show &lt;MODULE_TYPE&gt;</code></td>
+<td>列出可用模块类型</td>
+</tr>
+<tr>
+<td><code>set &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</code></td>
+<td>设置模块参数的值，可多次修改</td>
+</tr>
+<tr>
+<td><code>setg &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</code></td>
+<td>设置全局参数值，适用于所有模块，可多次修改</td>
+</tr>
+<tr>
+<td><code>unset &lt;PARAMETER_NAME&gt;/all</code></td>
+<td>清除指定模块中设置的参数或使用 all 清除全部参数</td>
+</tr>
+<tr>
+<td><code>unsetg &lt;PARAMETER_NAME&gt;/all</code></td>
+<td>清除全局参数或使用 all 清除所有全局设置</td>
+</tr>
+<tr>
+<td><code>rhosts</code></td>
+<td>目标系统的单个 IP 地址或网络范围，可使用数据库导入目标</td>
+</tr>
+<tr>
+<td><code>rport</code></td>
+<td>目标系统上运行的端口</td>
+</tr>
+<tr>
+<td><code>lhost</code></td>
+<td>攻击机器的 IP 地址</td>
+</tr>
+<tr>
+<td><code>lport</code></td>
+<td>攻击机器上的端口</td>
+</tr>
+<tr>
+<td><code>exploit/run -z</code></td>
+<td>启动漏洞模块，-z 参数会在会话建立后自动将其置于后台，不会进入交互模式</td>
+</tr>
+<tr>
+<td><code>session</code></td>
+<td>与目标系统建立的会话 ID</td>
+</tr>
+<tr>
+<td><code>back</code></td>
+<td>离开上下文</td>
+</tr>
+<tr>
+<td><code>check</code></td>
+<td>检查目标系统是否存在漏洞</td>
+</tr>
+<tr>
+<td><code>sessions -i &lt;NUMBER&gt;</code></td>
+<td>与指定编号的会话进行交互，使用前可通过 sessions 查看所有会话</td>
+</tr>
+<tr>
+<td><code>sessions -u &lt;NUMBER&gt;</code></td>
+<td>与指定编号的会话升级为 meterpreter</td>
+</tr>
 </tbody></table>
-<p>| <code>ls</code>                                   | 列出文件夹的内容                              |<br>| <code>clear</code>                                | 清除终端屏幕                                  |<br>| <code>help &lt;COMMAND&gt;</code>                       | 帮助菜单，可单独使用或命令搭配 -help&#x2F;-h 使用    |<br>| <code>history</code>                              | 查看之前输入的命令                             |<br>| <code>payload</code>                              | 与漏洞一起使用的有效载荷                       |</p>
-<p>| <code>db_nmap</code>                              | 所有结果都将保存到数据库中                      |<br>| <code>hosts</code>                                | 获取数据库中与目标系统上运行的主机相关的信息      |<br>| <code>services</code>                             | 获取数据库中与目标系统上运行的服务相关的信息      |<br>| <code>hosts -R</code>                             | 将数据库中此值添加到 rhosts 参数                |<br>| <code>services -S</code>                          | 搜索数据库中在环境中特定的服务      |</p>
-<p>| <code>search &lt;MODULE_PATH&gt;/&lt;KEYWORDS&gt;</code>      | 搜索与给定搜索参数相关的模块，使用 CVE 编号、漏洞名称或目标系统进行搜索 |<br>| <code>search type:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</code> | 搜索特定类型的模块                            |<br>| <code>use &lt;MODULE_PATH&gt;/&lt;NUMBER&gt;</code>           | 选择要使用的模块                              |<br>| <code>info &lt;MODULE_PATH&gt;</code>                   | 获取有关任何模块的更多信息，可在模块中直接使用   |<br>| <code>show payloads</code>                         | 列出可用于该特定漏洞利用程序的其他命令  |<br>| <code>set payload &lt;NUMBER&gt;</code>                 | 进行设置有效载荷，可能需要反复实验找到能用 payload  |<br>| <code>show options</code>                         | 列出所有可用的参数                            |<br>| <code>show &lt;MODULE_TYPE&gt;</code>                   | 列出可用模块类型                              |</p>
-<p>| <code>set &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</code>         | 设置模块参数的值，可多次修改                   |<br>| <code>setg &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</code>        | 设置全局参数值，适用于所有模块，可多次修改       |<br>| <code>unset &lt;PARAMETER_NAME&gt;/all</code>           | 清除指定模块中设置的参数或使用 all 清除全部参数  |<br>| <code>unsetg &lt;PARAMETER_NAME&gt;/all</code>          | 清除全局参数或使用 all 清除所有全局设置         |<br>| <code>rhosts</code>                               | 目标系统的单个 IP 地址或网络范围，可使用数据库导入目标 |<br>| <code>rport</code>                                | 目标系统上运行的端口                           |<br>| <code>lhost</code>                                | 攻击机器的 IP 地址                            |<br>| <code>lport</code>                                | 攻击机器上的端口                               |</p>
-<p>| <code>exploit/run -z</code>                       | 启动漏洞模块，-z 参数会在会话建立后自动将其置于后台，不会进入交互模式 |<br>| <code>session</code>                              | 与目标系统建立的会话 ID                        |<br>| <code>back</code>                                 | 离开上下文                                   |</p>
-<p>| <code>check</code>                                | 检查目标系统是否存在漏洞                       |<br>| <code>sessions -i &lt;NUMBER&gt;</code>                 | 与指定编号的会话进行交互，使用前可通过 sessions 查看所有会话 |<br>| <code>sessions -u &lt;NUMBER&gt;</code>                 | 与指定编号的会话升级为 meterpreter |</p>
 <h3 id="meterpreter-命令"><a href="#meterpreter-命令" class="headerlink" title="meterpreter 命令"></a>meterpreter 命令</h3><table>
 <thead>
 <tr>
@@ -606,20 +703,211 @@
 <th>解释</th>
 </tr>
 </thead>
-</table>
-<p>| <code>getuid</code>         | 显示当前用户身份                                   |</p>
-<p>| <code>sysinfo</code>        | 显示系统信息                                       |</p>
-<p>| <code>getpid</code>         | 显示当前进程 ID                                    |<br>| <code>ps</code>             | 列出正在运行的进程，Meterpreter 会伪装成其他进程        |<br>| <code>migrate &lt;PID&gt;</code>  | 将 Meterpreter 迁移到另一个进程，但可能会丢失高权限          |<br>| <code>getsystem</code>      | 将当前 Meterpreter 会话权限提升到本地系统（SYSTEM）最高权限          |</p>
-<p>load priv<br>getprivs</p>
-<p>| <code>guid</code>           | 获取会话 GUID（全局唯一标识符）                    |<br>| <code>help</code>           | 显示帮助菜单                                       |<br>| <code>info</code>           | 显示有关 Post 模块的信息                           |<br>| <code>irb</code>            | 打开交互式 Ruby shell                              |<br>| <code>load &lt;Extensions&gt;</code>   | 加载一个或多个 Meterpreter 扩展，例如 python，kiwi                    |</p>
-<p>| <code>run</code>            | 执行脚本或 Post 模块                               |<br>| <code>sessions</code>       | 切换到其他会话                                     |<br>| <code>cd</code>             | 更改目录                                           |<br>| <code>ls/dir</code>         | 列出当前目录中的文件                               |<br>| <code>pwd</code>            | 打印当前工作目录                                   |<br>| <code>edit</code>           | 编辑文件                                           |<br>| <code>cat</code>            | 显示文件内容                                       |<br>| <code>rm</code>             | 删除指定文件                                       |<br>| <code>search -f &lt;FILE&gt;</code>      | 搜索文件                                           |<br>| <code>upload</code>         | 上传文件或目录                                     |<br>| <code>download</code>       | 下载文件或目录                                     |</p>
-<p>| <code>arp</code>            | 显示 ARP 缓存                                      |<br>| <code>ifconfig</code>       | 显示网络接口信息                                   |<br>| <code>netstat</code>        | 显示网络连接                                       |<br>| <code>portfwd</code>        | 本地端口转发到远程服务                             |<br>| <code>route</code>          | 查看和修改路由表                                   |</p>
-<p>| <code>clearev</code>        | 清除事件日志                                       |<br>| <code>execute</code>        | 执行命令                                           |</p>
-<p>| <code>kill</code>           | 终止进程                                           |<br>| <code>pkill</code>          | 按名称终止进程                                     |</p>
-<p>| <code>reboot</code>         | 重启远程计算机                                     |<br>| <code>shell</code>          | 进入系统命令行                                     |<br>| <code>shutdown</code>       | 关闭远程计算机                                     |</p>
-<p>| <code>idletime</code>       | 显示用户空闲时间（秒）                             |<br>| <code>keyscan_start</code>  | 开始捕获击键                                       |<br>| <code>keyscan_dump</code>   | 转储击键缓冲区                                     |<br>| <code>keyscan_stop</code>   | 停止捕获击键                                       |<br>| <code>screenshare</code>    | 实时查看远程桌面                                   |<br>| <code>screenshot</code>     | 截取桌面截图                                       |<br>| <code>record_mic</code>     | 使用麦克风录音 X 秒                                |<br>| <code>webcam_chat</code>    | 启动视频聊天                                       |<br>| <code>webcam_list</code>    | 列出摄像头设备                                     |<br>| <code>webcam_snap</code>    | 拍摄摄像头快照                                     |<br>| <code>webcam_stream</code>  | 视频流方式播放摄像头                               |<br>| <code>getsystem</code>      | 提升权限为 SYSTEM                                  |<br>| <code>hashdump</code>       | 转储安全帐户管理器 (SAM) 数据库密码哈希                 |</p>
-<p>| <code>shell</code>                                | 将当前会话移至 shell                          |<br>| <code>background/Ctrl + Z</code>                  | 将当前会话移至后台并返回 meterpreter           |</p>
-<p>| <code>exit</code>           | 终止 Meterpreter 会话                              |</p>
+<tbody><tr>
+<td><code>getuid</code></td>
+<td>显示当前用户身份</td>
+</tr>
+<tr>
+<td><code>sysinfo</code></td>
+<td>显示系统信息</td>
+</tr>
+<tr>
+<td><code>getpid</code></td>
+<td>显示当前进程 ID</td>
+</tr>
+<tr>
+<td><code>ps</code></td>
+<td>列出正在运行的进程，Meterpreter 会伪装成其他进程</td>
+</tr>
+<tr>
+<td><code>migrate &lt;PID&gt;</code></td>
+<td>将 Meterpreter 迁移到另一个进程，但可能会丢失高权限</td>
+</tr>
+<tr>
+<td><code>getsystem</code></td>
+<td>将当前 Meterpreter 会话权限提升到本地系统（SYSTEM）最高权限</td>
+</tr>
+<tr>
+<td><code>getsystem</code></td>
+<td>将当前 Meterpreter 会话权限提升到本地系统（SYSTEM）最高权限</td>
+</tr>
+<tr>
+<td><code>guid</code></td>
+<td>获取会话 GUID（全局唯一标识符）</td>
+</tr>
+<tr>
+<td><code>help</code></td>
+<td>显示帮助菜单</td>
+</tr>
+<tr>
+<td><code>info</code></td>
+<td>显示有关 Post 模块的信息</td>
+</tr>
+<tr>
+<td><code>irb</code></td>
+<td>打开交互式 Ruby shell</td>
+</tr>
+<tr>
+<td><code>load &lt;Extensions&gt;</code></td>
+<td>加载一个或多个 Meterpreter 扩展，例如 python，kiwi</td>
+</tr>
+<tr>
+<td><code>run</code></td>
+<td>执行脚本或 Post 模块</td>
+</tr>
+<tr>
+<td><code>sessions</code></td>
+<td>切换到其他会话</td>
+</tr>
+<tr>
+<td><code>cd</code></td>
+<td>更改目录</td>
+</tr>
+<tr>
+<td><code>ls/dir</code></td>
+<td>列出当前目录中的文件</td>
+</tr>
+<tr>
+<td><code>pwd</code></td>
+<td>打印当前工作目录</td>
+</tr>
+<tr>
+<td><code>edit</code></td>
+<td>编辑文件</td>
+</tr>
+<tr>
+<td><code>cat</code></td>
+<td>显示文件内容</td>
+</tr>
+<tr>
+<td><code>rm</code></td>
+<td>删除指定文件</td>
+</tr>
+<tr>
+<td><code>search -f &lt;FILE&gt;</code></td>
+<td>搜索文件</td>
+</tr>
+<tr>
+<td><code>upload</code></td>
+<td>上传文件或目录</td>
+</tr>
+<tr>
+<td><code>download</code></td>
+<td>下载文件或目录</td>
+</tr>
+<tr>
+<td><code>arp</code></td>
+<td>显示 ARP 缓存</td>
+</tr>
+<tr>
+<td><code>ifconfig</code></td>
+<td>显示网络接口信息</td>
+</tr>
+<tr>
+<td><code>netstat</code></td>
+<td>显示网络连接</td>
+</tr>
+<tr>
+<td><code>portfwd</code></td>
+<td>本地端口转发到远程服务</td>
+</tr>
+<tr>
+<td><code>route</code></td>
+<td>查看和修改路由表</td>
+</tr>
+<tr>
+<td><code>clearev</code></td>
+<td>清除事件日志</td>
+</tr>
+<tr>
+<td><code>execute</code></td>
+<td>执行命令</td>
+</tr>
+<tr>
+<td><code>kill</code></td>
+<td>终止进程</td>
+</tr>
+<tr>
+<td><code>pkill</code></td>
+<td>按名称终止进程</td>
+</tr>
+<tr>
+<td><code>reboot</code></td>
+<td>重启远程计算机</td>
+</tr>
+<tr>
+<td><code>shell</code></td>
+<td>进入系统命令行</td>
+</tr>
+<tr>
+<td><code>shutdown</code></td>
+<td>关闭远程计算机</td>
+</tr>
+<tr>
+<td><code>idletime</code></td>
+<td>显示用户空闲时间（秒）</td>
+</tr>
+<tr>
+<td><code>keyscan_start</code></td>
+<td>开始捕获击键</td>
+</tr>
+<tr>
+<td><code>keyscan_dump</code></td>
+<td>转储击键缓冲区</td>
+</tr>
+<tr>
+<td><code>keyscan_stop</code></td>
+<td>停止捕获击键</td>
+</tr>
+<tr>
+<td><code>screenshare</code></td>
+<td>实时查看远程桌面</td>
+</tr>
+<tr>
+<td><code>screenshot</code></td>
+<td>截取桌面截图</td>
+</tr>
+<tr>
+<td><code>record_mic</code></td>
+<td>使用麦克风录音 X 秒</td>
+</tr>
+<tr>
+<td><code>webcam_chat</code></td>
+<td>启动视频聊天</td>
+</tr>
+<tr>
+<td><code>webcam_list</code></td>
+<td>列出摄像头设备</td>
+</tr>
+<tr>
+<td><code>webcam_snap</code></td>
+<td>拍摄摄像头快照</td>
+</tr>
+<tr>
+<td><code>webcam_stream</code></td>
+<td>视频流方式播放摄像头</td>
+</tr>
+<tr>
+<td><code>getsystem</code></td>
+<td>提升权限为 SYSTEM</td>
+</tr>
+<tr>
+<td><code>hashdump</code></td>
+<td>转储安全帐户管理器 (SAM) 数据库密码哈希</td>
+</tr>
+<tr>
+<td><code>shell</code></td>
+<td>将当前会话移至 shell</td>
+</tr>
+<tr>
+<td><code>background/Ctrl + Z</code></td>
+<td>将当前会话移至后台并返回 meterpreter</td>
+</tr>
+<tr>
+<td><code>exit</code></td>
+<td>终止 Meterpreter 会话</td>
+</tr>
+</tbody></table>
 <h3 id="msfvenom-命令"><a href="#msfvenom-命令" class="headerlink" title="msfvenom 命令"></a>msfvenom 命令</h3><table>
 <thead>
 <tr>
@@ -665,40 +953,28 @@
       </categories>
   </entry>
   <entry>
-    <title>Node.js</title>
-    <url>/2025/05/14/T-Node-js/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a><a href="https://nodejs.org/en">Node.js</a></h3><h3 id="Node-js-v24-0-1-documentation"><a href="#Node-js-v24-0-1-documentation" class="headerlink" title="Node.js v24.0.1 documentation"></a><a href="https://nodejs.org/docs/latest/api/">Node.js v24.0.1 documentation</a></h3><br>
+    <title>Mozilla Included CA Certificate List</title>
+    <url>/2025/06/03/T-Mozilla-Included-CA-Certificate-List/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Mozilla-Included-CA-Certificate-List"><a href="#Mozilla-Included-CA-Certificate-List" class="headerlink" title="Mozilla Included CA Certificate List"></a><a href="https://wiki.mozilla.org/CA/Included_Certificates">Mozilla Included CA Certificate List</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Node.js® 是一个免费、开源、跨平台的 JavaScript 运行时环境，可让开发人员创建服务器、Web 应用程序、命令行工具和脚本。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Mozilla 包含的 CA 证书列表<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
-        <category>工具</category>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
-    <title>PHP</title>
-    <url>/2025/05/14/T-PHP/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a><a href="https://www.php.net/">PHP</a></h3><h3 id="PHP-Manual"><a href="#PHP-Manual" class="headerlink" title="PHP Manual"></a><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></h3><br>
+    <title>NVD</title>
+    <url>/2025/05/13/T-NVD/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="NVD"><a href="#NVD" class="headerlink" title="NVD"></a><a href="https://nvd.nist.gov/">NVD</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>PHP 是一种流行的通用脚本语言，尤其适合 Web 开发。<br>它快速、灵活、实用，能够支持从博客到全球热门网站的所有内容。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Responder</title>
-    <url>/2025/06/12/T-Responder/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/lgandx/Responder">Responder</a><br><br></p>
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>IPv6&#x2F;IPv4 LLMNR&#x2F;NBT-NS&#x2F;mDNS 毒化器和 NTLMv1&#x2F;2 中继。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p><a href="https://www.kali.org/tools/responder/">Kali</a><br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -822,30 +1098,26 @@
       </categories>
   </entry>
   <entry>
-    <title>RsaCtfTool</title>
-    <url>/2025/06/03/T-RsaCtfTool/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="RsaCtfTool"><a href="#RsaCtfTool" class="headerlink" title="RsaCtfTool"></a><a href="https://github.com/RsaCtfTool/RsaCtfTool">RsaCtfTool</a></h3><br>
+    <title>Node.js</title>
+    <url>/2025/05/14/T-Node-js/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a><a href="https://nodejs.org/en">Node.js</a></h3><h3 id="Node-js-v24-0-1-documentation"><a href="#Node-js-v24-0-1-documentation" class="headerlink" title="Node.js v24.0.1 documentation"></a><a href="https://nodejs.org/docs/latest/api/">Node.js v24.0.1 documentation</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>此工具旨在解密弱公钥数据并尝试恢复相应的私钥。此外，该工具还提供全面的攻击选项，使用户能够应用各种策略来破解加密。RSA 安全性的核心依赖于整数分解问题的复杂性。该项目通过结合多种整数分解算法，有效地增强了整体解密能力，使其成为一项宝贵的资源。请注意，此工具主要用于教育目的。请务必控制您的期望，因为并非所有密钥都能在合理的时间内被破解。加密算法的复杂性可能带来重大挑战。需要强调的是，该工具仅支持 RSA 教科书规定的半素数复合模数，而非复合多素数。此约束嵌入在 pycrypto 库的上游（参见 TODO）。尽管存在此限制，但该工具仍然提供了一组强大的功能，可用于攻击具有半素数复合模数的 RSA 密钥。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Node.js® 是一个免费、开源、跨平台的 JavaScript 运行时环境，可让开发人员创建服务器、Web 应用程序、命令行工具和脚本。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
       </categories>
   </entry>
   <entry>
-    <title>SecLists</title>
-    <url>/2025/06/05/T-SecLists/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="SecLists"><a href="#SecLists" class="headerlink" title="SecLists"></a><a href="https://github.com/danielmiessler/SecLists">SecLists</a></h3><br>
+    <title>PHP</title>
+    <url>/2025/05/14/T-PHP/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a><a href="https://www.php.net/">PHP</a></h3><h3 id="PHP-Manual"><a href="#PHP-Manual" class="headerlink" title="PHP Manual"></a><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>SecLists 是安全测试人员的得力助手。它汇集了安全评估过程中使用的多种类型的列表，并将它们集中到一起。列表类型包括用户名、密码、URL、敏感数据模式、模糊测试载荷、Web Shell 等等。其目标是使安全测试人员能够将此存储库拉取到新的测试环境中，并访问可能需要的每种类型的列表。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/seclists/">Kali</a></h3><br>
-
-
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>PHP 是一种流行的通用脚本语言，尤其适合 Web 开发。<br>它快速、灵活、实用，能够支持从博客到全球热门网站的所有内容。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
@@ -867,6 +1139,32 @@
       </categories>
   </entry>
   <entry>
+    <title>Responder</title>
+    <url>/2025/06/12/T-Responder/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/lgandx/Responder">Responder</a><br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>IPv6&#x2F;IPv4 LLMNR&#x2F;NBT-NS&#x2F;mDNS 毒化器和 NTLMv1&#x2F;2 中继。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p><a href="https://www.kali.org/tools/responder/">Kali</a><br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>SecLists</title>
+    <url>/2025/06/05/T-SecLists/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="SecLists"><a href="#SecLists" class="headerlink" title="SecLists"></a><a href="https://github.com/danielmiessler/SecLists">SecLists</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>SecLists 是安全测试人员的得力助手。它汇集了安全评估过程中使用的多种类型的列表，并将它们集中到一起。列表类型包括用户名、密码、URL、敏感数据模式、模糊测试载荷、Web Shell 等等。其目标是使安全测试人员能够将此存储库拉取到新的测试环境中，并访问可能需要的每种类型的列表。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/seclists/">Kali</a></h3><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Shodan</title>
     <url>/2025/05/13/T-Shodan/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Shodan"><a href="#Shodan" class="headerlink" title="Shodan"></a><a href="https://www.shodan.io/">Shodan</a></h3><h3 id="Search-Query-Examples"><a href="#Search-Query-Examples" class="headerlink" title="Search Query Examples"></a><a href="https://www.shodan.io/search/examples">Search Query Examples</a></h3><h3 id="Discover-Trends-on-the-Internet"><a href="#Discover-Trends-on-the-Internet" class="headerlink" title="Discover Trends on the Internet"></a><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></h3><br>
@@ -880,18 +1178,18 @@
       </categories>
   </entry>
   <entry>
-    <title>TLD</title>
-    <url>/2025/05/05/T-TLD/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="TLD"><a href="#TLD" class="headerlink" title="TLD"></a><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD</a></h3><br>
+    <title>RsaCtfTool</title>
+    <url>/2025/06/03/T-RsaCtfTool/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="RsaCtfTool"><a href="#RsaCtfTool" class="headerlink" title="RsaCtfTool"></a><a href="https://github.com/RsaCtfTool/RsaCtfTool">RsaCtfTool</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>此工具旨在解密弱公钥数据并尝试恢复相应的私钥。此外，该工具还提供全面的攻击选项，使用户能够应用各种策略来破解加密。RSA 安全性的核心依赖于整数分解问题的复杂性。该项目通过结合多种整数分解算法，有效地增强了整体解密能力，使其成为一项宝贵的资源。请注意，此工具主要用于教育目的。请务必控制您的期望，因为并非所有密钥都能在合理的时间内被破解。加密算法的复杂性可能带来重大挑战。需要强调的是，该工具仅支持 RSA 教科书规定的半素数复合模数，而非复合多素数。此约束嵌入在 pycrypto 库的上游（参见 TODO）。尽管存在此限制，但该工具仍然提供了一组强大的功能，可用于攻击具有半素数复合模数的 RSA 密钥。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>网站</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -911,6 +1209,21 @@
       </categories>
   </entry>
   <entry>
+    <title>TLD</title>
+    <url>/2025/05/05/T-TLD/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="TLD"><a href="#TLD" class="headerlink" title="TLD"></a><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Updog</title>
     <url>/2025/05/11/T-Updog/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Updog"><a href="#Updog" class="headerlink" title="Updog"></a><a href="https://github.com/sc0tfree/updog">Updog</a></h3><br>
@@ -923,18 +1236,6 @@
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Vim Cheat Sheet</title>
-    <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Vim-Cheat-Sheet"><a href="#Vim-Cheat-Sheet" class="headerlink" title="Vim Cheat Sheet"></a><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该项目旨在成为最易用的 Vim 指南之一。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -977,16 +1278,26 @@
       </categories>
   </entry>
   <entry>
-    <title>X</title>
-    <url>/2025/05/14/T-X/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="X"><a href="#X" class="headerlink" title="X"></a><a href="https://x.com/">X</a></h3><br>
+    <title>crontab guru</title>
+    <url>/2025/05/11/T-crontab-guru/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="crontab-guru"><a href="#crontab-guru" class="headerlink" title="crontab guru"></a><a href="https://crontab.guru/">crontab guru</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Cronitor的 cron 计划表达式快速简便的编辑器<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
 ]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Vim Cheat Sheet</title>
+    <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Vim-Cheat-Sheet"><a href="#Vim-Cheat-Sheet" class="headerlink" title="Vim Cheat Sheet"></a><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该项目旨在成为最易用的 Vim 指南之一。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -1097,13 +1408,15 @@
       </categories>
   </entry>
   <entry>
-    <title>crontab guru</title>
-    <url>/2025/05/11/T-crontab-guru/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="crontab-guru"><a href="#crontab-guru" class="headerlink" title="crontab guru"></a><a href="https://crontab.guru/">crontab guru</a></h3><br>
+    <title>X</title>
+    <url>/2025/05/14/T-X/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="X"><a href="#X" class="headerlink" title="X"></a><a href="https://x.com/">X</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Cronitor的 cron 计划表达式快速简便的编辑器<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
         <category>网站</category>
