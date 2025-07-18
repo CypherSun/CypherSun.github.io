@@ -1,67 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客示例</title>
-    <url>/2077/07/07/#%E5%8D%9A%E5%AE%A2%E7%A4%BA%E4%BE%8B/</url>
-    <content><![CDATA[<p>192.0.2.1<br>example.com</p>
-<h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><p>检查页面源代码</p>
-<p>简单密码 admin、administrator、root、toor </p>
-<p>Ping<br>nslookup<br>whois</p>
-<p><a href="https://cyphersun.github.io/2025/05/01/Gobuster/">Gobuster</a></p>
-<ul>
-<li>扫描 URI 目录和文件，DNS 子域，Web 服务器上的虚拟主机名，打开 Amazon S3 存储桶，Google Cloud 存储桶，TFTP 服务器</li>
-</ul>
-<p>nmap<br>-sS 隐蔽扫描<br>-sV 探测服务器版本<br>–script vuln 探测漏洞版本</p>
-<p>nmap -sV –script vuln TARGET_IP</p>
-<br>
-
-
-
-
-
-<h2 id="武器化（Weaponization）"><a href="#武器化（Weaponization）" class="headerlink" title="武器化（Weaponization）"></a>武器化（Weaponization）</h2><br>
-
-
-
-
-
-<h2 id="投送（Delivery）"><a href="#投送（Delivery）" class="headerlink" title="投送（Delivery）"></a>投送（Delivery）</h2><br>
-
-
-
-
-
-<h2 id="利用（Exploitation）"><a href="#利用（Exploitation）" class="headerlink" title="利用（Exploitation）"></a>利用（Exploitation）</h2><p>尝试加点感叹号利用发现新漏发<br>例如，mother link漏洞 CVE-2024-21413</p>
-<br>
-
-
-
-
-
-<h2 id="安装（Installation）"><a href="#安装（Installation）" class="headerlink" title="安装（Installation）"></a>安装（Installation）</h2><br>
-
-
-
-
-
-<h2 id="命令与控制（Command-and-Control，C2）"><a href="#命令与控制（Command-and-Control，C2）" class="headerlink" title="命令与控制（Command and Control，C2）"></a>命令与控制（Command and Control，C2）</h2><br>
-
-
-
-
-
-<h2 id="行动目标（Actions-on-Objectives）"><a href="#行动目标（Actions-on-Objectives）" class="headerlink" title="行动目标（Actions on Objectives）"></a>行动目标（Actions on Objectives）</h2><br>
-
-
-<p>电脑：</p>
-<p>手机：等小米 16 pro，马上了</p>
-<p>平板：</p>
-]]></content>
-      <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hexo搭建</title>
     <url>/2025/05/01/#Hexo%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h2 id="Hexo搭建步骤："><a href="#Hexo搭建步骤：" class="headerlink" title="Hexo搭建步骤："></a>Hexo搭建步骤：</h2><p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">Hexo搭建和命令参考</a></p>
@@ -115,33 +54,6 @@
       </categories>
   </entry>
   <entry>
-    <title>网站模板</title>
-    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>重要</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Advanced search operators list</title>
-    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>工具模板</title>
     <url>/2025/05/01/#%E5%B7%A5%E5%85%B7%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><br>
@@ -154,6 +66,85 @@
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>重要</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>博客示例</title>
+    <url>/2077/07/07/#%E5%8D%9A%E5%AE%A2%E7%A4%BA%E4%BE%8B/</url>
+    <content><![CDATA[<p>192.0.2.1<br>example.com</p>
+<h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><p>检查页面源代码</p>
+<p>简单密码 admin、administrator、root、toor </p>
+<p>Ping<br>nslookup<br>whois</p>
+<p><a href="https://cyphersun.github.io/2025/05/01/Gobuster/">Gobuster</a></p>
+<ul>
+<li>扫描 URI 目录和文件，DNS 子域，Web 服务器上的虚拟主机名，打开 Amazon S3 存储桶，Google Cloud 存储桶，TFTP 服务器</li>
+</ul>
+<p>nmap<br>-sS 隐蔽扫描<br>-sV 探测服务器版本<br>–script vuln 探测漏洞版本</p>
+<p>nmap -sV –script vuln TARGET_IP</p>
+<br>
+
+
+
+
+
+<h2 id="武器化（Weaponization）"><a href="#武器化（Weaponization）" class="headerlink" title="武器化（Weaponization）"></a>武器化（Weaponization）</h2><br>
+
+
+
+
+
+<h2 id="投送（Delivery）"><a href="#投送（Delivery）" class="headerlink" title="投送（Delivery）"></a>投送（Delivery）</h2><br>
+
+
+
+
+
+<h2 id="利用（Exploitation）"><a href="#利用（Exploitation）" class="headerlink" title="利用（Exploitation）"></a>利用（Exploitation）</h2><p>尝试加点感叹号利用发现新漏发<br>例如，mother link漏洞 CVE-2024-21413</p>
+<br>
+
+
+
+
+
+<h2 id="安装（Installation）"><a href="#安装（Installation）" class="headerlink" title="安装（Installation）"></a>安装（Installation）</h2><br>
+
+
+
+
+
+<h2 id="命令与控制（Command-and-Control，C2）"><a href="#命令与控制（Command-and-Control，C2）" class="headerlink" title="命令与控制（Command and Control，C2）"></a>命令与控制（Command and Control，C2）</h2><br>
+
+
+
+
+
+<h2 id="行动目标（Actions-on-Objectives）"><a href="#行动目标（Actions-on-Objectives）" class="headerlink" title="行动目标（Actions on Objectives）"></a>行动目标（Actions on Objectives）</h2><br>
+
+
+
+<p>皮肤：锌，B族，维C，鱼油，维生素片，绿茶</p>
+<p>不吃喝：牛奶，甜食，牛肉，大蒜</p>
+<p>钱难赚屎难吃</p>
+<p>笔记本要求：<br>1.轻薄游戏笔记本，14 英寸每天携带上下班，想要大屏幕可以回家用台式主机<br>2.中等价格不当冤大头<br>3.热门机型优化好，好清灰，坏了好修，bug 少 </p>
+<p>华硕天选 air 2025，7000-8000</p>
+<p>台式机要求：<br>1.显卡 RTX 5060 8g 以上，内存 32 g 以上<br>2.中等价格不当冤大头<br>3.热门显卡优化好，好清灰，坏了好修，bug 少</p>
+<p>二斤 </p>
+<p>鼠标要求：<br>1.游戏无线鼠标，有侧键软件设置<br>2.中等价格不当冤大头<br>3.坏了换了丢了也不心疼</p>
+<p>罗技 G304，100-200</p>
+<p>鼠标垫要求：<br>1.大号游戏鼠标垫<br>2.尼龙材质防水</p>
+<p>镭拓 H7+，50-100</p>
+<p>键盘要求：<br>1.机械游戏键盘，带有数字键盘<br>2.中等价格不当冤大头<br>3.RGB 灯光，茶轴</p>
+<p>键盘膜：</p>
+<p>耳机：</p>
+<p>音响：</p>
+<p>手机：热门旗舰手机，中上价格，好修好换电池少 bug，小米 16 pro（等9月），5000-6000</p>
+<p>手机膜：闪魔</p>
+<p>手机壳：讯迪</p>
+<p>耳机：小米？</p>
+<p>平板：非必需，等明年 3 月 ipad mini 7？或者等结婚装修电竞房再入</p>
+]]></content>
       <categories>
         <category>重要</category>
       </categories>
@@ -174,14 +165,12 @@
       </categories>
   </entry>
   <entry>
-    <title>Censys</title>
-    <url>/2025/05/13/T-Censys/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Censys"><a href="#Censys" class="headerlink" title="Censys"></a><a href="https://search.censys.io/">Censys</a></h3><h3 id="Introductory-Use-Cases"><a href="#Introductory-Use-Cases" class="headerlink" title="Introductory Use Cases"></a><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></h3><br>
+    <title>Advanced search operators list</title>
+    <url>/2025/05/13/T-Advanced-search-operators-list/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Advanced-search-operators-list"><a href="#Advanced-search-operators-list" class="headerlink" title="Advanced search operators list"></a><a href="https://github.com/cipher387/Advanced-search-operators-list">Advanced search operators list</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>邮箱和即时通讯<br>云存储<br>操作系统<br>搜索引擎<br>社交媒体<br>内容分析<br>编码<br>求职<br>生产力和项目管理<br>密码管理器 物<br>联网搜索引擎<br>市场<br>地图 图片<br>图书馆<br>客户<br>支持<br>新闻&#x2F;RSS<br>数据库<br>工具<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -189,16 +178,30 @@
       </categories>
   </entry>
   <entry>
-    <title>Chrome Root Store</title>
-    <url>/2025/06/03/T-Chrome-Root-Store/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Chrome-Root-Store"><a href="#Chrome-Root-Store" class="headerlink" title="Chrome Root Store"></a><a href="https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/root_store.md">Chrome Root Store</a></h3><br>
+    <title>CVE</title>
+    <url>/2025/05/13/T-CVE/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>可信根<br>约束根<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
         <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>网站模板</title>
+    <url>/2025/05/01/#%E7%BD%91%E7%AB%99%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>重要</category>
       </categories>
   </entry>
   <entry>
@@ -217,43 +220,15 @@
       </categories>
   </entry>
   <entry>
-    <title>CrackStation</title>
-    <url>/2025/06/04/T-CrackStation/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="CrackStation"><a href="#CrackStation" class="headerlink" title="CrackStation"></a><a href="https://crackstation.net/">CrackStation</a></h3><br>
+    <title>Censys</title>
+    <url>/2025/05/13/T-Censys/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Censys"><a href="#Censys" class="headerlink" title="Censys"></a><a href="https://search.censys.io/">Censys</a></h3><h3 id="Introductory-Use-Cases"><a href="#Introductory-Use-Cases" class="headerlink" title="Introductory Use Cases"></a><a href="https://docs.censys.com/docs/ls-introductory-use-cases#/">Introductory Use Cases</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>CrackStation 使用大量预先计算的查找表来破解密码哈希值。这些表存储了密码哈希值与其正确密码之间的映射。哈希值已编入索引，以便快速在数据库中搜索给定的哈希值。如果数据库中存在该哈希值，则可以在几分之一秒内恢复密码。这仅适用于“无盐”哈希值。有关不易受预先计算的查找表攻击的密码哈希系统的信息，请参阅我们的哈希安全页面。</p>
-<p>Crackstation 的查找表是通过从维基百科数据库中提取每个单词，并将其添加到我们能找到的所有密码列表来创建的。我们还对单词表进行了智能词重整（暴力破解混合），使其更加高效。对于 MD5 和 SHA1 哈希值，我们有一个 190GB、包含 150 亿个条目的查找表；对于其他哈希值，我们有一个 19GB、包含 15 亿个条目的查找表。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>CVE</title>
-    <url>/2025/05/13/T-CVE/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="CVE"><a href="#CVE" class="headerlink" title="CVE"></a><a href="https://www.cve.org/">CVE</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>识别、定义和分类公开披露的网络安全漏洞。<br>目前有超过281,000 条CVE 记录可通过上面的下载或关键字搜索访问。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Crontab Generator</title>
-    <url>/2025/05/11/T-Crontab-Generator/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Crontab-Generator"><a href="#Crontab-Generator" class="headerlink" title="Crontab Generator"></a><a href="https://crontab-generator.org/">Crontab Generator</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>生成器可以帮助您生成一个 crontab 语法，您可以将其复制并粘贴到您的 crontab 文件中（您可以使用命令打开该文件crontab –e）。在生成的 crontab 语法下方，还会显示一个运行时间列表。预测功能将帮助您确保设置正确的时间和日期。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
 ]]></content>
       <categories>
         <category>网站</category>
@@ -288,14 +263,12 @@
       </categories>
   </entry>
   <entry>
-    <title>GitHub</title>
-    <url>/2025/05/13/T-GitHub/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a><a href="https://github.com/">GitHub</a></h3><br>
+    <title>Chrome Root Store</title>
+    <url>/2025/06/03/T-Chrome-Root-Store/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Chrome-Root-Store"><a href="#Chrome-Root-Store" class="headerlink" title="Chrome Root Store"></a><a href="https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/root_store.md">Chrome Root Store</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>可信根<br>约束根<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -303,9 +276,22 @@
       </categories>
   </entry>
   <entry>
-    <title>Facebook</title>
-    <url>/2025/05/14/T-Facebook/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Facebook"><a href="#Facebook" class="headerlink" title="Facebook"></a><a href="https://www.facebook.com/">Facebook</a></h3><br>
+    <title>Crontab Generator</title>
+    <url>/2025/05/11/T-Crontab-Generator/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Crontab-Generator"><a href="#Crontab-Generator" class="headerlink" title="Crontab Generator"></a><a href="https://crontab-generator.org/">Crontab Generator</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>生成器可以帮助您生成一个 crontab 语法，您可以将其复制并粘贴到您的 crontab 文件中（您可以使用命令打开该文件crontab –e）。在生成的 crontab 语法下方，还会显示一个运行时间列表。预测功能将帮助您确保设置正确的时间和日期。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>GitHub</title>
+    <url>/2025/05/13/T-GitHub/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a><a href="https://github.com/">GitHub</a></h3><br>
 
 
 <h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
@@ -333,19 +319,35 @@
       </categories>
   </entry>
   <entry>
-    <title>Gobuster</title>
-    <url>/2025/05/01/T-Gobuster/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Gobuster"><a href="#Gobuster" class="headerlink" title="Gobuster"></a><a href="https://github.com/OJ/gobuster">Gobuster</a></h3><br>
+    <title>CrackStation</title>
+    <url>/2025/06/04/T-CrackStation/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="CrackStation"><a href="#CrackStation" class="headerlink" title="CrackStation"></a><a href="https://crackstation.net/">CrackStation</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Gobuster 是一种用于暴力破解的工具：</p>
-<p>网站中的 URI（目录和文件）。<br>DNS 子域（支持通配符）。<br>目标 Web 服务器上的虚拟主机名。<br>打开 Amazon S3 存储桶<br>打开 Google Cloud 存储桶<br>TFTP 服务器<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gobuster -u http://example.com -w wordlist.txt <span class="built_in">dir</span></span><br><span class="line"><span class="comment"># -u 网址</span></span><br><span class="line"><span class="comment"># -w 字典</span></span><br></pre></td></tr></table></figure>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>CrackStation 使用大量预先计算的查找表来破解密码哈希值。这些表存储了密码哈希值与其正确密码之间的映射。哈希值已编入索引，以便快速在数据库中搜索给定的哈希值。如果数据库中存在该哈希值，则可以在几分之一秒内恢复密码。这仅适用于“无盐”哈希值。有关不易受预先计算的查找表攻击的密码哈希系统的信息，请参阅我们的哈希安全页面。</p>
+<p>Crackstation 的查找表是通过从维基百科数据库中提取每个单词，并将其添加到我们能找到的所有密码列表来创建的。我们还对单词表进行了智能词重整（暴力破解混合），使其更加高效。对于 MD5 和 SHA1 哈希值，我们有一个 190GB、包含 150 亿个条目的查找表；对于其他哈希值，我们有一个 19GB、包含 15 亿个条目的查找表。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
-<br>]]></content>
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
       <categories>
         <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Facebook</title>
+    <url>/2025/05/14/T-Facebook/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Facebook"><a href="#Facebook" class="headerlink" title="Facebook"></a><a href="https://www.facebook.com/">Facebook</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -379,14 +381,28 @@
       </categories>
   </entry>
   <entry>
-    <title>LOLBAS</title>
-    <url>/2025/05/13/T-LOLBAS/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LOLBAS"><a href="#LOLBAS" class="headerlink" title="LOLBAS"></a><a href="https://lolbas-project.github.io/">LOLBAS</a></h3><br>
+    <title>Gobuster</title>
+    <url>/2025/05/01/T-Gobuster/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Gobuster"><a href="#Gobuster" class="headerlink" title="Gobuster"></a><a href="https://github.com/OJ/gobuster">Gobuster</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Gobuster 是一种用于暴力破解的工具：</p>
+<p>网站中的 URI（目录和文件）。<br>DNS 子域（支持通配符）。<br>目标 Web 服务器上的虚拟主机名。<br>打开 Amazon S3 存储桶<br>打开 Google Cloud 存储桶<br>TFTP 服务器<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">gobuster -u http://example.com -w wordlist.txt <span class="built_in">dir</span></span><br><span class="line"><span class="comment"># -u 网址</span></span><br><span class="line"><span class="comment"># -w 字典</span></span><br></pre></td></tr></table></figure>
+
+<br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Have I Been Pwned</title>
+    <url>/2025/05/13/T-Have-I-Been-Pwned/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Have-I-Been-Pwned"><a href="#Have-I-Been-Pwned" class="headerlink" title="Have I Been Pwned"></a><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></h3><br>
 
 
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -457,18 +473,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Let&#39;s Encrypt</title>
-    <url>/2025/05/28/T-Let-s-Encrypt/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>LinkedIn</title>
     <url>/2025/05/14/T-LinkedIn/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LinkedIn"><a href="#LinkedIn" class="headerlink" title="LinkedIn"></a><a href="https://www.linkedin.com/feed/">LinkedIn</a></h3><br>
@@ -482,38 +486,14 @@
       </categories>
   </entry>
   <entry>
-    <title>Linux man pages</title>
-    <url>/2025/05/10/T-Linux-man-pages/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Linux-man-pages"><a href="#Linux-man-pages" class="headerlink" title="Linux man pages"></a><a href="https://linux.die.net/man/">Linux man pages</a></h3><br>
+    <title>LOLBAS</title>
+    <url>/2025/05/13/T-LOLBAS/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="LOLBAS"><a href="#LOLBAS" class="headerlink" title="LOLBAS"></a><a href="https://lolbas-project.github.io/">LOLBAS</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 部分<br>用户命令（介绍）<br>第 2 节<br>系统调用（介绍）<br>第 3 节<br>库函数（介绍）<br>第 4 节<br>特殊文件（介绍）<br>第 5 节<br>文件格式（介绍）<br>第 6 节<br>游戏（介绍）<br>第 7 节<br>惯例与杂项（引言）<br>第 8 节<br>管理和特权命令（介绍）<br>L 区<br>数学库函数<br>第N部分<br>tcl函数<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Have I Been Pwned</title>
-    <url>/2025/05/13/T-Have-I-Been-Pwned/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Have-I-Been-Pwned"><a href="#Have-I-Been-Pwned" class="headerlink" title="Have I Been Pwned"></a><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></h3><br>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>检查您的电子邮件地址是否遭遇数据泄露<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Microsoft Security Response Center</title>
-    <url>/2025/06/12/T-Microsoft-Security-Response-Center/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Microsoft-Security-Response-Center"><a href="#Microsoft-Security-Response-Center" class="headerlink" title="Microsoft Security Response Center"></a><a href="https://msrc.microsoft.com/update-guide/vulnerability">Microsoft Security Response Center</a></h3><h3 id="Microsoft®-更新目录"><a href="#Microsoft®-更新目录" class="headerlink" title="Microsoft® 更新目录"></a><a href="https://www.catalog.update.microsoft.com/Home.aspx">Microsoft® 更新目录</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Microsoft 安全响应中心 (MSRC) 负责调查所有影响 Microsoft 产品和服务的安全漏洞报告，并在此提供信息，作为持续努力的一部分，帮助您管理安全风险并保护您的系统。<br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
@@ -1005,6 +985,31 @@
       </categories>
   </entry>
   <entry>
+    <title>Linux man pages</title>
+    <url>/2025/05/10/T-Linux-man-pages/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Linux-man-pages"><a href="#Linux-man-pages" class="headerlink" title="Linux man pages"></a><a href="https://linux.die.net/man/">Linux man pages</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>手册页分为几个部分。要查看某个部分的 Linux 手册页完整列表，请选择以下其中一个部分：<br>第 1 部分<br>用户命令（介绍）<br>第 2 节<br>系统调用（介绍）<br>第 3 节<br>库函数（介绍）<br>第 4 节<br>特殊文件（介绍）<br>第 5 节<br>文件格式（介绍）<br>第 6 节<br>游戏（介绍）<br>第 7 节<br>惯例与杂项（引言）<br>第 8 节<br>管理和特权命令（介绍）<br>L 区<br>数学库函数<br>第N部分<br>tcl函数<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Let&#39;s Encrypt</title>
+    <url>/2025/05/28/T-Let-s-Encrypt/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Let’s-Encrypt"><a href="#Let’s-Encrypt" class="headerlink" title="Let’s Encrypt"></a><a href="https://letsencrypt.org/">Let’s Encrypt</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Let’s Encrypt 是一家提供免费 TLS 证书的证书颁发机构，帮助网站轻松启用 HTTPS 加密，为每个人打造更安全的互联网。Let’s Encrypt 是非营利组织互联网安全研究小组 (Internet Security Research Group) 的一个项目。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>NVD</title>
     <url>/2025/05/13/T-NVD/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="NVD"><a href="#NVD" class="headerlink" title="NVD"></a><a href="https://nvd.nist.gov/">NVD</a></h3><br>
@@ -1017,123 +1022,16 @@
       </categories>
   </entry>
   <entry>
-    <title>Nmap</title>
-    <url>/2025/06/02/T-Nmap/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Nmap"><a href="#Nmap" class="headerlink" title="Nmap"></a><a href="https://nmap.org/">Nmap</a></h3><br>
+    <title>Microsoft Security Response Center</title>
+    <url>/2025/06/12/T-Microsoft-Security-Response-Center/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Microsoft-Security-Response-Center"><a href="#Microsoft-Security-Response-Center" class="headerlink" title="Microsoft Security Response Center"></a><a href="https://msrc.microsoft.com/update-guide/vulnerability">Microsoft Security Response Center</a></h3><h3 id="Microsoft®-更新目录"><a href="#Microsoft®-更新目录" class="headerlink" title="Microsoft® 更新目录"></a><a href="https://www.catalog.update.microsoft.com/Home.aspx">Microsoft® 更新目录</a></h3><br>
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Nmap（“网络映射器”）是一款 用于网络发现和安全审计的免费开源实用程序。许多系统和网络管理员还发现它对于网络清单、管理服务升级计划以及监控主机或服务正常运行时间等任务非常有用。Nmap 以新颖的方式使用原始 IP 数据包来确定网络上可用的主机、这些主机提供的服务（应用程序名称和版本）、它们运行的​​操作系统（及其版本）、正在使用的数据包过滤器&#x2F;防火墙类型以及其他数十种特性。它旨在快速扫描大型网络，但对单个主机也能正常工作。Nmap 可在所有主流计算机操作系统上运行，并且官方二进制软件包适用于 Linux、Windows 和 Mac OS X。除了经典的命令行 Nmap 可执行文件外，Nmap 套件还包含一个高级 GUI 和结果查看器 ( Zenmap )、一个灵活的数据传输、重定向和调试工具 ( Ncat )、一个用于比较扫描结果的实用程序 ( Ndiff ) 以及一个数据包生成和响应分析工具 ( Nping )。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><table>
-<thead>
-<tr>
-<th>选项</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>nmap -sL</code></td>
-<td>列出扫描目标，不进行实际扫描</td>
-</tr>
-<tr>
-<td><code>nmap -sn</code></td>
-<td>本地 ARP 扫描，远程 Ping 扫描，仅发现主机（不进行端口扫描）</td>
-</tr>
-<tr>
-<td><code>nmap -sT</code></td>
-<td>TCP 连接扫描（完整三次握手）</td>
-</tr>
-<tr>
-<td><code>nmap -sS</code></td>
-<td>TCP SYN 扫描（只进行三次握手的第一步，较隐蔽）</td>
-</tr>
-<tr>
-<td><code>nmap -sU</code></td>
-<td>UDP 扫描</td>
-</tr>
-<tr>
-<td><code>nmap -F</code></td>
-<td>快速模式，仅扫描前 100 个常用端口</td>
-</tr>
-<tr>
-<td><code>nmap -p&lt;RANGE&gt;</code></td>
-<td>指定端口范围</td>
-</tr>
-<tr>
-<td><code>nmap -O</code></td>
-<td>操作系统检测</td>
-</tr>
-<tr>
-<td><code>nmap -sV</code></td>
-<td>探测服务版本</td>
-</tr>
-<tr>
-<td><code>nmap -A</code></td>
-<td>执行操作系统检测、版本探测、traceroute 等增强功能</td>
-</tr>
-<tr>
-<td><code>nmap -Pn</code></td>
-<td>将所有主机视为在线，跳过 Ping 测试</td>
-</tr>
-<tr>
-<td><code>nmap -T&lt;0-5&gt;</code></td>
-<td>时间模板：偏执(0)、鬼鬼祟祟(1)、礼貌(2)、正常(3)、好斗(4)、疯狂(5)</td>
-</tr>
-<tr>
-<td><code>nmap --min-parallelism &lt;NUM&gt;</code></td>
-<td>最小并行探测数量</td>
-</tr>
-<tr>
-<td><code>nmap --max-parallelism &lt;NUM&gt;</code></td>
-<td>最大并行探测数量</td>
-</tr>
-<tr>
-<td><code>nmap --min-rate &lt;NUMBER&gt;</code></td>
-<td>最小速率（数据包&#x2F;秒）</td>
-</tr>
-<tr>
-<td><code>nmap --max-rate &lt;NUMBER&gt;</code></td>
-<td>最大速率（数据包&#x2F;秒）</td>
-</tr>
-<tr>
-<td><code>nmap --host-timeout &lt;TIME&gt;</code></td>
-<td>单个主机的最大等待时间</td>
-</tr>
-<tr>
-<td><code>nmap -v</code></td>
-<td>提高详细程度，可重复，如 <code>-vv</code> 或 <code>-vvv</code></td>
-</tr>
-<tr>
-<td><code>nmap -d</code></td>
-<td>启用调试模式，如 <code>-d</code>, <code>-d9</code></td>
-</tr>
-<tr>
-<td><code>nmap -oN &lt;FILE&gt;</code></td>
-<td>以正常格式输出扫描结果</td>
-</tr>
-<tr>
-<td><code>nmap -oX &lt;FILE&gt;</code></td>
-<td>以 XML 格式输出扫描结果</td>
-</tr>
-<tr>
-<td><code>nmap -oG &lt;FILE&gt;</code></td>
-<td>以 Grep 可处理搜索格式输出</td>
-</tr>
-<tr>
-<td><code>nmap -oA &lt;BASENAME&gt;</code></td>
-<td>同时以所有三种格式输出（N&#x2F;X&#x2F;G）</td>
-</tr>
-</tbody></table>
-<p>建议以 root 身份或 sudo 运行，默认以上命令后面都附带 <code>&lt;IP&gt;/&lt;HOSTNAME&gt;</code></p>
-<br>
-
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nmap -p&lt;RANGE&gt;</span><br><span class="line"><span class="comment"># &lt;RANGE&gt;: -p80,443,53，扫描 80 (http), 443 (https) 和 53 (DNS) 端口</span></span><br><span class="line"><span class="comment"># &lt;RANGE&gt;: -p1-1000，扫描 1-1000 端口</span></span><br><span class="line"><span class="comment"># &lt;RANGE&gt;: -p-，扫描所有 65535 端口</span></span><br><span class="line"></span><br><span class="line">nmap -T&lt;0-5&gt;</span><br><span class="line"><span class="comment"># T0 (paranoid)，T1 (sneaky)，T2 (polite)，T3 (normal)，T4 (aggressive)</span></span><br><span class="line"><span class="comment"># &lt;0-5&gt;: -T paranoid，扫描一次 5 分钟</span></span><br><span class="line"><span class="comment"># &lt;0-5&gt;: -T2，扫描一次 0.4 秒</span></span><br><span class="line"><span class="comment"># &lt;0-5&gt;: -T 3，扫描一次 0.15 秒</span></span><br><span class="line"></span><br><span class="line">nmap --min-parallelism &lt;NUM&gt;</span><br><span class="line"><span class="comment"># &lt;NUM&gt;: 10，最少同时发出 10 个端口探测请求，多线程更快，但可能丢包，根据网络质量调整</span></span><br><span class="line"></span><br><span class="line">nmap --min-rate &lt;NUMBER&gt;</span><br><span class="line"><span class="comment"># &lt;NUMBER&gt;: 100，每秒至少发送 100 个探测包，控制 nmap 发包速率，太高避免压垮目标</span></span><br><span class="line"></span><br><span class="line">nmap --host-timeout &lt;TIME&gt;</span><br><span class="line"><span class="comment"># &lt;TIME&gt;: 30s，扫描单个主机的最长等待时间，超过 30s 直接跳过该主机</span></span><br><span class="line"></span><br><span class="line">nmap -oN &lt;FILE&gt;</span><br><span class="line"><span class="comment"># &lt;FILE&gt;: -oN result，普通输出 .nmap格式</span></span><br><span class="line"><span class="comment"># &lt;FILE&gt;: -oX result，XML 格式输出 .xml格式</span></span><br><span class="line"><span class="comment"># &lt;FILE&gt;: -oG result，Grep 格式输出 .gnmap格式</span></span><br><span class="line"><span class="comment"># &lt;FILE&gt;: -oA result，三种格式都输出</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nmap 192.0.2.1-10</span><br><span class="line"><span class="comment"># 扫描端口 1-10</span></span><br><span class="line"></span><br><span class="line">nmap 192.0.2.0/30</span><br><span class="line"><span class="comment"># 192.0.2.0/30: 扫描端口 0-3，4 个端口</span></span><br><span class="line"><span class="comment"># 192.0.2.0/29: 扫描端口 0-7，8 个端口</span></span><br><span class="line"><span class="comment"># 192.0.2.0/28: 扫描端口 0-15，16 个端口</span></span><br><span class="line"><span class="comment"># 192.0.2.0/27: 扫描端口 0-31，32 个端口</span></span><br><span class="line"><span class="comment"># 192.0.2.0/26: 扫描端口 0-63，64 个端口</span></span><br><span class="line"><span class="comment"># 192.0.2.0/25: 扫描端口 0-127，128 个端口</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Microsoft 安全响应中心 (MSRC) 负责调查所有影响 Microsoft 产品和服务的安全漏洞报告，并在此提供信息，作为持续努力的一部分，帮助您管理安全风险并保护您的系统。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
       <categories>
-        <category>工具</category>
+        <category>网站</category>
       </categories>
   </entry>
   <entry>
@@ -1150,21 +1048,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Ports 1 - 1024</title>
-    <url>/2025/05/02/T-Ports%201-1024/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Ports-1-1024"><a href="#Ports-1-1024" class="headerlink" title="Ports 1 - 1024"></a><a href="https://www.vmaxx.net/techinfo/ports.htm">Ports 1 - 1024</a></h3><br>
-
-
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-  </entry>
-  <entry>
     <title>PHP</title>
     <url>/2025/05/14/T-PHP/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a><a href="https://www.php.net/">PHP</a></h3><h3 id="PHP-Manual"><a href="#PHP-Manual" class="headerlink" title="PHP Manual"></a><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></h3><br>
@@ -1172,17 +1055,6 @@
 
 <h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>PHP 是一种流行的通用脚本语言，尤其适合 Web 开发。<br>它快速、灵活、实用，能够支持从博客到全球热门网站的所有内容。<br><br></p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Responder</title>
-    <url>/2025/06/12/T-Responder/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/lgandx/Responder">Responder</a><br><br></p>
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>IPv6&#x2F;IPv4 LLMNR&#x2F;NBT-NS&#x2F;mDNS 毒化器和 NTLMv1&#x2F;2 中继。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p><a href="https://www.kali.org/tools/responder/">Kali</a><br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
@@ -1204,6 +1076,21 @@
       </categories>
   </entry>
   <entry>
+    <title>Ports 1 - 1024</title>
+    <url>/2025/05/02/T-Ports%201-1024/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="Ports-1-1024"><a href="#Ports-1-1024" class="headerlink" title="Ports 1 - 1024"></a><a href="https://www.vmaxx.net/techinfo/ports.htm">Ports 1 - 1024</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
     <title>SecLists</title>
     <url>/2025/06/05/T-SecLists/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="SecLists"><a href="#SecLists" class="headerlink" title="SecLists"></a><a href="https://github.com/danielmiessler/SecLists">SecLists</a></h3><br>
@@ -1213,6 +1100,17 @@
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali"></a><a href="https://www.kali.org/tools/seclists/">Kali</a></h3><br>
 
 
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Responder</title>
+    <url>/2025/06/12/T-Responder/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/lgandx/Responder">Responder</a><br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>IPv6&#x2F;IPv4 LLMNR&#x2F;NBT-NS&#x2F;mDNS 毒化器和 NTLMv1&#x2F;2 中继。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p><a href="https://www.kali.org/tools/responder/">Kali</a><br><br></p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
@@ -1258,6 +1156,16 @@
 
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
 ]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Security Headers</title>
+    <url>/2025/07/18/T-Security-Headers/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><p><a href="https://securityheaders.com/">Security Headers</a><br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>市面上有一些服务可以分析其他网站的 HTTP 响应标头，但我们也有一个结果评级系统。我们分析的 HTTP 响应标头提供了高级别的保护，因此网站部署这些标头至关重要。希望通过提供一种简单的机制来评估这些标头，并提供有关如何部署缺失标头的更多信息，我们可以提高整个 Web 上基于安全性的标头的使用率。<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>网站</category>
       </categories>
@@ -1421,6 +1329,139 @@
       </categories>
   </entry>
   <entry>
+    <title>WolframAlpha</title>
+    <url>/2025/06/03/T-WolframAlpha/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="WolframAlpha"><a href="#WolframAlpha" class="headerlink" title="WolframAlpha"></a><a href="https://www.wolframalpha.com/">WolframAlpha</a></h3><br>
+
+
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>使用 Wolfram 的突破性算法、知识和 AI 技术给出专家级答案<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Nmap</title>
+    <url>/2025/06/02/T-Nmap/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="Nmap"><a href="#Nmap" class="headerlink" title="Nmap"></a><a href="https://nmap.org/">Nmap</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>Nmap（“网络映射器”）是一款 用于网络发现和安全审计的免费开源实用程序。许多系统和网络管理员还发现它对于网络清单、管理服务升级计划以及监控主机或服务正常运行时间等任务非常有用。Nmap 以新颖的方式使用原始 IP 数据包来确定网络上可用的主机、这些主机提供的服务（应用程序名称和版本）、它们运行的​​操作系统（及其版本）、正在使用的数据包过滤器&#x2F;防火墙类型以及其他数十种特性。它旨在快速扫描大型网络，但对单个主机也能正常工作。Nmap 可在所有主流计算机操作系统上运行，并且官方二进制软件包适用于 Linux、Windows 和 Mac OS X。除了经典的命令行 Nmap 可执行文件外，Nmap 套件还包含一个高级 GUI 和结果查看器 ( Zenmap )、一个灵活的数据传输、重定向和调试工具 ( Ncat )、一个用于比较扫描结果的实用程序 ( Ndiff ) 以及一个数据包生成和响应分析工具 ( Nping )。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>下载安装<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>nmap -sL</code></td>
+<td>列出扫描目标，不进行实际扫描</td>
+</tr>
+<tr>
+<td><code>nmap -sn</code></td>
+<td>本地 ARP 扫描，远程 Ping 扫描，仅发现主机（不进行端口扫描）</td>
+</tr>
+<tr>
+<td><code>nmap -sT</code></td>
+<td>TCP 连接扫描（完整三次握手）</td>
+</tr>
+<tr>
+<td><code>nmap -sS</code></td>
+<td>TCP SYN 扫描（只进行三次握手的第一步，较隐蔽）</td>
+</tr>
+<tr>
+<td><code>nmap -sU</code></td>
+<td>UDP 扫描</td>
+</tr>
+<tr>
+<td><code>nmap -F</code></td>
+<td>快速模式，仅扫描前 100 个常用端口</td>
+</tr>
+<tr>
+<td><code>nmap -p&lt;RANGE&gt;</code></td>
+<td>指定端口范围</td>
+</tr>
+<tr>
+<td><code>nmap -O</code></td>
+<td>操作系统检测</td>
+</tr>
+<tr>
+<td><code>nmap -sV</code></td>
+<td>探测服务版本</td>
+</tr>
+<tr>
+<td><code>nmap -A</code></td>
+<td>执行操作系统检测、版本探测、traceroute 等增强功能</td>
+</tr>
+<tr>
+<td><code>nmap -Pn</code></td>
+<td>将所有主机视为在线，跳过 Ping 测试</td>
+</tr>
+<tr>
+<td><code>nmap -T&lt;0-5&gt;</code></td>
+<td>时间模板：偏执(0)、鬼鬼祟祟(1)、礼貌(2)、正常(3)、好斗(4)、疯狂(5)</td>
+</tr>
+<tr>
+<td><code>nmap --min-parallelism &lt;NUM&gt;</code></td>
+<td>最小并行探测数量</td>
+</tr>
+<tr>
+<td><code>nmap --max-parallelism &lt;NUM&gt;</code></td>
+<td>最大并行探测数量</td>
+</tr>
+<tr>
+<td><code>nmap --min-rate &lt;NUMBER&gt;</code></td>
+<td>最小速率（数据包&#x2F;秒）</td>
+</tr>
+<tr>
+<td><code>nmap --max-rate &lt;NUMBER&gt;</code></td>
+<td>最大速率（数据包&#x2F;秒）</td>
+</tr>
+<tr>
+<td><code>nmap --host-timeout &lt;TIME&gt;</code></td>
+<td>单个主机的最大等待时间</td>
+</tr>
+<tr>
+<td><code>nmap -v</code></td>
+<td>提高详细程度，可重复，如 <code>-vv</code> 或 <code>-vvv</code></td>
+</tr>
+<tr>
+<td><code>nmap -d</code></td>
+<td>启用调试模式，如 <code>-d</code>, <code>-d9</code></td>
+</tr>
+<tr>
+<td><code>nmap -oN &lt;FILE&gt;</code></td>
+<td>以正常格式输出扫描结果</td>
+</tr>
+<tr>
+<td><code>nmap -oX &lt;FILE&gt;</code></td>
+<td>以 XML 格式输出扫描结果</td>
+</tr>
+<tr>
+<td><code>nmap -oG &lt;FILE&gt;</code></td>
+<td>以 Grep 可处理搜索格式输出</td>
+</tr>
+<tr>
+<td><code>nmap -oA &lt;BASENAME&gt;</code></td>
+<td>同时以所有三种格式输出（N&#x2F;X&#x2F;G）</td>
+</tr>
+</tbody></table>
+<p>建议以 root 身份或 sudo 运行，默认以上命令后面都附带 <code>&lt;IP&gt;/&lt;HOSTNAME&gt;</code></p>
+<br>
+
+<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nmap -p&lt;RANGE&gt;</span><br><span class="line"><span class="comment"># &lt;RANGE&gt;: -p80,443,53，扫描 80 (http), 443 (https) 和 53 (DNS) 端口</span></span><br><span class="line"><span class="comment"># &lt;RANGE&gt;: -p1-1000，扫描 1-1000 端口</span></span><br><span class="line"><span class="comment"># &lt;RANGE&gt;: -p-，扫描所有 65535 端口</span></span><br><span class="line"></span><br><span class="line">nmap -T&lt;0-5&gt;</span><br><span class="line"><span class="comment"># T0 (paranoid)，T1 (sneaky)，T2 (polite)，T3 (normal)，T4 (aggressive)</span></span><br><span class="line"><span class="comment"># &lt;0-5&gt;: -T paranoid，扫描一次 5 分钟</span></span><br><span class="line"><span class="comment"># &lt;0-5&gt;: -T2，扫描一次 0.4 秒</span></span><br><span class="line"><span class="comment"># &lt;0-5&gt;: -T 3，扫描一次 0.15 秒</span></span><br><span class="line"></span><br><span class="line">nmap --min-parallelism &lt;NUM&gt;</span><br><span class="line"><span class="comment"># &lt;NUM&gt;: 10，最少同时发出 10 个端口探测请求，多线程更快，但可能丢包，根据网络质量调整</span></span><br><span class="line"></span><br><span class="line">nmap --min-rate &lt;NUMBER&gt;</span><br><span class="line"><span class="comment"># &lt;NUMBER&gt;: 100，每秒至少发送 100 个探测包，控制 nmap 发包速率，太高避免压垮目标</span></span><br><span class="line"></span><br><span class="line">nmap --host-timeout &lt;TIME&gt;</span><br><span class="line"><span class="comment"># &lt;TIME&gt;: 30s，扫描单个主机的最长等待时间，超过 30s 直接跳过该主机</span></span><br><span class="line"></span><br><span class="line">nmap -oN &lt;FILE&gt;</span><br><span class="line"><span class="comment"># &lt;FILE&gt;: -oN result，普通输出 .nmap格式</span></span><br><span class="line"><span class="comment"># &lt;FILE&gt;: -oX result，XML 格式输出 .xml格式</span></span><br><span class="line"><span class="comment"># &lt;FILE&gt;: -oG result，Grep 格式输出 .gnmap格式</span></span><br><span class="line"><span class="comment"># &lt;FILE&gt;: -oA result，三种格式都输出</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nmap 192.0.2.1-10</span><br><span class="line"><span class="comment"># 扫描端口 1-10</span></span><br><span class="line"></span><br><span class="line">nmap 192.0.2.0/30</span><br><span class="line"><span class="comment"># 192.0.2.0/30: 扫描端口 0-3，4 个端口</span></span><br><span class="line"><span class="comment"># 192.0.2.0/29: 扫描端口 0-7，8 个端口</span></span><br><span class="line"><span class="comment"># 192.0.2.0/28: 扫描端口 0-15，16 个端口</span></span><br><span class="line"><span class="comment"># 192.0.2.0/27: 扫描端口 0-31，32 个端口</span></span><br><span class="line"><span class="comment"># 192.0.2.0/26: 扫描端口 0-63，64 个端口</span></span><br><span class="line"><span class="comment"># 192.0.2.0/25: 扫描端口 0-127，128 个端口</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>X</title>
     <url>/2025/05/14/T-X/</url>
     <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="X"><a href="#X" class="headerlink" title="X"></a><a href="https://x.com/">X</a></h3><br>
@@ -1436,13 +1477,13 @@
       </categories>
   </entry>
   <entry>
-    <title>WolframAlpha</title>
-    <url>/2025/06/03/T-WolframAlpha/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="WolframAlpha"><a href="#WolframAlpha" class="headerlink" title="WolframAlpha"></a><a href="https://www.wolframalpha.com/">WolframAlpha</a></h3><br>
+    <title>crontab guru</title>
+    <url>/2025/05/11/T-crontab-guru/</url>
+    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="crontab-guru"><a href="#crontab-guru" class="headerlink" title="crontab guru"></a><a href="https://crontab.guru/">crontab guru</a></h3><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>使用 Wolfram 的突破性算法、知识和 AI 技术给出专家级答案<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>搜索<br><br></p>
+<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Cronitor的 cron 计划表达式快速简便的编辑器<br><br></p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
 ]]></content>
       <categories>
         <category>网站</category>
@@ -1466,6 +1507,22 @@
       </categories>
   </entry>
   <entry>
+    <title>rsatool</title>
+    <url>/2025/06/03/T-rsatool/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="rsatool"><a href="#rsatool" class="headerlink" title="rsatool"></a><a href="https://github.com/ius/rsatool">rsatool</a></h3><br>
+
+
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>rsatool 根据给定的两个素数（p、q）或模数和私有指数（n、d）计算 RSA（p、q、n、d、e）和 RSA-CRT（dP、dQ、qInv）参数。</p>
+<p>显示结果参数，并可以选择将其写为与 OpenSSL 兼容的 DER 或 PEM 编码的 RSA 私钥。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>hashcat</title>
     <url>/2025/06/04/T-hashcat/</url>
     <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="hashcat"><a href="#hashcat" class="headerlink" title="hashcat"></a><a href="https://hashcat.net/hashcat/">hashcat</a></h3><h3 id="Example-hashes"><a href="#Example-hashes" class="headerlink" title="Example hashes"></a><a href="https://hashcat.net/wiki/doku.php?id=example_hashes">Example hashes</a></h3><br>
@@ -1478,38 +1535,6 @@
 
 <h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hashcat -m 3200 -a 0 hash1.txt /usr/share/wordlists/rockyou.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典破解 bcrypt $2*$, Blowfish (Unix) 的 hash1.txt 文件</span></span><br><span class="line"></span><br><span class="line">hashcat -m 1400 -a 0 hash2.txt /usr/share/wordlists/rockyou.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典破解 SHA2-256 的 hash2.txt 文件</span></span><br><span class="line"></span><br><span class="line">hashcat -m 1800 -a 0 hash3.txt /usr/share/wordlists/rockyou.txt</span><br><span class="line"><span class="comment"># 使用 rockyou.txt 字典破解 sha512crypt $6$, SHA512 (Unix) 2 的 hash3.txt 文件</span></span><br></pre></td></tr></table></figure>
 <br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>hashID</title>
-    <url>/2025/06/04/T-hashID/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/psypanda/hashid">hashID</a><br><br></p>
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>识别用于加密数据（尤其是密码）的不同类型的哈希。</p>
-<p>这取代了过时的hash-identifier ！</p>
-<p>hashID 是一个用 Python 3 编写的工具，它支持使用正则表达式识别超过 220 种独特的哈希类型。支持的哈希类型详细列表可 在此处找到。</p>
-<p>它能够识别单个哈希、解析文件或读取目录中的多个文件并识别其中的哈希。hashID 还能够在其输出中包含相应的 hashcat模式和&#x2F;或 JohnTheRipper格式。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>rsatool</title>
-    <url>/2025/06/03/T-rsatool/</url>
-    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><h3 id="rsatool"><a href="#rsatool" class="headerlink" title="rsatool"></a><a href="https://github.com/ius/rsatool">rsatool</a></h3><br>
-
-
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>rsatool 根据给定的两个素数（p、q）或模数和私有指数（n、d）计算 RSA（p、q、n、d、e）和 RSA-CRT（dP、dQ、qInv）参数。</p>
-<p>显示结果参数，并可以选择将其写为与 OpenSSL 兼容的 DER 或 PEM 编码的 RSA 私钥。<br><br></p>
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
-
-
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
         <category>工具</category>
       </categories>
@@ -1675,16 +1700,19 @@
       </categories>
   </entry>
   <entry>
-    <title>crontab guru</title>
-    <url>/2025/05/11/T-crontab-guru/</url>
-    <content><![CDATA[<h2 id="网站地址"><a href="#网站地址" class="headerlink" title="网站地址"></a>网站地址</h2><h3 id="crontab-guru"><a href="#crontab-guru" class="headerlink" title="crontab guru"></a><a href="https://crontab.guru/">crontab guru</a></h3><br>
+    <title>hashID</title>
+    <url>/2025/06/04/T-hashID/</url>
+    <content><![CDATA[<h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a href="https://github.com/psypanda/hashid">hashID</a><br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>识别用于加密数据（尤其是密码）的不同类型的哈希。</p>
+<p>这取代了过时的hash-identifier ！</p>
+<p>hashID 是一个用 Python 3 编写的工具，它支持使用正则表达式识别超过 220 种独特的哈希类型。支持的哈希类型详细列表可 在此处找到。</p>
+<p>它能够识别单个哈希、解析文件或读取目录中的多个文件并识别其中的哈希。hashID 还能够在其输出中包含相应的 hashcat模式和&#x2F;或 JohnTheRipper格式。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><br>
 
 
-<h2 id="网站介绍"><a href="#网站介绍" class="headerlink" title="网站介绍"></a>网站介绍</h2><p>Cronitor的 cron 计划表达式快速简便的编辑器<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>设置<br><br></p>
-]]></content>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>]]></content>
       <categories>
-        <category>网站</category>
+        <category>工具</category>
       </categories>
   </entry>
 </search>
