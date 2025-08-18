@@ -7,20 +7,20 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="蜜罐搭建步骤： 阿里云创建Ubuntu 20.04实例  1apt update    安装蜜罐：https:&#x2F;&#x2F;hfish.net&#x2F;  1bash &lt;(curl -sS -L https:&#x2F;&#x2F;hfish.net&#x2F;webinstall.sh)    前往 https:&#x2F;&#x2F;120.26.92.76:4433&#x2F;web&#x2F;，记得设置安全组adminHFish2021  环境管理-节点管理配置蜜罐，端">
+<meta name="description" content="工具地址https:&#x2F;&#x2F;docs.waf-ce.chaitin.cn&#x2F; 工具介绍SafeLine，中文名 “雷池”，是一款简单好用, 效果突出的 Web 应用防火墙(WAF)，可以保护 Web 服务不受黑客攻击。 雷池通过过滤和监控 Web 应用与互联网之间的 HTTP 流量来保护 Web 服务。可以保护 Web 服务免受 SQL 注入、XSS、 代码注入、命令注入、CRLF 注入、ldap 注入">
 <meta property="og:type" content="article">
-<meta property="og:title" content="蜜罐搭建">
-<meta property="og:url" content="https://cyphersun.github.io/2025/08/15/#%E8%9C%9C%E7%BD%90%E6%90%AD%E5%BB%BA/index.html">
+<meta property="og:title" content="雷池 SafeLine">
+<meta property="og:url" content="https://cyphersun.github.io/2025/08/14/X-%E9%9B%B7%E6%B1%A0-SafeLine/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="蜜罐搭建步骤： 阿里云创建Ubuntu 20.04实例  1apt update    安装蜜罐：https:&#x2F;&#x2F;hfish.net&#x2F;  1bash &lt;(curl -sS -L https:&#x2F;&#x2F;hfish.net&#x2F;webinstall.sh)    前往 https:&#x2F;&#x2F;120.26.92.76:4433&#x2F;web&#x2F;，记得设置安全组adminHFish2021  环境管理-节点管理配置蜜罐，端">
+<meta property="og:description" content="工具地址https:&#x2F;&#x2F;docs.waf-ce.chaitin.cn&#x2F; 工具介绍SafeLine，中文名 “雷池”，是一款简单好用, 效果突出的 Web 应用防火墙(WAF)，可以保护 Web 服务不受黑客攻击。 雷池通过过滤和监控 Web 应用与互联网之间的 HTTP 流量来保护 Web 服务。可以保护 Web 服务免受 SQL 注入、XSS、 代码注入、命令注入、CRLF 注入、ldap 注入">
 <meta property="og:locale">
-<meta property="article:published_time" content="2025-08-15T07:12:08.000Z">
-<meta property="article:modified_time" content="2025-08-15T07:39:39.118Z">
+<meta property="article:published_time" content="2025-08-14T09:36:21.000Z">
+<meta property="article:modified_time" content="2025-08-18T07:07:23.499Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
 
-<title >蜜罐搭建</title>
+<title >雷池 SafeLine</title>
 
 <!-- Favicon -->
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.6","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.json"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-08-15 15:39:39"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-08-18 15:07:23"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.6" id="trm-switch-style">
@@ -227,7 +227,7 @@
                             NEWS LETTER
                         </div>
                         <h1 class="trm-mb-30 trm-hsmb-font">
-                            蜜罐搭建
+                            雷池 SafeLine
                         </h1>
 
                         
@@ -360,13 +360,13 @@
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
-            08/15
+            08/14
         </div>
     </div>
     <div class="col-sm-4">
         <div class="trm-card trm-label trm-label-light text-center">
             <i class="iconfont far fa-clock trm-icon"></i><br>
-            15:12
+            17:36
         </div>
     </div>
     <div class="col-sm-4">
@@ -378,24 +378,40 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="蜜罐搭建步骤："><a href="#蜜罐搭建步骤：" class="headerlink" title="蜜罐搭建步骤："></a>蜜罐搭建步骤：</h2><ol>
-<li>阿里云创建Ubuntu 20.04实例</li>
+    <h2 id="工具地址"><a href="#工具地址" class="headerlink" title="工具地址"></a>工具地址</h2><p><a target="_blank" rel="noopener" href="https://docs.waf-ce.chaitin.cn/">https://docs.waf-ce.chaitin.cn/</a><br><br></p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>SafeLine，中文名 “雷池”，是一款简单好用, 效果突出的 Web 应用防火墙(WAF)，可以保护 Web 服务不受黑客攻击。</p>
+<p>雷池通过过滤和监控 Web 应用与互联网之间的 HTTP 流量来保护 Web 服务。可以保护 Web 服务免受 SQL 注入、XSS、 代码注入、命令注入、CRLF 注入、ldap 注入、xpath 注入、RCE、XXE、SSRF、路径遍历、后门、暴力破解、CC、爬虫 等攻击。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
+<li>阿里云创建Ubuntu 20.04实例，太低版本不行</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt update</span><br></pre></td></tr></table></figure>
 
 
 <ol start="2">
-<li>安装蜜罐：<a target="_blank" rel="noopener" href="https://hfish.net/">https://hfish.net/</a></li>
+<li>安装雷池 <a target="_blank" rel="noopener" href="https://docs.waf-ce.chaitin.cn/">https://docs.waf-ce.chaitin.cn/</a></li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -sS -L https://hfish.net/webinstall.sh)</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -c <span class="string">&quot;<span class="subst">$(curl -fsSLk https://waf-ce.chaitin.cn/release/latest/setup.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
 
 
 <ol start="3">
-<li><p>前往 <a target="_blank" rel="noopener" href="https://120.26.92.76:4433/web/%EF%BC%8C%E8%AE%B0%E5%BE%97%E8%AE%BE%E7%BD%AE%E5%AE%89%E5%85%A8%E7%BB%84">https://120.26.92.76:4433/web/，记得设置安全组</a><br>admin<br>HFish2021</p>
-</li>
-<li><p>环境管理-节点管理配置蜜罐，端口别冲突就可以</p>
-</li>
+<li>随意搭建网站 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/705196831">https://zhuanlan.zhihu.com/p/705196831</a></li>
 </ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name webgoat -d -p 8080:8080 -p 9090:9090 registry.cn-shanghai.aliyuncs.com/kubesec/webgoat:v2023.8</span><br></pre></td></tr></table></figure>
+
+
+<ol start="4">
+<li>配置雷池<br>前往 <a target="_blank" rel="noopener" href="https://8.217.78.209:9443/%EF%BC%8C%E9%80%9A%E8%BF%87%E7%BB%99%E7%9A%84%E8%B4%A6%E6%88%B7%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95%E4%B8%8A%E5%8E%BB">https://8.217.78.209:9443/，通过给的账户密码登录上去</a></li>
+</ol>
+<p>防护应用 -&gt; 添加应用，设置添加虚构域名站点 <a target="_blank" rel="noopener" href="http://www.testleichi.com/">www.testleichi.com</a></p>
+<p>上游地址设置 <a target="_blank" rel="noopener" href="http://127.0.0.1:8080/">http://127.0.0.1:8080</a></p>
+<p>通过修改 C:\Windows\System32\drivers\etc 本地 host 解析 8.217.78.209 <a target="_blank" rel="noopener" href="http://www.testleichi.com/">www.testleichi.com</a></p>
+<ol start="5">
+<li>配置成功<br><a target="_blank" rel="noopener" href="http://www.testleichi.com/WebGoat/login">http://www.testleichi.com/WebGoat/login</a></li>
+</ol>
+<br>
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>自动开启<br><br></p>
 
 </article>
     
@@ -413,42 +429,7 @@
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2025/08/15/#%E5%A0%A1%E5%9E%92%E6%9C%BA%E6%90%AD%E5%BB%BA/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">15</div>
-                    <div class="trm-cover-month">2025/08</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" #.">
-                    未分类
-                </a>
-            </div>
-            <h5>
-                <a href="/2025/08/15/#%E5%A0%A1%E5%9E%92%E6%9C%BA%E6%90%AD%E5%BB%BA/" class="trm-anima-link">
-                    堡垒机搭建
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>25/08/15</li>
-                <li>15:55</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2025/08/14/#OSS%E6%90%AD%E5%BB%BA/" class="trm-cover-frame trm-anima-link">
+        <a href="/2025/08/14/X-%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-OSS/" class="trm-cover-frame trm-anima-link">
             
             
                 <div class="trm-cover-date">
@@ -465,14 +446,49 @@
                 </a>
             </div>
             <h5>
-                <a href="/2025/08/14/#OSS%E6%90%AD%E5%BB%BA/" class="trm-anima-link">
-                    OSS搭建
+                <a href="/2025/08/14/X-%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-OSS/" class="trm-anima-link">
+                    对象存储 OSS
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
                 <li>25/08/14</li>
                 <li>19:23</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2025/08/13/X-Docker/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">13</div>
+                    <div class="trm-cover-month">2025/08</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    未分类
+                </a>
+            </div>
+            <h5>
+                <a href="/2025/08/13/X-Docker/" class="trm-anima-link">
+                    Docker
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>25/08/13</li>
+                <li>18:07</li>
                 
                 
             </ul>
