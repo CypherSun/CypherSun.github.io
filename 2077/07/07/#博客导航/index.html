@@ -15,7 +15,7 @@
 <meta property="og:description" content="抓包工具 端口扫描 子域名收集 基础爬虫  IP和网站例子：✅192.0.2.1example.comhttp:&#x2F;&#x2F;example.com 渗透目标：域名（www.baidu.com）：www.baidu.comIP（47.86.104.150）：47.86.104.150 主站（www.baidu.com）：分站（tieba.baidu.com）：端口站（www.baidu.com:443）：">
 <meta property="og:locale">
 <meta property="article:published_time" content="2077-07-06T23:07:07.000Z">
-<meta property="article:modified_time" content="2025-09-04T00:41:04.000Z">
+<meta property="article:modified_time" content="2025-09-12T08:48:22.765Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.6","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.json"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-09-04 08:41:04"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-09-12 16:48:22"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.6" id="trm-switch-style">
@@ -487,6 +487,9 @@
 
 
 <h2 id="利用（Exploitation）"><a href="#利用（Exploitation）" class="headerlink" title="利用（Exploitation）"></a>利用（Exploitation）</h2><p>尝试在代码中加点感叹号利用发现新漏发<br>例如，mother link漏洞 CVE-2024-21413</p>
+<p>常用密码，姓名+生日</p>
+<p>_、^这种符号出现，应该联想到ASCII码<br>&#x3D;后跟随俩0-9或A-F十六进制数字，应该联想到Quoted-printable编码<br>凯撒意味着固定移动几位，变异凯撒意味着不是固定移动了，可能是有规律移动</p>
+<p>python脚本<br>ord()函数将字符转换为其对应的ASCII码值<br>chr() - 将ASCII码值转换回对应的字符</p>
 <br>
 
 
@@ -579,7 +582,7 @@ system($_GET['c']);
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2025/09/12/Z-Adobe%E5%85%A8%E5%AE%B6%E6%A1%B6/" class="trm-cover-frame trm-anima-link">
+        <a href="/2025/09/12/Z-Kali%E5%91%BD%E4%BB%A4/" class="trm-cover-frame trm-anima-link">
             
             
                 <div class="trm-cover-date">
@@ -591,19 +594,19 @@ system($_GET['c']);
         
         <div class="trm-card-descr">
             <div class="trm-label trm-category trm-mb-20">
-                <a href=" /categories/%E7%BD%91%E7%AB%99/">
-                    网站
+                <a href=" #.">
+                    未分类
                 </a>
             </div>
             <h5>
-                <a href="/2025/09/12/Z-Adobe%E5%85%A8%E5%AE%B6%E6%A1%B6/" class="trm-anima-link">
-                    Adobe全家桶
+                <a href="/2025/09/12/Z-Kali%E5%91%BD%E4%BB%A4/" class="trm-anima-link">
+                    Kali命令
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
             <ul class="trm-card-data trm-label">
                 <li>25/09/12</li>
-                <li>10:16</li>
+                <li>16:53</li>
                 
                 
             </ul>
