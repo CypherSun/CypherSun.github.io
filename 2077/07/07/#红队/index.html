@@ -7,15 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="抓包 哈希hash 端口扫描 子域名收集 爬虫  IP和网站例子：✅192.0.2.1example.comhttp:&#x2F;&#x2F;example.com 渗透目标：域名（www.baidu.com）：www.baidu.comIP（47.86.104.150）：47.86.104.150 主站（www.baidu.com）：分站（tieba.baidu.com）：端口站（www.baidu.com:44">
+<meta name="description" content="抓包 哈希hash 端口扫描 子域名收集 爬虫  IP和网站例子：✅192.0.2.1example.comhttp:&#x2F;&#x2F;example.com 1、肉鸡：可以被随意控制的服务器，pc2、木马：伪造成正常的应用程序，来控制服务器权限3、后门：webshell，文件上传上传webshell，免杀的，考试会在工具里面给你提供免杀的webshell4、提权：提高服务器权限，（考试中，底层架构为Wind">
 <meta property="og:type" content="article">
 <meta property="og:title" content="红队（建设中）">
 <meta property="og:url" content="https://cyphersun.github.io/2077/07/07/#%E7%BA%A2%E9%98%9F/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="抓包 哈希hash 端口扫描 子域名收集 爬虫  IP和网站例子：✅192.0.2.1example.comhttp:&#x2F;&#x2F;example.com 渗透目标：域名（www.baidu.com）：www.baidu.comIP（47.86.104.150）：47.86.104.150 主站（www.baidu.com）：分站（tieba.baidu.com）：端口站（www.baidu.com:44">
+<meta property="og:description" content="抓包 哈希hash 端口扫描 子域名收集 爬虫  IP和网站例子：✅192.0.2.1example.comhttp:&#x2F;&#x2F;example.com 1、肉鸡：可以被随意控制的服务器，pc2、木马：伪造成正常的应用程序，来控制服务器权限3、后门：webshell，文件上传上传webshell，免杀的，考试会在工具里面给你提供免杀的webshell4、提权：提高服务器权限，（考试中，底层架构为Wind">
 <meta property="og:locale">
 <meta property="article:published_time" content="2077-07-06T23:07:07.000Z">
-<meta property="article:modified_time" content="2025-09-25T09:43:11.524Z">
+<meta property="article:modified_time" content="2025-09-26T06:01:34.736Z">
 <meta property="article:author" content="CypherSun">
 <meta name="twitter:card" content="summary">
 
@@ -57,7 +57,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.6","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.json"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-09-25 17:43:11"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-09-26 14:01:34"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.6" id="trm-switch-style">
@@ -386,6 +386,9 @@
 <li>爬虫</li>
 </ul>
 <p>IP和网站例子：✅<br>192.0.2.1<br>example.com<br><a target="_blank" rel="noopener" href="http://example.com/">http://example.com</a></p>
+<p>1、肉鸡：可以被随意控制的服务器，pc<br>2、木马：伪造成正常的应用程序，来控制服务器权限<br>3、后门：webshell，文件上传上传webshell，免杀的，考试会在工具里面给你提供免杀的webshell<br>4、提权：提高服务器权限，（考试中，底层架构为Windows的话，基本上不考提权，如果底层为Linux，一定会考提权，不会去考你内核提权，考的话，sudo提权，suid提权，find提权）<br>5、旁站<br>旁站：同一个服务器他有多个站点<br>6、C段：<br>信息收集需要自己看规律<br>7、cve：cve国际，cnvd<br>8、cvss：通用漏洞评分系统，统一的判定方法，我们挖洞，可以快速判断出漏洞危害的等级<br>9、poc&amp;exp：<br>poc：验证漏洞是否存在，验证的过程<br>exp：利用漏洞<br>10、白盒&amp;黑盒：<br>白盒：获取一些系统，网络，程序的信息和代码信息，操作系统详细信息，内部的模拟攻击<br>黑盒：信息需要你自己去做信息收集，前台进入后台</p>
+<p>在子域名解析中，每个子域名都会解析为一个特定的IP地址，只有被解析，用户才能正常的进行访问，多对一的关系一旦用户输入错误的子域名，就会造成无法访问的问题<br>有些网站管理者，为了避免用户因为输入错误，而造成用户流失，就会使用泛解析<br>泛解析：没有明确设置子域名一律解析到一个ip地址上，这样，用户即使输入错误的一个子域名，也可以访问到网站管理者指定地址上去<br>利用工具收集时候存在问题：造成我们信息收集时候，请求子域名都能访问的一个假象，从而导致我们收集一堆无效的子域名</p>
+<p>泛解析优点：<br>1、支持无限子域名。无需为每个子域名设置单独配置dns记录<br>2、防止用户错误输入，造成人员流失<br>3、比较方便，输入子域名即可访问网站<br>缺点：<br>1、恶意的泛解析问题，导致搜索引擎对网站的评价降低，从而影响网站的权重和流量问题，搜索引擎排名下降<br>2、恶意收录，可能造成大量垃圾和违规的信息</p>
 <h2 id="渗透目标："><a href="#渗透目标：" class="headerlink" title="渗透目标："></a>渗透目标：</h2><p>域名（<a href="http://www.baidu.com）：www.baidu.com">www.baidu.com）：www.baidu.com</a><br>IP（47.86.104.150）：47.86.104.150</p>
 <p>主站（<a href="http://www.baidu.com）：">www.baidu.com）：</a><br>分站（tieba.baidu.com）：<br>端口站（<a href="http://www.baidu.com:443）：">www.baidu.com:443）：</a><br>目录站（<a target="_blank" rel="noopener" href="http://www.baidu.com/bbs/%EF%BC%89%EF%BC%9A">www.baidu.com/bbs/）：</a><br>子域名站（123.tieba.baidu.com）：</p>
 <p>Web架构（前后端分离，集成软件，自主环境）：<br>系统（Windows，Linux，MacOS）：<br>容器（Docker，K8s，Vmware）：<br>中间件（Apache，Nginx，Tomcat）：<br>语言（PHP，Java，Python）：<br>开发框架（Thinkphp，Laravel，YII）：</p>
@@ -547,6 +550,7 @@
         </h5>
     </div>
     
+    
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
         <a href="/2077/07/07/#%E8%93%9D%E9%98%9F/" class="trm-cover-frame trm-anima-link">
@@ -574,41 +578,6 @@
             <ul class="trm-card-data trm-label">
                 <li>77/07/07</li>
                 <li>07:07</li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</div>
-    
-    
-        <div class="col-lg-6">
-    <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2025/09/25/#5.%E5%90%8E%E5%88%A9%E7%94%A8/" class="trm-cover-frame trm-anima-link">
-            
-            
-                <div class="trm-cover-date">
-                    <div class="trm-cover-day">25</div>
-                    <div class="trm-cover-month">2025/09</div>
-                </div>
-            
-        </a>
-        
-        <div class="trm-card-descr">
-            <div class="trm-label trm-category trm-mb-20">
-                <a href=" #.">
-                    未分类
-                </a>
-            </div>
-            <h5>
-                <a href="/2025/09/25/#5.%E5%90%8E%E5%88%A9%E7%94%A8/" class="trm-anima-link">
-                    后利用
-                </a>
-            </h5>
-            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
-            <ul class="trm-card-data trm-label">
-                <li>25/09/25</li>
-                <li>17:33</li>
                 
                 
             </ul>
