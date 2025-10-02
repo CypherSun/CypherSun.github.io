@@ -15,7 +15,7 @@
 <meta property="og:description" content="信息收集1.概念信息收集对于渗透测试前期来说是非常重要的，尽可能的收集目标的信息，包括域名、IP、端口、管理员信息等等，通常先做加法，后做减法。因为只有我们掌握了目标网站或目标主机足够多的信息之后，我们才能更好地对其进行漏洞检测。 渗透测试者可以使用的信息收集方法包括公开来源信息查询、Google Hacking、社会工程学、网络踩点、扫描探测、被动监听、服务查点等。 2.whois查询域名域名注">
 <meta property="og:locale">
 <meta property="article:published_time" content="2025-09-25T08:50:57.000Z">
-<meta property="article:modified_time" content="2025-09-30T09:12:59.825Z">
+<meta property="article:modified_time" content="2025-10-02T10:13:33.753Z">
 <meta property="article:author" content="CypherSun">
 <meta property="article:tag" content="2.信息收集">
 <meta name="twitter:card" content="summary">
@@ -58,7 +58,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.6","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.json"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-09-30 17:12:59"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-10-02 18:13:33"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.6" id="trm-switch-style">
@@ -385,51 +385,50 @@
 <p><a target="_blank" rel="noopener" href="https://whois.chinaz.com/">站长之家 whois</a><br>搜索主域名 –&gt; 注册人反查<br>搜索主域名 –&gt; 邮箱反查<br>搜索主域名 –&gt; 注册人反查 –&gt; 多邮箱反查</p>
 <p><a target="_blank" rel="noopener" href="https://whois.aizhan.com/">爱站网 whois</a><br>搜索主域名 –&gt; 公司名反查<br>搜索主域名 –&gt; 邮箱反查<br>搜索主域名 –&gt; 公司名反查 –&gt; 多邮箱反查</p>
 <p>Kali whois 工具<br>命令：whois &lt;example.cn&gt;</p>
-<p>复制相关信息 –&gt; 目标xlsx文件</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/TideSec/TscanPlus">TscanPlus</a><br>复制所有杂项 –&gt; 辅助工具 –&gt; 一键分拣 –&gt; 整理归纳到xlsx表格</p>
 <h4 id="域名备案信息"><a href="#域名备案信息" class="headerlink" title="域名备案信息"></a>域名备案信息</h4><p>为了防止在网上从事非法的网站经营活动，打击不良互联网信息的传播</p>
 <p><a target="_blank" rel="noopener" href="https://www.tianyancha.com/">天眼查</a><br>搜索主域名&#x2F;公司名 –&gt; 进入网站 –&gt; 知识产权 –&gt; 网站备案</p>
 <p><a target="_blank" rel="noopener" href="https://www.qcc.com/">企查查</a><br>搜索主域名&#x2F;公司名 –&gt; 进入网站 –&gt; 知识产权 –&gt; 网络服务备案</p>
 <p><a target="_blank" rel="noopener" href="https://sou.xiaolanben.com/">小蓝本</a><br>搜索主域名&#x2F;公司名 –&gt; 进入网站 –&gt; 网站</p>
 <p><a target="_blank" rel="noopener" href="https://icp.chinaz.com/">站长工具</a><br>天眼查&#x2F;企查查复制备案号 –&gt; 查询</p>
 <p><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/c_/#/Integrated/index">ICP&#x2F;IP地址&#x2F;域名信息备案管理系统</a><br>天眼查&#x2F;企查查复制备案号（去除备案号后面的序号） –&gt; 搜索（关闭VPN） –&gt; 详情</p>
-<p>复制相关信息 –&gt; 目标xlsx文件</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/TideSec/TscanPlus">TscanPlus</a><br>复制工具 –&gt; 复制所有杂项 –&gt; 一键分拣 –&gt; 整理归纳</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/TideSec/TscanPlus">TscanPlus</a><br>复制所有杂项 –&gt; 辅助工具 –&gt; 一键分拣 –&gt; 整理归纳到xlsx表格</p>
 <h3 id="3-子域名"><a href="#3-子域名" class="headerlink" title="3.子域名"></a>3.子域名</h3><p>枚举：基于字典的枚举方式，查找带有通用名称得子域名技术（*.cisp.cn）<br>搜索引擎：google fofa<br>第三方聚合服务:dns数据集，检索子域名<br>证书，带有子域名</p>
-<p>子域名泛解析的成因:<br>每个子域名都会解析为一个特定的IP地址，只有被解析，用户才能正常的进行访问,一旦用户输入错误的子域名，就会造成无法访问问题</p>
-<p>网站运营者为了避免用户因为输入错误，而造成用户流失，就会使用泛解析<br>泛解析使用通配符的形式，设置域名解析，将一些没有明确设置的子域名解析到特定的地址上去，这样即使输入错误的子域名，也能够访问到特定的地址上去但是信息收集存在问题，但会造成所有的子域名都能够访问的一个假象，从而收集到一堆无效的子域名 200</p>
-<p>优点:支持无限子域名，无需为每一个子域名单独配置dns记录<br>防止用户输入错误，即使输入错误的子域名也能够访问网站</p>
-<p>缺点:恶意泛解析可能导致搜索引擎对网站的评价降低，从而影响网站的从重和流量，导致网站在搜索引擎的结果排名下降，甚至被完全排除在搜索结果之外<br>恶意收录，可能会出现大量的垃圾和违规的信息</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/euphrat1ca/LayerDomainFinder">LayerDomainFinder</a><br>Windows运行</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/shmilylty/OneForAll">OneForAll</a><br>查看工具笔记，linux运行</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/lijiejie/subDomainsBrute">subDomainsBrute</a><br>查看工具笔记，linux运行<br>-w 解决泛解析问题 (泛解析开启后ping不存在的域名也会返回IP)</p>
-<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a></p>
+<h4 id="工具收集"><a href="#工具收集" class="headerlink" title="工具收集"></a>工具收集</h4><p><a target="_blank" rel="noopener" href="https://github.com/euphrat1ca/LayerDomainFinder">LayerDomainFinder</a><br>Windows运行</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/lijiejie/subDomainsBrute">subDomainsBrute</a><br>Linux运行，-w 解决泛解析问题 (泛解析开启后ping不存在的域名也会返回IP)</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/shmilylty/OneForAll">OneForAll</a><br>Linux运行</p>
+<h4 id="搜索引擎"><a href="#搜索引擎" class="headerlink" title="搜索引擎"></a>搜索引擎</h4><p><a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.google.com.hk/">Google</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.bing.com/">Bing</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/cipher387/Advanced-search-operators-list">https://github.com/cipher387/Advanced-search-operators-list</a></p>
-<p>site:wanganshiji.com<br>intext:admin&#x2F;后台&#x2F;password…<br>intitle:管理员后台<br>inurl:admin?id&#x3D;<br>filetype:pdf</p>
-<p>以上都可以拼接搜索<br>intext:admin site:wanganshiji.com</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/cipher387/Advanced-search-operators-list">搜索引擎搜索语法</a></p>
+<p>​​password site:gov.cn<br>在特定网站或域名内搜索（在中国政府官网内搜索关于password的信息）</p>
+<p>​​intext:”admin”<br>在网页的正文内容中查找包含特定关键词的页面（查找内容中提到“admin”的网页）</p>
+<p>​​intitle:管理员后台<br>查找网页标题中包含特定关键词的页面（查找标题为“管理员后台”的页面）</p>
+<p>​inurl:admin?id&#x3D;<br>查找URL中包含特定字符串的网站（查找网址中含有“admin?id&#x3D;”的页面，通常是登录页面）</p>
+<p>网安 filetype:pdf<br>搜索特定文件类型的文件（搜索关于“网安”的PDF文件）</p>
+<p>以上都可以进行拼接搜索<br>intext:admin site:wanganshiji.com</p>
 <p><a target="_blank" rel="noopener" href="https://fofa.info/">fofa</a><br>header&#x3D;”elastic”<br>图标关联</p>
 <p><a target="_blank" rel="noopener" href="https://hunter.qianxin.com/">hunter</a><br>icp.number&#x3D;”京ICP备18045154号”</p>
-<p>shodan<br>quake</p>
-<p>复制相关信息 –&gt; 目标xlsx文件</p>
-<h3 id="4-真实IP地址"><a href="#4-真实IP地址" class="headerlink" title="4.真实IP地址"></a>4.真实IP地址</h3><p>1.直接能够从目标单位获取<br>2.被动信息收集，hash，icon，供应链，关联ip，来获取边缘资产，利用价值大（nday）<br>3.通过子域名解析ip地址</p>
-<p>CDN的优势: 隐藏源主机ip地址， 降低延迟，提高服务器响应速率·增加网络冗余 减小主服务器的压力用户填写数据，进行数据交互的时候，才会将请求发送到真实的服务器上</p>
-<p>通过ping来判断是否有CDN，只有一个IP就没有CDN，有多个IP就开了CDN</p>
+<p><a target="_blank" rel="noopener" href="https://www.shodan.io/">shodan</a></p>
+<p><a target="_blank" rel="noopener" href="https://quake.360.net/">quake</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/TideSec/TscanPlus">TscanPlus</a><br>复制所有杂项 –&gt; 辅助工具 –&gt; 一键分拣 –&gt; 整理归纳到xlsx表格</p>
+<h3 id="4-真实IP地址"><a href="#4-真实IP地址" class="headerlink" title="4.真实IP地址"></a>4.真实IP地址</h3><p>1.直接能够从目标单位授权获取<br>2.被动信息收集，hash，icon，供应链，关联IP，来获取边缘资产，利用价值大（nday）<br>3.通过子域名解析IP地址</p>
+<p>CDN绕过<br>1、域名的历史解析记录 ip138<br>2、子域名解析记录查看ip地址<br>3、邮箱发送 email.exmaple.com 通过邮箱去注册账号，邮箱发送邮箱ip，是真实ip<br>4、找文件，探针文件 phpinfo.php<br>5、国内外ping</p>
+<p><a target="_blank" rel="noopener" href="https://www.ip138.com/">ip138</a><br>查看以前的IP，可能以前没上CDN，现在上了<br>查到以前一些IP以后去fofa平台搜索，很多匹配结果的就可能就不是真实IP</p>
+<p>通过全国ping和全球ping来判断是否有CDN，只有一个IP就没有CDN，有多个IP就开了CDN</p>
 <p><a target="_blank" rel="noopener" href="https://www.17ce.com/">17ce</a><br><a target="_blank" rel="noopener" href="https://ping.aizhan.com/">爱站网</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.ip138.com/">ip138</a><br>查看以前的IP，可能以前没上CDN，现在上了<br>查到IP以后去fofa平台搜索，很多匹配结果的就可能不是真实IP</p>
-<p>CDN如何绕过<br>1、域名的历史解析记录<br>ip138.com<br>2、子域名解析记录查看ip地址<br>3、邮箱发送 email.baidu.com通过邮箱去注册账号，邮箱发送邮箱ip，是真实ip<br>4、找文件 探针文件 phpinfo.php<br>5、国外ping</p>
 <h3 id="5-端口信息"><a href="#5-端口信息" class="headerlink" title="5.端口信息"></a>5.端口信息</h3><p><a target="_blank" rel="noopener" href="https://www.vmaxx.net/techinfo/ports.htm">Ports 1 - 1024</a></p>
-<p>ftp ssh mysql rdp<br>21 ftp匿名上传漏洞 下载 弱口令爆破<br>22 ssh 弱口令爆破，ssh 隧道代理的转发<br>23 telnet 弱囗令 嗅探<br>389 ldap目录协议 匿名访问 注入弱口令445 smb<br>1433 mssql 注入 提权 sa 弱囗令 爆破windows iis 搭建<br>1521 oracle 反弹shell 弱囗令 爆破<br>2375 docker 未授权<br>3389 rdp 弱口令 shirt后门ms12-020 漏洞<br>8080 tomcat8080 9090 jboss</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/robertdavidgraham/masscan">masscan</a><br>查看工具笔记，linux运行<br>msscan -p 1-65535 ip</p>
-<p><a target="_blank" rel="noopener" href="https://nmap.org/">nmap</a><br>查看工具笔记，linux运行<br>nmap -sV 192.168.0.2nmap -sT 192.168.0.2</p>
-<h3 id="6-指纹识别"><a href="#6-指纹识别" class="headerlink" title="6.指纹识别"></a>6.指纹识别</h3><p>cms种类包括：wordpress, dedecms, discuz…</p>
+<p>ftp ssh mysql rdp<br>21 ftp匿名上传漏洞 下载 弱口令爆破<br>22 ssh 弱口令爆破，ssh 隧道代理的转发<br>23 telnet 弱囗令 嗅探<br>389 ldap目录协议 匿名访问 注入弱口令<br>445 smb<br>1433 mssql 注入 提权 sa 弱囗令 爆破  windows iis 搭建<br>1521 oracle 反弹shell 弱囗令 爆破<br>2375 docker 未授权<br>3389 rdp 弱口令 shirt后门 ms12-020 漏洞<br>8080 tomcat<br>8080 9090 jboss</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/robertdavidgraham/masscan">masscan</a><br>Linux运行<br>msscan -p 1-65535 <IP></p>
+<p><a target="_blank" rel="noopener" href="https://nmap.org/">nmap</a><br>Linux运行<br>nmap -sV 192.168.0.2nmap -sT 192.168.0.2</p>
+<h3 id="6-指纹识别"><a href="#6-指纹识别" class="headerlink" title="6.指纹识别"></a>6.指纹识别</h3><p>CMS种类包括：wordpress, dedecms, discuz…</p>
 <p>在线：<br><a target="_blank" rel="noopener" href="https://fp.shuziguanxing.com/">360finger</a></p>
 <p><a target="_blank" rel="noopener" href="http://finger.tidesec.net/">潮汐指纹</a></p>
-<p>本地：<br><a target="_blank" rel="noopener" href="https://github.com/TideSec/TideFinger_Go">TideFinger</a><br>TideFinger_windows_amd64_v3.2.3.exe -uf 123.txt</p>
+<p>本地(优选)：<br><a target="_blank" rel="noopener" href="https://github.com/TideSec/TideFinger_Go">TideFinger</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/P001water/P1finger">P1finger</a></p>
-<h3 id="7-源码泄露"><a href="#7-源码泄露" class="headerlink" title="7.源码泄露"></a>7.源码泄露</h3><p><a target="_blank" rel="noopener" href="https://github.com/lijiejie/GitHack">GitHack</a><br>.git文件泄露<br>通过 inurl&#x3D;”.git”，可以搜索到</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/callmefeifei/SvnHack">SvnHack</a><br>.git文件泄露<br>通过 inurl&#x3D;”.svn”，可以搜索到</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/lijiejie/ds_store_exp">ds_store_exp</a><br>.DS_store文件泄露<br>通过 inurl&#x3D;”.DS_store”，可以搜索到</p>
+<h3 id="7-源码泄露"><a href="#7-源码泄露" class="headerlink" title="7.源码泄露"></a>7.源码泄露</h3><p><a target="_blank" rel="noopener" href="https://github.com/lijiejie/GitHack">GitHack</a><br>通过 inurl&#x3D;”.git”，可以搜索到.git文件泄露</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/callmefeifei/SvnHack">SvnHack</a><br>通过 inurl&#x3D;”.svn”，可以搜索到.Svn文件泄露</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/lijiejie/ds_store_exp">ds_store_exp</a><br>通过 inurl&#x3D;”.DS_store”，可以搜索到.DS_store文件泄露</p>
 <p>Bzr泄露<br>CVS泄露<br>WEB-INF&#x2F;web.xml泄露<br>网站备份压缩文件<br>hg源码泄漏</p>
 <h3 id="8-其他信息"><a href="#8-其他信息" class="headerlink" title="8.其他信息"></a>8.其他信息</h3><p>旁站、C端：<br>​旁站：同服务器其他站点；<br>​C段：同一网段其他服务器</p>
 <p>目录：<br>扫描站点的目录，寻找敏感文件，如目录名，后台，robots.txt、备份文件等<br>目录：站点结构，权限控制不严格，弱口令，万能密码，爆破<br>探针文件：服务器配置信息， 1.php、phpinfo.php、readme.txt、config.txt 等</p>
