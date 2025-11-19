@@ -7,15 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="信息收集1.概念信息收集对于渗透测试前期来说是非常重要的，尽可能的收集目标的信息，包括域名、IP、端口、管理员信息等等，通常先做加法，后做减法。因为只有我们掌握了目标网站或目标主机足够多的信息之后，我们才能更好地对其进行漏洞检测。 渗透测试者可以使用的信息收集方法包括公开来源信息查询、Google Hacking、社会工程学、网络踩点、扫描探测、被动监听、服务查点等。 2.whois查询域名域名注">
+<meta name="description" content="信息收集1.概念信息收集对于渗透测试前期来说是非常重要的，尽可能的收集目标的信息，包括域名IP、端口、管理员信息等等，通常先做加法，后做减法。因为只有我们掌握了目标网站或目标主机足够多的信息之后，我们才能更好地对其进行漏洞检测。 渗透测试者可以使用的信息收集方法包括公开来源信息查询、Google Hacking、社会工程学、网络踩点、扫描探测、被动监听、服务查点等。 2.主域名收集信息包括 注册人">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2.信息收集">
 <meta property="og:url" content="https://cyphersun.github.io/2025/09/25/#2.%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="信息收集1.概念信息收集对于渗透测试前期来说是非常重要的，尽可能的收集目标的信息，包括域名、IP、端口、管理员信息等等，通常先做加法，后做减法。因为只有我们掌握了目标网站或目标主机足够多的信息之后，我们才能更好地对其进行漏洞检测。 渗透测试者可以使用的信息收集方法包括公开来源信息查询、Google Hacking、社会工程学、网络踩点、扫描探测、被动监听、服务查点等。 2.whois查询域名域名注">
+<meta property="og:description" content="信息收集1.概念信息收集对于渗透测试前期来说是非常重要的，尽可能的收集目标的信息，包括域名IP、端口、管理员信息等等，通常先做加法，后做减法。因为只有我们掌握了目标网站或目标主机足够多的信息之后，我们才能更好地对其进行漏洞检测。 渗透测试者可以使用的信息收集方法包括公开来源信息查询、Google Hacking、社会工程学、网络踩点、扫描探测、被动监听、服务查点等。 2.主域名收集信息包括 注册人">
 <meta property="og:locale">
 <meta property="article:published_time" content="2025-09-25T08:50:57.000Z">
-<meta property="article:modified_time" content="2025-10-02T10:49:23.141Z">
+<meta property="article:modified_time" content="2025-10-27T00:44:30.539Z">
 <meta property="article:author" content="CypherSun">
 <meta property="article:tag" content="2.信息收集">
 <meta name="twitter:card" content="summary">
@@ -58,7 +58,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.6","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.json"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-10-02 18:49:23"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-10-27 08:44:30"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.6" id="trm-switch-style">
@@ -379,21 +379,21 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><h3 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h3><p>信息收集对于渗透测试前期来说是非常重要的，尽可能的收集目标的信息，包括域名、IP、端口、管理员信息等等，通常先做加法，后做减法。因为只有我们掌握了目标网站或目标主机足够多的信息之后，我们才能更好地对其进行漏洞检测。</p>
+    <h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><h3 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h3><p>信息收集对于渗透测试前期来说是非常重要的，尽可能的收集目标的信息，包括域名IP、端口、管理员信息等等，通常先做加法，后做减法。因为只有我们掌握了目标网站或目标主机足够多的信息之后，我们才能更好地对其进行漏洞检测。</p>
 <p>渗透测试者可以使用的信息收集方法包括公开来源信息查询、Google Hacking、社会工程学、网络踩点、扫描探测、被动监听、服务查点等。</p>
-<h3 id="2-whois查询域名"><a href="#2-whois查询域名" class="headerlink" title="2.whois查询域名"></a>2.whois查询域名</h3><h4 id="域名注册信息"><a href="#域名注册信息" class="headerlink" title="域名注册信息"></a>域名注册信息</h4><p>信息包括 注册人、电话、email</p>
+<h3 id="2-主域名收集"><a href="#2-主域名收集" class="headerlink" title="2.主域名收集"></a>2.主域名收集</h3><p>信息包括 注册人、电话、email</p>
+<h4 id="whois域名注册信息"><a href="#whois域名注册信息" class="headerlink" title="whois域名注册信息"></a>whois域名注册信息</h4><p><a target="_blank" rel="noopener" href="https://whois.aizhan.com/">爱站网 whois</a><br>搜索主域名 –&gt; 反查注册人<br>搜索主域名 –&gt; 反查邮箱<br>搜索主域名 –&gt; 反查注册人 –&gt; 多邮箱反查<br>搜索主域名 –&gt; 其它后缀域名 –&gt; 查看已注册的域名进行搜索判断查询</p>
 <p><a target="_blank" rel="noopener" href="https://whois.chinaz.com/">站长之家 whois</a><br>搜索主域名 –&gt; 注册人反查<br>搜索主域名 –&gt; 邮箱反查<br>搜索主域名 –&gt; 注册人反查 –&gt; 多邮箱反查</p>
-<p><a target="_blank" rel="noopener" href="https://whois.aizhan.com/">爱站网 whois</a><br>搜索主域名 –&gt; 公司名反查<br>搜索主域名 –&gt; 邮箱反查<br>搜索主域名 –&gt; 公司名反查 –&gt; 多邮箱反查</p>
-<p>Kali whois 工具<br>命令：whois &lt;example.cn&gt;</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/TideSec/TscanPlus">TscanPlus</a><br>复制所有杂项 –&gt; 辅助工具 –&gt; 一键分拣 –&gt; 整理归纳到xlsx表格</p>
+<p><a target="_blank" rel="noopener" href="https://sou.xiaolanben.com/">小蓝本</a><br>搜索主域名&#x2F;公司名 –&gt; 网站</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/TideSec/TscanPlus">TscanPlus</a><br>辅助工具 –&gt; 一键分拣<br>可创建表格配合进行整理</p>
 <h4 id="域名备案信息"><a href="#域名备案信息" class="headerlink" title="域名备案信息"></a>域名备案信息</h4><p>为了防止在网上从事非法的网站经营活动，打击不良互联网信息的传播</p>
-<p><a target="_blank" rel="noopener" href="https://www.tianyancha.com/">天眼查</a><br>搜索主域名&#x2F;公司名 –&gt; 进入网站 –&gt; 知识产权 –&gt; 网站备案</p>
+<p><a target="_blank" rel="noopener" href="https://www.tianyancha.com/">天眼查</a><br>搜索公司名 –&gt; 知识产权 –&gt; 网站备案</p>
 <p><a target="_blank" rel="noopener" href="https://www.qcc.com/">企查查</a><br>搜索主域名&#x2F;公司名 –&gt; 进入网站 –&gt; 知识产权 –&gt; 网络服务备案</p>
-<p><a target="_blank" rel="noopener" href="https://sou.xiaolanben.com/">小蓝本</a><br>搜索主域名&#x2F;公司名 –&gt; 进入网站 –&gt; 网站</p>
 <p><a target="_blank" rel="noopener" href="https://icp.chinaz.com/">站长工具</a><br>天眼查&#x2F;企查查复制备案号 –&gt; 查询</p>
 <p><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/c_/#/Integrated/index">ICP&#x2F;IP地址&#x2F;域名信息备案管理系统</a><br>天眼查&#x2F;企查查复制备案号（去除备案号后面的序号） –&gt; 搜索（关闭VPN） –&gt; 详情</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/TideSec/TscanPlus">TscanPlus</a><br>复制所有杂项 –&gt; 辅助工具 –&gt; 一键分拣 –&gt; 整理归纳到xlsx表格</p>
-<h3 id="3-子域名"><a href="#3-子域名" class="headerlink" title="3.子域名"></a>3.子域名</h3><p>枚举：基于字典的枚举方式，查找带有通用名称得子域名技术（*.cisp.cn）<br>搜索引擎：google fofa<br>第三方聚合服务:dns数据集，检索子域名<br>证书，带有子域名</p>
+<p><a target="_blank" rel="noopener" href="https://sou.xiaolanben.com/">小蓝本</a><br>搜索主域名&#x2F;公司名 –&gt; 商标 –&gt; 搜索商标</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/TideSec/TscanPlus">TscanPlus</a><br>辅助工具 –&gt; 一键分拣<br>可创建表格配合进行整理</p>
+<h3 id="3-子域名收集"><a href="#3-子域名收集" class="headerlink" title="3.子域名收集"></a>3.子域名收集</h3><p>枚举：基于字典的枚举方式，查找带有通用名称得子域名技术（*.cisp.cn）<br>主要是比拼字典的含金量，子域名，扩充自己的一个字典枚举的关键主要就是在于字典是否足够齐全<br>搜索引擎：google fofa 等<br>第三方聚合服务:dns数据集，通过检索特定的域名下的子域名，<br>证书，带有子域名</p>
 <h4 id="工具收集"><a href="#工具收集" class="headerlink" title="工具收集"></a>工具收集</h4><p><a target="_blank" rel="noopener" href="https://github.com/euphrat1ca/LayerDomainFinder">LayerDomainFinder</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/lijiejie/subDomainsBrute">subDomainsBrute</a><br>-w 解决泛解析问题 (泛解析开启后ping不存在的域名也会返回IP)</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/shmilylty/OneForAll">OneForAll</a> </p>
@@ -411,8 +411,10 @@
 <p><a target="_blank" rel="noopener" href="https://hunter.qianxin.com/">hunter</a><br>icp.number&#x3D;”京ICP备18045154号”</p>
 <p><a target="_blank" rel="noopener" href="https://www.shodan.io/">shodan</a></p>
 <p><a target="_blank" rel="noopener" href="https://quake.360.net/">quake</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/TideSec/TscanPlus">TscanPlus</a><br>复制所有杂项 –&gt; 辅助工具 –&gt; 一键分拣 –&gt; 整理归纳到xlsx表格</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/TideSec/TscanPlus">TscanPlus</a><br>辅助工具 –&gt; 一键分拣<br>可创建表格配合进行整理</p>
+<h4 id="第三方聚合服务"><a href="#第三方聚合服务" class="headerlink" title="第三方聚合服务"></a>第三方聚合服务</h4><p>聚合大量的dns数据集，通过检索特定的域名下的子域名，证书站也会找的子域名</p>
 <h3 id="4-真实IP地址"><a href="#4-真实IP地址" class="headerlink" title="4.真实IP地址"></a>4.真实IP地址</h3><p>1.直接能够从目标单位授权获取<br>2.被动信息收集，hash，icon，供应链，关联IP，来获取边缘资产，利用价值大（nday）<br>3.通过子域名解析IP地址</p>
+<p>内网：<br>10.0.0.0 – 10.255.255.255<br>172.16.0.0 – 172.31.255.255<br>192.168.0.0 – 192.168.255.255</p>
 <p>CDN绕过<br>1、域名的历史解析记录 ip138<br>2、子域名解析记录查看ip地址<br>3、邮箱发送 email.exmaple.com 通过邮箱去注册账号，邮箱发送邮箱ip，是真实ip<br>4、找文件，探针文件 phpinfo.php<br>5、国内外ping</p>
 <p><a target="_blank" rel="noopener" href="https://www.ip138.com/">ip138</a><br>查看以前的IP，可能以前没上CDN，现在上了<br>查到以前一些IP以后去fofa平台搜索，很多匹配结果的就可能就不是真实IP</p>
 <p>通过全国ping和全球ping来判断是否有CDN，只有一个IP就没有CDN，有多个IP就开了CDN</p>
@@ -422,7 +424,7 @@
 <p>ftp ssh mysql rdp<br>21 ftp匿名上传漏洞 下载 弱口令爆破<br>22 ssh 弱口令爆破，ssh 隧道代理的转发<br>23 telnet 弱囗令 嗅探<br>389 ldap目录协议 匿名访问 注入弱口令<br>445 smb<br>1433 mssql 注入 提权 sa 弱囗令 爆破  windows iis 搭建<br>1521 oracle 反弹shell 弱囗令 爆破<br>2375 docker 未授权<br>3389 rdp 弱口令 shirt后门 ms12-020 漏洞<br>8080 tomcat<br>8080 9090 jboss</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/robertdavidgraham/masscan">masscan</a><br>Linux运行<br>msscan -p 1-65535 <IP></p>
 <p><a target="_blank" rel="noopener" href="https://nmap.org/">nmap</a><br>Linux运行<br>nmap -sV 192.168.0.2nmap -sT 192.168.0.2</p>
-<h3 id="6-指纹识别"><a href="#6-指纹识别" class="headerlink" title="6.指纹识别"></a>6.指纹识别</h3><p>CMS种类包括：wordpress, dedecms, discuz…</p>
+<h3 id="6-指纹识别"><a href="#6-指纹识别" class="headerlink" title="6.指纹识别"></a>6.指纹识别</h3><p>CMS种类包括：wordpress, dedecms, discuz…<br>oa鉴别包括：致远oa、泛微oa、用友oa、蓝凌oa</p>
 <p>在线：<br><a target="_blank" rel="noopener" href="https://fp.shuziguanxing.com/">360finger</a></p>
 <p><a target="_blank" rel="noopener" href="http://finger.tidesec.net/">潮汐指纹</a></p>
 <p>本地(优选)：<br><a target="_blank" rel="noopener" href="https://github.com/TideSec/TideFinger_Go">TideFinger</a></p>
@@ -492,7 +494,7 @@
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2025/09/25/Z-%E7%AB%99%E9%95%BF%E4%B9%8B%E5%AE%B6/" class="trm-cover-frame trm-anima-link">
+        <a href="/2025/09/25/%E7%AB%99%E9%95%BF%E4%B9%8B%E5%AE%B6/" class="trm-cover-frame trm-anima-link">
             
             
                 <div class="trm-cover-date">
@@ -509,7 +511,7 @@
                 </a>
             </div>
             <h5>
-                <a href="/2025/09/25/Z-%E7%AB%99%E9%95%BF%E4%B9%8B%E5%AE%B6/" class="trm-anima-link">
+                <a href="/2025/09/25/%E7%AB%99%E9%95%BF%E4%B9%8B%E5%AE%B6/" class="trm-anima-link">
                     站长之家
                 </a>
             </h5>
