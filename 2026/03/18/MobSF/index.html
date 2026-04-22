@@ -7,17 +7,17 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="工具地址Mobile Security Framework (MobSF)     工具介绍     搭建流程搭建流程sudo apt updatesudo apt install docker.io docker-composesudo usermod -aG docker $USERsudo service docker start docker无法访问就拉镜像 sudo mkdir -p &amp;">
+<meta name="description" content="工具地址Mobile Security Framework (MobSF)     工具介绍移动安全框架 (MobSF) 是一个面向 Android、iOS 和 Windows Mobile 移动应用的安全研究平台。MobSF 可用于多种应用场景，例如移动应用安全、渗透测试、恶意软件分析和隐私分析。静态分析器支持常见的移动应用二进制文件，例如 APK、IPA、APPX 和源代码。同时，动态分析器支">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MobSF">
 <meta property="og:url" content="https://cyphersun.github.io/2026/03/18/MobSF/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="工具地址Mobile Security Framework (MobSF)     工具介绍     搭建流程搭建流程sudo apt updatesudo apt install docker.io docker-composesudo usermod -aG docker $USERsudo service docker start docker无法访问就拉镜像 sudo mkdir -p &amp;">
+<meta property="og:description" content="工具地址Mobile Security Framework (MobSF)     工具介绍移动安全框架 (MobSF) 是一个面向 Android、iOS 和 Windows Mobile 移动应用的安全研究平台。MobSF 可用于多种应用场景，例如移动应用安全、渗透测试、恶意软件分析和隐私分析。静态分析器支持常见的移动应用二进制文件，例如 APK、IPA、APPX 和源代码。同时，动态分析器支">
 <meta property="og:locale">
 <meta property="article:published_time" content="2026-03-18T13:51:14.000Z">
-<meta property="article:modified_time" content="2026-03-19T03:38:44.000Z">
+<meta property="article:modified_time" content="2026-04-22T14:53:40.777Z">
 <meta property="article:author" content="CypherSun">
-<meta property="article:tag" content="APP分析">
+<meta property="article:tag" content="APP 分析">
 <meta name="twitter:card" content="summary">
 
 
@@ -58,7 +58,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.7","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.json"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2026-03-19 11:38:44"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2026-04-22 22:53:40"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.7" id="trm-switch-style">
@@ -384,18 +384,18 @@
 
 
 
-<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><br>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>移动安全框架 (MobSF) 是一个面向 Android、iOS 和 Windows Mobile 移动应用的安全研究平台。MobSF 可用于多种应用场景，例如移动应用安全、渗透测试、恶意软件分析和隐私分析。静态分析器支持常见的移动应用二进制文件，例如 APK、IPA、APPX 和源代码。同时，动态分析器支持 Android 和 iOS 应用，并提供交互式插桩测试、运行时数据和网络流量分析平台。MobSF 可通过 REST API 和 CLI 工具与您的 DevSecOps 或 CI&#x2F;CD 流水线无缝集成，轻松增强您的安全工作流程。<br><br></p>
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/ef068933ab96">搭建流程</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt install docker.io docker-compose</span><br><span class="line"><span class="built_in">sudo</span> usermod -aG docker <span class="variable">$USER</span></span><br><span class="line"><span class="built_in">sudo</span> service docker start</span><br></pre></td></tr></table></figure>
 
-
-
-
-<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/ef068933ab96">搭建流程</a><br>sudo apt update<br>sudo apt install docker.io docker-compose<br>sudo usermod -aG docker $USER<br>sudo service docker start</p>
 <p>docker无法访问就拉镜像</p>
-<p>sudo mkdir -p &#x2F;etc&#x2F;docker<br>sudo nano &#x2F;etc&#x2F;docker&#x2F;daemon.json</p>
-<p>{<br>  “registry-mirrors”: [<br>    “<a target="_blank" rel="noopener" href="https://mirror.ccs.tencentyun.com/">https://mirror.ccs.tencentyun.com</a>“,<br>    “<a target="_blank" rel="noopener" href="https://docker.m.daocloud.io/">https://docker.m.daocloud.io</a>“<br>  ]<br>}</p>
-<p>sudo systemctl daemon-reload<br>sudo systemctl restart docker</p>
-<p>sudo docker images<br>sudo docker pull opensecurity&#x2F;mobile-security-framework-mobsf:latest<br>sudo docker run -it –rm -p 8000:8000 opensecurity&#x2F;mobile-security-framework-mobsf:latest<br><br></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><br>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">mkdir</span> -p /etc/docker</span><br><span class="line"><span class="built_in">sudo</span> nano /etc/docker/daemon.json</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;registry-mirrors&quot;</span>: [</span><br><span class="line">    <span class="string">&quot;https://mirror.ccs.tencentyun.com&quot;</span>,</span><br><span class="line">    <span class="string">&quot;https://docker.m.daocloud.io&quot;</span></span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> systemctl daemon-reload</span><br><span class="line"><span class="built_in">sudo</span> systemctl restart docker</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> docker images</span><br><span class="line"><span class="built_in">sudo</span> docker pull opensecurity/mobile-security-framework-mobsf:latest</span><br><span class="line"><span class="built_in">sudo</span> docker run -it --<span class="built_in">rm</span> -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest</span><br></pre></td></tr></table></figure>
+<br>
+
+
+
+
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>上传 APK 进行审计，导出审计报告<br><br></p>
 
 </article>
     
