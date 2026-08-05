@@ -7,15 +7,15 @@
 <meta name="full-screen" content="yes">
 <meta name="theme-color" content="#317EFB" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
-<meta name="description" content="123456789101112131415161718192021222324252627282930313233sudo apt update &amp;&amp; sudo apt upgrade -ysudo apt install docker.io -ysudo systemctl start dockersudo systemctl enable dockersudo usermod">
+<meta name="description" content="123456789101112sudo apt update sudo apt install docker.io -ysudo systemctl start dockersudo systemctl enable dockersudo usermod -aG docker kalinewgrp dockerdocker pull ghcr.nju.edu.cn&#x2F;usestrix&#x2F;strix-s">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Strix">
 <meta property="og:url" content="https://cyphersun.github.io/2026/08/05/Strix/index.html">
 <meta property="og:site_name" content="CypherSun">
-<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233sudo apt update &amp;&amp; sudo apt upgrade -ysudo apt install docker.io -ysudo systemctl start dockersudo systemctl enable dockersudo usermod">
+<meta property="og:description" content="123456789101112sudo apt update sudo apt install docker.io -ysudo systemctl start dockersudo systemctl enable dockersudo usermod -aG docker kalinewgrp dockerdocker pull ghcr.nju.edu.cn&#x2F;usestrix&#x2F;strix-s">
 <meta property="og:locale">
 <meta property="article:published_time" content="2026-08-05T15:25:17.000Z">
-<meta property="article:modified_time" content="2026-08-05T15:26:17.934Z">
+<meta property="article:modified_time" content="2026-08-05T16:45:00.629Z">
 <meta property="article:author" content="CypherSun">
 <meta property="article:tag" content="AI渗透">
 <meta name="twitter:card" content="summary">
@@ -58,7 +58,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"cyphersun.github.io","author":"CypherSun","root":"/","typed_text":["a cybersecurity engineer"],"theme_version":"2.2.7","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":null,"icon16":null,"icon32":"favicon.ico","apple_touch_icon":null,"webmanifest":null,"visibilitychange":true,"hidden":"favicon.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！","appleTouchIcon":null,"showText":"骗你的~ (￣▽￣)ノ","hideText":"崩溃啦！(╯‵□′)╯︵┻━┻"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":true,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy","user_tag":"fas fa-user-alt"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":"200px"},"toc":{"post_title":true},"live_time":{"start_time":"03/09/2024 15:46:00","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"},"search":{"enable":true,"type":"local","href":"https://www.google.com/search?q=site:","domain":null,"path":"search.json"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2026-08-05 23:26:17"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2026-08-06 00:45:00"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.7" id="trm-switch-style">
@@ -379,7 +379,13 @@
 </div>
 <div class="trm-card ">
     <article id="article-container" class="trm-publication">
-    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update &amp;&amp; <span class="built_in">sudo</span> apt upgrade -y</span><br><span class="line"><span class="built_in">sudo</span> apt install docker.io -y</span><br><span class="line"><span class="built_in">sudo</span> systemctl start docker</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> docker</span><br><span class="line"><span class="built_in">sudo</span> usermod -aG docker kali</span><br><span class="line">newgrp docker</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker pull ghcr.nju.edu.cn/usestrix/strix-sandbox:1.1.0</span><br><span class="line">docker tag ghcr.nju.edu.cn/usestrix/strix-sandbox:1.1.0 ghcr.io/usestrix/strix-sandbox:1.1.0</span><br><span class="line">docker images | grep strix-sandbox</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">打开https://github.com/usestrix/strix/releases下载strix-1.4.1-linux-arm64.tar.gz，放入home</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tar -zxvf strix-1.4.1-linux-arm64.tar.gz</span><br><span class="line"><span class="built_in">chmod</span> +x strix-1.4.1-linux-arm64.tar.gz</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">mv</span> strix-1.4.1-linux-arm64.tar.gz /usr/local/bin/strix</span><br><span class="line">strix --version</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> STRIX_IMAGE=<span class="string">&quot;ghcr.io/usestrix/strix-sandbox:1.1.0&quot;</span></span><br><span class="line"><span class="built_in">export</span> STRIX_LLM=<span class="string">&quot;deepseek/deepseek-v4-pro&quot;</span></span><br><span class="line"><span class="built_in">export</span> LLM_API_BASE=<span class="string">&quot;https://api.deepseek.com/v1&quot;</span></span><br><span class="line"><span class="built_in">export</span> LLM_API_KEY=<span class="string">&quot;.......&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">strix --target https://app.com</span><br><span class="line"></span><br><span class="line">strix --update</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> apt update </span><br><span class="line"><span class="built_in">sudo</span> apt install docker.io -y</span><br><span class="line"><span class="built_in">sudo</span> systemctl start docker</span><br><span class="line"><span class="built_in">sudo</span> systemctl <span class="built_in">enable</span> docker</span><br><span class="line"><span class="built_in">sudo</span> usermod -aG docker kali</span><br><span class="line">newgrp docker</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">docker pull ghcr.nju.edu.cn/usestrix/strix-sandbox:1.1.0</span><br><span class="line">docker tag ghcr.nju.edu.cn/usestrix/strix-sandbox:1.1.0 ghcr.io/usestrix/strix-sandbox:1.1.0</span><br><span class="line">docker images | grep strix-sandbox</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://github.com/usestrix/strix/releases">https://github.com/usestrix/strix/releases</a><br>下载strix-1.4.1-linux-arm64.tar.gz，放入home</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf strix....tab</span><br><span class="line"><span class="built_in">chmod</span> +x strix....tab</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">mv</span> strix....tab /usr/local/bin/strix</span><br><span class="line">strix --version</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> STRIX_IMAGE=<span class="string">&quot;ghcr.io/usestrix/strix-sandbox:1.1.0&quot;</span></span><br><span class="line"><span class="built_in">export</span> STRIX_LLM=<span class="string">&quot;deepseek/deepseek-v4-pro&quot;</span></span><br><span class="line"><span class="built_in">export</span> LLM_API_BASE=<span class="string">&quot;https://api.deepseek.com/v1&quot;</span></span><br><span class="line"><span class="built_in">export</span> LLM_API_KEY=<span class="string">&quot;...&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> 666 /var/run/docker.sock</span><br><span class="line"></span><br><span class="line">strix --target <span class="string">&quot;https://app.com&quot;</span></span><br><span class="line"></span><br><span class="line">strix --update</span><br></pre></td></tr></table></figure>
+
+<p>bash窗口一次弄完，不要重开bash</p>
+
 </article>
     
     
@@ -396,7 +402,7 @@
     
         <div class="col-lg-6">
     <div class="trm-blog-card trm-scroll-animation">
-        <a href="/2077/07/07/#%E7%BA%A2%E9%98%9F%E5%85%A8%E6%B5%81%E7%A8%8B/" class="trm-cover-frame trm-anima-link">
+        <a href="/2077/07/07/#%E8%93%9D%E9%98%9F%E5%85%A8%E6%B5%81%E7%A8%8B/" class="trm-cover-frame trm-anima-link">
             
             
                 <div class="trm-cover-date">
@@ -413,8 +419,8 @@
                 </a>
             </div>
             <h5>
-                <a href="/2077/07/07/#%E7%BA%A2%E9%98%9F%E5%85%A8%E6%B5%81%E7%A8%8B/" class="trm-anima-link">
-                    红队全流程（建设中）
+                <a href="/2077/07/07/#%E8%93%9D%E9%98%9F%E5%85%A8%E6%B5%81%E7%A8%8B/" class="trm-anima-link">
+                    蓝队全流程（建设中）
                 </a>
             </h5>
             <div class="trm-divider trm-mb-20 trm-mt-20"></div>
